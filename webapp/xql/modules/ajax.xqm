@@ -131,88 +131,91 @@ declare function ajax:getTodaysEvents($date as xs:date?,$lang as xs:string) as d
 
 (:~
  : Returns correspondents by a person
- : (functions for person_singleView.xql)
+ : (helper function for person_singleView.xql)
  :
  : @author Peter Stadler 
  : @param $id of person
  : @param $lang the current language (de|en)
  : @param $fromOffset1
  : @param $toOffset1
- : @param $correspondents
- : @return element
+ : @param $correspondents (sender|addressee|all)
+ : @return element <person key="{$personID}" count="{xs:integer}" />
  :)
 
-declare function ajax:getPersonCorrespondents($id as xs:string, $lang as xs:string, $fromOffset1 as xs:string, $toOffset1 as xs:string, $correspondents as xs:string) as element()* {
+declare function ajax:getPersonCorrespondents($id as xs:string, $lang as xs:string, $fromOffset1 as xs:string, $toOffset1 as xs:string, $correspondents as xs:string) as element(person)* {
+    (: Zeitliche Beschränkung aktuell nicht implementiert, d.h. es werden unabhängig von  :)
     let $fromOffset := if($fromOffset1 castable as xs:date) then string($fromOffset1) else string('0001-01-01')
     let $toOffset   := if($toOffset1   castable as xs:date) then string($toOffset1)   else string('9999-01-01')
-    let $letterList := if ($correspondents eq 'addressee')
-        then collection('/db/letters')//tei:sender/tei:persName[@key = $id]
-            [../../tei:dateSender/tei:date[@when >= $fromOffset and @when <= $toOffset] or 
-            ../../tei:dateSender/tei:date[@notBefore >= $fromOffset and @notBefore <= $toOffset] or 
-            ../../tei:dateSender/tei:date[@notAfter >= $fromOffset and @notAfter <= $toOffset] or 
-            ../../tei:dateSender/tei:date[@to >= $fromOffset and @to <= $toOffset] or 
-            ../../tei:dateSender/tei:date[@from >= $fromOffset and @from <= $toOffset] or
-            ../../tei:dateSender/tei:date[not(@when or @from or @to or @notBefore or @notAfter)]]
-            /../../tei:addressee/tei:persName[@key]
-        else if ($correspondents eq 'sender')
-            then collection('/db/letters')//tei:addressee/tei:persName[@key = $id]
-            [../../tei:dateSender/tei:date[@when >= $fromOffset and @when <= $toOffset] or 
-            ../../tei:dateSender/tei:date[@notBefore >= $fromOffset and @notBefore <= $toOffset] or 
-            ../../tei:dateSender/tei:date[@notAfter >= $fromOffset and @notAfter <= $toOffset] or 
-            ../../tei:dateSender/tei:date[@to >= $fromOffset and @to <= $toOffset] or 
-            ../../tei:dateSender/tei:date[@from >= $fromOffset and @from <= $toOffset] or
-            ../../tei:dateSender/tei:date[not(@when or @from or @to or @notBefore or @notAfter)]]
-            /../../tei:sender/tei:persName[@key]
-            else if ($correspondents eq 'all')
-                then collection('/db/letters')//tei:sender/tei:persName[@key = $id] 
-                     (:[../../tei:dateSender/tei:date[@when >= $fromOffset and @when <= $toOffset] or 
+    let $normDates := wega:getNormDates('letters')
+    let $correspondentsIDs := 
+        switch ($correspondents) 
+            case 'addressee' return
+                collection('/db/letters')//tei:sender/tei:persName[@key = $id]
+                [../../tei:dateSender/tei:date[@when >= $fromOffset and @when <= $toOffset] or 
+                ../../tei:dateSender/tei:date[@notBefore >= $fromOffset and @notBefore <= $toOffset] or 
+                ../../tei:dateSender/tei:date[@notAfter >= $fromOffset and @notAfter <= $toOffset] or 
+                ../../tei:dateSender/tei:date[@to >= $fromOffset and @to <= $toOffset] or 
+                ../../tei:dateSender/tei:date[@from >= $fromOffset and @from <= $toOffset] or
+                ../../tei:dateSender/tei:date[not(@when or @from or @to or @notBefore or @notAfter)]]
+                /../../tei:addressee/tei:persName[@key]
+            case 'sender' return
+                collection('/db/letters')//tei:addressee/tei:persName[@key = $id]
+                [../../tei:dateSender/tei:date[@when >= $fromOffset and @when <= $toOffset] or 
+                ../../tei:dateSender/tei:date[@notBefore >= $fromOffset and @notBefore <= $toOffset] or 
+                ../../tei:dateSender/tei:date[@notAfter >= $fromOffset and @notAfter <= $toOffset] or 
+                ../../tei:dateSender/tei:date[@to >= $fromOffset and @to <= $toOffset] or 
+                ../../tei:dateSender/tei:date[@from >= $fromOffset and @from <= $toOffset] or
+                ../../tei:dateSender/tei:date[not(@when or @from or @to or @notBefore or @notAfter)]]
+                /../../tei:sender/tei:persName[@key]
+            case 'all' return
+                ($normDates//entry[@addresseeID = $id]/data(@senderID), $normDates//entry[@senderID = $id]/data(@addresseeID))
+(:                ($normDates//entry[@addresseeID = $id] | $normDates//entry[@senderID = $id])/(@addresseeID, @senderID)[. != $id]/data(.):)
+                (:collection('/db/letters')//tei:sender/tei:persName[@key = $id] 
+                     (\:[../../tei:dateSender/tei:date[@when >= $fromOffset and @when <= $toOffset] or 
                      ../../tei:dateSender/tei:date[@notBefore >= $fromOffset and @notBefore <= $toOffset] or 
                      ../../tei:dateSender/tei:date[@notAfter >= $fromOffset and @notAfter <= $toOffset] or 
                      ../../tei:dateSender/tei:date[@to >= $fromOffset and @to <= $toOffset] or 
                      ../../tei:dateSender/tei:date[@from >= $fromOffset and @from <= $toOffset] or
-                     ../../tei:dateSender/tei:date[not(@when or @from or @to or @notBefore or @notAfter)]]:)
+                     ../../tei:dateSender/tei:date[not(@when or @from or @to or @notBefore or @notAfter)]]:\)
                      /../../tei:addressee/tei:persName[@key]
                      | collection('/db/letters')//tei:addressee/tei:persName[@key = $id]
-                     (:[../../tei:dateSender/tei:date[@when >= $fromOffset and @when <= $toOffset] or 
+                     (\:[../../tei:dateSender/tei:date[@when >= $fromOffset and @when <= $toOffset] or 
                      ../../tei:dateSender/tei:date[@notBefore >= $fromOffset and @notBefore <= $toOffset] or 
                      ../../tei:dateSender/tei:date[@notAfter >= $fromOffset and @notAfter <= $toOffset] or 
                      ../../tei:dateSender/tei:date[@to >= $fromOffset and @to <= $toOffset] or 
                      ../../tei:dateSender/tei:date[@from >= $fromOffset and @from <= $toOffset] or
-                     ../../tei:dateSender/tei:date[not(@when or @from or @to or @notBefore or @notAfter)]]:)
-                     /../../tei:sender/tei:persName[@key]
-                else()
+                     ../../tei:dateSender/tei:date[not(@when or @from or @to or @notBefore or @notAfter)]]:\)
+                     /../../tei:sender/tei:persName[@key]:)
+             default return ()
     return 
-        for $i in $letterList 
-(:        group $i as $partition by $i/@key as $key:)
-        group by $key := $i/@key
+        for $i in $correspondentsIDs[.!='']
+        group by $key := $i
         order by count($i) descending
         return <person key="{$key}" count="{count($i)}"/>
 };
 
 (:~
- : Returns a DIV containing the correspondents to a person
- : (functions for person_singleView.xql)
+ : Returns a DIV containing the correspondents of a person
+ : (helper function for person_singleView.xql)
  :
  : @author Peter Stadler
  : @param $id of person
  : @param $lang the current language (de|en)
  : @param $fromOffset1
  : @param $toOffset1
- : @param $correspondents
+ : @param $correspondents (sender|addressee|all)
  : @param $max
- : @return element
+ : @return html element <div>
  :)
 
-declare function ajax:printCorrespondents($id as xs:string, $lang as xs:string, $fromOffset1 as xs:string, $toOffset1 as xs:string, $correspondents as xs:string, $max as xs:int) as element() {
-    let $correspondents := ajax:getPersonCorrespondents($id, $lang, $fromOffset1, $toOffset1, $correspondents)
+declare function ajax:printCorrespondents($id as xs:string, $lang as xs:string, $fromOffset1 as xs:string, $toOffset1 as xs:string, $correspondents as xs:string, $max as xs:int) as element(div) {
+    let $persons := ajax:getPersonCorrespondents($id, $lang, $fromOffset1, $toOffset1, $correspondents)
     let $baseHref := wega:getOption('baseHref')
     let $linkElements := 
-        for $x in subsequence($correspondents,1,$max)
-        let $key := $x/string(@key)
-        let $doc := wega:doc($key)
-        let $persNameSelected := wega:getRegName($key) (:wega:cleanString($person/tei:persName[@type='reg']):)
-        let $persNameSelectedCount := $x/@count cast as xs:int
-        order by $persNameSelectedCount descending, $persNameSelected ascending
+        for $person in subsequence($persons, 1, $max)
+        let $doc := wega:doc($person/data(@key))
+        let $persNameSelected := wega:getRegName($person/data(@key))
+        let $persNameSelectedCount := $person/@count cast as xs:int
         return
             if(exists($doc)) then
                 element a {
