@@ -77,6 +77,7 @@
       <entry xml:id="bugEmail">bugs [at] weber-gesamtausgabe.de</entry>
       <entry xml:id="letterContextCache">letterContextCache</entry>
       <entry xml:id="environment">development</entry>
+      <entry xml:id="skipExternalHttpRequests">true</entry>
       <entry xml:id="facsimileWhiteList">D-B</entry>
       <entry xml:id="maxNews">4</entry>
       <entry xml:id="minNews">1</entry>

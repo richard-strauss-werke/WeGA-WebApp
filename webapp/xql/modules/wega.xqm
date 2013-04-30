@@ -1,4 +1,4 @@
-xquery version "1.0" encoding "UTF-8";
+xquery version "3.0" encoding "UTF-8";
 
 (:~
 : Collected xQuery functions
@@ -1761,7 +1761,7 @@ declare function wega:grabExternalResource($resource as xs:string, $pnd as xs:st
            (:util:log-system-out(concat($pnd, ': cached version')),:) 
            $cachedResource/httpclient:response
            )
-        else 
+        else if(wega:getOption('skipExternalHttpRequests') ne 'true') then 
            let $responseOrg := httpclient:get(xs:anyURI(concat($serverURL, $pnd)),true(), ())
            let $modifiedResponse := 
                if($responseOrg/httpclient:body[matches(@mimetype,"text/html")]) then wega:changeNamespace($responseOrg,'http://www.w3.org/1999/xhtml', 'http://exist-db.org/xquery/httpclient')
@@ -1772,6 +1772,7 @@ declare function wega:grabExternalResource($resource as xs:string, $pnd as xs:st
                </wega:externalResource>
            let $storeFile := wega:storeFileInTmpCollection($resource, $fileName, $responseFrame)
            return $modifiedResponse
+        else ()
     return 
         if($response/@statusCode eq '200') then $response 
         else ()
@@ -1887,9 +1888,11 @@ declare function wega:retrievePicture($picURL as xs:string, $localName as xs:str
             else xmldb:create-collection($tmpDir, replace($localFileName, '^(\w{2})\w+', '$1xxx'))
     let $pathToLocalFile := concat($localDbCollection, '/', $localFileName, '.', $suffix)
     let $storeFile := 
-        if (util:binary-doc-available($pathToLocalFile)) then () 
+        if (util:binary-doc-available($pathToLocalFile) or (wega:getOption('skipExternalHttpRequests') ne 'true')) then () 
         else util:catch('*', xmldb:store($localDbCollection, concat($localFileName, '.', $suffix), xs:anyURI($picURL)), wega:logToFile('error', string-join(('wega:retrievePicture', $util:exception, $util:exception-message), ' ;; ')))
-    let $storePicMetaData := wega:storePicMetadata($pathToLocalFile, $picURL)
+    let $storePicMetaData := 
+        if(wega:getOption('skipExternalHttpRequests') eq 'true') then ()
+        else wega:storePicMetadata($pathToLocalFile, $picURL)
 (:    let $mimeType := $pic//httpclient:body/string(@mimetype):)
     return 
         if (util:binary-doc-available($pathToLocalFile) and wega:getPicMetadata($pathToLocalFile)) then $pathToLocalFile (: Datei bereits vorhanden :)
@@ -2572,14 +2575,14 @@ declare function wega:createLetterNormDates() {
             let $normDate := wega:getOneNormalizedDate($i//tei:dateSender/tei:date, false())
             let $n :=  $i//tei:dateSender/tei:date/string(@n)
 (:            let $senderID := $i//tei:sender/tei:persName[1]/string(@key):)
-            let $authorID := $i//tei:fileDesc/tei:titleStmt/tei:author[1]/string(@key)
+            let $senderID := $i//tei:sender/tei:persName[1]/string(@key)
             let $addresseeID := $i//tei:addressee/tei:persName[1]/string(@key)
             order by $normDate, $n
             return 
             element entry {
                 attribute docID {$docID},
                 attribute n {$n},
-                attribute authorID {$authorID},
+                attribute senderID {$senderID},
                 attribute addresseeID {$addresseeID},
                 if ($normDate castable as xs:date) then attribute year {year-from-date($normDate cast as xs:date)} else (),
                 if ($normDate castable as xs:date) then attribute month {month-from-date($normDate cast as xs:date)} else (),
