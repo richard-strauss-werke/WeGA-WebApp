@@ -637,13 +637,13 @@ declare function wega:getMainID($id as xs:string?) as xs:string
  : Gets portrait path for digilib
  :  
  : @author Peter Stadler
- : @param $person node of a certain person
+ : @param $person the tei:person element
  : @param $dimensions of image
- : @param $lang the language of the string (en|de)
+ : @param $lang the language switch (en|de)
  : @return xs:string
  :)
  
-declare function wega:getPortraitPath($person as node(), $dimensions as xs:integer+, $lang as xs:string) as xs:string? {
+declare function wega:getPortraitPath($person as element(tei:person), $dimensions as xs:integer+, $lang as xs:string) as xs:string? {
     let $fffiId := $person/data(@xml:id)
     let $pnd := $person/tei:idno[@type='gnd']
     let $tmpDir := wega:getOption('tmpDir')
@@ -1742,7 +1742,7 @@ declare function wega:printSourceDesc($doc as document-node(), $lang as xs:strin
  : ATTENTION: Wikipedia sends HTMl pages without namespace
  :
  : @author Peter Stadler 
- : @param $resource the external resource (wikipedia|adb|dnb)
+ : @param $resource the external resource (wikipedia|adb|dnb|beacon)
  : @param $pnd the PND number
  : @param $lang the language variable (de|en). If no language is specified, the default (German) resource is grabbed and served
  : @param $useCache use cached version or force a reload of the external resource
@@ -1750,12 +1750,14 @@ declare function wega:printSourceDesc($doc as document-node(), $lang as xs:strin
  :)
  
 declare function wega:grabExternalResource($resource as xs:string, $pnd as xs:string, $lang as xs:string?, $useCache as xs:boolean) as node()? {
+    let $lang := if(empty($lang) or ($lang eq '')) then 'de' else $lang
     let $serverURL := 
         if($resource eq 'wikipedia') then concat(wega:getOption($resource), $lang, '/')
         else wega:getOption($resource)
     let $fileName := string-join(($pnd, $lang, 'xml'), '.')
+    let $filePath := wega:constructFilePath($fileName, $resource)
     let $today := current-date()
-    let $cachedResource := doc(concat(wega:getOption('tmpDir'), $resource, '/', $fileName))/wega:externalResource
+    let $cachedResource := doc($filePath)/wega:externalResource
     let $response := 
         if($cachedResource/httpclient:response/@statusCode eq '200' and $cachedResource/xs:date(@date) eq $today and $useCache) then (
            (:util:log-system-out(concat($pnd, ': cached version')),:) 
@@ -1770,7 +1772,7 @@ declare function wega:grabExternalResource($resource as xs:string, $pnd as xs:st
                <wega:externalResource date="{$today}">
                    {$modifiedResponse}
                </wega:externalResource>
-           let $storeFile := wega:storeFileInTmpCollection($resource, $fileName, $responseFrame)
+           let $storeFile := wega:storeFile(substring-before($filePath, '/' || $fileName), $fileName, $responseFrame)
            return $modifiedResponse
         else ()
     return 
@@ -1779,28 +1781,50 @@ declare function wega:grabExternalResource($resource as xs:string, $pnd as xs:st
 };
 
 (:~
- : Store some content as file in the webapp tmp collection   
+ : Construct a local db file path  
+ : (helper function for wega:grabExternalResource() )
+ :
+ : @author Peter Stadler 
+ : @param $resource the type of (external) resource (wikipedia|adb|dnb|beacon|image)
+ : @param $fileName the file name
+ : @param $lang the language variable (de|en)
+ : @return path as xs:string
+ :)
+
+declare function wega:constructFilePath($fileName as xs:string, $resource as xs:string) as xs:string {
+    wega:getOption('tmpDir') || $resource || '/' || substring($fileName, 1, 2) || 'xxx/' || $fileName
+};
+
+(:~
+ : Store some content as file in the db
+ : (helper function for wega:grabExternalResource())
  : 
  : @author Peter Stadler
- : @param $subCollection the subcollection of the tmp collection to put the file in. If empty, the content will be stored in tmp directly 
+ : @param $collection the collection to put the file in. If empty, the content will be stored in the tmp  
  : @param $fileName the filename of the to be created resource with filename extension
  : @param $contents the content to store. Either a node, an xs:string, a Java file object or an xs:anyURI 
  : @return Returns the path to the newly created resource, empty sequence otherwise
  :)
-declare function wega:storeFileInTmpCollection($subCollection as xs:string?, $fileName as xs:string, $contents as item()) as xs:string? {
+declare function wega:storeFile($collection as xs:string?, $fileName as xs:string, $contents as item()) as xs:string? {
     let $tmpDir := wega:getOption('tmpDir')
-    let $dbCollection := 
-        if(empty($subCollection)) then $tmpDir
-        else (
-            let $path := string-join(($tmpDir, $subCollection), '')
+    let $collection := 
+        if(empty($collection) or ($collection eq '')) then $tmpDir
+        else $collection
+            (:let $path := string-join(($tmpDir, $subCollection), '')
             return 
                 if(xmldb:collection-available($path)) then $path
                 else xmldb:create-collection($tmpDir, $subCollection)
-        )
+        ):)
+    let $createCollection := 
+        for $coll in tokenize($collection, '/')
+        let $parentColl := substring-before($collection, $coll)
+        return 
+            if(xmldb:collection-available($parentColl || '/' || $coll)) then ''
+            else xmldb:create-collection($parentColl, $coll)
     return 
         util:catch(
             '*', 
-            xmldb:store($dbCollection, $fileName, $contents), 
+            xmldb:store($collection, $fileName, $contents), 
             wega:logToFile('error', string-join(('wega:storeFileInTmpCollection', $util:exception, $util:exception-message), ' ;; '))
         )
 };
@@ -1834,12 +1858,12 @@ declare function wega:changeNamespace($element as element(), $targetNamespace as
 };
 
 (:~
- : Get portrait (i.e. the first picture on the page) from an wikipedia article
+ : Grab images from wikipedia article and cache them locally
  :
  : @author Peter Stadler 
  : @param $pnd the PND number
- : @param $lang the language variable (de|en)
- : @return element the local path to the stored file
+ : @param $lang the language switch (de|en)
+ : @return element <wega:wikipediaImages> as wrapper for zero or more <wega:wikipediaImage><wega:caption>Some caption text</wega:caption><wega:orgUrl>the original external URL</wega:orgUrl><wega:localUrl>the cached local URL</wega:localUrl></wega:wikipediaImage>
  :)
  
 declare function wega:retrieveImagesFromWikipedia($pnd as xs:string, $lang as xs:string) as element(wega:wikipediaImages) {
