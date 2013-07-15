@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml" id="todays-events">
+    <h3>Was geschah am 15.?</h3>
+    <ul>
+        <li>1606:  A009053</li>
+        <li>1609:  A007101</li>
+        <li>1750:  A000827</li>
+        <li>1778:  A000496</li>
+        <li>1778:  A005731</li>
+        <li>1797:  A000604</li>
+        <li>1798:  A007950</li>
+        <li>1809: <a xmlns="" href="/db/apps/WeGA-WebApp/de/A002068">
+                <span class="person" onmouseover="metaDataToTip('A002068', 'de')" onmouseout="UnTip()">CarlMariavon Weber</span>
+            </a>  schreibt an  <a xmlns="" href="/db/apps/WeGA-WebApp/de/A001210">
+                <span class="person" onmouseover="metaDataToTip('A001210', 'de')" onmouseout="UnTip()">Herzogvon Württemberg Ludwig</span>
+            </a>
+        </li>
+        <li>1811: <a xmlns="" href="/db/apps/WeGA-WebApp/de/A002068">
+                <span class="person" onmouseover="metaDataToTip('A002068', 'de')" onmouseout="UnTip()">CarlMariavon Weber</span>
+            </a>  schreibt an  <a xmlns="" href="/db/apps/WeGA-WebApp/de/A000077">
+                <span class="person" onmouseover="metaDataToTip('A000077', 'de')" onmouseout="UnTip()">Heinrich Joseph Baermann</span>
+            </a>
+        </li>
+        <li>1814: <a xmlns="" href="/db/apps/WeGA-WebApp/de/A002068">
+                <span class="person" onmouseover="metaDataToTip('A002068', 'de')" onmouseout="UnTip()">CarlMariavon Weber</span>
+            </a>  schreibt an  <a xmlns="" href="/db/apps/WeGA-WebApp/de/A000584">
+                <span class="person" onmouseover="metaDataToTip('A000584', 'de')" onmouseout="UnTip()">Johann Gänsbacher</span>
+            </a>
+        </li>
+        <li>1815: <a xmlns="" href="/db/apps/WeGA-WebApp/de/A002068">
+                <span class="person" onmouseover="metaDataToTip('A002068', 'de')" onmouseout="UnTip()">CarlMariavon Weber</span>
+            </a>  schreibt an  <a xmlns="" href="/db/apps/WeGA-WebApp/de/A000077">
+                <span class="person" onmouseover="metaDataToTip('A000077', 'de')" onmouseout="UnTip()">Heinrich Joseph Baermann</span>
+            </a>
+        </li>
+        <li>1816: <a xmlns="" href="/db/apps/WeGA-WebApp/de/A002020">
+                <span class="person" onmouseover="metaDataToTip('A002020', 'de')" onmouseout="UnTip()">HeinrichGraf Vitzthum von Eckstädt</span>
+            </a>  schreibt an  <a xmlns="" href="/db/apps/WeGA-WebApp/de/A002021">
+                <span class="person" onmouseover="metaDataToTip('A002021', 'de')" onmouseout="UnTip()">CarlGraf Vitzthum von Eckstädt</span>
+            </a>
+        </li>
+        <li>1817: <a xmlns="" href="/db/apps/WeGA-WebApp/de/A002068">
+                <span class="person" onmouseover="metaDataToTip('A002068', 'de')" onmouseout="UnTip()">CarlMariavon Weber</span>
+            </a>  schreibt an  <a xmlns="" href="/db/apps/WeGA-WebApp/de/A001721">
+                <span class="person" onmouseover="metaDataToTip('A001721', 'de')" onmouseout="UnTip()">Friedrich Schneider</span>
+            </a>
+        </li>
+        <li>1817: <a xmlns="" href="/db/apps/WeGA-WebApp/de/A001802">
+                <span class="person" onmouseover="metaDataToTip('A001802', 'de')" onmouseout="UnTip()">FriedrichLudwig Seidel</span>
+            </a>  schreibt an  <a xmlns="" href="/db/apps/WeGA-WebApp/de/A000940">
+                <span class="person" onmouseover="metaDataToTip('A000940', 'de')" onmouseout="UnTip()">JohannLudwigvon Jordan</span>
+            </a>
+        </li>
+        <li>1818: <a xmlns="" href="/db/apps/WeGA-WebApp/de/A002170">
+                <span class="person" onmouseover="metaDataToTip('A002170', 'de')" onmouseout="UnTip()">JohannGottfried Wohlbrück</span>
+            </a>  schreibt an  <a xmlns="" href="/db/apps/WeGA-WebApp/de/A001709">
+                <span class="person" onmouseover="metaDataToTip('A001709', 'de')" onmouseout="UnTip()">FriedrichLudwig Schmidt</span>
+            </a>
+        </li>
+        <li>1826: <a xmlns="" href="/db/apps/WeGA-WebApp/de/A008869">
+                <span class="person" onmouseover="metaDataToTip('A008869', 'de')" onmouseout="UnTip()">Thomas D'Almaine</span>
+            </a>  schreibt an  <a xmlns="" href="/db/apps/WeGA-WebApp/de/A001003">
+                <span class="person" onmouseover="metaDataToTip('A001003', 'de')" onmouseout="UnTip()">CarlMaximilian Kind</span>
+            </a>
+        </li>
+        <li>1826: <a xmlns="" href="/db/apps/WeGA-WebApp/de/A001693">
+                <span class="person" onmouseover="metaDataToTip('A001693', 'de')" onmouseout="UnTip()">AdolphMartin Schlesinger</span>
+            </a>  schreibt an  <a xmlns="" href="/db/apps/WeGA-WebApp/de/A000213">
+                <span class="person" onmouseover="metaDataToTip('A000213', 'de')" onmouseout="UnTip()">Carolinevon Weber</span>
+            </a>
+        </li>
+        <li>1837:  A007061</li>
+        <li>1857:  A004063</li>
+        <li>1881:  A000184</li>
+    </ul>
+</div>

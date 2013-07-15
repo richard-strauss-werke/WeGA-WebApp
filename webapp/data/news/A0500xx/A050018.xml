@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050018">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Symposion mit dem Detmolder Projekt DIGITALE MUSIKEDITION in Weimar</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2004-02-25T09:20:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>conference</term>
+                    <term>announcement</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Gemeinsam mit dem Projekt "Digitale Musikedition" organisiert die <placeName>
+                        <settlement>Detmolder</settlement>
+                    </placeName> Arbeitsstelle der WeGA ein halbtägiges Symposion zum Thema <hi rend="italic">
+                        <hi rend="bold">Musikalisches Erbe im digitalen Zeitalter - Chancen und Probleme neuer Techniken</hi>
+                    </hi>, das im September während der Internationalen Kongresses der Gesellschaft für Musikforschung in Weimar (<date when="2004-09-16">16.</date>-<date when="2004-09-21">21. September 2004</date>) stattfinden wird. Das Symposion wurde jetzt vom Programmkomitee der <placeName>
+                        <settlement>Weimarer</settlement>
+                    </placeName> Tagung, die unter dem Generalthema <hi rend="italic">Musik und kulturelle Identität</hi> steht, angenommen. Vorstellen werden sich dort exemplarisch mehrere Projekte aus verschiedenen Bereichen, in denen die "neuen Techniken" Anwendung finden. Den Abschluß bildet eine international besetzte Podiumsdiskussion, die unter dem Motto steht: <hi rend="italic">Abschied von tradierten Vorstellungen? - Musikalisches Erbe im digitalen Zeitalter</hi>. Durch die Begegnung unterschiedlichster Teilgebiete und die kritische Reflexion des bisher Erreichten hoffen wir auf Impulse für weitere, koordinierte Unternehmungen. Nähere Informationen zu diesem Symposion finden Sie unter <ref target="http://www.edirom.de">
+                        <hi rend="italic">Edirom.de</hi>
+                    </ref>.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

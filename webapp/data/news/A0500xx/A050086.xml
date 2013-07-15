@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050086">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Dokumente zu Webers Werk und Wirken</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2009-05-15T09:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>
+                    <hi rend="bold">Aktueller Hinweis <date when="2009-05-15">15.5.2009</date>
+                    </hi>: Bitte beachten Sie, dass die Dokumente zur Zeit wegen einer letzten Strukturanpassung im Hinblick auf die Einbindung in die übrigen Teile der Weber-Edition nicht erweitert und auch noch notwendige Korrekturen gegenwärtig nicht vorgenommen werden. Die Dokumente werden in neuer Form voraussichtlich im Herbst 2009 zugänglich sein. Wir bitten dafür um freundliches Verständnis.</p>
+                <p>Die Ausgabe der Dokumente zu <persName key="A002068">Webers</persName> Werk und Wirken soll begleitend zur Ausgabe der Briefe- und Tagebücher erscheinen. Dabei werden handschriftlich überlieferte Dokumente, soweit sie <persName key="A002068">Weber</persName> direkt betreffen und im Zusammenhang der Brief- und Tagebuchedition von Bedeutung sind, in die Ausgabe der Briefe- und Tagebücher integriert. Gedruckte Dokumente zum Werk und Wirken (Aufführungsbesprechungen, Rezensionen, Konzertanzeigen u.a.m.) werden dort jedoch nur sehr knapp zitiert und auf die Auswahl-Veröffentlichung in den Dokumentenbänden bzw. in der hier aufzubauenden Datenbanken verwiesen.</p>
+                <p>Als Veröffentlichung in Angriff genommen ist zunächst eine laufend aktualisierte Internet-Volltext-Fassung der gedruckten Dokumente (vorwiegend von Presse-Veröffentlichungen, die <persName key="A002068">Webers</persName> Wirken in <placeName>
+                        <settlement>Prag</settlement>
+                    </placeName> und <placeName>
+                        <settlement>Dresden</settlement>
+                    </placeName> sowie auf seinen Reisen dokumentieren) parallel zum Erscheinungsplan der Brief- und Tagebuchedition, wobei in diese Version auch Texte aufgenommen werden, die aus Gründen des Umfangs nicht Eingang in die gedruckte Auswahl von Dokumenten finden werden.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

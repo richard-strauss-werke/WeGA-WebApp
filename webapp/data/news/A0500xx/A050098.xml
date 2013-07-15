@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050098">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Dresdner Tagung zu Weber und dem Virtuosentum seiner Zeit</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2011-11-11T09:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>conference</term>
+                    <term>report</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Am 21. und 22. Oktober 2011 fand im Zusammenhang mit dem Mitgliedertreffen der Internationalen Carl-Maria-von-Weber-Gesellschaft in <placeName>Dresden</placeName> und in Zusammenarbeit mit der Hochschule für Musik Dresden ein internationales Symposium zum Thema <hi rend="bold">Carl Maria von Weber und das Virtuosentum seiner Zeit</hi> statt. Nach der Eröffnung durch den Rektor der Hochschule und die Vorsitzende der Weber-Gesellschaft hielt <persName>Manuel Gervink</persName> einen einleitenden Vortrag zum Thema <hi rend="italic">Merkmale des instrumentalen Virtuosentums im 19. Jahrhundert</hi>, in dem er einen weiten Horizont von Problemen mit Begrifflichkeit und Phänomenen des Virtuosen und seiner Beurteilung aufzeigte. In einer ersten Sektion zu Aspekten des Virtuosentums im 19. Jahrhundert referierten dann <persName>Heinz von Loesch</persName> (Berlin) in sehr lebendiger Weise und ganz seinem Thema entsprechend über <hi rend="italic">Weber und der brillante Stil</hi>, wobei er an einigen Beispielen sehr konkret Webers feinsinnigen Umgang mit dem Thema "Spielfiguren" illustrierte. <persName>Michael Kube</persName> (Tübingen) stellte <hi rend="italic">Überlegungen zum Quatuor brillant</hi> als <hi rend="italic">ästhetisches Paradoxon und aufführungspraktische Realität</hi> vor, die er besonders am Beispiel <persName key="A001862">Spohrs</persName> exemplifizierte.</p>
+                <p>Nach einem mit viel Beifall aufgenommenen abendlichen Konzert des Hochschulorchesters, in dem u.a. Webers Musik zu <hi rend="italic">Turandot</hi>, sein <workName key="A020200">
+                        <hi rend="italic">Concertino</hi> für Klarinette</workName> (Solist: <persName>Petr Kubik</persName>) und das <workName key="A020208">2. Klavierkonzert in Es-Dur</workName> (höchst virtuos präsentiert von <persName>Ho Jeong Lee</persName>) erklangen, folgte am nächsten Morgen der 2. Teil des Symposiums zum Thema "Weber und die Anfänge eines virtuosen Konzertbetriebs". Hier sollten drei Berliner Mitarbeiter der WeGA referieren, das abschließende Referat zu Webers Klaviersonaten von <persName>Markus Bandur</persName> musste aus Krankheitsgründen leider ausfallen, wird aber im geplanten Tagungsband enthalten sein. <persName>Frank Ziegler</persName> stellte unter dem Thema <hi rend="italic">Carl Maria von Weber als Klaviervirtuose – eine Bestandsaufnahme</hi> eine umfassende Dokumentation von Webers konzertierender Tätigkeit, aber auch seines Verständnisses von Klavierspiel bzw. dessen Echo in der Sicht der Zeitgenossen vor. <persName>Solveig Schreiter</persName> interpretierte <hi rend="italic">Webers Plan eines "musikalischen Baedeker" als Dokument des öffentlichen Konzertwesens</hi> und brachte die wenigen erhaltenen Quellen insbesondere durch die Kontextualisierung mit vergleichbaren Veröffentlichungen aus anderen Bereichen zum Sprechen.</p>
+                <p>Der 3. Teil des Symposiums wandte sich dann den "Zeitgenossen Webers im System des Virtuosen-Konzertbetriebs" zu. <persName>Hartmut Hein</persName> (Köln) warf in seinem Vortrag <hi rend="italic">Visitenkarten des Virtuosen? Zum Genre der Klaviervariationen zwischen 1790 und 1820</hi> einen kritischen Blick auf die ästhetische Beurteilung von Variationen in der musikwissenschaftlichen Literatur und forderte u.a. eine stärkere Berücksichtigung der Konnotationen der verwendeten Themen sowie der performativen Elemente von Variationen anstatt sich stets nur mit der Satztechnik zu beschäftigen. <persName>Adelina Yefimenko</persName> (München bzw. Lutsk/Ukraine) verglich die beiden "Nationalkomponisten" Weber und Glinka anhand ihres Klavierwerkes und im Kontext des von <persName>Michail Glinka</persName> eher skeptisch betrachteten <hi rend="italic">Virtuosentums in der ersten Hälfte des 19. Jahrhunderts</hi>. Abschließend nahm sich <persName>Valeria Kravchenko</persName> (Charkiv/Ukraine) der <hi rend="italic">Rolle des virtuosen Anfangs in der Entwicklung der neuen romantischen Bildlichkeit</hi> an.</p>
+                <p>Die Referate des Symposiums sollen im kommenden Band 9 der <hi rend="italic">Weber-Studien</hi> im Druck erscheinen.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

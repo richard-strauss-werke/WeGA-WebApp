@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050073">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Weberiana 2009 erschienen</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2009-10-30T09:05:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Inzwischen ist Heft 19 der <hi rend="italic">Weberiana</hi> erschienen und mit 252 Seiten wieder deutlich jenseits der "Heft"-Grenzen. Eine ganze Reihe unterschiedlichster Themen sind diesmal in dem besser als "Jahrbuch" zu bezeichnenden Publikationsorgan zu finden: <hi rend="bold">
+                        <persName>Ludwig Wolf</persName>
+                    </hi> und <hi rend="bold">
+                        <persName>Frank Ziegler</persName>
+                    </hi> berichten über <persName key="A002068">Weber</persName>-Orte in <placeName>
+                        <secFol>München</secFol>
+                    </placeName>, <hi rend="bold">
+                        <persName>Rita Steblin</persName>
+                    </hi> hat die ertragreichen Tagebücher des <placeName>
+                        <settlement>Prager</settlement>
+                    </placeName> Adligen <persName key="A006565">Johann Nepomuk von Chotek</persName> ausgewertet, <hi rend="bold">
+                        <persName>Charlotte Loriot</persName>
+                    </hi> setzt sich mit "Humor und Ironie" in den Opern <persName key="A002068">Webers</persName> auseinander, <hi rend="bold">
+                        <persName>Kathrin Wulfhorst</persName>
+                    </hi> deckt interessante intertextuelle Bezüge in den <!-- TODO: workName -->Freischütz-Texten von <persName key="A000040">Johann August Apel</persName> und <persName key="A001002">Friedrich Kind</persName> auf, und schließlich haben <hi rend="bold">
+                        <persName>Eveline Bartlitz</persName>
+                    </hi> und <hi rend="bold">
+                        <persName>Frank Ziegler</persName>
+                    </hi> gemeinsam ein umfang- und detailreiches Portrait von <persName key="A002068">Webers</persName> Schüler <persName key="A000129">Julius Benedict</persName> verfasst. Auch eine umfangreiche Besprechung des ersten Bandes der neuen <persName key="A003371">Mendelssohn</persName>-Briefausgabe mit einem Schwerpunkt auf der Beziehung zu <persName key="A002068">Weber</persName> aus der Feder von <persName>Frank Ziegler</persName> findet sich in dieser Nr. 19. Aufführungsberichte, Tonträger-Neuerscheinungen und etliche kleinere Artikel runden den Band ab. Besonders erfreut war die Redaktion diesmal über die rege Beteiligung externer Beiträger - möge sich diese Tendenz in den kommenden Jahren fortsetzen!</p>
+            </div>
+        </body>
+    </text>
+</TEI>

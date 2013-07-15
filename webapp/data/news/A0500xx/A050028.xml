@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050028">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Neues Internet-Forum Muwimedial.de jetzt im Netz</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2005-05-21T09:27:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>sig</term>
+                    <term>report</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Die Mitarbeiter des <placeName>
+                        <settlement>Detmolder</settlement>
+                    </placeName>
+                    <hi rend="italic">edirom-</hi>Projekts haben jetzt ein neues Internet-Forum eingerichtet, das als Diskussionsort für alle Probleme rund um digitale Editionen oder neue Medien in der Musikwissenschaft dienen soll. Sie finden dieses Forum unter der Adresse <ref target="http://www.muwimedial.de">www.muwimedial.de</ref>. Zur aktiven Teilnahme ist eine Anmeldung erforderlich, die online erledigt werden kann. Das Forum will außerdem als Informationsplattform dienen; daher ist eine (gegenwärtig noch im Aufbau befindliche) ausführliche und kommentierte Link-Sammlung aufgenommen worden. Ferner soll laufend über aktuelle Entwicklungen berichtet werden - hierzu wird herzlich um Rückmeldung oder Weitergabe von Informationen gebeten. Wir hoffen auf eine rege Teilnahme an den Diskussionen, da eine engere Zusammenarbeit der Projekte zu den dringenden Desideraten gehört.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

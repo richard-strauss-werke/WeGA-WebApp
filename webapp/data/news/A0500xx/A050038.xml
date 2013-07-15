@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050038">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Weberiana Heft 16 (2006) erschienen</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2006-09-15T09:33:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Soeben ist das neueste Heft der <hi rend="italic">
+                        <hi rend="bold">Weberiana</hi>
+                    </hi> erschienen. Im Aufsatzteil findet sich zu Beginn ein Beitrag von <hi rend="bold">Eveline Bartlitz</hi>, die sich aus Anlaß des 600jährigen Ortsjubiläums von <placeName>
+                        <settlement>Hosterwitz</settlement>
+                    </placeName> in diesem Jahr der Geschichte des Weber-Museums in <placeName>
+                        <settlement>Dresden-Hosterwitz</settlement>
+                    </placeName> gewidmet hat.&#160; <hi rend="bold">Frank Ziegler</hi> setzt seine intensive und mit zahlreichen neuen Details aufwartende Aufarbeitung der Familiengeschichte fort und beschäftigt sich mit <persName key="A002074">Franz Anton von Weber</persName> und dem <placeName>
+                        <settlement>Eutiner</settlement>
+                    </placeName> Theater zwischen <date from="1779-01-01" to="1785-12-31">1779 und 1785</date>. <hi rend="bold">Solveig Schreiter</hi> berichtet unter dem Titel "Dornröschen in der falschen Hecke. Neues über <persName key="A002068">Webers</persName> musikalischen Baedeker" über ein wiederaufgetauchtes (oder besser gesagt: neu zugeordnetes) Notizblatt <persName key="A002068">Webers</persName>, das zu dem Plan eines "Noth- und Hülfsbüchleins für reisende Tonkünstler" aus dem Jahr <date when="1811">1811</date> gehört. Notizen aus den Arbeitsstellen und zahlreiche Aufführungsberichte sowie einige Rezensionen ergänzen das Heft, das wiederum von Hans Schneider in <placeName>
+                        <settlement>Tutzing</settlement>
+                    </placeName> verlegt wurde.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

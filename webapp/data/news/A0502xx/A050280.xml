@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050280">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Klavierauszüge zu den beiden Klarinettenkonzerten liegen vor</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2012-04-21T14:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Die von <persName>Frank Heidlberger</persName> (University of North-Texas) im Anschluss an die Veröffentlichung des Gesamtausgabenbandes Serie V, Bd. 6 erarbeiteten <hi rend="bold">Klavierauszüge zu Webers beiden Klarinettenkonzerten</hi> liegen inzwischen vor. In der Reihe <hi rend="italic">Klarinetten-Bibliothek</hi> der Edition Schott wurde das <workName key="A020201">Konzert Nr. 1 in f-Moll (WeV N.11)</workName> unter der Nummer <ref target="http://www.schott-musik.de/shop/1/show,267968.html">KLB 78 (ISMN 979-0-001-17238-7)</ref> publiziert, das <workName key="A020226">Konzert Nr. 2 in Es-Dur (WeV N.13)</workName> unter der Nummer <ref target="http://www.schott-musik.de/shop/1/show,268021.html">KLB 79 (ISMN 979-0-001-17239-4)</ref>. Die Konzerte enthalten jeweils ein spezielles Vorwort in deutscher und englischer Sprache, das auch auf die jeweils wichtigsten Probleme bei der Interpretation dieser Werke eingeht. Im Klavierauszug selbst ist dort, wo es Abweichungen zwischen der autographen Solostimme und jener des Erstdrucks gibt, ein zusätzliches System mit der Fassung des Erstdrucks eingefügt; für den Klarinettisten sind die beiden Versionen jeweils komplett als beigelegte Solostimme vorhanden. Es ist zu hoffen, dass diese beiden Editionen, die jeweils zum Preis von 14,99 Euro zu haben sind, in Kombination mit der Gesamtausgabe und der Edirom-Edition rasch dazu beitragen, dass über die Interpretation dieser Konzerte in den Kreisen der Ausführenden wieder eifrig diskutiert wird und damit neue Impulse für die Konzertpraxis gegeben werden, zumal von den Mitarbeitern der Gesamtausgabe auch ein komplettes Aufführungsmaterial erstellt wurde.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

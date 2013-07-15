@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A110465">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="de">Weber-Studien Bd. 6</title>
+                <title level="a" xml:lang="en">Weber-Studies vol. 6</title>
+                <author key="A009001">Peter Stadler</author>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>WeGA elektronisch</publisher>
+                <availability status="free">
+                    <p>2012, Carl-Maria-von-Weber-Gesamtausgabe, Detmold</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m" type="main">Carl Maria von Weber als Schriftsteller</title>
+                        <title level="m" type="sub">Mit einer in Zusammenarbeit mit der Weber-Gesamtausgabe
+              erarbeiteten quellenkritischen Neuausgabe der Romanfragmente „Tonkünstlers
+              Leben“</title>
+                        <author>Gerhard Jaiser</author>
+                        <imprint>
+                            <pubPlace>Mainz</pubPlace>
+                            <date when="2001">2001</date>
+                        </imprint>
+                    </monogr>
+                    <series>
+                        <title level="s">Weber-Studien</title>
+                        <editor>Gerhard Allroggen</editor>
+                        <editor key="A009000">Joachim Veit</editor>
+                        <biblScope type="vol">6</biblScope>
+                    </series>
+                    <idno type="isbn-13">978-3-7957-0382-0</idno>
+                    <idno type="isbn-10">3-7957-0382-4</idno>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc status="approved">
+            <change who="PS" when="2012-03-08">initial eingerichtet</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:lang="de">
+                <head>Carl Maria von Weber als Schriftsteller</head>
+                <p>Gerhard Jaiser, <hi rend="italic">Carl Maria von Weber als Schriftsteller. Mit einer in
+            Zusammenarbeit mit der Weber-Gesamtausgabe erarbeiteten quellenkritischen Neuausgabe der
+            Romanfragmente „Tonkünstlers Leben“</hi>, Mainz 2001. VIII, 257 S.<lb/> Bestellnummer:
+          ED 9296; ISBN 3-7957-0382-4</p>
+                <div>
+                    <p>
+                        <persName key="A002068">Webers</persName> umfangreiches schriftstellerisches Werk
+            spiegelt nicht nur die ästhetischen Positionen des Komponisten im Verhältnis zu seinen
+            Zeitgenossen wider. Vielmehr stehen seine Schriften in einer komplexen formalen und
+            inhaltlichen Beziehung zu den musikalischen Werken und sind somit für das Verständnis
+            der Künstlerpersönlichkeit <persName key="A002068">Weber</persName> unverzichtbar.</p>
+                    <p>Die vorliegende Arbeit behandelt alle Bereiche seiner schriftstellerischen Arbeit; auch
+            Briefe und Tagebücher, die zahlreiche Verbindungen zu den Schriften aufweisen, werden
+            einbezogen.</p>
+                    <p>Im Mittelpunkt stehen die Fragmente zum Roman „<workName>Tonkünstlers
+            Leben</workName>“, die als künstlerisches Manifest interpretiert werden können. Diese
+            Fragmente werden im Anhang der Arbeit in einer kommentierten kritischen Neuausgabe
+            vorgelegt, die in Verbindung mit der Weber-Gesamtausgabe erarbeitet wurde.</p>
+                    <p>Die Arbeit wurde im November 1998 von der Universität Stuttgart als Dissertation
+            angenommen und für die Druckfassung leicht überarbeitet.</p>
+                </div>
+                <div>
+                    <head>Inhaltsverzeichnis</head>
+                    <list>
+                        <item>I. Einleitung:<lb/>
+                            <list>
+                                <item>Forschungsüberblick, S. 1</item>
+                                <item>Zielsetzung, S. 8</item>
+                                <item>Textgrundlagen, S. 10</item>
+                            </list>
+                        </item>
+                        <item>II. Weber als Schriftsteller: <list>
+                                <item>Kritische Schriften <list>
+                                        <item>Zur Entwicklung der Musikkritik, S. 14</item>
+                                        <item>Erste Kritiken, S. 15</item>
+                                        <item>Der Harmonische Verein, S. 19</item>
+                                        <item>Höhepunkt der Tätigkeit als Kritiker, S. 24</item>
+                                        <item>Madame Schönberger als Tenoristinn, S. 27</item>
+                                        <item>Städtebilder, S. 35</item>
+                                        <item>Einige Bemerkungen über Kritikerwesen überhaupt, S. 37</item>
+                                        <item>Dramatisch-musikalische Notizen, S. 43</item>
+                                        <item>In eigener Sache, S. 53</item>
+                                        <item>Zusammenfassung, S. 56</item>
+                                    </list>
+                                </item>
+                                <item>Briefe und Tagebücher <list>
+                                        <item>Liebschaftliche Korrespondenz eines melancholischen Hanswurstes mit einem
+                      musikalischen Brumbären, S. 58</item>
+                                        <item>Exkurs: Webers Notizen und Ausgabe Buch, S. 64</item>
+                                        <item>Freundschaft in Briefen, S. 68</item>
+                                        <item>Privatbrief – literarischer Brief, S. 78</item>
+                                        <item>Tonkünstlers Leben, S. 82</item>
+                                    </list>
+                                </item>
+                            </list>
+                        </item>
+                        <item>III. Musik und Literatur: <list>
+                                <item>Zum Verhältnis zwischen Literatur und Musik, S. 105</item>
+                                <item>Programmusik, S. 106</item>
+                                <item>Webers Vokalkompositionen, S. 111</item>
+                                <item>Absolute Musik – romantische Musik?, S. 120</item>
+                                <item>Webers Libretti, S. 122</item>
+                                <item>Exkurs: Musik und Sprache, S. 132</item>
+                            </list>
+                        </item>
+                        <item>IV. Webers Ästhetik: <list>
+                                <item>Weber und Schelling, S. 137</item>
+                                <item>Idealismus und Romantik, S. 141</item>
+                                <item>Weber und Wagner, S. 144</item>
+                            </list>
+                        </item>
+                        <item>V. Zusammenfassung, S. 148</item>
+                        <item>VI. Literaturverzeichnis, S. 152</item>
+                        <item>VII. Abbildungsverzeichnis, S. 164</item>
+                        <item>Anhang:<lb/> Fragmente zu Tonkünstlers Leben<lb/> Textteil, S. 167<lb/> Kritischer
+              Apparat, S. 237 </item>
+                        <item>Register der erwähnten Personen und Werke, S. 253</item>
+                    </list>
+                </div>
+            </div>
+            <div xml:lang="en">
+                <head>Carl Maria von Weber als Schriftsteller</head>
+                <p>Gerhard Jaiser, <hi rend="italic">Carl Maria von Weber als Schriftsteller. Mit einer in
+          Zusammenarbeit mit der Weber-Gesamtausgabe erarbeiteten quellenkritischen Neuausgabe der
+          Romanfragmente „Tonkünstlers Leben“</hi>, Mainz 2001. VIII, 257 pages<lb/> Order no.:
+          ED 9296; ISBN 3-7957-0382-4</p>
+        <!--<div></div>-->
+                <div>
+                    <head>Table of contents</head>
+                    <list>
+                        <item>I. Einleitung:<lb/>
+                            <list>
+                                <item>Forschungsüberblick, p. 1</item>
+                                <item>Zielsetzung, p. 8</item>
+                                <item>Textgrundlagen, p. 10</item>
+                            </list>
+                        </item>
+                        <item>II. Weber als Schriftsteller: <list>
+                                <item>Kritische Schriften <list>
+                                        <item>Zur Entwicklung der Musikkritik, p. 14</item>
+                                        <item>Erste Kritiken, p. 15</item>
+                                        <item>Der Harmonische Verein, p. 19</item>
+                                        <item>Höhepunkt der Tätigkeit als Kritiker, p. 24</item>
+                                        <item>Madame Schönberger als Tenoristinn, p. 27</item>
+                                        <item>Städtebilder, p. 35</item>
+                                        <item>Einige Bemerkungen über Kritikerwesen überhaupt, p. 37</item>
+                                        <item>Dramatisch-musikalische Notizen, p. 43</item>
+                                        <item>In eigener Sache, p. 53</item>
+                                        <item>Zusammenfassung, p. 56</item>
+                                    </list>
+                                </item>
+                                <item>Briefe und Tagebücher <list>
+                                        <item>Liebschaftliche Korrespondenz eines melancholischen Hanswurstes mit einem
+                  musikalischen Brumbären, p. 58</item>
+                                        <item>Exkurs: Webers Notizen und Ausgabe Buch, p. 64</item>
+                                        <item>Freundschaft in Briefen, p. 68</item>
+                                        <item>Privatbrief – literarischer Brief, p. 78</item>
+                                        <item>Tonkünstlers Leben, p. 82</item>
+                                    </list>
+                                </item>
+                            </list>
+                        </item>
+                        <item>III. Musik und Literatur: <list>
+                                <item>Zum Verhältnis zwischen Literatur und Musik, p. 105</item>
+                                <item>Programmusik, p. 106</item>
+                                <item>Webers Vokalkompositionen, p. 111</item>
+                                <item>Absolute Musik – romantische Musik?, p. 120</item>
+                                <item>Webers Libretti, p. 122</item>
+                                <item>Exkurs: Musik und Sprache, p. 132</item>
+                            </list>
+                        </item>
+                        <item>IV. Webers Ästhetik: <list>
+                                <item>Weber und Schelling, p. 137</item>
+                                <item>Idealismus und Romantik, p. 141</item>
+                                <item>Weber und Wagner, p. 144</item>
+                            </list>
+                        </item>
+                        <item>V. Zusammenfassung, p. 148</item>
+                        <item>VI. Literaturverzeichnis, p. 152</item>
+                        <item>VII. Abbildungsverzeichnis, p. 164</item>
+                        <item>Anhang:<lb/> Fragmente zu Tonkünstlers Leben<lb/> Textteil, p. 167<lb/> Kritischer
+              Apparat, p. 237 </item>
+                        <item>Register der erwähnten Personen und Werke, p. 253</item>
+                    </list>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

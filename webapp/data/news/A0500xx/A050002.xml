@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050002">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Faksimile-Edition vom Feinsten</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2003-03-24T09:31:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Nach vier Wochen unermüdlichem Einsatz ist es soweit: Im Verlag <hi rend="italic">Allitera</hi> München erschien soeben das 120 Seiten umfassende Bändchen <hi rend="bold">
+                        <hi rend="italic">"...die Hoffnung muß das Beste thun." Die Emser Briefe Carl Maria von Webers an seine Frau.</hi> Herausgegeben von den Mitarbeitern der Carl-Maria-von-Weber-Gesamtausgabe, Joachim Veit (<placeName>
+                            <settlement>Detmold</settlement>
+                        </placeName>) mit Eveline Bartlitz und Dagmar Beck (<placeName>
+                            <settlement>Berlin</settlement>
+                        </placeName>)</hi>, ISBN-3-935877-91-9.<lb/>
+    Das Besondere an diesem Band: Alle abgedruckten Briefe von <persName key="A002068">Webers</persName> Emser Kur <date when="1825">1825</date> sind <hi rend="bold">vollständig in Farbe faksimiliert</hi>, dazu kommen Ausschnitte aus dem Tagebuch und etliche zusätzliche Abbildungen. Entstanden ist ein kleiner bibliophiler Band - und das in dem neuen <hi rend="bold">
+                        <hi rend="italic">Books-on-Demand</hi>-Verfahren</hi>, das damit einmal mehr seine große Leistungsfähigkeit unter Beweis stellt. Erstmals wurden auf der <placeName>
+                        <settlement>Leipziger</settlement>
+                    </placeName> Buchmesse von Dr. Wolfram Göbel, dem Leiter der Buch&amp;medi@GmbH, <placeName>
+                        <settlement>München</settlement>
+                    </placeName>, einige Bücher mit diesem neuen Farb-Faksimile-Verfahren präsentiert. Die Mitarbeiter der Weber-Ausgabe haben sich sehr darüber gefreut, durch die neue Veröffentlichung dieses innovative Verfahren mit vorstellen zu dürfen, auch wenn leider die Entwicklungskosten noch keine attraktive Preisgestaltung ermöglichten. Wie bei allen neuen Techniken, dürfte das aber eine Frage der Zeit sein, und für wissenschaftliche Editionen tun sich auf jeden Fall hier völlig neue Perspektiven auf.<lb/>
+    Im Zuge der zunehmenden Vertrautheit mit neuen Techniken wurden alle <hi rend="bold">Korrekturen auf elektronischem Wege</hi> übermittelt, d. h. die notwendigen Änderungen oder Korrekturanmerkungen wurden direkt in <hi rend="bold">PDF</hi>-Dateien eingefügt - ein Verfahren, das die Mitarbeiter der WeGA inzwischen auch mit Erfolg bei Korrekturen im Notensatz anwenden, spart dies doch die für Zweit- und Drittkorrekturen (oder Sicherungskopien) notwendige Kopier- und "Buntmal"-Arbeit. Mehr dazu demächst in der Rubrik "Digitale Edition".<lb/>
+    Wenn Sie Nähreres über den Band wissen möchten, informieren Sie sich bitte unter <ref target="http://www.allitera.de">www.allitera.de</ref>
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

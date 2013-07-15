@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050104">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Digitale Edition Version 1.1 veröffentlicht</title>
+                <author key="A009001">Peter Stadler</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2011-11-18T22:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>release</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Die Webseiten der Carl-Maria-von-Weber-Gesamtausgabe wurden heute in der Version 1.1 veröffentlicht. 
+               Das neue release bringt neben zahlreichen neu angelegten bzw. überarbeiteten Daten 
+               (mehr als 1100 Briefe, 700 Personen und 600 Schriften sowie knapp zwei Jahrgänge Tagebuch) 
+               auch zahlreiche Erweiterungen der Oberfläche:</p>
+                <list>
+                    <item>Feature: HTML Metaangaben nach Dublin Core</item>
+                    <item>Feature: Personenansicht – Anzeige des ADB-Eintrags von Personen in eigenem Tab</item>
+                    <item>Feature: Personenansicht – Verlinkung zu weiteren Personendatenrepositorien via PND-Beacon in eigenem Tab</item>
+                    <item>Feature: Sitemap eingerichtet zur besseren Indizierung durch Suchmaschinen</item>
+                    <item>Feature: Unterstützung von AJAX Crawling zur besseren Indizierung durch Suchmaschinen</item>
+                    <item>Feature: Anzeige von Fremdwerken in Tooltips</item>
+                    <item>Fix: Suche – Einträge in "tei:occupation" werden jetzt ebenfalls durchsucht</item>
+                    <item>Fix: "tei:label" werden jetzt wieder angezeigt</item>
+                    <item>Fix: Unterscheidung zwischen (nur) erschlossenen Briefen und solchen, die noch in Bearbeitung sind</item>
+                    <item>Fix: Diverse Überarbeitungen am Filter-Popup</item>
+                    <item>Fix: Wikipedia-Lizenzhinweise überarbeitet</item>
+                </list>
+            </div>
+        </body>
+    </text>
+</TEI>

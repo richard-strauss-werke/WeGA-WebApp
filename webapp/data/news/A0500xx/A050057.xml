@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050057">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Tagungsbericht Paderborn geplant</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2008-04-02T09:33:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Die Beiträge der <placeName>
+                        <settlement>Paderborner</settlement>
+                    </placeName>
+                    <hi rend="bold">Tagung „Digitale Edition zwischen Experiment und Standardisierung“</hi> (<date from="2007-12-06" to="2007-12-08">6.–8. Dezember 2007</date> im Heinz-Nixdorf-Museums-Forum) sollen nun in der Reihe <hi rend="italic">
+                        <hi rend="bold">Beihefte zu Edition</hi>
+                    </hi> veröffentlicht werden. Die Edirom-Crew wird die Veröffentlichung im Laufe des Jahres vorbereiten. Dokumentiert werden sowohl die einzelnen Referate als auch die Diskussionen, so daß ein guter Überblick über die aktuellen Tendenzen im Bereich der digitalen Edition entstehen dürfte.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

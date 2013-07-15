@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050019">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Wiederentdeckt: Ein vollständiges Exemplar der SCHREIBTAFEL zur Ergänzung der Schriften des HARMONISCHEN VEREINS in Weber-Studien 4/1</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2004-03-18T09:18:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>source</term>
+                    <term>announcement</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Als <date when="1998">1998</date> Band 4/1 der <hi rend="italic">Weber-Studien</hi> mit dem ersten Teil der Schriften des von <persName key="A002068">Weber</persName> mitbegründeten "Harmonischen Vereins" erschien, war eine fieberhafte Suche nach einer Zeitungsbeilage vorausgegangen, in der die Vereinsbrüder im Jahr <date when="1810">1810</date> fleißig veröffentlicht hatten: Von der sogenannten <hi rend="italic">
+                        <hi rend="bold">Schreibtafel von Mannheim</hi>
+                    </hi>, die als <hi rend="bold">Ein-Blatt-Beilage</hi> zu der von <persName key="A000982">Ferdinand Kaufmann</persName> herausgegebenen <hi rend="bold">
+                        <hi rend="italic">Rheinischen Correspondenz</hi>
+                    </hi> erschien, ließen sich zum damaligen Zeitpunkt nur die Nummern 1-16 (in <placeName>
+                        <settlement>Mannheim</settlement>
+                    </placeName> und <placeName>
+                        <settlement>Heidlberg</settlement>
+                    </placeName>) sowie als Einzelblatt die Nr. 37 (<placeName>
+                        <settlement>Berlin</settlement>
+                    </placeName>, <persName key="A001313">Meyerbeer</persName>-Nachlaß) nachweisen, obwohl aus sekundären Zeugnissen hervorging, daß mindestens 75 Nummern zwischen <date from="1810-06-30" to="1811-01-31">30. Juni und Ende 1810 oder Anfang 1811</date> erschienen sein mußten. Trotz intensiver Nachfragen im Rhein-Main-Raum sowie an diversen anderen Stellen war kein Exemplar dieser Beilage mehr aufzutreiben, so daß sich Oliver Huck und Joachim Veit schließlich entschlossen, die Suche aufzugeben und den Band mit dem damaligen Kenntnisstand zu publizieren. Nun hat Frank Ziegler bei einer eher zufälligen bibliographischen Recherche ein vollständiges, 76 Nummern umfaßendes, Exemplar der Beilage entdeckt: in der <hi rend="bold">Herzogin-Anna-Amalia-Bibliothek in <placeName>
+                            <settlement>Weimar</settlement>
+                        </placeName>
+                    </hi>! Man mag sich fragen, wie ausgerechnet hier ein vollständiges Exemplar dieser unscheinbaren Beilage erhalten blieb - wir waren jedenfalls sehr glücklich auf diese Weise die fehlenden oder aus bloßen Zitaten unvollständig wiedergegebenen Texte nun ergänzen zu können. Sie werden <!-- TODO -->
+                    <ref target="index.php?id=46">hier auf der Homepage der WeGA erstmals wieder veröffentlicht</ref>, zunächst noch in unkommentierter Form. Hinzu kommen einige wenige "verdächtige" Texte, die vermutlich aus dem Umkreis der Brüder stammen. Eine kommentierende Ergänzung zu dieser Textwiedergabe wird baldmöglichst folgen.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

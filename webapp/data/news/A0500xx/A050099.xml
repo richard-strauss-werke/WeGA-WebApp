@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050099">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Bandsalat – Aktuelle Planungen bei den Veröffentlichungen</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2011-11-06T09:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>publication</term>
+                    <term>report</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Die <hi rend="bold">Bandproduktion und -planung</hi> hält die Mitarbeiter der WeGA in
+               Atem. Mit Hochdruck wird augenblicklich an der Fertigstellung der beiden
+               Opernveröffentlichungen gearbeitet: <hi rend="italic">Silvana</hi> (WeV C.5), hg. von Markus
+               Bandur, und <hi rend="italic">Abu Hassan</hi> (WeV C.6), hg. von Joachim Veit – die Redaktion
+               hat in beiden Fällen Frank Ziegler, der mit dem Kauf roter Korrekturstifte kaum
+               nachkommt... Während bei <hi rend="italic">Abu Hassan</hi> trotz der Anhänge ein
+               einziger, umfangreicherer Band vorgelegt wird, sind es bei dem seine Sprache
+               wiederfindenden Waldmädchen gleich drei. Parallel dazu ist die Arbeit an weiteren
+               Bänden angelaufen bzw. fortgesetzt worden: Frisch aufgenommen wurden z.B. die
+               Editionsarbeiten am letzten Kammermusikband, mit dem diese Serie dann im kommenden
+               Jahr abgeschlossen werden kann. Darin hat Dr. Claudia Theis, die u.a. durch ihre
+               Editionen in der Johannn-Hermann-Schein-Gesamtausgabe und die Mitwirkung bei der
+               Redaktion der Meyerbeer-Gesamtausgabe über einschlägige Erfahrungen verfügt,  als
+               externe Bandherausgeberin die Arbeit an den <hi rend="italic">Dole-vise-</hi>Violin-Variationen (WeV P.4) und den <hi rend="italic">
+                        <workName key="A020206">Six Sonates progressives</workName>
+                    </hi> (WeV P.5) übernommen. Fertigzustellen ist im
+               kommenden Frühjahr auch der Band mit Webers Bearbeitungen von Einlagen in fremde
+               Bühnenwerke und den <hi rend="italic">Schottischen Liedern</hi> (WeV U.16) – ein Band, der von
+               Markus Bandur, Marjorie Rycroft (Glasgow) und Frank Ziegler ediert wird. Markus
+               Bandur begann außerdem mit den Vorarbeiten zur Edition der vier <rs type="work">Klaviersonaten</rs>
+               Webers. Schließlich startete der Herausgeber der Weber-Gesamtausgabe, Prof. Dr.
+               Gerhard Allroggen (Hamburg), gemeinsam mit Raffaele Viglianti (King's College,
+               London) in diesem Jahr die Arbeit an der Herausgabe der Partitur des <hi rend="italic">
+                        <workName key="A020040">Freischütz</workName>
+                    </hi>, dessen Print-Edition im Laufe des kommenden Jahres
+               abgeschlossen werden soll. Vorbereitend hierzu sind die Dokumente auf der Website der
+               WeGA in diesem Bereich wesentlich erweitert worden: Das bevorstehende Release 1.1
+               wird nicht nur weitere Jahrgänge des Tagebuchs aus der Zeit der Komposition dieser
+               Oper und die vollständigen Brieftexte dieser Zeit enthalten, sondern auch eine
+               Vielzahl von Texten zur Rezeption des <hi rend="italic">Freischütz</hi>. In der
+               überwiegenden Zahl der Fälle werden dabei zunächst nur die Texte (mit
+               Basiskommentaren) zur Verfügung gestellt, die Aufarbeitung erfolgt parallel zu den
+               Editionsarbeiten selbst.</p>
+                <p>Doch damit nicht genug: Der Band mit Webers <hi rend="italic">
+                        <workName key="A020008">Ersten Ton</workName>
+                    </hi> (WeV B.2) und der <hi rend="italic">
+                        <workName key="A020015">Hymne</workName>
+                    </hi> (WeV B.8), für den durch die Dresdner Wiederaufführung des <hi rend="italic">Ersten Tons</hi> bereits eine Partitur vorliegt (in der Editon von Frank Ziegler) soll im Laufe des neuen Jahres durch Johannes Keppers Ausgabe der <hi rend="italic">Hymne</hi> ergänzt werden, damit auch dieser Band, der sicherlich für die Praxis große Bedeutung hat, bald veröffentlicht werden kann. Daneben ist auch die Herstellung diverser Aufführungsmaterialien zu betreuen. Wer den kleinen Mitarbeiterstab der WeGA vor Augen hat, muss sich allerdings fragen, wie dieses gewaltige Pensum bewältigt werden kann – Krankheiten bleiben daher für eine ganze Weile "verboten" und "freiwillige Hilfe" wäre höchst willkommen, denn schließlich soll auch noch Band 9 der <hi rend="italic">Weber-Studien</hi> mit den Tagungsberichten Gotha 2010 und Dresden 2011 im kommenden Jahr erscheinen.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

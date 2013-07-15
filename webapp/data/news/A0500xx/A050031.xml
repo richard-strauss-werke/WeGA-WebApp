@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050031">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Weberiana Heft 15 (Sommer 2005) erschienen</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2005-09-24T09:18:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Die <hi rend="italic">Weberiana</hi>, das Mitteilungsblatt der Internationalen Carl-Maria-von-Weber-Gesellschaft, wächst und wächst. Das neueste, im Verlag Schneider/<placeName>
+                        <settlement>Tutzing</settlement>
+                    </placeName> erschiene Heft übertrifft mit 200 Seiten wiederum seinen Vorgänger. Neben den Notizen, Arbeitsstellen- und Aufführungsberichten, Besprechungen von Neuerscheinungen und etlichen kleineren Beiträgen enthält das 15. Heft eine Fortsetzung der theaterwissenschaftlichen Forschungen Frank Zieglers zun den Mitgliedern der Weber-Familie, diesmal unter dem Titel "Die Webers in <placeName>
+                        <settlement>Lauchstädt</settlement>
+                    </placeName> - Streiflichter zur Familien- und regionalen Theatergeschichte". Günther Naumann verfolgt die Schicksale einer von <persName key="A002068">Weber</persName> unterrichteten Sängerin, die später auch Kontakte zum Hause Mendelssohn hatte; Solveig Schreiter hat den Briefwechsel zwischen <persName key="A000914">Friedrich Wilhelm Jähns</persName> und <persName key="A007307">Georg Eduard Goltermann</persName> ausgewertet und entdeckte dabei manches für die Überlieferung der Werke <persName key="A002068">Webers</persName> wichtige Detail. Abgedruckt ist ferner anläßlich der letztjährigen Jahrestagung der Gesellschaft in <placeName>
+                        <settlement>Ermlitz</settlement>
+                    </placeName> bei <placeName>
+                        <settlement>Leipzig</settlement>
+                    </placeName> ein <date when="2001">2001</date> dort gehaltenes Referat von Joachim Veit zur Begegnung <persName key="A002068">Webers</persName> mit <persName key="A000040">Johann August Apel</persName>. Das Heft enthält auch die Erstveröffentlichung eines kürzlich von der Staatsbibliothek zu <placeName>
+                        <settlement>Berlin</settlement>
+                    </placeName> erworbenen höchst interessanten Brief-Autographs. Schließlich kommt in diesem Heft in einer Miszelle von Eveline Bartlitz sogar das <persName key="A001685">Schiller</persName>-Jahr zu Ehren.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

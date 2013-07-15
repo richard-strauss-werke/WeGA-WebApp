@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050221">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Version 1.0.1 veröffentlicht</title>
+                <author key="A009001">Peter Stadler</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2011-05-31T13:20:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>release</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Heute wurden die Webseiten der Carl-Maria-von-Weber-Gesamtausgabe in der Version 1.0.1 veröffentlicht. 
+            Dabei handelt es sich um ein "Zwischenrelease" mit kleineren Korrekturen und Erweiterungen:</p>
+                <list>
+                    <item>Feature: <ref target="http://www.weber-gesamtausgabe.de/pnd_beacon.txt">PND Beacon</ref> und Resolver hinzugefügt</item>
+                    <item>Feature: KWIC aktiviert (allerdings ohne Hervorhebung der Resultate, da diese noch "buggy" ist)</item>
+                    <item>Feature: Währungssymbol ƒ für Gulden eingeführt (siehe z.B. im <ref target="http://www.weber-gesamtausgabe.de/de/A002068/Tagebücher/A060315">Tagebuch</ref>)</item>
+                    <item>Fix: 404 Fehlerseite liefert nun korrekt den 404 Status-Code</item>
+                    <item>Fix: Briefeinzelansicht – Korrespondenzstelle überarbeitet, so dass jetzt die direkte Korrespondenzkette und die absolute Chronologie der Briefe unterscheidbar sind</item>
+                    <item>Fix: Registerseite – Chronologischer Zugriff gefixt (Zeitraum zwischen 1870 und 2010 war nicht auswählbar)</item>
+                    <item>Fix: Registerseite – Größe des Filterpopups wird nun dynamisch berechnet, so dass alle Schaltflächen auch bei kleinen Bildschirmen erreichbar sind</item>
+                    <item>Fix: Werk-Vorschau mit Untertiteln</item>
+                    <item>Fix: Zeilenhöhe etwas erhöht, damit Asteriske keine Kommata o.ä. der darüberliegenden Zeile verdecken</item>
+                    <item>Diverse Überarbeitungen von Texten</item>
+                </list>
+            </div>
+        </body>
+    </text>
+</TEI>

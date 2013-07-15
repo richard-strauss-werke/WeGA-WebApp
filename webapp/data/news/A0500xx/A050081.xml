@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050081">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Klavierauszugband Serie VIII, Bd. 1 erschienen</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2011-01-22T09:05:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>publication</term>
+                    <term>announcement</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Noch vor <date when="2010-12-25">Weihnachten 2010</date> ist als <hi rend="bold">Serie VIII, Bd. 1</hi> der Weber-Gesamtausgabe der <workName key="A020037">Klavierauszug zur Oper <hi rend="bold">Silvana</hi>
+                    </workName> erschienen, herausgegeben von Markus Bandur. Es handelt sich hierbei nicht um einen vollständigen Auszug der Oper, sondern <persName key="A002068">Weber</persName> hat hier offensichtlich nur jene Nummern der Oper dem Verleger übergeben, die er für das häusliche Musizieren und damit für einen entsprechenden Absatz geeigenet hielt. Zwei der Nummern (6 und 14) waren bereits separat nach der Uraufführung <date when="1810">1810</date> in <placeName>
+                        <settlement>Frankfurt am Main</settlement>
+                    </placeName> im Druck erschienen, die übrigen ergänzte <persName key="A002068">Weber</persName> nach der <placeName>
+                        <settlement>Berliner</settlement>
+                    </placeName> Aufführung <date when="1812">1812</date> und überließ den Auszug <persName key="A001693">Adolph Martin Schlesinger</persName> zum Druck. Die Neuedition umfasst mit ausführlichem Vorwort und Abbildungsanhang XXII und 179 Seiten. Ein <hi rend="bold">vollständiger Auszug</hi> des dreiaktigen Werks auf ein Libretto von <persName key="A000838">Franz Carl Hiemer</persName> wird als praktische Ausgabe ebenfalls noch erscheinen.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

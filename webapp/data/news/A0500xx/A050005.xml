@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050005">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Kurzform des neuen Weber-Werkverzeichnisses bald im Netz</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2003-04-27T09:25:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>release</term>
+                    <term>announcement</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Die angekündigte Kurzform des systematisch-chronologischen Werkverzeichnisses (hg. von Frank Ziegler), dessen neue Nummern (mit dem Kürzel <hi rend="italic">WeV</hi> für <hi rend="italic">
+                        <hi rend="bold">We</hi>ber-<hi rend="bold">V</hi>erzeichnis</hi> und einer Kombination aus einem Groß-Buchstaben für die Werkgruppe und Zahl für das einzelne Werk) in den bisher veröffentlichten Bänden der WeGA schon verwendet wurden, wird in wenigen Wochen im Netz zur Verfügung stehen. Ein großer Teil der Daten ist bereits umgesetzt, augenblicklich müssen einige "kritische Fälle" noch darauf geprüft werden, ob sie nun im Werkverzeichnis bleiben können oder nicht. "Unsichere" Werkgruppen bleiben auf alle Fälle zunächst noch ohne Zählung. Es ist zu hoffen, daß die systematische Anordnung einen besseren Überblick über <persName key="A002068">Webers</persName> Schaffen ermöglicht als die (problematische) chronologische Ordnung in dem ansonsten sehr verdienstvollen Verzeichnis von <persName key="A000914">Friedrich Wilhelm Jähns</persName> (<placeName>
+                        <settlement>Berlin</settlement>
+                    </placeName>
+                    <date when="1871">1871</date>). Da die Internet-Präsentation der WeGA von den Mitarbeitern in ihrer Freizeit betreut wird, bitten wir um Verständnis, wenn die Fertigstellung des umfangreichen Katalogs noch etwas Zeit benötigt.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

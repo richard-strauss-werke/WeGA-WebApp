@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A110469">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="de">Weber-Studien Bd. 2</title>
+                <title level="a" xml:lang="en">Weber-Studies vol. 2</title>
+                <author key="A009001">Peter Stadler</author>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>WeGA elektronisch</publisher>
+                <availability status="free">
+                    <p>2012, Carl-Maria-von-Weber-Gesamtausgabe, Detmold</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m" type="main">Carl Maria von Weber und die deutsche Nationaloper</title>
+                        <author>Wolfgang Michael Wagner</author>
+                        <imprint>
+                            <pubPlace>Mainz</pubPlace>
+                            <date when="1994">1994</date>
+                        </imprint>
+                    </monogr>
+                    <series>
+                        <title level="s">Weber-Studien</title>
+                        <editor>Gerhard Allroggen</editor>
+                        <editor key="A009000">Joachim Veit</editor>
+                        <biblScope type="vol">2</biblScope>
+                    </series>
+                    <idno type="isbn-13">978-3-7957-0284-7</idno>
+                    <idno type="isbn-10">3-7957-0284-4</idno>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc status="approved">
+            <change who="PS" when="2012-03-08">initial eingerichtet</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:lang="de">
+                <head>Carl Maria von Weber und die deutsche Nationaloper</head>
+                <p>Wolfgang Michael Wagner, <hi rend="italic">Carl Maria von Weber und die deutsche
+            Nationaloper</hi>, Mainz 1994. 262 S.<lb/> Bestellnummer: ED 8316; ISBN
+          3-7957-0284-4</p>
+                <div>
+                    <head>Inhaltsverzeichnis</head>
+                    <list>
+                        <item>
+                            <hi rend="bold">Vorwort, S. 7–8</hi>
+                        </item>
+                        <item>Einleitung und Problemstellung<lb/> a) Definition: Was ist eine deutsche Oper, S.
+              9–10<lb/> b) Problemstellung und Ziel dieser Arbeit, S. 11–16</item>
+                        <item>
+                            <hi rend="bold">I. Voraussetzungen</hi>
+                            <lb/> Der Kulturnationalismus in
+              Deutschland, S. 17–31<lb/> "Nation" und "Volk", S. 32–38<lb/> Theater und Oper zur
+              Zeit Webers, S. 39–51<lb/> Die deutsche Oper zur Zeit Webers – ein Überblick, S.
+              52–67<lb/> Zu Webers Kunst- und Musikanschauung, S. 68–74</item>
+                        <item>
+                            <hi rend="bold">II. Der Freischütz – eine deutsche Oper</hi>
+                            <lb/> Der Freischütz –
+              ein deutsches Libretto, S. 75<lb/> a) Der Stoff, S. 75–77<lb/> b) Romantisch und
+              deutsch, S. 78–85<lb/> c) Die Dramaturgie des Librettos aus der Philosophie des
+              Idealismus, S. 86–95<lb/> d) Die Natur und der Wald im Freischütz, S. 96–100<lb/> Die
+              Musik des Freischütz – deutsche Musik, S. 101<lb/> a) Gesangsideal und Arienform, S.
+              103–112<lb/> b) Zur Orchester-Behandlung, S. 113–116<lb/> c) Das Finale des zweiten
+              Aktes (Die Wolfsschlucht) und das Problem der „charakteristischen“ Musik, S.
+              117–120<lb/> d) Tonarten-Disposition und „Leitmotive“, S. 121–127<lb/> e) Das
+              „Charakteristische“: ergänzende Bemerkungen, S. 128–132<lb/> f) Zusammenfassung: Was
+              macht den Freischütz zu einer spezifisch deutschen Oper, S. 133–136</item>
+                        <item>
+                            <hi rend="bold">III. Die Rezeption des Freischütz in der ersten Hälfte des 19.
+                Jahrhunderts</hi>
+                            <lb/> Die Voraussetzungen der Uraufführung in Berlin, S.
+              137–153<lb/> Die Rezeption der Uraufführung, S. 154–157<lb/> Erstaufführungen des
+              Freischütz in anderen deutschen Städten und deren Rezeption, S. 158–166<lb/> Zeugnisse
+              für die Beliebtheit des Freischütz in den 1820er Jahren, S. 167–176</item>
+                        <item>
+                            <hi rend="bold">IV. Euryanthe und das Problem einer deutschen Oper seria</hi>
+                            <lb/>
+              Das Libretto, S. 177–185<lb/> Die Musik, S. 186–196</item>
+                        <item>
+                            <hi rend="bold">V. Die Weber-Rezeption bis zur Jahrhundertwende</hi>
+                            <lb/> Zur
+              Entwicklung des „Kulturnationalismus“ in der zweiten Hälfte des 19. Jahrhunderts, S.
+              197–205<lb/> Der Freischütz im Opernrepertoire des 19. Jahrhunderts, S. 206–211<lb/>
+              Die Freischütz-Rezeption außerhalb des Theaters, S. 212–217<lb/> Richard Wagners
+              Weber-Rezeption, S. 218–222<lb/> Das Weber-Denkmal in Dresden, S. 223–225<lb/> Das
+              Weber-Bild in der Musikschriftstellerei des 19. Jahrhunderts, S. 226–238</item>
+                        <item>
+                            <hi rend="bold">VI. Anhang</hi>
+                            <lb/> Aufführungsstatistiken, S. 239–246<lb/>
+              Quellen- und Literaturverzeichnis<lb/> Quellen, S. 247<lb/> a) Periodika, S. 247<lb/>
+              b) Einzelschriften, S. 247–248<lb/> c) Musikalien, S. 249<lb/> Sekundärliteratur, S.
+              250–258<lb/> Personenregister, S. 259</item>
+                    </list>
+                </div>
+            </div>
+            <div xml:lang="en">
+                <head>Carl Maria von Weber und die deutsche Nationaloper</head>
+                <p>Wolfgang Michael Wagner, <hi rend="italic">Carl Maria von Weber und die deutsche
+          Nationaloper</hi>, Mainz 1994. 262 pages<lb/> Order no.: ED 8316; ISBN
+          3-7957-0284-4</p>
+                <div>
+                    <head>Table of contents</head>
+                    <list>
+                        <item>
+                            <hi rend="bold">Vorwort, p. 7–8</hi>
+                        </item>
+                        <item>Einleitung und Problemstellung<lb/> a) Definition: Was ist eine deutsche Oper, p.
+              9–10<lb/> b) Problemstellung und Ziel dieser Arbeit, p. 11–16</item>
+                        <item>
+                            <hi rend="bold">I. Voraussetzungen</hi>
+                            <lb/> Der Kulturnationalismus in
+              Deutschland, p. 17–31<lb/> "Nation" und "Volk", p. 32–38<lb/> Theater und Oper zur
+              Zeit Webers, p. 39–51<lb/> Die deutsche Oper zur Zeit Webers – ein Überblick, p.
+              52–67<lb/> Zu Webers Kunst- und Musikanschauung, p. 68–74</item>
+                        <item>
+                            <hi rend="bold">II. Der Freischütz – eine deutsche Oper</hi>
+                            <lb/> Der Freischütz –
+              ein deutsches Libretto, p. 75<lb/> a) Der Stoff, p. 75–77<lb/> b) Romantisch und
+              deutsch, p. 78–85<lb/> c) Die Dramaturgie des Librettos aus der Philosophie des
+              Idealismus, p. 86–95<lb/> d) Die Natur und der Wald im Freischütz, p. 96–100<lb/> Die
+              Musik des Freischütz – deutsche Musik, p. 101<lb/> a) Gesangsideal und Arienform, p.
+              103–112<lb/> b) Zur Orchester-Behandlung, p. 113–116<lb/> c) Das Finale des zweiten
+              Aktes (Die Wolfsschlucht) und das Problem der „charakteristischen“ Musik, p.
+              117–120<lb/> d) Tonarten-Disposition und „Leitmotive“, p. 121–127<lb/> e) Das
+              „Charakteristische“: ergänzende Bemerkungen, p. 128–132<lb/> f) Zusammenfassung: Was
+              macht den Freischütz zu einer spezifisch deutschen Oper, p. 133–136</item>
+                        <item>
+                            <hi rend="bold">III. Die Rezeption des Freischütz in der ersten Hälfte des 19.
+              Jahrhunderts</hi>
+                            <lb/> Die Voraussetzungen der Uraufführung in Berlin, p.
+              137–153<lb/> Die Rezeption der Uraufführung, p. 154–157<lb/> Erstaufführungen des
+              Freischütz in anderen deutschen Städten und deren Rezeption, p. 158–166<lb/> Zeugnisse
+              für die Beliebtheit des Freischütz in den 1820er Jahren, p. 167–176</item>
+                        <item>
+                            <hi rend="bold">IV. Euryanthe und das Problem einer deutschen Oper seria</hi>
+                            <lb/>
+              Das Libretto, p. 177–185<lb/> Die Musik, p. 186–196</item>
+                        <item>
+                            <hi rend="bold">V. Die Weber-Rezeption bis zur Jahrhundertwende</hi>
+                            <lb/> Zur
+              Entwicklung des „Kulturnationalismus“ in der zweiten Hälfte des 19. Jahrhunderts, p.
+              197–205<lb/> Der Freischütz im Opernrepertoire des 19. Jahrhunderts, p. 206–211<lb/>
+              Die Freischütz-Rezeption außerhalb des Theaters, p. 212–217<lb/> Richard Wagners
+              Weber-Rezeption, p. 218–222<lb/> Das Weber-Denkmal in Dresden, p. 223–225<lb/> Das
+              Weber-Bild in der Musikschriftstellerei des 19. Jahrhunderts, p. 226–238</item>
+                        <item>
+                            <hi rend="bold">VI. Anhang</hi>
+                            <lb/> Aufführungsstatistiken, p. 239–246<lb/>
+              Quellen- und Literaturverzeichnis<lb/> Quellen, p. 247<lb/> a) Periodika, p. 247<lb/>
+              b) Einzelschriften, p. 247–248<lb/> c) Musikalien, p. 249<lb/> Sekundärliteratur, p.
+              250–258<lb/> Personenregister, p. 259</item>
+                    </list>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

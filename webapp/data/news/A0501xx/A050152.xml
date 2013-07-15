@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050152">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Neue Durchwahlen in der Berliner Arbeitsstelle</title>
+                <author key="A009001">Peter Stadler</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2013-02-06T11:26:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>born digital</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Mit dem – für einen Teil der Mitarbeiter <hi rend="italic">erneuten</hi> – Umzug in einen provisorischen Container 
+               haben sich auch einige Durchwahlen bei der Berliner Arbeitsstelle geändert:</p>
+                <list>
+                    <item>
+                        <persName key="A009003">Markus Bandur</persName>: +49 (0)30-266-435212</item>
+                    <item>
+                        <persName key="A003672">Eveline Bartlitz</persName>: +49 (0)30-266-435382</item>
+                    <item>
+                        <persName key="A009002">Dagmar Beck</persName>: +49 (0)30-266-435213</item>
+                    <item>
+                        <persName key="A009004">Solveig Schreiter</persName>: +49 (0)30-266-435383</item>
+                    <item>
+                        <persName key="A009005">Frank Ziegler</persName>: +49 (0)30-266-435210</item>
+                </list>
+            </div>
+        </body>
+    </text>
+</TEI>

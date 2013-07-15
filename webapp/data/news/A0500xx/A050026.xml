@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050026">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Mit Nachholbedarf ins neue Jahr</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2005-01-11T09:33:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>publication</term>
+                    <term>announcement</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Zwei Bände der WeGA sind überfällig: Der <workName key="A020228">Klavierauszug zur <hi rend="italic">Preciosa</hi>
+                    </workName> (Serie VIII, Bd. 6) und vor allem die Kammermusik mit Klarinette (Serie VI, Bd. 3) sollten eigentlich längst erschienen sein, neuerliche verlagsbedingte Probleme haben dies aber verhindert. Nun hoffen wir, daß beide Bände im ersten Viertel des Jahres endlich erscheinen, damit auch die Probe-CD der digitalen Edition des Klarinettenquintetts mit versandt werden kann. Augenblicklich schreitet die Arbeit an dem <workName key="A020212">1. Klavierkonzert</workName> (Serie V, Bd. 4/1, hg. von John Warrack) und an den Dresdner Festspielen (Serie III, Bd. 10b, hg. von Oliver Huck) voran; diese Bände werden <date when="2005">2005</date> ebenfalls folgen; außerdem sind die Korrekturen der Aufführungsmaterialien zu <hi rend="italic">
+                        <workName key="A020227">Preciosa</workName>
+                    </hi> in Bälde abgeschlossen. Viel vorgenommen haben sich die Mitarbeiter auch hinsichtlich der Brief- und Tagebuchausgabe: Im kommenden Jahr sollen die Kommentare zu beiden Ausgaben für den Jahrgang <date when="1817">1817</date> vollständig erarbeitet werden, so daß <date notBefore="2006-11-01" notAfter="2006-12-31">Ende 2006</date> mit der Publikation dieser Sektion ebenfalls begonnen werden kann. Dabei soll als "Seitenprodukt" auch eine digitale Dokumentensammlung entstehen. Aber statt bloßer "Absichten" hoffen wir in den folgenden aktuellen Meldungen wieder "Resultate" vorlegen oder darauf hinweisen zu können.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

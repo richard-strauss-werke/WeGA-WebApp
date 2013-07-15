@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050265">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">L'Accoglienza und Erster Ton in Dresden</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2011-05-26T09:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>performance</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Die von <persName>Ortrun Landmann</persName> in <ref target="http://www.schott-musik.de/shop/noten/gesamtausgaben/carl_maria_von_weber/show,109472,n.html">Serie II als Band 3</ref> herausgegebene <hi rend="italic">festa teatrale</hi> zu der am 28. Oktober 1817 in <placeName>
+                        <settlement>Dresden</settlement>
+                    </placeName> erfolgten Prokurationsvermählung der sächsischen Prinzessin <persName key="A001252">Maria Anna Carolina</persName> mit dem Erbprinzen <persName key="A001160">Leopold von Toscana</persName> (die eigentliche Trauung wurde am 15. November 1817 in <placeName>
+                        <settlement>Florenz</settlement>
+                    </placeName> vollzogen), die unter dem Titel <workName key="A020021">L'<hi rend="italic">
+                            <hi rend="bold">Accoglienza</hi>
+                        </hi>
+                    </workName> am 29. Oktober 1817 erstmals aufgeführt wurde, verschwand – wie viele solcher Dedikationswerke – erst einmal im königlichen "Archiv". Nun wird sie <hi rend="bold">am 3. Juli 2011 im 12. Symphoniekonzert der Staatskapelle Dresden</hi> in der Semper-Oper erstmals wieder zu hören sein! Anlässlich des 225. Geburtstags von <persName key="A002068">Weber</persName> dirigiert <persName>Manfred Honeck</persName> dieses Werk und bereichert das Konzert gleichzeitig durch eine weitere <persName key="A002068">Webersche</persName> Rarität, die Vertonung von <persName key="A001590">Friedrich Rochlitz's</persName> Text zu <workName key="A020008">
+                        <hi rend="italic">
+                            <hi rend="bold">Der erste Ton</hi>
+                        </hi>
+                    </workName>, die aus einem melodramatischen ersten Teil und einer abschließenden großen Chorfuge besteht.</p>
+                <p>Solisten des Konzerts sind <persName>Christiane Karg</persName> (Sopran), <persName>Anne Vondung</persName> (Mezzosopran), <persName>Michael Schade</persName> (Tenor) und <persName>René Pape</persName> (Bass), der zugleich die Sprechrolle im <hi rend="italic">
+                        <workName key="A020008">Ersten Ton</workName>
+                    </hi> übernimmt. Es singt der MDR Rundfunkchor <placeName>
+                        <settlement>Leipzig</settlement>
+                    </placeName>. Das Konzert wird durch den MDR aufgezeichnet. Die Materialien zur Wiederaufführung der <hi rend="italic">
+                        <workName key="A020021">L'Accoglienza</workName>
+                    </hi> und des <hi rend="italic">
+                        <workName key="A020008">Ersten Tons</workName>
+                    </hi> wurden von der WeGA in Kooperation mit dem Schott-Verlag erstellt. Bei dem letzteren Werk, das von <persName key="A009005">Frank Ziegler</persName> innerhalb der Serie II ediert wird, handelt es sich quasi um eine Vorab-Veröffentlichung, so dass Anregungen aus der Praxis noch mit in die endgültige Publikation einfließen können. Zu danken ist an dieser Stelle sehr herzlich dem Notensetzer <persName>Frank Litterscheid</persName>, der wieder einmal unter erheblichem Zeitdruck die Materialien für diese Aufführung erstellen musste.</p>
+                <p>Die Aufführungstermine sind am 3. Juli um 11:00 Uhr, 4. Juli 20:00 Uhr und 5. Juli ebenfalls 20:00 Uhr, jeweils in der Semper-Oper. Zu Beginn des Konzerts erklingt <persName key="A000117">Ludwig van Beethovens</persName>
+                    <workName>2. Sinfonie in D-Dur</workName>. Kartenbestellungen sind über die <ref target="http://www.semperoper.de/spielplan/details/55062/besetzung/321.html">Internetseite der Semper-Oper</ref> möglich.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

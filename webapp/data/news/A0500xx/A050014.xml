@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050014">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">(Fast) Mit zwei Bänden ins neue Jahr</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2003-12-31T09:32:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>publication</term>
+                    <term>announcement</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Noch liegen sie nicht auf dem Tisch - - - aber die Produktion der nächsten beiden Bände steht unmittelbar vor dem Abschluß: Der von <hi rend="bold">Oliver Huck</hi> herausgegebene Band mit <hi rend="bold">Schauspielmusiken Webers</hi> (Serie III, Bd. 10a) dürfte in den ersten Januar-Tagen das Licht der Welt erblicken. Damit liegt dann endlich der nun schon lange Zeit in Arbeit befindliche, mit über 300 Seiten Umfang wieder recht stattliche Band vor, der alle Schauspielmusiken enthält, die <persName key="A002068">Weber</persName> über die <hi rend="italic">
+                        <workName key="A020227">Preciosa</workName>
+                    </hi> hinausgehend noch geschrieben hat. Lediglich die von uns sogenannten "Dresdner Festmusiken" blieben einem eigenen Band (Serie III, Bd. 10b) vorbehalten, der ebenfalls in Bälde vorliegen soll und den Bereich "Schauspielmusik" in der Edition schon zum Abschluß bringen wird.<lb/>
+               Zugleich befindet sich der <workName key="A020039">
+                        <hi rend="bold">Klavierauszug zum <hi rend="italic">Abu Hassan</hi>
+                        </hi>
+                    </workName> (Serie VIII, Bd. 2), hg. von Joachim Veit, in der Herstellung. Produktionstechnisch ist dies ein "halbe/halbe-Band", da die Textteile noch im Verlag gesetzt wurden, der Notensatz von Frank Litterscheid aber kombiniert mit den Dialogtexten als PDF-Datei schon in der <placeName>
+                        <settlement>Detmolder</settlement>
+                    </placeName> Arbeitsstelle als Druckvorlage erstellt wurde. Nach dem noch "konventionell" hergestelltem <workName key="A020228">Klavierauszug zur <hi rend="italic">
+                            <hi rend="bold">Preciosa</hi>
+                        </hi>
+                    </workName> (Serie VIII, Bd. 6, hg. von Frank Ziegler) wird dann mit dem <hi rend="bold">Kammermusikband</hi> (Serie VI, Bd. 3, hg. von Gerhard Allroggen, Knut Holtsträter und Joachim Veit) erstmals die komplette Vorlage zu einem Band in der <placeName>
+                        <settlement>Detmolder</settlement>
+                    </placeName> Arbeitsstelle vorbereitet.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

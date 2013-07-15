@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050059">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Umfangreiche Weberiana 2008 frisch erschienen</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2008-09-14T09:12:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Mit freundlicher Unterstützung des Verlags von Hans Schneider in <placeName>
+                        <settlement>Tutzing</settlement>
+                    </placeName> ist jetzt der neueste, 240 Seiten umfassende Band der <hi rend="italic">Weberiana</hi> erschienen. Vier gewichtige Hauptbeiträge eröffnen diesmal den Band: So konnte erstmals das schon <date notBefore="1964-01-01" notAfter="1964-12-31">1964</date> von der <placeName>
+                        <settlement>Tokioer</settlement>
+                    </placeName> Musashino Akademie Musicae erworbene <hi rend="bold">Stammbuch <persName key="A002071">Edmund von Webers</persName>
+                    </hi>, das eine einzigartige Quelle zu dessen, aber auch zur Biographie der Familie Weber darstellt, in einem gemeinsamen Beitrag von Ryuichi Higuchi (<placeName>
+                        <settlement>Tokio</settlement>
+                    </placeName>) und Frank Ziegler ausgewertet werden. Till Gerrit Waidelich widmet sich "<hi rend="bold">
+                        <persName key="A000288">Helmina von Chézys</persName> Kampf um die Urheberrechte an ihrem <hi rend="italic">
+                            <workName key="A020043">Euryanthe</workName>-</hi>Libretto</hi>" und wertet dabei erstmals zahlreiche Korrespondenzen und Brief-Entwürfe aus. Frank Ziegler präsentiert überraschende <hi rend="bold">Erkenntnisse zu <persName key="A002068">Webers</persName> Schriften</hi>, speziell zur sog. autobiographischen Skizze und zur Parodie der französischen Oper innerhalb von <hi rend="italic">Tonkünstlers Leben</hi>. Schließlich wertet Eveline Bartlitz in einem umfangreichen Beitrag <hi rend="bold">Briefe an <persName key="A000914">Friedrich Wilhelm Jähns</persName> als Quellen zur <placeName>
+                            <settlement>Londoner</settlement>
+                        </placeName> Weber-Rezeption</hi> aus. Ergänzt wird der Band wie gewohnt durch Notizen und Arbeitsberichte, Aufführungsbesprechungen und Pressespiegel, drei Buchrezensionen (der Tagungsbericht <placeName>
+                        <settlement>Dresden</settlement>
+                    </placeName>
+                    <date when="2006">2006</date>, das neue <hi rend="italic">
+                        <workName key="A020040">Freischütz</workName>
+                    </hi>-Libretto und <persName key="A002085">Max Marias</persName> Reisebriefe und Landschaftsbilder), die Besprechung von Tonträger-Neuerscheinungen, Mitteilungen aus der Gesellschaft und eine Reihe kleinerer Berichte. Es ist zu hoffen, dass auch dieser Band zahlreiche Interessenten findet.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

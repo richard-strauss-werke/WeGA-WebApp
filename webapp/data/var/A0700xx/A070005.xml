@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaVar.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A070005">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="de">Index</title>
+                <title level="a" xml:lang="en">Index</title>
+                <author key="A009001">Peter Stadler</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date/>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>WeGA elektronisch</publisher>
+                <availability status="free">
+                    <p>2011, Carl-Maria-von-Weber-Gesamtausgabe, Detmold</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc status="candidate">
+            <change who="PS" when="2011-05-01">Erste Einrichtung</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:lang="de">
+                <head>Carl-Maria-von-Weber-Gesamtausgabe (WeGA)</head>
+                <figure>
+                    <figDesc>
+                        <title xml:lang="de" level="a">Carl Maria von Weber, gemalt von Bardua</title>
+                    </figDesc>
+                    <graphic url="/db/images/persons/A0020xx/A002068/weber_bardua.jpg" width="1176px" height="1556px"/>
+                </figure>
+                <p>Die WeGA ist eine von der <ref target="http://www.adwmainz.de">Akademie der Wissenschaften und der Literatur</ref> (Mainz) geförderte Unternehmung mit dem Ziel, bis zum 200. Todestag <persName key="A002068">Webers</persName> im Jahr 2026 seine sämtlichen Kompositionen, Briefe, Tagebücher und Schriften in einer wissenschaftlich-kritischen Gesamtausgabe vorzulegen. 
+               Die Ausgabe wird ca. 50 Notenbände einschließlich Kritischer Berichte, 10 Bände Briefe, ca. 8 Bände Tagebücher, 2 Bände Schriften, ein Werkverzeichnis sowie mehrere Dokumentenbände umfassen. 
+               Alle Textteile (d.h. ausschließlich der Notentexte) werden zunächst auf diesen Seiten als Digitale Edition publiziert.
+               Sie wird unter der Leitung von <persName>Prof. Dr. Gerhard Allroggen</persName> an zwei Arbeitsstellen in der <ref target="http://staatsbibliothek-berlin.de">Staatsbibliothek zu Berlin – Preußischer Kulturbesitz</ref> und am <ref target="http://muwi-detmold-paderborn.de">Musikwissenschaftlichen Seminar Detmold/Paderborn</ref> vorbereitet.
+               Parallel zur Ausgabe erscheint die Reihe <hi rend="italic">Weber-Studien</hi>.</p>
+                <p>Hauptamtliche Mitarbeiter der Ausgabe sind <persName key="A009003">Dr. Markus Bandur</persName> und <persName key="A009005">Frank Ziegler</persName> in Berlin sowie <persName key="A009000">Prof. Dr. Joachim Veit</persName> und <persName key="A009001">Peter Stadler</persName> in <placeName>
+                        <settlement>Detmold</settlement>
+                    </placeName>. An der Briefausgabe ist <persName key="A003672">Eveline Bartlitz</persName> (<placeName>
+                        <seg>Berlin</seg>
+                    </placeName>) als freie Mitarbeiterin beteiligt; die Tagebuchausgabe wird von <persName key="A009002">Dagmar Beck</persName> erstellt, an den Arbeiten in Berlin beteiligt sich außerdem <persName key="A009004">Solveig Schreiter</persName>. An der Werkausgabe, die von <ref target="http://www.schott-musik.de">Schott Music</ref> in <placeName>
+                        <settlement>Mainz</settlement>
+                    </placeName> verlegt wird, arbeiten auch externe Bandherausgeber mit.</p>
+            </div>
+            <div xml:lang="en">
+                <head>Carl Maria von Weber – Collected Works (WeGA)</head>
+                <figure>
+                    <figDesc>
+                        <title xml:lang="de" level="a">Carl Maria von Weber, painting by Bardua</title>
+                    </figDesc>
+                    <graphic url="/db/images/persons/A0020xx/A002068/weber_bardua.jpg" width="1176px" height="1556px"/>
+                </figure>
+                <p>The WeGA is a venture funded by the <ref target="http://www.adwmainz.de">Akademie der Wissenschaften und der Literatur</ref> (Mainz). 
+               Its main objective is a complete scholarly edition of <persName key="A002068">Weber's</persName> compositions, letters, diaries and writings up to his 200th birthday in 2026. 
+               The edition will approximately comprise 50 volumes of score including critical reports, 10 volumes of letters, approx. 8 volumes of diaries, 2 volumes writings, a catalogue as well as multiple volumes of documents. 
+               All textual parts (i.e. exclusive of scores) are being published as digital edition on this website in the first instance. 
+               The edition is being prepared under the direction of <persName>Prof. Dr. Gerhard Allroggen</persName> at the two offices of the WeGA, one at the <ref target="http://staatsbibliothek-berlin.de">Staatsbibliothek zu Berlin – Preußischer Kulturbesitz</ref> and the other at the <ref target="http://muwi-detmold-paderborn.de">Musicological Seminar Detmold/Paderborn</ref>. 
+               The <hi rend="italic">Weber-Studien</hi> series appear simultaneously with the edition.</p>
+                <p>The edition's full-time employees are <persName key="A009003">Dr. Markus Bandur</persName> and <persName key="A009005">Frank Ziegler</persName> in <placeName>
+                        <seg>Berlin</seg>
+                    </placeName> as well as <persName key="A009000">Prof. Dr. Joachim Veit</persName> and <persName key="A009001">Peter Stadler</persName> in <placeName>
+                        <seg>Detmold</seg>
+                    </placeName>. 
+               <persName key="A003672">Eveline Bartlitz</persName> is involved as freelancer in the edition of the letters, <persName key="A009002">Dagmar Beck</persName> provides the edition of the diaries, and <persName key="A009004">Solveig Schreiter</persName> participates in the tasks at Berlin. 
+               The complete works, being published by <ref target="http://www.schott-musik.de">Schott Music Mainz</ref>, are also being provided by external editors.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

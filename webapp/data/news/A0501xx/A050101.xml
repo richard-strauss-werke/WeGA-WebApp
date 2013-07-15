@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050101">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Weber-Mitarbeiter bei Tagungen im Jahr 2011</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2011-11-12T09:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>report</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Auch <hi rend="bold">im Jahr 2011</hi> haben sich die Mitarbeiter der WeGA an zahlreichen <hi rend="bold">Tagungen und Vortragsveranstaltungen</hi> beteiligt: Auf Bitten der AG <hi rend="italic">Textauszeichnung von Editionen</hi> stellte <persName>
+                        <hi rend="bold">Peter Stadler</hi>
+                    </persName> am 4./5. Februar 2011 im Musikwissenschaftlichen Seminar <placeName>Detmold</placeName>/<placeName>Paderborn</placeName> die digitale Edition der Textteile der Weber-Ausgabe zur Diskussion, wobei auch über dringlich nötige Erweiterungen im Bereich der Normdaten diskutiert wurde. Im Mai referierte er im Luxemburgischen Literaturarchiv <placeName>Mersch</placeName> zum Thema <hi rend="italic">Elektronische Briefeditionen – Möglichkeiten der Vernetzung von Forschungseinrichtung und Bibliothek</hi>.</p>
+                <p>
+                    <persName>
+                        <hi rend="bold">Joachim Veit</hi>
+                    </persName> führte im Sommersemester 2011
+               in <placeName>Detmold</placeName> ein Seminar zum <hi rend="italic">Freischütz</hi>
+               im Kontext seiner frühen Rezeption durch und beschäftigt sich im laufenden
+               Wintersemester in einem Seminar mit Problemen der digitalen Edition des Werkes. Im
+               Juni referierte er beim 100. Bibliothekarstag in <placeName>Berlin</placeName> zum
+               Thema <hi rend="italic">Geisteswissenschaftliche Forschung und Anforderungen an eine
+                  virtuelle Forschungsumgebung</hi> sowie im Ostholstein-Museum in
+                  <placeName>Eutin</placeName> über Aspekte des Weber-Bildes und im Kulturgut
+                  <placeName>Ermlitz</placeName> bei <placeName>Leipzig</placeName> über Webers
+               Beziehungen zu <persName key="A000040">August Apel</persName>. Bei der Jahrestagung
+               der Gesellschaft für Musikforschung in <placeName>Kiel</placeName> stellte er in der
+               AG Musikerbriefe die digitale Weber-Briefausgabe vor. Mitte Oktober leitete er beim
+               internationalen TEI-Members-Meeting an der Universität
+                  <placeName>Würzburg</placeName> die Sitzung der <hi rend="italic">Special Interest
+                  Group Correspondence</hi>.</p>
+                <p>
+                    <persName>
+                        <hi rend="bold">Frank Ziegler</hi>
+                    </persName> beteiligte sich Anfang Juli an einer Einführungsveranstaltung der Semper-Oper in <placeName>Dresden</placeName> anläßlich der Wiederaufführung der Kantate <hi rend="italic">
+                        <workName key="A020021">L'Accoglienza</workName>
+                    </hi> und des <hi rend="italic">
+                        <workName key="A020008">Ersten Tons</workName>
+                    </hi>. Im September referierte er im Rahmen der Tagung „Das Amt des Hofkapellmeisters um 1800“ an der Königlich Dänischen Akademie der Wissenschaften in Kopenhagen über die Amtsführung von Vater <persName key="A002074">Franz Anton</persName> und Sohn Carl Maria von Weber in <placeName>Eutin</placeName> bzw. <placeName>Dresden</placeName>. Während des Dresdner Symposiums zu Weber und dem Virtuosentum seiner Zeit sprach er Ende Oktober an der Dresdner Musikhochschule zum Thema <hi rend="italic">
+                        <persName key="A002074">Carl Maria von Weber</persName> als Klaviervirtuose – eine Bestandsaufnahme</hi>.</p>
+                <p>
+                    <persName>
+                        <hi rend="bold">Solveig Schreiter</hi>
+                    </persName> referierte bei der gleichen Tagung über <hi rend="italic">Webers Plan eines "musikalischen Baedeker" als Dokument des öffentlichen Konzertwesens</hi>. Das geplante Referat von <persName>
+                        <hi rend="bold">Markus Bandur</hi>
+                    </persName>
+                    <hi rend="italic">Virtuosität als kompositorisches Problem. Zu Webers <rs type="work">Klaviersonaten</rs>
+                    </hi> musste aus Krankheitsgründen leider entfallen.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

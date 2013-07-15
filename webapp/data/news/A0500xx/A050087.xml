@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050087">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Dokumente zu Webers Werk und Wirken</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2006-10-23T09:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>release</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Bis <date notAfter="2006-10-01">Oktober 2006</date> war direkt über die Homepage der WeGA eine Demo-Version der vorläufigen Datenbank mit gedruckten Dokumenten des augenblicklich bearbeiteten Brief- und Tagebuch-Jahrgangs <date when="1817">1817</date> zugänglich. Diese wird nun ersetzt durch die endgültige Dokumenten-Datenbank des Jahrgangs <date when="1817">1817</date>, die über den Link www.weber-gesamtausgabe.de/fffi-db direkt zugänglich ist. Diese Datenbank ist im Aufbau und wird laufend vervollständigt bzw. in den noch offenen Bereichen korrigiert und ergänzt. Sie soll mit der Arbeit an den übrigen Brief- und Tagebuch-Kommentaren über den Jahrgang <date when="1817">1817</date> hinaus wachsen.</p>
+                <p>Sie können in der neuen Präsentation zur Zeit über die "Suche"  nach dem "Autor" eines Artikels, nach der "Sigle" (z. B. "C." für <persName key="A002156">Therese aus dem Winkel</persName> in der Abend-Zeitung), nach "Zeitungen" (gegenwärtig noch mit Kürzel: "AZ" für Abend-Zeitung, "AmZ" für Allgemeine Musikalische Zeitung etc.) oder frei nach dem "Inhalt" von Artikeln suchen. (Die übrigen Rubriken werden später freigeschaltet bzw. gezielte Person-, Rollen-, Werk-Suchfunktion aufgenommen.)
+            In der ausgegeben Ergebnisliste klicken Sie den Text, den Sie lesen möchten, (einfach) an und wählen dann "Detailansicht öffnen". Weitere Optionen, etwa um bestimmte Einträge sichtbar zu machen, finden Sie im Menü auf der rechten Seite. Wenn Sie mit der Maus auf kenntlich gemachte Personen-Namen zeigen, wird der aufgelöste Name bzw. die volle Namensform angezeigt. Es handelt sich hier noch um eine vorläufige Oberfläche, die weiter verbessert wird.</p>
+                <p>Verantwortlich für die bereitgestellten Pressetexte sind <persName>Deborah Hafenstein</persName> (bis <date notAfter="2005-12-01">Dez. 2005</date>), <persName>Annelie Goldlücke</persName> (bis <date notAfter="2006-08-01">August 2006</date>), <persName>Christoph Albrecht</persName> und <persName key="A009000">Joachim Veit</persName>. Die technische Realisierung betreuen <persName>Johannes Kepper</persName> und <persName>Daniel Röwenstrunk</persName>. Die Auswertung der Zeitschriften, insbesondere der Dresdner Abend-Zeitung, wurde durch die großzügige Unterstützung der Lippischen Landesbibliothek <placeName>
+                        <settlement>Detmold</settlement>
+                    </placeName> sehr erleichtert. Die Benutzung der vorliegenden Texte ist nur zu wissenschaftlichen Zwecken gestattet. Eine ausführliche Erläuterung zur Gestaltung der Textwiedergaben folgt nach Fertigstellung der endgültigen Benutzeroberfläche.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

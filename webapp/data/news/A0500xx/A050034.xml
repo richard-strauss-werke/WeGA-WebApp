@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050034">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Faszinierende Lebendigkeit: Präsentation des Klarinettenkammermusik-Bandes</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2005-12-10T09:05:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>publication</term>
+                    <term>performance</term>
+                    <term>teaching</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Das Konzert, mit dem am <date when="2005-12-05">5. Dezember 2005</date> im <placeName>
+                        <settlement>Detmolder</settlement>
+                    </placeName> Sommertheater der neue Band der WeGA vorgestellt wurde, geriet zu einem überaus lebendigen und faszinierenden Plädoyer für <persName key="A002068">Webers</persName> Kammermusik mit Klarinette - ein Plädoyer, das in dieser Form vielleicht auch ein wenig durch das Experimentieren mit der neuen Gestalt der Werke inspiriert sein mochte. Joachim Veit hob in seinen kurzen Bemerkungen zur Neuausgabe die größere interpretatorische Freiheit hervor, die die Neuedition gegenüber der bis in kleinste Details vorbestimmten <persName key="A000077">Baermann</persName>-Ausgabe auszeichnet. Diesen Freiraum gelte es aber mit Verantwortung auszufüllen. Wie dies möglich ist, zeigten gleich zu Beginn des Konzertes Andrea Pommer (Klarinette) und Hiroko Arimoto (Klavier) in ihrer Interpretation des <workName key="A020216">Grand Duo für Klarinette und Klavier Es-Dur op. 48</workName>, die sich mühelos zwischen den makellos bewältigten hochvirtuosen Passagen und dem plötzlichen Wechsel in vollkommen zurückgenommene Klanglichkeit mit fein changierenden Harmonien bewegten. Die überraschende Lockerheit des dolce- beginnenden Mittelteils im ersten Satz oder die langsam tastende, mit einem kleinen Umspielungsmotiv wirklich spielende Rückführung ins Rondo-Thema (nach dem Des-Dur-tremolo-Abschnitt) im Finale waren ebenso anziehende Details wie die mitreißenden Steigerungsanlagen im Andante con moto. Der wichtigste Eindruck aber, der sich bei beiden Werken (auch beim anschließenden <workName key="A020205">Klarinettenquintett B-Dur op. 34</workName>) aufdrängte, war der eines sehr viel ruhigeren und über größere Strecken tragenden Atems, wozu möglicherweise die in der Edition übernommenen großräumigeren Bögen in <persName key="A002068">Webers</persName> Stichvorlagen (und teils auch in den Autographen) anregen - wenn man denn Musiker von einer solchen Feinfühligkeit vor sich hat, wie an diesem Abend.</p>
+                <p>Die Unterschiede zur <persName key="A000077">Baermann</persName>-Ausgabe sind im <workName key="A020205">Klarinettenquintett</workName> deutlicher als im <hi rend="italic">
+                        <workName key="A020216">Grand Duo</workName>
+                    </hi> auch an vielen Einzelheiten feststellbar: etwa an dem nur noch als Reminisizenz erklingenden Hauptthema am Ende des I. Satzes, an der Rückführung ins Tempo nach den chromatischen Läufen im II. Satz, oder an der <hi rend="italic">non-legato-</hi>Variante des <hi rend="italic">giojoso-</hi>Rondothemas, die im übrigen den Klarinettisten <hi rend="bold">Johannes Hofmann</hi> zu einer Beleuchtung dieses Themas von unterschiedlichsten Seiten her inspirierte. Was er mit seinen Quartett-Kollegen bot (im <ref target="http://www.prima-quartett.de">
+                        <hi rend="italic">Prima-Quartett</hi>
+                    </ref> musizierten an diesem Abend neben dem Primarius <hi rend="bold">Emmanuil Goldstein</hi> und <hi rend="bold">Albert Khametoff</hi> an der Viola als Gäste die Geigerin <hi rend="bold">Friederike Scheller</hi> und die Cellistin <hi rend="bold">Anne-Lise Cassonet</hi>), waren Augenblicke der Kammermusik in ihrer reinsten Ausprägung: Vorzüglich aufeinander abgestimmt nahmen die Streicher feine Varianten des Klarinettisten als Anregung auf, beflügelten aber auch umgekehrt die Fantasie des Solisten (von einem solchen darf man bei einem in der Tradition des <hi rend="italic">Quatuor concertant</hi> stehenden Werk sicherlich reden). Für das Publikum wurden die Dialoge zwischen Einzelinstrumenten (etwa Klarinette und Cello im <hi rend="italic">Menuetto Capriccio</hi>) oder zwischen Klarinette und dem außerordentlich homogenen Klangkörper des Streicherensembles zu einem doppelten Erlebnis, war doch das, was man akustisch vernahm, auch optisch wahrnehmbar als ein kaum intensiver denkbares Miteinander. So rissen die Ecksätze, in denen sich die Musiker die Motivbälle zuwarfen und die Soloklarinette in exorbitanter Weise ihre Virtuosität unter Beweis stellen darf, ebenso zur Begeisterung mit wie andererseits aber die Tiefe des langsamen Satzes in einer Weise ausgelotet wurde, die uns die gegensätzlichen Seiten von Webers Ausdruckswelt empfindsam offenlegte. Man konnte sich nach diesem Konzert nur wünschen, diese Werke von diesen Musiker öfter zu hören!</p>
+                <p>Im Mittelteil des Konzerts wurde der neue Band der Ausgabe von <hi rend="bold">Dr. Rainer Mohrs</hi> (Schott Musik International) offiziell überreicht. Der Rektor der Hochschule für Musik, <hi rend="bold">Prof. Martin Christian Vogel</hi>, betonte in seinem Grußwort die enge Verbindung der Weber-Ausgabe zur musikalischen Praxis an der Hochschule, insbesondere die fruchtbare Zusammenarbeit mit den von <hi rend="bold">Prof. Hans-Dietrich Klaus</hi> geleiteten MeisterWerk-Kursen. Der Rektor der Universität <placeName>
+                        <settlement>Paderborn</settlement>
+                    </placeName>, <hi rend="bold">Prof. Dr. Nikolaus Risch</hi>, hob die Bedeutung der universitären Informatik und Medienwissenschaften für das innerhalb der Weber-Gesamtausgabe gestartete Projekt der digitalen Edition hervor - ein Projekt das sehr gut zu dem Anspruch der Paderborner Hochschule als Universität der Informationsgesellschaft passe. Die in diesem Projekt erstmals vorgelegte <hi rend="italic">Edirom</hi> mit der digitalen Edition des Klarinettenquintetts würdigte <hi rend="bold">Dr. Gabriele Buschmeier</hi> (Union der Akademien der Wissenschaften, <placeName>
+                        <settlement>Mainz</settlement>
+                    </placeName>) als Beleg für einen historischen Wendepunkt in der musikwissenschaftlichen Editionsphilologie.</p>
+                <p>Erfreuliche Nachricht am Rande: Auf die schon länger vorliegende praktische Vorab-Ausgabe des <workName key="A020205">Klarinettenquintetts</workName> (hg. von Gerhard Allroggen und Joachim Veit) folgten nun pünktlich zu dem Konzerttermin auch die beiden praktischen Neuausgaben des <hi rend="italic">
+                        <workName key="A020216">Grand Duo</workName>
+                    </hi> (hg. von Knut Holtsträter) und der <workName key="A020235">
+                        <hi rend="italic">Silvana</hi>-Variationen</workName> (hg. von J. Veit), noch dazu zu einem erfreulich günstigen Preis, so daß zu hoffen ist, daß sich diese neuen Ausgaben rasch verbreiten werden.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

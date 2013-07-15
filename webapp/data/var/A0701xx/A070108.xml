@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A110466">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="de">Weber-Studien Bd. 5</title>
+                <title level="a" xml:lang="en">Weber-Studies vol. 5</title>
+                <author key="A009001">Peter Stadler</author>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>WeGA elektronisch</publisher>
+                <availability status="free">
+                    <p>2012, Carl-Maria-von-Weber-Gesamtausgabe, Detmold</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m" type="main">Von der Silvana zum Freischütz</title>
+                        <title level="m" type="sub">Die Konzertarien, die Einlagen zu Opern und die
+              Schauspielmusik Carl Maria von Webers</title>
+                        <author>Oliver Huck</author>
+                        <imprint>
+                            <pubPlace>Mainz</pubPlace>
+                            <date when="1999">1999</date>
+                        </imprint>
+                    </monogr>
+                    <series>
+                        <title level="s">Weber-Studien</title>
+                        <editor>Gerhard Allroggen</editor>
+                        <editor key="A009000">Joachim Veit</editor>
+                        <biblScope type="vol">5</biblScope>
+                    </series>
+                    <idno type="isbn-13">978-3-7957-0381-3</idno>
+                    <idno type="isbn-10">3-7957-0381-6</idno>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc status="approved">
+            <change who="PS" when="2012-03-08">initial eingerichtet</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:lang="de">
+                <head>Von der Silvana zum Freischütz</head>
+                <p>Oliver Huck, <hi rend="italic">Von der Silvana zum Freischütz. Die Konzertarien, die
+            Einlagen zu Opern und die Schauspielmusik Carl Maria von Webers</hi>, Mainz 1999. xii,
+          407 S.<lb/> Bestellnummer: ED 8985; ISBN 3-7957-0381-6</p>
+                <div>
+                    <p>Bis heute wird der <workName key="A020040">Freischütz</workName> vielfach als
+            singuläres Meisterwerk im Schaffen <persName key="A002068">Carl Maria von
+              Webers</persName> angesehen, dessen Relation zu Webers vorangegangenen Werken entweder
+            als unerklärbar dargestellt worden ist oder zu teleologischen Konstruktionen geführt
+            hat, in denen jedes Werk lediglich an seinem auf den <workName key="A020040">Freischütz</workName> vorausdeutenden Gehalt gemessen wurde, ohne damit eine
+            befriedigende Erklärung des offensichtlichen Fortschritts gegenüber der <workName key="A020036">Silvana</workName> zu liefern.</p>
+                    <p>Weber hat zwischen den Berliner Aufführungen der <workName key="A020036">Silvana</workName> (1812) und des <workName key="A020040">Freischütz</workName>
+            (1821) zwar keine neue Oper auf die Bühne gebracht, jedoch vor allem in dieser Zeit
+            Musik zu mehr als zwanzig Schauspielen, sechs italienische Konzertarien sowie eine Reihe
+            von Einlagen zu französischen Opern und deutschen Singspielen komponiert und ist
+            zugleich als Kapellmeister in <placeName>
+                            <settlement>Prag</settlement>
+                        </placeName> und
+                <placeName>
+                            <settlement>Dresden</settlement>
+                        </placeName> mit der Notwendigkeit
+            konfrontiert gewesen, der deutschen Oper ein Profil zu geben. Nach einem
+            dokumentarischen Teil, in dem, ausgehend von einer Untersuchung der Rahmenbedingungen
+            für die Entstehung dieser Werke, eine solide philologische Grundlage geschaffen wird,
+            und einem Blick auf die von <persName key="A002068">Weber</persName> in seinen Schriften
+            formulierten ästhetischen Prämissen der italienischen, französischen und deutschen Oper
+            mit ihren Auswirkungen auf Webers Repertoirepolitik in
+                <placeName>
+                            <settlement>Prag</settlement>
+                        </placeName> (1813–1816) und
+                <placeName>
+                            <settlement>Dresden</settlement>
+                        </placeName> (1817–1820) bildet die
+              <workName key="A020036">Silvana</workName> den Ausgangspunkt der Analysen.</p>
+                    <p>Stoff, Motive und Gestaltungselemente der <workName key="A020036">Silvana</workName>
+            rekurrieren über das zugrundeliegende <workName key="A020032">Waldmädchen</workName> auf
+            das romantisch-komische Volksmärchen, wobei jedoch der Musik, die im
+            romantisch-komischen Volksmärchen auf die Sphäre des Wunderbaren und des Komischen
+            beschränkt ist, dadurch ihre Motivation entzogen ist, daß zunächst die wunderbare
+            (Waldmädchen) und dann auch die komische (Silvana) Ebene ausgeklammert worden sind, ohne
+            daß es den Librettisten gelungen ist, eine andere überzeugende musikalische Dramaturgie
+            zu entwickeln. Neben dem Libretto sind die beiden großen Arien in der <workName key="A020036">Silvana</workName> das Hauptproblem, das <persName key="A002068">Weber</persName> zwar erkannt hat, ohne es jedoch durch die Neufassung lösen zu
+            können, da ihm neben einer geeigneten Textvorlage auch die kompositorische Routine im
+            Umgang mit der Arienform gefehlt hat.</p>
+                    <p>In den italienischen Konzertarien setzt sich <persName key="A002068">Weber</persName>
+            mit formalen Strukturen wie der Zweisätzigkeit und der Rondoform unabhängig von
+            dramatischen Erfordernissen auseinander und findet in der Szene und Arie aus
+              <workName>Ines de Castro</workName> für Tenor schließlich zu einer am Text
+            orientierten stringenten formalen Anlage, die von Schemata unabhängig ist und die im
+            Vergleich mit <persName key="A008336">Niccolò Zingarellis</persName> Vertonung eine von
+            der italienischen Oper abweichende Ästhetik <persName key="A002068">Webers</persName>
+            dokumentiert. Die für <placeName>
+                            <settlement>Berlin</settlement>
+                        </placeName>
+            neukomponierten Arien in der <workName key="A020036">Silvana</workName> sind zwar formal
+            bereits konzentrierter gehalten und weisen damit auf die inzwischen komponierten
+            Konzertarien zurück, eine gelungene Balance von dramatischer Situation und musikalischer
+            Form erreicht <persName key="A002068">Weber</persName> jedoch erst in den Arien zu
+              <workName key="A020452">Helene</workName> und <workName key="A020551">Lodoïska</workName>, deren Texte in Inhalt und Form qualitativ über die Texte der
+            Silvana-Arien hinausgehen. Die formale Gestaltung der Arien im <workName key="A020040">Freischütz</workName> läßt sich jedoch nicht teleologisch aus den Konzertarien
+            ableiten, sondern resultiert zum einen aus der komplexen Textvorlage <persName key="A001002">Friedrich Kinds</persName> und zum anderen aus <persName key="A002068">Webers</persName> anhand der Einlagen zu Werken anderer Komponisten neugewonnener
+            Souveränität im Umgang mit Formen und dramatischen Situationen.</p>
+                    <p>Für die musikalische Dramaturgie des <workName key="A020040">Freischütz</workName>
+            erweisen sich <persName key="A002068">Webers</persName> Auseinandersetzung mit der opéra
+            comique einerseits und der Schauspielmusik andererseits als fruchtbar und anregend.
+            Werke wie <workName key="A020452">Helene</workName> oder <workName key="A020551">Lodoïska</workName>, die <persName key="A002068">Weber</persName> besprochen und
+            aufgeführt und zu denen er selbst Musik komponiert und bearbeitet hat, sind für ihn
+            klassische Werke aller Nationen, deren französische Eigenheiten er gleichwohl einer
+            kritischen Revision unterzieht. Während er <persName key="A000287">Cherubinis</persName>
+            Arie gegenüber seiner eigenen Arie zu <workName key="A020551">Lodoïska</workName> in
+            Aufführungen den Vorzug gibt, fehlt es nach seiner Auffassung der <workName key="A020452">Helene</workName> an ausgeführten solistischen Gesangsnummern, so daß
+              <persName key="A002068">Weber</persName> seine Arie und die von ihm instrumentierten
+            Einlagen auch über die ursprüngliche Zweckbindung hinaus beibehalten hat. Der
+            analytische Vergleich des Duetts <characterName>Ännchen</characterName> und
+              <characterName>Agathe</characterName> mit dem Duett
+              <characterName>Varbel</characterName> und <characterName>Floresky</characterName> aus
+              <persName key="A000287">Cherubinis</persName>
+                        <workName key="A020551">Lodoïska</workName> und der Weberschen Arie mit jener von
+              <persName key="A000287">Cherubini</persName> erlaubt eine in der Rezeptionsgeschichte
+            fundierte Differenzierung zwischen Anregung und Nachahmung bei <persName key="A002068">Webers</persName> Auseinandersetzung mit der opéra comique.</p>
+                    <p>
+                        <persName key="A002068">Webers</persName> Schauspielmusik beschränkt sich, abgesehen
+            von den Ouvertüren zu <workName key="A020229">Turandot</workName> und <workName key="A020227">Preciosa</workName>, auf die Illustration der Szene und verzichtet auf
+            eine Interpretation der Handlung. Sie unterscheidet sich von den Werken seiner
+            Zeitgenossen dadurch, daß er das von <persName key="A000851">E. T. A.
+              Hoffmann</persName> formulierte Prinzip einer realistischen Verwendung der Musik in
+            der Begleitung der Lieder und Chöre wie auch in der Verwendung instrumentaler
+            Bühnenmusik durchgehend befolgt hat. <persName key="A002068">Weber</persName> folgt
+            damit den Dichtern, zu deren Schauspielen er Musik komponiert hat, die beim Einsatz der
+            Musik auf eine realistische Wirkung, d. h. die Übereinstimmung von optischen und
+            akustischen Eindrücken geachtet haben. Eine Ausnahme bildet hier lediglich <persName key="A002176">Pius Alexander Wolffs</persName>
+                        <workName>Preciosa</workName>, deren Text eine solche Ästhetik nicht zuläßt und in deren
+            Musik <persName key="A002068">Weber</persName> dieses Prinzip aufgegeben hat. In den
+              <workName key="A020040">Freischütz</workName> hat <persName key="A002068">Weber</persName> diesen musikalischen Realismus übernommen, wobei er die Bühnenmusik
+            und die Lieder durch eine charakteristische Instrumentation gegenüber dem musikalischen
+            Kontext zusätzlich profiliert. Die charakteristische Gestaltung der Lieder im <workName key="A020040">Freischütz</workName> korrespondiert mit <persName key="A002068">Webers</persName> Einlagen zu deutschen Singspielen, in denen er gegenüber dem
+            Original stets um eine stärkere Pointierung und Profilierung bemüht ist, wie
+            insbesondere das Lied zum <workName>travestierten Aeneas</workName> zeigt.</p>
+                    <p>
+                        <persName key="A002068">Weber</persName> hat die zehn Jahre, die zwischen der <workName key="A020036">Silvana</workName> und dem <workName key="A020040">Freischütz</workName>
+            liegen, sowohl zu einer intensiven Reflexion über das eigene Werk und die zugrunde
+            liegende Librettistik, wie sie die Parodie der deutschen Oper in <workName>Tonkünstlers
+              Leben</workName> dokumentiert, als auch zu einer kompositorischen Auseinandersetzung
+            mit der italienischen Arienform, der französischen opéra comique und dem deutschen Sing-
+            und Schauspiel genutzt. Um die daraus gewonnene individuelle Synthese von ästhetischen
+            und kompositorischen Vorstellungen in eine deutsche Oper umzusetzen, bedurfte es jedoch
+            eines geeigneten Librettos. <persName key="A001002">Kind</persName>, dessen Stärken die
+            geschickte Verarbeitung eines gefundenen Stoffes und die malerische Gestaltung
+            tableauartiger Bilder sind, legt mit der Gestaltung des <workName key="A020040">Freischütz</workName> als erweiterte Idylle ein Konzept vor, das die gespielte
+            Realität durchgehend zum Wunderbaren in Beziehung setzt und damit eine plausible
+            Motivation der Musik in der Oper als höher potenzierte Sprache im Sinne <persName key="A000851">E. T. A. Hoffmanns</persName> ermöglicht. <persName key="A002068">Weber</persName> hat durch die Streichung der ersten beiden Szenen diesen Ansatz
+            gerade nicht aufgegriffen. Durch die veränderte Dramaturgie des Textes
+            (Schicksalstragödie mit lieto fine durch einen deus ex machina) und die
+            Inszenierungspraxis der ersten Aufführungen mit ihrem von <persName key="A002068">Weber</persName> ausdrücklich gewünschten naturalistischen Spektakel in der
+            Wolfsschluchtszene rückt der Text sehr zum Leidwesen <persName key="A001002">Kinds</persName> in die unmittelbare Nähe trivialer Genres, von denen sich <persName key="A002068">Weber</persName> jedoch durch eine charakteristische, die Konventionen
+            sprengende Musik absetzt. Im Detail ist festzustellen, daß <persName key="A002068">Weber</persName> für die zu vertonenden Texte in zahlreichen Fällen in <persName key="A001002">Kinds</persName> Textvorlage eingegriffen und damit erst die
+            Voraussetzungen für die von ihm gewählte formale Anlage zahlreicher Nummern (Nr. 6, 10,
+            12, 15) geschaffen hat.</p>
+                </div>
+                <div>
+                    <head>Inhaltsverzeichnis</head>
+                    <list>
+                        <item>Vorwort, S. ix</item>
+                        <item>Abkürzungsverzeichnis, S. x</item>
+                        <item>Einleitung, S.1–6</item>
+                        <item>
+                            <hi rend="bold">I. Entstehung, Überlieferung und Rezeption</hi>
+                            <list type="ordered">
+                                <item>Die Enstehungsbedingungen der Konzertarien, der Einlagen zu Opern und der
+                  Schauspielmusik, S. 7<lb/> Weber als <hi rend="italic">Kapellmeister und Direktor
+                    der Oper in Prag</hi>, S. 8<lb/> Aufträge aus Berlin, S. 12<lb/> Webers
+                  Anstellung als <hi rend="italic">Musikdirektor der deutschen Oper und des
+                    deutschen Schauspiels</hi> in Dresden, S. 13 </item>
+                                <item>Entstehung, Überlieferung und Rezeption der Einlagen zu Opern und Singspielen,
+                  S. 22<lb/> D.1 Einlagen zu dem Pasticcio <hi rend="italic">Der Freybrief</hi> (JV
+                  77 und 78), S. 22<lb/> D.2 Szene und Arie für Sopran "Ha! Sollte Edmund selbst der
+                  Mörder sein?" / "Laß, o laß ihn Rettung finden" zu <hi rend="italic">Helene</hi>
+                  von Etienne-Nicolas Méhul (JV 178), S. 26<lb/> D.3 Einlagen zu <hi rend="italic">Der travestierte Aeneas</hi> von Matthäus Stegmayer und Ignaz von Seyfried (JV
+                  183 und 184), S. 28<lb/> D.4 und D.6 Arie(n) für Joseph Fischer (JV Anh. 61), S.
+                  30<lb/> D.5 Lied zu <hi rend="italic">Das Sternenmädchen im Maidlinger Walde</hi>
+                  von Ferdinand Kauer (JV 194), S. 31<lb/> D.7 Chor zu <hi rend="italic">Das Dorf im
+                    Gebirge</hi> von Joseph Weigl (JV Anh. 66), S. 34<lb/> D.8 Szene und Arie für
+                  Sopran „Was sag ich?“ / „Fern von ihm“ zu <hi rend="italic">Lodoiska</hi> von
+                  Luigi Cherubini (JV 239), S. 35<lb/> D.9 Rezitativ für Sopran und Tenor „Doch
+                  welche Töne steigen jetzt hernieder“ zu <hi rend="italic">Olympia</hi> von Gaspare
+                  Spontini (JV 305), S. 38</item>
+                                <item>Entstehung, Überlieferung und Rezeption der Konzertarien und -duette, S.
+                  41<lb/> E.1 Rezitativ und Rondo für Sopran „Il momento s’avvicina“ / „La dolce
+                  speranza“ (JV 93), S. 41<lb/> E.2 Duett für zwei Altstimmen „Se il mio ben“ (JV
+                  107), S. 42<lb/> E.3 Szene und Arie der Atalia für Sopran „Misera me!“ / „Ho
+                  spavento d’ogn’aura“ (JV 121), S. 45<lb/> E.4 Szene und Arie aus Demetrio für
+                  Tenor und Männerchor „Qual altro attendi“ / „Giusti Numi!“ (JV 126), S. 48<lb/>
+                  E.5 Szene und Arie aus Ines de Castro für Tenor und zwei Chöre „Signor, se padre
+                  sei“ / „Chiamami ancor“ (JV 142), S. 49<lb/> E.6 Szene und Arie aus Ines de Castro
+                  für Sopran „Non paventar mia vita“ / „Sei tu sempre“ (JV 181), S. 51 </item>
+                                <item>Entstehung, Überlieferung und Rezeption der Schauspielmusik, S. 54<lb/> F.1
+                  Musik zu <hi rend="italic">Turandot</hi> von Friedrich Schiller (JV 75), S.
+                  54<lb/> F.2 Musik zu <hi rend="italic">Der arme Minnesänger</hi> von August von
+                  Kotzebue (JV 110–113), S. 59<lb/> F.3 Musik zu <hi rend="italic">Das
+                    österreichische Feldlager </hi>von Heinrich Schmidt (JV Anh. 43–45), S. 62<lb/>
+                  F.4 Chor zu <hi rend="italic">Romeo und Julia</hi> von William Shakespeare (JV
+                  Anh. 48), S. 65<lb/> F.5 Musik zu <hi rend="italic">Lieb’ und Versöhnen oder die
+                    Schlacht bei Leipzig</hi> von Friedrich Wilhelm Gubitz (JV 186 und 187), S.
+                  66<lb/> F.6 Ballade „Was stürmet die Heide herauf?“ zu <hi rend="italic">Gordon
+                    und Montrose oder Der Kampf der Gefühle</hi> von Georg Reinbeck (JV 189), S.
+                  71<lb/> F.7 Musik zu <hi rend="italic">Diana von Poitiers</hi> von Ignaz Franz
+                  Castelli (JV 195 und Anh. 62), S. 74<lb/> F.8 Musik zu <hi rend="italic">König
+                    Yngurd</hi> von Adolph Müllner (JV 214), S. 75<lb/> F.9 Musik zu <hi rend="italic">Die Ahnfrau</hi> von Franz Grillparzer (JV Anh. 65 und Anh. 85),
+                  S. 84<lb/> F.10 Musik zu <hi rend="italic">Donna Diana</hi> von Agustín Moreto y
+                  Cavana (JV 220 und Anh. 97), S. 87<lb/> F.11 Chor „Hold ist der Cyanenkranz“ zu
+                    <hi rend="italic">Der Weinberg an der Elbe</hi> von Friedrich Kind (JV 222), S.
+                  92<lb/> F.12 Romanze „Leise weht es“ zu <hi rend="italic">Das Nachtlager in
+                    Granada</hi> von Friedrich Kind (JV 223), S. 94<lb/> F.13 Lied „Sei gegrüßt,
+                  Frau Sonne, mir“ zu <hi rend="italic">Das Turnier zu Kronstein oder Die drei
+                    Wahrzeichen</hi> von Franz Holbein (JV 225), S. 98<lb/> F.14 Musik zu <hi rend="italic">Das Haus Anglade oder Die Vorsehung wacht</hi> von Theodor Hell
+                  (JV 227 und Anh. 86), S. 100<lb/> F.15 Musik zu <hi rend="italic">Der Tod Heinrich
+                    des IV. von Frankreich</hi> von Eduard Gehe (JV 237), S. 102<lb/> F.16 Musik zu
+                    <hi rend="italic">Sappho</hi> von Franz Grillparzer (JV 240 und Anh. 87), S.
+                  104<lb/> F.17 Lied „Das Mädchen ging die Wies’ entlang“ zu <hi rend="italic">Der
+                    Abend am Waldbrunnen</hi> von Friedrich Kind (JV 243), S. 106<lb/> F.18 Musik zu
+                    <hi rend="italic">Die Zwillinge</hi> von Friedrich Maximillian von Klinger (JV
+                  Anh.71), S. 109<lb/> F.19 Musik zu <hi rend="italic">Liebe um Liebe</hi> von
+                  August Rublack (JV 246), S. 110<lb/> F.20 Musik zu <hi rend="italic">Karlo oder
+                    Wahnsinn aus Liebe</hi> von Georg Graf von Blankensee (JV 273), S. 111<lb/> F.21
+                  Musik zu <hi rend="italic">Der Leuchtturm</hi> von Ernst von Houwlad (JV 276), S.
+                  113<lb/> F.22 Musik zu <hi rend="italic">Preciosa</hi> von Pius Alexander Wolff
+                  (JV 279), S. 115<lb/> F.23 Chor „Sagt, woher stammt Liebeslust?“ zu <hi rend="italic">Der Kaufmann von Venedig</hi> von William Shakespeare (JV 280), S.
+                  120<lb/> F.24 Musik zu dem Festspiel „Den Sachsensohn vermählet heut’“ von Ludwig
+                  Robert (JV 289), S. 121<lb/> Der Auftrag für eine Musik zu <hi rend="italic">Der
+                    Paria</hi> von Michael Beer, S. 123<lb/> Der Auftrag zur Umarbeitung zu Johann
+                  Friedrich Reichardts Musik zu <hi rend="italic">Macbeth</hi> von William
+                  Shakespeare, S. 125 </item>
+                            </list>
+                        </item>
+                        <item>
+                            <hi rend="bold">II. Italienisch, Französisch, Deutsch – Ästhetische Prämissen
+                Webers Schriften und seine Repertoirepolitik in Prag (1813–1816) und Dresden
+                (1817–1820)</hi>
+                            <list type="ordered">
+                                <item>Ästhetische Prämissen in Webers Schriften, S. 127<lb/> Webers Opernästetik in
+                  Tonkünstlers Leben, S. 128<lb/> Kritiken und Dramatisch-musikalische Notizen, S.
+                  135<lb/> Original und Bearbeitung, S. 137 </item>
+                                <item>Webers Repertoirepolitik in Prag (1813–1816) und Dresden (1817–1820), S.
+                  140<lb/> Französische Oper, S. 142<lb/> Deutsche Oper, S. 144 </item>
+                            </list>
+                        </item>
+                        <item>
+                            <hi rend="bold">III. Von der Silvana zum Freischütz</hi>
+                            <list type="ordered">
+                                <item>
+                                    <hi rend="italic">Silvana</hi>
+                                    <lb/> Webers Einschätzung der <hi rend="italic">Silvana</hi>, S. 147<lb/> Die beiden Fassungen der Arien Nr.4 und Nr.10, S.1
+                  50<lb/> Das Libretto des <hi rend="italic">Waldmädchen</hi> und der <hi rend="italic">Silvana</hi>, S. 159 </item>
+                                <item>Konzertarien und andere Kompositionen mit italienischem Text, S. 169<lb/>
+                  Texte, S. 170<lb/> Form und Gestaltung, S. 175<lb/> Dramatischer Kontext, S.
+                  186<lb/> Italianità? S. 195 </item>
+                                <item>Einlagen zu französischen Opern, S. 200<lb/>
+                                    <hi rend="italic">Helene</hi> von Etienne-Nicolas Méhul, S. 200<lb/>
+                                    <hi rend="italic">Lodoiska</hi> von Luigi Cherubini, S. 224 </item>
+                                <item>Einlagen zu deutschen Singspielen, S. 233<lb/>
+                                    <hi rend="italic">Die Verwandlungen</hi> – Das Singspiel nach dem Französischen,
+                  S. 233<lb/>
+                                    <hi rend="italic">Der travestierte Aeneas</hi> – Die Farce und ihre
+                  charakteristische Überzeichnung, S. 242<lb/>
+                                    <hi rend="italic">Das Sternenmädchen im Maidlinger Walde</hi> – Die Protagonistin
+                  im romantisch-komischen Volksmärchen, S. 247 </item>
+                                <item>Arien zwischen <hi rend="italic">Silvana</hi> und <hi rend="italic">Freischütz</hi>, S. 253<lb/> Entwicklung der Arienform bis zum <hi rend="italic">Freischütz</hi>, S. 253<lb/> Konzertarien, S. 256<lb/> Opernarie
+                  und Bühnenlied, S. 260 </item>
+                                <item>Schauspielmusik, S. 264<lb/> Lieder, Balladen und Romanzen für Minnesänger,
+                  Barden und Troubadoure, S. 266<lb/> Chöre, S. 278<lb/> Melodram und musikalische
+                  Deklamation, S. 284<lb/> Instrumentalmusik als Bühnenmusik, S. 286<lb/>
+                                    <hi rend="italic">Nazional-karakteristische</hi> Schauspielmusik, S. 291<lb/>
+                  Musik zu höfischen und patriotischen Festspielen, S. 308<lb/> Musik zu den
+                  Schauspielen von Friedrich Kind, S. 317 </item>
+                                <item>
+                                    <hi rend="italic">Der Freischütz</hi>, S. 328<lb/> Libretto, S. 329<lb/>
+                  Arien, S. 339<lb/> Dramaturgie, S. 342 </item>
+                            </list>
+                        </item>
+                        <item>Schlußbemerkung, S. 348</item>
+                        <item>Spielplan der Oper in Prag (1813–1816) und deutschen Oper in Dresden
+              (1817–1820)<lb/> mit einem Verzeichnis der von Weber dirigierten Vorstellungen und der
+              Aufführungen seiner Schauspielmusik, S. 350<lb/> Verzeichnis der abgedruckten Texte
+              (nach Autoren), S. 439 </item>
+                        <item>Quellenverzeichnis, S. 365</item>
+                        <item>Literaturverzeichnis, S. 389</item>
+                        <item>Register, S. 397</item>
+                    </list>
+                </div>
+            </div>
+            <div xml:lang="en">
+                <head>Von der Silvana zum Freischütz</head>
+                <p>Oliver Huck, <hi rend="italic">Von der Silvana zum Freischütz. Die Konzertarien, die
+          Einlagen zu Opern und die Schauspielmusik Carl Maria von Webers</hi>, Mainz 1999. xii,
+          407 pages<lb/> Order no.: ED 8985; ISBN 3-7957-0381-6</p>
+        <!--<div></div>-->
+                <div>
+                    <head>Table of contents</head>
+                    <list>
+                        <item>Vorwort, p. ix</item>
+                        <item>Abkürzungsverzeichnis, p. x</item>
+                        <item>Einleitung, p.1–6</item>
+                        <item>
+                            <hi rend="bold">I. Entstehung, Überlieferung und Rezeption</hi>
+                            <list type="ordered">
+                                <item>Die Enstehungsbedingungen der Konzertarien, der Einlagen zu Opern und der
+                  Schauspielmusik, p. 7<lb/> Weber als <hi rend="italic">Kapellmeister und Direktor
+                    der Oper in Prag</hi>, p. 8<lb/> Aufträge aus Berlin, p. 12<lb/> Webers
+                  Anstellung als <hi rend="italic">Musikdirektor der deutschen Oper und des
+                    deutschen Schauspiels</hi> in Dresden, p. 13 </item>
+                                <item>Entstehung, Überlieferung und Rezeption der Einlagen zu Opern und Singspielen,
+                  p. 22<lb/> D.1 Einlagen zu dem Pasticcio <hi rend="italic">Der Freybrief</hi> (JV
+                  77 und 78), p. 22<lb/> D.2 Szene und Arie für Sopran "Ha! Sollte Edmund selbst der
+                  Mörder sein?" / "Laß, o laß ihn Rettung finden" zu <hi rend="italic">Helene</hi>
+                  von Etienne-Nicolas Méhul (JV 178), p. 26<lb/> D.3 Einlagen zu <hi rend="italic">Der travestierte Aeneas</hi> von Matthäus Stegmayer und Ignaz von Seyfried (JV
+                  183 und 184), p. 28<lb/> D.4 und D.6 Arie(n) für Joseph Fischer (JV Anh. 61), p.
+                  30<lb/> D.5 Lied zu <hi rend="italic">Das Sternenmädchen im Maidlinger Walde</hi>
+                  von Ferdinand Kauer (JV 194), p. 31<lb/> D.7 Chor zu <hi rend="italic">Das Dorf im
+                    Gebirge</hi> von Joseph Weigl (JV Anh. 66), p. 34<lb/> D.8 Szene und Arie für
+                  Sopran „Was sag ich?“ / „Fern von ihm“ zu <hi rend="italic">Lodoiska</hi> von
+                  Luigi Cherubini (JV 239), p. 35<lb/> D.9 Rezitativ für Sopran und Tenor „Doch
+                  welche Töne steigen jetzt hernieder“ zu <hi rend="italic">Olympia</hi> von Gaspare
+                  Spontini (JV 305), p. 38</item>
+                                <item>Entstehung, Überlieferung und Rezeption der Konzertarien und -duette, p.
+                  41<lb/> E.1 Rezitativ und Rondo für Sopran „Il momento s’avvicina“ / „La dolce
+                  speranza“ (JV 93), p. 41<lb/> E.2 Duett für zwei Altstimmen „Se il mio ben“ (JV
+                  107), p. 42<lb/> E.3 Szene und Arie der Atalia für Sopran „Misera me!“ / „Ho
+                  spavento d’ogn’aura“ (JV 121), p. 45<lb/> E.4 Szene und Arie aus Demetrio für
+                  Tenor und Männerchor „Qual altro attendi“ / „Giusti Numi!“ (JV 126), p. 48<lb/>
+                  E.5 Szene und Arie aus Ines de Castro für Tenor und zwei Chöre „Signor, se padre
+                  sei“ / „Chiamami ancor“ (JV 142), p. 49<lb/> E.6 Szene und Arie aus Ines de Castro
+                  für Sopran „Non paventar mia vita“ / „Sei tu sempre“ (JV 181), p. 51 </item>
+                                <item>Entstehung, Überlieferung und Rezeption der Schauspielmusik, p. 54<lb/> F.1
+                  Musik zu <hi rend="italic">Turandot</hi> von Friedrich Schiller (JV 75), p.
+                  54<lb/> F.2 Musik zu <hi rend="italic">Der arme Minnesänger</hi> von August von
+                  Kotzebue (JV 110–113), p. 59<lb/> F.3 Musik zu <hi rend="italic">Das
+                    österreichische Feldlager </hi>von Heinrich Schmidt (JV Anh. 43–45), p. 62<lb/>
+                  F.4 Chor zu <hi rend="italic">Romeo und Julia</hi> von William Shakespeare (JV
+                  Anh. 48), p. 65<lb/> F.5 Musik zu <hi rend="italic">Lieb’ und Versöhnen oder die
+                    Schlacht bei Leipzig</hi> von Friedrich Wilhelm Gubitz (JV 186 und 187), p.
+                  66<lb/> F.6 Ballade „Was stürmet die Heide herauf?“ zu <hi rend="italic">Gordon
+                    und Montrose oder Der Kampf der Gefühle</hi> von Georg Reinbeck (JV 189), p.
+                  71<lb/> F.7 Musik zu <hi rend="italic">Diana von Poitiers</hi> von Ignaz Franz
+                  Castelli (JV 195 und Anh. 62), p. 74<lb/> F.8 Musik zu <hi rend="italic">König
+                    Yngurd</hi> von Adolph Müllner (JV 214), p. 75<lb/> F.9 Musik zu <hi rend="italic">Die Ahnfrau</hi> von Franz Grillparzer (JV Anh. 65 und Anh. 85),
+                  p. 84<lb/> F.10 Musik zu <hi rend="italic">Donna Diana</hi> von Agustín Moreto y
+                  Cavana (JV 220 und Anh. 97), p. 87<lb/> F.11 Chor „Hold ist der Cyanenkranz“ zu
+                  <hi rend="italic">Der Weinberg an der Elbe</hi> von Friedrich Kind (JV 222), p.
+                  92<lb/> F.12 Romanze „Leise weht es“ zu <hi rend="italic">Das Nachtlager in
+                    Granada</hi> von Friedrich Kind (JV 223), p. 94<lb/> F.13 Lied „Sei gegrüßt,
+                  Frau Sonne, mir“ zu <hi rend="italic">Das Turnier zu Kronstein oder Die drei
+                    Wahrzeichen</hi> von Franz Holbein (JV 225), p. 98<lb/> F.14 Musik zu <hi rend="italic">Das Haus Anglade oder Die Vorsehung wacht</hi> von Theodor Hell
+                  (JV 227 und Anh. 86), p. 100<lb/> F.15 Musik zu <hi rend="italic">Der Tod Heinrich
+                    des IV. von Frankreich</hi> von Eduard Gehe (JV 237), p. 102<lb/> F.16 Musik zu
+                  <hi rend="italic">Sappho</hi> von Franz Grillparzer (JV 240 und Anh. 87), p.
+                  104<lb/> F.17 Lied „Das Mädchen ging die Wies’ entlang“ zu <hi rend="italic">Der
+                    Abend am Waldbrunnen</hi> von Friedrich Kind (JV 243), p. 106<lb/> F.18 Musik zu
+                  <hi rend="italic">Die Zwillinge</hi> von Friedrich Maximillian von Klinger (JV
+                  Anh.71), p. 109<lb/> F.19 Musik zu <hi rend="italic">Liebe um Liebe</hi> von
+                  August Rublack (JV 246), p. 110<lb/> F.20 Musik zu <hi rend="italic">Karlo oder
+                    Wahnsinn aus Liebe</hi> von Georg Graf von Blankensee (JV 273), p. 111<lb/> F.21
+                  Musik zu <hi rend="italic">Der Leuchtturm</hi> von Ernst von Houwlad (JV 276), p.
+                  113<lb/> F.22 Musik zu <hi rend="italic">Preciosa</hi> von Pius Alexander Wolff
+                  (JV 279), p. 115<lb/> F.23 Chor „Sagt, woher stammt Liebeslust?“ zu <hi rend="italic">Der Kaufmann von Venedig</hi> von William Shakespeare (JV 280), p.
+                  120<lb/> F.24 Musik zu dem Festspiel „Den Sachsensohn vermählet heut’“ von Ludwig
+                  Robert (JV 289), p. 121<lb/> Der Auftrag für eine Musik zu <hi rend="italic">Der
+                    Paria</hi> von Michael Beer, p. 123<lb/> Der Auftrag zur Umarbeitung zu Johann
+                  Friedrich Reichardts Musik zu <hi rend="italic">Macbeth</hi> von William
+                  Shakespeare, p. 125 </item>
+                            </list>
+                        </item>
+                        <item>
+                            <hi rend="bold">II. Italienisch, Französisch, Deutsch – Ästhetische Prämissen
+              Webers Schriften und seine Repertoirepolitik in Prag (1813–1816) und Dresden
+              (1817–1820)</hi>
+                            <list type="ordered">
+                                <item>Ästhetische Prämissen in Webers Schriften, p. 127<lb/> Webers Opernästetik in
+                  Tonkünstlers Leben, p. 128<lb/> Kritiken und Dramatisch-musikalische Notizen, p.
+                  135<lb/> Original und Bearbeitung, p. 137 </item>
+                                <item>Webers Repertoirepolitik in Prag (1813–1816) und Dresden (1817–1820), p.
+                  140<lb/> Französische Oper, p. 142<lb/> Deutsche Oper, p. 144 </item>
+                            </list>
+                        </item>
+                        <item>
+                            <hi rend="bold">III. Von der Silvana zum Freischütz</hi>
+                            <list type="ordered">
+                                <item>
+                                    <hi rend="italic">Silvana</hi>
+                                    <lb/> Webers Einschätzung der <hi rend="italic">Silvana</hi>, p. 147<lb/> Die beiden Fassungen der Arien Nr.4 und Nr.10, p.1
+                  50<lb/> Das Libretto des <hi rend="italic">Waldmädchen</hi> und der <hi rend="italic">Silvana</hi>, p. 159 </item>
+                                <item>Konzertarien und andere Kompositionen mit italienischem Text, p. 169<lb/>
+                  Texte, p. 170<lb/> Form und Gestaltung, p. 175<lb/> Dramatischer Kontext, p.
+                  186<lb/> Italianità? p. 195 </item>
+                                <item>Einlagen zu französischen Opern, p. 200<lb/>
+                                    <hi rend="italic">Helene</hi> von Etienne-Nicolas Méhul, p. 200<lb/>
+                                    <hi rend="italic">Lodoiska</hi> von Luigi Cherubini, p. 224 </item>
+                                <item>Einlagen zu deutschen Singspielen, p. 233<lb/>
+                                    <hi rend="italic">Die Verwandlungen</hi> – Das Singspiel nach dem Französischen,
+                  p. 233<lb/>
+                                    <hi rend="italic">Der travestierte Aeneas</hi> – Die Farce und ihre
+                  charakteristische Überzeichnung, p. 242<lb/>
+                                    <hi rend="italic">Das Sternenmädchen im Maidlinger Walde</hi> – Die Protagonistin
+                  im romantisch-komischen Volksmärchen, p. 247 </item>
+                                <item>Arien zwischen <hi rend="italic">Silvana</hi> und <hi rend="italic">Freischütz</hi>, p. 253<lb/> Entwicklung der Arienform bis zum <hi rend="italic">Freischütz</hi>, p. 253<lb/> Konzertarien, p. 256<lb/> Opernarie
+                  und Bühnenlied, p. 260 </item>
+                                <item>Schauspielmusik, p. 264<lb/> Lieder, Balladen und Romanzen für Minnesänger,
+                  Barden und Troubadoure, p. 266<lb/> Chöre, p. 278<lb/> Melodram und musikalische
+                  Deklamation, p. 284<lb/> Instrumentalmusik als Bühnenmusik, p. 286<lb/>
+                                    <hi rend="italic">Nazional-karakteristische</hi> Schauspielmusik, p. 291<lb/>
+                  Musik zu höfischen und patriotischen Festspielen, p. 308<lb/> Musik zu den
+                  Schauspielen von Friedrich Kind, p. 317 </item>
+                                <item>
+                                    <hi rend="italic">Der Freischütz</hi>, p. 328<lb/> Libretto, p. 329<lb/>
+                  Arien, p. 339<lb/> Dramaturgie, p. 342 </item>
+                            </list>
+                        </item>
+                        <item>Schlußbemerkung, p. 348</item>
+                        <item>Spielplan der Oper in Prag (1813–1816) und deutschen Oper in Dresden
+              (1817–1820)<lb/> mit einem Verzeichnis der von Weber dirigierten Vorstellungen und der
+              Aufführungen seiner Schauspielmusik, p. 350<lb/> Verzeichnis der abgedruckten Texte
+              (nach Autoren), p. 439 </item>
+                        <item>Quellenverzeichnis, p. 365</item>
+                        <item>Literaturverzeichnis, p. 389</item>
+                        <item>Register, p. 397</item>
+                    </list>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050093">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Weber Digital - Präsentation am 4. Mai 2011 in Berlin</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2011-04-15T09:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>performance</term>
+                    <term>conference</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Unter dem Motto <hi rend="bold">"Weber Digital"</hi> findet in Kooperation mit der Staatsbibliothek zu <placeName>
+                        <settlement>Berlin</settlement>
+                    </placeName> am <date when="2011-05-04">4. Mai 2011</date> um 19 Uhr in der Vertretung des Landes Rheinland-Pfalz (dem Sitzland der Akademie der Wissenschaften und der Literatur Mainz) eine Veranstaltung mit Musik und Lesung statt, während der ein erstes größeres Textkorpus der Edition der Briefe, Tagebücher, Schriften und Dokumente <persName key="A002068">Webers</persName> freigeschaltet wird.</p>
+                <p>Während dieser Veranstaltung wird <persName>Hans-Jürgen Schatz</persName> aus Briefen, Tagebücher und Schriften <persName key="A002068">Carl Maria von Webers</persName> und seiner Zeitgenossen lesen. Außerdem wird der erste Satz aus <persName key="A002068">Webers</persName>
+                    <workName key="A020201">Klarinettenkonzert f-Moll</workName> zunächst in der Version <persName key="A000076">Carl Baermanns</persName> und danach dem Text der neuen Gesamtausgabe folgend von <persName>Thomas Lindhorst</persName> (Klarinette) und <persName>Hiroko Arimoto</persName> (Klavier) interpretiert. Zum Abschluss erklingt das <persName key="A001313">Meyerbeer</persName> gewidmete <hi rend="italic">
+                        <workName key="A020330">Momento capriccioso</workName>
+                    </hi> für Klavier von <persName key="A002068">Weber</persName>.</p>
+                <p>Mit kurzen Präsentationen wird während der Veranstaltung einerseits die neue digitale Edition der Klarinettenkonzerte Webers durch <persName>Daniel Röwenstrunk</persName> vorgestellt, <persName key="A009000">Joachim Veit</persName> wird kurz in die Brief- und Tagebuchausgabe einführen und <persName key="A009001">Peter Stadler</persName> als der für die digitalen Anteile der Weber-Ausgabe Verantwortliche den neuen Internet-Auftritt erläutern, der an diesem Abend den alten endgültig ersetzt.</p>
+                <p>Es ist für die Weber-Ausgabe sehr ehrenvoll, dass <persName>Hans-Ulrich Bieler</persName> (Ständiger Vertreter des Bevollmächtigten beim Bund und für Europa des Landes Rheinland-Pfalz), <persName>Barbara Schneider-Kempf</persName> (die Generaldirektorin der Staatsbibliothek zu <placeName>
+                        <settlement>Berlin</settlement>
+                    </placeName> – Preußischer Kulturbesitz) und <persName>Norbert Miller</persName> (als Vizepräsident der Akademie der Wissenschaften und der Literatur <placeName>
+                        <settlement>Mainz</settlement>
+                    </placeName>) Grußworte an die geladenen Gäste richten werden. Für die Gesamtausgabe spricht der Herausgaber, <persName>Gerhard Allroggen</persName>, für die jetzt 20 Jahre bestehende Weber-Gesellschaft deren Vorsitzende, <persName>Irmlind Capelle</persName>. Es ist zu hoffen, dass die nun zusätzlich zur gedruckten Noten-Ausgabe etablierte digitale Edition rasch erweitert werden kann und bald ein neues, verlässliches und leistungsfähiges Instrument für Forschungsfragen, aber auch für die interessierte Öffentlichkeit schafft, um damit eine der einflussreichsten Musikerpersönlichkeiten des 19. Jahrhunderts durch ein – bislang sicherlich noch ungewöhnliches – "elektronisches Denkmal" zu würdigen.</p>
+                <div xml:lang="de">
+                    <head>Ausführende</head>
+                    <p>
+                        <persName>Hans Jürgen Schatz</persName> wirkte in zahlreichen Theaterinszenierungen sowie Kino- und Fernsehfilmen mit. Einen Ruf als exzellenter Rezitator erwarb er sich mit Texten von <persName>Erich Kästner</persName>, <persName key="A003095">Jean Paul</persName> und <persName key="A000851">E.T.A. Hoffmann</persName>. Seine Interpretation von <persName>L.F. Baums</persName>
+                        <workName>"Der Zauberer von Oos"</workName> wurde mit dem "Preis der deutschen Schallplattenkritik" ausgezeichnet, seine Einspielung der musikalischen Erzählung <workName>"Paddington Bärs erstes Konzert"</workName> mit dem Deutschen Schallplattenpreis "ECHO Klassik". Für sein vielfältiges gesellschaftliches Engagement wurde <persName>Schatz</persName> mit dem Bundesverdienstkreuz am Bande geehrt (vgl. <ref target="http://www.hans-juergen-schatz.de/">Homepage</ref>)</p>
+                    <p>
+                        <persName>Thomas Lindhorst</persName> studierte bei <persName>Gerhard Albert</persName> und <persName>Jost Michaels</persName> in <placeName>
+                            <settlement>Detmold</settlement>
+                        </placeName>; sein Konzertexamen absolvierte er bei <persName>Hans-Dietrich Klaus</persName>. Als langjähriger Soloklarinettist der Neuen Philharmonie Westfalen und Mitglied verschiedener Kammermusikensembles führten ihn Konzertreisen u.a. in die <placeName>USA</placeName>, nach <placeName>Belgien</placeName>, <placeName>Russland</placeName>, <placeName>Finnland</placeName>, <placeName>Italien</placeName> und <placeName>Estland</placeName>. Seit <date notBefore="2007-04-01">April 2007</date> hat <persName>Lindhorst</persName> eine Professur an der Hochschule für Musik <placeName>
+                            <settlement>Detmold</settlement>
+                        </placeName> inne und leitet damit eine der renommiertesten deutschen Klarinettenklassen (vgl. <ref target="http://www.hfm-detmold.de/portrait/personen/lehrende/5076/thomas-lindhorst">Website der HfM Detmold</ref>).</p>
+                    <p>
+                        <persName>Hiroko Arimoto</persName> setzte nach Abschluss ihres Klavierstudiums an der Universität <placeName>
+                            <settlement>Kagoshima</settlement>
+                        </placeName> (<placeName>Japan</placeName>) ihre Ausbildung an der Musikhochschule <placeName>
+                            <settlement>Detmold</settlement>
+                        </placeName> bei <persName>Nerine Barrett</persName> fort. <date when="2004">2004</date> absolvierte sie ihre Diplomprüfung, <date when="2008">2008</date> ihr Konzertexamen bei <persName>Michael Keller</persName>. Meisterkurse besuchte sie bei <persName>Klaus Schilde</persName>, <persName>Bruno Canino</persName>, <persName>Andreas Staier</persName>, <persName>András Schiff</persName> und <persName>Friedrich Wilhelm Schnurr</persName>. Ihr besonderes Augenmerk gilt der Kammermusik, wo sie vielfältige Impulse bei Kursen mit <persName>Eberhard Feltz</persName>, <persName>Wen-Sinn Yang</persName>, <persName>Ana Chumachenco</persName>, <persName>Dr. Steven Perry</persName> und <persName>András Schiff</persName> empfing. Seit einigen Jahren ist sie an den Hochschulen <placeName>
+                            <settlement>Detmold</settlement>
+                        </placeName> und <placeName>
+                            <settlement>Hannover</settlement>
+                        </placeName> als Lehrbeauftragte für Korrepetition tätig.</p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

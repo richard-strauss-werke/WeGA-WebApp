@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050079">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Konzertante Klarinettenwerke in Kürze ausgeliefert</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2011-01-22T09:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>publication</term>
+                    <term>sig</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Der umfangreiche Band mit den <hi rend="bold">konzertanten Klarinettenwerken</hi>, d.h. mit dem <workName key="A020200">
+                        <hi rend="italic">Concertino</hi> für Klarinette und Orchester Es-Dur (WeV N.10)</workName>, dem <workName key="A020201">Konzert Nr. 1 f-Moll (WeV N.11)</workName> und dem <workName key="A020226">Konzert Nr. 2 Es-Dur (WeV N.13)</workName>, steht kurz vor der Auslieferung. Der Band (Serie V, Bd. 6) wurde herausgegeben von <hi rend="bold">Frank Heidlberger</hi> (Denton/USA), die Redaktion hatte Joachim Veit. Auf ihren insgesamt 456 Seiten dokumentiert die Edition nicht nur den Notentext in einer den autorisierten Quellen folgenden Form, sondern enthält auch umfangreiche Texte zur Entstehung und Überlieferung, insbesondere zur Problematik der sogenannten "Baermann-Ausgaben", die der Sohn des mit <persName key="A002068">Weber</persName> befreundeten Klarinettisten <persName key="A000077">Heinrich Joseph Baermann</persName>, <persName key="A000076">Carl Baermann</persName>, Anfang der 1870-er Jahre vorgelegt hatte und die bis heute die Aufführungstradition dieser Werke bestimmen. Ein umfangreicher Abbildungsteil ergänzt diese Edition, auf die nach Erscheinen hier nochmals detaillierter hingewiesen werden soll.</p>
+                <p>In Vorbereitung befinden sich auch <hi rend="bold">Orchestermaterialien</hi> und <hi rend="bold">Klavierauszüge</hi> dieser Werke, erstere herausgegeben von der WeGA, letztere von Frank Heidlberger.</p>
+                <p>Gleichzeitig wird eine in Kooperation zwischen der Weber-Gesamtausgabe und dem <hi rend="bold">DFG-Projekt <hi rend="italic">Edirom</hi>
+                    </hi> erstellte <hi rend="bold">digitale Edition</hi> der Werke auf DVD vorgelegt. Diese Version wurde erarbeitet von <hi rend="bold">Benjamin Wolff Bohl, Daniel Röwenstrunk und Joachim Veit</hi> unter Mitarbeit von <hi rend="bold">Philemon Jacobsen</hi> und wird von Seiten des Projekts allen Subskribenten der Weber-Gesamtausgabe kostenlos mit zur Verfügung gestellt. Eine öffentliche Präsentation dieser Edition ist geplant, Näheres wird zu gegebener Zeit unter der Rubrik "Aktuelles" bekannt gegeben.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

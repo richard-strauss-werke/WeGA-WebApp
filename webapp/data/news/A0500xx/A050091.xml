@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050091">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Die sicherlich nachhaltigste Neuerung: Editionsbericht digital (Edirom)</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2005-12-12T11:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>release</term>
+                    <term>publication</term>
+                    <term>sig</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>
+                    <hi rend="bold">Mit der dem Band beigefügten CD wird erstmals innerhalb einer Gesamtausgabe eine Edition in digitaler Fassung vorgelegt</hi>. Sie wurde von <persName>Ralf Schnieders</persName> und <persName>Johannes Kepper</persName> im Rahmen eines DFG-Projekts zu digitaler Musikedition erarbeitet und konzentriert sich auf eine anschaulichere Vermittlung der Varianten und Lesarten. Der Benutzer kann mit Hilfe dieser CD alle Entscheidungen des Herausgebers leicht nachvollziehen (und ggf. zu abweichenden Entscheidungen kommen), da die Unterschiede der Quellen nicht allein mit Worten beschrieben, sondern durch die jeweils passenden <hi rend="bold">Ausschnitte aus den Faksimiles der Quellen</hi> direkt vor Augen geführt werden. Die oft recht mühsame Lektüre der kritischen Einzelanmerkungen wird so durch die Möglichkeiten des neuen Mediums, das auch Such- und Selektiervorgänge erlaubt (z.B. müheloses Herausfiltern aller Anmerkungen zur Dynamik der Klarinette oder aller Änderungen zwischen Erst- und Zweitdruck), wesentlich erleichtert und veranschaulicht. Darüber hinaus enthält die CD alle <hi rend="bold">Texte</hi> des Bandes (in teils großügiger bebilderter Form) und sämtliche <hi rend="bold">Quellen</hi>, wobei die Einträge <persName key="A002068">Webers</persName> in der Stichvorlage durch farbige Markierungen unmittelbar und ohne umständliche Erläuterungen verständlich werden.</p>
+                <p>Das Interesse an einer <hi rend="bold">Weiterentwicklung</hi> dieser, mit der CD zunächst nur in einer vorläufigen Form präsentierten Möglichkeiten ist groß; verschiedene neuere Editionen haben bereits Kontakt mit dem Projekt aufgenommen. Inzwischen arbeitet <persName>Johannes Kepper</persName> mit dem Wirtschaftsinformatiker <persName>Daniel Roewenstrunk</persName> an einer kompletten Neuprogrammierung, die sich auf offene Standards stützt und damit langfristige Datenhaltbarkeit garantiert. Dabei ist auch eine neue, sehr viel flexibler zu handhabende Benutzeroberfläche entstanden, die u.a. das Navigieren in größeren Partituren erleichtert.</p>
+                <p>Wenn Sie sich über die Weiterentwicklung dieser Technik interessieren, finden Sie sowohl eine Darstellung der bereits als „alt“ titulierten <hi rend="italic">Edirom</hi>-Version der CD als auch der aktuellen Arbeiten unter der Projektadresse <ref target="http://www.edirom.de">www.edirom.de</ref>. Die Mitarbeiter haben zusammen mit der WeGA inzwischen auch ein Forum und eine Linkliste zu allen Problemen rund um digitale Editions- und Präsentationsformen unter <ref target="http://www.muwimedial.de">www.muwimedial.de</ref> angelegt. Eine ausführlichere Darstellung der Perspektiven des Projekts können Sie dem <hi rend="italic">Jahrbuch für Computerphilologie</hi>
+                    <date when="2005">2005</date> entnehmen. Den Einführungstext in die CD auf den Seiten 315–316 des Gesamtausgabenbandes können Sie hier als PDF-Datei herunterladen. Weitere Texte sind auf der <hi rend="italic">Edirom</hi>-Seite verlinkt.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <description>Web application that powers weber-gesamtausgabe.de</description>
+    <author>Peter Stadler</author>
+    <website>http://weber-gesamtausgabe.de/A009001</website>
+    <status>alpha</status>
+    <license>GNU-LGPL</license>
+    <copyright>true</copyright>
+    <type>application</type>
+    <target>WeGA-WebApp</target>
+    <prepare>pre-install.xql</prepare>
+    <finish/>
+    <permissions user="wega" password="wega" group="wega" mode="rw-rw-r--"/>
+    <deployed>2013-07-14T21:47:09.897+02:00</deployed>
+</meta>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050017">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Schauspielmusikband Serie III, Bd. 10a erschienen</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2004-02-24T09:23:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Nun ist er endlich da: Mehr als 360 Seiten stark ist der von <hi rend="bold">Oliver Huck</hi> herausgegebene Band, der intern in der WeGA immer etwas unpräzise <hi rend="bold">"Sonstige Schauspielmusiken"</hi> genannt wurde, also jene Werke umfaßt, die Weber abgesehen von seiner hochgeschätzten <workName key="A020227">Musik zu <persName key="A002176">Pius Alexander Wolffs</persName> Schauspiel <hi rend="italic">Preciosa</hi>
+                    </workName> komponiert hat. Zu den prominentesten Stücken des neuen Bandes gehört sicherlich die <workName key="A020229">Musik zu <persName key="A001685">Schiller</persName>/<persName key="A002349">Gozzis</persName>
+                        <hi rend="italic">Turandot</hi>
+                    </workName>, daneben finden sich Werke wie die <workName key="A020215">Musik zum Trauerspiel <hi rend="italic">König Yngurd</hi>
+                    </workName> von <persName key="A001386">Adolph Müllner</persName>, zu <persName key="A001056">August von Kotzebues</persName>
+                    <hi rend="italic">
+                        <workName><!-- TODO: mehrere IDs! -->Minnesänger</workName>
+                    </hi>, <persName key="A000680">Franz Grillparzers</persName>
+                    <hi rend="italic">
+                        <workName key="A020246">Sappho</workName>
+                    </hi>, <persName key="A002160">Theodor Hells</persName>
+                    <hi rend="italic">
+                        <workName key="A020242">Haus Anglade</workName>
+                    </hi> u.a.m. (vgl. das vollständige Verzeichnis in der entsprechenden Rubrik der <!-- TODO -->
+                    <ref target="file:///Z:/SIK_AlteHompages/werkedition.html">Bandübersicht</ref>). Da es sich bei Schauspielmusik um "funktionale" Musik handelt, die nur in Zusammenhang mit dem jeweiligen Text wirklich verständlich wird, wurde großer Wert auf die <hi rend="bold">Wiedergabe der entsprechenden Szenen der einzelnen Schauspiele</hi> gelegt, die im Anhang des Bandes abgedruckt wurden. Darüber hinaus gibt es <hi rend="bold">Inhaltsangaben</hi> der jeweiligen Werke, so daß auch die Einbindung der Szenen verdeutlicht werden kann.<lb/>
+    In der Reihe der Schauspielmusiken fehlen nun nur noch die sogenannten <placeName>
+                        <settlement>Dresdner</settlement>
+                    </placeName> "Festspiele", die anläßlich von Feierlichkeiten des Königshauses entstanden und in denen Musik <hi rend="italic">und</hi> Text zum jeweiligen Ereignis geschrieben wurden. Dieser Band ist zur Zeit in der Endredaktion und wird in absehbarer Zeit die Serie vervollständigen.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

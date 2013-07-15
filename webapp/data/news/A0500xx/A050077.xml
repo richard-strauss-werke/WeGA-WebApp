@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050077">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Doppelband mit Einlage- und Konzertarien liegt vor</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2010-03-07T09:15:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Inzwischen liegt der Doppelband mit <hi rend="bold">Einlagen in fremde Bühnenwerke, Konzertarien und Duette mit Orchesterbegleitung, Serie iII, Bd. 11</hi> vor. Der Umfang des von Markus Bandur, Solveig Schreiter und Frank Ziegler herausgegebenen Bandes war alleine im Notenteil auf knapp 300 Seiten angewachsen, so dass sich Herausgeber, Redaktion und Verlag entschieden, in diesem Falle den Band mit dem 271 Seiten umfassenden kritischen Bericht separat zu drucken und damit die Benutzung zu erleichtern. Der erste Band enthält neben dem Notentext auch ein umfangreiches Vorwort von Frank Ziegler.</p>
+                <p>Es ist zu hoffen, dass mit dieser Publikation zahlreiche der hier nun zugänglich gemachten Kompositionen, die sich bisher weder in der Praxis etabliert hatten (der Grund lag sicherlich auch im Fehlen zuverlässiger Aufführungsmateralien) noch in der Forschung eingehender wahrgenommen wurden (einzig die Dissertation von Oliver Huck bildete hier eine Ausnahme), wieder Eingang ins Musikleben finden. Sechs der acht Einalgen (darunter zwei Fragmente) und zwei der sechs Konzertnummern erscheinen in der Originalversion hier erstmals überhaupt im Druck. Den Kompositionen für den Konzertgebrauch liegen ausschließlich italienische Texte (meist von <persName key="A002353">Metastasio</persName>) zugrunde, was hinsichtlich der lange Zeit fast aussschließlichen Wahrnehmung <persName key="A002068">Webers</persName> als "Nationalkomponist" die Beschäftigung mit diesen Werken sicherlich behinderte. Auffallend ist bei <persName key="A002068">Weber</persName> sein freier Umfang mit den Textvorlagen.</p>
+                <p>Der Kritische Bericht des Bandes setzt sich eingehend mit der teils komplizierten und sehr unterschiedlichen Quellenlage auseinander, der Forscher findet hier umfangreiches neues Material zu diesen Werken. Der Band mit den <hi rend="bold">Klavierauszügen zu Konzert- und Einlagearien sowie Ouvertüren</hi> (<hi rend="bold">Serie VIII, Bd. 7)&#160;</hi> ist gegenwärtig im Druck (die hier publizierten Auszüge stammen von Weber selbst) und wird zusammen mit dem im Laufe des Jahres herzustellenden Aufführungsmaterialien hoffentlich dafür sorgen, dass viele dieser Werke bald nicht nur in Papierform zugänglich sind.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

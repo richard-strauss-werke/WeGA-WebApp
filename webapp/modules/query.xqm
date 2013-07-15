@@ -1,0 +1,86 @@
+xquery version "3.0";
+
+(:~
+ : Module for querying the data
+ :)
+module namespace query="http://xquery.weber-gesamtausgabe.de/modules/query";
+
+declare namespace tei="http://www.tei-c.org/ns/1.0";
+declare namespace mei="http://www.music-encoding.org/ns/mei";
+
+import module namespace config="http://xquery.weber-gesamtausgabe.de/modules/config" at "config.xqm";
+import module namespace core="http://xquery.weber-gesamtausgabe.de/modules/core" at "core.xqm";
+
+(:~
+ : Get the latest news from the news collection
+ :
+ : @author Peter Stadler
+ : @return the news documents
+ :)
+declare function query:get-latest-news($date as xs:date?) as document-node()* {
+    let $maxNews := xs:integer(config:get-option('maxNews'))
+    let $minNews := xs:integer(config:get-option('minNews'))
+    let $maxNewsDays := xs:integer(config:get-option('maxNewsDays'))
+    let $date := 
+        if(exists($date)) then $date
+        else current-date() 
+    let $newsColl := subsequence(core:getOrCreateColl('news', 'indices', true())[days-from-duration($date - xs:date(.//tei:publicationStmt/tei:date/xs:dateTime(@when))) le $maxNewsDays], 1, $maxNews)
+    
+    return 
+        if(count($newsColl) lt $minNews) then subsequence(core:getOrCreateColl('news', 'indices', true()), 1, $minNews)
+        else $newsColl 
+};
+
+declare function query:get-todays-events($date as xs:date) as element(tei:date)*{
+    let $day := day-from-date($date)
+    let $month := month-from-date($date)
+    return 
+        collection($config:data-collection-path || '/letters')//tei:dateSender/tei:date[@when castable as xs:date][day-from-date(@when) eq $day][month-from-date(@when) eq $month] union
+        collection($config:data-collection-path || '/persons')//tei:date[@when castable as xs:date][parent::tei:birth or parent::tei:death][day-from-date(@when) eq $day ][ month-from-date(@when) eq $month]
+        (:core:getOrCreateColl('letters', 'indices', true())//tei:dateSender/tei:date[@when castable as xs:date][day-from-date(@when) eq $day][month-from-date(@when) eq $month]:)
+};
+
+(:~
+ : Grab the first author from a TEI document
+ :
+ : @author Peter Stadler 
+ : @param $item the id of the TEI document (or the document node itself) to grab the author from
+ : @return xs:string the name of the author as given by //tei:fileDesc/tei:titleStmt/tei:author[1]
+:)
+declare function query:getAuthorOfTeiDoc($item as item()) as xs:string {
+    let $doc := typeswitch($item)
+        case xs:string return core:doc($item)/*
+        default return $item/*
+    let $docID := typeswitch($item)
+        case xs:string return $item
+        default return $doc/root()/*/@xml:id cast as xs:string
+    return 
+        if(exists($doc)) then 
+            if(config:isDiary($docID)) then 'A002068' (: Diverse Sonderbehandlungen fürs Tagebuch :)
+            else if(config:isWork($docID)) then  (: Diverse Sonderbehandlungen für Werke :)
+                if(exists($doc//mei:titleStmt/mei:respStmt/mei:persName[@role = 'cmp'][1]/@dbkey)) then $doc//mei:titleStmt/mei:respStmt/mei:persName[@role = 'cmp'][1]/string(@dbkey)
+                else if(exists($doc/mei:ref)) then ''
+                else config:get-option('anonymusID')
+            else if(exists($doc//tei:fileDesc/tei:titleStmt/tei:author[1]/@key)) then $doc//tei:fileDesc/tei:titleStmt/tei:author[1]/string(@key)
+            else if(exists($doc/tei:ref)) then query:getAuthorOfTeiDoc($doc/tei:ref/@target cast as xs:string)
+            else config:get-option('anonymusID')
+        else ''
+};
+
+(:~
+ : Get the regularized name of a person
+ :
+ : @param $key the db-key of the person
+ : @author Peter Stadler
+ : @return xs:string
+ :)
+declare function query:getRegName($key as xs:string) as xs:string {
+(:    Leider zu langsam:)
+    normalize-space(collection($config:data-collection-path || '/persons')//id($key)/tei:persName[@type='reg'])
+(:    let $response := wega:dictionaryLookup(concat('_', $key), 'persNamesFile'):)
+    (:let $dictionary := wega:getNormDates('persons') 
+    let $response := $dictionary//entry[@docID = $key]
+    return 
+        if(exists($response)) then $response/text() cast as xs:string
+        else '':)
+};

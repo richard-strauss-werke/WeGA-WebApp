@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050024">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Weber-Ausgabe braucht dringend zusätzliche finanzielle Unterstützung</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2004-12-06T09:01:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>report</term>
+                    <term>source</term>
+                    <term>announcement</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Die knappen Kassen der öffentlichen Haushalte bescheren uns auch in diesem Jahr wieder große Probleme. Die Mitarbeiter sind längst gewohnt, Reisekosten und teilweise auch bereits Kosten für Mikrofilme oder Kopien aus eigener Tasche zu zahlen, da der von Bund und Ländern über die Union der Akademien der Wissenschaften zur Verfügung gestellte Etat an allen Ecken und Enden nicht ausreicht. Idealismus war in der WeGA aber immer schon groß geschrieben! In diesem Jahr jedoch betrifft es zusätzlich unsere <placeName>
+                        <settlement>Berliner</settlement>
+                    </placeName> Arbeitsstelle besonders hart, da auch die Personalmittel nicht mehr ausreichen. Wir suchen daher dringend <persName key="A002068">Weber</persName>-Enthusiasten, die bereit sind, unsere Arbeit finanziell zu unterstützen. Jede noch so kleine Spende ist höchst willkommen! Bitte helfen Sie uns dabei, diese für die Musikgeschichte des frühen 19. Jahrhunderts so außerordentlich wichtige Ausgabe der Kompositionen, Schriften, Briefe und Tagebücher erfolgreich weiterzuführen. Gerne sind wir zu näheren Auskünften bereit.<lb/>
+               Sie können auch gezielt einzelne Bände unterstützen und werden dann ggf. im Band selbst als Förderer genannt. Augenblicklich in Arbeit befindlich sind z.B. die Partitur des Einakters <hi rend="italic">
+                        <workName key="A020038">Abu Hassan</workName>
+                    </hi>, das <workName key="A020212">1. Klavierkonzert</workName>, die Ouvertüren zu <hi rend="italic">
+                        <workName key="A020207">Beherrscher der Geister</workName>
+                    </hi>, <hi rend="italic">
+                        <workName key="A020237">Peter Schmoll</workName>
+                    </hi> und die <hi rend="italic">
+                        <workName key="A020251">Jubelouvertüre</workName>
+                    </hi>, die Dresdner Festmusiken, die <workName key="A020021">Kantate <hi rend="italic">L'Accoglienza</hi>
+                    </workName> und die Klarinettenkonzerte. Bitte schreiben Sie uns an, wenn Sie eine Patenschaft für einen dieser Bände übernehmen möchten.<lb/>
+    Die <hi rend="italic">Gesellschaft zur Förderung der Carl-Maria-von-Weber-Gesamtausgabe e. V.</hi> ist als wissenschaftlich gemeinnützig anerkannt. Durch eine Spende auf das Konto der Gesellschaft (Konto-Nr. 286 950 001 bei der Dresdner Bank AG Detmold, BLZ 480 800 20) fördern Sie unmittelbar unsere Editionsarbeiten. Sie können dabei gerne gezielt angeben, wofür Ihre Spende bestimmt sein soll.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

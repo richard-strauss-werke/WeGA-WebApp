@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A110464">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="de">Weber-Studien Bd. 7</title>
+                <title level="a" xml:lang="en">Weber-Studies vol. 7</title>
+                <author key="A009001">Peter Stadler</author>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>WeGA elektronisch</publisher>
+                <availability status="free">
+                    <p>2012, Carl-Maria-von-Weber-Gesamtausgabe, Detmold</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m" type="main">Carl Maria von Weber und die Schauspielmusik seiner
+              Zeit</title>
+                        <title level="m" type="sub">Bericht über die Tagung der
+              Carl-Maria-von-Weber-Gesamtausgabe in der Staatsbibliothek zu Berlin – Preußischer
+              Kulturbesitz am 26. und 27. November 1998</title>
+                        <editor>Dagmar Beck</editor>
+                        <editor>Frank Ziegler</editor>
+                        <imprint>
+                            <pubPlace>Mainz</pubPlace>
+                            <date when="2007">2003</date>
+                        </imprint>
+                    </monogr>
+                    <series>
+                        <title level="s">Weber-Studien</title>
+                        <editor>Gerhard Allroggen</editor>
+                        <editor key="A009000">Joachim Veit</editor>
+                        <biblScope type="vol">7</biblScope>
+                    </series>
+                    <idno type="isbn-13">978-3-7957-0383-7</idno>
+                    <idno type="isbn-10">3-7957-0383-2</idno>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc status="approved">
+            <change who="PS" when="2012-03-08">initial eingerichtet</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:lang="de">
+                <head>Carl Maria von Weber und die Schauspielmusik seiner Zeit</head>
+                <p>
+                    <hi rend="italic">Bericht über die Tagung der Carl-Maria-von-Weber-Gesamtausgabe in der
+            Staatsbibliothek zu Berlin – Preußischer Kulturbesitz am 26. und 27. November 1998</hi>,
+          hg. von Dagmar Beck und Frank Ziegler, Mainz 2003. 332 S.<lb/> Bestellnummer: ED 9623;
+          ISBN 3-7957-0383-2</p>
+                <div>
+                    <p>Bis vor wenigen Jahren wurde der Schauspielmusik, abgesehen von einzelnen
+            herausragenden Werken, von der Musikwissenschaft kaum Beachtung geschenkt; vorwiegend
+            die Theaterwissenschaft beschäftigte sich mit den Kompositionen zum Sprechtheater, ohne
+            freilich eine historiographische Gesamtdarstellung oder gar editorische
+            Auseinandersetzung in Angriff zu nehmen. Das mag zum einen daran liegen, daß
+            Schauspielmusik nie autonome, sondern immer ‚dienende‘ Musik ist, zum anderen daran, daß
+            innerhalb der historischen Entwicklung nie eigenständige formale Modelle entwickelt
+            wurden, die Allgemeingültigkeit beanspruchen könnten. Die Musik für das Theater
+            orientierte sich an unterschiedlichen Gattungen (Ouvertüre, Lied, Melodram, Tanz etc.),
+            und so assoziiert der Begriff Schauspielmusik eher stilistische Vielfalt als eine
+            Gattungstradition.</p>
+                    <p>Der musikalische Reichtum der überlieferten Theatermusiken wird erst heute mehr und
+            mehr entdeckt. Vor allem das letzte Drittel des 18. und das erste Drittel des 19.
+            Jahrhunderts können – zumindest bezogen auf die deutsche Bühnenlandschaft – als eine
+            Blütezeit der Schauspielmusik angesehen werden. In diesen Jahrzehnten, die sich aufgrund
+            der Diskontinuität der literarischen und musikalischen Entwicklung (Sturm und Drang,
+            Empfindsamkeit, Klassik, Romantik) gerade in bezug auf die Schauspielmusik so schwer
+            ‚etikettieren‘ lassen, entstand nicht nur eine unüberschaubare Menge Musik für das
+            Theater; die Problematik der musikalischen Untermalung bzw. Bereicherung des
+            Sprechtheaters wurde auch im ästhetischen Diskurs, anknüpfend an <persName key="A004532">Gottsched</persName>, <persName key="A006194">Scheibe</persName> und <persName key="A002351">Lessing</persName>, immer wieder thematisiert (u. a. durch <persName key="A001685">Schiller</persName>, <persName key="A001960">Tieck</persName>, <persName key="A001271">A. B. Marx</persName>).</p>
+                    <p>Am Beispiel ausgewählter Bühnenwerke, beginnend mit Kompositionen von <persName key="A000030">Johann André</persName>, <persName key="A002025">G. J. Vogler</persName>
+            und <persName key="A001545">J. F. Reichardt</persName> bis hin zu <persName key="A003371">Mendelssohn</persName>, <persName key="A007992">Lortzing</persName> und
+              <persName key="A003248">Wagner</persName>, werden unterschiedliche Herangehensweisen
+            und formale Lösungen beleuchtet, die demonstrieren, wie verschiedenartig die Ansprüche
+            von Autoren und Theaterleitern in bezug auf die Schauspielmusik sein konnten, und wie
+            die unterschiedlichen Möglichkeiten der Theater-Ensembles die Komponisten beeinflußten.
+            Die Spanne reicht von weitgehend beliebigen Arrangements mit größtmöglichem
+            ‚Wiederverwendungswert‘ bis hin zu großangelegten ‚analogen‘, d. h. ausschließlich auf
+            ein bestimmtes Schauspiel bezogenen Kompositionen, denen zwar keine Modell-, aber doch
+            zumindest eine Vorbildfunktion zukam (z. B. <persName key="A000117">Beethovens</persName>
+                        <workName key="A020236">Egmont</workName>, <persName key="A002068">Webers</persName>
+                        <workName key="A020227">Preciosa</workName>, <persName key="A003371">Mendelssohns</persName>
+                        <workName>Sommernachtstraum-Musik</workName>).</p>
+                    <p>Besonderes Interesse gilt der Problematik der Edition von Schauspielmusiken, die durch
+            ihre enge Bindung an das Drama einen fachübergreifenden Austausch unter Literatur-,
+            Theater- und Musikwissenschaftlern erforderlich macht. Hier zeigt sich, daß kaum eine
+            ‚Patentlösung‘ zu finden ist; vielmehr stellt jeder Komponist, ja jedes Werk andere
+            Ansprüche an den Editor. Ausgehend von einem Grund-Konsens, der die wechselseitige
+            Bedingtheit von Drama und Musik unterstreicht, führen nur individuelle, vom einzelnen
+            Werk ausgehende Strategien zu einer adäquaten Wiedergabe in der Edition.</p>
+                </div>
+                <div>
+                    <head>Inhaltsverzeichnis</head>
+                    <list>
+                        <item>Abkürzungsverzeichnis S. 8</item>
+                        <item>Dagmar Beck, Frank Ziegler<lb/> … <hi rend="italic">die Vermählung der Musik mit
+                der Rede</hi>. Anstelle eines Vorworts, S. 9–18</item>
+                        <item>Bodo Plachta<lb/> Zwischen höfischer Repräsentation und bürgerlicher Unterhaltung.
+              Umbrüche in der deutschen Theaterlandschaft zwischen 1790 und 1830, S. 19–33</item>
+                        <item>Klaus Ernst<lb/> Zur Theorie der Schauspielmusik in der deutschen Aufklärung. Die
+              Grundlegung einer Ästhetik der Schauspielmusik bei Johann Christoph Gottsched
+              (1700–1766)?, S. 35–46</item>
+                        <item>Werner Keil<lb/> Zur Ästhetik der frühromantischen Schauspielmusik, S.
+              47–59</item>
+                        <item>Ursula Kramer<lb/> Zur Bedeutung Johann Andrés für die Herausbildung einer
+              neuartigen, ‚analogen‘ Schauspielmusik. Seine Kompositionen zu <hi rend="italic">Macbeth</hi> und <hi rend="italic">King Lear</hi>, S. 61–74</item>
+                        <item>Joachim Veit<lb/> Georg Joseph Voglers Beiträge zur Gattung Schauspielmusik, S.
+              75–102</item>
+                        <item>Ursula Kramer<lb/> Die Schauspielmusiken Bernhard Anselm Webers nach Dramen
+              Friedrich Schillers S. 103–130</item>
+                        <item>Till Gerrit Waidelich<lb/> … <hi rend="italic">ganz genau gemessenes, aufs
+                sparsamste begleitetes Recitativ, ohne Bestimmung der Töne</hi>. Sigismund Neukomms
+              ,musikalisch rhythmische‘ Notierung der Chorszenen zu Schillers <hi rend="italic">Braut von Messina</hi> (1805), S. 131–155</item>
+                        <item>Helga Lühning<lb/> Beethovens Schauspielmusik zu <hi rend="italic">Egmont</hi>, S.
+              157–183</item>
+                        <item>Oliver Huck<lb/> Carl Maria von Webers Schauspielmusik, S. 185–199</item>
+                        <item>Frank Ziegler<lb/> Die Preciosa von Pius Alexander Wolff und Carl Maria von Weber
+              im Kontext der Brühlschen Theaterkonzeption, S. 201–228<lb/> Anhang: Berliner
+              Schauspielmusiken der Ära Brühl. Verzeichnis mit Nachweis der überlieferten Berliner
+              Aufführungsmaterialien S. 228–239</item>
+                        <item>Arne Langer<lb/> Nur eine „Gewohnheit“? Der Zwischenakt in der Schauspielmusik der
+              1820er Jahre, S. 241–254</item>
+                        <item>Irmlind Capelle<lb/> Das Verhältnis der Ouvertüre zu den übrigen Nummern der
+              Schauspielmusik bei Spohr, Marschner und Lortzing, S. 255–267</item>
+                        <item>Christian Martin Schmidt<lb/> Mendelssohns Schauspielmusik zum <hi rend="italic">Sommernachtstraum</hi>, S. 269–277</item>
+                    </list>
+                    <p>Zur Edition:</p>
+                    <list>
+                        <item>Hartmut Steinecke<lb/> Schauspielmusik und Dramenedition, S. 279–283</item>
+                        <item>Walther Dürr<lb/> Schauspielmusiken und die Editionsprinzipien der Neuen
+              Schubert-Ausgabe, S. 285–288</item>
+                        <item>Frank Ziegler<lb/> Carl Maria von Webers Schauspielmusiken. Bemerkungen zur
+              Editionspraxis der Weber-Gesamtausgabe, S. 289–291</item>
+                        <item>Egon Voss<lb/> Über den editorischen Umgang mit Schauspielmusik in der Richard
+              Wagner-Gesamtausgabe, S. 293–296</item>
+                    </list>
+                    <p>Anhang:</p>
+                    <list>
+                        <item>Frank Ziegler<lb/> Zwei oder vier? – Versuch einer Zuordnung. Der
+              Gedankenaustausch Adolph Müllners und Carl Maria von Webers über das Lied der
+              Brunhilde zu <hi rend="italic">König Yngurd</hi> und die Probleme der Quellenlage, S.
+              299–316</item>
+                        <item>Register der erwähnten Personen und Werke, S. 317–331</item>
+                        <item>Abbildungsverzeichnis, S. 332</item>
+                    </list>
+                </div>
+            </div>
+            <div xml:lang="en">
+                <head>Carl Maria von Weber und die Schauspielmusik seiner Zeit</head>
+                <p>
+                    <hi rend="italic">Bericht über die Tagung der Carl-Maria-von-Weber-Gesamtausgabe in der
+          Staatsbibliothek zu Berlin – Preußischer Kulturbesitz am 26. und 27. November 1998</hi>,
+          hg. von Dagmar Beck und Frank Ziegler, Mainz 2003. 332 pages<lb/> Order no.: ED 9623;
+          ISBN 3-7957-0383-2</p>
+        <!--<div></div>-->
+                <div>
+                    <head>Table of contents</head>
+                    <list>
+                        <item>Abkürzungsverzeichnis p. 8</item>
+                        <item>Dagmar Beck, Frank Ziegler<lb/> … <hi rend="italic">die Vermählung der Musik mit
+              der Rede</hi>. Anstelle eines Vorworts, p. 9–18</item>
+                        <item>Bodo Plachta<lb/> Zwischen höfischer Repräsentation und bürgerlicher Unterhaltung.
+              Umbrüche in der deutschen Theaterlandschaft zwischen 1790 und 1830, p. 19–33</item>
+                        <item>Klaus Ernst<lb/> Zur Theorie der Schauspielmusik in der deutschen Aufklärung. Die
+              Grundlegung einer Ästhetik der Schauspielmusik bei Johann Christoph Gottsched
+              (1700–1766)?, p. 35–46</item>
+                        <item>Werner Keil<lb/> Zur Ästhetik der frühromantischen Schauspielmusik, p.
+              47–59</item>
+                        <item>Ursula Kramer<lb/> Zur Bedeutung Johann Andrés für die Herausbildung einer
+              neuartigen, ‚analogen‘ Schauspielmusik. Seine Kompositionen zu <hi rend="italic">Macbeth</hi> und <hi rend="italic">King Lear</hi>, p. 61–74</item>
+                        <item>Joachim Veit<lb/> Georg Joseph Voglers Beiträge zur Gattung Schauspielmusik, p.
+              75–102</item>
+                        <item>Ursula Kramer<lb/> Die Schauspielmusiken Bernhard Anselm Webers nach Dramen
+              Friedrich Schillers p. 103–130</item>
+                        <item>Till Gerrit Waidelich<lb/> … <hi rend="italic">ganz genau gemessenes, aufs
+              sparsamste begleitetes Recitativ, ohne Bestimmung der Töne</hi>. Sigismund Neukomms
+              ,musikalisch rhythmische‘ Notierung der Chorszenen zu Schillers <hi rend="italic">Braut von Messina</hi> (1805), p. 131–155</item>
+                        <item>Helga Lühning<lb/> Beethovens Schauspielmusik zu <hi rend="italic">Egmont</hi>, p.
+              157–183</item>
+                        <item>Oliver Huck<lb/> Carl Maria von Webers Schauspielmusik, p. 185–199</item>
+                        <item>Frank Ziegler<lb/> Die Preciosa von Pius Alexander Wolff und Carl Maria von Weber
+              im Kontext der Brühlschen Theaterkonzeption, p. 201–228<lb/> Anhang: Berliner
+              Schauspielmusiken der Ära Brühl. Verzeichnis mit Nachweis der überlieferten Berliner
+              Aufführungsmaterialien p. 228–239</item>
+                        <item>Arne Langer<lb/> Nur eine „Gewohnheit“? Der Zwischenakt in der Schauspielmusik der
+              1820er Jahre, p. 241–254</item>
+                        <item>Irmlind Capelle<lb/> Das Verhältnis der Ouvertüre zu den übrigen Nummern der
+              Schauspielmusik bei Spohr, Marschner und Lortzing, p. 255–267</item>
+                        <item>Christian Martin Schmidt<lb/> Mendelssohns Schauspielmusik zum <hi rend="italic">Sommernachtstraum</hi>, p. 269–277</item>
+                    </list>
+                    <p>Zur Edition:</p>
+                    <list>
+                        <item>Hartmut Steinecke<lb/> Schauspielmusik und Dramenedition, p. 279–283</item>
+                        <item>Walther Dürr<lb/> Schauspielmusiken und die Editionsprinzipien der Neuen
+              Schubert-Ausgabe, p. 285–288</item>
+                        <item>Frank Ziegler<lb/> Carl Maria von Webers Schauspielmusiken. Bemerkungen zur
+              Editionspraxis der Weber-Gesamtausgabe, p. 289–291</item>
+                        <item>Egon Voss<lb/> Über den editorischen Umgang mit Schauspielmusik in der Richard
+              Wagner-Gesamtausgabe, p. 293–296</item>
+                    </list>
+                    <p>Anhang:</p>
+                    <list>
+                        <item>Frank Ziegler<lb/> Zwei oder vier? – Versuch einer Zuordnung. Der
+              Gedankenaustausch Adolph Müllners und Carl Maria von Webers über das Lied der
+              Brunhilde zu <hi rend="italic">König Yngurd</hi> und die Probleme der Quellenlage, p.
+              299–316</item>
+                        <item>Register der erwähnten Personen und Werke, p. 317–331</item>
+                        <item>Abbildungsverzeichnis, p. 332</item>
+                    </list>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

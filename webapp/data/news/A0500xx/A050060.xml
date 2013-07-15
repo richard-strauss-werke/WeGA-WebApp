@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050060">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Neue Edirom zum Klarinettenquintett für alle Subskribenten der WeGA und weitere Interessenten verfügbar</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2008-09-14T09:15:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>release</term>
+                    <term>sig</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Nun liegt sie endlich vor: die neue, jetzt auf allen gängigen Betriebssystemen lauffähige <hi rend="bold">Edirom mit <persName key="A002068">Webers</persName> Klarinettenquintett</hi>. Die Arbeit des Edirom-Teams (Johannes Kepper, Daniel Röwenstrunk, Peter Stadler, unterstützt bei der Neueinrichtung durch Philemon Jacobsen, Florian Weidemann und Heiko Fabig) hat sich gelohnt: Das neuentwickelte Version des Darstellungsprogramms, das erstmals für <persName>Antonín Dvoraks</persName>
+                    <hi rend="italic">Humoreske</hi> op. 101 Nr. 7 verwendet worden war, konnte jetzt an dem umfangreicheren Quintett getestet werden, wobei sich gleichzeitig zeigte, dass die entsprechend strukturierten Daten der alten Version ohne grossen Aufwand konvertierbar waren. Zwar hätten die neuen technischen Möglichkeiten auch Veränderungen der Inhalte nahegelegt, hier ging es aber in erster Linie darum, die zahlreichen Vorteile der Neuerungen im Vergleich zur alten Version an einer bereits abgeschlossenen Edition zu demonstrieren. Diese Vorteile haben bereits dazu geführt, dass das Interesse an den vom <hi rend="italic">Edirom</hi>-Team entwickelten Werkzeugen sowohl von Seiten der Editionsprojekte als auch der Verlage kräftig wächst. Die WeGA plant den Einsatz dieser Werkzeuge erst wieder für die im kommenden Jahr erscheinenden Klarinettenkonzerte, intern zur Vorbereitung der Bände ist die Technik aber ebenfalls immer stärker im Einsatz. Das <hi rend="italic">Edirom</hi>-Team wird die neue DVD den Subskribenten der WeGA und allen weiteren Interessenten zur Verfügung stellen und hofft auf entsprechende Rückmeldung von Seiten der Nutzer, damit Werkzeuge und Benutzerführung weiter optimiert werden können.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

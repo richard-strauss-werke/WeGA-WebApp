@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050205">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Digitale Edition Version 1.1.7 veröffentlicht</title>
+                <author key="A009001">Peter Stadler</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2013-04-17T21:53:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>release</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Heute wurde die Digitale Edition der Carl-Maria-von-Weber-Gesamtausgabe in der Version 1.1.7 (Codename "<placeName>
+                        <settlement>Prag</settlement>
+                    </placeName>") rechtzeitig zur Eröffnung der <ref target="http://www.idu.cz/cs/konference">Tagung "230 Jahre Ständetheater in Prag"</ref> veröffentlicht. 
+               Der Schwerpunkt der Arbeiten lag dabei besonders auf den Tagebüchern, Briefen und Schriften der Prager Zeit (1813–1816), die nun erstmals vollständig – wenn auch noch nicht in finaler Version – vorgelegt werden können. 
+               Außerdem konnte die Migration der Weber-Bibliographie in ein TEI-Format abgeschlossen werden, so dass diese jetzt wieder online auf unserer Seite unter <ref target="http://www.weber-gesamtausgabe.de/de/Bibliographie">http://www.weber-gesamtausgabe.de/de/Bibliographie</ref> verfügbar ist.</p>
+                <p>Daneben gab es auch wieder zahlreiche Überarbeitungen der bestehenden Daten sowie Neuerungen an der Weboberfläche:</p>
+                <list>
+                    <item>Feature: Darstellung von Notensymbolen (siehe <rs type="writing" key="A031275">"Tempo-Bezeichnungen nach Mälzl’s Metronom zur Oper Euryanthe"</rs>)</item>
+                    <item>Fix: Sortierung von Personen und Werken im Filter-Popup jetzt alphabetisch</item>
+                    <item>Fix: Fehler behoben, dass einige PND-Weiterleitungen nicht richtig funktionierten</item>
+                    <item>Fix: Die Darstellung von Quellenangaben bzw. bibliographischen Angaben wurde stark überarbeitet</item>
+                </list>
+                <p>Der Quellcode der WeGA-WebApp findet sich auf <ref target="https://github.com/Edirom/WeGA-WebApp">GitHub</ref>.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

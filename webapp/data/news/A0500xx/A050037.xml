@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050037">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Umgestaltung der Internetseite</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2006-07-15T09:40:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>publication</term>
+                    <term>release</term>
+                    <term>sig</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Nach etlichen Verzögerungen ist die Internetseite der Carl-Maria-von-Weber-Gesamtausgabe inzwischen auf einen neuen Server umgezogen. Nun besteht die Möglichkeit, durch Einsatz eines Content-Management-Systems die Inhalte wesentlich einfacher und damit auch zeitnaher zu pflegen. Durch die Umstellung bleiben allerdings etliche Unterseiten kurzfristig unerreichbar bzw. müssen auf einen neueren technischen Stand gebracht werden; wir bitten Sie hier um etwas Geduld und Nachsicht bei eventuell auftauchenden Problemen.</p>
+                <p>Beachten Sie darüber hinaus unsere <hi rend="bold">neue Kategorie</hi>
+               <!-- TODO -->
+                    <ref target="index.php?id=21">Dokumente</ref>, in der wir einige editorisch interessante Zeitungsartikel des Jahres <date when="1817">1817</date> vorhalten. Es handelt sich hierbei um einen Versuch, verschiedene für die Edition des Brief- und Tagebuch-Jahrgangs <date when="1817">1817</date> relevante historische Pressedokumente (Aufführungsbesprechungen usw.) offen zugänglich zu machen, so daß sie nicht nur für eine Auswertung innerhalb der Weber-Gesamtausgabe zur Verfügung stehen. (Eine umfangreichere Dokumentation der Presseartikel zum <placeName>
+                        <settlement>Dresdner</settlement>
+                    </placeName> Theaterleben <date when="1817">1817</date> wird im Laufe der kommenden Monate veröffentlicht, dabei wird auch das Layout noch verbessert.)<lb/>
+                </p>
+                <p>Des weiteren haben wir ein kleines <!-- TODO -->
+                    <ref target="http://weber-gesamtausgabe.de/wiki">Wiki</ref>-System erstellt, welches verschiedene Materialien rund um <persName key="A002068">Webers</persName> Vertonung von <persName key="A001386">Müllners</persName>
+                    <hi rend="italic">
+                        <workName key="A020215">König Yngurd</workName>
+                    </hi> (<!-- TODO -->
+                    <ref target="index.php?id=56">WeV F.8</ref>, erschienen in <!-- TODO -->
+                    <ref target="index.php?id=99">Serie III, Band 10a</ref>, hg. von Oliver Huck) zusammenträgt. Mit diesem Beispiel soll aufgrund des überschaubaren Umfangs des Werkes versucht werden, die verschiedenen Zusammenhänge zwischen Tagebucheinträgen, Briefen, Spielplänen der Theater, Quellen etc. zu verdeutlichen. (Bitte beachten Sie, daß es sich lediglich um eine grundsätzliche Demonstration von Möglichkeiten handelt; eine erschöpfende Darstellung aller denkbaren Zusammenhänge war nicht beabsichtigt!)</p>
+                <p>Parallel dazu erstellten die Mitarbeiter des <ref target="http://www.edirom.de">Edirom</ref>-Projektes eine digitale Version der <hi rend="italic">
+                        <workName key="A020215">Yngurd</workName>
+                    </hi>-Edition, die ebenfalls auf die Quellen dieser Seite verweist (jedoch augenblicklich nur intern zugänglich ist). Es handelt sich hierbei um den Versuch, an einem überschaubaren Beispiel die Bereicherung zu verdeutlichen, die klassische Editionsvorhaben erfahren könnten, wenn sie assoziative Konzepte nutzen, wie dies in dem (durchaus leistungsfähigen aber dauerhaft für editorische Zwecke zu eingeschränkten) Wiki-Systems mit einfachsten Mitteln und ohne großen Aufwand möglich ist.<lb/>
+                </p>
+                <p>Sowohl bei der Dokumentendatenbank als auch insbesondere beim <hi rend="italic">
+                        <workName key="A020215">Yngurd</workName>
+                    </hi>-Wiki handelt es sich um vorläufige Systeme, die als Studienobjekt bewußt vereinfacht wurden und für einen längerfristigen und produktiven Einsatz so nicht gedacht sind. Um die grundlegenden Konzepte solchen Editionsformen langfristig verbessern zu können bzw. alternative Lösungen dafür zu finden, sind wir für Anregungen und Kritik jederzeit sehr dankbar.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

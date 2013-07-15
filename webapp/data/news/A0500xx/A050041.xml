@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050041">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Personendatenbank und Dokumente jetzt freigegeben</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2006-10-28T09:02:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>release</term>
+                    <term>sig</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Auch wenn sicherlich noch einige Änderungen in der Detailstruktur notwendig sind, konnten jetzt die <hi rend="bold">Personen-Datenbank</hi> und die <hi rend="bold">Dokumentendatenbank</hi> (letztere zunächst zum Jahrgang <date when="1817">1817</date>) dank der unermüdlichen Unterstützung durch das <hi rend="italic">Edirom</hi>-Projekt für die Öffentlichkeit zugänglich gemacht werden. Sie finden beide Teile unter einer Oberfläche (zugänglich über das Menü links unter dem Punkt "Dokumente" bzw. "PersonenDB"); eine kurze Bedienungsanleitung wird in Kürze hier als PDF-Datei bereitgestellt. Bitte beachten Sie, daß in der PersonenDB nur ein Teil der tatsächlich in der Datenbank abgelegten Informationen angezeigt wird; die "Kurzbiographien" und die detaillierteren biographischen Chroniken werden erst im Laufe der Zeit ausgefüllt. Die Datenbank ist als Test-Arbeitsdatenbank für die Fachgruppe Freie Forschungsinstitute in der Gesellschaft für Musikforschung (FFFI) konzipiert und soll bis Mitte November getestet werden. Danach wird über die endgültige Gestalt entschieden. Wir freuen uns sehr, daß einige KollegInnen bereits ihre tatkräftige Hilfe zur Erweiterung des Personenbestandes angeboten haben und sagen schon an dieser Stelle dafür herzlichen Dank. Über die jeweiligen Neuerungen wird auf der Begrüßungsseite der DB informiert.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

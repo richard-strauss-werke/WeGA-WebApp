@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050064">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Wissenschaftlicher Mitarbeiterin/Mitarbeiter im DFG-Projekt "Edirom" gesucht</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2008-12-30T09:35:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Am Musikwissenschaftlichen Seminar Detmold/Paderborn wird im Rahmen des DFG-Projekts "Entwicklung von Werkzeugen für digitale Formen historisch-kritischer Musikeditionen" ("Edirom") ab dem 1. Februar 2009 eine / ein Wissenschaftliche Mitarbeiterin bzw. Wissenschaftlicher Mitarbeiter (Vergütung in Entgeltgruppe 13 TV-L mit 50%) gesucht. Es handelt sich um eine zeitlich und inhaltlich befristete Tätigkeit im Umfang von 50 % (Qualifikationsstelle) bis zum 28. Februar 2011.</p>
+                <p>Nähere Informationen finden Sie auf der <!-- TODO -->
+                    <ref target="http://www.edirom.de/startseite/artikel/article/stellenausschreibung-1.html">Seite</ref> des Projekts. Bewerbungsschluß ist der 15. Januar 2008.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

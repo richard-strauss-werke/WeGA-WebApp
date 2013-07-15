@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaVar.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A070003">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="de">Carl Maria von Weber – Biographie</title>
+                <title level="a" xml:lang="en">Carl Maria von Weber – Biography</title>
+                <author key="A009005">Frank Ziegler</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date/>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>WeGA elektronisch</publisher>
+                <availability status="free">
+                    <p>2011, Carl-Maria-von-Weber-Gesamtausgabe, Detmold</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc status="candidate">
+            <change who="PS" when="2011-04-29">Anpassungen ans Schema</change>
+            <change who="RM" when="2011-04-29">Erste Einrichtung nach Frank Zieglers ODT-Vorlage</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:lang="de">
+                <head>Biographische Kurzübersicht</head>
+                <list>
+                    <item>Kind aus einer Musikerfamilie, frühe Ausbildung beim Vater <persName key="A002074">Franz Anton von Weber</persName> und beim ältesten Halbbruder
+                        <persName key="A002075">Fridolin von Weber</persName>
+                    </item>
+                    <item>1789–1796 Reisen der Weberschen Theatergesellschaft unter Direktion des Vaters
+                     in <placeName>
+                            <settlement>Thüringen</settlement>
+                        </placeName>,
+                           <placeName>
+                            <settlement>Franken</settlement>
+                        </placeName>, der
+                           <placeName>
+                            <settlement>Oberpfalz</settlement>
+                        </placeName> und im
+                           <placeName>
+                            <settlement>Erzbistum Salzburg</settlement>
+                        </placeName>
+                    </item>
+                    <item>1796–1804 intensive musikalische Ausbildung bei verschiedenen Lehrern (u. a.
+                        <persName key="A000778">Michael Haydn</persName> und <persName key="A002025">
+                        Abbé Vogler</persName>), erste Kompositionen</item>
+                    <item>1804–1806 Kapellmeister am Theater in
+                           <placeName>
+                            <settlement>Breslau</settlement>
+                        </placeName>
+                    </item>
+                    <item>1807–1810 Anstellung als Geheimer Sekretär in
+                           <placeName>
+                            <settlement>Stuttgart</settlement>
+                        </placeName>
+                    </item>
+                    <item>1810–1813 „Reise-Jahre“, zunächst Konzerttätigkeit im Raum
+                           <placeName>
+                            <settlement>Mannheim</settlement>
+                        </placeName> /
+                           <placeName>
+                            <settlement>Heidelberg</settlement>
+                        </placeName> und erneuter
+                     Unterricht bei <persName key="A002025">Vogler</persName> in <placeName>
+                            <settlement>Darmstadt</settlement>
+                        </placeName>
+                     (1810/11), dann Reisen auf der Suche nach einer Anstellung mit Konzerttätigkeit in
+                     Süd- und Mitteldeutschland, <placeName>
+                            <settlement>Prag</settlement>
+                        </placeName>
+                     und <placeName>
+                            <settlement>Berlin</settlement>
+                        </placeName>
+                    </item>
+                    <item>1813–1816 Kapellmeister am Ständetheater in
+                           <placeName>
+                            <settlement>Prag</settlement>
+                        </placeName>
+                    </item>
+                    <item>1817–1826 Hofkapellmeister in
+                        <placeName>
+                            <settlement>Dresden</settlement>
+                        </placeName>
+                    </item>
+                </list>
+            </div>
+            <div xml:lang="en">
+                <head>Biographical Résumé</head>
+                <p>Sorry, there is currently no english version available.</p>
+            </div>
+            <div xml:lang="de">
+                <head>Frühe Kindheit (1786–1789)</head>
+                <div type="abstract">
+                    <p>geb. 18./19.(?) November 1786 in <placeName>
+                            <settlement>Eutin</settlement>
+                        </placeName>
+                    </p>
+                    <p>Aufenthalt der Familie ab Mitte 1787 in <placeName>
+                            <settlement>Hamburg</settlement>
+                        </placeName> bzw. <placeName>
+                            <settlement>Wien</settlement>
+                        </placeName>, ab Mai 1789 in
+                  <placeName>
+                            <settlement>Kassel</settlement>
+                        </placeName> und <placeName>
+                            <settlement>Marburg</settlement>
+                        </placeName>
+                    </p>
+                </div>
+                <div>
+                    <p>Carl Maria von Weber wurde vermutlich am 18.
+                  oder 19.&#160;November 1786 in <placeName>
+                            <settlement>Eutin</settlement>
+                        </placeName>
+                  geboren. Verbürgt ist lediglich der Tag seiner Taufe in der dortigen
+                  Schlosskapelle: der 20.&#160;November 1786 (Taufnamen: Carl Friedrich Ernst; der
+                  2.&#160;Name Maria ist erst in späteren Jahren belegt; Taufpate: <persName key="A000971">Carl von
+                     Hessen</persName>, dänischer Statthalter in
+                        <placeName>
+                            <settlement>Schleswig</settlement>
+                        </placeName>).</p>
+                    <p>Vater <persName key="A002074">Franz Anton von Weber</persName> 
+                  hatte im April 1779 das Amt eines fürstbischöflichen Kapellmeisters in Eutin übernommen,
+                  allerdings wurde die dortige Hofkapelle aus Sparzwängen bereits 1781 aufgelöst.
+                     F.&#160;A. von Weber wurde in der Folge gedrängt,
+                  das Amt eines Stadtmusikus in
+                     <placeName>
+                            <settlement>Eutin</settlement>
+                        </placeName> zu übernehmen (ab 1785),
+                  durfte aber seinen Titel als Hofkapellmeister weiter führen. Mit der neuen
+                  Beschäftigung unzufrieden, bat er 1787 um Enthebung von seinen Dienstpflichten und
+                  Auszahlung seiner Rentenansprüche. </p>
+                    <p>Ca. Mitte 1787 zog er mit seiner (zweiten) Frau <persName key="A002077">
+                     Genovefa</persName> (Eheschließung in <placeName>
+                            <settlement>Wien</settlement>
+                        </placeName> am 20.&#160;August 1785) und
+                  Sohn Carl Maria vorübergehend nach <placeName>
+                            <settlement>Hamburg</settlement>
+                        </placeName>, wo <persName key="A002128">Jeanette von Weber</persName>, eine Tochter aus
+                  erster Ehe, als Sängerin am Theater angestellt war. Noch im selben Jahr wandte er sich weiter nach 
+                    <placeName>
+                            <settlement>Wien</settlement>
+                        </placeName> 
+                        (<placeName>
+                            <settlement>Wien</settlement>
+                        </placeName> war als Wohnort von
+                  <persName key="A002074">Franz Anton von Webers</persName> Nichten <persName>Josepha Hofer</persName>,
+                  <persName key="A008054">Aloysia Lange</persName>, <persName key="A005624">Constanze
+                     Mozart</persName> und <persName>Sophie Haibel</persName> sowohl vorher als auch
+                  danach mehrfach ein Reiseziel der Webers), kehrte aber im Spätsommer 1788 (spätestens Anfang September) nach <placeName>
+                            <settlement>Hamburg</settlement>
+                        </placeName> zurück </p>
+                    <p>Nach der vom <rs type="person" key="A002074">Vater</rs> veranlassten Kündigung <persName key="A002128">Jeanette von
+                     Webers</persName> (März 1789) verließ die Familie <placeName>
+                            <settlement>Hamburg</settlement>
+                        </placeName> im April und schloss sich im Mai der
+                  Schauspielgesellschaft der Direktoren <persName>Johann Friedrich
+                     Toscani</persName> und <persName>Peter Carl Santorini</persName> an, die in
+                        <placeName>
+                            <settlement>Kassel</settlement>
+                        </placeName>,
+                        <placeName>
+                            <settlement>Marburg</settlement>
+                        </placeName> und
+                        <placeName>
+                            <settlement>Hofgeismar</settlement>
+                        </placeName> auftrat. Im
+                  September 1789 verließen die Webers <placeName>
+                            <settlement>Kassel</settlement>
+                        </placeName>, nachdem <persName key="A002077">Genovefa von Weber</persName> kurz zuvor von einem Knaben
+                  entbunden worden war (<persName key="A008098">George Friedrich Carl von
+                     Weber</persName>)</p>
+                </div>
+            </div>
+            <div xml:lang="de">
+                <head>Wanderungen der Weberschen Theatergesellschaft (1789–1796)</head>
+                <div type="abstract">
+                    <p>
+                        <persName key="A002074">Franz Anton von Weber</persName> versuchte dreimal, sich
+               als Direktor einer eigenen Theatergesellschaft zu etablieren:</p>
+                    <list>
+                        <item>1789/90 in <placeName>
+                                <settlement>Meiningen</settlement>
+                            </placeName>
+                        </item>
+                        <item>1791–1794 in <placeName>
+                                <settlement>Nürnberg</settlement>
+                            </placeName>, <placeName>
+                                <settlement>Erlangen</settlement>
+                            </placeName>, <placeName>
+                                <settlement>Amberg</settlement>
+                            </placeName> und <placeName>
+                                <settlement>Bayreuth</settlement>
+                            </placeName>
+                        </item>
+                        <item>1795/96 in <placeName>
+                                <settlement>Salzburg</settlement>
+                            </placeName> und <placeName>
+                                <settlement>Hallein</settlement>
+                            </placeName>
+                        </item>
+                    </list>
+                </div>
+                <div>
+                    <p>Bereits in <placeName>
+                            <settlement>Kassel</settlement>
+                        </placeName> plante <persName key="A002074">Franz Anton von Weber</persName> die Gründung einer eigenen Schauspieltruppe, mit der er zwischen 19.&#160;September 1789 und 19.&#160;April 1790 im
+                  Schloss Elisabethenburg im thüringischen <placeName>
+                            <settlement>Meiningen</settlement>
+                        </placeName> auftrat und die anfangs
+                  überwiegend aus Familienmitgliedern bestand. Finanzielle Schwierigkeiten beendeten
+                  das Projekt nach nur sieben Monaten; der Aufenthalt von <persName key="A002074">Franz Anton</persName>, <persName key="A002077">Genovefa</persName> und Carl Maria von Weber ist danach für ein ganzes Jahr ungewiss (evtl. kurzer Aufenthalt
+                  1790 in <placeName>
+                            <settlement>Regensburg</settlement>
+                        </placeName>). </p>
+                    <p>Erst im Anfang Mai 1791 sind die Webers wieder bezeugt: als Mitglieder der von
+                  <persName>Friedrich Häussler</persName> geführten Gesellschaft deutscher Schauspieler in <placeName>
+                            <settlement>Nürnberg</settlement>
+                        </placeName> (bis 1. September 1791, möglicherweise danach auch kurzzeitig in <placeName>
+                            <settlement>Mergentheim</settlement>
+                        </placeName>). In <placeName>
+                            <settlement>Nürnberg</settlement>
+                        </placeName> versuchte sich Vater <persName key="A002074">Weber</persName> anschließend zunächst als Sprachlehrer und bald darauf ein zweites Mal als selbständiger Theaterdirektor; er leitete zwei Spielzeiten: 10.&#160;November 1791 bis 8.&#160;März 1792
+                  sowie 7.&#160;Mai bis 11.&#160;September 1792 mit Abstechern nach <placeName>
+                            <settlement>Erlangen</settlement>
+                        </placeName> (ab 25.&#160;Mai
+                  1792). Ab November 1791 wirkte auch der junge Carl Maria von Weber in Kinderrollen
+                  an den Aufführungen mit. </p>
+                    <p>Mitte September bis ca. Ende November 1792 schloss sich ein Gastspiel im
+                  oberpfälzischen <placeName>
+                            <settlement>Amberg</settlement>
+                        </placeName> an. Die geplante Rückkehr nach <placeName>
+                            <settlement>Nürnberg</settlement>
+                        </placeName> kam nicht zustande;
+                  kurzfristig zogen die Webers nach <placeName>
+                            <settlement>Ansbach</settlement>
+                        </placeName> (Dezember 1792), wo der <rs type="person" key="A002074">Vater</rs> als Veranstalter von Redouten bezeugt ist. </p>
+                    <p>Erst ab März 1793 stand in <placeName>
+                            <settlement>Bayreuth</settlement>
+                        </placeName> eine neue Spielstätte für die Theatertruppe
+                  zur Verfügung. Auch dort sind zwei Spielzeiten nachweisbar (16.&#160;März bis 15.&#160;Juni
+                  1793 sowie 1.&#160;Oktober 1793 bis Frühjahr 1794), unterbrochen von einer
+                  Sommerspielzeit in <placeName>
+                            <settlement>Erlangen</settlement>
+                        </placeName> (21.&#160;Juni bis 26.&#160;September 1793). Zunehmende
+                  finanzielle Schwierigkeiten waren der Grund, dass Vater <persName key="A002074">Weber</persName> die Direktion
+                  niederlegte und seine Gesellschaft an <persName key="A008803">Daniel Gottlieb Quandt</persName> übergab (März 1794).</p>
+                    <p>Die Anstellung von Mutter <persName key="A002077">Genovefa von Weber</persName> am Weimarischen Hoftheater (Juni bis
+                  Oktober 1794, mit Abstechern nach Lauchstädt, <placeName>
+                            <settlement>Rudolstadt</settlement>
+                        </placeName> und <placeName>
+                            <settlement>Erfurt</settlement>
+                        </placeName>) blieb ein kurzes Intermezzo – in <placeName>
+                            <settlement>Weimar</settlement>
+                        </placeName> dürfte sich der junge Carl Maria 1794 erstmals im Konzert vorgestellt haben. </p>
+                    <p>Im Herbst des Jahres reisten die Webers nach <placeName>
+                            <settlement>Salzburg</settlement>
+                        </placeName> und schlossen sich der
+                  Theatergesellschaft von <persName key="A000645">Franz Xaver Glöggl</persName> an, zu der bereits Sohn <persName key="A002071">Edmund von
+                  Weber</persName> gehört hatte. Nach Ende von Glöggls Salzburger Spielzeit
+                  (17.&#160;Februar 1795) versuchte sich Vater <persName key="A002074">Weber</persName> in der erzbischöflichen
+                  Residenzstadt letztmalig als Theaterdirektor; er veranstaltete
+                  wiederum zwei Spielzeiten: 18.&#160;Mai bis 6.&#160;Juli 1795 sowie von ca. August/September
+                  1795 bis Februar 1796; dazwischen gab man ein Sommergastspiel (Juli/August 1795)
+                  in der nahegelegenen, zum Fürsterzbistum gehörigen Stadt <placeName>
+                            <settlement>Hallein</settlement>
+                        </placeName>.</p>
+                </div>
+            </div>
+            <div xml:lang="de">
+                <head>Jahre der Ausbildung (1796–1804)</head>
+                <div type="abstract">
+                    <p>Unterricht </p>
+                    <list>
+                        <item>in <placeName>
+                                <settlement>Hildburghausen</settlement>
+                            </placeName> 1796/97 bei <persName key="A000835">Johann Peter Heuschkel</persName>
+                        </item>
+                        <item>in <placeName>
+                                <settlement>Salzburg</settlement>
+                            </placeName> 1798 bei <persName key="A000778">Michael Haydn</persName>
+                        </item>
+                        <item>in <placeName>
+                                <settlement>München</settlement>
+                            </placeName> 1798–1800 bei <persName key="A000958">Johann Nepomuk Kalcher</persName> und <persName key="A008419">Giovanni Valesi</persName>
+                        </item>
+                        <item>in <placeName>
+                                <settlement>Wien</settlement>
+                            </placeName> 1803/04 bei <persName key="A002025">Georg Joseph Vogler</persName>
+                        </item>
+                    </list>
+                    <p>zwischenzeitlich Projekt einer lithographischen Officin in <placeName>
+                            <settlement>Freiberg/Sachsen</settlement>
+                        </placeName>
+                  (1800/01), Aufenthalte in <placeName>
+                            <settlement>München</settlement>
+                        </placeName> (1801) und <placeName>
+                            <settlement>Salzburg</settlement>
+                        </placeName> (1801/02), Konzertreise durch Mittel- und Norddeutschland (1802), Aufenthalt in <placeName>
+                            <settlement>Augsburg</settlement>
+                        </placeName> (1802/03)</p>
+                </div>
+                <div>
+                    <p>Nachdem das Projekt einer selbständigen Weberschen Theatertruppe endgültig
+                  gescheitert war, widmete sich <persName key="A002074">Franz Anton von Weber</persName> in den folgenden Jahren
+                  insbesondere der musikalischen Ausbildung seines Sohnes Carl Maria in der
+                  Hoffnung, ihn als „musikalisches Wunderkind“ präsentieren zu können. Ab März 1796
+                  übernahm in <placeName>
+                            <settlement>Hildburghausen</settlement>
+                        </placeName> der Hoforganist <persName key="A000835">Johann Peter Heuschkel</persName> den Unterricht,
+                  dem Weber im Rückblick besonders hinsichtlich der technischen Grundlagen seines
+                  Klavierspiels höchstes Lob zollte. Nach dem Umzug nach <placeName>
+                            <settlement>Salzburg</settlement>
+                        </placeName> (ca. Herbst 1797)
+                  konnte <persName key="A000778">Michael Haydn</persName> als Lehrer gewonnen werden (ab Anfang 1798), allerdings waren
+                  dessen Kontrapunktstudien nicht geeignet, den Schüler nachdrücklich zu begeistern.
+                  Die in dieser Zeit komponierten <workName>
+                            <hi rend="italic">Fugetten</hi> op.&#160;1</workName> können kaum
+                  als Zeugnisse einer individuellen künstlerischen Begabung gelten. Überschattet
+                  wurde die Zeit in <placeName>
+                            <settlement>Salzburg</settlement>
+                        </placeName> durch den frühen Tod der Mutter <persName key="A002077">Genovefa</persName>; das jüngste Kind der Webers, die am 14.&#160;Juni 1797 in <placeName>
+                            <settlement>Hildburghausen</settlement>
+                        </placeName>
+                  geborene <persName>Antonetta</persName>, starb wenig später (29.&#160;Dezember 1798 in München). Die
+                  Mutterrolle übernahm die schon länger bei der Familie lebende Tante <persName key="A002061">Adelheid von
+                  Weber</persName>. Eine Reise zu <persName key="A000777">Joseph Haydn</persName> nach <placeName>
+                            <settlement>Wien</settlement>
+                        </placeName> Mitte 1798 (wohl in der Hoffnung auf weiterführende Lektionen) blieb ergebnislos.</p>
+                    <p>Im Herbst 1798 wandten sich die Webers nach <placeName>
+                            <settlement>München</settlement>
+                        </placeName>. Statt des ursprünglich
+                  vorgesehenen <persName>Joseph Grätz</persName> übernahm dort <persName key="A000958">Johann Nepomuk Kalcher</persName> den
+                  Kompositionsunterricht, unter seiner Aufsicht entstand eine erste Oper (<hi rend="italic">
+                            <workName>Die Macht der Liebe und des Weins</workName>
+                        </hi>). Bei <persName key="A008419">Giovanni Valesi
+                        (eigentlich Johann Evangelist Wallishauser bzw. Walleshauser</persName> nahm der junge Weber
+                  zudem Gesangslektionen. Zu der musikalischen Ausbildung trat (nach einer Reise
+                  durch <placeName>
+                            <settlement>Franken</settlement>
+                        </placeName> und <placeName>
+                            <settlement>Thüringen</settlement>
+                        </placeName> im Juli 1799) ab Herbst 1799 eine handwerkliche: In
+                  der Werkstatt von <persName key="A001812">Alois Senefelder</persName> und <persName>Franz Gleißner</persName> eignete sich Carl Maria von
+                  Weber Grundkenntnisse der Lithographie an und beschäftigte sich mit der technischen Vervollkommnung der noch jungen Steindrucktechnik. </p>
+                    <p>Erfolglos verlief das Projekt einer eigenen Lithographiewerkstatt: Nach einer
+                  Sondierungs-Reise durch <placeName>
+                            <settlement>Böhmen</settlement>
+                        </placeName> und <placeName>
+                            <settlement>Sachsen</settlement>
+                        </placeName> (April/Mai 1800) ließen sich Vater und Sohn Weber zu diesem Zweck im Herbst 1800 im sächsischen Bergbauzentrum <placeName>
+                            <settlement>Freiberg</settlement>
+                        </placeName>
+                  nieder; durch den Kontakt zur dort spielenden Theatertruppe von <persName key="A001886">Carl von
+                     Steinsberg</persName> traten jedoch die musikalischen Interessen des jungen Weber wieder in
+                  den Vordergrund. In wenigen Wochen schrieb er die Oper <hi rend="italic">
+                            <workName key="A020032">Das
+                     Waldmädchen</workName>
+                        </hi>, die am 24.&#160;November in <placeName>
+                            <settlement>Freiberg</settlement>
+                        </placeName> und am 5.&#160;Dezember in
+                  <placeName>
+                            <settlement>Chemnitz</settlement>
+                        </placeName> zur Aufführung kam (und nachfolgend auch 1804 in <placeName>
+                            <settlement>St. Petersburg</settlement>
+                        </placeName>, 1804/05 in <placeName>
+                            <settlement>Wien</settlement>
+                        </placeName> und 1806 in <placeName>
+                            <settlement>Prag</settlement>
+                        </placeName> gegeben wurde). Der in den <hi rend="italic">Freyberger gemeinnützigen Nachrichten</hi> öffentlich ausgetragene Streit über die
+                  Qualität der Oper vergiftete die Atmosphäre in <placeName>
+                            <settlement>Freiberg</settlement>
+                        </placeName>, so dass die Webers mit
+                  Zwischenstationen in <placeName>
+                            <settlement>Chemnitz</settlement>
+                        </placeName> (April/Mai 1801), <placeName>
+                            <settlement>Hildburghausen</settlement>
+                        </placeName> und <placeName>
+                            <settlement>Nürnberg</settlement>
+                        </placeName> (Mai
+                  1801) zunächst nach <placeName>
+                            <settlement>München</settlement>
+                        </placeName>, dann nach <placeName>
+                            <settlement>Salzburg</settlement>
+                        </placeName> (spätestens November 1801) zurückkehrten.</p>
+                    <p>In <placeName>
+                            <settlement>Salzburg</settlement>
+                        </placeName> entstand eine dritte Oper (<hi rend="italic">
+                            <workName key="A020034">Peter Schmoll und seine
+                  Nachbarn</workName>
+                        </hi>), der u.&#160;a. der vormalige Lehrer <persName key="A000778">Michael Haydn</persName> ein positives
+                  Zeugnis ausstellte. Die Bekanntschaft mit dem dort lebenden Amateurmusiker <persName key="A001936">Thaddäus Susan</persName> entwickelte sich zu einer Lebensfreundschaft; Webers Briefe an <persName key="A001936">Susan</persName> aus den folgenden Jahren zeugen von seinen vielseitigen künstlerischen
+                  Interessen. Im Sommer 1802 wandten sich die Webers über <placeName>
+                            <settlement>München</settlement>
+                        </placeName> (Juli) nach
+                  <placeName>
+                            <settlement>Augsburg</settlement>
+                        </placeName>, traten von dort im August eine Konzertreise durch Mittel- und
+                  Norddeutschland (bis Hamburg und Schleswig) an und kehrten schließlich im Dezember
+                  nach <placeName>
+                            <settlement>Augsburg</settlement>
+                        </placeName> zurück, wo u.&#160;a. Kontakte zum Verleger <persName key="A000656">Johann Carl Gombart</persName> geknüpft wurden und vermutlich auch der <hi rend="italic">
+                            <workName key="A020034">Peter Schmoll</workName>
+                        </hi> zur
+                  Uraufführung kam.</p>
+                    <p>Ca. Ende Juli / Anfang August 1803 reiste Carl Maria von Weber zunächst alleine
+                  nach <placeName>
+                            <settlement>Wien</settlement>
+                        </placeName>, um dort seine musikalischen Studien bei <persName key="A002025">Georg Joseph Vogler</persName>
+                  fortzusetzen; sein Vater folgte erst im Oktober aus <placeName>
+                            <settlement>Augsburg</settlement>
+                        </placeName> nach. Anders als die
+                  auf <persName key="A004428">Johann Joseph Fux</persName> basierende Kontrapunktlehre <persName key="A000778">Michael Haydns</persName> erwies sich
+                  <persName key="A002025">Voglers</persName> Unterrichtsmethodik als für den jungen Weber in besonderem Maße anregend
+                  und förderlich. Die bis Mai 1804 fortgeführten Studien hinterließen im kompositorischen Schaffen deutliche Spuren: Hinsichtlich formaler Behandlung und
+                  Instrumentation zeigen die ab 1804 entstandenen musikalischen Werke merkliche
+                  Fortschritte.</p>
+                </div>
+            </div>
+            <div xml:lang="de">
+                <head>Schlesien (1804–1807)</head>
+                <div type="abstract">
+                    <p>1804–1806 Musikdirektor am Theater in <placeName>
+                            <settlement>Breslau</settlement>
+                        </placeName>, ab Juni 1806 ohne Stellung,
+                  mehrmonatiger Aufenthalt im schlesischen <placeName>
+                            <settlement>Carlsruhe</settlement>
+                        </placeName> (heute <placeName>
+                            <settlement>Pokój</settlement>
+                        </placeName>) bis Februar 1807</p>
+                </div>
+                <div>
+                    <p>Als sich die Direktion des <placeName>
+                            <settlement>Breslauer</settlement>
+                        </placeName> Theaters 1804 auf der Suche nach einem neuen musikalischen Leiter an <persName key="A002025">Vogler</persName> wandte, empfahl dieser seinen Schüler Weber für das
+                  Musikdirektorenamt, das der noch nicht Achtzehnjährige tatsächlich erhielt. Ende
+                  Mai reiste er über <placeName>
+                            <settlement>Salzburg</settlement>
+                        </placeName>, <placeName>
+                            <settlement>München</settlement>
+                        </placeName>, <placeName>
+                            <settlement>Augsburg</settlement>
+                        </placeName> (5. bis 14.&#160;Juni) und vermutlich
+                  <placeName>
+                            <settlement>Karlsbad</settlement>
+                        </placeName> nach <placeName>
+                            <settlement>Breslau</settlement>
+                        </placeName>, wo er am 11.&#160;Juli seine neue Stelle antrat. Die Erfahrungen der Breslauer Jahre legten das Fundament für Webers späteres Wirken als
+                  Kapellmeister in <placeName>
+                            <settlement>Prag</settlement>
+                        </placeName> und <placeName>
+                            <settlement>Dresden</settlement>
+                        </placeName> und begründeten seinen Ruf als Dirigent. Seine ambitionierte und engagierte Arbeit als Orchesterleiter wurde in der Presse mit
+                  viel Lob bedacht, auch wenn seine (als zu schnell empfundene) Tempowahl mehrfach
+                  Kritik fand. Der aufreibende Theateralltag ließ Weber allerdings wenig Raum für eigene schöpferische Arbeit, und so verzichtete er auf die Verlängerung seines Zweijahresvertrages. Ein gemeinsames Opernprojekt mit Theaterdirektor <persName key="A001570">Johann Gottlieb Rhode</persName> (<hi rend="italic">Rübezahl</hi>) blieb unvollendet. Die in unterschiedlicher Form überlieferte Anekdote über einen Unfall Webers (Einnahme einer ätzenden Säure), der angeblich mitursächlich für das Dienstende in <placeName>
+                            <settlement>Breslau</settlement>
+                        </placeName> gewesen sein soll, kann mit einiger Sicherheit in das Reich der Legenden verwiesen werden.</p>
+                    <p>Ab Ende Juni 1806 versuchte sich Weber als freischaffender Musiker (vor allem als
+                  Musiklehrer) zu etablieren. Zudem fasste er eine Konzertreise ins Auge, für die er
+                  sich (als „Werbemittel“) von dem in Schlesien ansässigen <persName key="A000462">Herzog Eugen (I.) von
+                  Württemberg</persName>, der Weber sehr schätzte, den Ehrentitel eines „Musikintendanten“
+                  verleihen ließ (Juli 1806). Das Reiseprojekt wurde durch die wachsenden
+                  politischen Spannungen und zunehmenden militärischen Konflikte im Rahmen der
+                  napoleonischen Kriege zunächst vereitelt, und so nahm Weber dankbar die Einladung
+                  des kunstsinnigen Herzogs auf dessen Schloss im schlesischen <placeName>
+                            <settlement>Carlsruhe (heute
+                  Pokój</settlement>
+                        </placeName>) an, wo er sich spätestens ab Oktober 1806 aufhielt. Der <persName key="A000462">Herzog</persName> selbst war als     preußischer Offizier in die Kämpfe gegen das französische Heer eingebunden und
+                  kam erst gegen Ende von Webers Carlsruhe-Aufenthalt dorthin zurück. </p>
+                    <p>Von finanziellen Zwängen befreit, widmete sich der junge Musiker im Winter 1806/07
+                  ganz dem Komponieren und schuf u.&#160;a. zwei Sinfonien, Instrumentalkonzerte und
+                  Bläsermusiken; zudem gab er dem Sohn seines Gastgebers, dem jungen <persName key="A000461">Eugen (II.) von
+                  Württemberg</persName>, musikalische Unterweisungen. Das Einrücken französischer Truppen in
+                  Schlesien beendete dieses sorgenfreie Intermezzo – der <persName key="A000462">Herzog</persName> musste seine kleine
+                  Hofhaltung deutlich einschränken und auf seine Hofkapelle verzichten, worauf Weber
+                  <placeName>
+                            <settlement>Carlsruhe</settlement>
+                        </placeName> am 23.&#160;Februar 1807 verließ. </p>
+                </div>
+            </div>
+            <div xml:lang="de">
+                <head>Württemberg (1807–1810)</head>
+                <div type="abstract">
+                    <p>Konzertreise über Sachsen und <placeName>
+                            <settlement>Franken</settlement>
+                        </placeName> (März bis Juli 1807) nach <placeName>
+                            <settlement>Württemberg</settlement>
+                        </placeName>, dort
+                  Anstellung als Geheimer Sekretär bei  <persName key="A001210">Herzog Louis von Württemberg</persName>; </p>
+                    <p>in Finanzaffären seines Dienstherren verstrickt und nach Prozess 1810 des Landes verwiesen</p>
+                </div>
+                <div>
+                    <p>Auf der Suche nach einer neuen Beschäftigung begab sich Weber im März 1807 von
+                  <placeName>
+                            <settlement>Breslau</settlement>
+                        </placeName> aus auf die bereits im Vorjahr geplante Konzertreise, als deren Hauptziel
+                  <placeName>
+                            <settlement>Stuttgart</settlement>
+                        </placeName> vorgesehen war, wohin ihm sein Gastgeber vom Winter 1806/07, 
+                <persName key="A000462">Herzog Eugen (I.) von Württemberg</persName>, Empfehlungsschreiben mitgab. In <placeName>
+                            <settlement>Dresden</settlement>
+                        </placeName> und <placeName>
+                            <settlement>Leipzig</settlement>
+                        </placeName>
+                  zerschlugen sich Hoffnungen auf Konzertauftritte, erst zwischen April und Juli
+                  sind solche in <placeName>
+                            <settlement>Ansbach</settlement>
+                        </placeName>, <placeName>
+                            <settlement>Nürnberg</settlement>
+                        </placeName>, <placeName>
+                            <settlement>Erlangen</settlement>
+                        </placeName> und <placeName>
+                            <settlement>Bayreuth</settlement>
+                        </placeName> bezeugt. Um seinen
+                  Unterhalt zu bestreiten, musste sich Weber daneben kurzzeitig auch als Sekretär
+                  eines französischen Offiziers (<persName key="A000587">Garnier</persName>) verdingen.</p>
+                    <p>Am 17.&#160;Juli erreichte Weber <placeName>
+                            <settlement>Stuttgart</settlement>
+                        </placeName>, konnte allerdings nicht wie erhofft eine
+                  musikalische Anstellung finden, sondern musste sich mit dem Amt eines Geheimen
+                  Sekretärs bei <persName key="A001210">Herzog Louis</persName>, dem jüngeren Bruder des württembergischen Königs, in
+                  <placeName>
+                            <settlement>Stuttgart</settlement>
+                        </placeName> und <placeName>
+                            <settlement>Ludwigsburg</settlement>
+                        </placeName> zufriedengeben. Er war mit der Führung von dessen Finanzhaushalt betraut sowie als Hauslehrer der herzoglichen Kinder beschäftigt
+                  und begleitete seinen <rs type="person" key="A001210">Dienstherrn</rs> auf dessen Reisen (u.&#160;a. 1809 nach <placeName>
+                            <settlement>Pforzheim</settlement>
+                        </placeName>,
+                  <placeName>
+                            <settlement>Karlsruhe</settlement>
+                        </placeName> und <placeName>
+                            <settlement>Ems</settlement>
+                        </placeName>). Auch Vater <persName key="A002074">Franz Anton von Weber</persName> folgte nach dem Tod seiner
+                  Schwester <persName key="A002061">Adelheid</persName> seinem Sohn nach
+                  <placeName>
+                            <settlement>Württemberg</settlement>
+                        </placeName> (Ankunft in <placeName>
+                            <settlement>Stuttgart</settlement>
+                        </placeName> zwischen 28. und 30.&#160;November).</p>
+                    <p>Auch wenn in <placeName>
+                            <settlement>Württemberg</settlement>
+                        </placeName> die Musik in Webers Brotberuf nur am Rande (als Lehrer)
+                  eine Rolle spielte, „entsagte“ er ihr doch keineswegs – wie er es in seiner
+                  Autobiographie darstellte. Es entstanden u.&#160;a. mehrere Werke für Klavier (solo, zu
+                  vier Händen bzw. Quartett) und, befördert durch den väterlichen Freund und Mentor
+                  <persName key="A000354">Franz Danzi</persName>, der als Hofkapellmeister in <placeName>
+                            <settlement>Stuttgart</settlement>
+                        </placeName> wirkte, auch Werke für die
+                  Bühne: die Oper <hi rend="italic">
+                            <workName key="A020036">Silvana</workName>
+                        </hi> (nach Vorlage des älteren <hi rend="italic">
+                            <workName key="A020032">Waldmädchen</workName>
+                        </hi>) und die Schauspielmusik zu Schillers <hi rend="italic">
+                            <workName key="A020229">Turandot</workName>
+                        </hi>. Der in dieser Zeit begonnene autobiographische
+                  Roman <hi rend="italic">
+                            <workName>Tonkünstlers Leben</workName>
+                        </hi>, an dem Weber mit teils längeren
+                  Unterbrechungen bis 1820/21 arbeitete, blieb Fragment. Auch Webers
+                  musikpublizistische Arbeiten setzen (sieht man von den frühen Streitschriften zum
+                     <hi rend="italic">Waldmädchen</hi> von 1801 in <placeName>
+                            <settlement>Freiberg</settlement>
+                        </placeName> und einem <placeName>
+                            <settlement>Breslauer</settlement>
+                        </placeName> Fragment einmal ab) in seinen
+                  <placeName>
+                            <region>Württemberger</region>
+                        </placeName> Jahren ein.</p>
+                    <p>In finanzielle Manipulationen des <rs type="person" key="A001210">Herzogs</rs> verstrickt (u.&#160;a. Freikauf von
+                  Rekruten für die napoleonischen Kriegszüge) und noch dazu durch einen
+                  kostspieligen Lebensstil (wie bereits in seinen <placeName>
+                            <settlement>Breslauer</settlement>
+                        </placeName> Jahren) mit hohen
+                  privaten Schulden belastet, wurde Weber Anfang 1810 inhaftiert; die Anklage
+                  lautete auf Veruntreuung und Bestechung. Den Vorwurf der Unterschlagung von
+                  Geldern konnte Weber zurückweisen; schließlich wurde der Prozess, da man den
+                  vermutlichen Drahtzieher der Transaktionen,  <persName key="A001210">Herzog Louis</persName>, nicht bloßstellen
+                  wollte, auf zivilrechtliche Aspekte beschränkt. Weber verpflichtete sich zur
+                  Abzahlung seiner Schulden (Tilgung der letzten Verpflichtungen im April 1816) und
+                  wurde mit seinem <persName key="A002074">Vater</persName> des Landes verwiesen.</p>
+                </div>
+            </div>
+            <div xml:lang="de">
+                <head>Reisejahre (1810–1813)</head>
+                <div type="abstract">
+                    <p>Konzerttätigkeit im Raum <placeName>
+                            <settlement>Mannheim</settlement>
+                        </placeName>/<placeName>
+                            <settlement>Heidelberg</settlement>
+                        </placeName>, ab April 1810 erneuter Unterricht
+                  bei <persName key="A002025">Vogler</persName> in <placeName>
+                            <settlement>Darmstadt</settlement>
+                        </placeName>; Gründung des Harmonischen Vereins, der sich aus Webers dortigem Freundeskreis sowie Mitschülern bei <persName key="A002025">Vogler</persName> rekrutierte</p>
+                    <p>ab Februar 1811 Reisen auf der Suche nach einer neuen Anstellung, zahlreiche
+                  Konzertauftritte in Süddeutschland (besonders <placeName>
+                            <settlement>München</settlement>
+                        </placeName>), der <placeName>
+                            <country>Schweiz</country>
+                        </placeName>, <placeName>
+                            <settlement>Prag</settlement>
+                        </placeName>,
+                  <placeName>
+                            <settlement>Leipzig</settlement>
+                        </placeName>, <placeName>
+                            <settlement>Gotha</settlement>
+                        </placeName>, <placeName>
+                            <settlement>Weimar</settlement>
+                        </placeName>, <placeName>
+                            <settlement>Dresden</settlement>
+                        </placeName> und <placeName>
+                            <settlement>Berlin</settlement>
+                        </placeName>
+                    </p>
+                </div>
+                <div>
+                    <p>Die negativen Erfahrungen der zurückliegenden <placeName>
+                            <settlement>Stuttgarter</settlement>
+                        </placeName> Zeit, besonders aber die
+                  enormen finanziellen Verpflichtungen, die nun abzutragen waren, führten zu einem
+                  Umdenken: Als Akt der Selbstdisziplinierung begann Weber, ein Tagebuch zu führen,
+                  das ihm fortan als ein „moralischer und finanzieller Rechenschaftsbericht“ diente.
+                  Diese bis knapp vor seinem Tod geführten und fast vollständig (mit Lücken im Jahr
+                  1814) erhaltenen Notizen sind die wichtigsten biographischen Quellen für die Jahre
+                  1810-1826, auch wenn die überwiegend stichwortartige Anlage ihr Verständnis teils
+                  erschwert.</p>
+                    <p>In den jahrgangsweise aufbewahrten Tagebüchern sind die ersten vier Jahre
+                  (1810-1813) von Weber als „Reisejahre“ bezeichnet. Tatsächlich wechselte Weber bis
+                  zur Ansiedlung in <placeName>
+                            <settlement>Prag</settlement>
+                        </placeName> im Frühjahr 1813 seinen Aufenthaltsort sehr oft. Direkt
+                  nach der Landesverweisung aus <placeName>
+                            <settlement>Württemberg</settlement>
+                        </placeName> ließen sich die Webers zunächst, durch
+                  zahlreiche Empfehlungsschreiben unterstützt, in <placeName>
+                            <settlement>Mannheim</settlement>
+                        </placeName> nieder; Carl Maria von Weber lebte
+                  bald recht erfolgreich als freischaffender Musiker von Konzerten und dem Verkauf
+                  seiner Kompositionen an Verleger (enge Kontakte zu <persName key="A000031">André</persName> in <placeName>
+                            <settlement>Offenbach</settlement>
+                        </placeName>, <persName key="A001831">Simrock</persName> in
+                  <placeName>
+                            <settlement>Bonn</settlement>
+                        </placeName>, <persName key="A000656">Gombart</persName> in <placeName>
+                            <settlement>Augsburg</settlement>
+                        </placeName>, <persName key="A001088">Kühnel</persName> in <placeName>
+                            <settlement>Leipzig</settlement>
+                        </placeName>) bzw. Theater-Direktionen (u.&#160;a. UA der <hi rend="italic">
+                            <workName key="A020036">Silvana</workName>
+                        </hi> am 16.&#160;September 1810 in <placeName>
+                            <settlement>Frankfurt/Main</settlement>
+                        </placeName>).</p>
+                    <p>Ab April 1810 nahm <persName key="A002068">Weber</persName> zudem seine Studien bei dem inzwischen in <placeName>
+                            <settlement>Darmstadt</settlement>
+                        </placeName>
+                  lebenden <persName key="A002025">Vogler</persName> wieder auf; er „pendelte“ in den nachfolgenden Monaten quasi
+                  zwischen <placeName>
+                            <settlement>Mannheim</settlement>
+                        </placeName>, <placeName>
+                            <settlement>Heidelberg</settlement>
+                        </placeName> und <placeName>
+                            <settlement>Darmstadt</settlement>
+                        </placeName>. Unter Aufsicht des Lehrers entstand
+                  u.&#160;a. die Oper <hi rend="italic">
+                            <workName key="A020038">Abu Hassan</workName>
+                        </hi>. Gemeinsam mit seinen Mitschülern
+                  <persName key="A000584">Johann Baptist Gänsbacher</persName> und <persName key="A001313">Jakob Liebmann Meyer Beer (später Giacomo Meyerbeer)</persName> sowie den Freunden <persName key="A002078">Gottfried Weber</persName> und <persName key="A000409">Alexander von Dusch</persName> gründete er den
+                  sogenannten Harmonischen Verein, der sich als Interessenvertretung und Plattform
+                  junger Musiker und Künstler (insbesondere der beteiligten) und Wortführer neuer
+                  Kunstströmungen verstand. Die Statuten wurden maßgeblich durch Weber geprägt;
+                  Zentrum des Vereins war <placeName>
+                            <settlement>Mannheim</settlement>
+                        </placeName> (<persName key="A002078">G.&#160;Weber</persName>). Durch eine gezielte
+                  Publikationstätigkeit wollte man die musikästhetische Debatte beeinflussen – die
+                  Arbeit gemäß der Vereinsziele beschränkte sich nach intensivem Beginn ab 1813
+                  allerdings weitgehend auf die beiden Webers.</p>
+                    <p>Im Januar 1811 verließ Weber <placeName>
+                            <settlement>Mannheim</settlement>
+                        </placeName> (wo der <rs type="person" key="A002074">Vater</rs> zurückblieb und im Jahr darauf, am 16.&#160;April 1812, starb); im Februar 1811 folgte der Abschied von <placeName>
+                            <settlement>Darmstadt</settlement>
+                        </placeName>. Hauptziel der nachfolgenden Reisen, die Weber überwiegend durch Konzerte finanzierte, war die Suche nach einer neuen Anstellung. Zunächst gelangte
+                  er über <placeName>
+                            <settlement>Gießen</settlement>
+                        </placeName>, <placeName>
+                            <settlement>Aschaffenburg</settlement>
+                        </placeName>, <placeName>
+                            <settlement>Würzburg</settlement>
+                        </placeName>, <placeName>
+                            <settlement>Bamberg</settlement>
+                        </placeName> und <placeName>
+                            <settlement>Augsburg</settlement>
+                        </placeName> nach <placeName>
+                            <settlement>München</settlement>
+                        </placeName> (ab
+                  14.&#160;März). Dort konnte er nicht nur seinen <hi rend="italic">
+                            <workName key="A020038">Abu Hassan</workName>
+                        </hi> zur
+                  Uraufführung bringen (4.&#160;Juni), sondern lernte mit dem Klarinettisten <persName key="A000077">Heinrich
+                  Joseph Baermann</persName> einen wichtigen Weggefährten kennen. Die drei
+                  Konzertkompositionen, die Weber für den Freund schrieb (in späteren Jahren auch
+                  drei Kammermusikwerke für Klarinette), erregten großes Aufsehen. Nach einer Reise
+                  durch die <placeName>
+                            <country>Schweiz</country>
+                        </placeName> (August bis Oktober), während der ein „<rs type="writing" key="A031148">Noth- und Hülfsbüchlein für reisende Tonkünstler</rs>“ projektiert wurde (Entwürfe 1811/12), war <placeName>
+                            <settlement>München</settlement>
+                        </placeName>
+                  Ausgangspunkt für eine gemeinsame Konzerttour mit <persName key="A000077">Baermann</persName> nach <placeName>
+                            <settlement>Prag</settlement>
+                        </placeName> (4. bis 23.&#160;Dezember), <placeName>
+                            <settlement>Leipzig</settlement>
+                        </placeName> (27.&#160;Dezember 1811 bis 16.&#160;Januar 1812), <placeName>
+                            <settlement>Gotha</settlement>
+                        </placeName> (17. bis 26.&#160;Januar), <placeName>
+                            <settlement>Weimar</settlement>
+                        </placeName> (27.&#160;Januar bis 4.&#160;Februar), <placeName>
+                            <settlement>Dresden</settlement>
+                        </placeName> (5. bis 19.&#160;Februar) sowie <placeName>
+                            <settlement>Berlin</settlement>
+                        </placeName> (ab 20.&#160;Februar), wo <persName key="A002068">Weber</persName> seine <hi rend="italic">
+                            <workName key="A020036">Silvana</workName>
+                        </hi> (in
+                  überarbeiteter Version) einstudierte.</p>
+                    <p>In <placeName>
+                            <settlement>Berlin</settlement>
+                        </placeName> knüpfte er Kontakte zu <persName key="A001693">Adolph Martin Schlesinger</persName>, seinem Hauptverleger der nachfolgenden Jahre, und fand (überwiegend im Umfeld von <persName key="A002191">Carl Friedrich
+                  Zelter</persName> geleiteten Singakademie) einen neuen großen Freundeskreis und damit jene
+                  kreative Atmosphäre, die sein Schaffen beflügelte. Die Stadt blieb, auch wenn alle
+                  Anstellungsversuche scheiterten, lange Jahre ein Wunschziel Webers.</p>
+                    <p>Einladungen von <persName key="A000060">Herzog August</persName> von <placeName>
+                            <settlement>Sachsen-Gotha</settlement>
+                        </placeName> sowie Großfürstin <persName key="A001258">Maria Pawlowna</persName>
+                  in <placeName>
+                            <settlement>Weimar</settlement>
+                        </placeName> führten den Komponisten im September 1812 nochmals nach <placeName>
+                            <region>Thüringen</region>
+                        </placeName>;
+                  danach wurde eine erneute Konzertreise geplant, die über <placeName>
+                            <settlement>Prag</settlement>
+                        </placeName> und <placeName>
+                            <settlement>Wien</settlement>
+                        </placeName> nach
+                  <placeName>
+                            <country>Italien</country>
+                        </placeName> führen sollte, doch dieser Plan zerschlug sich, als Weber am 13.&#160;Januar
+                  1813 vom Prager Theaterleiter <persName key="A001172">Johann Karl Liebich</persName> das Angebot einer Anstellung als
+                  Kapellmeister des Ständetheaters unterbreitet wurde. Weber unterzeichnete den
+                  Kontrakt (8.&#160;Februar) und beschränkte seine Reisepläne auf <placeName>
+                            <settlement>Wien</settlement>
+                        </placeName> (Ankunft
+                  29.&#160;März), von wo aus er direkt nach <placeName>
+                            <settlement>Prag</settlement>
+                        </placeName> zurückkehrte (Ankunft 6.&#160;Mai). Die Fahrt
+                  nach <placeName>
+                            <settlement>Wien</settlement>
+                        </placeName> konnte nun gleichzeitig mit dienstlichen Belangen verbunden werden: Nach
+                  Auflösung der <persName>Eszterhazyschen</persName> Hofkapelle hoffte Weber, Musiker und Sänger für <placeName>
+                            <settlement>Prag</settlement>
+                        </placeName>
+                  engagieren zu können.</p>
+                </div>
+            </div>
+            <div xml:lang="de">
+                <head>Prag (1813–1816)</head>
+                <div type="abstract">
+                    <p>Kapellmeister am Ständetheater</p>
+                </div>
+                <div>
+                    <p>Weber hatte zunächst große Vorbehalte, das <placeName>
+                            <settlement>Prager</settlement>
+                        </placeName> Amt zu übernehmen; er notierte
+                  in seinem Tagebuch am 15.&#160;Januar 1813: „ich entschloß mich endlich mit schwerem
+                  Herzen ja zu sagen, und auf 3 Jahre <hi rend="italic">Contract </hi>zu machen“;
+                  Ausschlag gab vor allem die Hoffnung, „die Wonne zu genießen bald meine Schulden
+                  als braver Kerl bezahlen zu können“ (Tagebuch 13.&#160;Januar), aber auch die
+                  Gewissheit, als musikalischer Leiter für den Bereich des Musiktheaters umfassende
+                  (und alleinige) Gestaltungsmöglichkeit zu haben. Bereits vor der vertraglich
+                  fixierten Amtsübernahme (Michaeli 1813) begann seine Arbeit im Theater. Die enorme
+                  Arbeitsbelastung führte dazu, dass Weber selbst die <placeName>
+                            <settlement>Prager</settlement>
+                        </placeName> Zeit als seine
+                  „Joch-Jahre“ bezeichnete (Titelblatt des Tagebuchs 1814). Er lernte nicht nur die
+                  böhmische Sprache, um mit seinen Musikern besser kommunizieren zu können; vor
+                  allem Arbeitsorganisation, Repertoiregestaltung und Ensembleaufbau des Theaters
+                  erschienen ihm als revisionsbedürftig. Zudem empfand er die Publikumsresonanz auf
+                  seine ambitionierten Bemühungen, eine anspruchsvolle deutschsprachige Oper zu
+                  etablieren (u.&#160;a. UA von Spohrs <hi rend="italic">
+                            <workName key="A020469">Faust</workName>
+                        </hi> am 1.&#160;September 1816,
+                  Erstaufführungen von Beethovens <hi rend="italic">
+                            <workName key="A020491">Fidelio</workName>
+                        </hi> und Meyerbeers <hi rend="italic">
+                            <workName key="A020460">Alimelek</workName>
+                        </hi>), als zu
+                  gering. In der überregionalen Presse wurden Webers Bemühungen um eine Hebung des
+                  Niveaus und sein erfolgreiches Wirken am Pult des <placeName>
+                            <settlement>Prager</settlement>
+                        </placeName> Opernorchesters
+                  allerdings durchaus wahrgenommen, so dass er sich bald den Ruf eines
+                  herausragenden Orchesterleiters erarbeitete.</p>
+                    <p>Auch persönliche Befindlichkeiten trübten die <placeName>
+                            <settlement>Prager</settlement>
+                        </placeName> Zeit. Eine
+                  Tuberkulose-Infektion, die sich Weber vermutlich bereits in Kindertagen zugezogen
+                  hatte (seine <rs type="person" key="A002077">Mutter</rs> war an Tuberkulose gestorben), führte immer wieder zu
+                  Krankheitsschüben (u.&#160;a. im Mai/Juni 1813). Mit Kuren (u.&#160;a. in <placeName>
+                            <settlement>Liebwerda</settlement>
+                        </placeName> Juli
+                  1814) versuchte er (auch in den nachfolgenden <placeName>
+                            <settlement>Dresdner</settlement>
+                        </placeName> Jahren), den
+                  gesundheitlichen Problemen zu begegnen. Zudem führten zunächst das Verhältnis mit
+                  der verheirateten Schauspielerin und Tänzerin <persName key="A000240">Therese Brunetti</persName> und danach die von
+                  großen Stimmungsschwankungen geprägte Beziehung zur Schauspielerin <persName key="A000213">Caroline Brandt</persName>
+                  immer wieder zu Konflikten und Zerwürfnissen. Die <persName key="A000213">Brandt</persName> kannte Weber bereits
+                  länger; in Frankfurt hatte sie 1810 bei der Uraufführung seiner <hi rend="italic">
+                            <workName key="A020036">Silvana</workName>
+                        </hi> die Titelrolle gegeben. Er selbst bemühte sich 1813 um das
+                  Engagement der beliebten Soubrette von <placeName>
+                            <settlement>Frankfurt</settlement>
+                        </placeName> nach <placeName>
+                            <settlement>Prag</settlement>
+                        </placeName>. Nach einer
+                  vorübergehenden Trennung (Sommer 1815) fand das Paar allerdings wieder zusammen.</p>
+                    <p>Insbesondere die dienstlichen Pflichten behinderten Webers kompositorisches
+                  Schaffen. Neben Alltagsarbeiten für das Theater (Einlagen, Bearbeitungen,
+                  Schauspielmusiken) und die von Liebich veranstalteten Bälle (Walzer etc.)
+                  entstanden als Hauptwerke jener Zeit die Vertonungen der <persName key="A001050">Körner</persName>-Dichtungen aus <hi rend="italic">
+                            <workName>Leyer und Schwert</workName>
+                        </hi> sowie die Kantate <hi rend="italic">
+                            <workName key="A020018">Kampf
+                     und Sieg</workName>
+                        </hi>, beide freilich angeregt durch Reisen nach <placeName>
+                            <settlement>Berlin</settlement>
+                        </placeName>
+                  (August/September 1814) bzw. <placeName>
+                            <settlement>München</settlement>
+                        </placeName> (Juni bis September 1815). In <placeName>
+                            <settlement>Prag</settlement>
+                        </placeName> selbst
+                  klagte Weber über mangelnde künstlerische Anregungen und ein fehlendes
+                  musisch-kreatives Umfeld.</p>
+                    <p>Das gab wohl den Ausschlag, den Dreijahresvertrag 1816 nicht zu verlängern, auch
+                  wenn Weber zu dieser Zeit noch kein Folgeangebot für eine neue Tätigkeit
+                  vorzuliegen hatte. Er beendete seine Prager Tätigkeit Anfang Oktober, sorgte
+                  vorher allerdings noch dafür, dass sein Nachfolger (anders als er selbst)
+                  geordnete Unterlagen über die Orchester- und Probenarbeit,
+                  Besetzungsangelegenheiten und andere dienstliche Belange vorfand (u.&#160;a. das Prager
+                     <hi rend="italic">Notizen-Buch</hi> mit Hinweisen zu den Einstudierungen
+                  zwischen 1813 und 1816).</p>
+                    <p>
+                        <persName key="A002068">Weber</persName> reiste gemeinsam mit <persName key="A000213">Caroline Brandt</persName> nach <placeName>
+                            <settlement>Berlin</settlement>
+                        </placeName>; in den dort verbrachten
+                  Wochen (13.&#160;Oktober 1816 bis 12.&#160;Januar 1817) entstanden in einem wahren
+                  Schaffensrausch Klavier- und Kammermusikwerke sowie Gesänge. Außerdem stellten
+                  sich in <placeName>
+                            <settlement>Berlin</settlement>
+                        </placeName> entscheidende Weichen für den weiteren Lebensweg: Am 19.&#160;November
+                  verlobte sich Weber mit <persName key="A000213">Caroline Brandt</persName> (vor deren Abreise über <placeName>
+                            <settlement>Dresden</settlement>
+                        </placeName> nach <placeName>
+                            <settlement>Prag</settlement>
+                        </placeName>
+                  am 20.&#160;November); am 25.&#160;Dezember erhielt er seine Berufung an das <placeName>
+                            <settlement>Dresdner
+</settlement>
+                        </placeName> Hoftheater.</p>
+                </div>
+            </div>
+            <div xml:lang="de">
+                <head>Dresden (1817–1826)</head>
+                <div type="abstract">
+                    <p>Hofkapellmeister, Aufbau des deutschen Departements des Hoftheaters</p>
+                    <p>Komposition der Opern <hi rend="italic">
+                            <workName key="A020040">Der Freischütz</workName>
+                        </hi> (UA 1821 <placeName>
+                            <settlement>Berlin</settlement>
+                        </placeName>), <hi rend="italic">
+                            <workName key="A020043">Euryanthe</workName>
+                        </hi> (UA 1823 <placeName>
+                            <settlement>Wien</settlement>
+                        </placeName>) und <hi rend="italic">
+                            <workName key="A020045">Oberon</workName>
+                        </hi> (UA 1826 <placeName>
+                            <settlement>London</settlement>
+                        </placeName>)</p>
+                </div>
+            </div>
+            <div xml:lang="de">
+                <head>London-Reise und Tod (1826)</head>
+                <div type="abstract">
+                    <p>Reise zur Einstudierung des <hi rend="italic">
+                            <workName key="A020045">Oberon</workName>
+                        </hi> nach <placeName>
+                            <settlement>London</settlement>
+                        </placeName>,
+                  umfangreiche Konzert- und Dirigierverpflichtungen</p>
+                    <p>Tod am 5.&#160;Juni</p>
+                </div>
+                <div>
+                    <p>Angebote, eine Oper für <placeName>
+                            <settlement>London</settlement>
+                        </placeName> zu schreiben, hatte Weber bereits 1822, kurz nach
+                  dem Sensationserfolg seines <hi rend="italic">
+                            <workName key="A020040">Freischütz</workName>
+                        </hi>, erhalten;
+                  konkretere Gestalt nahmen die Planungen allerdings erst 1824 an, als er den
+                  Auftrag für die Vertonung des <hi rend="italic">
+                            <workName key="A020045">Oberon</workName>
+                        </hi> erhielt. Das Libretto
+                  von <persName key="A001487">James Robinson Planché</persName> lag erst im Februar 1825 komplett vor, so dass die
+                  ursprünglich vorgesehene Uraufführung 1825 in das folgende Jahr verschoben
+                  wurde.</p>
+                    <p>Weber reiste am 16.&#160;Februar 1826 mit der noch unvollendeten Partitur von <placeName>
+                            <settlement>Dresden</settlement>
+                        </placeName>
+                  ab und fuhr zunächst nach <placeName>
+                            <settlement>Paris</settlement>
+                        </placeName> (Aufenthalt 25.&#160;Februar bis 2.&#160;März), um dort
+                  Möglichkeiten für weitere Opernaufträge zu sondieren (entsprechende Angebote lagen
+                  bereits vor). Das große Interesse der <placeName>
+                            <settlement>Pariser</settlement>
+                        </placeName> Musikwelt an seiner Person (u.&#160;a.
+                  Treffen mit <persName key="A001436">Paer</persName>, <persName key="A000287">Cherubini</persName>, <persName key="A001616">Rossini</persName>, <persName key="A000056">Auber</persName>) bestärkte seine Hoffnungen in dieser Hinsicht.</p>
+                    <p>Am 5.&#160;März erreichte er <placeName>
+                            <settlement>London</settlement>
+                        </placeName>, wo er nicht nur seine neue Oper fertigzustellen,
+                  einzustudieren und aufzuführen hatte (12 Vorstellungen unter Leitung Webers
+                  zwischen 12. und 25.&#160;April), sondern auch konzertante Aufführungen des <hi rend="italic">
+                            <workName key="A020040">Freischütz</workName>
+                        </hi> leitete und an weiteren Konzerten mitwirkte. Die
+                  Häufung dienstlicher wie gesellschaftlicher Verpflichtungen griff den durch seine
+                  Krankheit und die anstrengende Reise ohnehin geschwächten Komponisten zunehmend
+                  an; er verstarb in der Nacht vom 4. zum 5.&#160;Juni 1826. Am 21.&#160;Juni wurde sein
+                  Leichnam in der Gruft der katholischen Moorsfield Chapel beigesetzt. 1844
+                  überführte man den Sarg nach <placeName>
+                            <settlement>Dresden</settlement>
+                        </placeName> in die von <persName>Gottfried Semper</persName> gestaltete
+                  Familiengruft auf dem dortigen katholischen Friedhof. Die Leitung der
+                  Trauerfeierlichkeiten lag in den Händen von <persName key="A003248">Richard Wagner</persName>, der aus diesem Anlass
+                  eine <workName>Trauermusik (WWV&#160;73)</workName> und einen <workName>Männerchor (WWV&#160;72)</workName> komponierte und seine
+                  berühmt gewordene Grabrede <hi rend="italic">An Weber’s letzter Ruhestätte</hi>
+                  hielt.</p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

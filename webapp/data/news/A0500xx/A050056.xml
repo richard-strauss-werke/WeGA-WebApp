@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050056">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Das göttliche Requiem liegt nun vor</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2008-04-02T09:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Das von <persName key="A002068">Weber</persName> während seines Aufenthalts in <placeName>
+                        <settlement>Darmstadt</settlement>
+                    </placeName>
+                    <date when="1810">1810</date> als „göttlich“ apostrophierte <hi rend="bold">Requiem in Es-Dur</hi> seines Lehrers <persName key="A002025">Abbé Georg Joseph Vogler</persName> liegt nun endlich im Druck vor. Es erschien innerhalb der Reihe <hi rend="bold">
+                        <hi rend="italic">Denkmäler der Tonkunst in Bayern</hi>
+                    </hi>, Neue Folge, als <hi rend="bold">Band 18</hi> der von der Gesellschaft für Bayerische Musikgeschichte herausgegebenen Reihe bei Breitkopf &amp; Härtel in <placeName>
+                        <settlement>Wiesbaden</settlement>
+                    </placeName> und umfaßt 102 Seiten Texte und Faksimiles sowie 203 Notenseiten. Das Werk, das durch die Vermittlung von Dr. Bärbel Pelker und Dr. Rüdiger Thomsen-Fürst <date when="1999">1999</date> zum Carl-Theodor-Jahr in <placeName>
+                        <settlement>Mannheim</settlement>
+                    </placeName> unter Leitung von Prof. Dr. Gerald Kegelmann wiederaufgeführt und auf CD eingespielt wurde und <date when="2002">2002</date> durch Vermittelung von Eveline Bartlitz auch im <placeName>
+                        <settlement>Berliner</settlement>
+                    </placeName> Dom unter Leitung von Herbert Hildebrandt erklang, wird hoffentlich wieder Eingang in die kirchenmusikalische Praxis finden. Das Erscheinen des von Joachim Veit herausgegebenen neuen Bandes wird voraussichtlich im November des Jahres mit einer neuen Aufführung in <placeName>
+                        <settlement>München</settlement>
+                    </placeName> sowie einer CD-Produktion gewürdigt. Wir werden darüber rechtzeitig berichten.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

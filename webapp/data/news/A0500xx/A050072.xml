@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050072">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Aus dem Leim gegangen</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2009-10-30T09:02:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Sozusagen "aus dem Leim gegangen" ist der in Vorbereitung befindliche <hi rend="bold">Arienband</hi> der WeGA (Serie III, Bd. 11), der <persName key="A002068">Webers</persName>
+                    <hi rend="bold">Opern-Einlagen, Konzert-Arien und Duette</hi> mit Orchesterbegleitung enthält und aufgrund der Vielzahl von Kompositionen gleich drei Herausgeber hat: Solveig Schreiter, Markus Bandur und Frank Ziegler. Noch größer aber war die Zahl der zu lösenden Probleme, die sich bei der Vorbereitung dieses Bandes stellten - um so erfreulicher ist das Ergebnis, das viel zur Klärung des <persName key="A002068">Weber</persName>-Bildes beiträgt. Da alleine der Notenband 300 Seiten umfasst, haben sich Redaktion und Verlag entschlossen, den (nicht wesentlich weniger Seiten umfassenden) Textteil diesmal als eigenen Band zu drucken, der damit auch ein sehr viel besseres Benutzen des Kritischen Berichtes erlaubt. Die Vorbereitungen zur Produktion der Druckvorlage laufen zur Zeit auf Hochtouren - quasi gleichzeitig soll auch der Band mit den zugehörigen <hi rend="bold">Klavierauszügen</hi> (Serie VIII, Bd. 7) fertig werden. Dieser Band umfasst neben den von <persName key="A002068">Weber</persName> selbst erstellten Klavierauszügen zu den Arien WeV <workName key="A020241">D.2a</workName>, <workName key="A020056">D.7a</workName>, <workName key="A020059">E.1a</workName>, <workName key="A020063">E.3a</workName>, <workName key="A020066">E.5a</workName> und <workName key="A020068">E.6a</workName> auch dessen <workName key="A020253">Klavierauszug zur <hi rend="italic">Turandot</hi>-Ouvertüre</workName> und zur <hi rend="italic">
+                        <workName key="A020280">Jubel-Ouvertüre</workName>
+                    </hi>. Die musikalische Praxis darf sich auf diese echte Bereicherung der Konzert-Literatur schon freuen - es sind etliche Stücke enthalten, die nicht bloß auf dem Papier existieren sollten!</p>
+            </div>
+        </body>
+    </text>
+</TEI>

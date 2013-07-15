@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050097">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Zu Webers Freundschaft mit dem Klarinettisten Heinrich Joseph Baermann </title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2005-12-12T11:50:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>release</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Im <date notBefore="1811-04-01" notAfter="1811-04-30">April 1811</date> eröffnete das <workName key="A020200">
+                        <hi rend="italic">
+                            <hi rend="bold">Concertino</hi> für
+                  Klarinette und Orchester</hi>
+                    </workName>, das <persName key="A002068">Weber</persName> für
+               den Klarinettisten der Münchener Hofkapelle, <persName key="A000077">Heinrich Joseph
+                  Baermann</persName> (<date from="1784" to="1847">1784–1847</date>), schrieb, die Reihe seiner Kompositionen für
+               diesen Klarinettenvirtuosen, mit dem er zeitlebens in enger Freundschaft verbunden
+               blieb. Der Hof war von diesem Werk so begeistert, daß er gleich zwei weitere <hi rend="bold">Klarinettenkonzerte</hi> bei <persName key="A002068">Weber</persName>
+               in Auftrag gab. Im Herbst des gleichen Jahres begann <persName key="A002068">Weber</persName> mit der Arbeit am <workName key="A020205">
+                        <hi rend="bold">Klarinettenquintett
+               B-Dur</hi>
+                    </workName>, an dem er auf einer Konzertreise mit <persName key="A000077">Baermann</persName> weiterarbeitete. Im <date notBefore="1812-03-01" notAfter="1812-03-31">März
+               1812</date> führten die beiden den ersten vollendeten Satz des Werkes, den <hi rend="italic">Fantasia. Adagio ma non troppo</hi> betitelten II. Satz im Hause des
+               komponierenden Fürsten <persName>Anton Heinrich Radziwill</persName> in
+                  <placeName>
+                        <settlement>Berlin</settlement>
+                    </placeName> auf. Die Sätze I bis III erhielt <persName key="A000077">Baermann</persName> dann im
+               Jahr darauf in <placeName>
+                        <settlement>Wien</settlement>
+                    </placeName> als Geburtstagsgeschenk - auf den letzten
+               Satz aber mußte er bis <date notBefore="1815-08-01" notAfter="1815-08-31">August 1815</date> warten. In diesem Sommer weilte <persName key="A002068">Weber</persName> erneut in
+               München, wohnte bei <persName key="A000077">Baermann</persName> und dessen
+               Lebensgefährtin und schrieb für den Klarinettisten - quasi als Entschädigung für Kost
+               und Logis - sein dreisätziges <workName key="A020216">
+                        <hi rend="italic">
+                            <hi rend="bold">Grand Duo</hi> für
+                  Klarinette und Klavier Es-Dur</hi>
+                    </workName>, das ebenfalls im neuen Band enthalten ist. Das
+               dritte Werk des Bandes sind die <workName key="A020235">
+                        <hi rend="italic">
+                            <hi rend="bold">Variationen</hi>
+                  über ein Thema aus der Oper „Silvana“</hi>
+                    </workName>, die <persName key="A002068">Weber</persName> (mit <persName key="A000077">Baermanns</persName> Hilfe) am
+               Morgen vor einem Konzertauftritt in <placeName>
+                        <settlement>Prag</settlement>
+                    </placeName> im <date notBefore="1811-12-01" notAfter="1811-12-31">Dezember 1811</date> komponiert hatte.</p>
+                <p>
+                    <hi rend="bold">Detaillierte Informationen</hi> zu Webers Freundschaft mit <persName key="A000077">Baermann</persName>
+               können Sie hier als PDF-Datei herunterladen (es handelt sich um die Seiten XV–XXI aus
+               dem Gesamtausgabenband).</p>
+            </div>
+        </body>
+    </text>
+</TEI>

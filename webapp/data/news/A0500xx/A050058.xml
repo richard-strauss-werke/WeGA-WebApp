@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050058">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Besuch von Frau Prof. Rycroft wegen Schottischer Lieder</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2008-05-05T09:21:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Am <date when="2008-05-05">5. Mai</date> machte Frau Prof. Marjorie Rycroft von der <placeName>
+                        <settlement>Glasgow</settlement>
+                    </placeName> University auf dem Weg nach <placeName>
+                        <settlement>Eisenstadt</settlement>
+                    </placeName> in <placeName>
+                        <settlement>Detmold</settlement>
+                    </placeName> Station, um ihre Editionsarbeiten an den <hi rend="bold">Schottischen Liedern<!-- TODO: mehrere IDs --></hi>, also den 10 Schottischen Nationalgesängen für Singstimme, Flöte, Violine, Violoncello und Klavier (WeV U.15, JV 295-304) zu besprechen. Die Arbeiten von Frau Rycroft, die auch die Schottischen Lieder innerhalb der Joseph-Haydn-Gesamtausgabe mit herausgegeben hat, sind bereits weit fortgeschritten. Da die <persName key="A002068">Weberschen</persName> Lieder in jüngerer Zeit immer öfter nachgefragt werden, soll überlegt werden, eventuell bereits eine Vorab-Edition vor dem geplanten Gesamtausgabenband (Serie VIII, Bd. 12) vorzulegen. Für entsprechende Rückmeldungen von Seiten der musikalischen Praxis wären wir sehr dankbar. Wegen der immer wieder neuen Auflagen der Liedersammlungen von <persName key="A008127">George Thomson</persName> ist die Rezeptionsgeschichte dieser Werke verzwickt. Voraussichtlich sollen die englische und die bei Probst erschienene deutsche Fassung dieser Lieder separat abgedruckt werden.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

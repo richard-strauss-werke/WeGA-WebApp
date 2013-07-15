@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050068">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Zweite Arbeitsphase an den Klarinettenkonzerten</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2009-04-14T09:27:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>publication</term>
+                    <term>sig</term>
+                    <term>conference</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Zügig voran schreiten jetzt die Arbeiten an Serie V, Bd. 6/1-2. Hinter diesem Bandkürzel verbergen sich die <hi rend="bold">Klarinettenkonzerte</hi>
+                    <persName key="A002068">Webers</persName>. Ende März hielt sich <hi rend="bold">Prof. Dr. Frank Heidlberger</hi> (<placeName>
+                        <settlement>Denton</settlement>
+                    </placeName>/Texas) zu einer einwöchigen Arbeitsphase in <placeName>
+                        <settlement>Detmold</settlement>
+                    </placeName> auf. Dabei wurde diesmal die Edition des <workName key="A020226">zweiten Klarinettenkonzerts in Es-Dur</workName> im Detail besprochen. Manche überraschende Erkenntnis ergab sich beim vergleichenden Studium der Handschriften und des Erstdrucks. Wiederum konnte dabei die <hi rend="italic">Edirom</hi>-Technik benutzt werden, die die Arbeiten erheblich erleichterte. Im Anschluss an diese intensive Besprechung wird nun der Notentext ein letztes Mal überarbeitet und für die Ausgabe eingerichtet. Nachdem das <workName key="A020201">f-Moll-Konzert</workName> bereits in einer Vorab-Version im vergangenen Herbst in <placeName>
+                        <settlement>München</settlement>
+                    </placeName> nach der neuen Edition erklungen ist, sollen nun <workName key="A020226">Es-Dur-Konzert</workName> und <hi rend="italic">
+                        <workName key="A020200">Concertino</workName>
+                    </hi> zum Sommer fertiggestellt werden. Parallel dazu ist in <placeName>
+                        <settlement>Detmold</settlement>
+                    </placeName> eine digitale Version der Edition in Angriff genommen worden. Es ist zu hoffen, dass der Doppelband (vielleicht auch schon mit DVD) im Herbst vorliegt und dann auch zugleich schon für die Praxis zur Verfügung steht.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

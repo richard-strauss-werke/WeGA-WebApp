@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050042">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Vorläufige Kurz-Infos 2007</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2007-02-03T09:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>sig</term>
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Achtung: Für Benutzer der <hi rend="bold">Edirom</hi>
+                    <hi rend="bold">-CD</hi> mit der digitalen Edition des <hi rend="bold">
+                        <workName key="A020205">Klarinettenquintetts</workName>
+                    </hi> (Beilage zu Serie VI, Bd. 3 der WeGA) sei nochmals darauf hingewiesen, daß in den neueren Windows-Versionen vor Einlegen der CD in den PC der Adobe-<hi rend="bold">Acrobat-Reader gestartet sein muß</hi>, um ein reibungsloses Funktionieren zu gewährleisten. Wir bitten um Verständnis, daß bei dieser Probe-Edition noch auf solche proprietären Programme zurückgegriffen wurde, auf deren weitere Entwicklung und Kompatibilität mit früheren Versionen wir leider keinen Einfluß haben. Zukünftige digitale Veröffentlichungen der WeGA werden nicht mehr auf die bei dieser CD verwendeten Programme angewiesen sein, sondern ausschließlich Open-Source-Produkte nutzen.</p>
+                <p>Zu den inzwischen online verfügbaren <hi rend="bold">Personen- und Dokumentendatenbanken</hi> wird es in Kürze aktualisierte Hinweise geben. Wir sind augenblicklich noch mit diversen Umstellungen beschäftigt, so daß die akutellen Meldungen auf der Homepage etwas vernachlässigt wurden - wir bitten dafür um Verständnis.</p>
+                <p>Vorliegen wird in Kürze der Band mit der <placeName>
+                        <settlement>Dresdner</settlement>
+                    </placeName> Kantate zur Prokurationsvermählung des <persName key="A001160">Erbprinzen Leopold von Toscana</persName> mit <persName key="A001252">Maria Anna Carolina von Sachsen</persName> am <date when="1817-10-28">28. Oktober 1817</date>. Das "<hi rend="bold">L'Accoglienza</hi>" betitelte Werk (Serie II, Bd. 3), das Ortrun Landmann herausgegeben hat, müßte nach deren Forschungen eigentlich als "Festa teatrale" bezeichnet werden. Der Band umfaßt XXIV und 156 Seiten und enthält im Anhang wiederum zahlreiche Faksimiles.</p>
+                <p>Der <placeName>
+                        <settlement>Dresdner</settlement>
+                    </placeName> Tagungsbericht wird nun zusammen mit einer Reihe von weiteren Beiträgen als <hi rend="bold">Weber-Studien, Bd. 8</hi> erscheinen. Herausgegeben wird der Band von den Veranstaltern der Tagung, Prof. Dr. Manuel Gervink und Prof. Dr. Frank Heidlberger sowie von Frank Ziegler, der ursprünglich als Bd. 8 einen Aufsatzsammelband plante. Nun sollen beide Projekte in einem Band vereinigt werden, der hoffentlich im Sommer erscheinen kann.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

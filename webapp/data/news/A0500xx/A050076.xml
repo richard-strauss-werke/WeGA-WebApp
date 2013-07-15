@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050076">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Silvana – pünktlich zum 200. Geburtstag aus dem Dornröschenschlaf erweckt</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2010-03-07T09:09:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>performance</term>
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Am <date when="1810-09-16">16. September 1810</date> ging in <placeName>
+                        <settlement>Frankfurt am Main</settlement>
+                    </placeName> zum erstenmal <persName key="A002068">Webers</persName>, auf dem Theaterzettel als <hi rend="italic">heroische Oper in drey Aufzügen</hi> bezeichnete, <hi rend="bold">
+                        <workName key="A020036">Silvana</workName>
+                    </hi> über die Bühne. Pünktlich zum 200jährigen Jubiläum, wenn auch wenige Monate früher, erwecken das <hi rend="bold">Münchner Rundfunkorchester</hi> und der <hi rend="bold">Chor des Bayerischen Rundfunks</hi> unter Leitung von <hi rend="bold">Ulf Schirmer</hi> das Werk in der Urfassung wieder zum Leben. Am <hi rend="bold">
+                        <date when="2010-04-18">18. April 2010</date> um 19.00 Uhr</hi> wird die Oper in einer konzertanten Aufführung im <placeName>
+                        <settlement>Münchner</settlement>
+                    </placeName>
+                    <hi rend="bold">Prinzregententheater</hi> erklingen. Solisten sind Michaela Kaune (Sopran), Ferdinand von Bothmer (Tenor), Jörg Schörner (Tenor), Detlef Roth (Bariton) und Simon Pauly (Bariton), die Choreinstudierung liegt in den Händen von Robert Blank. Diese Aufführung stützt sich auf die in Vorbereitung befindlichen Materialien der <persName key="A002068">Weber</persName>-Gesamtausgabe, deren Mitarbeiter (und Notensetzer) gegenwärtig für dieses Ereignis rastlos tätig sind. Neben der groß besetzten dreiaktigen Partitur waren ein 280seitiger Klavierauszug für die Praxis (<persName key="A002068">Webers</persName> eigener Auszug umfasste nicht alle Nummern) und ein mehr als 1000seitiges Aufführungsmaterial zu erstellen, einzurichten und zu korrigieren. Nur durch eine reibungslose Zusammenarbeit zwischen Weberausgabe (der Band wird von Markus Bandur herausgegeben), Notensetzer (Frank Litterscheid) und Verlag (und viel Verständnis auf Seiten der Veranstalter) ist ein solch riesiges Unternehmen in der kurzen Vorbereitungszeit überhaupt machbar. So war z.B. der Chor-Klavierauszug schon zwei Tage nach Ablieferung der PDF-Vorlagen in 50 sauber gedruckten Exemplaren beim <placeName>
+                        <settlement>Münchner</settlement>
+                    </placeName> Veranstalter und konnte sogleich für Proben verwendet werden. Die gut 700seitige Partitur steht unmittelbar vor dem Abschluss, die Stimmen sollten in Kürze ebenfalls beim Veranstalter sein.</p>
+                <p>Die <persName key="A002068">Weber</persName>-Ausgabe ist sehr glücklich über diese Zusammenarbeit mit der musikalischen Praxis, werden die Anregungen der Aufführung doch unmittelbar in die Diskussionen um die endgültige Gestalt des <date notBefore="2010-11-01" notAfter="2010-12-31">Ende 2010</date> erscheinenden Gesamtausgabenbandes mit einfließen und die Materalien zugleich für weitere Aufführungen zur Verfügung stehen. Ebenso erfreulich ist der Umstand, dass im Kontext der Aufführung auch eine CD-Aufnahme erstellt wird und so auch für eine weiterklingende Reklame für das Werk sorgt. Wir werden an dieser Stelle nochmals eingehender über das Unternehmen berichten.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

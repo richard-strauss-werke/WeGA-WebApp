@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050013">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Klavierauszug der Missa sancta Nr. 1 ebenfalls erschienen</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2003-11-07T09:03:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Mit dem Klavierauszug der <workName key="A020002">
+                        <hi rend="italic">Missa sancta</hi> Nr. 1 in Es-Dur</workName>, den Gerhard Allroggen jetzt vorgelegt hat, sind nun alle praktischen Materialien zum Inhalt des Eröffnungsbandes der WeGA erschienen. Der 85seitige Klavierauszug (ED 8857, ISMN M-001-12357-0) enthält als Anhang auch die alternative Textfassung der Takte 60-84 des <workName key="A020003">Offertoriums <hi rend="italic">Gloria et honore</hi>
+                    </workName> (mit <hi rend="italic">Alleluja</hi>-Schluß). Wir hoffen sehr, daß damit die Renaissance der beiden wenig bekannten Messen weiteren Aufschwung nimmt.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

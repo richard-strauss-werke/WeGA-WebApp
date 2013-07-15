@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050045">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">10. Band der Werkausgabe erreicht</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2007-04-15T09:18:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Mit dem Erscheinen der von Ortrun Landmann herausgegebenen "<hi rend="bold">
+                        <hi rend="italic">
+                            <workName key="A020021">L'Accoglienza</workName>
+                        </hi>
+                    </hi>" (Serie II, Band 3 der WeGA) liegt nunmehr <hi rend="bold">der 10. Band der Werkausgabe</hi> vor. Bei diesem Band handelt es sich insofern um eine Besonderheit, als hier ein Werk vorgelegt wurde, das bisher nicht zugänglich war, da es als Gelegenheitskomposition für den <placeName>
+                        <settlement>Dresdner</settlement>
+                    </placeName> Hof nie publiziert wurde. Die von <persName key="A002068">Weber</persName> "Kantate" genannte Komposition, die eigentlich noch eine <hi rend="italic">Festa teatrale</hi> im Sinne vergleichbarer Werke des 18. Jahrhunderts darstellt, erklang in der Festveranstaltung, die am <date when="1817-10-29">29. Oktober 1817</date> in <placeName>
+                        <settlement>Dresden</settlement>
+                    </placeName> anläßlich der Prokurationsvermählung von <persName key="A001252">Maria Anna Carolina</persName> (der dritten Tochter des <persName key="A001282">Prinzen Maximilian von Sachsen</persName>) mit dem Erbprinzen und späteren <persName key="A001160">Großherzog Leopold II. von Toscana</persName> stattfand. Kenner des <hi rend="italic">
+                        <workName key="A020045">Oberon</workName>
+                    </hi> werden bei diesem Werk einen "Wiedererkennungseffekt" erleben, denn der Chor Nr. 6 "Di Mirti e d'ulivio" ist später für <persName key="A002068">Webers</persName> Schwanengesang wiederverwendet worden. Die Aufführung ließ sich dank der im Sächsischen Hauptstaatsarchiv überlieferten Akten in etlichen Details dokumentieren, der erhaltene zweisprachige Textdruck ist im Anhang wiedergegeben. Es ist zu hoffen, daß sich für dieses Werk bald Interessenten für eine "akustische Wiederbelebung" finden, denn von dem singulären Anlaß der Entstehung abgesehen, handelt es sich um ein musikalisch äußerst reizvolles Werk, das <persName key="A002068">Weber</persName> auf einem für ihn bislang völlig unbekannten Terrain zeigt.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

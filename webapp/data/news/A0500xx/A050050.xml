@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050050">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Konstituierende Sitzung der TEI–Arbeitsgruppe Briefe und Tagebücher</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2007-09-15T09:06:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>conference</term>
+                    <term>sig</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Erstmals am <date when="2007-09-14">14. September</date> tagte in den Räumen der <placeName>
+                        <settlement>Mainzer</settlement>
+                    </placeName> Akademie der Wissenschaften eine Arbeitsgruppe, die sich mit der Anwendung der Richtlinien-Empfehlungen der Internationalen <hi rend="bold">
+                        <hi rend="italic">Text-Encoding-Initative</hi>
+                    </hi>
+                    <hi rend="bold">(TEI)</hi> auf die <hi rend="bold">Edition von Briefen und Tagebüchern</hi> beschäftigt. Angeregt wurde die Bildung dieser AG bei der letztjährigen Tagung der <placeName>
+                        <settlement>Mainzer</settlement>
+                    </placeName> Akademie „Digitale Medien und Musikedition“. Teilnehmer der konstituierenden Sitzung waren Dr. Gabriele Buschmeier (Union der deutschen Akademien der Wissenschaften, <placeName>
+                        <settlement>Mainz</settlement>
+                    </placeName>), Dr. Thomas Burch (Kompetenzzentrum für elektronische Erschließung in den Geisteswissenschaften, Uni <placeName>
+                        <settlement>Trier</settlement>
+                    </placeName>), Dr. Andreas Kucera (Akademie der Wissenschaften und der Literatur, <placeName>
+                        <settlement>Mainz</settlement>
+                    </placeName>), Prof. Dr. Werner Wegstein (Kompetenzzentrum EDV-Philologie der Uni <placeName>
+                        <settlement>Würzburg</settlement>
+                    </placeName>), Daniel Röwenstrunk und Peter Stadler vom <ref target="http://www.edirom.de">
+                        <hi rend="italic">Edirom</hi>-Projekt</ref> sowie Joachim Veit für die Weber-Gesamtausgabe; dauerhaft teilnehmen werden auch Dr. Roland Kamzelak (Deutsches Literaturachiv <placeName>
+                        <settlement>Marbach</settlement>
+                    </placeName>) und Dr. Andrea Rapp (Kompetenzzentrum <placeName>
+                        <settlement>Trier</settlement>
+                    </placeName>), die bei der ersten Sitzung verhindert waren. Ausgangspunkt der Diskussionen, bei denen es um die Entwicklung von Auszeichnungsmustern für die elektronische Erfassung und Publikation von Briefen und Tagebüchern geht, war ein Entwurf zur Auszeichnung von Briefen in der Carl-Maria-von-Weber-Gesamtausgabe (als PDF-Datei veröffentlicht im <ref target="http://www.adwmainz.de/index.php?id=492">Forum Digitale Musikedition</ref> der Mainzer Akademie). Bereits in der ersten intensiven Diskussion konnten etliche Leitlinien für eine später zu publizierende Empfehlung (die quasi als Nachfolger der <hi rend="italic">Richtlinien-Empfehlungen für die Edition von Musikerbriefen</hi> auftreten könnte, aber für die Textwissenschaften insgesamt gelten sollte) festgehalten werden. Werner Wegstein und Thomas Burch bezeichneten es dabei als besonders wichtig, daß die bisher geplanten und nach der Sitzung in einigen Punkten modifizierten Auszeichnungsformen völlig kompatibel zu den Plänen einer Kerncodierung im TextGrid-Projekt sind. Eine Fortsetzung sollen die lebhaften und sehr anregenden Diskussionen während der geplanten Edirom-Tagung vom <date from="2007-12-06" to="2007-12-06">6.-8. Dezember</date> in <placeName>
+                        <settlement>Paderborn</settlement>
+                    </placeName> finden. Die Weber-Ausgabe plant, gemeinsam mit dem Edirom-Projekt einige entsprechend eingerichtete Brief-Beispiele über die <!-- TODO -->
+                    <ref target="fffi-db/">fffi-Datenbank</ref> zur Verfügung zu stellen.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050069">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Neue Mitarbeiter in der WeGA und im "Edirom"-Projekt</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2009-04-14T09:31:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>report</term>
+                    <term>sig</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Zu Anfang des Jahres erhielt die WeGA erfreulicherweise Zuwachs an der <placeName>
+                        <settlement>Detmolder</settlement>
+                    </placeName> Arbeitsstelle: Als Wissenschaftlicher Mitarbeiter wurde <hi rend="bold">Peter Stadler M.A.</hi> eingestellt, der bis dahin im DFG-Projekt <hi rend="italic">Edirom</hi> tätig war. Mit ihm konnte die Stelle in geradezu idealer Weise besetzt werden, soll zu seinen Schwerpunkten neben der Werkausgabe doch vor allem die Betreuung der digitalen Anteile der Weber-Edition liegen. Dies wird - so ist zu hoffen - nun vor allem einen Schub für die elektronische Ausgabe der Briefe, Tagebücher und Dokumente bringen. Peter Stadler ist mit Joachim Veit auch Convenor der neu gegründeten <hi rend="italic">TEI Special Interest Group "Correspondence"</hi>, so dass Probleme bei der inhaltlichen Erfassung von Briefen und deren Auszeichnung in einem internationalen Rahmen diskutiert werden können. Alle Aktivitäten in dieser Richtung und im Hinblick auf die digitale Briefedition waren in den vergangenen Monaten durch diverse andere Tätigkeiten stark "gebremst", es ist jedoch zu hoffen, dass der Frühjahrsschwung auch hier einiges bewirkt. Wir wünschen Herrn Stadler jedenfalls viel Freude in seiner neuen Tätigkeit und sind uns sicher, dass wir einer sehr fruchtbaren Zusammenarbeit entgegensehen.</p>
+                <p>Die Stelle von Herrn Stadler im <hi rend="italic">Edirom-</hi>Projekt hat jetzt <hi rend="bold">Benjamin Bohl M.A.</hi> übernommen, der kürzlich an der <placeName>
+                        <settlement>Würzburger</settlement>
+                    </placeName> Universität sein Studium abgeschlossen hat. Er brachte u. a. durch seine Magisterarbeit mit dem Titel <hi rend="italic">Kombinatorik als Methode der Komposition. Studien zu Francesco Saverio Geminianis 'Guida Armonica o Dizionario Armonico'</hi>, in der er die von Geminiani beschriebenen Kombinationsmöglichkeiten mit elektronischen Mitteln darzustellen versuchte, ideale Voraussetzungen für die Arbeit im Projekt mit. Auch ihm wünschen wir für seine Tätigkeit in <placeName>
+                        <settlement>Detmold</settlement>
+                    </placeName> alles Gute und freuen uns auf die gemeinsame Arbeit.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050067">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Arbeiten am Tagungsbericht Paderborn abgeschlossen</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2009-04-14T09:24:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>publication</term>
+                    <term>conference</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Ende März ging die Druckvorlage zum <hi rend="bold">Tagungsbericht <placeName>
+                            <settlement>Paderborn</settlement>
+                        </placeName>
+                        <date when="2007">2007</date>
+                    </hi> an den Niemeyer-Verlag in <placeName>
+                        <settlement>Tübingen</settlement>
+                    </placeName>. Damit konnten die Arbeiten an diesem Band erfreulicherweise nur 15 Monate nach der Tagung, die unter dem Titel <hi rend="italic">Digitale Edition zwischen Experiment und Standardisierung</hi> vom <date from="2007-12-06" to="2007-12-18">6.-18. Dezember 2007</date> im Heinz-Nixdorf-Museumsforum in <placeName>
+                        <settlement>Paderborn</settlement>
+                    </placeName>, stattgefunden hatte, abgeschlossen werden. Entstanden ist ein stattlicher Band mit 20 Beiträgen von insgesamt 328 Seiten Umfang. Die drei Sektionen des Symposions (Konzepte digitaler Editionen, Probleme der Codierung von Musik und Probleme der Textauszeichnung bei Briefen und Tagebüchern) behandeln ein weites Spektrum gegenwärtiger Probleme elektronischer Editionsvorhaben im Bereich von Musik und Text. Wir werden an dieser Stelle anzeigen, wann der Band gedruckt vorliegt.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

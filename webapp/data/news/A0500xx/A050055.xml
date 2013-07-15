@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050055">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Editionsrichtlinien der WeGA demnächst im Netz</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2008-04-02T09:27:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>publication</term>
+                    <term>release</term>
+                    <term>report</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Die Neuanstellung von Dr. Markus Bandur als Nachfolger für Dagmar Beck lenkte den Blick die <hi rend="bold">Editionsrichtlinien der Werkausgabe</hi>, deren Exemplare inzwischen restlos vergriffen sind. Da die erarbeiteten Nachträge separat publiziert worden waren, entstand die Idee, eine kumulierte Fassung im Netz zur Verfügung zu stellen und dabei gleichzeitig die Richtlinien auf ihre Aktualität, auf ggf. Fehlendes oder auch Verzichtbares hin zu überprüfen. Markus Bandur hat die Richtlinien inzwischen durchgearbeitet und wird in Kürze mit den Mitarbeitern über die Neugestaltung diskutieren. Im Anschluß daran wird die Internet-Version als PDF-Datei bereitgestellt und an dieser Stelle darauf verwiesen.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

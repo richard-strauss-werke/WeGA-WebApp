@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050090">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Zur Edition der Briefe Carl Maria von Webers</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2008-05-30T11:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>release</term>
+                    <term>sig</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Am Beispiel des Jahrgangs <date when="1817">1817</date> (dem Jahr von <persName key="A002068">Webers</persName>
+                    <placeName>
+                        <settlement>Dresdner</settlement>
+                    </placeName> Dienstantritt) werden im Folgenden Übertragungen (und in Kürze auch einige ausgewählte Faksimiles) überlieferter Briefe <persName key="A002068">Webers</persName> zugänglich gemacht. Damit wird zugleich die Konzeption der in Vorbereitung befindlichen Ausgabe:
+               <hi rend="italic">Sämtliche Briefe und Tagebücher. Kommentierte Ausgabe</hi>, hg. von <persName key="A003672">Eveline Bartlitz</persName>, <persName>Dagmar Beck</persName> und <persName key="A009000">Joachim Veit</persName> vorgestellt. 
+               Beispiele zu <persName key="A002068">Webers</persName> Tagebuch (<date from="1871-02-01" to="1817-02-28">Februar 1817</date>) finden Sie separat unter dem Menüpunkt <hi rend="italic">Tagebücher</hi>.</p>
+                <p>Die Übertragung der Briefe folgt den Richtlinien der WeGA (die Grundsätze der Textübertragung werden zu einem späteren Zeitpunkt auf der Homepage veröffentlicht). Die Codierung der Briefe orientiert sich an den Empfehlungen der <ref target="http://tei-c.org">Text Encoding Initiative</ref> (TEI) in der Version P5. Mit der Arbeit an der Codierung  wird zugleich versucht, briefspezifische Besonderheiten zu dokumentieren. Aus diesem Grund sind die Texte nicht nur in einer html-Darstellung wiedergegeben, sondern auch in ihrer zugrundeliegenden TEI-Codierung. Dies dient einerseits der Veranschaulichung der XML-Codierung von Korrespondenzmaterialien, andererseits versteht sich diese Darstellung als ein spezieller korrespondenzbezogener Beitrag zur weiteren fachinternen bzw. auch fächerübergreifenden Diskussion der Standards der <hi rend="italic">Text Encoding Initiative</hi> und ihrer gegenwärtig in der Version P5 vorliegenden <hi rend="italic">Guidelines</hi>, die im Kontext von Briefeditionen angepaßt und ggf. erweitert werden müssen.</p>
+                <p>Die <hi rend="bold">Kommentare</hi> der Briefe werden sukzessive erstellt bzw. freigeschaltet, da einige der zur Demonstration der Leistungsfähigkeit einer digitalen Version der Briefedition notwendige Datenbanken sich erst im Aufbau befinden. Lediglich bei <hi rend="bold">Personen</hi> und im Text erwähnten <hi rend="bold">Pressetexten</hi> bzw. <hi rend="bold">Schriften</hi> kann auf die in Verbindung mit dem <placeName>
+                        <settlement>Detmold</settlement>
+                    </placeName>/<placeName>
+                        <settlement>Paderborner</settlement>
+                    </placeName>
+                    <ref target="http://www.edirom.de">Edirom-Projekt</ref> erstellten Datenbanken der <hi rend="italic">Fachgruppe Freie Forschungsinstitute</hi> zurückgegriffen werden (vgl. dazu die Menüpunkte <hi rend="italic">Dokumente</hi> und <hi rend="italic">Personen-DB</hi>). Weitere XML-basierte Datenbanken zu <hi rend="bold">Werken</hi>, <hi rend="bold">Rollen</hi>, <hi rend="bold">Lokalitäten</hi>, dem Dresdner <hi rend="bold">Spielplan</hi> u. a. m. sind augenblicklich noch im Entwicklungsstadium bzw. bedürfen noch der Einbindung in die vorliegende Darstellung. Das gleiche gilt für briefübergreifende <hi rend="bold">Themenkommentare</hi>, die vor der Freischaltung weitere konzeptionelle Erörterungen erfordern.</p>
+                <p>Die gesamte Darstellung ist daher nur als eine sehr vorläufige anzusehen. Suchfunktionen werden erst zu einem späteren Zeitpunkt integriert.  Außerdem sei darauf hingewiesen, dass die Darstellung zur Zeit lediglich auf den Firefox-Browser optimiert ist.</p>
+            </div>
+            <div xml:lang="de">
+                <head>Hinweise zur Benutzung der digitalen Briefedition</head>
+                <p>Die Briefe sind zunächst aus einer <hi rend="bold">chronologischen Liste</hi> des (nach und nach vervollständigten) Jahrgangs <date when="1817">1817</date> heraus aufrufbar. (Eine nach Adressaten geordnete chronologische Liste wird zu einem späteren Zeitpunkt bereitgestellt).</p>
+                <p>Die <hi rend="bold">Datums-Spalte</hi> verzeichnet nach dem Muster yyyy-mm-dd (year-month-day) die Anfangsdaten eines Briefes (die zugleich für die Vergabe der Identitätsnummer eines Briefes verwendet werden). Ist ein Brief über mehrere Tage geschrieben, ist dies in der <hi rend="bold">Tag</hi>-Spalte an einer Angabe wie "Mi-Sa" zu ersehen. In den beiden letzten Spalten sind die augenblicklich zur Verfügung stehenden Ansichten des Brieftextes aufgelistet: Mit tei ist die vollständige TEI-Codierung eines Briefes zugänglich. Dies dient vor allem der Veranschaulichung der XML-Codierungen von Korrespondenzen. Über die Spalte <hi rend="bold">html</hi> ist eine Web-Ansicht des Brieftextes sowie einiger grundlegender Metadaten aufrufbar (bitte beachten Sie, dass alle Anzeigen zur Zeit nur auf den Firefox-Browser optimiert sind!).</p>
+                <p>Innerhalb der <hi rend="bold">html-Ansicht</hi> ist der obere Bereich zur optionalen Einblendung von Metadaten des Briefes bestimmt (die unter den angezeigten Rubriken verborgenen Daten lassen sich per Mausklick ein- und wieder ausblenden). Neben einem kurzen <hi rend="bold">Editiorial</hi> findet sich eine knappe <hi rend="bold">Briefbeschreibung</hi>, die Angaben zu der bzw. den zugrundeliegenden Quelle(n), zur Überlieferung, ggf. zu Publikationen und zur Korrespondenzstelle enthält. Innerhalb der Korrespondenzstelle sind vorangehender bzw. nachfolgender Brief an dieselbe Person aufgelistet; sobald dieser Briefe digital publiziert sind, lassen sie sich über diese Rubrik auch direkt abrufen. Die Rubrik <hi rend="bold">Zusammenfassung</hi> enthält eine knappe Inhaltsangabe des Briefes. (In der TEI-Version sind weitere Metadaten zu den Briefen enthalten, die hier nicht mit angezeigt werden.)</p>
+                <p>Der eigentliche <hi rend="bold">Brieftext</hi> ist nach den Richtlinien der WeGA übertragen (einige auf die Darstellung bezogene Grundsätze sind im nachfolgenden Abschnitt erläutert) und wird in einer den geplanten gedruckten Bänden nahekommenden Form dargestellt (Adressenseiten sind dabei am Kopf des Briefes wiedergegeben). Alle Anmerkungen und Erläuterungen sind jedoch in einer für das Bildschirmmedium geeigeneten Form eingefügt. [Der Brieftext wird in Kürze wahlweise sowohl in Form eines reinen Lesetextes als auch mit Hervorhebung von Auszeichnungen abrufbar sein.]</p>
+                <p>Im Brief genannte <hi rend="bold">Personen</hi> sind als Link hervorgehoben; wird der Mauszeiger auf diese Namen bewegt, erscheint als Tooltip die vollständige Namensform (in der Art eines Registereintrags). Mit einem Klick auf den entsprechenden Namen wechselt die Darstellung in die <hi rend="bold">Personendatenbank</hi> (dort erhalten Sie entweder vorläufige Kurz-Informationen zur Person bzw. als angemeldeter Benutzer auch weitergehende Daten). Eine unmittelbare Rückkehr zum Brieftext ist zur Zeit leider nur über die Rückschritt-Taste Ihres Browsers (Pfeile links oben) möglich.</p>
+                <p>
+                    <hi rend="bold">Einzelanmerkungen</hi> sind durch die *-Zeichen auf grauem Grund markiert. Durch Berühren mit der Maustaste wird der erläuternde Text sichtbar.</p>
+                <p>
+                    <hi rend="bold">Lesarten</hi> (darunter werden hier zunächst entweder Varianten aufgrund von Lese-Problemen oder aufgrund abweichender Quellen/Veröffentlichungen bei nicht mehr erhaltenem Original sowie Differenzen zwischen Briefentwürfen und abgesandtem Text zusammengefasst) sind durch eine Unterlegung des entsprechenden Textabschnitts markiert und wie Einzelanmerkungen durch ein <hi rend="italic">Mouse-over</hi> zugänglich.</p>
+                <p>Weitere Hinweise werden mit der Freischaltung zusätzlicher Features mitgeteilt.</p>
+            </div>
+            <div xml:lang="de">
+                <head>Grundlegende Hinweise zur Briefübertragung</head>
+                <p>Die Briefübertragungen folgen streng der originalen Orthographie (mit Ausnahme der Verdoppelungsstriche bei m, n und einiger Vereinheitlichen bei Abkürzungsfloskeln). <hi rend="bold">Unterstreichungen</hi> werden in originaler Weise übernommen (in der Darstellung sind augenblicklich nur einfache und mehrfache Unterstreichung durch die Strichstärke unterschieden).</p>
+                <p>
+                    <hi rend="bold">Adresse</hi> und <hi rend="bold">Grußfomel</hi> werden im originalen Zeilenfall wiedergegeben, Positionierungen von Grußformeln werden auf die Positionen links / Mitte / rechts normalisiert.</p>
+                <p>Für das Verständnis notwendige <hi rend="bold">Textergänzungen</hi> des Herausgebers (oder mutmaßliche Textergänzungen bei Textverlusten) sind durch <hi rend="bold">Grausatz</hi> kenntlich.</p>
+                <p>Nachträglich <hi rend="bold">Durchgestrichenes</hi> im Original ist in Form von Durchstreichungen wiedergegeben; überschriebener Text, bei dem die ursprüngliche Version nicht mehr lesbar ist, wird mit einem vorgestellten durchstrichenen Fragezeichen vor dem Ersatztext gekennzeichnet. <hi rend="bold">Texteinfügungen</hi> über der Zeile sind durch Hochstellung dieses Textes markiert, Texteinfügungen am Rande in gleicher Weise, jedoch zusätzlich durch farbige Markierung.</p>
+                <p>
+                    <persName key="A002068">Webers</persName> "Denklücken", d. h. eine bewußte Einfügung von Leerraum (meist vor Beginn eines neuen Gedankens) wurde beibhalten und durch entsprechenden Leerraum dargestellt.</p>
+                <p>(Weitere Beschreibungsmerkmale folgen.)</p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050074">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Vielfältigste Aktivitäten</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2009-10-30T09:09:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>sig</term>
+                    <term>conference</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Das Jahr <date when="2009">2009</date> zeigt erneut, dass die Weber-Mitarbeiter sich immer wieder um einen Blick über den engen Teller-Rand der Editoren-Tretmühle bemühen. So stellte Frank Ziegler beim Deutschen Mozart-Fest in <hi rend="bold">
+                        <placeName>
+                            <settlement>Augsburg</settlement>
+                        </placeName>
+                    </hi> stellvertretend für den Wanderbühnenbetrieb der Zeit um <date when="1800">1800</date> die <persName key="A002068">Webersche</persName> Schauspielgesellschaft vor. Im Rahmen des Jahrestreffens der Internationalen Carl-Maria-von-Weber-Gesellschaft in <hi rend="bold">
+                        <placeName>
+                            <settlement>Gotha</settlement>
+                        </placeName>
+                    </hi> im <date notBefore="2009-09-01" notAfter="2009-09-30">September</date> referierten Dagmar Beck, Solveig Schreiter, Joachim Veit und Frank Ziegler über <persName key="A002068">Webers</persName> Verbindungen in die frühere thüringische Residenz, über <persName key="A002068">Webers</persName> Kompositionen für den dortigen Herzog und dessen Bruder sowie die örtliche Liebhaber-Theatergesellschaft in der sogenannten "Steinmühle".</p>
+                <p>Peter Stadler und Joachim Veit referierten im <date notBefore="2009-09-01" notAfter="2009-09-30">September</date> beim Workshop „Personen­dateien“ der Arbeitsgemeinschaft "Elektronisches Publizieren" in der Sächsischen Akademie der Wissenschaften in <hi rend="bold">
+                        <placeName>
+                            <settlement>Leipzig</settlement>
+                        </placeName>
+                    </hi>, Peter Stadler wird außerdem im November beim TEI-Members-Meeting in <hi rend="bold">
+                        <placeName>
+                            <settlement>Ann Arbor</settlement>
+                        </placeName>
+                    </hi> über die Konzepte der Briefcodierung bei der <persName key="A002068">Weber</persName>-Ausgabe berichten. Joachim Veit nahm im Januar gemeinsam mit den Mitarbeitern des Edirom-Projekts, Johannes Kepper und Daniel Röwenstrunk, an einer Tagung zu „Knowledge Representation for Intelligent Music Processing“ im Leibniz-Zentrum <hi rend="bold">
+                        <placeName>
+                            <settlement>Schloß Dagstuhl</settlement>
+                        </placeName>
+                    </hi> teil und im Juli wiederum gemeinsam mit Kepper und Röwenstrunk an einem Workshop zur Musik­Codierung an der Virginia University in <hi rend="bold">
+                        <placeName>
+                            <settlement>Charlottesville</settlement>
+                        </placeName>
+                    </hi>. Beim 98. Deutschen Bibliothekarstag in <hi rend="bold">
+                        <placeName>
+                            <settlement>Erfurt</settlement>
+                        </placeName>
+                    </hi> referierte Veit über „Digitalisierung musikhistorischer Quellen – Anforderungen von Seiten der Wissenschaften“. Dieser Text ist inzwischen unter: <ref target="http://www.opus-bayern.de/bib-info/volltexte/2009/733/">www.opus-bayern.de/bib-info/volltexte/2009/733/</ref> zugänglich. <date notBefore="2009-11-20" notAfter="2009-11-30">Ende November</date> wird Joachim Veit gemeinsam mit Prof. Dr. Frank Heidlberger bei der „6th Conference in Musical Philology“ in <hi rend="bold">Cremona</hi> über die bevorstehende analoge und digitale Edition der Weberschen Klarinettenkonzerte berichten.&#160;</p>
+            </div>
+        </body>
+    </text>
+</TEI>

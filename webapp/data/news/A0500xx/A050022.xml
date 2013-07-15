@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050022">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Erfreulicher Verlauf des Weimarer Symposions</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2004-09-22T09:08:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>conference</term>
+                    <term>sig</term>
+                    <term>release</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Das halbtägige Symposion <hi rend="italic">Musikalisches Erbe im digitalen Zeitalter - Chancen und Probleme neuer Techniken</hi>, das am <date when="2004-09-20">20. September</date> innerhalb des Internationalen Kongresses der Gesellschaft für Musikforschung in <placeName>
+                        <settlement>Weimar</settlement>
+                    </placeName> stattfand, hatte einen sehr erfreulichen Verlauf und einen ebensolchen Zuspruch von seiten des Publikums. Alle vorgestellten Projekte fanden großes Interesse. Auch die Edirom-Version von <persName key="A002068">Webers</persName>
+                    <workName key="A020205">Klarinettenquintett</workName> in der Fassung von Ralf Schnieders konnte dabei erstmals öffentlich vorgestellt werden. Neben der jetzt laufenden Version, die als Probe-Edition möglicherweise mit dem in Kürze erscheinenden Kammermusikband ausgeliefert werden kann, wurde auch bereits die Weiterentwicklung der Software durch Johannes Kepper und Daniel Roewenstrunk vorgestellt. Hier ist nun ein freies Navigieren in den Quellenausschnitten möglich, zudem werden die Faksimile-Ausschnitte jetzt automatisch kombiniert und aus der jeweils nur einmal abgespeicherten Gesamtseite generiert. Es ist zu hoffen, daß diese Version nun rasch weiterentwickelt und an einem weiteren Werk <persName key="A002068">Webers</persName> getestet werden kann. Weitere Informationen dazu werden in Bälde auf der Seite <ref target="http://www.edirom.de">www.edirom.de</ref> bereitgestellt.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

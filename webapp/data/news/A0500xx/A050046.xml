@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050046">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Freischütz-Libretto noch bis September zur Subskription</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2007-07-29T09:12:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Die von Solveig Schreiter in Verbindung mit der Weber-Gesamtausgabe vorbereitete <hi rend="bold">kritische Edition des <hi rend="italic">
+                            <workName key="A020040">Freischütz</workName>-</hi>Librettos</hi> (<placeName>
+                        <settlement>München</settlement>
+                    </placeName>: Allitera) wird im September nun endlich vorliegen. Anliegen der Neuausgabe war es, erstmals einen kritischen Text dieses Librettos von <persName key="A001002">Friedrich Kind</persName> vorzulegen, an dessen Enstehen <persName key="A002068">Weber</persName> maßgeblich beteiligt war und das von seiner ersten Fassung <date when="1817">1817</date> bis zur Uraufführung im <date notBefore="1821-06-01" notAfter="1821-06-30">Juni 1821</date> zahlreiche Veränderungen erfuhr. Als Hauptquelle diente <persName key="A002068">Webers</persName> Handexemplar des Librettos, das auch seiner Komposition zugrunde lag. Sämtliche erhaltenen autorisierten handschriftlichen und gedruckten Quellen (darunter die Textbuch-Abschriften für die Theater in <placeName>
+                        <settlement>Berlin</settlement>
+                    </placeName>, <placeName>
+                        <settlement>Wien</settlement>
+                    </placeName> und <placeName>
+                        <settlement>Hamburg</settlement>
+                    </placeName>, <persName key="A002068">Webers</persName> Partiturautograph, <persName key="A001002">Kinds</persName> Manuskript sowie dessen diverse Textveröffentlichungen) wurden für die Edition herangezogen. Der Band enthält außerdem eine ausführliche Einführung zum Entstehungsprozeß des Librettos und eine Fülle von originalem Bildmaterial, u.a. zur Dokumentation der Uraufführung. Zahlreiche Farbtafeln machen den <hi rend="bold">256 Seiten</hi> starken Band zu einem "Muß" für Weber-Kenner und -Liebhaber. Bis zum <date notAfter="2007-09-22">22. September</date> ist der Band noch zum <hi rend="bold">Subskriptionspreis von 20.- Euro</hi> zu erhalten, danach kostet er im Buchhandel 26.- Euro. Wer den Band subskribieren möchte, sollte sich an die Bandherausgeberin wenden, die zugleich Schriftführerin der Internationalen Carl-Maria-von-Weber-Gesellschaft ist. Richten Sie Ihre e-Mail an: <!-- TODO -->
+                    <ref target="javascript:linkTo_UnCryptMailto('nbjmup+xfcfshftfmmtdibguAtcc/tql.cfsmjo/ef');">webergesellschaft(at)sbb.spk-berlin.de</ref>.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

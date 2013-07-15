@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050089">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Digitale Version der Briefe Webers</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2009-08-10T11:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>release</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>
+                    <hi rend="bold">Aktueller Hinweis</hi>: Die folgende Vorstellung einiger Briefbeispiele aus dem Jahrgang <date when="1817">1817</date> wurde "eingefroren", da unser neuer Mitarbeiter <persName key="A009001">Peter Stadler</persName> z.Zt. eine grundlegend neue und komfortablere Darstellungsform entwirft, wobei gleichzeitig der Bestand der publizierten Briefe deutlich erweitert wird. Die Neupräsentation wird voraussichtlich <date notBefore="2011-03-20">Ende März 2011</date> online sein.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050001">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Ein Schritt mehr in die musikalische Praxis</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2003-03-23T09:34:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Pünktlich zur Musikmesse erschienen die <hi rend="bold">Partituren der beiden <placeName>
+                            <settlement>Dresdner</settlement>
+                        </placeName> Messen <persName key="A002068">Webers</persName>
+                    </hi> (Serie I, Bd. 2 der WeGA) in etwas verkleinerter und broschierter Form (einzeln) im Rahmen der neuen "<hi rend="bold">Silberedition</hi>" von Schott Musik International in <placeName>
+                        <settlement>Mainz</settlement>
+                    </placeName>. Ebenfalls vorgelegt wurden <hi rend="bold">Chorpartituren</hi> beider Werke, die von Gerhard Allroggen vorbereiteten <hi rend="bold">Klavierauszüge</hi> beider Messen folgen in Kürze. Die Orchesterstimmen bleiben (wie bisher) als Leihmaterial erhältlich.<lb/>
+               Damit ist die Weber-Gesamtausgabe bisher auf gutem Wege, nicht nur eine Edition für die Wissenschaft zu bleiben. Zu allen bislang erschienen Bänden gibt es bereits <hi rend="bold">Leihmaterial</hi> (bei der <workName key="A020227">Schauspielmusik zu <persName key="A002176">P. A. Wolffs</persName>
+                        <hi rend="italic">
+                            <workName key="A020227">Preciosa</workName>
+                        </hi>
+                    </workName> wird dies in Kürze auch soweit sein), zum <hi rend="italic">
+                        <workName>Abu Hassan</workName>
+                    </hi> sogar schon im Vorgriff auf die Gesamtausgabe. Die "Abstinenz" der Weber-Editoren bei der Frage nach Analog-Ergänzungen stellt sich in Zusammenhang mit den praktischen Ausgaben natürlich neu, und die Mitarbeiter würden sich auf ein vielfältiges Echo aus der musikalischen Praxis sehr freuen, denn das, was sich für die Kammermusik zu bewähren scheint, muß bei größeren Orchesterwerken nicht unbedingt genauso gelten - ggf. wäre zu überlegen, ob sich wissenschaftliche und praktische Ausgabe in diesem Punkte doch unterscheiden sollten. (Vgl. dazu auch das demnächst auf der Weber-Homepage einzurichtende Diskussionsforum.)</p>
+            </div>
+        </body>
+    </text>
+</TEI>

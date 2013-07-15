@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A110467">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="de">Weber-Studien Bd. 4/1</title>
+                <title level="a" xml:lang="en">Weber-Studies vol. 4/1</title>
+                <author key="A009001">Peter Stadler</author>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>WeGA elektronisch</publisher>
+                <availability status="free">
+                    <p>2012, Carl-Maria-von-Weber-Gesamtausgabe, Detmold</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m" type="main">Schriften des Harmonischen Vereins, Teil 1:
+              1810–1812</title>
+                        <title level="m" type="sub">Texte von Alexander von Dusch, Johann Gänsbacher, Giacomo
+              Meyerbeer und Gottfried Weber</title>
+                        <editor>Oliver Huck</editor>
+                        <editor>Joachim Veit</editor>
+                        <imprint>
+                            <pubPlace>Mainz</pubPlace>
+                            <date when="1998">1998</date>
+                        </imprint>
+                    </monogr>
+                    <series>
+                        <title level="s">Weber-Studien</title>
+                        <editor>Gerhard Allroggen</editor>
+                        <editor key="A009000">Joachim Veit</editor>
+                        <biblScope type="vol">4</biblScope>
+                        <biblScope type="part">1</biblScope>
+                    </series>
+                    <idno type="isbn-13">978-3-7957-0380-6</idno>
+                    <idno type="isbn-10">3-7957-0380-8</idno>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc status="approved">
+            <change who="PS" when="2012-03-08">initial eingerichtet</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:lang="de">
+                <head>Schriften des Harmonischen Vereins, Teil 1: 1810–1812</head>
+                <p>
+                    <hi rend="italic">Texte von Alexander von Dusch, Johann Gänsbacher, Giacomo Meyerbeer und
+            Gottfried Weber</hi>, hg. von Oliver Huck und Joachim Veit, Mainz 1998. xi, 466 S.<lb/>
+          Bestellnummer: ED 8984; ISBN 3-7957-0380-8</p>
+                <div>
+                    <head>Inhaltsverzeichnis</head>
+                    <list>
+                        <item>Vorwort , S. vii</item>
+                        <item>Abkürzungsverzeichnis, S. x</item>
+                        <item>Zur Edition, S. 1</item>
+                        <item>Die Statuten des Harmonischen Vereins, S. 5</item>
+                        <item>Der Harmonische Verein (von Oliver Huck) <list>
+                                <item>Gründung, S. 9</item>
+                                <item>Mitglieder, S. 11</item>
+                                <item>Pseudonyme, Bundesnamen und Kürzel, S. 20</item>
+                                <item>Tätigkeit, S. 25</item>
+                                <item>Zeitschriften und Zeitungen, S. 31</item>
+                                <item>Musikalische Zeitschriften<lb/>
+                                    <hi rend="italic">Allgemeine Musikalische Zeitung</hi>, S. 35<lb/>
+                                    <hi rend="italic">Musicalische Notizen / Musicalische Zeitung für die
+                    österreichischen Staaten</hi>, S. 39 </item>
+                                <item>Überregionale Zeitschriften und Zeitungen<lb/>
+                                    <hi rend="italic">Morgenblatt für gebildete Stände</hi>, S. 40<lb/>
+                                    <hi rend="italic">Zeitung für die elegante Welt</hi>, S. 43<lb/>
+                                    <hi rend="italic">Journal des Luxus und der Moden</hi>, S. 46<lb/>
+                                    <hi rend="italic">Heidelbergische Jahrbücher der Literatur</hi>, S. 47<lb/>
+                                    <hi rend="italic">Allgemeiner Anzeiger der Deutschen</hi>, S. 48 </item>
+                                <item>Lokale Zeitschriften und Zeitungen<lb/> Mannheim (<hi rend="italic">Rheinische
+                    Correspondenz</hi>, <hi rend="italic">Schreibtafel von Mannheim</hi>, <hi rend="italic">Badisches Magazin</hi> und <hi rend="italic">Nouvelles Littéraires
+                    et Politiques</hi>), S. 48<lb/> München (Kritischer Anzeiger für Litteratur und
+                  Kunst, Gesellschaftsblatt für gebildete Stände, Münchener Politische Zeitung), S.
+                  53<lb/> Prag (<hi rend="italic">Hesperus</hi> und <hi rend="italic">Kaiserlich
+                    Königlich priviligirte Prager Oberpostamtszeitung</hi>), S. 56<lb/> Hamburg (<hi rend="italic">Archiv für Literatur</hi>, <hi rend="italic">Kunst und
+                    Politik</hi> und <hi rend="italic">Privilegirte gemeinnützige
+                    Unterhaltungsblätter</hi>), S. 57</item>
+                                <item>Geplante, aber nicht verwirklichte Kontakte, S. 59</item>
+                                <item>Themen, Formen und Aspekte der Autorschaft, S. 62</item>
+                                <item>Literatur, S. 66</item>
+                            </list>
+                        </item>
+                        <item>Die Schriften des Harmonischen Vereins 1810-1812, S. 71–274</item>
+                        <item>Kommentar zu den Schriften des Harmonischen Vereins 1810-1812, S. 275–422</item>
+                        <item>Verzeichnisse und Register <list>
+                                <item>Verzeichnis der abgedruckten Texte (nach Textnummern), S. 423</item>
+                                <item>Verzeichnis der abgedruckten Texte (nach Autoren), S. 439</item>
+                                <item>Register der Bühnenwerke, S. 434</item>
+                                <item>Register der Rollen, S. 441</item>
+                                <item>Register der Orte und Institutionen, S. 447</item>
+                                <item>Register der Personen und Werke (ohne Bühnenwerke), S. 450</item>
+                            </list>
+                        </item>
+                    </list>
+                </div>
+                <div type="addendum">
+                    <head>Ergänzungen zu Weber-Studien Band 4/1</head>
+                    <p>Für den Band der <hi rend="italic">Weber-Studien</hi> standen 1998 nur die Nummern 1
+            bis 16 sowie als Einzelexemplar die Nr. 37 zur Verfügung. Die damalige Vermutung, diese
+            Beilage zur <hi rend="italic">Rheinischen Correspondenz</hi> müsse bis Nr. 75 erschienen
+            sein, bestätigt sich durch das Auftauchen des vollständig erhaltenen Exemplars der
+            Herzogin-Anna-Amalia-Bibliothek in
+              <placeName>
+                            <settlement>Weimar</settlement>
+                        </placeName> (Signatur ZB 1287): In Nr. 76
+            (vermutlich vom 30. oder 31. Dezember 1810) heißt es in einer Nachbemerkung:</p>
+                    <p>„Mit der heutigen Nummer schließt sich die Schreibtafel in ihrer jetzigen Gestalt.
+            Indessen wird dieses Blatt, welches wir als Beilage zur Rheinischen Correspondenz
+            gegeben, und das man gleich dieser liebgewonnen hatte, nicht ganz untergehen, und die
+            Zukunft sie einst in anderer Form wieder erwecken. [...]“</p>
+                    <p>Das vollständige Exemplar in <placeName>
+                            <settlement>Weimar</settlement>
+                        </placeName>,
+            das <persName key="A009005">Frank Ziegler</persName> bei Internet-Recherchen entdeckte,
+            erlaubt nun die komplette Wiedergabe einiger bislang nur fragmentarisch überlieferter
+            Texte (Nr. 30 und Nr. 72), sowie die erstmalige Wiedergabe bislang nur durch Erwähnung
+            in anderen Artikeln bekannter bzw. weniger noch unbekannter Texte, darunter ein bislang
+            vermißter Text <persName key="A002068">Carl Maria von Webers</persName>. Aufgelistet
+            sind nachfolgend nur die zweifelsfrei von Mitgliedern des „Harmonischen Vereins“
+            stammende Texte, danach in einer separaten Liste einige „verdächtige“ Texte über
+                <placeName>
+                            <settlement>Stuttgart</settlement>
+                        </placeName> und
+                <placeName>
+                            <settlement>Karlsruhe</settlement>
+                        </placeName>. Die Texte sind durch
+            Links in der linken Spalte erreichbar. Sie sind in der originalen Orthographie
+            wiedergegeben.</p>
+                    <p>Kommentare und eine detailliertere Auswertung werden zu einem späteren Zeitpunkt noch
+            ergänzt.<lb/> Wir danken den Mitarbeitern der Herzogin-Anna-Amalia-Bibliothek in
+                <placeName>
+                            <settlement>Weimar</settlement>
+                        </placeName> sehr herzlich für freundliche
+            Unterstützung und die Anfertigung von Kopien dieser Beilage.</p>
+                    <table>
+                        <row role="label">
+                            <cell>Nummer</cell>
+                            <cell>Schreibtafel</cell>
+                            <cell>Inhalt</cell>
+                            <cell>Sigle</cell>
+                            <cell>Autor</cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030749">1810-V-20a</rs>
+                            </cell>
+                            <cell>Nr. 17<lb/>(ca. 31.10.)</cell>
+                            <cell>"Mannheim, den 20. Sept. 1810. Der Kosacken-Offiz[i]er."</cell>
+                            <cell>G. Gst.</cell>
+                            <cell>
+                                <persName key="A002078">Gottfried Weber</persName>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030750">1810-V-22</rs>
+                            </cell>
+                            <cell>Nr. 30<lb/>(14.11.)</cell>
+                            <cell>"Hof- und National-Theater in Mannheim. Den 21. Okt. Salomon's Urtheil, Musik
+                vom hiesigen Kapellmeister Ritter." [vollständige Fassung]</cell>
+                            <cell>G. Giusto</cell>
+                            <cell>
+                                <persName key="A002078">Gottfried Weber</persName>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030553">1811-V-23a/1</rs>
+                            </cell>
+                            <cell>Nr. 47<lb/>(1.12.?)</cell>
+                            <cell>"Hof- und National-Theater in Mannheim. Wohlbrücks Gastrollen. Den 20. Nov.:
+                Abbé de l'Epée."</cell>
+                            <cell>The unkown man</cell>
+                            <cell>
+                                <persName key="A000409">Alexander von Dusch</persName>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030724">1811-V-23a/2</rs>
+                            </cell>
+                            <cell>Nr. 50<lb/>(4.12.?)</cell>
+                            <cell>"Hof- und National-Theater in Mannheim. Den 28. Nov.: Die Pagenstreiche. [...]
+                Die Räuber."</cell>
+                            <cell>The unkown man</cell>
+                            <cell>
+                                <persName key="A000409">Alexander von Dusch</persName>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030569">1811-V-24a</rs>
+                            </cell>
+                            <cell>Nr. 51<lb/>(5.12.?)</cell>
+                            <cell>"Hof- und National-Theater in Mannheim. Den 2. Dezember: Lehmann, oder: der
+                Thurm von Neustadt"</cell>
+                            <cell>G. Giusto</cell>
+                            <cell>
+                                <persName key="A002078">Gottfried Weber</persName>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030789">1811-V-26/1</rs>
+                            </cell>
+                            <cell>Nr. 73<lb/>(27.12.)</cell>
+                            <cell>"Mannheim, den 27. Dez. Das gestrige Namensfest der liebenswürdigen
+                Erbgroßherzogin von Baden, Stephanie Napoleon [...]"</cell>
+                            <cell>G. Giusto</cell>
+                            <cell>
+                                <persName key="A002078">Gottfried Weber</persName>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030702">1811-V-26/2</rs>
+                            </cell>
+                            <cell>Nr. 74<lb/>(28.12.)</cell>
+                            <cell>"Mannheim, den 27. Dez. (Fortsetzung)"</cell>
+                            <cell>G. Giusto</cell>
+                            <cell>
+                                <persName key="A002078">Gottfried Weber</persName>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030555">1810-V-27</rs>
+                            </cell>
+                            <cell>Nr. 75<lb/>(29.12.)</cell>
+                            <cell>"Hof- und National-Theater in Mannheim. Den 27. Dez.: Phädra, Trauerspiel in 5
+                Aufzügen, nach Racine von Schiller."</cell>
+                            <cell>ungez.</cell>
+                            <cell>
+                                <persName key="A000409">Alexander von Dusch</persName>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030586">1810-V-28</rs>
+                            </cell>
+                            <cell>Nr. 74<lb/>(28.12.)</cell>
+                            <cell>"Entschuldigung"</cell>
+                            <cell>Carl Marie Frhr. v. Weber</cell>
+                            <cell>
+                                <persName key="A002068">Carl Maria von Weber</persName>
+                            </cell>
+                        </row>
+                    </table>
+                    <p>Weitere Texte, die vermutlich aus dem engeren Umkreis des Harmonischen Vereins
+            stammen:</p>
+                    <table>
+                        <row role="label">
+                            <cell>Nummer</cell>
+                            <cell>Schreibtafel</cell>
+                            <cell>Inhalt</cell>
+                            <cell>Sigle</cell>
+                            <cell>Autor</cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030643">1810-U-1</rs>
+                            </cell>
+                            <cell>Nr. 21<lb/>(ca. 4.11.)</cell>
+                            <cell>"Königliches Hoftheater in Stuttgart. 30. Oktober 1810."</cell>
+                            <cell>ungez.</cell>
+                            <cell>?</cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030727">1810-U-2</rs>
+                            </cell>
+                            <cell>Nr. 63<lb/>(ca. 16.12.)</cell>
+                            <cell>"Königliches Hoftheater in Stuttgart. Den 12ten Dez. 1810."</cell>
+                            <cell>ungez.</cell>
+                            <cell>?</cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030637">1810-U-3</rs>
+                            </cell>
+                            <cell>Nr. 72<lb/>(ca. 26.12.)</cell>
+                            <cell>"Carlsruhe, den 22. Dez." [über den Auftritt Carl Maria von Webers]</cell>
+                            <cell>ungez.</cell>
+                            <cell>?</cell>
+                        </row>
+                    </table>
+                </div>
+            </div>
+            <div xml:lang="en">
+                <head>Writings of the "Harmonischer Verein", part 1: 1810–1812</head>
+                <p>
+                    <hi rend="italic">Texts by Alexander von Dusch, Johann Gänsbacher, Giacomo Meyerbeer and
+          Gottfried Weber</hi>, ed. by Oliver Huck and Joachim Veit, Mainz 1998. xi, 466 pages<lb/>
+          Order no.: ED 8984; ISBN 3-7957-0380-8</p>
+                <div>
+                    <head>Table of contents</head>
+                    <list>
+                        <item>Vorwort , p. vii</item>
+                        <item>Abkürzungsverzeichnis, p. x</item>
+                        <item>Zur Edition, p. 1</item>
+                        <item>Die Statuten des Harmonischen Vereins, p. 5</item>
+                        <item>Der Harmonische Verein (von Oliver Huck) <list>
+                                <item>Gründung, p. 9</item>
+                                <item>Mitglieder, p. 11</item>
+                                <item>Pseudonyme, Bundesnamen und Kürzel, p. 20</item>
+                                <item>Tätigkeit, p. 25</item>
+                                <item>Zeitschriften und Zeitungen, p. 31</item>
+                                <item>Musikalische Zeitschriften<lb/>
+                                    <hi rend="italic">Allgemeine Musikalische Zeitung</hi>, p. 35<lb/>
+                                    <hi rend="italic">Musicalische Notizen / Musicalische Zeitung für die
+                  österreichischen Staaten</hi>, p. 39 </item>
+                                <item>Überregionale Zeitschriften und Zeitungen<lb/>
+                                    <hi rend="italic">Morgenblatt für gebildete Stände</hi>, p. 40<lb/>
+                                    <hi rend="italic">Zeitung für die elegante Welt</hi>, p. 43<lb/>
+                                    <hi rend="italic">Journal des Luxus und der Moden</hi>, p. 46<lb/>
+                                    <hi rend="italic">Heidelbergische Jahrbücher der Literatur</hi>, p. 47<lb/>
+                                    <hi rend="italic">Allgemeiner Anzeiger der Deutschen</hi>, p. 48 </item>
+                                <item>Lokale Zeitschriften und Zeitungen<lb/> Mannheim (<hi rend="italic">Rheinische
+                Correspondenz</hi>, <hi rend="italic">Schreibtafel von Mannheim</hi>, <hi rend="italic">Badisches Magazin</hi> und <hi rend="italic">Nouvelles Littéraires
+                    et Politiques</hi>), p. 48<lb/> München (Kritischer Anzeiger für Litteratur und
+                Kunst, Gesellschaftsblatt für gebildete Stände, Münchener Politische Zeitung), p.
+                53<lb/> Prag (<hi rend="italic">Hesperus</hi> und <hi rend="italic">Kaiserlich
+                  Königlich priviligirte Prager Oberpostamtszeitung</hi>), p. 56<lb/> Hamburg (<hi rend="italic">Archiv für Literatur</hi>, <hi rend="italic">Kunst und
+                      Politik</hi> und <hi rend="italic">Privilegirte gemeinnützige
+                        Unterhaltungsblätter</hi>), p. 57</item>
+                                <item>Geplante, aber nicht verwirklichte Kontakte, p. 59</item>
+                                <item>Themen, Formen und Aspekte der Autorschaft, p. 62</item>
+                                <item>Literatur, p. 66</item>
+                            </list>
+                        </item>
+                        <item>Die Schriften des Harmonischen Vereins 1810-1812, p. 71–274</item>
+                        <item>Kommentar zu den Schriften des Harmonischen Vereins 1810-1812, p. 275–422</item>
+                        <item>Verzeichnisse und Register <list>
+                                <item>Verzeichnis der abgedruckten Texte (nach Textnummern), p. 423</item>
+                                <item>Verzeichnis der abgedruckten Texte (nach Autoren), p. 439</item>
+                                <item>Register der Bühnenwerke, p. 434</item>
+                                <item>Register der Rollen, p. 441</item>
+                                <item>Register der Orte und Institutionen, p. 447</item>
+                                <item>Register der Personen und Werke (ohne Bühnenwerke), p. 450</item>
+                            </list>
+                        </item>
+                    </list>
+                </div>
+                <div type="addendum">
+                    <head>Addenda to Weber-Studies vol. 4/1</head>
+                    <p>Für den Band der <hi rend="italic">Weber-Studien</hi> standen 1998 nur die Nummern 1
+            bis 16 sowie als Einzelexemplar die Nr. 37 zur Verfügung. Die damalige Vermutung, diese
+            Beilage zur <hi rend="italic">Rheinischen Correspondenz</hi> müsse bis Nr. 75 erschienen
+            sein, bestätigt sich durch das Auftauchen des vollständig erhaltenen Exemplars der
+            Herzogin-Anna-Amalia-Bibliothek in
+            <placeName>
+                            <settlement>Weimar</settlement>
+                        </placeName> (Signatur ZB 1287): In Nr. 76
+            (vermutlich vom 30. oder 31. Dezember 1810) heißt es in einer Nachbemerkung:</p>
+                    <p>„Mit der heutigen Nummer schließt sich die Schreibtafel in ihrer jetzigen Gestalt.
+            Indessen wird dieses Blatt, welches wir als Beilage zur Rheinischen Correspondenz
+            gegeben, und das man gleich dieser liebgewonnen hatte, nicht ganz untergehen, und die
+            Zukunft sie einst in anderer Form wieder erwecken. [...]“</p>
+                    <p>Das vollständige Exemplar in <placeName>
+                            <settlement>Weimar</settlement>
+                        </placeName>,
+            das <persName key="A009005">Frank Ziegler</persName> bei Internet-Recherchen entdeckte,
+            erlaubt nun die komplette Wiedergabe einiger bislang nur fragmentarisch überlieferter
+            Texte (Nr. 30 und Nr. 72), sowie die erstmalige Wiedergabe bislang nur durch Erwähnung
+            in anderen Artikeln bekannter bzw. weniger noch unbekannter Texte, darunter ein bislang
+            vermißter Text <persName key="A002068">Carl Maria von Webers</persName>. Aufgelistet
+            sind nachfolgend nur die zweifelsfrei von Mitgliedern des „Harmonischen Vereins“
+            stammende Texte, danach in einer separaten Liste einige „verdächtige“ Texte über
+            <placeName>
+                            <settlement>Stuttgart</settlement>
+                        </placeName> und
+            <placeName>
+                            <settlement>Karlsruhe</settlement>
+                        </placeName>. Die Texte sind durch
+            Links in der linken Spalte erreichbar. Sie sind in der originalen Orthographie
+            wiedergegeben.</p>
+                    <p>Kommentare und eine detailliertere Auswertung werden zu einem späteren Zeitpunkt noch
+            ergänzt.<lb/> Wir danken den Mitarbeitern der Herzogin-Anna-Amalia-Bibliothek in
+            <placeName>
+                            <settlement>Weimar</settlement>
+                        </placeName> sehr herzlich für freundliche
+            Unterstützung und die Anfertigung von Kopien dieser Beilage.</p>
+                    <table>
+                        <row role="label">
+                            <cell>Nummer</cell>
+                            <cell>Schreibtafel</cell>
+                            <cell>Inhalt</cell>
+                            <cell>Sigle</cell>
+                            <cell>Autor</cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030749">1810-V-20a</rs>
+                            </cell>
+                            <cell>Nr. 17<lb/>(ca. 31.10.)</cell>
+                            <cell>"Mannheim, den 20. Sept. 1810. Der Kosacken-Offiz[i]er."</cell>
+                            <cell>G. Gst.</cell>
+                            <cell>
+                                <persName key="A002078">Gottfried Weber</persName>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030750">1810-V-22</rs>
+                            </cell>
+                            <cell>Nr. 30<lb/>(14.11.)</cell>
+                            <cell>"Hof- und National-Theater in Mannheim. Den 21. Okt. Salomon's Urtheil, Musik
+                vom hiesigen Kapellmeister Ritter." [vollständige Fassung]</cell>
+                            <cell>G. Giusto</cell>
+                            <cell>
+                                <persName key="A002078">Gottfried Weber</persName>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030553">1811-V-23a/1</rs>
+                            </cell>
+                            <cell>Nr. 47<lb/>(1.12.?)</cell>
+                            <cell>"Hof- und National-Theater in Mannheim. Wohlbrücks Gastrollen. Den 20. Nov.:
+                Abbé de l'Epée."</cell>
+                            <cell>The unkown man</cell>
+                            <cell>
+                                <persName key="A000409">Alexander von Dusch</persName>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030724">1811-V-23a/2</rs>
+                            </cell>
+                            <cell>Nr. 50<lb/>(4.12.?)</cell>
+                            <cell>"Hof- und National-Theater in Mannheim. Den 28. Nov.: Die Pagenstreiche. [...]
+                Die Räuber."</cell>
+                            <cell>The unkown man</cell>
+                            <cell>
+                                <persName key="A000409">Alexander von Dusch</persName>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030569">1811-V-24a</rs>
+                            </cell>
+                            <cell>Nr. 51<lb/>(5.12.?)</cell>
+                            <cell>"Hof- und National-Theater in Mannheim. Den 2. Dezember: Lehmann, oder: der
+                Thurm von Neustadt"</cell>
+                            <cell>G. Giusto</cell>
+                            <cell>
+                                <persName key="A002078">Gottfried Weber</persName>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030789">1811-V-26/1</rs>
+                            </cell>
+                            <cell>Nr. 73<lb/>(27.12.)</cell>
+                            <cell>"Mannheim, den 27. Dez. Das gestrige Namensfest der liebenswürdigen
+                Erbgroßherzogin von Baden, Stephanie Napoleon [...]"</cell>
+                            <cell>G. Giusto</cell>
+                            <cell>
+                                <persName key="A002078">Gottfried Weber</persName>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030702">1811-V-26/2</rs>
+                            </cell>
+                            <cell>Nr. 74<lb/>(28.12.)</cell>
+                            <cell>"Mannheim, den 27. Dez. (Fortsetzung)"</cell>
+                            <cell>G. Giusto</cell>
+                            <cell>
+                                <persName key="A002078">Gottfried Weber</persName>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030555">1810-V-27</rs>
+                            </cell>
+                            <cell>Nr. 75<lb/>(29.12.)</cell>
+                            <cell>"Hof- und National-Theater in Mannheim. Den 27. Dez.: Phädra, Trauerspiel in 5
+                Aufzügen, nach Racine von Schiller."</cell>
+                            <cell>ungez.</cell>
+                            <cell>
+                                <persName key="A000409">Alexander von Dusch</persName>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030586">1810-V-28</rs>
+                            </cell>
+                            <cell>Nr. 74<lb/>(28.12.)</cell>
+                            <cell>"Entschuldigung"</cell>
+                            <cell>Carl Marie Frhr. v. Weber</cell>
+                            <cell>
+                                <persName key="A002068">Carl Maria von Weber</persName>
+                            </cell>
+                        </row>
+                    </table>
+                    <p>Weitere Texte, die vermutlich aus dem engeren Umkreis des Harmonischen Vereins
+            stammen:</p>
+                    <table>
+                        <row role="label">
+                            <cell>Nummer</cell>
+                            <cell>Schreibtafel</cell>
+                            <cell>Inhalt</cell>
+                            <cell>Sigle</cell>
+                            <cell>Autor</cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030643">1810-U-1</rs>
+                            </cell>
+                            <cell>Nr. 21<lb/>(ca. 4.11.)</cell>
+                            <cell>"Königliches Hoftheater in Stuttgart. 30. Oktober 1810."</cell>
+                            <cell>ungez.</cell>
+                            <cell>?</cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030727">1810-U-2</rs>
+                            </cell>
+                            <cell>Nr. 63<lb/>(ca. 16.12.)</cell>
+                            <cell>"Königliches Hoftheater in Stuttgart. Den 12ten Dez. 1810."</cell>
+                            <cell>ungez.</cell>
+                            <cell>?</cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <rs type="writing" key="A030637">1810-U-3</rs>
+                            </cell>
+                            <cell>Nr. 72<lb/>(ca. 26.12.)</cell>
+                            <cell>"Carlsruhe, den 22. Dez." [über den Auftritt Carl Maria von Webers]</cell>
+                            <cell>ungez.</cell>
+                            <cell>?</cell>
+                        </row>
+                    </table>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

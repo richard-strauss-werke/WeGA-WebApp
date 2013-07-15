@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A110468">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="de">Weber-Studien Bd. 3</title>
+                <title level="a" xml:lang="en">Weber-Studies vol. 3</title>
+                <author key="A009001">Peter Stadler</author>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>WeGA elektronisch</publisher>
+                <availability status="free">
+                    <p>2012, Carl-Maria-von-Weber-Gesamtausgabe, Detmold</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m" type="main">Aufsatzsammelband, Gerhard Allroggen zum 60.
+              Geburtstag</title>
+                        <editor>Joachim Veit</editor>
+                        <editor>Frank Ziegler</editor>
+                        <imprint>
+                            <pubPlace>Mainz</pubPlace>
+                            <date when="1996">1996</date>
+                        </imprint>
+                    </monogr>
+                    <series>
+                        <title level="s">Weber-Studien</title>
+                        <editor>Gerhard Allroggen</editor>
+                        <editor key="A009000">Joachim Veit</editor>
+                        <biblScope type="vol">3</biblScope>
+                    </series>
+                    <idno type="isbn-13">978-3-7957-0325-7</idno>
+                    <idno type="isbn-10">3-7957-0325-5</idno>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc status="approved">
+            <change who="PS" when="2012-03-08">initial eingerichtet</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:lang="de">
+                <head>Festschrift G. Allroggen</head>
+                <p>Aufsatzsammelband, Gerhard Allroggen zum 60. Geburtstag, hg. von Joachim Veit und Frank
+          Ziegler, Mainz 1996. x, 475 S.<lb/> Bestellnummer: ED 8583; ISBN 3-7957-0325-5</p>
+                <div>
+                    <head>Inhaltsverzeichnis</head>
+                    <list>
+                        <item>Vorwort, S. ix</item>
+                        <item>Abkürzungsverzeichnis, S. x</item>
+                        <item>Hartmut Steinecke (Paderborn)<lb/> Ein Brief über Glossen, Töne, Liebe und
+              Intertextualität bei E. T. A. Hoffmann, S. 1–14</item>
+                        <item>Werner Keil (Hildesheim)<lb/> „Jene göttlichen großen Symphoniestücke …“. Zu einer
+              literarischen Paraphrase der Sonatenform bei Wilhelm Heinrich Wackenroder, S.
+              15–26</item>
+                        <item>Eveline Bartlitz (Berlin)<lb/> „Wen in der Welt interessiert Frl. Koch …?“, S.
+              27–54</item>
+                        <item>Dagmar Beck (Berlin)<lb/> „Füllet die Humpen …“ Weber im Kreise der Berliner
+              Liedertafel, S. 55–62</item>
+                        <item>Ute Schwab (Gettorf)<lb/> „Das stärkste Fortissimo wie der leiseste Hauch des
+              Smorzando“. Ein Brief, drei Männer und ein Harmonichord, S. 63–71</item>
+                        <item>Hermann F. Weiss (Ann Arbor)<lb/> „Ich war nie der Knopf an Fortuna’s Hute“.
+              Unbekannte Dokumente zur Beziehung zwischen Carl Maria von Weber und Friedrich Kind,
+              S. 72–81</item>
+                        <item>Arne Langer (Berlin)<lb/> Dokumente zu Webers geplanter Anstellung in Kassel 1821,
+              S. 82–98</item>
+                        <item>Ortrun Landmann, Eveline Bartlitz, Frank Ziegler (Dresden/Berlin)<lb/> Aus dem
+              Briefwechsel Friedrich Wilhelm Jähns – Moritz Füstenau. Eine Auswahl von Briefen und
+              Mitteilungen der Jahre 1863-1885, S. 99–148</item>
+                        <item>Joachim Veit und Frank Ziegler (Detmold/Berlin)<lb/> Webers Kopisten. Teil 1: Die
+              Dresdner Notisten-Expedition zu Webers Zeit, S. 149–161</item>
+                        <item>Frank Heidlberger (Würzburg)<lb/> Die langsamen Sätze der Klarinettenkonzerte Carl
+              Maria von Webers. Werk – Edition – Interpretation, S. 162–200</item>
+                        <item>Joachim Veit (Detmold)<lb/> Zur Frage der Partituranordnung bei Weber, S.
+              201–221</item>
+                        <item>Silke Leopold (Detmold)<lb/> Marginalien über Marginales: Zur <hi rend="italic">italianità</hi> eines deutschen Nationalkomponisten, S. 222–227</item>
+                        <item>Sabrina Quintero (Göttingen)<lb/> „Einheit“ oder „brüske Reihung von
+              Unvereinbarem“? Zur „Sonatenform“ im Kopfsatz der Klaviersonate C-Dur op. 24, JV 138
+              von Carl Maria von Weber, S. 228–240</item>
+                        <item>Oliver Huck (Detmold)<lb/> Zwischen Concert spirituel, Kirche und Theater – Webers
+                <hi rend="italic">Hymne</hi> (JV 154) und das „vierte <hi rend="italic">Agnus
+                Dei</hi>“ (JV 273), S. 241–263</item>
+                        <item>Jürgen Arndt (Hildesheim)<lb/> „Bewegungsloses Hervortreten im Hintergrund“.
+              Musikalische Aspekte der Figur Samiels in Webers <hi rend="italic">Freischütz</hi>, S.
+              264–270</item>
+                        <item>Frank Ziegler (Berlin)<lb/> Wieviele Väter hat der Erfolg? Drei Variationen über
+              ein Thema von Friedrich Wilhelm Jähns, S. 271–291</item>
+                        <item>Christine Heyter-Rauland (Mainz)<lb/> Webers „englische Oper“ – Anmerkungen zum
+              Textbuch des <hi rend="italic">Oberon</hi>, S. 292–299</item>
+                        <item>John Warrack (Oxford)<lb/> „Es waren seine letzten Töne!“, S. 300–317</item>
+                        <item>Gerrit Waidelich (Berlin)<lb/> „Weder <hi rend="italic">Italienisch</hi> noch <hi rend="italic">Französisch</hi>, sondern rein Deutsch“. Johann Nepomuk Poißls <hi rend="italic">Athalia</hi> als Oper „ohngefehr im Genre der Gluck’schen.“, S.
+              318–346</item>
+                        <item>Hans John (Dresden)<lb/> „Fantasie und Variationen über Preciosa“. Ein Beitrag zur
+              Wirkungsgeschichte der <hi rend="italic">Preciosa</hi>-Musik von Carl Maria von Weber,
+              S. 347–350</item>
+                        <item>Irmlind Capelle (Detmold)<lb/> „Wie kann man den Weber so verhunzen?“ Zu <hi rend="italic">Mara</hi> von Joseph Netzer, S. 351–363</item>
+                        <item>Peter Overbeck (Heidelberg)<lb/> „C’est bon teint es ca ne s’use pas“. Zur
+              aufführungspraktischen Realisierung der <hi rend="italic">Freischütz</hi>-Ouvertüre,
+              S. 364–380</item>
+                        <item>Wolfgang Goldhan (Berlin)<lb/> Die Blößen der Biographik. Anmerkungen zu einer
+              aktuellen Diskussion, S. 381–393</item>
+                        <item>Jost Michaels (Detmold)<lb/> Gedanken zur Entwicklungsgeschichte des
+              Klavierquartetts unter besonderer Berücksichtigung der zwischen 1806 und 1809
+              entstandenen Werke von Ferdinand Ries (opp. 13 und 17) und Carl Maria von Weber
+              (op.8), S. 394–459</item>
+                        <item>Register der Personen und Werke, S. 460–474</item>
+                    </list>
+                </div>
+            </div>
+            <div xml:lang="en">
+                <head>Festschrift G. Allroggen</head>
+                <p>Collection of papers in honour of Gerhard Allroggen's 60. birthday, ed. by Joachim Veit and Frank
+          Ziegler, Mainz 1996. x, 475 pages<lb/> Order no.: ED 8583; ISBN 3-7957-0325-5</p>
+                <div>
+                    <head>Table of contents</head>
+                    <list>
+                        <item>Vorwort, p. ix</item>
+                        <item>Abkürzungsverzeichnis, p. x</item>
+                        <item>Hartmut Steinecke (Paderborn)<lb/> Ein Brief über Glossen, Töne, Liebe und
+              Intertextualität bei E. T. A. Hoffmann, p. 1–14</item>
+                        <item>Werner Keil (Hildesheim)<lb/> „Jene göttlichen großen Symphoniestücke …“. Zu einer
+              literarischen Paraphrase der Sonatenform bei Wilhelm Heinrich Wackenroder, p.
+              15–26</item>
+                        <item>Eveline Bartlitz (Berlin)<lb/> „Wen in der Welt interessiert Frl. Koch …?“, p.
+              27–54</item>
+                        <item>Dagmar Beck (Berlin)<lb/> „Füllet die Humpen …“ Weber im Kreise der Berliner
+              Liedertafel, p. 55–62</item>
+                        <item>Ute Schwab (Gettorf)<lb/> „Das stärkste Fortissimo wie der leiseste Hauch des
+              Smorzando“. Ein Brief, drei Männer und ein Harmonichord, p. 63–71</item>
+                        <item>Hermann F. Weiss (Ann Arbor)<lb/> „Ich war nie der Knopf an Fortuna’s Hute“.
+              Unbekannte Dokumente zur Beziehung zwischen Carl Maria von Weber und Friedrich Kind,
+              p. 72–81</item>
+                        <item>Arne Langer (Berlin)<lb/> Dokumente zu Webers geplanter Anstellung in Kassel 1821,
+              p. 82–98</item>
+                        <item>Ortrun Landmann, Eveline Bartlitz, Frank Ziegler (Dresden/Berlin)<lb/> Aus dem
+              Briefwechsel Friedrich Wilhelm Jähns – Moritz Füstenau. Eine Auswahl von Briefen und
+              Mitteilungen der Jahre 1863-1885, p. 99–148</item>
+                        <item>Joachim Veit und Frank Ziegler (Detmold/Berlin)<lb/> Webers Kopisten. Teil 1: Die
+              Dresdner Notisten-Expedition zu Webers Zeit, p. 149–161</item>
+                        <item>Frank Heidlberger (Würzburg)<lb/> Die langsamen Sätze der Klarinettenkonzerte Carl
+              Maria von Weberp. Werk – Edition – Interpretation, p. 162–200</item>
+                        <item>Joachim Veit (Detmold)<lb/> Zur Frage der Partituranordnung bei Weber, p.
+              201–221</item>
+                        <item>Silke Leopold (Detmold)<lb/> Marginalien über Marginales: Zur <hi rend="italic">italianità</hi> eines deutschen Nationalkomponisten, p. 222–227</item>
+                        <item>Sabrina Quintero (Göttingen)<lb/> „Einheit“ oder „brüske Reihung von
+              Unvereinbarem“? Zur „Sonatenform“ im Kopfsatz der Klaviersonate C-Dur op. 24, JV 138
+              von Carl Maria von Weber, p. 228–240</item>
+                        <item>Oliver Huck (Detmold)<lb/> Zwischen Concert spirituel, Kirche und Theater – Webers
+              <hi rend="italic">Hymne</hi> (JV 154) und das „vierte <hi rend="italic">Agnus
+                Dei</hi>“ (JV 273), p. 241–263</item>
+                        <item>Jürgen Arndt (Hildesheim)<lb/> „Bewegungsloses Hervortreten im Hintergrund“.
+              Musikalische Aspekte der Figur Samiels in Webers <hi rend="italic">Freischütz</hi>, p.
+              264–270</item>
+                        <item>Frank Ziegler (Berlin)<lb/> Wieviele Väter hat der Erfolg? Drei Variationen über
+              ein Thema von Friedrich Wilhelm Jähns, p. 271–291</item>
+                        <item>Christine Heyter-Rauland (Mainz)<lb/> Webers „englische Oper“ – Anmerkungen zum
+              Textbuch des <hi rend="italic">Oberon</hi>, p. 292–299</item>
+                        <item>John Warrack (Oxford)<lb/> „Es waren seine letzten Töne!“, p. 300–317</item>
+                        <item>Gerrit Waidelich (Berlin)<lb/> „Weder <hi rend="italic">Italienisch</hi> noch <hi rend="italic">Französisch</hi>, sondern rein Deutsch“. Johann Nepomuk Poißls <hi rend="italic">Athalia</hi> als Oper „ohngefehr im Genre der Gluck’schen.“, p.
+              318–346</item>
+                        <item>Hans John (Dresden)<lb/> „Fantasie und Variationen über Preciosa“. Ein Beitrag zur
+              Wirkungsgeschichte der <hi rend="italic">Preciosa</hi>-Musik von Carl Maria von Weber,
+              p. 347–350</item>
+                        <item>Irmlind Capelle (Detmold)<lb/> „Wie kann man den Weber so verhunzen?“ Zu <hi rend="italic">Mara</hi> von Joseph Netzer, p. 351–363</item>
+                        <item>Peter Overbeck (Heidelberg)<lb/> „C’est bon teint es ca ne s’use pas“. Zur
+              aufführungspraktischen Realisierung der <hi rend="italic">Freischütz</hi>-Ouvertüre,
+              p. 364–380</item>
+                        <item>Wolfgang Goldhan (Berlin)<lb/> Die Blößen der Biographik. Anmerkungen zu einer
+              aktuellen Diskussion, p. 381–393</item>
+                        <item>Jost Michaels (Detmold)<lb/> Gedanken zur Entwicklungsgeschichte des
+              Klavierquartetts unter besonderer Berücksichtigung der zwischen 1806 und 1809
+              entstandenen Werke von Ferdinand Ries (opp. 13 und 17) und Carl Maria von Weber
+              (op.8), p. 394–459</item>
+                        <item>Register der Personen und Werke, p. 460–474</item>
+                    </list>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

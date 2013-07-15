@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050149">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Weberiana Heft 22 erschienen</title>
+                <author key="A009005">Frank Ziegler</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2012-11-27T14:52:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>born digital</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>report</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Im Sommer 2012 erschien die neue Ausgabe der <hi rend="italic">Weberiana</hi>. Das Heft 22 der Mitteilungen der <ref target="http://webergesellschaft.de">Internationalen C.-M.-v.-Weber-Gesellschaft</ref> enthält neben dem üblichen Mix von Berichten aus der Arbeit der Weber-Gesamtausgabe und der Weber-Gesellschaft, zu Neuerscheinungen sowie Weber-Aufführungen auf Bühne und Konzertpodium erneut mehrere umfangreichere Studien. So werden erstmals <persName key="A002068">Webers</persName> Notizen von seiner Reise 1807 von <placeName>
+                        <country>Schlesien</country>
+                    </placeName> nach <placeName>
+                        <country>Württemberg</country>
+                    </placeName> zusammenhängend und kommentiert vorgestellt (<persName key="A009005">F. Ziegler</persName>).</p>
+                <p>
+                    <persName key="A003672">Eveline Bartlitz</persName> wertete die Briefe von <persName key="A006371">Friedrich August Schulze</persName> an <persName key="A000040">August Apel</persName> aus den Jahren 1803 bis 1816 hinsichtlich der Entstehung der <placeName>
+                        <settlement>Dresdner</settlement>
+                    </placeName>
+                    <hi rend="italic">Abend-Zeitung</hi> und des <placeName>
+                        <settlement>Dresdner</settlement>
+                    </placeName> Liederkreises aus und stellt Auszüge daraus vor. Die Briefe stammen aus dem Besitz der Apelschen Kulturstiftung und wurden der Weber-Gesamtausgabe von dem 2012 verstorbenen <persName>Gerd-Heinrich Apel</persName> zu Forschungszwecken zugänglich gemacht – der Artikel ist seinem Andenken gewidmet.</p>
+                <p>Weitere Beiträge widmen sich neuen Funden zur Weberschen Familiengeschichte sowie der von der <ref target="http://staatsbibliothek-berlin.de">Staatsbibliothek zu Berlin</ref> 2012 erworbenen Stichvorlage eines Sololiedes aus dem Zyklus <hi rend="italic">
+                        <workName>Leyer und Schwert</workName>
+                    </hi>.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

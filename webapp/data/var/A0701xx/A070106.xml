@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A110470">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="de">Weber-Studien Bd. 1</title>
+                <title level="a" xml:lang="en">Weber-Studies vol. 1</title>
+                <author key="A009001">Peter Stadler</author>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>WeGA elektronisch</publisher>
+                <availability status="free">
+                    <p>2012, Carl-Maria-von-Weber-Gesamtausgabe, Detmold</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m" type="main">Aufsatzsammelband</title>
+                        <editor>Gerhard Allroggen</editor>
+                        <editor>Joachim Veit</editor>
+                        <imprint>
+                            <pubPlace>Mainz</pubPlace>
+                            <date when="1993">1993</date>
+                        </imprint>
+                    </monogr>
+                    <series>
+                        <title level="s">Weber-Studien</title>
+                        <editor>Gerhard Allroggen</editor>
+                        <editor key="A009000">Joachim Veit</editor>
+                        <biblScope type="vol">1</biblScope>
+                    </series>
+                    <idno type="isbn-13">978-3-7957-0280-9</idno>
+                    <idno type="isbn-10">3-7957-0280-1</idno>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc status="approved">
+            <change who="PS" when="2012-03-08">initial eingerichtet</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:lang="de">
+                <head>Aufsatzsammelband</head>
+                <p>Aufsatzsammelband, hg. von Gerhard Allroggen und Joachim Veit, Mainz 1993. 283 S.<lb/>
+          Bestellnummer: ED 8207; ISBN 3-7957-0280-1</p>
+                <div>
+                    <head>Inhaltsverzeichnis</head>
+                    <list>
+                        <item>Vorwort, S. vii</item>
+                        <item>Evelin Bartlitz (Berlin)<lb/> Neuerworbene Weber-Briefe in der Staatsbibliothek zu
+              Berlin – Preußischer Kulturbesitz 1991–1992, S. 1–37</item>
+                        <item>Christine Heyter-Rauland (Mainz)<lb/> Bisher unbearbeitete Weber-Dokumente in der
+              Staatsbibliothek zu Berlin – Preußischer Kulturbesitz, S. 38–46</item>
+                        <item>Gertrud Schenck (Berlin)<lb/> Gutachten zu den unbearbeiteten Weber-Dokumenten der
+              Staatsbibliothek zu Berlin – Preußischer Kulturbesitz, S. 47–51</item>
+                        <item>Robert Münster (München)<lb/> Carl Maria von Webers Aufenthalt in München 1815, S.
+              52–82</item>
+                        <item>Joachim Veit (Detmold)<lb/> Ist Webers „Jugendmesse“ ein „authentisches Machwerk“?
+              Anmerkungen zu einer neu entdeckten Partitur des Werkes in Cesky Krumlov, S.
+              83–105</item>
+                        <item>Gerhard Allroggen (Detmold)<lb/> Zur Entstehungsgeschichte und Überlieferung der
+              beiden Dresdner Messen Webers, S. 106–120</item>
+                        <item>Matthias Viertel (Kiel)<lb/> Von der „gewissen tötenden Kälte“ im Kirchenstil –
+              einige Anmerkungen zur Kirchenmusik bei Carl Maria von Weber, S. 121–132</item>
+                        <item>Frank Heidlberger (Würzburg)<lb/> Die „Livrets de mise en scène“ der
+              „Freischütz“-Aufführungen in Paris 1824 (1835) und 1841, S. 133–154</item>
+                        <item>Mariko Teramoto (Tokio)<lb/> Zur tonalen Struktur von Webers „Oberon“, S.
+              155–162</item>
+                        <item>Kirsteen McCue (Oxford)<lb/> Weber’s ten Scottish folksongs, S. 163–172</item>
+                        <item>Oliver Huck (Detmold)<lb/> Für das „undankbarste und ärmste aller
+              Konzertinstrumente“? – Zu Carl Maria von Webers „Gitarrenliedern“, S. 173–198</item>
+                        <item>Wolfgang Goldhan (Berlin)<lb/> Erfahrungen beim Verleich der Quellen zu den
+              Komponisten für ein Blasinstrument mit Begleitung von Carl Maria von Weber – Eine
+              Problemstudie, S. 197–217</item>
+                        <item>Axel Beer (Münster)<lb/> Gedankenaustausch über Webers Popularität zwischen Carl
+              Friedrich Peters und Louis Spohr, S. 218–223</item>
+                        <item>Joachim Reiber (Wien)<lb/> Friedrich Kind – Versuch einer Würdigung, S.
+              224–236</item>
+                        <item>Martin Wehnert (Leipzig)<lb/> Carl Maria von Weber und Caspar David Friedrich –
+              Doppelgänger im Geiste?, S. 237–275</item>
+                        <item>Register, S. 276–280</item>
+                    </list>
+                </div>
+            </div>
+            <div xml:lang="en">
+                <head>Collection of papers</head>
+                <p>Collection of papers, ed. by Gerhard Allroggen and Joachim Veit, Mainz 1993. 283
+          pages<lb/> Order number: ED 8207; ISBN 3-7957-0280-1</p>
+                <div>
+                    <head>Table of contents</head>
+                    <list>
+                        <item>Vorwort, p. vii</item>
+                        <item>Evelin Bartlitz (Berlin)<lb/> Neuerworbene Weber-Briefe in der Staatsbibliothek zu
+              Berlin – Preußischer Kulturbesitz 1991–1992, p. 1–37</item>
+                        <item>Christine Heyter-Rauland (Mainz)<lb/> Bisher unbearbeitete Weber-Dokumente in der
+              Staatsbibliothek zu Berlin – Preußischer Kulturbesitz, p. 38–46</item>
+                        <item>Gertrud Schenck (Berlin)<lb/> Gutachten zu den unbearbeiteten Weber-Dokumenten der
+              Staatsbibliothek zu Berlin – Preußischer Kulturbesitz, p. 47–51</item>
+                        <item>Robert Münster (München)<lb/> Carl Maria von Webers Aufenthalt in München 1815, p.
+              52–82</item>
+                        <item>Joachim Veit (Detmold)<lb/> Ist Webers „Jugendmesse“ ein „authentisches Machwerk“?
+              Anmerkungen zu einer neu entdeckten Partitur des Werkes in Cesky Krumlov, p.
+              83–105</item>
+                        <item>Gerhard Allroggen (Detmold)<lb/> Zur Entstehungsgeschichte und Überlieferung der
+              beiden Dresdner Messen Webers, p. 106–120</item>
+                        <item>Matthias Viertel (Kiel)<lb/> Von der „gewissen tötenden Kälte“ im Kirchenstil –
+              einige Anmerkungen zur Kirchenmusik bei Carl Maria von Weber, p. 121–132</item>
+                        <item>Frank Heidlberger (Würzburg)<lb/> Die „Livrets de mise en scène“ der
+              „Freischütz“-Aufführungen in Paris 1824 (1835) und 1841, p. 133–154</item>
+                        <item>Mariko Teramoto (Tokio)<lb/> Zur tonalen Struktur von Webers „Oberon“, p.
+              155–162</item>
+                        <item>Kirsteen McCue (Oxford)<lb/> Weber’s ten Scottish folksongs, p. 163–172</item>
+                        <item>Oliver Huck (Detmold)<lb/> Für das „undankbarste und ärmste aller
+              Konzertinstrumente“? – Zu Carl Maria von Webers „Gitarrenliedern“, p. 173–198</item>
+                        <item>Wolfgang Goldhan (Berlin)<lb/> Erfahrungen beim Verleich der Quellen zu den
+              Komponisten für ein Blasinstrument mit Begleitung von Carl Maria von Weber – Eine
+              Problemstudie, p. 197–217</item>
+                        <item>Axel Beer (Münster)<lb/> Gedankenaustausch über Webers Popularität zwischen Carl
+              Friedrich Peters und Louis Spohr, p. 218–223</item>
+                        <item>Joachim Reiber (Wien)<lb/> Friedrich Kind – Versuch einer Würdigung, p.
+              224–236</item>
+                        <item>Martin Wehnert (Leipzig)<lb/> Carl Maria von Weber und Caspar David Friedrich –
+              Doppelgänger im Geiste?, p. 237–275</item>
+                        <item>Register, p. 276–280</item>
+                    </list>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

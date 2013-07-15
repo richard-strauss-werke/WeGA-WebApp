@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050095">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Erstmals benutzte Quellen und Probleme der Edition</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2005-12-12T11:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>source</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Die erhaltenen Autographen des <workName key="A020205">Klarinettenquintetts</workName> und des <workName key="A020216">Grand Duo</workName> bieten für den Editor nur
+                    eine bescheidene Hilfe, da <persName key="A002068">Weber</persName> diese
+                    Manuskripte für seine eigenen Zwecke angelegt hatte (als sogenannte
+                    „Archivexemplare“) und deshalb im Hinblick auf Dynamik, Artikulation und
+                    Phrasierung nur sehr rudimentär bezeichnen mußte. Manche Seiten enthalten fast
+                    nur den „nackten Notentext“. Als außerordentlich wertvoll (und damit als
+                    Hauptquellen für die Edition) erwiesen sich die wiederaufgefundenen
+                    Stichvorlagen, die <persName key="A002068">Weber</persName> von Kopisten hatte anfertigen lassen, dann aber vor der
+                    Drucklegung ungewöhnlich genau durchsah und dabei zahllose Details ergänzte (die
+                    oft von den Stechern mißverstanden wurden, so daß die Druckausgaben wieder sehr
+                    viel unzuverlässiger sind). Die Stichvorlage zum Klarinettenquintett ist in der
+                    Library of Congress in <placeName>
+                        <settlement>Washington</settlement>
+                    </placeName> erhalten, die zum <hi rend="italic">
+                        <hi rend="bold">
+                            <workName key="A020216">Grand Duo</workName>
+                        </hi>
+                    </hi> in der Musiksammlung der <placeName>
+                        <settlement>Wiener</settlement>
+                    </placeName> Stadt-
+                    und Landesbibliothek.</p>
+                <p>Beklagenswert ist die Situation dagegen bei den <workName key="A020235">
+                        <hi rend="bold">
+                            <hi rend="italic">Silvana</hi>-Variationen</hi>
+                    </workName>: Hier existierten nachweislich sogar zwei
+                    Autographen, eine Stichvorlage und von <persName key="A002068">Weber</persName>
+                    autorisierte Abschriften, die allesamt als verloren gelten müssen. Nur der von
+                        <persName key="A002068">Weber</persName> in Auftrag gegebene Erstdruck und
+                    ein paar Notizen von <persName key="A000914">Jähns</persName> zu dem um <date when="1850">1850</date> noch erhaltenen
+                    Autograph 2 sind überliefert. Auch daran aber zeigt sich, daß die von <persName key="A000076">Carl Baermann</persName> überlieferte <hi rend="bold">alternative Fassung der III. Variation nichts mit <persName key="A002068">Weber</persName> zu tun hat</hi>,
+                    sondern eine reine Ergänzung des Baermann-Sohne im Geschmacke seiner Zeit
+                    darstellt.</p>
+                <p>Im Falle dieser Variationen ist das, was der Herausgeber als authentische
+                    Überlieferung präsentieren kann, also sehr defizitär. Es bleiben für den
+                    Interpreten viele Leerstellen. Der Herausgeber kann hier allenfalls Vorschläge
+                    machen; er darf den gebotenen <hi rend="bold">Freiraum für den Interpreten</hi>
+                    nicht nach seinen eigenen ästhetischen Maßstäben beschneiden. Das gilt – wenn
+                    auch in geringerem Maße – ebenso für die beiden anderen Werke. Nur tiefere
+                    Einsichten in die Praxis der Zeit könnten hier weiterführen, also Forschungen
+                    zur Notations- und Kopierpraxis, zu Verlags- und Druckpraktiken u.a.m.
+                    Grundlagenforschungen auf diesen Gebieten aber gibt es bisher nur in
+                    Ansätzen.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

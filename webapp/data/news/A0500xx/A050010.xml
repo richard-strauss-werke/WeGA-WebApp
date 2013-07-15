@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050010">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Freischütz aus fremder Feder? - Ein Plagiatsfall fürs Sommerloch?!?</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2003-08-28T09:08:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>source</term>
+                    <term>presscomment</term>
+                    <term>announcement</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Schlagzeilen in der <hi rend="italic">Mitteldeutschen Zeitung</hi> am <date when="2003-08-20">20. August 2003</date>: "<hi rend="bold">Freischütz aus fremder Feder?. Melodien der populären Oper könnten von dem Ballenstedter Komponisten Carl Christian Agthe stammen</hi>." Wie ein Lauffeuer verbreitete sich diese Nachricht - schon am <date when="2003-08-21">21. August</date> schrieb Klaus Geitel in der <hi rend="italic">Welt</hi> eine Glosse unter dem Titel "<hi rend="bold">Weber oder Agthe?</hi>" und befürchtete, ein Operntitel Agthes könnte das richtige Stichwort in dieser Affaire geben und der ganze Plagiat-Vorwurf sich als eine "musikwissenschaftliche <hi rend="italic">Milchmädchen</hi>-Affaire" entpuppen. - - Worum ging es überhaupt?:<lb/>
+               Der <placeName>
+                        <settlement>Ballenstedter</settlement>
+                    </placeName> Lehrer, Chorleiter und Musikforscher Siegfried Hünermund, der sich seit längerer Zeit mit <persName key="A002781">Agthe</persName> beschäftigt, hatte im vergangenen Jahr zu dessen 240. Geburtstag (<persName key="A002781">Agthe</persName> erblickte im <date notBefore="1762-06-01" notAfter="1762-06-30">Juni 1762</date> in <placeName>
+                        <settlement>Hettstedt</settlement>
+                    </placeName> das Licht der Welt und starb <date when="1797">1797</date> in <placeName>
+                        <settlement>Ballenstedt</settlement>
+                    </placeName>) 14 Tänze des Komponisten aufführen lassen, die beim Erklingen die Musiker sehr erheiterten, kamen doch unerwartet "Melodien aus dem <hi rend="italic">
+                        <workName key="A020040">Freischütz</workName>
+                    </hi> zu Gehör." Man fragte sich, ob "<persName key="A002781">Agthe</persName> bei <persName key="A002068">Weber</persName> abgekupfert" habe - aber dies war unmöglich für einen Komponisten, der 20 Jahre vor Beginn der Arbeit am <hi rend="italic">
+                        <workName key="A020040">Freischütz</workName>
+                    </hi> bereits das Zeitliche gesegnet hatte. Mußte man also nicht umgekehrt den <placeName>
+                        <settlement>Dresdner</settlement>
+                    </placeName> Meister des Melodien-Klau's verdächtigen?<lb/>
+    Laut Hünermund sind nicht bloß ein paar Takte, sondern ganze Abschnitte der Melodien <persName key="A002068">Webers</persName> in den Tänzen Nr. 1, 2, 13 und 14 enthalten (Wir können ergänzen: auch in Nr. 12). Verbindungen <persName key="A002781">Agthes</persName> zu <persName key="A002068">Weber</persName> ließen sich rasch finden: Die <placeName>
+                        <settlement>Ballenstedter</settlement>
+                    </placeName> Malerin <persName key="A000084">Caroline Bardua</persName> hat Weber porträtiert, und vielleicht hat ja auch die Wahl des Namens <characterName>Agathe</characterName> doch etwas mit Ag(a)the zu tun?...<lb/>
+    Hünermund hat mit gutem Recht die These vom Plagiat "einfach mal in den Raum" gestellt und hofft darauf, daß die "Weber-Experten bald Genaueres herausfinden". Offensichtlich war das Sommerloch aber abwegig tief, denn die Presse scheint die Nachricht begierig aufzugreifen. Könnten wir doch mal Ähnliches von unserer "normalen", täglichen Arbeit sagen... Wir sind jedenfalls sehr angetan davon, daß <persName key="A002068">Weber</persName> auch auf diese Weise einmal wieder ins Gespräch kommt!<lb/>
+    Die sogenannten "Weber-Experten" bzw. die, die sich dafür halten, verfielen bei (wie meist: verspätetem) Wahrnehmen der Sensation natürlich in ängstliches Bibbern und suchen nun eifrig nach den entsprechenden kühlen Quellen, die die große Aufregung wieder dämpfen können. So rasch wie möglich soll daher an dieser Stelle eine ausführlichere "Gegendarstellung" veröffentlicht werden. Nur soviel sei jetzt schon im Hinblick auf das Ende des Sommerlochs verraten: "Und ob die Wolke sie verhülle, die Sonne bleibt am Himmelszelt"!!</p>
+            </div>
+        </body>
+    </text>
+</TEI>

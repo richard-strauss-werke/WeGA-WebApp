@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050096">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Die Problematik der sogenannten Baermann-Ausgaben</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2005-12-12T11:40:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>source</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>
+                    <persName key="A000076"><!-- TODO: 77 oder 76? -->Baermanns</persName> Anteil an kompositorischen Details
+                    der Werke dürfte angesichts des engen Kontakts der beiden Musiker außer Frage
+                    stehen. Aber erst um <date when="1870">1870</date> (also lange nach seinem Tode) hat sein Sohn <hi rend="bold">
+                        <persName key="A000076">Carl Baermann</persName>
+                        (<date from="1811" to="1885">1811–1885</date>)</hi> die Klarinettenwerke <persName key="A002068">Webers</persName> neu herausgegeben und dabei den
+                        <hi rend="bold">Anspruch erhoben, sie so vorzulegen, wie sie von seinem
+                        „Vater mit <persName key="A002068">Weber</persName> gespielt“ wurden.</hi>
+                    Dieser Behauptung wird bis heute Glauben geschenkt und daher waren die
+                    sogenannten „Baermann-Ausgaben“ entscheidend für die gesamte weitere Rezeption
+                    der Werke.</p>
+                <p>Bei der Arbeit an den Bänden stellte sich jedoch bald heraus, daß diese Tradition
+                    mit einer authentischen Interpretation der Werke wenig zu tun hat. <persName key="A000076">Carl Baermanns</persName> Ausgaben sind vielmehr im Sinne der
+                    Interpretationsausgaben des späteren 19. Jahrhunderts übersät mit dynamischen
+                    und artikulatorischen Hinweisen, die den Notentext bis in kleinste Details
+                    festlegen, teils auch frei mit ihm umgehen und bisweilen sogar ganz <hi rend="bold">offenkundig gegen die Intentionen der überlieferten Quellen
+                        verstoßen.</hi>
+                    <persName key="A000076">Carl Baermann</persName> wurde erst in dem Jahr geboren,
+                    als <persName key="A002068">Weber</persName> die Mehrzahl seiner Werke für
+                    dessen Vater schrieb; <date when="1815">1815</date>, zur Zeit der letzten intensiven direkten Kontakte
+                        <persName key="A002068">Webers</persName> mit <persName key="A000077">Baermann</persName>, war er nicht einmal
+                    4 Jahre alt. Die Ausgaben entstanden zudem mehr als 20 Jahre nach dem Tod seines
+                    Vaters. Zweifel an einer unverfälscht überlieferten Interpretationstradition
+                    sind auch deshalb angebracht, weil <persName key="A000076">Baermann</persName> selbst über die Kadenzen seines
+                    Vaters zu <persName key="A002068">Webers</persName>
+                    <workName key="A020200">Klarinetten-Concertino</workName> einmal (an den Weber-Forscher <persName key="A000914">F.W. Jähns</persName>) schrieb:</p>
+                <p>
+                    <hi rend="italic">„Die Cadenz im Concertino ist von meines Vaters Hand
+                        hineingeschrieben, doch würde ich Sie bitten keinen Werth hierauf zu legen,
+                        da erstens <hi rend="bold">mein Vater die Cadenzen sehr nach seinen Launen
+                            componirte und heute eine spielte welche er morgen wieder verwarf</hi>,
+                        und zweitens gerade die in die Partitur eingeschriebene mir offen gesagt als
+                        gänzlich unpaßend für dieses kleine liebenswürdige Stück erscheint, da
+                        dieselbe viel zu groß und prätentiös auftritt, und so das Stück aus seinem
+                        Rahmen wirft“.</hi>
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

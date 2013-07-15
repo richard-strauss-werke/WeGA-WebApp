@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050151">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Umfangreicher Bearbeitungsband liegt nun vor</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2012-12-01T20:15:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>born digital</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Erneut liegt ein umfangreicher, über 400 Seiten umfassender neuer Band der Weber-Gesamtausgabe vor: In Serie VIII wurden als Band 12 <hi rend="bold">Bearbeitungen von Einlagen in Bühnenwerke und von schottischen Liedern</hi> vorgelegt, herausgegeben von Markus Bandur, Marjorie Rycroft und Frank Ziegler. Der Band enthält <persName key="A002068">Webers</persName>
+                    <workName key="A020358 A020359">Einlagen in <persName key="A007855">Anton Fischers</persName>
+                        <hi rend="italic">Verwandlungen</hi>
+                    </workName> (WeV U.12) in der Edition <persName key="A009005">Frank Zieglers</persName> (wiedergegeben sind die Versionen aus <placeName>
+                        <settlement>Prag</settlement>
+                    </placeName> und <placeName>
+                        <settlement>Berlin</settlement>
+                    </placeName>), die beiden <workName key="A020360 A020361">Einlagen in <persName key="A008103">Etienne Nicolas Méhuls</persName>
+                        <hi rend="italic">Héléna</hi>
+                    </workName> (WeV U.13), herausgegeben von <persName key="A009003">Markus Bandur</persName>, sowie die <workName>
+                        <hi rend="italic">Scottish Airs</hi> bzw. in der deutschen Version die <hi rend="italic">Schottischen National-Gesänge</hi>
+                    </workName> (WeV U.16), die <persName>Marjorie Rycroft</persName> (<placeName>
+                        <settlement>Glasgow</settlement>
+                    </placeName>) als Spezialistin für die von <persName key="A008127">George Thomson</persName> in Auftrag gegebenen Volksliedbearbeitungen vorgelegt hat.</p>
+                <p>Der Band, dem im Vorwort von Frank Ziegler eine Bestandsaufnahme der Bearbeitungspraxis Webers vorangestellt ist, versucht auch optisch, die Art der Bearbeitungspraxis Webers – zumindest in den Arien –&#160;zu verdeutlichen, indem die von Kopisten geschriebenen Bestandteile, die Weber dann lediglich ergänzt hat, durch Grausatz von Webers Zusätzen abgehoben sind (dies ist besonders für die Méhul-Bearbeitung aufschlussreich). Zusätzlich erlauben die im Anhang abgedruckten "Originalversionen" (soweit in einem stets sich wandelnden Medium Oper davon überhaupt gesprochen werden kann) Rückschlüsse auf das Vorgehen Webers.</p>
+                <p>Bei den <hi rend="italic">Scottish Airs</hi> sind zur Verdeutlichung von George Thomsons freiem Umgang mit den Vorlagen auch zwei, für die Ausgabe 1826 eingerichtete Versionen abgedruckt. Man muss bedauern, dass Weber – im Gegensatz zu <persName key="A000777">Haydn</persName> und <persName key="A000117">Beethoven</persName> –&#160;nur mit 10 Bearbeitungen zu Thomsons Sammlung beigetragen hat; die äußerst wirkungsvollen, von Flöte, Violine, Violoncello und Klavier begleiteten Lieder werden in Kürze auch in einer Praktischen Edition von Marjorie Rycroft veröffentlicht.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

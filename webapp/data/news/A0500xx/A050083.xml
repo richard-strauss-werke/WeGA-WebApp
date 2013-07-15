@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050083">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Vorab-Hinweis zur Klarinettenkonzerte-DVD</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2011-02-11T09:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>release</term>
+                    <term>sig</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Die in Kürze mit dem Gesamtausgabenband der Klarinettenkonzerte ausgelieferte DVD ist auf Mac-Rechnern unter der Version OS X 10.6 (<hi rend="italic">Snow Leopard</hi>) lauffähig. Für die ältere Version OS X 10.5 (<hi rend="italic">Leopard</hi>-Systeme auf Intel-basierten 64-Bit fähigen Rechnern) steht eine <hi rend="bold">Aktualisierung</hi> auf der Homepage des Edirom-Projekts unter <ref target="http://www.edirom.de/software/downloads/">Software/Downloads</ref> bereit, mit dem das Programm dann auch auf diesen Rechnern lauffähig ist. Sie können dieses Update nach der Installation der Software einspielen. Auf der Seite des <ref target="http://www.edirom.de">Edirom-Projekts</ref> finden Sie auch Hinweise zu Aktualisierungen für ältere Rechner. Inhaltliche Aktualisierungen werden in Zukunft in einer entsprechenden Rubrik auf der neuen Website der WeGA bekanntgegeben.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050088">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Zur Edition der Tagebücher Carl Maria von Webers</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2008-05-19T09:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>release</term>
+                    <term>sig</term>
+                    <term>source</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Vom <date notBefore="1810-02-26">26. Februar 1810</date> (dem Tag seiner Ausweisung aus Württemberg) an hat <persName key="A002068">Weber</persName> bis zu seinem Tod in <placeName>
+                        <settlement>London</settlement>
+                    </placeName> am <date when="1826-06-05">5. Juni 1826</date> ununterbrochen Tagebuch geführt und darin zunächst vor allem seine Ausgaben, ein- und ausgehende Briefe, aber auch Begegnungen, Arbeit an Kompositionen und vieles andere mehr dokumentiert. Diese in der Weber-Sammlung der Staatsbibliothek zu <placeName>
+                        <settlement>Berlin</settlement>
+                    </placeName> nahezu lückenlos erhaltenen Tagebücher (Signatur: Mus. ms. autogr. theor. C. M. v. Weber WFN 1) sind daher für die Weber-Forschung von unschätzbarem Wert. <persName>Dagmar Beck</persName> bereitet seit einigen Jahren im Rahmen der Weber-Gesamtausgabe die kommentierte Veröffentlichung dieser Tagebücher vor.</p>
+                <p>Zunächst am Beispiel des Monats <date from="1817-02-01" to="1817-02-28">Februar 1817</date> sollen die Vorteile einer projektierten digitalen Edition dieser Quelle (im Verbund mit einer digitalen Edition von Briefen und Dokumenten) vorgestellt werden. Dieses Beispiel soll sukzessive die Möglichkeiten aufzeigen, die sich durch das Bildschirmmedium eröffnen. Es wird in Kooperation mit dem <placeName>
+                        <settlement>Detmolder</settlement>
+                    </placeName>
+                    <ref target="http://www.edirom.de">Edirom-Projekt</ref> in nächster Zeit weiter ausgebaut werden, wobei alle Beteiligten sehr dankbar für kritische Reaktionen und Anregungen sind, die dabei helfen, die Darstellung zu verbessern. (Es sei darauf hingewiesen, dass die Darstellung augenblicklich nur für den Firefox-Browser optimiert ist!)</p>
+                <p>Da es sich in dem Beispiel noch nicht um die endgültige Codierung der Texte handelt, die dauerhaft den Richtlinien der <ref target="http://tei-c.org">Text-Encoding-Initative</ref> (TEI) folgen wird, und da für einige der Kommentarbereiche Datenbanken erst im Aufbau sind, können zunächst lediglich Teilbereiche der Kommentierung dargestellt werden.</p>
+                <p>Wenn Sie den Menüpunkt <hi rend="italic">Tagebuch Weber</hi> öffnen, haben Sie die Möglichkeit über den Kalender auf der linken Seite oder im Faksimile der entsprechenden Seite einzelne Tage anzuwählen. Sie erhalten dann die Übertragung kombiniert mit dem Faksimile des entsprechenden Tages (die rechten Spalten sind Währungsspalten für Taler, Groschen und Pfennige).
+               Innerhalb der Tage sind augenblicklich lediglich die genannten <hi rend="bold">Personen</hi> kommentiert. Wenn Sie mit dem Mauszeiger auf einem dieser Namen stehen bleiben, wird der Registereintrag des Namens angezeigt; klicken Sie auf den Namen, gelangen Sie automatisch in die Personendatenbank der <hi rend="italic">Fachgruppe Freie Forschungsinstitute</hi>, wo Sie ausführlichere Informationen zu den Personen abrufen können (für die Öffentlichkeit sind darin bisher nur allgemeine Daten sichtbar; vgl. hierzu die Bemerkungen unter dem Menü-Punkt Personen-DB). In ähnlicher Weise stehen in einigen Tagen ggf. im Text genannte <hi rend="bold">Briefe</hi>, <hi rend="bold">Pressetexte</hi> bzw. <hi rend="bold">Schriften</hi> zur Verfügung.</p>
+                <p>Weitere Kommentare zu <hi rend="bold">Werken</hi>, <hi rend="bold">Rollen</hi>, <hi rend="bold">Lokalitäten</hi> oder zum Dresdner <hi rend="bold">Spielplan</hi> werden in absehbarer Zeit in ähnlicher Form zugänglich sein. Im vorliegenden Beispiel müssen wir Ihnen dabei noch zumuten, über die Zurück-Funktion Ihres Browsers in den Tagebuch-Text zurückzukehren – wir bitten dafür um freundliches Verständnis. Erst wenn alle Teile der Edition unter einer gemeinsamen Oberfläche zusammengeführt sind, wird dieser Notbehelf entfallen. Spätestens zu diesem Zeitpunkt wird auch eine die Metadaten mit erfassende Suchfunktion integriert.</p>
+                <p>Einen Vorgeschmack auf die langfristig selbstverständlich auch geplante <hi rend="bold">Print-Version</hi> der Tagebücher erhalten Sie durch die neben den kleinen Faksimiles sichtbaren Übertragungen, die Sie in einem größeren Fenster öffnen können. Die endgültige Entscheidung über die Gestaltung der Printversion sollten die Nutzer und Leser mit beeinflussen – daher ist eine lebhafte Diskussion über beide Fassungen ausdrücklich erwünscht.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050009">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Weber-Studien, Band 7 (Tagungsbericht Berlin) erschienen</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2003-07-21T09:10:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>publication</term>
+                    <term>conference</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Lange hat's gewährt, nun liegt er endlich vor: Der Bericht über die am <date when="1998-11-26">26.</date> und <date when="1998-11-27">27. November 1998</date> (also noch im vorigen Jahrhundert...) in der Staatsbibliothek zu Berlin - Preußischer Kulturbesitz veranstaltete Tagung zum Thema <hi rend="italic">Carl Maria von Weber und die Schauspielmusik seiner Zeit</hi>. Mit Vertretern benachbarter Gesamtausgaben, aber auch mit zahlreichen anderen Musikwissenschaftlern und Germanisten wurden damals Fragen dieser sehr besonderen "Gattung" von Musik diskutiert. Einen Schwerpunkt bildeten dabei Fragen nach dem "editorischen Umgang" mit diesen Werken, die bei <persName key="A002068">Weber</persName> (wie auch bei etlichen anderen Komponisten) ein weites Spektrum an Musik einschließen: vom <workName key="A020270">8taktigen Stückchen für 2 Gitarren</workName> (<hi rend="italic">Donna Diana</hi>) bis zur fast Opern-Dimensionen erreichenden <workName key="A020227">Musik zu <persName key="A002176">Pius Alexander Wolffs</persName>
+                        <hi rend="italic">
+                            <workName key="A020227">Preciosa</workName>
+                        </hi>
+                    </workName>. Gegenstände der Diskussion waren u. a. Werke von <persName key="A000030">Johann André</persName>, <persName key="A000117">Ludwig van Beethoven</persName>, <persName key="A000851">E. T. A. Hoffmann</persName>, <persName key="A007992">Albert Lortzing</persName>, <persName key="A003371">Felix Mendelssohn-Bartholdy</persName>, <persName key="A001398">Sigismund Neukomm</persName>, <persName key="A001862">Louis Spohr</persName>, <persName key="A002025">Abbé Vogler</persName> und <persName key="A002066">B. A.</persName> und <persName key="A002068">C. M. v. Weber</persName>, behandelt wurden aber auch theoretische Aspekte und die Art des Umgangs mit Schauspielmusik in bereits vorliegenden Gesamtausgaben. Der von Dagmar Beck und Frank Ziegler vorgelegte Band umfaßt stattliche 332 Seiten und wird hoffentlich die in den vergangenen Jahren in Gang gekommene Diskussion um die Schauspielmusik weiter befördern. Nährere Informationen zu dem Band finden Sie unter der Rubrik <!-- TODO -->
+                    <ref target="index.php?id=43">Weber-Studien</ref>.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

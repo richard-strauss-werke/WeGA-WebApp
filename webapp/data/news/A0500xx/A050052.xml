@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050052">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Autograph der sog. Jubel-Messe für Berlin erworben</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2008-03-15T09:36:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>source</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Noch <date notBefore="2007-11-01" notAfter="2007-12-31">Ende des vergangenen Jahres</date> ist es der Musikabteilung der Staatsbibliothek zu <placeName>
+                        <settlement>Berlin</settlement>
+                    </placeName> gelungen, bei Sotheby's in <placeName>
+                        <settlement>London</settlement>
+                    </placeName> das <hi rend="bold">Autograph von <persName key="A002068">Webers</persName>
+                        <workName key="A020005">
+                            <hi rend="italic">Missa sancta</hi> Nr. 2 in G-Dur</workName>
+                    </hi> WeV A.5 (vollendet am <date when="1819-01-04">4. Januar 1819</date> in <placeName>
+                        <settlement>Dresden</settlement>
+                    </placeName> und geschrieben zur 50. Wiederkehr des Vermählungstages von <persName key="A000537">König Friedrich August I.</persName> mit <persName key="A001251">Maria Amalia Auguste von Sachsen</persName>) zu erwerben. Dieses kostbare Autograph war zuletzt im Besitz der Nachfahren des Komponisten - nun vermehrt es die Sammlung an geistlichen Werken in <placeName>
+                        <settlement>Berlin</settlement>
+                    </placeName> um ein bedeutendes Stück und komplettiert sozusagen den Bestand an Kirchenmusik <persName key="A002068">Webers</persName>: Die <workName key="A020002">
+                        <hi rend="italic">Missa sancta</hi> Nr. 1 in Es-Dur WeV A.2</workName> befindet sich samt <workName key="A020003">Offertorium "Gloria et honore"</workName> bereits seit längerer Zeit in den Beständen der Bibliothek. Sieht man von der sog. <workName key="A020001">Jugendmesse</workName> ab, fehlt nun nur noch das zur <workName key="A020005">G-Dur-Messe</workName> gehörende <workName key="A020004">Offertorium "In die solemnitatis"</workName>, um die geistlichen Werke <persName key="A002068">Webers</persName> zu vervollständigen. Das neu erworbene Autograph umfaßt 26 Blatt und ist in sehr gutem Erhaltungszustand. Die WeGA freut sich außerordentlich, daß es der Staatsbibliothek zu <placeName>
+                        <settlement>Berlin</settlement>
+                    </placeName> gelungen ist, diese Handschrift für ihre Weber-Sammlung zu erwerben.<lb/>
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

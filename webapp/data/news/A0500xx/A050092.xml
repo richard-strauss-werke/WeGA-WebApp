@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050092">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Zusammenwirken mit den Detmolder MeisterWerk-Kursen</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2005-12-12T11:20:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>teaching</term>
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Wesentliche Anregungen verdankt der neue Band den von Prof. <persName>Hans-Dietrich Klaus</persName> geleiteten <hi rend="bold">MeisterWerk-Kursen</hi>, in denen Vertreter der Instrumentalfächer, der Musiktheorie, der Gehörbildung und der Musikwissenschaft in hochschulöffentlichen Veranstaltungen mit studentischen Ensembles gemeinsam Werke erarbeiten. Dabei kommen unterschiedlichste Aspekte dieser Werke zur Sprache und die Interpretation wird um analytisch geprägte Zugangsweisen entscheidend erweitert. Die Musiker sollen dadurch in die Lage versetzt werden, ein eigenes Bild der Werke zu entwerfen, um dieses dann technisch perfekt zu verwirklichen (und nicht in bloßer Nachahmung schon vorhandener Interpretationen zu verharren).</p>
+                <p>Schon früh wurden in diese Kurse auch <hi rend="bold">editorische Aspekte</hi> einbezogen. In einem überregional ausgeschriebenen Kurs zum <hi rend="italic">
+                        <rs type="work" key="A020205">Klarinettenquintett</rs>
+                    </hi> wurde die geplante Neuedition mit Rückgriff auf die Quellen zur Diskussion gestellt. Dabei kam es zu höchst interessanten Diskussionen, z. B. über die Artikulation des Rondo-Themas im Finale, das seit <persName key="A000077">Baermann</persName> stets <hi rend="italic">legato</hi> gespielt wurde, nach <persName key="A002068">Webers</persName> Vorlagen aber eindeutig <hi rend="italic">non-legato</hi> auszuführen ist – eine Vorstellung, die die Musiker zunächst sehr befremdete. Fragen der „Spielbarkeit“ und ästhetische (Vor?)-Urteile auf beiden Seiten führten zu einer lebendigen Arbeit, die tief in die Substanz des vorliegenden Werkes eindrang. Die Erfahrungen dieser Kurse trugen auch dazu bei, den Wissenschaftlern zu verdeutlichen, wo die (stets schwimmenden) Grenzen der Zumutbarkeit für die Praxis liegen; andererseits machten sie für die Musiker deutlich, daß gedruckte Notentexte (auch der teuren Gesamtausgaben) alles andere als monolithische, unveränderbare „Denkmäler“ sind, sondern vielmehr neben <hi rend="bold">der „spielenden“ auch der „lesenden“ Interpretation</hi> bedürfen. Von diesen Erkenntnissen hin zu Editionsformen, die dem Wandel der Rezeptionsvoraussetzungen, der musikalischen Praxis und ggf. auch der Quellenlage stets aktuell Rechnung tragen, dürfte es nur noch ein kleiner Schritt sein. In diese Richtung führen auch die ersten Experimente mit digitalen Editionsformen, die in <placeName>
+                        <settlement>Detmold</settlement>
+                    </placeName> in Angriff genommen wurden.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

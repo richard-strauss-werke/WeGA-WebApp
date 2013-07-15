@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050150">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Ankauf des Autographs des 2. Klavierkonzerts durch die Staatsbibliothek zu Berlin</title>
+                <author key="A009005">Frank Ziegler</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2013-02-24T13:50:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>born digital</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>report</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Einen außerordentlichen Glücksfall stellt die Neuerwerbung des Autographs von <persName key="A002068">Webers</persName>
+                    <workName key="A020208">Klavierkonzert Nr. 2 Es-Dur</workName> durch die <ref target="http://staatsbibliothek-berlin.de/">Staatsbibliothek zu Berlin – Preußischer Kulturbesitz</ref> dar. Schon zweimal kam das bislang in Privatbesitz befindliche Manuskript bei Sotheby’s in <placeName>
+                        <settlement>London</settlement>
+                    </placeName> zur Auktion, blieb allerdings ohne ausreichendes Gebot. Angeregt durch eine gemeinsame Initiative der Staatsbibliothek und der Weber-Gesamtausgabe und unterstützt durch großzügige finanzielle Zuwendungen seitens der Kulturstiftung der Länder sowie privater Sponsoren konnte das Autograph nun für die Berliner Weberiana-Sammlung gesichert werden. Somit wird in dieser Kollektion eine wesentliche Lücke geschlossen, gehörte die Reinschrift doch ursprünglich zu dem heute größtenteils in <placeName>
+                        <settlement>Berlin</settlement>
+                    </placeName> bewahrten Werkarchiv des Komponisten. Durch den Ankauf liegen nun alle editorisch relevanten Quellen zu diesem Werk unter einem Dach; beste Voraussetzungen also für eine Neuausgabe, die dazu beitragen könnte, <persName key="A002068">Webers</persName> großartiges <workName key="A020208">Klavierkonzert</workName> wieder stärker im heutigen Konzertrepertoire zu verankern.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

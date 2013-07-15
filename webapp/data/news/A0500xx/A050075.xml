@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050075">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Tagungsband Paderborn 2007 jetzt erschienen</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2010-01-15T09:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>sig</term>
+                    <term>conference</term>
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Vom <date from="2007-12-06" to="2007-12-06">6. bis 8. Dezember 2007</date> hatte das DFG-Projekt "Entwicklung von Werkzeugen für digitale Formen wissenschaftlich-kritischer Musikeditionen" (allgemein besser bekannt unter dem Namen "Edirom") gemeinsam mit der Weber-Ausgabe im Heinz-Nixdorf-Museumsforum in <placeName>
+                        <settlement>Paderborn</settlement>
+                    </placeName> eine internationale und zugleich interdisziplinäre Tagung zum Thema <hi rend="bold">
+                        <hi rend="italic">Digitale Edition zwischen Experiment und Standardisierung</hi>
+                    </hi> durchgeführt, die sich als Fortsetzung eines Dialogs mit Vertretern der Musikwissenschaft und der Germanistik verstand, der durch die <placeName>
+                        <settlement>Mainzer</settlement>
+                    </placeName> Konferenz <hi rend="italic">Digitale Medien und Musikedition</hi> im November 2006 in der dortigen Akademie der Wissenschaften stattgefunden hatte. Der Tagungsbericht zu der Paderborner Veranstaltung ist jetzt als Band 31 der von Winfried Woesler herausgegebenen Reihe <hi rend="italic">Beihefte zu editio</hi> erschienen. Herausgegeben wurde er von dem ehemaligen Edirom-Mitarbeiter Peter Stadler (jetzt Mitarbeiter der WeGA) und Joachim Veit. Der 322seitige Band enthält u.a. auch eine Mustercodierung eines <persName key="A002068">Weber</persName>-Briefes und einen zweiseitigen Auszug aus Webers Tagebuch, jeweils mit Faksimile, ferner einen ausführlichen Beitrag von Daniel Röwenstrunk zu der digitalen Edition von <persName key="A002068">Webers</persName>
+                    <workName key="A020205">Klarinettenquintett</workName> mit einem Vergleich der Versionen von <date when="2004">2004</date> und <date when="2008">2008</date>.</p>
+<!--            <p>Siehe hierzu auch die auf der <hi rend="italic">Edirom</hi>-Seite bereits dokumentierten Addenda et Corrigenda.</p>-->
+            </div>
+        </body>
+    </text>
+</TEI>

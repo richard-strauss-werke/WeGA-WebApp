@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050065">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Ouvertueren-Band erschienen</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2008-12-30T09:38:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>publication</term>
+                    <term>conference</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Rechtzeitig vor dem Weihnachtsfest erschien der zweite Band aus der Serie V der Orchesterwerke: Die <hi rend="bold">Konzertouvertüren</hi>, herausgegeben von Jonathan Del Mar, redigiert von Joachim Veit und Frank Ziegler. Der Band enthält die <workName key="A020237">
+                        <hi rend="italic">Grand Ouverture à Plusieurs Instruments</hi> (WeV M.4)</workName>, die <workName key="A020207">Ouvertüre zum <hi rend="italic">Beherrscher der Geister</hi> (WeV M.5)</workName> und die beliebte <workName key="A020251">
+                        <hi rend="italic">Jubel-Ouvertüre</hi> (WeV M.6)</workName>. Die <workName key="A020207">Ouvertüre zum <hi rend="italic">Beherrscher</hi>
+                    </workName> erklang bereits kurz vor Erscheinen des Bandes nach der neuen Edition während des Symposions zu <persName key="A002068">Webers</persName> Klarinettenwerken in der Hochschule für Musik in München am <date when="2008-10-31">31. Oktober</date>. Die Quellenlage zur Edition aller drei Werke war höchst unterschiedlich: während bei der <workName key="A020237">Ouvertüre WeV M.4</workName> nur der Stimmenerstdruck und eine zeitgenössische Abschrift herangezogen werden konnten, haben sich zum <hi rend="italic">
+                        <workName key="A020207">Beherrscher</workName>
+                    </hi> eine autographe Partitur, eine autorisierte Abschrift und der Stimmenerstdruck erhalten, im Falle der <hi rend="italic">
+                        <workName key="A020251">Jubel-Ouvertüre</workName>
+                    </hi> gar neben dem Autograph und der Stichvorlage drei von <persName key="A002068">Weber</persName> autorisierte Abschriften und der Erstdruck der Stimmen. Der Band enthält neben dem Notentext ausführliche Informationen zur Entstehung und Überlieferung der Werke und ihrer späteren Editionen. Etliche Faksimiles geben Einblick in die Grundlagen und Entscheidungen der Edition. Der Band umfasst XIX und 272 Seiten und wird hoffentlich dazu beitragen, dass diese Ouvertüren im Konzertrepertoire wieder eine stärke Rolle spielen.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

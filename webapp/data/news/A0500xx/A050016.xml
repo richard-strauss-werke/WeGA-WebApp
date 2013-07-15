@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050016">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Bandpräsentation in Bad Ems</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2004-01-22T09:26:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>publication</term>
+                    <term>performance</term>
+                    <term>conference</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Am <date when="2004-01-21">21. Januar 2004</date> wurde in der Brunnenhalle des Kurhauses von <placeName>
+                        <settlement>Bad Ems</settlement>
+                    </placeName> der im vergangenen Jahr produzierte Band <hi rend="bold">"<hi rend="italic">...die Hoffnung muß das Beste thun.</hi>" <hi rend="italic">Die Emser Briefe Carl Maria von Webers an seine Frau</hi>
+                    </hi>, <placeName>
+                        <settlement>München</settlement>
+                    </placeName>: <ref target="http://www.allitera.de">Allitera-Verlag</ref>, <date when="2003">2003</date>, der Öffentlichkeit vorgestellt. Eingeladen hatten das Stadtarchiv <placeName>
+                        <settlement>Bad Ems</settlement>
+                    </placeName>, die Mitarbeiter der WeGA und der Allitera-Verlag. Nach der Begrüßung durch den Stadtbürgermeister Ottmar Canz skizzierte <hi rend="bold">Dr. Hans-Jürgen Sarholz</hi> vom Stadtarchiv <placeName>
+                        <settlement>Bad Ems</settlement>
+                    </placeName> die Situation des Bades zur Zeit von <persName key="A002068">Webers</persName> Anwesenheit im <date notBefore="1825-06-01" notAfter="1825-08-31">Sommer 1825</date>. Danach erläuterte der Verleger, <hi rend="bold">Dr. Wolfram Göbel</hi>, die Besonderheiten des neuen Farb-Faksimile-Verfahrens in der Print-on-Demand-Technik. Er verglich dabei die Möglichkeit, nun "buchweise" zu drucken mit den revolutionären Neuerungen durch die Drucktechniken <persName>Gutenbergs</persName> und das Klebebindungs-Verfahren <persName>E. F. Lumbecks</persName>. Anschließend berichtete <hi rend="bold">Joachim Veit</hi> über die Entstehung dieser in Rekordzeit entstandenen kleinen Briefedition und wies auf einige inhaltliche Besonderheiten des Bandes hin, der anhand eines knappen, überschaubaren Zeitraums doch ein umfassendes Bild der biographischen und künstlerischen Situation <persName key="A002068">Webers</persName> entwirft und zudem etliche erheiternde Berichte über das ihm so "langweilig" erscheinende Kurleben enthält. Den Abschluß machte eine kleine Darbietung des <hi rend="italic">
+                        <workName key="A020336">Max-Walzers</workName>
+                    </hi>, den <persName key="A002068">Weber</persName> während seines Aufenthalts für die preußische Kronprinzessin und die Petersburger <persName>Fürstin Galitzin</persName> niedergeschrieben hatte - wem von beiden er nun eigentlich "gehört", bleibt einstweilen offen. Die bibliophile Ausstattung des kleinen Bandes fand allseits Anklang und es sei an dieser Stelle nochmals ein herzliches Wort des Dankes an Herrn Dr. Göbel und Herrn Dr. Sarholz für die vorbildliche Zusammenarbeit und uneigennützige Hilfsbereitschaft gesagt.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

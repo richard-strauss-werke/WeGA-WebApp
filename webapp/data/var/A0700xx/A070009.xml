@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaVar.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A070009">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="de">Kontakt</title>
+                <title level="a" xml:lang="en">Contact</title>
+                <author key="A009001">Peter Stadler</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date/>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>WeGA elektronisch</publisher>
+                <availability status="free">
+                    <p>2011, Carl-Maria-von-Weber-Gesamtausgabe, Detmold</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc status="candidate">
+            <change who="PS" when="2011-05-03">Erste Einrichtung</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:lang="de">
+                <head>Herausgeber</head>
+                <p>Prof. Dr. Gerhard Allroggen (Hamburg)</p>
+            </div>
+            <div xml:lang="de">
+                <head>Arbeitsstelle Berlin</head>
+                <ab>
+                    <address>
+                        <addrLine>Staatsbibliothek zu Berlin</addrLine>
+                        <addrLine>Musikabteilung</addrLine>
+                        <addrLine>Unter der Linden 8</addrLine>
+                        <addrLine>D-10117 Berlin</addrLine>
+                    </address>
+                </ab>
+            </div>
+            <div xml:lang="de">
+                <head>Arbeitsstelle Detmold (Editionsleitung)</head>
+                <ab>
+                    <address>
+                        <addrLine>Musikwissenschaftliches Seminar Detmold/Paderborn</addrLine>
+                        <addrLine>Gartenstraße 20</addrLine>
+                        <addrLine>D–32756 Detmold</addrLine>
+                        <addrLine n="telephone">+49 (0)5231-975663</addrLine>
+                        <addrLine n="fax">+49 (0)5231-975668</addrLine>
+                        <addrLine n="email">info [at] weber-gesamtausgabe.de</addrLine>
+                    </address>
+                </ab>
+            </div>
+            <div xml:lang="de">
+                <head>Träger</head>
+                <p>Gesellschaft zur Förderung der Carl-Maria-von-Weber-Gesamtausgabe e. V. (Detmold)</p>
+                <p>Vorstand: Prof. Dr. Gerhard Allroggen, Detlev Hellfaier M.A., Herbert Engelhardt</p>
+            </div>
+            <div xml:lang="de">
+                <head>Förderung</head>
+                <p>Union der Deutschen Akademien der Wissenschaften, vertreten durch die <ref target="http://www.adwmainz.de">Akademie der Wissenschaften und der Literatur</ref>, Mainz</p>
+            </div>
+            <div xml:lang="de">
+                <head>Verlag</head>
+                <p>
+                    <ref target="http://www.schott-musik.de">Schott Music</ref> GmbH &amp; Co. KG, Mainz</p>
+            </div>
+            
+            <!--            -->
+    <!--    English version        -->
+            <!--            -->
+            <div xml:lang="en">
+                <head>Editor-in-chief</head>
+                <p>Prof. Dr. Gerhard Allroggen (Hamburg)</p>
+            </div>
+            <div xml:lang="en">
+                <head>Office Berlin</head>
+                <ab>
+                    <address>
+                        <addrLine>Staatsbibliothek zu Berlin</addrLine>
+                        <addrLine>Musikabteilung</addrLine>
+                        <addrLine>Unter der Linden 8</addrLine>
+                        <addrLine>D-10117 Berlin</addrLine>
+                    </address>
+                </ab>
+            </div>
+            <div xml:lang="en">
+                <head>Office Detmold</head>
+                <ab>
+                    <address>
+                        <addrLine>Musikwissenschaftliches Seminar Detmold/Paderborn</addrLine>
+                        <addrLine>Gartenstraße 20</addrLine>
+                        <addrLine>D–32756 Detmold</addrLine>
+                        <addrLine n="telephone">+49 (0)5231-975663</addrLine>
+                        <addrLine n="fax">+49 (0)5231-975668</addrLine>
+                        <addrLine n="email">info [at] weber-gesamtausgabe.de</addrLine>
+                    </address>
+                </ab>
+            </div>
+            <div xml:lang="en">
+                <head>Supporting Association</head>
+                <p>Gesellschaft zur Förderung der Carl-Maria-von-Weber-Gesamtausgabe e. V. (Detmold)</p>
+            </div>
+            <div xml:lang="en">
+                <head>Funder</head>
+                <p>Union der Deutschen Akademien der Wissenschaften, through the <ref target="http://www.adwmainz.de">Akademie der Wissenschaften und der Literatur</ref>, Mainz</p>
+            </div>
+            <div xml:lang="en">
+                <head>Publishing House</head>
+                <p>
+                    <ref target="http://www.schott-musik.de">Schott Music</ref> GmbH &amp; Co. KG, Mainz</p>
+            </div>
+        </body>
+    </text>
+</TEI>

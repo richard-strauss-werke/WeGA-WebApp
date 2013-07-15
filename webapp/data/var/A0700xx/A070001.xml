@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaVar.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A070001">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="de" level="a">Editionsrichtlinien zur Ausgabe der Briefe, Tagebücher und Dokumente Webers</title>
+                <title xml:lang="en" level="a">Guidelines for the edition of Weber's letters, diaries and documents</title>
+                <author key="A003672">Eveline Bartlitz</author>
+                <author key="A009002">Dagmar Beck</author>
+                <author key="A009001">Peter Stadler</author>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>WeGA elektronisch</publisher>
+                <availability status="free">
+                    <p>2011, Carl-Maria-von-Weber-Gesamtausgabe, Detmold</p>
+                </availability>
+            </publicationStmt>
+            <notesStmt>
+                <note type="summary" xml:lang="de">Beschreibung der TEI-Auszeichnung der Digitalen Weber Edition mit Code-Beispielen.</note>
+                <note type="summary" xml:lang="en">Documentation of the TEI encodings from the Digital Weber Edition along with code snippets.</note>
+            </notesStmt>
+            <sourceDesc>
+                <p>This is only a first draft for editorial guidelines with some fragements from the older ones. The encoding is based on TEI P5 as a born digital document.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>guidelines</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc status="candidate">
+            <change who="PS" when="2011-04-30">Anpassungen an aktuelles Schema</change>
+            <change who="JV" when="2011-04-30">Erstübernahme, Umformulierung, Anpassung und Erweiterung auf der Basis der alten Richtlinien; es fehlt jetzt vor allem: Grundsätzliches, Konzeptionelles; Beschreibung der ganzen früheren "Registerteile"</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:lang="de">
+                <head>Vorbemerkung zur digitalen Edition</head>
+                <p>Als im Anschluss an die Jubiläumsveranstaltungen zu Webers 200. Geburtstag Ende der 1980-er Jahre die Pläne zu einer Weber-Gesamtausgabe in den damaligen beiden deutschen Staaten sondiert wurden, war es sicherlich ein den politischen Verhältnissen geschuldeter Zufall, dass sich zu diesem Zeitpunkt die Deutsche Forschungsgemeinschaft bereits zur Förderung der Arbeiten an einer Edition der Briefe entschlossen hatte. Die Herausgabe der Briefe, aber auch der Schriften und der Tagebücher Carl Maria von Webers war so von Anfang an ein wichtiger Punkt in den Verhandlungen über ein Langzeit-Projekt der deutschen Akademien der Wissenschaften. Bei der Konzeption des Antrags wurde jedoch rasch deutlich, dass hier zwar ein für die damalige Editionslandschaft ungewöhnlich umfangreiches Paket aus Musik- und Textanteilen zu schnüren war, andererseits aber nur dieser geweitete Blick der einflussreichen Künstlerpersönlichkeit Webers gerecht werden würde, indem Werk und Wirken hier kaum voneinander zu trennen sind.</p>
+                <p>Rasch stellte sich nach der 1993 erfolgten Übernahme der an der Staatsbibliothek zu Berlin ansässigen Arbeitsstelle der Weber-Ausgabe in die Akademienfinanzierung heraus, dass die zu edierenden Texte – Briefe, Tagebücher, Schriften und Dokumente, deren Umfang auf insgesamt etwa 20 Bände geschätzt wurde – in so vielfältiger Weise aufeinander bezogen sind, dass eine getrennte Publikation und Kommentierung nach Textsorten wenig sinnvoll erschien. Von Anfang an wurde daher nach Konzepten gesucht, wie diese Verflechtung der Texte und ihre Kommentierung dem Leser mit ökonomischem Einsatz der Ressourcen und dennoch möglichst effektiv zu vermitteln wären.</p>
+                <p>Ein erstes Konzept wurde im September 1993 bei einer Detmolder Tagung mit Vertretern benachbarter Editionen aus dem Bereich der Musikwissenschaft und Germanistik anhand eines im Programmbuch der Veranstaltung<note type="commentary" resp="JV" xml:id="C_01">
+                        <bibl>
+                            <hi rend="italic">Carl-Maria-von-Weber-Gesamtausgabe. Internationale Carl-Maria-von-Weber-Gesellschaft e.V. Tagung – Wissenschaftliches Kolloquium –&#160;Konzert. Programmbuch</hi>. Detmold, 3.-5. September 1993, S. 32-49</bibl>
+                    </note> publizierten "Probe-Monats" diskutiert. Im gleichen Jahr veröffentlichte Eveline Bartlitz im ersten Band der <bibl>
+                        <hi rend="italic">Weber-Studien</hi>
+                    </bibl> eine Reihe neuerworbener Weber-Briefe aus der Staatsbibliothek zu Berlin nach den im Vorfeld der Tagung erarbeiteten Grundsätzen.<note type="commentary" resp="JV" xml:id="C_02">
+                        <bibl>Eveline Bartlitz, <hi rend="italic">Neuerworbene Weber-Briefe in der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz 1991–1992</hi>, in: <hi rend="italic">Weber-Studien</hi>, Bd.1, S.1–37</bibl>
+                    </note> Zwei Merkmale dieser Veröffentlichungen prägten die weitere Diskussion: Zum einen die Aufnahme thematischer Kommentare, die abweichend von Zeilenkommentaren brief- oder gar textsortenübergreifend Zusammenhänge erläutern, zum andern die Verlagerung handschriftlicher oder gedruckter "Dokumente" in eine Art Materialanhang, auf den von verschiedensten Stellen aus verwiesen werden kann. Die Vorstellung einer solchermaßen aus unterschiedlichen, aber aufeinander bezogenen Texteinheiten bestehenden Gesamtedition, die zudem mit der Werkausgabe eng verknüpft sein sollte, wurde auch von Gerhard Allroggen und Joachim Veit 1994 beim Kolloquium <bibl>Komponistenbriefe des 19. Jahrhunderts</bibl> vertreten.<note type="commentary" resp="JV" xml:id="C_03">
+                        <bibl>Gerhard Allroggen und Joachim Veit, <hi rend="italic">Die Weber-Briefausgabe als Teil der Weber-Gesamtausgabe und ihre spezifischen Editionsprobleme</hi>, in: <hi rend="italic">Komponistenbriefe des 19. Jahrhunderts</hi>, hg. von Hanspeter Bennwitz u. a., Stuttgart 1997, S. 136–168</bibl>
+                    </note>
+                </p>
+                <p>Von der Idee eines solchen "Baukastenprinzips" ausgehend, lag eine Nutzung der zu Beginn des neuen Jahrtausends rasch erweiterten Möglichkeiten der elektronischen Medien nahe. Wesentliche Anregungen kamen in der ersten Phase einer entsprechenden Neuorientierung einerseits von dem aus der Weber-Gesamtausgabe hervorgegangenen DFG-Projekt "Edirom", andererseits durch die Richtlinien der internationalen <bibl>Text-Encoding-Initative (TEI)</bibl>. Obwohl eine Mitte des vergangenen Jahrzehnts ausgabenübergreifend geplante, gemeinsame Datenbank zu in Briefen erwähnten Personen und eine die Printedition entlastende, lediglich elektronische Publikation der Dokumente (speziell von Rezensionen und Aufführungsbesprechungen aus Periodika des frühen 19. Jahrhunderts) letztlich durch technische Unzulänglichkeiten und die Reserviertheit gegenüber neuen Kooperations- und Publikationsformen ins Stocken geriet, wurden diese Ansätze in der Weber-Ausgabe intern weitergeführt und dann mit den aktuellen XML-basierten Textauszeichnungsformen der TEI abgestimmt, um auf diese Weise eine langfristige Nutzbarkeit und sinnvolle inhaltliche Erschließung der erzeugten Daten zu gewährleisten.</p>
+                <p>Aber erst durch das Engagement des früheren Edirom-Mitarbeiters Peter Stadler für die Weber-Gesamtausgabe war an die tatsächliche elektronische Publikation der Textteile der Edition in einer Form zu denken, die den Aufwand für die Kommentierung in Grenzen hält und zugleich mit dem Sichtbarmachen der vielfältigen Beziehungen der Texte untereinander bzw. auf Webers Werk eine wesentliche Intention des ursprünglichen Editionsplans erfüllt. Eine zweite wesentliche Voraussetzung für die Verwirklichung dieses Vorhabens war die Bereitschaft der Mitarbeiter, sich auf die neuartige Form der Textauszeichnung mit Hilfe der XML-Technologien einzulassen. In geradezu bewundernswerter Weise haben sich die hauptamtlichen und freien Mitarbeiter der Edition auf dieses Abenteuer eingelassen, so dass an dieser Stelle ein besonders Wort des Dankes vor allem an Eveline Barlitz und Dagmar Beck in Berlin sowie Sonja Klein in Detmold zu sagen ist, die neben Peter Stadler die Hauptlast dieser Umstellung auf die neuen Techniken trugen. Speziell an der Erschließung und Kommentierung der Briefe wirkten in Berlin auch Solveig Schreiter und in Detmold Irmlind Capelle mit. Dank gilt außerdem den zahlreichen weiteren Helfern, ohne deren Einsatz die umfangreichen Textmengen nicht in so kurzer Zeit hätten transferiert und aufgearbeitet werden können, darunter Christoph Albrecht, Christian Epp, Andreas Fukerider, Frederick Hinkelmann, Josefine Hoffmann, Philemon Jacobsen, Cornelia Kohle und Agnes Seipelt. Für die unermüdliche Unterstützung, Beratung und fruchtbare Kritik sei außerdem den Mitarbeitern des DFG-Projekts "Edirom" Daniel Röwenstrunk, Johannes Kepper und Benjamin W. Bohl ein sehr herzliches Wort des Dankes gesagt.</p>
+                <p>Eine Edition im digitalen Medium hat nicht nur Auswirkungen auf die Erscheinungsweise der Texte, sie beeinflusst auch die Grundlagen der Textübertragung und -auszeichnung. Dadurch sind die Editionsrichtlinien, die die Grundsätze der Ausgabe charakterisieren bzw. die Art des Umgangs mit den Texten rechtfertigen, ebenfalls in anderer Weise zu formulieren als dies in einer traditionellen, gedruckten Edition der Fall wäre. Die nachfolgenden Richtlinien versuchen, Altes und Neues in einer Form zu verbinden, die auf eine einfache Orientierung zielt und die Möglichkeiten des Mediums nutzt, ohne auf bewährte (und vom Leser gedruckter Editionen erwartete) Bestandteile zu verzichten. So wie die elektronische Edition selbst, sind aber auch diese Richtlinien ein <hi rend="italic">work in progress</hi>, das zum Zeitpunkt der ersten Veröffentlichung der ersten Texteinheit noch den Charakter einer eher fragmentarischen Skizze erweckt, da in diesem ersten Release erst die Umrisse der geplanten Gesamtedition sichtbar werden.</p>
+                <p>Als etwas erst in Umrissen Sichtbares sollte auch die jetzige Präsentationsplattform angesehen werden. Die sich ohnehin stetig verändernden Darstellungsmöglichkeiten dieses Mediums sind nur ein Grund dafür, dass der Wunsch nach optimaler Vermittlung von Inhalten zu rascheren Innovationszyklen führt als dies bei Printprodukten denkbar war. Wichtiger aber erscheint, dass die wachsende Sammlung von Textkorpora und sonstigen Informationen zu einem sprunghaften Anstieg der denkbaren Beziehungen zwischen diesen sogenannten Objekten führt und damit neuartige Erschließungsformen geradezu herausfordert – oft auch solche, die in einem ersten Abschnitt der Arbeiten noch nicht sichtbar werden. Darüber hinaus trägt natürlich die Beschränkung der verfügbaren Ressourcen dazu bei, dass vorhandene Visionen von einer optimalen Texterschließung nur nach und nach umgesetzt werden können, zumal die Edition in vielen Bereichen Neuland erschließt und oftmals nicht auf Erfahrungen aufbauen, sondern nur durch eigenes, oft mühsames Herantasten zu brauchbaren Lösungen kommen kann. Umso dankbarer muss man zur Kenntnis nehmen, mit welchem Engagement und Enthusiasmus sich die Mitarbeiter dieser Aufgabe widmen und Wege bereiten, auf denen sich andere dann sehr viel leichtfüßiger werden bewegen können.</p>
+                <p>Zu danken ist aber auch einem Partner, ohne den diese neuartige Editionsform ebenfalls undenkbar wäre: Erst die Bereitschaft der Bibliotheken, Archive und Privatbesitzer, ihre Schätze zur Auswertung zur Verfügung zu stellen, macht diese Ausgabe und die hoffentlich nach und nach wachsende Verbindung der Texte mit Digitalisaten ihrer originalen Vorlagen möglich. Es würde an dieser Stelle zu weit führen, alle beitragenden Institutionen und Privatpersonen aufzuführen – die wichtigsten Beiträger seien aber stellvertretend genannt. Allen voran ist selbstverständlich die Musikabteilung der Staatsbibliothek zu Berlin –&#160;Preußischer Kulturbesitz mit ihrer umfangreichen Weber-Sammlung zu nennen, die nicht nur die an ihrem Haus beheimatete Arbeitsstelle der Weber-Ausgabe, sondern in besonderem Maße auch die Pläne zu einer digitalen Edition von Anfang an in zuvorkommender Weise unterstützt hat. Auch der Sächsischen Landesbibliothek – Staats- und Universitätsbibliothek Dresden als Institution an Webers wichtigstem Wirkungsort gilt ein besonderer Dank. Herzlich zu danken ist ferner den Bewahrern größerer Konvolute an Weberiana, so der Musikbibliothek der Stadt Leipzig, der Gesellschaft der Musikfreunde Wien, der Österreichischen Nationalbibliothek Wien, der Pierpont Morgan Library New York und der Yale University, New Haven, der British Library, London, und der Universitäts- und Landesbibliothek Darmstadt.</p>
+                <p>Möge die vorliegende Teiledition rasch zu einer vollständigeren anwachsen und dabei helfen, ein tieferes Verständnis für den bedeutenden Beitrag zur Kultur- und Musikgeschichte des 19. Jahrhunderts zu wecken, den Weber in seinem Umfeld zweifellos geleistet hat. Noch steht dem Leser und "Nutzer" kaum mehr als der Sockel eines künftigen "elektronischen Denkmals" für Weber zur Verfügung – vielleicht kann die neuartige Präsentationsform aber dazu beitragen, die Auseinandersetzung mit Webers Werk und Wirken lebendig zu halten und die Zahl der an der Errichtung dieses Denkmals Beteiligten über den engen Kreis der haupt- und nebenamtlichen Mitarbeiter der Weber-Gesamtausgabe zu erweitern. </p>
+                <closer>
+                    <dateline>Detmold, 1. Mai 2011</dateline>
+                    <signed>Joachim Veit</signed>
+                </closer>
+            </div>
+            <div xml:lang="en">
+                <head>Editorial Guidelines</head>
+                <p>Sorry, there are no guidelines in english available yet.</p>
+            </div>
+            <div xml:lang="de">
+                <head>Zu den aufgenommenen Textsorten</head>
+                <p>Bestandteile der digitalen Weber-Edition sind:</p>
+                <list>
+                    <item>die Briefe von und an Carl Maria von Weber sowie auf ihn bezogene Drittbriefe</item>
+                    <item>Webers Tagebücher, die er seit 1810 bis zu seinem Tod im Juni 1826 führte</item>
+                    <item>Webers Schriften, d.h. sowohl seine literarische Texten als auch Aufführungsbesprechungen, Rezensionen etc.</item>
+                    <item>handschriftliche Dokumente zur Biographie und zum Wirken Webers</item>
+                    <item>Artikel der zeitgenössischen Presse, die sich auf Webers Werke und sein Wirken beziehen (in der Regel Materialien für den Kommentar der Texte)</item>
+                </list>
+                <p>Ergänzend treten eine Reihe von Verzeichnissen hinzu, die in neuartiger Weise den Zugriff auf die Daten erlauben (vgl. hierzu die Bemerkungen zum <label>Konzept der Edition</label> innerhalb der Projektbeschreibung), darunter kommentierte Personenverzeichnisse, sowie Werk-, Aufführungs- und Rollenregister. Zahlreiche weitere Verzeichnisse können jeweils nach Bedarf ad hoc durch entsprechende Such- bzw. Auswahlmöglichkeiten erzeugt werden. Die Verknüpfung mit der Weber-Werkausgabe erfolgt über den Werkkatalog, der sich in der Aufbauphase befindet.</p>
+                <p>Über den aktuellen Stand der jeweils zur Verfügung stehenden Texte und die Tiefe der Erschließung bzw. die technischen Zugangsmöglichkeiten informiert die Website der WeGA unter "Aktuelles" innerhalb der Rubrik "News zu Weber Digital".</p>
+                <p>Briefe und handschriftliche Dokumente sind augenblicklich nicht getrennt voneinander behandelt, sondern letztere lediglich durch den unspezifischen Zusatz "[Dokument]" in der Kopfleiste kenntlich gemacht. Eine Trennung erfolgt erst bei der künftigen Systematisierung der Textsorten.</p>
+            </div>
+            <div xml:lang="de">
+                <head type="main">Grundsätze der Textübertragung und -darstellung</head>
+                <head type="sub">Vorbemerkung</head>
+                <p>Da die Mitarbeiter der Weber-Gesamtausgabe Ende der 1990-er Jahre zunächst noch von einer ausschließlich in Buchform vorzulegenden Publikation der Briefe, Tagebücher und Schriften Webers ausgingen, waren zunächst Übertragungen der handschriftlichen Vorlagen bzw. Umschriften von Druckvorlagen vorgenommen worden, die den Grundsätzen einer diplomatischen Übernahme der Vorlagen (d.h. einschließlich originalem Lautbestand und Orthographie) folgten, wie sich diese in den neueren Textwissenschaften etabliert haben. Als Leitlinien dienten dabei die für den internen Gebrauch erstmals 1993 von Eveline Bartlitz, Dagmar Beck und Joachim Veit entworfenen detaillierten Editionsrichtlinien, die in den folgenden Jahren mit den Erfahrungen bei der Textübertragung erweitert und teilweise modifiziert bzw. auch an die 1997 von der Mainzer Akademie der Wissenschaften vorgelegten <bibl>Richtlinien-Empfehlungen zur Edition von Musikerbriefen</bibl> angepasst wurden. Die Einrichtung der so erarbeiteten Textkorpora für eine digitale Edition, die jenen internationalen Standards folgt, die mit den Guidelines der Text-Encoding-Initatiative (TEI) in der Version P5 veröffentlicht wurden, konnte sich auf diese älteren Vorgaben stützen, nötigte den Editor aber zu einer stärker formalisierten (und damit meist auch besser nachvollziehbaren) Beschreibung seiner Übertragungsgrundsätze. Obwohl die Ideologie der XML-Markup-Sprachen vorschreibt, Inhalt und Form der Texte streng voneinander zu scheiden und ein vorwiegend Struktur und Inhalt erfassendes Markup einzusetzen, spielen bei historischen Texten "formale" Aspekte etwa der Topologie eines Briefes, der verwendeten Schriftformen oder andere äußere Phänomene eine so wesentliche Rolle, dass sie nicht als bloße Nebensache im Kommunikationsprozess angesehen werden können. Daher nehmen in den folgenden Erläuterungen der Grundsätze der Textübertragung formale Aspekte einen breiten Raum ein und sind nun in doppelter Weise beschrieben: hinsichtlich der Erfassung der Einzelphänomene in einer maschinenverarbeitbaren Übertragung (als dem Kern einer Codierung) und in Bezug auf die –&#160;in einem digitalen Medium sehr viel variabler handhabbare bzw. jederzeit modifizierbare –&#160;Darrstellung der erfassten Sachverhalte in einem Lesetext bzw. in "Texten" für den "Nutzer".</p>
+                <p>Zu betonen ist an dieser Stelle, dass die mit TEI codierten Texte in ihrer Form als (menschenlesbare) "Codierungen" sämtliche, von den Editoren im Verlaufe ihrer Arbeit an dem Projekt abgelegten Informationen an der jeweils zugeordneten Position des Textes enthalten, die "Darstellung" dieser Texte in der Regel aber Informationen nur in reduzierter oder "aufbereiteter", d.h. gefilterter und neu geordneter Gestalt enthält. Die umfassendste Information findet sich stets im codierten Text selbst, er ist der "Wissensspeicher", der verschiedenartigsten Nutzungen zugänglich gemacht werden kann. Insofern muss sich ein Editor, der das elektronische Medium als seinen Arbeits- und Veröffentlichungsraum ansieht, auch auf einen neuartigen Umgang mit historischen Texten und ihrer Übertragung einstellen.</p>
+                <p>Zusätzlicher Hinweis: Bei den nachfolgenden Editionsrichtlinien, die von der Briefedition als ihrem Ausgangs- und Schwerpunkt geprägt sind, handelt es sich um ein nicht abgeschlossenes Dokument, an dem im Laufe der Arbeit in Teilbereichen notwendige Ergänzungen vorgenommen werden. Zitate aus diesem Text sollten daher stets mit dem Datum der Einsichtnahme versehen werden.</p>
+                <div>
+                    <head>Technische Vorbemerkung: Zur Zweiteiligkeit von XML-Dateien und den notwendigen Rahmenangaben (Deklaration der Datei)</head>
+                    <p>Grundsätzlich bestehen alle XML-Dokumente aus zwei Bereichen, den <label>Metadaten</label> (Informationen zur Datei und ihren Inhalten) sowie dem eigentlichen <label>Textkorpus</label>. Im Folgenden sind zunächst Fragen zum eigentlichen Textkorpus abgehandelt, anschließend die sog. Metadaten. Um ein Dokument als XML-Dokument bzw. im Falle der Textteile der WeGA als TEI-Dokument zu erkennen, bedarf es rahmender Angaben, d.h. der sog. Deklaration der Datei als TEI-Dokument und der Angabe der verwendeten XML-Version. Details hierzu finden sich in den Guidelines der TEI P5. Jede Datei beginnt daher mit den gleichen Angaben, wobei zusätzlich eine Identifikationsnummer (xml:id) vergeben wird, die eine eindeutiges Auffinden bei einer Suche im Netz erlaubt. Dieser Rahmen hat demnach folgende Struktur: </p>
+                    <eg>
+          <![CDATA[
+          <?xml version="1.0" encoding="UTF-8"?>
+          <?oxygen RNGSchema="../../schemata/wegaLetter.rng" type="xml"?>
+          <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A041017">
+          .... (Metadaten und Textkorpus
+          </TEI>
+          ]]></eg>
+                    <p>Die erste Zeile enthält hierbei die Angaben zur XML-Version und zur verwendeten Zeichencodierung, die zweite Zeile den Verweis auf das der Datei zugrunde liegende <label>Schema</label>, d.h. eine Datei, in der die strukturellen Merkmale des Dokuments, die verwendbaren Elemente und Attribute und deren Aufeinanderfolge etc. geregelt sind (vgl. hierzu die Einführung in XML auf der Website der TEI). Schließlich identifiziert die dritte Zeile den Text als <label>TEI</label>-Dokument (mit Angabe des entsprechenden Namensraumes) und vergibt eine eindeutige Identifikationsnummer (<label>xml:id</label>) für dieses Dokument.</p>
+                    <p>Die in der Edition verwendeten Elemente und Attribute sind nachfolgend innerhalb der jeweils nach inhaltlichen Kriterien geordneten Erläuterungen beschrieben; sie werden zusätzlich mit (auch technisch) detaillierteren Angaben in einer alphabetisch geordneten Liste zugänglich sein. </p>
+                    <p>Für den Editor ist lediglich diese Identifikationsnummer von Bedeutung, die übrigen Daten wird er in der Regel unverändert aus einer Vorlagendatei übernehmen. In diesem Rahmen vollzieht sich nun die eigentliche editorische Arbeit.</p>
+                </div>
+                <div>
+                    <head type="main">Grundsätzliches zur Wiedergabe handschriftlicher Texte</head>
+                    <p>Grundsätzlich werden alle Texte <hi rend="bold">diplomatisch</hi> wiedergeben (unter Einschluss der originalen Orthographie und Zeichensetzung). Bei einer Übertragung vom handschriftlichen ins Druckmedium sind jedoch Kompromisse notwendig, um die Vielfalt der individuellen Erscheinungen in eine allgemein verständliche Form zu überführen. Zudem waren schon in der ersten Phase der Editionspläne einige Vorentscheidungen für die Übertragungen getroffen worden, die aus praktischen Gründen für die digitale Edition übernommen wurden: </p>
+                    <list>
+                        <item>
+                            <label>Faulenzerstriche</label> (auch Geminationsstriche / Verdoppelungsstriche): Die über den Buchstaben "m" und "n" gebräuchlichen Striche werden stillschweigend in doppelte Buchstaben aufgelöst, ein Vermerk dieser Schreibweise erfolgt nicht.<note type="commentary" resp="JV" xml:id="C_04">Da diese Regelung lange vor dem Umstieg auf eine Codierung nach TEI getroffen wurde, weil die originalen Zeichen in regulären Zeichensätzen fehlten, hätte eine nachträgliche Erfassung der Kürzel erheblichen Aufwand bedeutet. Die Codierung ermöglicht jedoch jederzeit eine Ergänzung dieser Schreibeigenheiten.</note>
+                        </item>
+                        <item>
+                            <label>Trennungs- bzw. Bindestriche</label>: In handschriftlichen Texten des 18. und 19. Jahrhunderts stehen die Formen "-", "=" und ":" oft gleichbedeutend nebeneinander. Das Gleichheitszeichen wurde in der Edition von Anfang an durch "-" ersetzt; dies wurde auch in der digitalen Version nicht verändert.<!-- Dies ist ein nochmals zu prüfender Sachverhalt! -->
+                        </item>
+                        <item>
+                            <label>Klammerformen</label>: Die von Weber in der Regel verwendeten Klammerungszeichen "/:" bzw. ":/" wurden unverändert übernommen. (Häufig fehlen bei ihm an einem der beiden Klammerzeichen die Doppelpunkte; sie wurden in gekennzeichneter Form (s.d.) vom Hg. ergänzt.)</item>
+                        <item>
+                            <label>Endsilbenverschleifungen</label> gehören nicht nur bei Weber zu den häufig praktizierten, dem schnellen Schreibfluss geschuldeten Abkürzungsformen (speziell bei den Endsilben: "–nen", "–nem", "–ung"). Oft ist dabei kaum unterscheidbar, ob es sich um ein lediglich undeutlich ausgeschriebenes Wort oder eine "Kürzelschleife" handelt, die aus einem, dem deutschen Buchstaben "h" oder "l" ähnlichen Gebilde besteht. Solche Gebilde wurden in der ersten Übertragungsphase stillschweigend aufgelöst, auf eine Kennzeichnung wird auch in der digitalen Edition verzichtet.<lb/>Teilweise sind solche <label>Abkürzungsformen</label> auch in Kombination mit einem Doppelpunkt (oder Punkt) benutzt, z. B. bei den Worten "H:" oder "Wohlgeb:". In diesen Fällen hat der Herausgeber die Endsilben nicht aufgelöst, sondern das Wort mit dem Doppelpunkt (oder Punkt) abgebrochen. Sofern dabei für den Leser nicht eindeutig ist, was diesem Doppelpunkt folgt, wurde in der digitalen Edition eine ggf. (d.h. mit Element "choice") sichtbar zu machende Auflösung der Abkürzung eingefügt:<lb/>
+                            <ab>
+                                <code><![CDATA[ 
+               <choice><abbr>Sal:</abbr><expan resp="editor">Salzburg</expan></choice>
+              ]]></code>
+                            </ab>
+                            <ab>
+                                <code><![CDATA[ 
+              ... bringe bitte <choice><abbr>br.</abbr><expan resp="editor">bringe</expan></choice> was mit...]]></code>
+                            </ab>
+                        </item>
+                        <item>
+                            <label>Abkürzungen</label>, die unverständlich bleiben und sich nicht durch bloße Ergänzung auflösen lassen, werden in ihrer originalen Form und zusätzlich als wahlweise aufzurufende Vollform wiedergegeben:
+            <ab>
+                                <code><![CDATA[
+              <choice>
+                <abbr>bzgl.</abbr> <!-- alternativ: orig ?? -->
+                <expan>bezüglich</expan>
+              </choice>]]></code>
+                            </ab>
+                        </item>
+                        <item>
+                            <label>Hochstellungen</label> Die bei Zahlen oder Monatsnamen üblichen Hochstellungen wurden übernommen (z.B. "der 3<hi rend="superscript">te</hi> Anlauf", im Monat X<hi rend="superscript">ber</hi> 1819), ebenso sonstige Hoch- oder Tiefstellungen von Textteilen (z.B. "S<hi rend="superscript">r</hi> Majestät"). Häufig sind solche Hochstellungen mit der Setzung von Doppelpunkten unter dem hochgestellten Buchstaben verbunden (speziell bei hochgestelltem "t"); diese Punkte wurden nicht übernommen. Die Auszeichnungsform wird in der Codierung jeweils explizit kenntlich gemacht:<lb/>
+                            <ab>
+                                <code><![CDATA[ zum 3<hi rend="superscript">t</hi> male]]></code>
+                            </ab>
+                            <lb/>
+                            <ab>
+                                <code><![CDATA[ im X<hi rend="superscript">ber</hi> ist Weihnachten]]></code>
+                            </ab>
+                            <lb/>
+                            <ab>
+                                <code><![CDATA[ ich bitte S<hi rend="superscript">r</hi> Majestät auszurichten]]></code>
+                            </ab>
+                        </item>
+                        <item>
+                            <label>Spezielle graphische Zeichen bzw. Zeichenfolgen Webers</label> werden durch möglichst nahe verwandte Zeichen wiedergegeben. Sofern dies nicht möglich ist, erfolgt zunächst eine verbale Umschreibung:
+          <table rows="5" cols="2">
+                                <row>
+                                    <cell>+ + +</cell>
+                                    <cell>Kreuze als Segensformel</cell>
+                                </row>
+                                <row>
+                                    <cell>) ) ) )</cell>
+                                    <cell>Zeichen für Hiebe (in den Briefen an Caroline Brandt)</cell>
+                                </row>
+                                <row>
+                                    <cell>[Kuss-Symbol]</cell>
+                                    <cell>Kreise, Bogen o.ä. als Zeichen für Küsse (in den Briefen an Caroline Brandt)</cell>
+                                </row>
+                                <row>
+                                    <cell>Ο</cell>
+                                    <cell>Kreis als Symbol für Rundschreiben (im Briefwechsel des "Harmonischen Vereins")</cell>
+                                </row>
+                                <row>
+                                    <cell>
+                                        <hi rend="latintype">pp</hi>, <hi rend="latintype">p p p p</hi>
+                                    </cell>
+                                    <cell>etc.-Zeichen, Zusammen- oder Getrenntschreibung nach Vorlage</cell>
+                                </row>
+                                <row>
+                                    <cell>!,</cell>
+                                    <cell>Ausrufezeichen mit Komma kombiniert (Komma statt Punkt); Spezialzeichen Webers, wird mit "!," wiedergegeben</cell>
+                                </row>
+                            </table>
+                        </item>
+                        <item>
+                            <label>Währungsangaben</label> Die Währungsangaben Webers werden belassen, sofern sie mit normalem Buchstabenbestand wiederzugeben sind. Die häufig durch Faulenzer abgekürzte Schreibweise für Reichsthaler (r&amp;) wird gewöhnlich in rh: aufgelöst, nur wenn weitere Buchstaben zu erkennen sind, werden diese übernommen. Zwischen (meist) lateinischer und deutscher Schreibung der Zeichen ist zu unterscheiden.
+            <table rows="13" cols="2">
+                                <row>
+                                    <cell>
+                                        <hi rend="latintype">f</hi>, <hi rend="latintype">f</hi>., <hi rend="latintype">fl</hi>.</cell>
+                                    <cell>Gulden (Florin)</cell>
+                                </row>
+                                <row>
+                                    <cell>
+                                        <hi rend="latintype">f</hi>. <hi rend="latintype">W: W:</hi>
+                                    </cell>
+                                    <cell>Gulden Wiener Währung</cell>
+                                </row>
+                                <row>
+                                    <cell>
+                                        <hi rend="latintype">Fried: dor</hi>
+                                    </cell>
+                                    <cell>Friedrichd'or (auch <hi rend="latintype">Fried. dor</hi>, <hi rend="latintype">Fried: d:</hi> usw.</cell>
+                                </row>
+                                <row>
+                                    <cell>#</cell>
+                                    <cell>Dukaten</cell>
+                                </row>
+                                <row>
+                                    <cell>gr</cell>
+                                    <cell>Groschen</cell>
+                                </row>
+                                <row>
+                                    <cell>ggr</cell>
+                                    <cell>gute Groschen</cell>
+                                </row>
+                                <row>
+                                    <cell>pf:</cell>
+                                    <cell>Pfennig</cell>
+                                </row>
+                                <row>
+                                    <cell>rh:</cell>
+                                    <cell>Reichsthaler (für r&amp;; rh&amp;: etc.) </cell>
+                                </row>
+                                <row>
+                                    <cell>rth: / rthlr</cell>
+                                    <cell>Reichsthaler (Spezielle Schreibung)</cell>
+                                </row>
+                                <row>
+                                    <cell>thlr / Thlr </cell>
+                                    <cell>Thaler</cell>
+                                </row>
+                                <row>
+                                    <cell>xr</cell>
+                                    <cell>Kreuzer</cell>
+                                </row>
+                                <row>
+                                    <cell>in 16 <hi rend="latintype">f fuß</hi>
+                                    </cell>
+                                    <cell>in 16 Gulden Fuß</cell>
+                                </row>
+                                <row>
+                                    <cell>
+                                        <hi rend="latintype">Conv: M:</hi> / <hi rend="latintype">C. M.</hi>
+                                    </cell>
+                                    <cell>Conventions Münze</cell>
+                                </row>
+                                <row>
+                                    <cell>rh <hi rend="latintype">Preuß: Cour:</hi>
+                                    </cell>
+                                    <cell>Reichsthaler Preußisch Courant</cell>
+                                </row>
+                            </table>
+            (Näheres zu Währungen und den Umrechungsverhältnissen vgl. Sachkommentar.)
+          </item>
+                        <item>
+                            <label>Groß- und Kleinschreibung</label> wird getreu der Vorlage wiedergegeben, auch bei Verwendung von Großbuchstaben innerhalb zusammengeschriebener Worte ("EndesUnterzogener" usw.). In Zweifelsfällen wird aber nach heutiger Rechtschreibung verfahren (die Unsicherheit der Lesung sollte durch Verwendung des Elements <code><![CDATA[<unclear/>]]></code> festgehalten werden; sofern für die Interpretation bedeutsam, können beide Formen durch zwei mit dem Attribut <code><![CDATA[@cert]]></code> (certainty) versehene <code><![CDATA[<unclear/>]]></code>-Elemente verzeichnet werden; vgl. Abschnitt "Unsichere Lesungen"). Bei den Personalpronomina wird in Zweifelsfällen gemäß Webers Schreibgewohnheit die Kleinschreibung bevorzugt. (Zu den Problemen der Groß- und Kleinschreibung einzelner Buchstabe vgl. den Abschnitt "Einzelprobleme und Einzelbuchstaben").</item>
+                        <item>
+                            <label>Getrennt- und Zusammenschreibung</label> von Worten ist bei Weber häufig schwer zu unterscheiden. In Zweifelsfällen (die wiederum durch das Element <code><![CDATA[<unclear/>]]></code>  gekennzeichnet werden können) sollte nach Webers Schreibgewohnheit, ansonsten nach heutiger Praxis entschieden werden.</item>
+                        <item>
+                            <label>Trennungen am Zeilenende</label> werden – sofern die Trennstriche am Ende des Wortes und am Anfang der neuen Zeile erscheinen – stillschweigend zusammengezogen, auch bei Verwendung eines Großbuchstabens am Zeilenanfang (Bsp: "Capell- | -Meister" wird zu: "CapellMeister"; "Hofmusick= | -Intendanz" wird zu: "HofmusickIntendanz"). Fehlt einer der Striche bzw. werden sonst in der Zeile Trennstriche verwendet (- oder =), wird einheitlich der einfache Trennstrich gesetzt ("Dienst-Siegel" statt: "Dienst=Siegel").<!-- Bei der Autopsie von Texten wird an diesen Stellen in der Codierung jeweils der originale Zustand vermerkt?-->
+                        </item>
+                        <item>
+                            <label>Schreibversehen</label> (wie z.B. versehentliche Wortwiederholungen) werden in der Regel so übernommen und durch das Element <code><![CDATA[<sic/>]]></code> markiert, um eine spätere irrtümliche Korrektur durch einen Editor zu verhindern. Dort, wo solche Schreibversehen zu Leseschwierigkeitn führen, kann in einem <code><![CDATA[<choice/>]]></code>-Element neben der originalen Schreibung (<code><![CDATA[<sic/>]]></code> oder <code><![CDATA[<orig/>]]></code>) eine vom Editor angebotene Korrektur angeboten werden (mit <code><![CDATA[<corr resp="XY"></corr>]]></code>.</item>
+                    </list>
+                </div>
+                <div>
+                    <head type="main">Häufige Texteigenheiten und deren Auszeichnungsformen</head>
+                    <p>Häufig vorkommende Texteigenheiten und Auszeichnungen (typographische Eigenheiten) sind im Folgenden nach Stichpunkten in alphabetischer Ordnung aufgeführt und mit der Form ihrer Codierung und gegenwärtigen Wiedergabe verzeichnet.</p>
+                    <list>
+                        <item>
+                            <label>"Denkpause" (Freiraum zwischen Sätzen)</label>: Weber verwendet oft Freiraum innerhalb einer Zeile, wenn ein neuer Gedanke beginnt ("Denkpause", "Denklücke"). Dieser Raum wird, wo er deutlich erkennbar ist, durch ein sogenanntes leeres Element gekennzeichnet: <code><![CDATA[<space unit="chars" quantity="5">]]></code>, die Einheit sind dabei "characters" (Buchstaben), deren "quantity" (Anzahl) ist gewöhnlich zu "5" vereinheitlicht, nur bei größeren Abständen ist diese Zahl zu "10" verdoppelt. Eine weitere Differenzierung erfolgt hier nicht. </item>
+                        <item>
+                            <label>Durchstrichenes/Getilgtes</label>: Das einfache Streichen von Worten oder Absätzen wird durch das Element <code><![CDATA[<del/>]]></code> (deleted) gekennzeichnet, die Form der Streichung sollte dabei durch das Attribut <code><![CDATA[@rend]]></code> (rendition) angegeben werden (in der Regel als  <code><![CDATA[<del rend="strikethrough"/>]]></code>). Geschieht das Streichen und Ersetzen als ad-hoc-Korrektur in der Zeile, genügt diese Kennzeichnung und es muss kein Substitutionsvorgang bezeichnet werden.</item>
+                        <item>
+                            <label>Einfügungen des Autors (Rand- oder Zeileneinschübe)</label>: Einfügungen, die der Autor (Schreiber) nachträglich oder im Schreibvorgang vorgenommen hat, werden (sofern es sich nicht um Korrekturen durch Eingriffe in die ursprüngliche Substanz) handelt, mit dem Element <code><![CDATA[<add/>]]></code> (addition) vermerkt. Dabei sollte der Ort der Einfügung mit Hilfe des Attributs <code><![CDATA[@rend]]></code> bezeichnet werden. Als Attributwerte kommen dabei in Frage: "inline", "margin", "above" (the line), "below" (the line). Sofern als notwendig erachtet, können in besonderen Fällen auch "margin_right" oder "margin_left" (und "top" bzw. "bottom") verwendet werden. Stammen solche Einfügungen von anderer Hand, kann dies im Attribut <code><![CDATA[@resp]]></code> (responsible) ausgewiesen werden.<lb/>
+            Hinweis: Einfügungen und Zusätze des Herausgebers werden nie mit <code><![CDATA[<add/>]]></code>, sondern mit <code><![CDATA[<corr/>]]></code> oder <code><![CDATA[<subst/>]]></code> vorgenommen!</item>
+                        <item>
+                            <label>Ergänzungen des Herausgebers</label>: Gelegentlich kann es vorkommen, dass der Autor zum besseren Textverständnis einzelne fehlende Zeichen oder auch Zeichenfolgen bzw. Worte ergänzen muss/möchte (wenn dies die Folge von Textverlusten ist, vgl. allerdings die Rubrik "Unleserliches 1"). Diese Ergänzungen werden mit dem Attribut <code><![CDATA[@resp]]></code> innerhalb eines Elements <code><![CDATA[<supplied/>]]></code> (supplied) vorgenommen (Bsp.: <code><![CDATA[heute kam Friedr<supplied resp="editor">i</supplied>ch]]></code>). Alle auf diese Weise vorgenommenen Ergänzungen werden z.Zt. in der Darstellung im Grausatz wiedergegeben. (Interner Zusatz: Zusätzlich kann mit der Kennzeichnung <code><![CDATA[@n="1"]]></code> bewirkt werden, dass nur die so als notwendig gekennzeichneten Ergänzungen in die gewöhnliche Textdarstellung übernommen werden.)</item>
+                        <item>
+                            <label>Hoch- und Tiefstellung von Zeichen</label>: Hoch- und Tiefstellung wird als solche im Text vermerkt. Dazu wird das Element <code><![CDATA[<hi/>]]></code> (highlighted) mit dem Attribut <code><![CDATA[@rend="superscript"]]></code> (für Hochstellung) bzw. <code><![CDATA[@rend="subscript"]]></code> (für Tiefstellung) verwendet. Die Anzeige des Edierten Textes gibt dies entsprechend wieder.</item>
+                        <item>
+                            <label>Korrekturen des Autors</label> (siehe auch: Einfügungen des Autors): Korrekturen, die der Autor (Schreiber) in seinem Text vorgenommen hat, werden als Substitutionsprozess innerhalb des Elements <code><![CDATA[<subst/>]]></code> dargestellt. Dieser Prozess besteht in der Regel aus zwei Teilen: dem Löschungsvorgang (durch Streichen, Überschreiben o.ä.) und der Ergänzung des neuen Textes (durch Einfügen, Überschreiben o.a.). Der Vorgang ist sowohl hinsichtlich der Art des Löschvorgangs als auch des Ortes, an dem der Ersatztext zu finden ist, näher zu beschreiben.<lb/>
+            Hinweis: Die Art und Weise der Streichung wird am Element <code><![CDATA[<del/>]]></code> festgehalten, nicht an <code><![CDATA[<subst/>]]></code>. Ist der ersetzte Text nicht zu entziffern, so wird innerhalb des Elements <code><![CDATA[<del/>]]></code> ein Element <code><![CDATA[<gap/>]]></code> angegeben (das durch <code><![CDATA[@unit]]></code> und <code><![CDATA[@quantity]]></code> näher charakterisiert sein kann).<lb/>
+          Ein Ersetzungsvorgang, bei dem das Wort "wollte" durch "musste" überschrieben wurde, sieht daher in der Codierung wie folgt aus:<lb/>
+                            <code><![CDATA[
+              <subst>
+                <del rend="overwritten">wollte</del>
+                <add place="inline">musste</add>
+              </subst>]]></code>
+                        </item>
+                        <item>
+                            <label>Korrekturen des Herausgebers</label> (sofern für das Verständnis zwingend): Es kommt vor, dass ganz offensichtlich Falsches zu Missverständnissen führt und besser korrigiert werden sollte (in den früheren Richtlinien war an solchen Stellen die Einfügung eines "[recte:]" oder "[vielmehr:]" vorgesehen). Zur Kennzeichnung der originalen Schreibung wird nun ein <code><![CDATA[<sic/>]]></code>-Element verwendet (das auch eingetragen werden kann, um die Tatsache eigenartiger Schreibungen hervorzuheben, damit in späteren Korrekturgängen an dieser Stelle nicht fälschlich ein Verschreiber des Übertragenden angenommen wird). Die Korrektur selbst kann dann durch <code><![CDATA[<corr/>]]></code> angegeben werden und der der Urheber sollte sich als Verantwortlicher (<code><![CDATA[@resp="EB"]]></code>) eintragen (liegt eine zweite Quelle für diese Änderung vor, kann sie sogar mit einem zusätzlichen Attribut <code><![CDATA[@source]]></code> angegeben werden). Das Ganze wird in ein  <code><![CDATA[<choice/>]]></code>-Element eingeschlossen, um eine wahlweise Darstellung zu ermöglichen.</item>
+                        <item>
+                            <label>Lateinische Schrift</label>; Die Verwendung lateinisch geschriebener Textteile innerhalb eines in Kurrentschrift geschriebenen Textes wird mit Hilfe des Elements <code><![CDATA[<hi/>]]></code> (highlighted) und dem Attribut <code><![CDATA[@rend="latintype"]]></code> gekennzeichnet. Die Darstellung im angezeigten Text erfolgt in der Regel durch <hi rend="italic">kursive</hi> im Unterschied zu gerader Schrifttype. Sind (speziell fremdsprachige) Briefe komplett in lateinischer Schrift verfasst, wird dies nur in den Metadaten des Briefes (s.u.) vermerkt.</item>
+                        <item>
+                            <label>Sonderzeichen</label>: Im Folgenden sind einige Sonderzeichen und deren Codierungsform aufgelistet:
+          <table>
+                                <row>
+                                    <cell>'</cell>
+                                    <cell>Apostroph</cell>
+                                    <cell>Es wird der einfache gerade Apostroph der Tastatur (SHIFT-#) eingegeben und in erst der Anzeige in die typographische Form umgesetzt.</cell>
+                                </row>
+                                <row>
+                                    <cell>–</cell>
+                                    <cell>Gedankenstrich</cell>
+                                    <cell>Der Gedankenstrich kann auf der Mac-Tastatur mit 'Alt'+'-' eingegeben werden. Alternativ ist auch die Unicode-Codierung <code><![CDATA[&#8211;]]></code> verwendbar.</cell>
+                                </row>
+                                <row>
+                                    <cell>x</cell>
+                                    <cell>Pfundzeichen (Masse)</cell>
+                                    <cell>Hierfür kann ⅸ???[zu klären] angegeben werden.</cell><!-- ACHTUNG: #ve: Hier noch unbedingt ergänzen!!!! -->
+                                </row>
+                            </table>
+                        </item>
+                        <item>
+                            <label>Satzzeichen</label>: Werden original übernommen (zu den Sonderformen s.o., Abschnitt "Klammerformen"). Nur in besonderen Ausnahmefällen kann, wenn dadurch der Sinnzusammenhang verloren zu gehen droht, ein vom Hg. ergänztes Zeichen in der Form <code><![CDATA[<supplied>,</supplied>]]></code> eingefügt werden; dieses Zeichen wird in der Anzeige durch Grausatz vom Autortext abgehoben.</item>
+                        <item>
+                            <label>Überschreibung im Text</label> durch den Autor (Schreiber): Überschreibungen werden als Substitutionsvorgang gekennzeichnet, bei dem das Löschen durch "Überschreiben" geschieht und die Ergänzung "inline" erfolgt (vgl. das Bsp. unter "Korrekturen des Autors").</item>
+                        <item>
+                            <label>Unleserliches</label>: Hier sind zwei Möglichkeiten zu unterscheiden:<lb/>
+                            <p>1. Wenn durch Wasserschäden, Siegelloch oder sonstige äußere Einwirkungen (nicht aktives Eingreifen des Schreibers in den Text!) Teile nicht lesbar sind, wird dies durch das Element <code><![CDATA[<damage/>]]></code> gekennzeichnet. Dabei wird die Ursache der Lesebeeinträchtigung durch das Attribut <code><![CDATA[@agent]]></code> angegeben. Die Auszeichnung kann als bloße Kennzeichnung der "Schadenstatsache" erfolgen oder aber unklare bzw. vom Herausgeber ergänzte Lesungen kennzeichnen (Bsp.: <code><![CDATA[An die<damage agent="water"><unclear>ser roten</unclear></damage> Stelle war etwas beschädigt]]></code>").<lb/>
+              Wenn die Ergänzung auf den Hg. zurückgeht und, wie im vorstehenden Falle, etwas "nicht Selbstverständliches" (zu letzterem gehören Ergänzungen einzelner Buchstaben) umfasst, sollte sich der Hg. als Verantwortlicher eintragen: <code><![CDATA[@resp="JV"]]></code>. Komplett unlesbare Bereiche werde durch das Element <code><![CDATA[<gap/>]]></code> gekennzeichnet, wobei der Vollständigkeit halber der Umfang mit den Attributen <code><![CDATA[@unit]]></code> und <code><![CDATA[@quantity]]></code> notiert werden kann (als Werte kommen z.B. "characters" in Frage), die Entzifferungsprobleme können zusätzlich durch das Attribut <code><![CDATA[@reason="illegible"]]></code> vermerkt sein.</p>
+                            <p>2. <label>Unsichere Lesungen</label>: Alle nur aus Leseschwierigkeiten der Handschrift resultierenden Unklarheiten werden in das Element <code><![CDATA[<unclear/>]]></code> eingeschlossen. Sofern mehrere Deutungsmöglichkeiten vorhanden sind, werden diese innerhalb des Elements <code><![CDATA[<choice/>]]></code> zur Auswahl gestellt. In diesem Falle sollte bei den Einzellesungen das Element <code><![CDATA[<unclear/>]]></code> durch ein Attribut <code><![CDATA[@cert]]></code> (certainty) ergänzt werden. Als Werte kommen dafür "high", "medium", "low" oder "unknown" in Frage. Durch das hinzugefügte Attribut <code><![CDATA[@resp]]></code> ist dabei der für diese Einschätzung verantwortliche Editor erkennbar. Beispiel:</p>
+                            <eg>
+            <![CDATA[
+            ... dieses Geld mußte ich aufwenden um <choice><unclear resp="JV">Hassan zu kopieren</unclear>
+                                        <unclear resp="DB">Hosen zu repariren</unclear></choice> ...
+            ... na ja, dieser Sänger ist schon sehr <choice><unclear cert="low" resp="JV">beliebt</unclear>
+                                        <unclear cert="high" resp="EB">beleibt</unclear></choice> ...
+            ]]></eg>
+                        </item>
+                        <item>
+                            <label>Unterstreichungen</label>: Einfache, doppelte oder mehrfache Unterstreichungen werden mit dem Element <code><![CDATA[<hi/>]]></code> (highlighted) im Text vermerkt. Als Attribute werden dabei einerseits die Tatsache der Unterstreichung und die Zahl der Striche angegeben. <code><![CDATA[@rend="underline" n="3"]]></code>. Sofern zusätzliche Binnenunterstreichungen gesetzt sind, werden diese geschachtelt angegeben und zur grundsätzlich vorhandenen Zahl der Striche addiert, d.h. ein innerhalb einer Doppelunterstreichung dreifach unterstrichenes Wort erhält zusätzlich die Binnenangabe <code><![CDATA[@rend="underline" n="1"]]></code>. Die Wiedergabe im angezeigten Text erfolgt zur Zeit nur mit einer Zahl von bis zu <hi rend="underline" n="2">zwei</hi> Strichen.          
+          </item>
+                    </list>
+                </div>
+                <div>
+                    <head type="main">Einzelprobleme und Einzelbuchstaben (mit Beispielsammlung)</head>
+                    <div>
+                        <head>Probleme mit Einzelbuchstaben</head>
+                        <p>
+                            <label>ss/ß</label>: Auch im Falle Webers stellt die Unterscheidung von "ss" und "ß" ein besonderes Problem dar: Weber hat zwar in frühen Briefen noch häufig "ss" verwendet, greift aber immer öfter auf die schneller zu schreibende Form des "ß" zurück, das in den meisten Fällen eindeutig zu entziffern ist. Es finden sich sogar einige Beispiele, in denen das "s" ausdrücklich zu "ß" verändert wurde (vgl. Beispielsammlung).</p>
+                        <p>Innerhalb der lateinischen Schreibung begegnet dagegen die sogenannte "ſs"-Form (vgl. Anlage), die von den Editoren ebenfalls in "ss" aufgelöst wurde, zumal Weber Varianten dieser Form auch in seinen englischen und französischen Briefen anwendet und die gelegentliche Verwendung des "h"-ähnlichen Buchstabens als Ersatz für das "runde s" (vgl. in der Liste: "Wissen<hi rend="bold">ſ</hi>chaften", "Be<hi rend="bold">ſ</hi>chüzer", "Nach<hi rend="bold">ſ</hi>icht") ebenso wie die Vertauschung beider Buchstaben ("ſs" und "sſ") gegen die Verwendung eines zusammengezogenen "ß" sprechen.</p>
+                    </div>
+                    <div>
+                        <head>Groß- und Kleinschreibung (problematische Fälle)</head>
+                        <p>Weber beginnt häufig Satzanfänge klein und schreibt auch Anreden wie "Sie" oder "Du" in Briefen oft klein. Umgekehrt erscheinen oft Verben oder Adjektive mit großen Anfangsbuchstaben. Diese Schreibeigentümlichkeit ist beibehalten. Allerdings ist die Unterscheidung zwischen großen und kleinen Buchstabenformen in einigen Fällen schwierig. Unproblematisch ist die Unterscheidung lediglich bei den Buchstaben E/e, I/i, J/j, L/l, M/m, N/n, U/u, P/p, R/r, S/s und W/w. Vereinzelte Probleme tauchen bei Q/q und V/v auf – hier sollte in Zweifelsfällen nach heutiger Grammtik entschieden und die Unsicherheit mit <unclear/> vermerkt werden. Alle übrigen Buchstaben bereiten dagegen mehr oder minder große Probleme:</p>
+                        <table>
+                            <row>
+                                <cell>
+                                    <label>A/a</label>
+                                </cell>
+                                <cell>Ex.</cell>
+                                <cell>Oft ist die deutliche Ausprägung des Buchstabens "a" trotz seiner im Vergleich zu den Nachbarbuchstaben geringen Größe ein Kennzeichen für den Großbuchstaben; eine Unterscheidung in der Form ist dagegen kaum anzutreffen. In Zweifelsfällen sollte hier der Großbuchstabe bevorzugt bzw. nach heutiger Orthographie entschieden werden.</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <label>B/b</label>
+                                </cell>
+                                <cell>Ex.</cell>
+                                <cell>Die große Variante hat eine im oberen Bereich ansetzende, nach links oben (oder waagerecht) verlaufende Schleife und einen deutlich wieder bis zur Mitte geführten und vom Hauptkorpus abgesetzten Bogen; sie unterscheidet sich überhaupt durch eine deutlichere Physiognomie von der kleinen Varianten, deren Abschlußbogen oft nach links in den Hauptkorpus verrutscht. Die Anfangsschlaufe erlaubt in fast allen Fällen die Unterscheidung vom Kleinbuchstaben, der letztere wird allerdings auch bei Substantiven oft verwendet.</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <label>C/c</label>
+                                </cell>
+                                <cell>Ex.</cell>
+                                <cell>Tritt meist nur als Anfangsbuchstabe lateinisch geschriebener Worte auf und gerät dabei im Vergleich zu den übrigen Wortbestandteilen oft etwas zu klein. Im Zweifelsfalle wurde hier die grammatisch richtige Variante gewählt.</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <label>D/d</label>
+                                </cell>
+                                <cell>Ex.</cell>
+                                <cell>Hier ist die Unterscheidung zweifellos am schwierigsten. In einigen Fällen soll der Buchstabe wohl durch einen längeren Anstrich eindeutig als groß gekennzeichnet werden, was u. a. aus einer Korrektur dieses Buchstabens im Brief vom 19. Juli 1811 hervorgeht (vgl. Beispielblatt). In der Mehrzahl der Fälle ist aber eine optische Unterscheidung nicht möglich. Die Entwicklung von Webers Schrift gibt in diesem Fall auch kaum Aufschluß. Entsprechend könnte man bspw. in vielen Fällen "Dresden" gleichberechtigt als "dresden" wiedergeben. Dem Großbuchstaben wurde im Zweifelsfall aber der Vorzug zu geben; besonders am Abschnittsanfang, nach deutlichen "Tabulator-/Denk-Lücken" und bei Eigen- und Ortsnamen wurde mit Großbuchstabe übertragen. Ein deutlich ausgeprägter, weit nach links reichende (und manchmal noch nach unten umgebogener) Anstrich weist als einziges markantes Merkmal auf den Großbuchstaben hin.<lb/>Unproblematischer ist gewöhnlich die lateinische Schreibung, obwohl auch hier nicht immer der nach rechts oben gerichtete Strich die Anfangsschlaufe kreuzt.<lb/>Die Zusammensetzung "Musik" und "director" mit einem Neuansatz bei "d" spricht für die von den Editoren übernommmene Schreibung "MusikDirector".</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <label>F/f</label>
+                                </cell>
+                                <cell>Ex.</cell>
+                                <cell>Ser Großbuchstabe ist im Allgemeinen durch den Beistrich und den Ansatz von oben vom Kleinbuchstaben zu unterscheiden. Schlaufenbildungen beim kleinen f (vgl. "freundschaftlichen") dürfen nicht zur Verwechslung mit dem Großbuchstaben verleiten.</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <label>G/g</label>
+                                </cell>
+                                <cell>Ex.</cell>
+                                <cell>Gehört zu den schwierigeren Fällen; seine Identität kann meist allein nach der Größe im Kontext bestimmt werden. Obwohl der Buchstabe auch in sicherlich groß gedachten Zusammenhängen eher klein von Gestalt erscheinen kann ("Gott", "Gombart"), kann in vielen Fällen dabei der etwas über den zweiten Buchstaben hinausragende Korpus (und die meist abweichend vom Kleinbuchstaben geschlossene Form) die Entscheidung erleichtern. Vielfach erscheinen aber Verben und Adjektive groß. – Auch hier wurde in Zweifelsfällen nach heutiger Schreibung entschieden.</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <label>H/h</label>
+                                </cell>
+                                <cell>Ex.</cell>
+                                <cell>Das große H hat stets einen waagerechten oder leicht von unten kommenden Anstrich, dazu ist der Abwärtsstrich oft in der Mitte nochmals geknickt. Der Anstrich des kleinen h kommt eindeutig von unten und mündet im spitzen Winkel in den Abstrich. H taucht auch bei Adjektiven und Verben sehr oft mit Großbuchstaben auf!</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <label>K/k</label>
+                                </cell>
+                                <cell>Ex.</cell>
+                                <cell>Im Allgemeinen einfacher zu unterscheiden: K hat meist einen Beistrich und wirkt wie eine etwas "abgerundete" Form des X. Vor allem in späterer Zeit verwendet Weber oft am Wortende (oder auch innerhalb eines Wortes) die große lateinische Form des K (z.B. in "SimroK"). Da es sich hier lediglich um eine Schreibeigenheit zu handeln scheint, wurde bei der Wiedergabe die Kleinschreibung gewählt.</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <label>T/t</label>
+                                </cell>
+                                <cell>Ex.</cell>
+                                <cell>In den früheren Jahren ist durch den deutlichen, oben ansetzenden waagerechten Anstrich beim T die Unterscheidung von t unproblematisch; erst in den späteren Jahren sind die Formen einander angenähert.</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <label>Z/z</label>
+                                </cell>
+                                <cell>Ex.</cell>
+                                <cell>Obwohl das große Z auf den ersten Blick oft wie ein Kleinbuchstabe anmutet, scheint hier meist die große Variante gemeint. Eine Unterscheidung in der Buchstabenform aber existiert nicht. Im Zweifelsfall sollte hier zugunsten der geltenden Rechtschreibung entschieden werden.</cell>
+                            </row>
+                        </table>
+                        <p>Ausdrücklich sei darauf hingewiesen, das nur nicht lösbare Zweifelsfälle zu einer Angleichung an heutige Rechtschreibung führen.</p>
+                    </div>
+                    <div>
+                        <head>Groß- und Kleinschreibung bei lateinischen Buchstaben</head>
+                        <p>In vielen Fällen erscheinen die Anfangsbuchstaben latenisch geschriebener Worte optisch zu klein (z.B. "Oper"), ohne dass Weber hier einen Kleinbuchstaben intendiert haben dürfte (was besonders häufig bei Eigennamen deutlich wird). Auch hier wurde im Zweifelsfall heutige Rechtschreibung zu Grunde gelegt.</p>
+                    </div>
+                    <div>
+                        <head>Unterscheidung lateinischer und deutscher Schreibung</head>
+                        <p>Die Unterscheidung lateinischer (<code><![CDATA[<hi rend="latintype"/>]]></code>) und deutscher Schreibung (als default-Wert, der in den Metadaten angegeben ist) ist meist ohne Probleme möglich. Bisweilen sind aber nur einzelne Buchstaben eines Wortes latein geschrieben. Sobald der überwiegende Teil eines Wortes mit lateinischen Buchstaben geschrieben ist, wurde diese Schreibung als für das gesamte Wort geltend angenommen. Ausnahmen werden lediglich bei deutsch geschriebenen Endsilben gemacht (Bsp.: "<code><![CDATA[im <hi rend="latintype">Hertling</hi>schen Hause"]]></code>).</p>
+                    </div>
+                    <div>
+                        <head>Probleme bei Wortendungen</head>
+                        <p>In zahlreichen Fällen ist am Wortende nicht mehr als die o.g. Endsilbenverschleifung oder eine unpräzise und strichartig bezeichnete Endsilbe gesetzt, so dass Fälle wie "besondern" / "besondren" / "besonderen" kaum zu differenzieren sind. Hier kann zwar die Kenntnis der Schreibgewohnheiten weiterhelfen, der Editor hat aber nicht in allen Fällen eine Kennzeichnung durch <code><![CDATA[<unclear/>]]></code> vorgenommen. Dabei wurde der grammatisch richtigen Form in Zweifelsfällen der Vorzug gegeben.</p>
+                        <p>Häufig scheint auch ein End-"e" kaum erkennbar. Hier wurde ein bloßer Ansatz zu einer Weiterführung des vorletzten Buchstaben als Zeichen für das intentional vorhandene "e" gewertet.</p>
+                        <p>Besonders an Zeilenenden werden Endsilben oft durch eine Art Bogen (vergleichbar der Endsilbenverschleifung) oder eine kaum entzifferbare Zusammendrängung der Buchstaben (infolge Platzmangels) dargestellt. Sofern keine Abkürzung intendiert erscheint, wurde das Wort in seiner vollständigen Form wiedergegeben (und ggf. auf den Tatbestand hingewiesen).</p>
+                    </div>
+                    <div>
+                        <head>Besondere Schreibgewohnheiten</head>
+                        <p>Weber verwendet überwiegend die Schreibung "gieng" / "fieng" etc. In vielen Fällen ist dabei der Buchstabe "e" deutlich zu erkennen. Fehlt das "e", wurde nur bei deutlicher Schreibung "ging" / "fing" etc. auf das Dehnungs-e verzichtet und in unsicheren Fällen eher nach Webers Schreibgewohnheit verfahren.</p>
+                        <p>Weber schreibt meist "errinnern" statt "erinnern"; zeitlüblich ist dagegen die Form "fodern" statt "fordern".</p>
+                        <p>Gelegentlich begegnet auch noch die alte Schreibung mit verdoppelten End-"n": "worinn", "Königinn", "darinn" etc. Diese Schreibung wurde für die Übertragung nur gewählt, wenn der deutlich vorhandene Buchstabe oder eine entsprechende Länge des Wortendes dies zweifelsfrei nahelegten.</p>
+                        <p>Schreibungen mit einfachen oder verdoppelten Buchstaben "m" oder "n" ("können"/"könen", "kommen"/"komen", "Mannheim"/"Manheim" usw.) begegnen oft auf engstem Raum nebeneinander. Hier wurde nur in Zweifelsfällen auf die heutige Schreibung zurückgegriffen und das Nebeneinander der Formen ansonsten unverändert beibehalten.</p>
+                        <p>Die Buchstaben "ß" und "st" sind im äußeren Erscheinungsbild nicht unterschieden, jedoch besteht ein deutlicherer Unterschied zwischen "ßt" und "st", das variierend in den gleichen Wortbestandteilen vorkommt ("größte"/"gröste" oder "grüßt"/"grüst").</p>
+                    </div>
+                </div>
+                <div>
+                    <head>Spezielle Hinweise bei Übertragungen gedruckter Texte</head>
+                    <p>Besonderheiten bei gedruckten Texten sind im Folgenden nach Stichworten alphabetisch aufgelistet:</p>
+                    <list>
+                        <item>
+                            <label>etc.</label> Das etc.-Zeichen aus Drucken (ec.-Abb.) wurde als ec. wiedergegeben.</item>
+                        <item>
+                            <label>Antiqua</label> (im Gegensatz zu Frakturschrift; entspricht dem "Lateinischen" im Bereich der Handschriften): Wird durch das Element <code><![CDATA[<hi/>]]></code> (highlighted) mit dem Attribut <code><![CDATA[@rend="antiqua"]]></code> angegeben. In Antiqua gesetzte Teile innerhalb eines Frakturtextes werden in der Wiedergabe als <hi rend="italic">Kursivschrift</hi> angezeigt.</item>
+                        <item>
+                            <label>Fettschrift</label> (fett oder halbfett; in der Regel für Druckschriften): Wird durch das Element <code><![CDATA[<hi/>]]></code> (highlighted) mit dem Attribut <code><![CDATA[@rend="bold"]]></code> angegeben.</item>
+                        <item>
+                            <label>Frakturschrift</label> ("Gotische" oder "Deutsche Schrift" in Druckwerken): Wird durch das Element <code><![CDATA[<hi/>]]></code> (highlighted) mit dem Attribut <code><![CDATA[@rend="gothic"]]></code> angegeben.</item>
+                        <item>
+                            <label>Gesperrte Schrift</label> (in der Regel nur im Druck): Wird durch das Element <code><![CDATA[<hi/>]]></code> (highlighted) mit dem Attribut <code><![CDATA[@rend="spaced_out"]]></code> angegeben und in der Darstellung in eine<hi rend="spaced_out"> gesperrte </hi>Form umgesetzt.</item>
+                        <item>
+                            <label>Kapitälchen</label> (im Drucksatz): Werden durch das Element <code><![CDATA[<hi/>]]></code> (highlighted) mit dem Attribut <code><![CDATA[@rend="small-caps"]]></code> angegeben und <hi rend="small-caps">in entsprechender Weise</hi> in der Anzeige umgesetzt.</item>
+                        <item>
+                            <label>Kursivschrift</label> (nur als Schriftschnitt in gedruckten Texten): Wird durch das Element <code><![CDATA[<hi/>]]></code> (highlighted) mit dem Attribut <code><![CDATA[@rend="italic"]]></code> angegeben. Die Darstellung erfolgt als <hi rend="italic">Kursive</hi>.</item>
+                    </list>
+                </div>
+                <div>
+                    <head>Strukturelle Merkmale der Texte</head>
+                    <div>
+                        <head>Wiedergabe der Briefstrukturen</head>
+                        <p>Die (idealtypische) <label>Grobstruktur eines Briefes</label> besteht aus der <label>Adresse</label> (die sich wiederum aus mehreren Adresszeilen zusammensetzt) und einem oder mehreren "<label>Schreibakten</label>" (Teile einer umfangreicheren, oft über mehrere Tage oder "Sitzungen" reichenden Briefniederschrift), die als sogenannte divisions (<code><![CDATA[<div/>]]></code>) ausgezeichnet werden. Innerhalb der Schreibakte steht (idealtypisch) ein <code><![CDATA[<opener>]]></code> zu Beginn (der z.B. aus einer Datums- und Anredezeile bestehen kann, vgl. die Elemente <code><![CDATA[<dateline/>]]></code> und <code><![CDATA[<salute/>]]></code>) sowie ein <code><![CDATA[<closer>]]></code> (Grußfloskel mit Unterschrift) am Ende des Abschnitts; die einzelnen Abschnitte selbst werden als <code><![CDATA[<p/>]]></code> (paragraph) gekennzeichnet. Durch ein Attribut <code><![CDATA[@type]]></code> werden die jeweiligen divisions näher bestimmt: einerseits als Adresse (<code><![CDATA[<div type="address"/>]]></code>), andererseits als (mit <code><![CDATA[@n]]></code>) gezählte Schreibakte (<code><![CDATA[<div type="writingSession" n="2"/>]]></code>).</p>
+                        <p>Diese Teile bilden zusammen das eigentliche Textkorpus (<code><![CDATA[<body/>]]></code>), das insgesamt als <code><![CDATA[<text type="letter"/>]]></code> gekennzeichnet ist. Demnach kann die Gesamtstruktur schematisch wie folgt dargestellt werden:</p>
+                        <eg><![CDATA[
+<text type="letter">
+  <body>
+    <div type="address">
+      <address>
+        <addrLine>An Frau</addrLine>
+        <addrLine>Gewdoline C. Muks</addrLine>
+        <addrLine>Mitglied des Ständigen Theaters zu</addrLine>
+        <addrLine>Berlin.</addrLine>
+      </address>
+    </div>
+    <div type="writingSession" n="1">
+      <opener>
+        <dateline>Nr. 23, den 3. Februar 1817 in Dresden.</dateline>
+        <salute>Mein vielgeliebtes MukenVies.</salute>
+      </opener>
+      <p>Hier folgt der langatmige Brieftext [...] in mehreren Absätzen</p>
+      <closer>Es grüßt dich
+        <lb/><signed>dein Carl</signed>
+      </closer>
+    </div>
+  </body>
+</text>]]></eg>
+                        <p>(Hinweis für die Codierung: Sind bestimmte Bestandteile eines idealtypischen Briefes nicht vorhanden – z.B. keine Adresse oder in einem zweiten Schreibakt keine Anrede –, werden sie auch nicht als leere Elemente aufgenommen, sondern einfach weggelassen.)</p>
+                        <p>Dier <label>Eröffnung</label> eines Briefes (d.h. die Abschnitte vor dem eigentlich Textbeginn, also Datierung, Anrede etc.) werden in einem Element <code><![CDATA[<copener/>]]></code> zusammengefasst. Unterelemente sind <code><![CDATA[<dateline/>]]></code> (Datumszeile) und <code><![CDATA[<salute/>]]></code> (Begrüßungsfloskel). Erstere kann neben dem eigentlichen Datum auch eine Ortsangabe (<code><![CDATA[<placeName><settlement>Berlin</settlement></placeName>]]></code> enthalten.</p>
+                        <p>Beispiel für einen Eröffnungsteil:</p>
+                        <eg>
+            <![CDATA[
+            <opener>
+              <dateline>
+                  <hi rend="latintype">Nro:</hi> 16.</hi>
+                <lb/>
+                  <placeName><settlement>Berlin</settlement></placeName> d: 4<hi rend="superscript">t</hi> Januar 1817.
+               </dateline>
+               <salute>Mein geliebter Muks!<lb/>O du Hamsterkerl!</salute>
+            </opener>
+            ]]></eg>
+                        <p>Nach Bedarf kann das in der Datumszeile genannte eigentliche Datum (im vorliegenden Beispiel "d: 4t Januar 1817") auch mit einem zusätzlichen <code><![CDATA[<date/>]]></code>-Element umgeben werden.</p>
+                        <p>Die <label>Grußformel</label> (und damit der <code><![CDATA[<closer/>]]></code> eines Briefes) sollte nicht nach der räumlichen Anordnung auf dem Papier (also nach typographischen Gesichtspunkten), sondern nach inhaltlichen Kriterien (wirklicher Beschluss des Briefes) festgelegt werden: Sie beginnt also nicht mitten in einem Satz, sondern umfasst den ganzen Satz (oder mehrere Sätze) bzw. Absatz einschließlich der Unterschrift. Die graphische Anordnung ist dagegen sekundär, sollte aber mit festgehalten werden, indem innerhalb des <code><![CDATA[<closer/>]]></code>, der in der Darstellung standardmäßig als eigener Absatz wiedergegeben wird, entsprechende Umbrüche mit <code><![CDATA[<lb/>]]></code> (linebreak) oder Hinweise auf die abweichende Anordnung eines Textsegments (<code><![CDATA[<seg/>]]></code>) am linken oder rechten Rand bzw. in der Mitte gegeben werden (<code><![CDATA[<seg rend="left"/> / @rend="right" / @rend="center"]]></code>; eine weitere Differenzierung der räumlichen Positionen wird nicht vorgenommen). Schließt die Grußformel direkt in der laufenden Zeile eines Textes an, lässt sich eine Absatzbildung des <code><![CDATA[<closer>]]></code> durch die Angabe <code><![CDATA[@rend="inline"]]></code> verhindern.</p>
+                        <p>Ein Beispiel hierzu:</p>
+                        <eg><![CDATA[
+          <div type="writingSession" n="2">
+            <p>Text bis zur Grußfloskel</p>
+            <closer rend="inline">Nun sage ich Dir noch einmal ausdrücklich: 
+              <lb/>gute Reise und verabschiede mich, um die Festlegung der noch fehlenden Teile der Richtlinien endlich zu Papier zu bringen.
+              <lb/><seg rend="right">Dein Dich ewig verehrender</seg>
+              <lb/><signed>Carl</signed>
+            </closer>
+          </div>
+            ]]></eg>
+                        <p>Teilweise tritt die Datumszeile bei Weber auch erst innerhalb dieses <code><![CDATA[<closer/>]]></code> (am Ende) auf. Sie ist dann den Angaben im <code><![CDATA[<opener/>]]></code> korrespondierend einzufügen.</p>
+                        <p>Innerhalb der einzelnen Absätze sollten <label>Seitenumbrüche</label> durch das Element <code><![CDATA[<pb/>]]></code> (pagebreak) vermerkt werden, wobei damit nur die Tatsache des Wechsels vermerkt ist. Sofern mit der Übertragung ein Faksimile verbunden ist, sollte an dieser Stelle ein Hinweis auf das Faksimile der folgenden Seite angebracht werden: <code><![CDATA[<pb facs="#facs_1v">]]></code> (Es handelt sich hier um einen einfachen Verweis auf ein an anderer Stelle der Datei genauer angegebenes und durch das Kürzel "facs_1v" bezeichnetes Faksimile). Eine Angabe der originalen <label>Zeilenumbrüche</label> war in der WeGA bislang nicht vorgesehen, in Einzelfällen kann dies aber im Hinblick auf eine Anbindung an die Faksimiles nachgetragen werden. Solche <code><![CDATA[<line/>]]></code>-Elemente (Zeile) werden bei gereimten Brieftexten jedoch generell angewendet.</p>
+                        <p>
+                            <label>Nachschriften</label> am Ende des eigentlichen Briefes (also nach dem <code><![CDATA[<closer/>]]></code> mit der Unterschriftsformel) können, wenn es sich um kürzere Zusätze handelt, innerhalb eines <code><![CDATA[<postscript/>]]></code>-Elements erscheinen oder – falls eine längere bzw. stärker strukturierte Nachschrift vorliegt – in ein weiteres Element <code><![CDATA[<div type="writingSession"/>]]></code> eingeschlossen werden.</p>
+                    </div>
+                    <div>
+                        <head>Die Einbeziehung von Brief-Entwürfen</head>
+                        <p>Soweit Entwürfe (Konzepte, Brouillons) nicht wesentlich vom endgültigen Text abweichen, sind abweichende Lesarten mit in die Übertragung des Originaldokuments integriert. Abweichungen werden dann wie frühere Apparateinträge behandelt und durch das Element <code><![CDATA[<app/>]]></code> umschlossen, innerhalb dessen die reguläre Lesung als Lemma (<code><![CDATA[<lem/>]]></code>; im nachfolgenden Fall das Brieforiginal), die Abweichungen als Lesart des Textzeugen "Entwurf" (<code><![CDATA[<rdg wit="draft"/>]]></code> markiert werden.</p>
+                        <eg>
+            <![CDATA[
+            ... deine sehr <app><lem>eigenartige<lem>
+                     <rdg wit="draft">blödsinnige</rdg></app> Antwort habe ich heute gelesen ... 
+            ]]></eg>
+                        <p>Sind die Abweichungen umfangreicher und insbesondere zahlreiche Streichungen, Rand- und Zeileneinschübe sowie Überschreibungen wiederzugeben, empfiehlt es sich, den Entwurftext als eigene Datei zu behandeln. In der Quellenangabe ist in beiden Fällen darauf zu achten, dass der Hinweis auf das Vorliegen eines Entwurfs (<code><![CDATA[<msDesc rend="draft"/>]]></code>) eingetragen wird (siehe Quellenangaben) und im zweiten Fall in der vorgesehenen Kopfleiste des Briefes die Angabe "[Entwurf]" (am Ende von Zeile 1) hinzugefügt ist, also z.B.:</p>
+                        <eg><![CDATA[
+          <title level="a">Carl Maria von Weber an Karl Feige in Kassel [Entwurf]<lb/>Dresden, Montag, 17. September 1817</title>
+            ]]></eg>
+                    </div>
+                    <div>
+                        <head>Zur Wiedergabe der Strukturen von Webers Tagebüchern</head>
+                        <p>Die Umsetzung des Weberschen Tagebuchs in die TEI-P5-Strukturen stellt im Rahmen der Weber-Edition die größte Herausforderung dar. Die tabellenartige Struktur, die aber wegen der vielen Freizügigkeiten bei der Seiten- und Texteinteilung Webers nicht als solche umgesetzt werden kann, sowie die oft nebeneinander bestehenden Abrechnungssysteme vorwiegend am rechten Rand erschweren die Erfassung. Hier wurde eine Segmentierung des Textes gewählt, die sich im wesentlichen auf die freien Elemente <code><![CDATA[<seg/>]]></code> (arbitrary segment, eine willkürlich festgelegte Texteinheit), <code><![CDATA[<measure/>]]></code> (eine Texteinheit, die Zahlen oder bestimmte Werte enthält) und <code><![CDATA[<ab/>]]></code> (anonymous block; ein Container-Element aus willkürlich festgelegten Einheiten) stützt und diese Elemente durch entsprechende Attribute näher zu bestimmen sucht. Die Komplexität dieses Verfahrens macht eine eigene, noch ausstehende Beschreibung dieser Auszeichnung anhand einer direkten Gegenüberstellung von Faksimile und Übertragung notwendig. </p>
+                    </div>
+                    <div>
+                        <head>Die Wiedergabe der Strukturen bei gedruckten Dokumenten</head>
+                        <p>Die Auszeichnung gedruckter Dokumente unterscheidet sich hinsichtlich der Struktur nur marginal von den genannten Brieftexten, da auch hier die Einteilung in die Bereiche (<code><![CDATA[<div/>]]></code>) bzw. Absätze (<code><![CDATA[<p/>]]></code>) die Regel ist. Die häufig in Druckveröffentlichungen vorkommenden <label>Fußnoten/Anmerkungen</label> (in Rezensionen oft durch einfachen Asterisk *, sonst als reguläre Fußnote) werden an Ort und Stelle als solche ausgezeichnet und wiedergegeben (mit dem Vermerk, wo diese Angabe im Originaltext platziert ist). Hierzu stehen die Elemente <code><![CDATA[<ref/>]]></code> (referencing string) und <code><![CDATA[<footnote/>]]></code> (Fußnote) mit den entsprechenden Attributen <code><![CDATA[@type]]></code> (Art des Verweises) und <code><![CDATA[@target]]></code> (Ziel des Verweises) bzw. <code><![CDATA[@xml:id]]></code> (Identifikationsnummer der Fußnote) zur Verfügung. Beispiel (die zusätzliche Angabe des Namespace mit xmlns kann dabei für diesen Zusammenhang unbeachtet bleiben):</p>
+                        <eg>
+            <![CDATA[
+            <p>... in der Zeitung<ref type="footnoteAnchor" target="#footnote01">*)</ref>
+              <footNote xmlns:xml='http://www.w3.org/XML/1998/namespace' xml:id="footnote1">*) Mit "Zeitung" ist ein historischer Vorgänger der Tablet-Medien gemeint.</footNote>
+              stand heute nicht viel ...</p>
+            ]]></eg>
+                        <p>Soweit in solchen Dokumenten <label>Tabellen</label> oder andere strukturiert wiederzugebende Textteile (z.B. <label>Verstexte</label>) vorkommen, sei hier für die Wiedergabe auf die Anleitungen der TEI-Guidelines P5 verwiesen.</p>
+                        <p>
+                            <label>Seiten- und Spaltenumbrüche</label> werden in gedruckten Texten durch die leeren Elemente <code><![CDATA[<pb/>]]></code> (page-break, Seitenumbruch) bzw. <code><![CDATA[<cb/>]]></code> (column-break, Spaltenumbruch) bezeichnet (ab der jeweils 2. Seite bzw. Spalte). Da in den Metadaten die genauen Seiten- bzw. Spaltenangaben des Textes verzeichnet sind, genügt für eine Berechnung die Kennzeichnung durch dieses leere Element. Empfohlen wird aber eine Angabe der jeweils neuen Seite mit dem Attribut <code><![CDATA[@n="254"]]></code> (ebenso bei gezählten Spalten). Bei <label>Umbrüchen innerhalb eines Worts</label> wird das jeweilige Element <code><![CDATA[<pb/>]]></code> oder <code><![CDATA[<cb/>]]></code> ohne Leerzeichen in das Wort gesetzt und mit dem Attribut <code><![CDATA[@type="inWord"]]></code> versehen, das Trennzeichen entfällt! (Beispiel. <code><![CDATA[ver<cb type="inWord"/>binden]]></code>.</p>
+                        <p>Bei <label>zusammengesetzten Texten</label> (Wechsel der Autoren, z.B. bei längeren Aufführungsberichten) gilt dieselbe Kennzeichnung wie bei den aus mehreren Quellen zusammengesetzten Edierten Texten der Briefe: Die Autoren werden in den Metadaten genannt (s.u.) und im Text wird darauf Bezug genommen (z.B. durch die entsprechende Markierung einer Texteinheit als <code><![CDATA[<div decl="#author1">]]></code>; vgl. dazu w.u.), auf die äußere Struktur der Texte hat dies jedoch in der Regel keine Auswirkung.</p>
+                    </div>
+                    <div>
+                        <head>Die Integration von Bildelementen (Zeichnungen, Notenbeispiele) in Texten</head>
+                        <p>Als Textbestandteile auftretende Abbildungen jeglicher Art (Notenbeispiele im Faksimile oder in Übertragungen, Zeichnungen usw.) werden mit den Elementen <code><![CDATA[<figure/>]]></code> und <code><![CDATA[<graphic/>]]></code> sowie einer <code><![CDATA[<figureDesc/>]]></code> (figure Description) am zugehörigen Ort eingefügt. Das letztgenannte Element enthält dabei eine kurze Beschreibung, die das Bild identifizierbar macht bzw. bei ggf. auftretenden Schwierigkeiten mit der Bilddarstellung dem Benutzer als Ersatz angezeigt wird. Dagegen ist <code><![CDATA[<figure/>]]></code> ein bloßes "Container"-Element für die Grafik bzw. ggf. für mehrere hintereinandergesetzte Grafiken. Die Grafiken selsbt werden mit ihrer <code><![CDATA[@url]]></code> angegeben. Soweit dazu nicht ausdrücklich als weiteres Attribut <code><![CDATA[@rend="inline"]]></code> angegeben wird, werden auf dem Bildschirm solche Grafiken zentriert in der folgenden Zeile des Textes dargestellt. (Nähere Einzelheiten zu spezielleren Einbindungsformen vgl. Grafikeinbindung.)</p>
+                        <p>Beispiel für eine eingebundene Grafik:</p>
+                        <eg><![CDATA[
+            <figure>
+              <figureDesc>Porträt Heinrich Baermanns von 1970, unbekannter Künstler, Privatsammlung</figureDesc>
+              <graphic url="WeGA-Baermann_Portrait_1970.jpg"/>
+            </figure>
+            ]]></eg>
+                    </div>
+                </div>
+                <div>
+                    <head>Grundsätze der Auszeichnung von Textinhalten</head>
+                    <p>Innerhalb der ursprünglichen Planung zur Erfassung und Kommentierung von Textinhalten waren in Anlehnung an die <bibl>
+                            <hi rend="italic">Richtlinien-Empfehlungen zur Edition von Musikerbriefen, Mainz 1997</hi>
+                        </bibl> mehrere Kommentarstufen in einem räumlich vom Brief deutlich abgesetzten Apparatteil vorgesehen worden. Während dabei textkonstitutive Merkmale einem eigenen Bereich zugewiesen waren, sollten erläuternde Anmerkungen in <label>Themenkommentare</label> und <label>Einzelstellenkommentare</label> untergliedert sein. Aufgrund der engen Verknüpfung der Brief- und Tagebuchtexte hatte die WeGA schon früh beschlossen, <label>Personenkommentare</label> gemeinsam für beide Editionsteile zu erstellen und wesentliche Teile der notwendigen Zusatzinformationen durch <label>kommentierte Register</label> (Personen, Werke, Orte etc.) abzudecken, so dass die auf Webers Schriften und sonstigen Editionsteile auszuweitenden Kommentare damit entlastet werden konnten.</p>
+                    <p>Die elektronische Publikationsform erlaubt es nun, diese Auslagerung in bequemer und zugleich für den Nutzer komfortabler Weise umzusetzen, so dass sich die Notwendigkeit der Anmerkungen deutlich reduziert. Die verbleibenden Anmerkungen ("notes") wurden dabei in vier, durch Attribute zum Element <code><![CDATA[<note/>]]></code> charakterisierte Formen zu unterteilen:</p>
+                    <table>
+                        <row>
+                            <cell>
+                                <code><![CDATA[<note @attribut/>]]></code>:</cell>
+                            <cell> </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <code><![CDATA[@textConst]]></code>
+                            </cell>
+                            <cell>
+                                <label>text-Constitution</label> (Textkonstitution): Bemerkungen zu Varianten (in Entwürfen), Schreibkorrekturen oder sonstigen Besonderheiten der Handschrift, die sich nicht durch die Verwendung eines Apparat-Elements alleine darstellen lassen, sondern genauerer Kommentierung bedürfen. Für die xml:id wird eine Kennzeichnung als <code><![CDATA[xml:id="tC_001"]]></code> etc. empfohlen.</cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <code><![CDATA[@definition]]></code>
+                            </cell>
+                            <cell>
+                                <label>Definition</label>: reine Worterklärungen oder Begriffserläuterungen (Das Element <code><![CDATA[<note/>]]></code> sollte dabei nach dem zugehörigen Begriff stehen, vor dem Wort kann ggf. ein Element <code><![CDATA[<anchor/>]]></code> (Anker) eingefügt werden, um eine Markierung des Worts zu ermöglichen. (Nummerierung der Definitionen: <code><![CDATA[xml:id="d_001"]]></code>) </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <code><![CDATA[@commentary]]></code>
+                            </cell>
+                            <cell>
+                                <label>Commentary</label> (Einzelstellenkommentar): Erläuterungen von Sachverhalten, die aus dem Edierten Text selbst nicht unmittelbar verständlich sind, werden in einer <code><![CDATA[<note/>]]></code> vorgenommen. Darin können auch Verweise auf weitere Texte oder Dokumente erfolgen, die sich unmittelbar auf die genannte Stelle beziehen und deren Verständnis befördern. Innerhalb des elektronischen Mediums sollten solche Referenztexte nie ausführlicher zitiert, sondern stets nur durch Verweise auf den Volltext oder auf ausführlichere Zitate eingebunden werden. Viele Aufgaben des früheren Einzelstellenkommentars (z.B. die Auflösung verdeckter Namen, von Kose- oder Scherznamen, von Pseudonymen, Verweisen auf Werke oder Rollenangaben, Hinweise auf Zeitungsartikel oder andere Schriftstücke) können nun allerdings durch eine direkte inhaltliche Auszeichnung des Textes entfallen (siehe die folgenden Abschnitte). (Nummerierung der Anmerkungen als: <code><![CDATA[xml:id="c_001"]]></code>) </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <code><![CDATA[@thematicCom]]></code>
+                            </cell>
+                            <cell>
+                                <label>thematic Commentary</label> (Themenkommentar): Die das Einzelschriftstück übergreifenden Themenkommentare, die auch aus umfangreicheren Texten bestehen können, werden ausgelagert (z.B. in die Biographie Webers oder in andere thematische Zusammenhänge) und erhalten daher im Brieftext lediglich eine Verweisung (Näheres hierzu vgl. Themenkommentare; Nummerierung als: <code><![CDATA[xml:id="thC_001"]]></code>).</cell>
+                        </row>
+                    </table>
+                    <p>Soweit möglich, werden die Inhalte jedoch direkt durch entsprechende Elemente (ggf. mit spezifizierenden Attributen) ausgezeichnet (vgl. folgende Abschnitte).</p>
+                </div>
+                <div>
+                    <head>Auszeichnung von erwähnten Personen (Eigennamen und referierende Phrasen)</head>
+                    <p>Im Text auftretende/erwähnte Personen sind entweder direkt bei ihrem Namen genannt oder aber indirekt durch (kontextabhängige) Bezeichner kenntlich. Im ersten Fall werden sie durch das Element <code><![CDATA[<persName/>]]></code> ausgezeichnet, im zweiten Fall mit Hilfe des allgemeineren Verweis-Elements <code><![CDATA[<rs/>]]></code> ("referencing string"), wobei im Attribut durch <code><![CDATA[@type]]></code> die Art des Ziels näher bezeichnet wird: <code><![CDATA[<rs type="person"/>]]></code>. Mehrere Personen, die unter einem Bezeichner subsumiert werden (hierzu gehören auch Familiennamen!), werden mit <code><![CDATA[<rs type="persons"/>]]></code> (Plural!) ausgezeichnet.</p>
+                    <p>Unabhängig von dieser grundsätzlichen Verfahrensweise kann bei sicherer Identifizierung der Person durch ein <code><![CDATA[@key]]></code>-Attribut innerhalb des tags auf eine standardisierte Verzeichnisnummer für diese Person (PND bzw. GND o.ä.) verwiesen werden. Im Rahmen der WeGA ist hier eine eigene Identifikationsnummer vergeben, die sich aus dem bereits vorhandenen Datenpool ermitteln läßt (oder sonst neu vergeben wird). Dieser Datenpool geht auf eine Initiative innerhalb der Fachgruppe Freie Forschungsinstitute in der Gesellschaft für Musikforschung zurück und wurde von der WeGA in den vergangenen Jahren weiter ausgebaut. Die PND ist dabei in diese separat abgelegten Daten zu den jeweiligen Personen integriert. Beispiele für die Auszeichnung in dieser Form sind:</p>
+                    <eg><![CDATA[
+        <persName key="A000946">Jungh</persName> hätte wohl recht ... [Eigenname, nur Nachname]
+            der guten <persName key="A000947">Fanny</persName>, [Eigenname, nur Vorname]
+            ... in die Arme meiner geliebten <persName key="A000213">Lina</persName> werde … [Abgekürzter Eigenname]
+            Mein vielgeliebtes <rs type="person" key="A000213">MukenVies</rs> [Kosename, ohne Bezug zum Eigennamen]
+            ... daß die <rs type="person" key="A000214">Mutter</rs> sich gutwillig anläßt, [kontextabhängiger Bezeichner]
+            Von <rs type="persons" key="A000692 A000691">Grünbaums</rs> habe ich noch immer keine Antwort, [Ehepaar, d.h. beide mit @key bezeichneten Personen]
+          ... wenn mein <rs type="person" key="A000537">König</rs> mich einmal kennt ... [Amts- bzw. Funktionsbezeichnung] aber:
+         <persName>Friedrich August I., König von Sachsen</persName> [Eigenname mit Amts- bzw. Funktionsbezeichnung]
+          ]]></eg>
+                </div>
+                <div>
+                    <head>Auszeichnung erwähnter Werke (Kompositionen, Bühnenwerke usw.)</head>
+                    <p>Werke, die direkt bei ihrem Namen genannt oder auch indirekt bezeichnet sind, werden wie Personen entweder durch das Element <code><![CDATA[<workName/>]]></code> oder das Verweisungs-Element <code><![CDATA[<rs/>]]></code> bezeichnet. Im letzteren Fall wird als Attribut angegeben: <code><![CDATA[@type="work"]]></code> (bzw. im Plural "works"). Soweit bereits Identifikationsnummern für die Werke vergeben sind, werden diese durch den entsprechenden <code><![CDATA[@key]]></code> bezeichnet. Alle zusätzlichen Angaben (Autor, genauer Titel usw.) können damit entfallen, da die Werkdaten an anderer, zentraler Stelle abgelegt sind. Beispiele:</p>
+                    <eg><![CDATA[
+        ... der <workName key="A020040">Freischütz</workName> ging bei uns über die Bühne ...
+        ... seine <rs type="work" key="A020040">Oper</rs> wird demnächst gegeben ... 
+        ... die <rs type="works" key="A020036 A020038">beiden frühen Opern</rs> sind verkauft ... ]]></eg>
+                </div>
+                <div>
+                    <head>Auszeichnung erwähnter Rollen</head>
+                    <p>Erwähnte Rollen in Bühnenwerken werden durch das Element <code><![CDATA[<characterName/>]]></code> bezeichnet. Die Identifizierung erfolgt, soweit schon möglich, mit Hilfe des <code><![CDATA[@key]]></code>-Attributs.</p>
+                    <eg><![CDATA[ 
+          ... der <characterName>Hanswurst</characterName> taucht wieder auf ...
+          ... dann ging <characterName key="xxxxx">Faust</characterName> mit <characterName>Gretchen</characterName> weg ...
+          ]]></eg>
+                </div>
+                <div>
+                    <head>Auszeichnung von Ortsnamen und Ortsbezeichnungen (auch Theater usw.)</head>
+                    <p>Für die Kennzeichnung von Ortsangaben stehen zwei eineinander schachtelbare Elemente zur Verfügung: <code><![CDATA[<placeName/>]]></code> als das allgemeinere bezeichnet jegliche Ortsangabe (also auch ein Konzerthaus, ein Theater, ein Hotel o.ä.), der eigentliche Name des Ortes, in dem dieses Lokalität liegt, wird mit dem Element <code><![CDATA[<settlement/>]]></code> bezeichnet (innerhalb des <code><![CDATA[<placeName/>]]></code> kann aber außer dem Element <code><![CDATA[<settlement/>]]></code> auch die Angabe einer Region, eines Distrikts, eines Landes o.a. aufgenommen werden). Um ein späteres Präzisieren von Angaben zu ermöglichen, sollte für Städtenamen die Schachtelung von "placeNamen" und "settlement" übernommen werden. Beispiel:</p>
+                    <eg><![CDATA[ 
+        ... die Stadt <placeName><settlement>Cöln</settlement></placeName> lag stets am Rhein ...
+        ... der <placeName>kleine Veitsdom in <settlement>Pusemuckel</settlement></placeName> gefällt mir ...
+        ... Weber spielt heute im <placeName>Linckeschen Bad</placeName> ein Klavierkonzert ...
+          ]]></eg>
+                    <p>Sofern Namensangaben nicht den heutigen entsprechen, kann die heute übliche Form innerhalb eines <code><![CDATA[<choice/>]]></code>-Elements neben der (Original)-Schreibweise (<code><![CDATA[<orig/>]]></code>) als <code><![CDATA[<corr/>]]></code> angegeben werden; in der Regel werden aber nicht eindeutige Ortsnamen einfacher über einen <code><![CDATA[@key]]></code>-Attribut mit Verweis auf die GND aufgelöst.
+        </p>
+                </div>
+                <div>
+                    <head>Auszeichnung erwähnter anderer Texte (Briefe, Schriften, Tagebücher, Pressetexte usw.)</head>
+                    <p>In einem Schreiben erwähnte Fremdtexte (andere Briefe, Schriften des Autors, Tagebücher, Werkrezensionen, Aufführungsbesprechungen usw.) können, sofern keine zusätzliche Erläuterung notwendig ist und der Text innerhalb der Datenbank oder an einem sonst zugänglichen Ort mit fester URI zugänglich ist, ebenfalls durch einen bloßen Verweis referenziert werden. Dabei sollte stets das Element <code><![CDATA[<rs/>]]></code> (referencing string) verwendet werden und die Art des referenzierten Dokuments als <code><![CDATA[@type]]></code> angegeben werden. Gegenwärtig stehen hierfür folgende Attributwerte zur Verfügung: "letter", "letters", "diaryDay", "diaryDays", "writing", "writings" (neben den in anderem Kontext stehenden Angaben zu "person(s)" und "work(s)"). Das Dokument selbst wird dann innerhalb des  <code><![CDATA[@key]]></code>-Attributs identifiziert. (Im Falle der Angabe einer außerhalb der WeGA zugänglichen Quelle ist jedoch auf die Urheberrechte zu achten!)</p>
+                    <eg><![CDATA[ 
+          ... dein <rs type="letter" key="A041003">Brief von Anfang Januar</rs> kam heute an ...
+          ... meine <rs type="writings" key="A021004 A021009">Aufsätze</rs> wirst Du erhalten haben ...
+          ]]></eg>
+                </div>
+            </div>
+      
+<!-- ...................................... Großteil Metadaten ............................................................... -->      
+      
+<!-- VORSICHT PETER: In meinem Ausdruck hat er mir hier wieder den Teil "Strukturelle Merkmale der Texte hinplatziert! als Doppelung!! -->
+            <div xml:lang="de">
+                <head type="main">Die Metadaten der Texte (Apparatteil)</head>
+                <p>In den <bibl>
+                        <hi rend="italic">Richtlinien-Empfehlungen zur Edition von Musikerbriefen, Mainz 1997</hi>
+                    </bibl> waren als Bestandteile des Apparats neben Angaben zur Textkonstituierung und den Erläuterungen folgende Informationen aufgelistet: 1. Kopfleiste, 2. Überlieferung (Original, Autographenbeschreibung, Abschrift, Druck), 3. Datierung, 4. Adressat, 5. Korrespondenzstelle. In einer digitalen Edition sind all diese Informationen (auch im Falle anderer Textsorten) Bestandteil der sogenannten Metadaten, die innerhalb einer Codierung nach TEI P5 den ersten Teil einer Datei bilden, der mit dem übergreifenden Element <code><![CDATA[<teiHeader/>]]></code> (im Gegensatz zum nachfolgenden <code><![CDATA[<text/>]]></code>) bezeichnet ist. Da für die Metadaten in TEI eine Grobgliederung vorgegeben ist, finden sich die genannten Angaben in unterschiedlichen Abschnitten dieses sog. "Headers". Im Folgenden wird zunächst ein Überblick über die Grobstruktur des Metadatenbereichs gegeben, um anschließend die notwendigen Angaben in einer nach inhaltlichen Gesichtspunkten geordneten und diesen Teilen zugeordneten Form zu beschreiben. Eine detaillierte Beschreibung der textsortenspezifisch verwendeten Einzelelemente und Attribute erfolgt an anderer Stelle bzw. ist der Dokumentation der TEI-Richtlinien nachvollziebar.</p>
+                <div>
+                    <head>Die Grobgliederung des Metadatenteils (<code><![CDATA[<teiHeader/>]]></code>)</head>
+                    <p>Der <code><![CDATA[<teiHeader/>]]></code> ist in vier große Bereiche unterteilt:</p>
+                    <table>
+                        <row>
+                            <cell>
+                                <code><![CDATA[<fileDesc/>]]></code>
+                            </cell>
+                            <cell>file Description: Die genaue inhaltliche Beschreibung des vorliegenden Datensatzes (Titelei, Zugänglichkeit, Quellen usw.)</cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <code><![CDATA[<encodingDesc/>]]></code>
+                            </cell>
+                            <cell>encoding Description: Informationen zur Einrichtung des vorliegenden Datensatzes als digitalem Dokument (Projektbeschreibung)</cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <code><![CDATA[<profileDesc/>]]></code>
+                            </cell>
+                            <cell>profile Description: Angaben zum (historischen) "Profil" des Textes (Entstehung, Datierung, Textsorte, Sprache usw.)</cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <code><![CDATA[<revisionDesc/>]]></code>
+                            </cell>
+                            <cell>revision Description: Angaben zu Überarbeitung des vorliegenden Datensatzes (Dokumentation der Änderungen)</cell>
+                        </row>
+                    </table>
+                    <p>Viele der in diesem Bereich notwendigen Angaben zum elektronischen Dokument beziehen sich in einer Edition auf alle integrierten Texte und sind lediglich redundant (und damit kopierbar) in allen Einzeldokumenten abgelegt. Hier sind unterschiedliche Formen der Informationsvergabe möglich; die vorliegenden Richtlinien beziehen sich ausschließlich auf die in der WeGA praktizierten Verfahren.</p>
+                    <p>Die Mehrzahl der Informationen aus dem traditionellen Kritischen Apparat finden Eingang in die Teile <code><![CDATA[<fileDesc/>]]></code> und <code><![CDATA[<profileDesc/>]]></code>.</p>
+                </div>
+                <div>
+                    <head>Die Kopfleiste eines Briefes/Textes (<code><![CDATA[<titleStmt/>]]></code>)</head>
+                    <p>Das erste Element innerhalb der <code><![CDATA[<profileDesc/>]]></code> ist das sogenannte "titleStatement" (<code><![CDATA[<titleStmt/>]]></code>). In diesem Container-Element können verschiedene <code><![CDATA[<title/>]]></code> für das einzelne elektronische Dokument untergebracht werden, wobei diese, vom Herausgeber standardisierten Titel durch ein <code><![CDATA[@level]]></code>-Attribut näher charakterisiert werden können. In der Regel wird hier zunächst der Reihentitel (<code><![CDATA[<title level="s">WeGA, Briefe, Digitale Edition</title>]]></code>) angegeben (<code><![CDATA[level="s"]]></code> steht für "series"). Diesem folgt der Titel des einzelnen Dokuments (<code><![CDATA[level="a"]]></code>, "analytic title" zur Bezeichnung aller einzelnen Briefe, Artikel usw.). Die WeGA übernimmt hier die alte Form der <label>Kopfleiste</label> eines Briefes, allerdings ohne eine Nummerierung (im nachfolgenden Beispiel bezieht sich die Angabe "Nr. 16" am Ende auf eine interne Nummerierung der Briefpartner). Dabei folgen die Angaben in den Details den Vorgaben der <bibl>Richtlinien-Empfehlungen zur Edition von Musikerbriefen, Mainz 1997, S. 8-10</bibl>. Für das elektronische Dokument werden zusätzlich der (oder die Autoren) des Textes und deren Editor(en) mit separaten Elementen angegeben, wie im Beispiel ersichtlich:</p>
+                    <eg>
+            <![CDATA[<titleStmt>]]>
+              <![CDATA[<title level="s">]]>WeGA, Briefe, Digitale Edition<![CDATA[</title>]]>
+              <![CDATA[<title level="a">]]>Carl Maria von Weber an Caroline Brandt in Prag<![CDATA[<lb/>]]>
+              Berlin, Sonntag, 5. Januar bis Dienstag, 7. Januar 1817 (Nr. 16)code&gt;<![CDATA[</title>]]>
+              <![CDATA[<author key="A002068">]]>Weber, Carl Maria von<![CDATA[</author>]]>
+              <![CDATA[<editor>]]>Bartlitz, Eveline<![CDATA[</editor>]]>
+            <![CDATA[</titleStmt>]]></eg>
+                    <p>Da das Einzeldokument Bestandteil der WeGA ist, kann innerhalb des <code><![CDATA[<titleStmt/>]]></code> auch eine Angabe zum Projektförderer erfolgen. Dies geschieht durch ein Element <code><![CDATA[<funder/>]]></code> (zu den Details vgl. Stichwortregister).</p>
+                </div>
+                <div>
+                    <head>Angaben zur Überlieferung des Textes (<code><![CDATA[<sourceDesc/>]]></code>)</head>
+                    <p>Die Rubrik <code><![CDATA[<sourceDesc/>]]></code>, die in der Regel am Ende der <code><![CDATA[<fileDesc/>]]></code> eingeordnet ist, enthält alle Angaben zu Herkunft und Überlieferung der für die Edition verwendeten Textvorlagen (Textzeugen). Dabei ist grundsätzlich zwischen <label>Manuskripten</label> und <label>gedruckten Vorlagen</label> zu unterscheiden.</p>
+                    <div>
+                        <head>Sonderbereich: Briefspezifische Informationen (<code><![CDATA[<correspDesc/>]]></code>)</head>
+                        <p>Für die Wiedergabe von Briefen fehlen in TEI P5 bislang korrespondenzspezifische Elemente (wie Briefempfänger, Briefort usw.). Hierfür wurde ein eigenes Element <code><![CDATA[<correspDesc/>]]></code> ("<label>correspondence Description</label>") eingeführt, in dem zu Beginn der eigentlichen Quellenbeschreibung(en) die grundsätzlichen Informationen zu Briefschreiber, Briefort, Adressat und dessen Wohnort, ein Briefincipit, die Datierung des Briefes und die Korrespondenzstelle (vorausgehender und folgender Brief an den gleichen Adressaten) verzeichnet werden. Die Angabe dieser Informationen ist durch jeweils eigene Elemente möglich:</p>
+                        <table>
+                            <row>
+                                <cell>
+                                    <code><![CDATA[<sender/>]]></code>
+                                </cell>
+                                <cell>Briefschreiber (auch mehrere); der oder die Schreiber werden mit dem <code><![CDATA[<persName/>]]></code>-Element verzeichnet.</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <code><![CDATA[<addressee/>]]></code>
+                                </cell>
+                                <cell>Adressat(en) des Briefes; ebenfalls innerhalb eines <code><![CDATA[<persName/>]]></code>-Elements anzugeben.</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <code><![CDATA[<placeSender/>]]></code>
+                                </cell>
+                                <cell>Absendeort (bzw. Schreibort) des Briefes; er wird innerhalb eines geschachtelten <code><![CDATA[<placeName><settlement/></placeName>]]></code>-Elementpaars angegeben.</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <code><![CDATA[<placeAddressee/>]]></code>
+                                </cell>
+                                <cell>Wohnort des Adressaten (Empfangsort) des Briefes; ebenfalls mit dem gleichen Doppelpaar <code><![CDATA[<placeName/><settlement/>]]></code> anzugeben.</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <code><![CDATA[<dateSender/>]]></code>
+                                </cell>
+                                <cell>Datierung; mit einem Element <code><![CDATA[<date/>]]></code> und den dort vorhandenen Möglichkeiten können Einzeltage oder Zeitspannen, aber auch unsichere Datierungen bezeichnet werden (zu den Möglichkeiten vgl. die Erläuterungen zum Element <code><![CDATA[<date/>]]></code>). Sofern zusätzliche Informationen zur Frage der Datierung notwendig sind, können sie in einer Anmerkung (<code><![CDATA[<note/>]]></code>) erscheinen.</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <code><![CDATA[<incipit/>]]></code>
+                                </cell>
+                                <cell>In dieses Element wird ein sinnvoll eingegrenztes Incipit des Brieftextes eingetragen, das als Identifizierungshilfe dienen kann.</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <code><![CDATA[<context/>]]></code>
+                                </cell>
+                                <cell>Unter dem Begriff "Kontext" erscheinen – wenn möglich – Angaben zur Korrespondenzstelle. Mit Hilfe eines <code><![CDATA[<ref/>]]></code> (referencing string) wird dabei einerseits auf den nächsten bzw. den vorausgehenden Brief hingewiesen und die Identifikationsnummer des Briefes als Ziel (<code><![CDATA[@target]]></code>) eingetragen.</cell>
+                            </row>
+                        </table>
+                        <p>Ein typischer Eintrag sieht demnach wie folgt aus:</p>
+                        <eg>
+            <![CDATA[
+            <correspDesc>
+              <sender>
+                <persName key="A002068">Weber, Carl Maria von</persName>
+              </sender>
+              <addressee>
+                <persName key="A000213">Weber, Caroline</persName>
+              </addressee>
+                <placeSender>
+                   <placeName>Berlin</placeName>
+                </placeSender>
+                <placeAddressee>
+                   <placeName>Prag</placeName>
+                </placeAddressee>
+                <dateSender>
+                   <date from="1817-01-05" to="1817-01-07" n="01">5. bis 7. Januar 1817</date>
+                </dateSender>
+                <incipit>Nachdem ich mich Gestern bei Reks lange aufgehalten</incipit>
+                <context>
+                   <ref type="previous" target="A041020">1817-01-01</ref>
+                   <ref type="next" target="A041025">1817-02-05</ref>
+                 </context>
+                </correspDesc>
+            ]]></eg>
+           <!-- ACHTUNG: bei previous und next scheint noch etwas unklar!!! -->
+                        <p>Ausdrücklich hingewiesen sei auf die abweichende <label>Handhabung undatierter Briefe</label>. Da die Notwendigkeit einer festen Einordung durch eine Briefnummer im elektronischen Medium entfällt, werden andererseits die Angaben zur <label>Datierung</label> innerhalb des Elements <code><![CDATA[<date/>]]></code> so präzise wie möglich gefasst, um die Zuordnung des Briefes zu erleichtern. Dafür steht ein weiteres Spektrum von Attributen zur Verfügung, die teils miteinander kombinierbar sind:</p>
+                        <table>
+                            <row>
+                                <cell>
+                                    <code><![CDATA[@when>]]></code>
+                                </cell>
+                                <cell>(Angabe des präzisen Datums: when="1817-04-31")</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <code><![CDATA[@notBefore>]]></code>
+                                </cell>
+                                <cell> ("nicht vor", mit freien Kombinationen: notBefore="1817-12")</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <code><![CDATA[@notAfter>]]></code>
+                                </cell>
+                                <cell> ("nicht nach", ebenso kombinierbar: notAfter="1817")</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <code><![CDATA[@notBefore @notAfter>]]></code>
+                                </cell>
+                                <cell>(Kombination, z.B. "im Mai 1817" notBefore="1817-05-01" notAfter="1817-05-31")</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <code><![CDATA[@from @to]]></code>
+                                </cell>
+                                <cell>("von ... bis", z.B. from="1817" to="1818-02-25")</cell>
+                            </row>
+                        </table>
+                        <p>Zu weiteren Details vgl. die Beschreibungen in den Guidelines von TEI P5.</p>
+                    </div>
+                    <div>
+                        <head>Angaben bei handschriftlicher Überlieferung</head>
+                        <p>Alle Angaben zu den für die Edition verwendeten Handschriften sind in ein rahmendes <code><![CDATA[<msDesc/>]]></code>-Element (manuscript Description) eingebettet. Sofern dieses Element nicht durch ein Attribut näher erläutert wird, handelt es sich um das Originaldokument (z.B. den originalen, meist autographen Brief). Handelt es sich um andere Quellen, wird dies mit einem Attribut <code><![CDATA[@rend]]></code> näher bezeichnet. Folgende Zusätze sind dabei bislang vorgesehen:</p>
+                        <table>
+                            <row>
+                                <cell>
+                                    <code><![CDATA[rend="draft"]]></code>
+                                </cell>
+                                <cell>originaler (autographer) Entwurf</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <code><![CDATA[rend="copy"]]></code>
+                                </cell>
+                                <cell>(Fremd-)Kopie</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <code><![CDATA[rend="autograph_copy"]]></code>
+                                </cell>
+                                <cell>eigenhändige Abschrift des Autors</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <code><![CDATA[rend="authorized_copy"]]></code>
+                                </cell>
+                                <cell>in (Webers) Auftrag angefertigte Kopie</cell>
+                            </row>
+                        </table>
+                        <p>Die <label>Beschreibung der Quelle</label> selbst besteht dann aus grundsätzlichen Angaben zur Identifizierung der Quelle (Aufbewahrungsort, Signatur usw.), die im <code><![CDATA[<msIdentifier/>]]></code> untergebracht werden, ferner aus Angaben zum physischen Zustand der Quelle (<code><![CDATA[<physDesc/>]]></code>) sowie ggf. Hinweisen zur Überlieferung (<code><![CDATA[<history/>]]></code> oder zusätzlichen Informationen (<code><![CDATA[<additional/>]]></code>).</p>
+                        <p>Eine knappe, nur aus den Besitznachweisen und der Handschriftenbeschreibung bestehende Quellenangabe ist demnach wie folgt aufgebaut:</p>
+                        <eg>
+            <![CDATA[
+            <msDesc>
+              <msIdentifier>
+                <country>D</country>
+                <settlement>Berlin</settlement>
+                 <repository n="D-B">Staatsbibliothek zu Berlin – Preußischer Kulturbesitz</repository>
+                <idno>N. Mus. Nachl. 97, A/157</idno>
+              </msIdentifier>
+              <physDesc>
+                 <p>1 Bl. (2 b. S. einschl. Adr.)</p>
+                 <p>Siegelrest u. -loch</p>
+                 <p>PSt: R. 4. MÜNCHEN. 5 NOV. 1811</p>
+                 <p>Beilage: drei Haarlocken, zwei davon angeblich von Caroline Brandt</p>
+                 <p>durchgängig in lateinischer Schrift</p>
+              </physDesc>              
+            </msDesc>]]></eg>
+                        <p>
+                            <label>Besitznachweis</label>: Die Angaben zum Besitzland ("country"), dem Ort ("settlement"), der Sammlung ("repository") und der Signatur ("idno") verstehen sich dabei von selbst. Innerhalb des <code><![CDATA[<repository/>]]></code> wird unter dem Attribut <code><![CDATA[@n]]></code>, sofern vorhanden, die RISM-Sigle (n="D-B") mit angegeben. (Diese Angabe unterstützt die automatisierte Erfassung bestimmter Bestände in einer Edition.)
+            </p>
+                        <p>
+                            <label>Beschreibung</label>: Unter der <code><![CDATA[<physDesc/>]]></code> werden die einzelnen Informationen ohne weitere Formalisierung als Abschnitte angegeben, hier in der ersten Zeile die durch Kürzel ausgedrückte Angabe: 1 Blatt (2 beschriebene Seiten einschließlich Adresse), in der 3. Zeile der Vermerk eines Poststempels (PSt). Auch weitere Informationen, etwa zu Fremdeinträgen im Manuskript, Postvermerken, zu besonderen Beschädigungen oder andere Angaben zur Handschrift haben hier ihren Platz. Für die Kurzbeschreibung werden folgende Kürzel verwendet:</p>
+                        <table>
+                            <row>
+                                <cell>Bl., DBl.</cell>
+                                <cell>Blatt, Doppelblatt</cell>
+                            </row>
+                            <row>
+                                <cell>b.S.</cell>
+                                <cell>beschriebene Seiten</cell>
+                            </row>
+                            <row>
+                                <cell>einschl. Adr.</cell>
+                                <cell>einschließlich Adresse (ohne diese Angabe ist von einem Fehlen der Adresse auszugehen)</cell>
+                            </row>
+                            <row>
+                                <cell>1 Bl. (2 b.S.) u. Umschlag m. Adr.</cell>
+                                <cell>1 Blatt (2 beschriebene Seiten) und Umschlag mit Adresse (sofern sich die Adresse auf einem separaten Umschlag befindet, wird dies außerhalb der Klammer angegeben und bei den beschriebenen Seiten nicht mitgezählt.</cell>
+                            </row>
+                        </table>
+                        <p>Sollen zusätzlich <label>Angaben zur Provenienz</label> einer Handschrift erfolgen, geschieht dies innerhalb eines eigenen, der <code><![CDATA[<physDesc/>]]></code> folgenden Elements <code><![CDATA[<history/>]]></code>, innerhalb dessen die Unterelemente <code><![CDATA[<provenance/>]]></code>, <code><![CDATA[<origin/>]]></code> oder <code><![CDATA[<aquisition/>]]></code> möglich sind, die den entsprechenden Text aufnehmen.</p>
+                        <p>Soweit <label>Nachweise aus Auktionskatalogen</label> aufgenommen werden sollen, haben auch diese ihren Ort innerhalb des Containers <code><![CDATA[<history/>]]></code> im Element <code><![CDATA[<provenance/>]]></code>. Beispiel:</p>
+                        <eg>
+              <![CDATA[
+              <provenance>Antiquariat Ausverkauf, Kat. 29 (3. Juli 1997), Nr. 12</provenance>
+              <provenance>Hehler & Co, Auktion 24 (24. Mai 2001), Nr. 24 (mit Faks.)</provenance>
+              ]]></eg>
+                        <p>Sofern umfangreiche Katalognachweise vorliegen, können die Provenienzen durch die Vergabe einer laufenden Nummer (Attribut <code><![CDATA[@n]]></code>) oder durch ein integriertes Datums-Element <code><![CDATA[<date/>]]></code> geordnet werden.</p>
+                        <p>Schließlich können Angaben zum <label>Erstdruck</label> oder sonstigen früheren <label>Veröffentlichungen</label> einer Briefes (oder einer anderen Quelle) vor dem schließenden <code><![CDATA[</msDesc/>]]></code> in einem Element <code><![CDATA[<additional/>]]></code> untergebracht werden. (Dies gilt jedoch nur, wenn diese Drucke nicht als Zeuge/Quelle für den Edierten Text dienen!) Dabei sind die bibliographischen Daten in einem Container <code><![CDATA[<listBibl/>]]></code> als einfache <code><![CDATA[<bibl/>]]></code>-Elemente aufgenommen. Eine differenzierte Aufnahme der Titel nach TEI P5 ist möglich, da hier aber ohnehin häufig Literaturkürzel verwendet werden, nicht notwendig. Die Kurzform einer möglichen Bezeichnung wäre z.B.: </p>
+                        <eg>
+              <![CDATA[
+               <additional>
+                  <listBibl>
+                      <bibl n="firstPrint">Muks, S. 309-315 (Nr. 57)</bibl>
+                      <bibl n="reprint">Stadler, Peter, "Ein ausgewählter Brief", in: Peters Rundschau 12, Nr. 22 (4. Mai 2011), S. 12</bibl>
+                   </listBibl>
+               </additional>
+              ]]></eg>
+                        <p>Sofern <label>Faksimiles</label> nicht als Ersatzquelle dienen, aber nachgewiesen werden sollen, können diese ebenfalls hier unter <code><![CDATA[<additional/>]]></code> verzeichnet werden. Als Wert der bibliographischen Angabe ist dann n="facsimile" einzusetzen.</p>
+                    </div>
+                    <div>
+                        <head>Angaben bei Überlieferung in gedruckter Form <code><![CDATA[<msDesc/>]]></code>
+                        </head>
+                        <p>Sofern keine handschriftliche Überlieferung vorliegt und Drucke als Ersatz für verlorene Originale eintreten müssen, werden diese innerhalb der <code><![CDATA[<sourceDesc/>]]></code> in einem Container-Element <code><![CDATA[<biblStruct/>]]></code> (structured bibliographic citation) beschrieben. Die strukturierte bibliographische Angabe ist dabei für die WeGA auf die notwendigsten Angaben reduziert und enthält folgende Elemente: <code><![CDATA[<monogr/>]]></code> (Monographie), <code><![CDATA[<author/>]]></code> (Autor), <code><![CDATA[<title/>]]></code> (Titel, ggf. durch <code><![CDATA[@type]]></code> um einen Untertitel erweitert) sowie Angaben zum Druck (<code><![CDATA[<imprint/>]]></code>), bestehend aus den Elementen <code><![CDATA[<pubPlace/>]]></code> (Publikationsort), <code><![CDATA[<publisher/>]]></code> (Verlag) und <code><![CDATA[<date/>]]></code> (Datum). Zusätzlich wird jeweils die als Grundschrift verwendete Type (Fraktur, Antiqua) innerhalb einer <code><![CDATA[<note type="fontUsage"/>]]></code> angegeben. Beispiel:</p>
+                        <eg>
+             <![CDATA[
+             <sourceDesc>
+                <biblStruct xml:lang="de">
+                  <monogr>
+                     <author>Dagmar Stadlitz</author>
+                     <title level="m">Editionsrichtlinien leicht gemacht</title>
+                     <title type="sub">Eine Anleitung für angehende Editoren</title>
+                     <imprint>
+                      <pubPlace>Berlin und Detmold</pubPlace>
+                      <publisher>S. Öde &amp; Co.</publisher>
+                      <date when="2011">2011</date>
+                      <note type="fontUsage">Gothic</note>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+            </sourceDesc>
+             ]]></eg>
+                        <p>Zu detaillierteren Beschreibungen der Möglichkeiten bibliographischer Angaben vgl. die Richtlinien der TEI P5.
+            </p>
+                    </div>
+                    <div>
+                        <head>Die Dokumentation mehrerer/verlorener Zeugen/Quellen für einen Text <code><![CDATA[<listWit/>]]></code>
+                        </head>
+                        <p>Sofern sich die Wiedergabe des Edierten Texten nicht auf einen Zeugen allein stützen kann, sondern mehrere herangezogen werden müssen, erfordert dies die Anlage einer <label>Quellenliste</label>; diese "Liste der Zeugen" <code><![CDATA[<listWit/>]]></code> (list of wits) enthält einzelne Elemente, die als <code><![CDATA[<witness/>]]></code> (Zeugen/Quellen) bezeichnet und mit Hilfe des Attributs <code><![CDATA[@n]]></code> durchnummeriert sind (dabei sollte die Zählung möglichst die Bewertung der Quellen spiegeln). Drucke, die als Zeugen herangezogen werden, erscheinen innerhalb dieses <code><![CDATA[<listWit/>]]></code>-Containers als <code><![CDATA[<biblStruct/>]]></code> (vgl. vorangehender Abschnitt). Nicht verfügbare Quellen, die aber existier(t)en, sollten beschrieben und in der Quellenangabe entweder als "nicht zugänglich": <code><![CDATA[<witness rend="non-accessible"/>]]></code> oder als "verloren": <code><![CDATA[<witness rend="lost"/>]]></code> bezeichnet werden. (Unter Provenienz kann dann z.B. angegeben werden "seit dem 2. Weltkrieg verschollen" o.ä.)</p>
+                        <p>Quellen im <label>Privatbesitz</label> sollten unter der Angabe <code><![CDATA[<repository/>]]></code> den Eintrag "Privatbesitz" bzw. ggf. "nicht zugänglich (Privatbesitz)" erhalten.</p>
+                        <p>Beispiel für die Grobstruktur bei Vorliegen mehrerer Zeugen (vgl. z.B. Brief A041017):</p>
+                        <eg>
+              <![CDATA[
+             <listWit>
+                 <witness n="1" xml:id="fragment1">
+                   <msDesc> ... </msDesc>
+                 </witness>
+                 <witness n="2" xml:id="fragment2">
+                   <msDesc> ... </msDesc>
+                 </witness>
+                 <witness n="3" xml:id="fragment4">
+                   <biblStruct> ... <biblStruct>
+                 </witness>
+              </listWit>
+              ]]></eg>
+                    </div>
+                </div>
+                <div>
+                    <head>Die Dokumentation der Zusammensetzung einer Textwiedergabe auf der Grundlage mehrerer fragmentarischer Zeugen</head>
+                    <p>Die vorstehend beschriebene Auflistung mehrerer Zeugen innerhalb einer Liste ist die Voraussetzung, um Texte, die nur noch in Teilen nach dem inzwischen fragmentierten Original, in anderern aber nach erhaltenen kompletten Abschriften oder Veröffentlichungen wiedergegeben werden können, in ihrer Zusammensetzung genau zu kennzeichnen. Da alle Zeugen in der obigen Liste mit einer eindeutigen Identifikationsnummer (xml:id) versehen sind, können sich Markierungen im Text auf diese Stellen beziehen.</p>
+                    <p>Hierzu wird im Text zunächst ein <code><![CDATA[<anchor/>]]></code> (Anker-Element) am Ende der einzugrenzenden Stelle eingefügt und dieser mit einer <code><![CDATA[@xml:id]]></code> versehen. Danach wird an den Beginn des entsprechenden Abschnitts ein Element <code><![CDATA[<milestone/>]]></code> (Meilenstein) gesetzt, das mit den Attributwerten <code><![CDATA[@xml:id]]></code>, <code><![CDATA[@unit]]></code> und <code><![CDATA[@spanTo]]></code> versehen wird. Dabei kann die Einheit neutral als "section" angegeben werden und mit dem Verweiselement "spanTo" wird auf die xml:id des Ankers verwiesen. Wenn nun zusätzlich mit einem Attribut <code><![CDATA[@corresp]]></code> (corresponds) auf die xml:id des zuzuordnenden Zeugen verwiesen wird, ist die Herkunft dieses Abschnitts klar bezeichnet. Dennoch empfiehlt es sich unter der Rubrik <code><![CDATA[<encodingDes/>]]></code> entsprechende verbale Hinweise auf die Zusammensetzung des Edierten Textes auf der Grundlage unterschiedlicher Quellenfragmente hinzuweisen. Eine solche Stelle wäre im Text etwa wie folgt bezeichnet:</p>
+                    <eg>
+            <![CDATA[
+            .... gleich <milestone xml:id="f120" unit="section" spanTo="#f121" corresp="#fragment1"/> hier fehlte dem schönen Brief 
+            ein Stück Text, aber ab <anchor xml:id="f121"/> hier war er wieder da ...
+            ]]></eg>
+                </div>
+                <div>
+                    <head>Angaben zur Einrichtung des Textes in der vorliegenden elektronischen Form <code><![CDATA[<encodingDesc/>]]></code>
+                    </head>
+                    <p>Zu den allgemeinen Beschreibungen der Art der Codierung des vorliegenden Textes gehören einerseits Angaben zur elektronischen Textsammlung in einer <code><![CDATA[<projectDesc/>]]></code> (Projektbeschreibung) sowie Erläuterungen der Editionsprinzipien in einer <code><![CDATA[<editorialDecl/>]]></code> (editorial Declaration). Für die WeGA sind diese Angaben so schlank wie möglich gehalten. Da es sich um Standardinformationen handelt, die jedes Dokument einer Serie (etwa der <hi rend="italic">Sämtlichen Briefe</hi>) betreffen, lassen sich die rudimentären Angaben leicht auch automatisiert durch ausführlichere Hinweise ersetzen. Es kann aus der <code><![CDATA[<editorialDecl/>]]></code> auch direkt auf die vorliegenden bzw. andere elektronisch veröffentlichte Richtlinien verwiesen werden. Ferner können hier spezielle Informationen zur Codierung des Einzelelements abgelegt werden.</p>
+                    <eg><![CDATA[
+      <encodingDesc>
+         <projectDesc>
+            <p>Carl-Maria-von-Weber-Gesamtausgabe, Sämtliche Briefe</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Übertragung folgt den ER der WeGA</p>
+         </editorialDecl>
+      </encodingDesc>
+      ]]></eg>
+                </div>
+                <div>
+                    <head>Inhaltliche Erschließung des Dokuments <code><![CDATA[<profileDesc/>]]></code>
+                    </head>
+                    <p>Für die Beschreibung des "Profils" des Dokuments gibt es wiederum eine Reihe von Container-Elementen, die je nach Bedarf bzw. Textsorte fakultativ und in unterschiedlicher Weise ausfüllbar sind. Die vier wichtigsten Bereiche sind: </p>
+                    <table>
+                        <row>
+                            <cell>
+                                <code><![CDATA[<creation/>]]></code>
+                            </cell>
+                            <cell>Angaben zur Entstehung des originalen Textes, wobei auch die <code><![CDATA[<date/>]]></code>-Elemente mit entsprechenden Attributen einsetzbar sind.</cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <code><![CDATA[<textClass/>]]></code>
+                            </cell>
+                            <cell>Klassifizierung des Textes als eine wichtige Kategorie. Hier besteht vor allem die Möglichkeit, den Text über selbst vergebene <label>Schlagworte</label> (<code><![CDATA[<keywords/>]]></code> tiefer zu erschließen. Dabei können feste Vokabulare vorgegeben werden, etwa indem mit dem Attribut <code><![CDATA[@scheme]]></code> auf eine eigene Strichwortgruppe einer bestimmten Kategorie referenziert wird.<lb/><!-- TO DO: #ve Zu Beginn dieser Klassifizierung kann im Falle komplett in lateinischer Schrift verfasster Briefe oder Schriftstücke ein Element <code><![CDATA[<catRef/>]]></code> (category reference) eingefügt werden, das mit den Attributen <code><![CDATA[@scheme="fontUsage" @rend="latintype"]]></code> versehen wird. Der Standardwert für Briefe innerhalb der WeGA ist die Kurrentschrift, die nicht vermerkt werden muss.-->
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <code><![CDATA[<langUsage/>]]></code>
+                            </cell>
+                            <cell>(language Usage): Angaben zur verwendeten Sprache (etwa <code><![CDATA[<language ident="de-DE">German</language>/>]]></code>) erlauben z.B. die gezielte Ausfilterung von Texten in bestimmten Sprachen.</cell>
+                        </row>
+                    </table>
+                    <p>Die WeGA nutzt diesen Teil der Metadaten nur in sehr beschränktem Maße, da durch die Tiefenauszeichnung des Textes eine separate Vergabe von Schlagworten weitgehend verzichtbar ist. Bei einer Überarbeitung von Datensätzen zu bestimmten Zwecken können hier frei Ergänzungen vorgenommen werden. Eine Ausnahme bilden lediglich einige Angaben aus den früheren Katalogen der WeGA. So wurden in einem Element  <code><![CDATA[<keywords scheme="WeGA_cat"/>]]></code> briefspezifische Hinweise erhalten, darunter die in Katalogen üblichen Kurzangaben der Form "e.Br.m.U." (eigenhändiger Brief mit Unterschrift), eine verschlüsselte Kurzangabe zu den im Archiv vorhandenen Materialien (die vier Positionen beziehen sich auf das Vorhandensein eines Originals, von Kopien, Faksimiles und Übertragungen) und eine Kurzcharakteristik in verbaler Form (z.B. "letter, simple"). Diese Daten sind lediglich als interne Informationen der WeGA zu betrachten und werden nicht angezeigt.</p>
+                    <p>Sofern für andere Textsorten <label>Schlagworte</label> vergeben werden sollen, werden diese in <code><![CDATA[<item/>]]></code>-Elemente als Bestandteile einer <code><![CDATA[<list/>]]></code> eingeschlossen. Dabei sind mehrere Systeme von Schlagworten (unterschieden durch das Attribut <code><![CDATA[@scheme]]></code> möglich. Beispiel:</p>
+                    <eg>
+    <![CDATA[
+    <keywords scheme="WeGA_cat">
+               <list>
+                  <item>letter</item>
+                  <item>simple</item>
+               </list>
+    </keywords>
+    <keywords scheme="institutions">
+              <list>
+                  <item>Theater am Kärtnertor</item>
+                  <item>Theater in der Leopoldstadt</item>
+              </list>
+    </keywords>
+    ]]></eg>
+                </div>
+                <div>
+                    <head>Die Dokumentation der Änderungen an der Datei <code><![CDATA[<revisionDesc/>]]></code>
+                    </head>
+                    <p>In diesem dokumentierenden Teil werden alle Veränderungen an der Datei in einer summarischen Beschreibung festgehalten (dies dient u.a. dazu, die Versionierung der Überarbeitungsstadien auch inhaltlich besser zuordnen oder Korrekturen rückgängig machen zu können). Bei diesem Element wird zugleich mit einem Attribut <code><![CDATA[@status]]></code> festgehalten, wie der Stand des Dokuments innerhalb der Veröffentlichungen der WeGA anzusehen ist. Dafür sind momentan drei Stufen vergeben:</p>
+                    <table>
+                        <row>
+                            <cell>
+                                <code><![CDATA[<revisionDesc status="proposed"/>]]></code>
+                            </cell>
+                            <cell>Solche Text sind für eine Veröffentlichung vorgesehen, liegen zur Zeit aber nur in einer nicht zitierfähigen Entwurfsfassung (ohne Korrekturlesung) im Archiv vor. In der Darstellung werden solche Texte mit einer <hi rend="bold">roten</hi> Identifikationsnummer gekennzeichnet.</cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <code><![CDATA[<revisionDesc status="candidate"/>]]></code>
+                            </cell>
+                            <cell>Solche Texte sind zwar noch nicht endgültig bearbeitet, aber schon für die Veröffentlichung soweit eingerichtet, dass eine Korrekturlesung erfolgt ist. Der Text selbst sollte also bereits zitierfähig sein. Diese Texte sind  mit einer <hi rend="bold">gelben</hi> Identifikationsnummer gekennzeichnet.</cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <code><![CDATA[<revisionDesc status="approved"/>]]></code>
+                            </cell>
+                            <cell>Die Texte sind für die Veröffentlichung freigeschaltet (d.h. der Text ist korrekturgelesen, ausgezeichnet und mit den augenblicklich möglichen Anmerkungen versehen); Veränderungen der Datei beziehen sich dann in der Regel nur noch auf die Kommentare. Solche Texte erhalten eine <hi rend="bold">grüne</hi> Identifikationsnummer.</cell>
+                        </row>
+                    </table>
+                </div>
+<!-- To Do: #ve: Die früheren Registerteile?? Die Umfunktionierung der "Register" (Struktur der Personendaten usw.) -->
+            </div>
+        </body>
+    </text>
+</TEI>

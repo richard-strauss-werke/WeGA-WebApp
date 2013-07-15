@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050047">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">MGG-Artikel Weber erschienen</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2007-07-29T09:15:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Vor kurzem erschien der 17. und letzte Band des Personenteils der <hi rend="italic">Musik in Geschichte und Gegenwart</hi> (<placeName>
+                        <settlement>Kassel</settlement>
+                    </placeName>: Bärenreiter), womit dieses riesige Unternehmen nun zum Abschluß gekommen ist. In diesem letzten Band sind wichtige Namen wie <persName key="A006766">Vivaldi</persName>, <persName key="A003248">Wagner</persName>, <persName key="A002068">Weber</persName>, <persName>Wolf</persName> u. a. vereinigt. Den <hi rend="bold">Artikel über <persName key="A002068">Carl Maria von Weber</persName>
+                    </hi> haben Joachim Veit und Frank Ziegler gemeinsam verfaßt. Frank Ziegler ergänzte darüber hinaus die Angaben zur Familie Webers: <persName key="A002074">Franz Anton</persName>, <persName key="A008362">Fridolin</persName>, <persName key="A002071">Edmund</persName>, <persName key="A002128">Maria Anna Theresia Magdalena Antonetta</persName> (besser bekannt als Jeanette) und zu Webers Frau <persName key="A000213">Caroline (Carolina Elisabetha Antonetta)</persName>, die damit erstmals mit einem eigenen Artikel vertreten ist. Der Weber-Artikel enthält auch ein vollständiges Werkverzeichnis, in das die neuen WeV-Nummern (soweit bereits endgültig festgelegt) aufgenommen wurden. Nahezu 11 Spalten füllen die bibliographischen Angaben, obwohl nur die wichtige Literatur aufgenommen wurde. Insgesamt umfassen die Weber-Artikel&#160; (zu denen Ingeborg Harer die "andere", mit <persName key="A005625">Mozarts</persName> Namen verbundene Linie ergänzte) knapp 60 Spalten. Sie übertreffen damit den Artikel der "alten" MGG um nahezu 20 Spalten, was auch ein Zeichen für die steigende Wertschätzung des Komponisten sein dürfte. Schade ist lediglich, daß die Bebilderung der neuen MGG weniger großzügig als in der alten Version ausfiel.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

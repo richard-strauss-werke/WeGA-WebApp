@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050094">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Neue Website der Weber-Gesamtausgabe seit 4. Mai 2011</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2011-05-06T09:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>conference</term>
+                    <term>release</term>
+                    <term>sig</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Mit der Präsentation <hi rend="bold">"Weber Digital"</hi>, die in Kooperation mit der Staatsbibliothek zu <placeName>
+                        <settlement>Berlin</settlement>
+                    </placeName> – Preußischer Kulturbesitz am <date when="2011-05-04">4. Mai 2011</date> in der Vertretung des Landes Rheinland-Pfalz (dem Sitzland der Akademie der Wissenschaften und der Literatur Mainz) in <placeName>
+                        <settlement>Berlin</settlement>
+                    </placeName> stattfand, wurde der gesamte Web-Auftritt der Weber-Gesamtausgabe in neuer Gestalt freigeschaltet, der nun einen Einblick in die "Werkstatt" der Gesamtausgabe ermöglicht, da zugleich ein erstes größeres Textkorpus der Edition der Briefe, Tagebücher, Schriften und Dokumente <persName key="A002068">Webers</persName> für die Öffentlichkeit zugänglich wird.</p>
+                <p>Der Umzug der Inhalte der alten Website der Gesamtausabe auf diese neue Seite ist
+               noch nicht komplett abgeschlossen, fehlende Inhalte (darunter die Bibliographie und
+               der Überblick über die Werkausgabe) sowie einige noch essentielle Features (z.B. die
+               Anordnung der News nach Aktualität und eine Filterung nach Kategorien, die Markierung
+               bereits bearbeiteter Inhalte durch gelbe oder grüne Identifikationsnummern) werden
+               mit Version 1.1 ergänzt. Um Ihnen die Orientierung auf der neuen Website zu
+               erleichtern, folgen hier einige knappe Hinweise zur Benutzung: </p>
+                <list>
+                    <item>Grundsätzliche Informationen zu den Inhalten der Website bzw. zur Gesamtausgabe finden Sie unter der Rubrik <label>Projektbeschreibung</label>. Dort sind kurz die verschiedenen Teile der Ausgabe und der gegenwärtige Stand der jeweils digital publizierten Inhalte beschrieben. Ausdrücklich sei darauf hingewiesen, dass die inhaltliche Erschließung der Texte gegenwärtig erst in Teilen in eine Anzeige umgesetzt ist.
+               </item>
+                    <item>Bitte nutzen Sie die Rubrik <label>Register</label> im Menü <label>Digitale
+                     Edition</label>, um einen Überblick über weitere Texte (etwa zeitgenössische
+                  Aufführungsbesprechungen oder Drittbriefe) zu erhalten. Außerdem steht Ihnen
+                  die <label>Suche</label> als weitere Zugangsmöglichkeiten zu den Texten zur
+                  Verfügung. Bitte beachten Sie dabei, dass die gezielte Suche nur dort sichere
+                  Ergebnisse liefert, wo die grüne Identifikationsnummer signalisiert, dass eine
+                  vollständige Auszeichnung nach den Vorgaben der Version 1.0 erfolgt ist.
+               </item>
+                    <item>Wenn Sie innerhalb der Registeransicht (Korrespondenz, Schriften, Tagebücher) die Suche nach den jeweils links angeordneten Kriterien (z.B. Personen, Werke, Orte) filtern möchten, wählen Sie bitte zunächst alle gewünschten, durch "und" zu verknüpfenden Kategorien an, bevor Sie im oberen linken Fenster eine zeitliche Eingrenzung vornehmen.
+               </item>
+                    <item>Beachten Sie bitte, dass die Werkliste augenblicklich noch nicht vollständig ist und auch keine endgültige Systematisierung und Anordnung aufweist. Sie dient momentan lediglich dazu, die in den Dokumemten genannten Werke zu identifizieren. Detailliertere Informationen zu den Werken werden erst mit einem der nächsten Releases zugänglich.
+               </item>
+               <!--<item>Eine Einführung in die Benutzung der Website erhalten Sie am bequemsten durch ein kurzes Video, das mit Version 1.1 bereitgestellt wird. </item>-->
+                    <item>Für Rückmeldungen mit Hinweisen auf Fehler, Unbequemlichkeiten oder Unklarheiten bei der Benutzung der Website, aber auch für Wünsche und Anregungen sind wir allen Nutzern dankbar. Bitte nutzen Sie dazu die Adresse bug bzw. info at weber-gesamtausgabe.de.</item>
+                </list>
+                <p>Vorgesehene Features für die Version 1.1 sind:</p>
+                <list>
+                    <item>
+                        <label>AJAX History</label>: Ermöglicht das Zurückspringen in Suchergebnisse und Registerlisten mit dem Browser-Back-Button.</item>
+                    <item>
+                        <label>Überarbeiten der Tagebuchansicht</label>: Grundsätzliche Überarbeitung der Darstellung und Erweiterung der Darstellung um eine Wochen- und Monatsansicht(?)</item>
+                    <item>
+                        <label>Meta-Angaben im HTML Header nach Dublin Core</label>: Bereitstellung von standardisierten Meta-Angaben nach der <ref target="http://dublincore.org">
+                            <hi rend="italic">Dublin Core® Metadata Initiative</hi>
+                        </ref>.</item>
+                    <item>
+                        <label>Einbinden von ADB/NDB an Personen</label>: Personenbiographien aus der <hi rend="italic">Allgemeinen Deutschen Biographie</hi> und der <hi rend="italic">Neuen Deutschen Biographie</hi>.</item>
+                    <item>
+                        <label>Weitere Filter an der Registeransicht</label>: "Text vorhanden", "Faksimile vorhanden"</item>
+                </list>
+            </div>
+        </body>
+    </text>
+</TEI>

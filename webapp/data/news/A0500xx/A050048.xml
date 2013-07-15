@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050048">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Voluminöse Weber-Studien 8 gehen in Druck</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2007-08-04T09:09:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>publication</term>
+                    <term>conference</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Durch die Vereinigung des <hi rend="bold">
+                        <placeName>
+                            <settlement>Dresdner</settlement>
+                        </placeName> Tagungsberichts <date when="2006">2006</date>
+                    </hi> ("Carl Maria von Weber - der Dresdner Kapellmeister und der Orchesterstil seiner Zeit", <date from="2006-10-13" to="2006-10-14">13.-14. Oktober 2006</date> an der Hochschule für Musik "Carl Maria von Weber" in <placeName>
+                        <settlement>Dresden</settlement>
+                    </placeName>) mit den <hi rend="bold">freien Aufsätzen und Quellenstudien</hi>, die ursprünglich für <hi rend="bold">Band 8</hi> der <hi rend="italic">Weber-Studien</hi> geplant waren, ist nun ein recht voluminöser Band (viii, 548 Seiten mit zahlr. Abb.) entstanden, der von Manuel Gervink, Frank Heidlberger und Frank Ziegler herausgegeben wurde. Der <hi rend="bold">Tagungsteil</hi> umfaßt einen einleitenden Beitrag von Peter Gülke, es folgen Aufsätze von Till Gerrit Waidelich, Michael Heinemann, Irmlind Capelle, Joachim Veit, Frank Ziegler, Ortrun Landmann, Klaus Aringer, Frank Heidlberger und Felix Pourtov. Der Teil mit den <hi rend="bold">freien Aufsätzen</hi> umfaßt zwei längere Beiträge von Gerhard Poppe zur <placeName>
+                        <settlement>Dresdner</settlement>
+                    </placeName> Kirchenmusik, bringt die Referate zur <placeName>
+                        <settlement>Eutiner</settlement>
+                    </placeName> Tagung der Weber-Gesellschaft <date when="2005">2005</date> (Beiträge von Frank Ziegler, Dagmar Beck und Heinrich W. Schwab) und eine Studie von Werner Krahl, Eveline Bartlitz und Frank Ziegler zur Sängerin <persName key="A000741">Helena Harlas</persName>. Knut Holtsträter beschäftigt sich mit der Wirkung von <persName key="A002078">Gottfried Webers</persName> Musiktheorie und Frank Ziegler beschließt den Band mit einer Studie zur Weber-Rezeption in <placeName>
+                        <settlement>Wien</settlement>
+                    </placeName>
+                    <date from="1821" to="1829">1821-1829</date>. Eine detailliertere Inhaltsübersicht finden Sie in Kürze unter der Rubrik "Weber-Studien". Wir werden das Erscheinen des Bandes an dieser Stelle vermelden.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

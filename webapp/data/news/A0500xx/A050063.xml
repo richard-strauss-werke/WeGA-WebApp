@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050063">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Symposion zu Weber in München mit Schwerpunkt Klarinettenwerke</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2008-10-15T09:09:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>performance</term>
+                    <term>conference</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Vom <date from="2008-10-31" to="2008-11-01">31. Oktober bis 1. November 2008</date> veranstaltet die Gesellschaft für Bayerische Musikgeschichte e.V. gemeinsam mit der Internationalen Carl-Maria-von-Weber-Gesellschaft e.V. ein Symposion zu dem Thema <hi rend="bold">Carl Maria von Weber in München: Webers Klarinettenwerke und ihr historisches Umfeld</hi>. Die Veranstaltung findet statt im Orff-Zentrum in der Kaulbachstrasse 16 und beginnt am Freitag, den <hi rend="bold">
+                        <date when="2008-10-31">31. Oktober</date>
+                    </hi> um <hi rend="bold">14.00 Uhr</hi>. In einem ersten Teil wird es um die Klarinettenwerke: <hi rend="italic">Quellen, Edition, Aufführung</hi> gehen, die Leitung hat Stephan Hörner. Der zweite Teil findet am Samstag, den <hi rend="bold">
+                        <date when="2008-11-01">1. November</date>
+                    </hi> ab 9.00 Uhr statt. Thema ist hier <hi rend="italic">Weber und das Münchner Musikleben um 1810</hi>, die Leitung dieser Sektion hat Hartmut Schick. Referenten der beiden Teile sind Frank Heidlberger, Joachim Veit, Heike Fricke, Robert Erdt, Joachim Tschiedel, Markus Schön, Stephan Hörner und Friedegund Freitag.</p>
+                <p>Zwei sehr interessante <hi rend="bold">Konzerte</hi> finden während dieser Tagung statt. Am <hi rend="bold">
+                        <date when="2008-10-31">31. Oktober</date>
+                    </hi> um <hi rend="bold">20.00 Uhr</hi> im Großen Konzertsaal der <hi rend="bold">Hochschule für Musik</hi> mit dem Hochschulsymphonieorchester unter Leitung von Ulrich Nicolai erklingen neben einer Uraufführung von Johannes X. Schachtner und <persName key="A001362">Mozarts</persName>
+                    <hi rend="italic">
+                        <workName>Prager Sinfonie</workName>
+                    </hi>&#160; <persName key="A002068">Webers</persName>
+                    <workName key="A020207">Ouvertüre zu <hi rend="italic">Der Beherrscher der Geister</hi>
+                    </workName> und sein <workName key="A020201">1. Klarinettenkonzert in f-Moll</workName> erstmals nach dem Notentext der in Vorbereitung befindlichen Gesamtausgabe. Solist des Klarinettenkonzerts ist Maximilian Strutynski. Am Sonntag, den <hi rend="bold">
+                        <date when="2008-11-02">2. November</date>
+                    </hi> findet um <hi rend="bold">11.15 Uhr</hi> in der Instrumentensammlung des <hi rend="bold">Deutschen Museums</hi> ein Kammerkonzert mit Werken <persName key="A002068">Webers</persName> und seiner Münchner Freunde <persName key="A000354">Franz Danzi</persName> und <persName key="A000077">Heinrich Joseph Baermann</persName> statt. Ausführende sind Markus Schön (Klarinette) und Christoph Hammer (Klavier). Im Anschluss an das Konzert besteht außerdem die Möglichkeit zu einer themenbezogenen <hi rend="bold">Führung</hi> durch die Instrumentensammlung durch die Kuratorin, Dr. Silke Berdux.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

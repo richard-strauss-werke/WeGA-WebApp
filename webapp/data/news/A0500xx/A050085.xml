@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050085">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Webers sämtliche Schriften</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2006-07-15T09:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Innerhalb der Gesamtausgabe wird auch die Ausgabe sämtlicher Schriften <persName key="A002068">Webers</persName> neu erscheinen. Die Ausgabe <persName>Georg Kaisers</persName> (<hi rend="italic">Sämtliche Schriften von Carl Maria von Weber. Kritische Ausgabe</hi>, Berlin u. Leipzig: Schuster &amp; Loeffler, <date when="1908">1908</date>) ist inzwischen in vielerlei Hinsicht revisionsbedürftig.</p>
+                <p>Für die Zeit zwischen <date from="1810" to="1812">1810 und 1812</date> ist ein aktuellerer Bestand der Schriften <persName key="A002068">Webers</persName> nachgewiesen in dem von <persName>Oliver Huck</persName> und <persName key="A009000">Joachim Veit</persName> herausgegebenen Band 4/1 der <hi rend="italic">Weber-Studien</hi> mit den <hi rend="bold">
+                        <hi rend="italic">Schriften des Harmonischen Vereins</hi>
+                    </hi> aus jener Zeit.</p>
+                <p>Die Fragmente zu <persName key="A002068">Webers</persName> geplantem Roman <hi rend="bold">
+                        <hi rend="italic">Tonkünstlers Leben</hi>
+                    </hi> wurden 2001 von <persName>Gerhard Jaiser</persName> mit Unterstützung der Mitarbeiter der WeGA in einer kritischen, kommentierten Neuedition in Band 6 der <hi rend="italic">Weber-Studien</hi> veröffentlicht und sind damit im Textteil bereits in einer Form publiziert, wie sie auch für die Gesamtausgabe geplant ist.</p>
+                <p>Detailliertere Erläuterungen zur geplanten Schriftenausgabe am Beispiel der Schriften des Jahrgangs <date when="1817">1817</date> sind an dieser Stelle in Vorbereitung. Ausgehend von einer Übersicht über die Schriften des Jahrgangs <date when="1817">1817</date> (mit den neuen Schriften-Nummern) werden Sie damit in Kürze hier auch direkt die Texte einsehen können.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

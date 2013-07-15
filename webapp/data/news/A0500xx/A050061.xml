@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050061">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Personen- und Dokumentendatenbank beschleunigt</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2008-09-14T09:18:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>release</term>
+                    <term>sig</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Im Zuge einer grundlegenden Überarbeitung der <hi rend="bold">
+                        <hi rend="italic">fffi</hi>-Personendatenbank</hi> durch das Edirom-Team haben Daniel Röwenstrunk und sein Mitarbeiter Christian Epp jetzt in einem ersten Teilschritt eine wesentliche Beschleunigung der Abfragen der Datenbank erreicht. Außerdem wurden neue Abfrage- und Anmeldemechanismen implementiert, die zur besseren Stabilität der Datenbak beitragen. Augenblicklich wird die Struktur der Datensätze überprüft und ein System zur besseren Einbeziehung von Quellenangaben erarbeitet. Danach sollen in einer neuen Werbe-Phase weitere Mitarbeiter für diese ausgabenübergreifend gedachte Datenbank gewonnen werden. Die Mitarbeiter der WeGA jedenfalls profitieren schon jetzt von den Verbesserungen.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

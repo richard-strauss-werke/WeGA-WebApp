@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaVar.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A070002">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="de">Impressum</title>
+                <title level="a" xml:lang="en">About</title>
+                <author key="A009001">Peter Stadler</author>
+                <editor key="A009000">Joachim Veit</editor>
+                <funder xml:lang="de">
+                    <name>Carl-Maria-von-Weber-Gesamtausgabe</name>
+                    <address>
+                        <addrLine>Arbeitsstelle Detmold</addrLine>
+                        <addrLine>Musikwissenschaftliches Seminar Detmold/Paderborn</addrLine>
+                        <addrLine>Gartenstraße 20</addrLine>
+                        <addrLine>D–32756 Detmold</addrLine>
+                        <addrLine n="telephone">+49 (0)5231-975663</addrLine>
+                        <addrLine n="fax">+49 (0)5231-975668</addrLine>
+                        <addrLine n="email">info [at] weber-gesamtausgabe.de</addrLine>
+                    </address>
+                    <address>
+                        <addrLine>Arbeitsstelle Berlin</addrLine>
+                        <addrLine>Staatsbibliothek zu Berlin</addrLine>
+                        <addrLine>Musikabteilung</addrLine>
+                        <addrLine>Unter der Linden 8</addrLine>
+                        <addrLine>D-10117 Berlin</addrLine>
+                    </address>
+                </funder>
+                <funder xml:lang="en">
+                    <name>Carl-Maria-von-Weber-Gesamtausgabe</name>
+                    <address>
+                        <addrLine>Office Detmold</addrLine>
+                        <addrLine>Musikwissenschaftliches Seminar Detmold/Paderborn</addrLine>
+                        <addrLine>Gartenstraße 20</addrLine>
+                        <addrLine>D–32756 Detmold</addrLine>
+                        <addrLine n="telephone">+49 (0)5231-975663</addrLine>
+                        <addrLine n="fax">+49 (0)5231-975668</addrLine>
+                        <addrLine n="email">info [at] weber-gesamtausgabe.de</addrLine>
+                    </address>
+                    <address>
+                        <addrLine>Office Berlin</addrLine>
+                        <addrLine>Staatsbibliothek zu Berlin</addrLine>
+                        <addrLine>Musikabteilung</addrLine>
+                        <addrLine>Unter der Linden 8</addrLine>
+                        <addrLine>D-10117 Berlin</addrLine>
+                    </address>
+                </funder>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>WeGA elektronisch</publisher>
+                <availability status="free">
+                    <p>2011, Carl-Maria-von-Weber-Gesamtausgabe, Detmold</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:lang="de">
+                <head>Urheberrecht</head>
+                <p>Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheber- und Leistungsschutzrecht. 
+                    Jede vom deutschen Urheber- und Leistungsschutzrecht nicht zugelassene Verwertung bedarf der vorherigen schriftlichen Zustimmung des Anbieters oder jeweiligen Rechteinhabers. 
+                    Dies gilt insbesondere für Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen. 
+                    Inhalte und Rechte Dritter sind dabei als solche gekennzeichnet. 
+                    Die unerlaubte Vervielfältigung oder Weitergabe einzelner Inhalte oder kompletter Seiten ist nicht gestattet und strafbar. 
+                    Lediglich die Herstellung von Kopien und Downloads für den persönlichen, privaten, akademischen und nicht kommerziellen Gebrauch ist erlaubt.
+                    Alle Rechte an Bildinhalten bleiben bei den bewahrenden Institutionen bzw. Privateigentümern.
+                </p>
+            </div>
+            <div xml:lang="de">
+                <head>Links</head>
+                <p>Wir haben keinen Einfluss auf den Inhalt der von dieser Seite verlinkten externen Internetseiten und sind für diese auch nicht verantwortlich. Eine Prüfung bei der Verlinkung ergab keine strafbaren Inhalte auf diesen Seiten. Alle Linkangaben ohne Gewähr. Seitenaufrufe externer Seiten über diese Links erfolgen auf eigene Gefahr. Dies gilt für alle Links auf dieser Internetseite.</p>
+            </div>
+            <div xml:lang="de">
+                <head>Haftungsausschluss</head>
+                <p>Die Inhalte dieses Internetangebotes wurden sorgfältig geprüft und nach bestem Wissen erstellt. Eine Haftung oder Garantie für die Aktualität, Richtigkeit und Vollständigkeit der zur Verfügung gestellten Informationen und Daten ist jedoch ausgeschlossen. In keinem Fall wird für Schäden, die sich aus der Verwendung der abgerufenen Informationen ergeben, eine Haftung übernommen.</p>
+            </div>
+            <div xml:lang="en">
+                <!--      Siehe http://www.zim.mpg.de/Public/metanavi/impressum.html          -->
+                <head>Disclaimer</head>
+                <p>The Carl-Maria-von-Weber-Gesamtausgabe makes every effort to provide timely and accurate information. Nevertheless, mistakes and confusions may occur. The Carl-Maria-von-Weber-Gesamtausgabe does not assume liability for relevance, accuracy and completeness of the information provided. The Carl-Maria-von-Weber-Gesamtausgabe is only liable for material or immaterial damages if it can be proved that the Carl-Maria-von-Weber-Gesamtausgabe caused damage deliberately or through gross negligence. The damages include those which arise from the use or misuse of the information provided or direct or indirect damages which arise through the use of faulty or incomplete information. <!--The same goes for the software available free of charge which can be used for downloading.--> The Carl-Maria-von-Weber-Gesamtausgabe reserves the right to change, supplement, or delete some or all of the information on its Internet web site without notice. Similarly, the Carl-Maria-von-Weber-Gesamtausgabe also reserves the right to temporarily or permanently discontinue the Internet web site.</p>
+                <p>Individuals or organisations providing information on the internet are only responsible for illegal and punishable contents derived from other sources which are accessed by direct or indirect connections, e.g. links, if the individuals and organisations are aware of the nature of these contents on these web sites. Contents derived from other sources are noted appropriately. The Carl-Maria-von-Weber-Gesamtausgabe has no influence whatsoever on contents derived from another sources and does not promote them. The Carl-Maria-von-Weber-Gesamtausgabe has no knowledge of illegal or offensive contents contained in the linked web sites from other information providers. If there are illegal and offensive contents on the web sites of other information providers, the Carl-Maria-von-Weber-Gesamtausgabe distances itself from these contents.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schemata/wegaVar.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A110471">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="de">Agthe – aber welcher? Zu einem angeblichen Freischütz-Plagiat</title>
+                <author>Dagmar Beck</author>
+                <author>Joachim Veit</author>
+                <author>Frank Ziegler</author>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>WeGA elektronisch</publisher>
+                <availability status="free">
+                    <p>2012, Carl-Maria-von-Weber-Gesamtausgabe, Detmold</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct type="electronic">
+                    <monogr>
+                        <title>Agthe – aber welcher?</title>
+                        <title type="sub">Zu einem angeblichen Freischütz-Plagiat</title>
+                        <author>Dagmar Beck</author>
+                        <author>Joachim Veit</author>
+                        <author>Frank Ziegler</author>
+                        <imprint>
+                            <date when="2005-05-21">21. Mai 2005</date>
+                            <publisher>Carl-Maria-von-Weber-Gesamtausgabe</publisher>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <head>Agthe – aber welcher? Zu einem angeblichen Freischütz-Plagiat</head>
+            <p>Am 20. August 2003 veröffentlichten <persName>Regine Lotzmann</persName> und <persName>Johannes Killyen</persName> in der <hi rend="italic">Mitteldeutschen Zeitung</hi> unter der Überschrift "<hi rend="bold">Freischütz aus fremder Feder? Melodien der populären Oper könnten von dem Ballenstedter Komponisten Carl Christian Agthe stammen</hi>" einen Artikel, in dem der <placeName>
+                    <settlement>Ballenstedter</settlement>
+                </placeName> Lehrer, Chorleiter und Musikforscher <persName>Siegfried Hünermund</persName>, der sich im Rahmen seiner Arbeiten zur Ballenstedter Musikgeschichte seit längerer Zeit mit dem Komponisten <persName>Agthe</persName> beschäftigt, die These vertrat, <persName key="A002068">Weber</persName> habe einige der bekannten Melodien seines <workName key="A020040">Freischütz</workName> nicht selbst erfunden, sondern vermutlich von dem 1797 verstorbenen Ballenstedter Hofkapellmeister <persName>Carl Christian Agthe</persName> übernommen.</p>
+            <p>Hintergrund dieser Behauptung war die Aufführung von Tänzen <persName>Agthes</persName> anläßlich seines 240. Geburtstages im Jahr 2002 (<persName>Agthe</persName> erblickte am 16. Juni 1762 in <placeName>
+                    <settlement>Hettstedt</settlement>
+                </placeName> in der Nähe von <placeName>
+                    <settlement>Bernburg</settlement>
+                </placeName> das Licht der Welt). Bei den Proben dieser Tänze seien zur großen Verblüffung der Musiker plötzlich "Melodien aus dem <hi rend="italic">Freischütz</hi>" erklungen. <hi rend="bold">Vier Fälle von Plagiat</hi> entdeckte <persName>Hünermund</persName> in den Tänzen: </p>
+            <list>
+                <item>in Nr. 1 umfangreiche Teile (20 Takte) der Cavatine der <characterName>Agathe</characterName> (Nr. 12 "Und ob die Wolke sie verhülle"),</item>
+                <item>in Nr. 2 "über 16 Takte hinweg" Ausschnitte aus der Arie des <characterName>Max</characterName> (Nr. 3 "Durch die Wälder", darin "Jetzt ist wohl ihr Fenster offen..."),</item>
+                <item>in Nr. 13 einen Ausschnitt ("acht Takte") aus <characterName>Agathens</characterName> großer Szene und Arie Nr. 8 (darin "süß entzückt entgegen ihm")</item>
+                <item>und schließlich in Nr. 14 "acht Takte" aus dem Jägerchor Nr. 15 ("Was gleicht wohl auf Erden").</item>
+            </list>
+            <p>Nach Kenntnis der 14 Tänze läßt sich inzwischen hinzufügen: Auch das Trinklied des <characterName>Kaspar</characterName> Nr. 4 kommt vor (in Nr. 12 mit dem Ausschnitt "darum bis zum letzten Hauch"). Bei dieser Häufung ist ein purer Zufall auszuschließen. Eine Verbindung zwischen <persName key="A002068">Weber</persName> und <persName>Agthe</persName> fand <persName>Hünermund</persName> ebenfalls heraus: <persName key="A002068">Weber</persName> habe die Musik möglicherweise im Haus einer Schülerin <persName>Agthes</persName>, der Ballenstedter Malerin <persName key="A000084">Caroline von Bardua</persName>, gehört, wo er mehrmals zu Gast gewesen sei. Eine mögliche Verbindung bestehe auch durch Webers Gattin <persName key="A000213">Caroline Brandt</persName>, die mehrfach in <placeName>
+                    <settlement>Ballenstedt</settlement>
+                </placeName> war und auch die <rs type="persons">Barduas</rs> kannte. Vielleicht, so <persName>Hünermund</persName>, sei der Name "<characterName>Agathe</characterName>" sogar eine heimliche Anspielung auf den "Mozart des Harzvorlandes", wie <persName>Agthe</persName> angeblich genannt wurde.</p>
+            <p>Was die Vermittlung durch <persName key="A000084">Caroline von Bardua</persName> betrifft, hat sich <persName>Hünermund</persName> allerdings zu einem Kurzschluß verleiten lassen: Als <persName key="A002068">Weber</persName>
+                <rs type="person">die Malerin</rs> kennenlernte und ihr für sein Portrait "saß", war der 1817 begonnene <workName key="A020040">Freischütz</workName> längst vollendet: <persName key="A002068">Weber</persName> wollte im Spätherbst 1821 <rs type="person">seine Frau</rs> zum Hochzeitstag mit einem Portrait überraschen. Dazu traf er sich laut Tagebuch am 27. Juni in <placeName>
+                    <settlement>Berlin</settlement>
+                </placeName> (nicht in <placeName>
+                    <settlement>Ballenstedt</settlement>
+                </placeName>) mit der <persName key="A000084">Bardua</persName> – das Bild wurde erst verspätet fertig und am 19. November 1821 von <persName key="A002068">Weber</persName> überreicht (vgl. <persName key="A009005">F. Ziegler</persName> im Ausstellungskatalog Berlin 2001, S. 37). <persName key="A000213">Caroline von Webers</persName> Aufenthalt in <placeName>
+                    <settlement>Ballenstedt</settlement>
+                </placeName> fällt in die Jahre 1804–1806, wo sie laut <persName key="A002085">Max Maria von Weber</persName> "während ihres 11. bis 13. Lebensjahres" in einer Erziehungsanstalt ihre Allgemeinbildung "nothdürftig nachgeholt" habe. Längere spätere Aufenthalte in <placeName>
+                    <settlement>Ballenstedt</settlement>
+                </placeName> sind nicht belegt (vgl. <persName key="A003672">E. Bartlitz</persName> in Weberiana 12, 2002). Ein Kontakt <persName key="A002068">Webers</persName> mit <persName>Agthe</persName> müßte also auf andere Weise zustande gekommen sein.</p>
+            <p>Bei der Lösung des Problems hilft zunächst ein genaueres Studium des <hi rend="italic">corpus delicti</hi>, der 14 Tänze <persName>Agthes</persName>, die lediglich in einer Handschrift in der Musikabteilung der Staatsbibliothek zu <placeName>
+                    <settlement>Berlin</settlement>
+                </placeName> überliefert sind (Signatur: KHM 28g, alte Inventar Nr. 188. | V.). Das <hi rend="bold">Titelblatt</hi> der von mehreren Kopisten (mit teilweise krassen Fehlern) angefertigten Stimmen-Abschrift lautet:</p>
+            <list>
+                <item>"Tänze | für | 2 Violin | 2 Clarinetten | 2 Flauten | 2 Horns | 2 Trompeten | Timpani | Fagotto | et | Basso"</item>
+            </list>
+            <p>Vom Schreiber ist kein Komponistenname vermerkt, dieser ist erst von späterer Hand in Bleistift am oberen rechten Rand ergänzt: "<hi rend="italic">Agthe</hi>". Allerdings findet sich dieser Name wieder in der 1. Violin-Stimme, in der (diesmal offensichtlich vom Schreiber des Titelblatts) bei den Tänzen Nr. 1, 2, 12, 13 und 14 jeweils zu Beginn am rechten Rand vermerkt ist: "<hi rend="bold">di Agthe</hi>" - es handelt sich dabei genau um die Stücke, in denen die <persName key="A002068">Weber</persName>-"Zitate" vorkommen. Ein Vorname <persName>Agthes</persName> ist nirgends angegeben. Sucht man nach Hinweisen, wieso diese Tänze dem Ballenstedter Komponisten <persName>Carl Christian Agthe</persName> zugeordnet sind (die Tatsache, daß nur 5 der Tänze den Namenszusatz tragen, spricht im übrigen dafür, daß nur diese von ihm stammen!), stößt man auf das <hi rend="italic">Quellen-Lexikon</hi> von <persName key="A004208">Robert Eitner</persName>, in dessen erstem, 1898 in <placeName>
+                    <settlement>Leipzig</settlement>
+                </placeName> erschienenem Band unter "Karl Christian Agthe" am Ende des Verzeichnisses seiner Werke genannt ist:</p>
+            <list>
+                <item>"Tänze für Orchester, Ms. Stb. [Berlin K. H.]" d. h.: Manuskript, Stimmbücher, [Berlin, Königliche Hausbibliothek]</item>
+            </list>
+            <p>
+                <persName key="A004208">Eitner</persName> selbst zweifelt bereits, ob es sich bei seinen biographischen Angaben nicht um solche zu zwei Personen handelt. In älteren Lexika sind diese Tänze im übrigen nicht genannt (denn <persName key="A006668">Georg Thourets</persName> gedruckter Katalog der Königlichen Hausbibliothek erschien erst 1895), aber auch <persName key="A006229">Gustav Schilling</persName> hat 1835 im ersten Band seiner <hi rend="italic">Encyclopädie der gesammten musikalischen Wissenschaften, oder Universal-Lexicon der Tonkunst</hi> schon Schwierigkeiten beim Auseinanderhalten der Werke verschiedener "Agthes", in diesem Falle <persName>Carl Christians</persName> und seines Sohnes "<persName>Albert</persName>" (recte: Albrecht) (vgl. S. 91).</p>
+            <p>Welche "Agthes" lassen sich im Umfelde dieses Plagiat-Falls überhaupt ermitteln (ohne Anspruch auf Vollständigkeit!):</p>
+            <list>
+                <item>
+                    <persName key="A008865">Carl Christian Agthe (1762–1797)</persName> stammte aus einer Lehrer- und Musikerfamilie, war angeblich bereits mit 14 Mitglied einer Theatertruppe in <placeName>
+                        <settlement>Reval</settlement>
+                    </placeName> und übernahm 1782 das Amt eines Hoforganisten am anhalt-bernburgischen Hof, wo er vom Fürsten <persName>Friedrich Albrecht</persName> auch als "Kammermusikus" sehr gefördert wurde. Nach dem Umzug des Hofes nach <placeName>
+                        <settlement>Ballenstedt</settlement>
+                    </placeName> wurde dort 1787 ein eigenes Theaterhaus eingeweiht, für das <persName>Agthe</persName> etliche Werke schrieb (vgl. u. a. <persName>Thomas Radecke</persName> in <hi rend="italic">MGG</hi>, 2. Ausgabe, Personenteil, Bd. 1, Sp. 230f.).</item>
+                <item>
+                    <persName key="A008914">Albrecht Wilhelm Johann Agthe (1790–1873)</persName>, Sohn des Vorigen; Ausbildung u. a. in <placeName>
+                        <settlement>Magdeburg</settlement>
+                    </placeName> und <placeName>
+                        <settlement>Erfurt</settlement>
+                    </placeName>; seit 1810 als Violinist in <placeName>
+                        <settlement>Leipzig</settlement>
+                    </placeName>; danach in <placeName>
+                        <settlement>Dresden</settlement>
+                    </placeName>, wo er 1823 ein Musikinstitut nach der <persName>Logier</persName>'schen Methode gründete, für dessen Fortbestand sich auch <persName key="A002068">Carl Maria von Weber</persName> einsetzte; 1826 wurde <persName>Agthe</persName> zur Gründung einer ähnlichen Anstalt nach <placeName>
+                        <settlement>Posen</settlement>
+                    </placeName> berufen, wo u. a. die <rs type="persons">Brüder Kullak</rs> seine Schüler wurden. 1830 ging er nach <placeName>
+                        <settlement>Breslau</settlement>
+                    </placeName>, 1832 nach <placeName>
+                        <settlement>Berlin</settlement>
+                    </placeName>, um dort mit königlicher Unterstützung eine Musiklehranstalt zu gründen. In <placeName>
+                        <settlement>Berlin</settlement>
+                    </placeName> wurde er zum Musikdirektor ernannt und leitete längere Zeit auch die musikalischen Privatstudien der <rs type="person">Prinzessin von Preußen</rs>. Agthes vorwiegend dem Klavier gewidmete Kompositionen wurden in der <hi rend="italic">AmZ</hi> teilweise sehr positiv besprochen und dabei auch seine kontrapunktischen Fähigkeiten hervorgehoben. (vgl. am ausführlichsten: <persName>Carl Freiherr von Ledebur</persName>, <hi rend="italic">Tonkünstler-Lexicon Berlin's von den ältesten Zeiten bis auf die Gegenwart</hi>, Berlin 1861, S. 3f.)</item>
+                <item>
+                    <persName key="A008962">Johann Friedrich Agthe (1788–1840)</persName>, ein Zögling des Weimarer Hof- und Stadtmusikus <persName key="A000417">Karl Eberwein</persName>, war zunächst Hautboist im Prinz-Friedrich-Augustischen Infanterie-Regiment, dann von 1816 bis 1840 als Stadtmusiker in <placeName>
+                        <settlement>Weimar</settlement>
+                    </placeName> angestellt, wobei er "vor allem in der Hofkapelle mitzuwirken und den Musikernachwuchs dafür auszubilden" hatte. Zu seinen Pflichten gehörte außerdem "eine 'vollständige gute Tanzmusik' zu jährlich fünf Redouten, das Besetzen von drei Posaunen und zwei Hörnern und Aushilfen in der Hofkapelle, Bühnen- und Janitscharenmusik. Darüber hinaus wurde Agthe selbst 1833 in der Hofkapelle als Pauker für ein zusätzliches Honorar von 200 Rth. fest angestellt". (vgl. <persName>Wolfram Huschke</persName>, <hi rend="italic">Musik im klassischen und nachklassischen Weimar 1756–1861</hi>, Weimar 1982, S. 46ff. und 111ff.)</item>
+                <item>
+                    <persName key="A003495">August Wilhelm Agthe</persName>, Sohn des Vorigen (in der <hi rend="italic">AmZ</hi> als "der jüng." bezeichnet), zunächst als 2. Violinist (1819), bzw. Viola-Spieler (1825) in der <placeName>
+                        <settlement>Weimarer</settlement>
+                    </placeName> Hofkapelle erwähnt, entwickelte sich zu einem ausgezeichneten Klarinettisten, zu dessen bevorzugtem Repertoire die Weberschen Klarinettenkonzerte gehörten. In einer Besprechung der <hi rend="italic">AmZ</hi> heißt es 1835, <persName>Agthe</persName> behandele <persName key="A002068">Webers</persName> Werke "mit eben so viel Vorliebe, als sinniger Auffassungsweise" (Sp. 370). Agthe komponierte u. a. für sein eigenes Instrument (vgl. <hi rend="italic">AmZ</hi> 1835, Sp. 865) und konzertierte häufig auch in <placeName>
+                        <settlement>Jena</settlement>
+                    </placeName>. 1828 hatte er in <placeName>
+                        <settlement>Weimar</settlement>
+                    </placeName> die Leitung des Collegium musicum übernommen, dem er bis 1853 vorstand. (Seine Tochter war die berühmte <persName key="A003248">Wagner</persName>-Sängerin <persName>Rosa Agthe</persName>, verehelichte von Milde, 1827–1906).</item>
+            </list>
+            <p>Über die vier hier genannten hinaus sind noch zu erwähnen: ein "Kammer-Musikus" <hi rend="bold">
+                    <persName>Johann August Agthe</persName>
+                </hi>, der 1855 in Weimar unter den Pensionisten auftaucht (vgl. Huschke), ein <hi rend="bold">
+                    <persName key="A002781">Friedrich Wilhelm Agthe</persName>
+                </hi>, der 1818 in <placeName>
+                    <settlement>Dresden</settlement>
+                </placeName> als "6. Braccist" vorgeschlagen wurde (Akten der Hofkapelle <placeName>
+                    <settlement>Dresden</settlement>
+                </placeName>) und 1824 laut Dresdner Adreß-Kalender an der Kreuzschule tätig war, sowie ein Dresdner Waldhornist <hi rend="bold">
+                    <persName>Agthe</persName>
+                </hi>, der 1817 mit einem eigenen Potpourri in der <hi rend="italic">AmZ</hi> erwähnt wird. Detailliertere Forschungen würden sicherlich weitere Musiker dieses Namens zutage fördern.</p>
+            <p>Wer kommt nun als Komponist der obigen Tänze - bzw. der fünf mit "Agthe" bezeichneten in Frage?</p>
+            <p>Einen Hinweis könnte das im Papier dieser Stimmen zu findende <hi rend="bold">Wasserzeichen</hi> geben (vgl. die hss. Kopie des Zeichens):</p>
+            <figure>
+                <figDesc>Wasserzeichen</figDesc>
+                <graphic url="WZ_AGTHE.jpg"/>
+            </figure>
+            <p>Wasserzeichen in solch sachlich-schlichter Form waren am Anfang des 19. Jahrhunderts beliebt. Das Zeichen legt am ehesten eine <placeName>
+                    <settlement>Weimarer</settlement>
+                </placeName> Herkunft der Stimmen nahe. Hat also der <placeName>
+                    <settlement>Weimarer</settlement>
+                </placeName> Stadtmusikus <hi rend="bold">
+                    <persName>Johann Friedrich Agthe</persName>
+                </hi> die fünf Tänze komponiert? Da er für eine "vollständige gute Tanzmusik" zu den Redouten verantwortlich war, würden die Sätze sowohl in ihrer Instrumentierung als auch in der sehr "schlichten" Qualität in dieses Umfeld passen. Der <hi rend="italic">
+                    <workName key="A020040">Freischütz</workName>
+                </hi> wurde in <placeName>
+                    <settlement>Weimar</settlement>
+                </placeName> bereits am 4. Mai 1822 zum ersten Male gegeben.</p>
+            <p>Ist hinsichtlich der bläserbetonten <hi rend="bold">Besetzung</hi> in Verbindung mit Pauken und einer auf 2 Violinen und "Bässe" (ob Violoncelli und / oder Kontrabässe ist nicht festzustellen) beschränkten Streicher-Gruppe schon festzustellen, daß es sich nicht um eine "klassische" Standardbesetzung handelt, so zeigt die Verwendung der Terzflöte (als "<hi rend="italic">Flauto 3tio</hi>" bezeichnet) in Nr. 1, 3, 4, 9 und der Piccolo in Nr. 10, daß die Werke eher ins Repertoire der Militär- (und damit Stadt-)Kapellen gehören als in die höfische Umgebung. Harmoniemusiken im weitesten Sinne waren Sache von Hautboistenkorps, aus deren Tradition auch <persName>Johann Friedrich Agthe</persName> kam. Mehr als eine Vermutung kann eine solche Zuweisung aber augenblicklich nicht sein.</p>
+            <p>Schließlich sind die Stücke selbst zu betrachten. Die 14 Tänze sind in der Handschrift, die vom Schriftbild her auf die Zeit zwischen 1820 und 1830 weist, in folgender Reihenfolge notiert (Titel jeweils original, mit allen Fehlern):</p>
+            <list>
+                <item>No. 1. Pollon:[aise], 3/4, Es-Dur, 36 Takte + 34 Takte Trio, As-Dur; in Vl. 1: "di Agthe"</item>
+                <item>No. 2. Pollon:[aise], 3/4, D-Dur, 26 Takte + 24 Takte Trio, A-Dur; in Vl. 1: "di Agthe"</item>
+                <item>No. 3. Walzer, 3/4, Es-Dur, 40 Takte</item>
+                <item>No. 4. Walzer, 3/8, Es-Dur, 24 Takte</item>
+                <item>No. 5. Walzer, 3/8, D-Dur, 58 Takte</item>
+                <item>No. 6. Eccoss:[aise], 2/4, D-Dur, 16 Takte</item>
+                <item>No. 7. Eccoss:[aise], 2/4, E-Dur, 16 Takte</item>
+                <item>No. 8. Eccoss:[aise], 2/4, D-Dur, 16 Takte</item>
+                <item>No. 9. Eccoss:[aise], 2/4, B-Dur, 16 Takte</item>
+                <item>No. 10. Walzer, 3/4, E-Dur, 40 Takte + 42 Takte Trio</item>
+                <item>No. 11. Walzer, 3/8, B-Dur, 46 Takte</item>
+                <item>No. 12. Eccoss:[aise], 2/4, D-Dur, 16 Takte, in Vl. 1: "di Agthe"</item>
+                <item>No. 13. Eccoss:[aise], 2/4, D-Dur, 16 Takte, in Vl. 1: "di Agthe"</item>
+                <item>No. 14. Eccoss:[aise], 2/4, D-Dur, 16 Takte, in Vl. 1: "di Agthe"</item>
+            </list>
+            <p>Das "Strickmuster" der Tänze ist relativ ähnlich: Auch in den nicht Agthe zugewiesenen Tänzen scheinen Tutti-Blöcke mit offensichtlichen Melodie-Zitaten zu wechseln. Weber-Zitate finden sich allerdings nur in den Agthe-Tänzen, die vermutlichen Zitate der übrigen Tänze waren bisher nicht zu identifizieren, zumal nach Kenntnis der Weber-Zitate das Verfahren in diesen Stücken selten auf Anfänge anderer Werke zurückgreift, sondern vielfach auf Passagen aus dem weiteren Verlauf – so als habe man dem Publikum damit eine Rate-Aufgabe zuweisen wollen.</p>
+            <p>Wie primitiv diese Technik eingesetzt ist, zeigen z. B. die drei letzten Ecossaisen, in denen die T. 16-17 von <characterName>Caspars</characterName> Trinklied (vgl. Ecossaise Nr. 12, T. 9-12) mit vorausgehender "Teufelstriller"-Figur (hier anschließend, vgl. Nr. 12, T. 13-14) im wiederholten zweiten Achttakter zitiert sind. Auch in den Ecossaisen 13–14 wird so verfahren, wobei der Komponist die Zitate recht abrupt mit etwas "gewaltsamen" Endungen auf den Achttakter zurechtstutzt:</p>
+            <figure>
+                <figDesc>Ecossaisen</figDesc>
+                <graphic url="agthe_melodien.jpg"/>
+            </figure>
+            <p>Während es sich hier um kurze Melodie-Zitate handelt, die man – wie im seinerzeit "berüchtigten" Fall des Klavierkonzerts D-Dur op. 8 von <persName key="A000191">Ludwig Böhner</persName> (1787–1860) – als zufällige Anklänge bezeichnen könnte, wenn sie nicht so gehäuft aufträten, sind die <hi rend="bold">Trio-Teile der beiden Polonaisen Nr. 1 und 2 fast vollständig aus Weberschen Motiven gebildet</hi>, wobei auch die Harmonik komplett mit übernommen wird (vgl. <figure>
+                    <figDesc>die vollständige Wiedergabe des Trios Nr. 1</figDesc>
+                    <graphic url="Agthe-Trio_Polonaise1.pdf"/>
+                </figure>). Zudem steht das Trio des ersten der beiden Stücke sogar in der "Originaltonart" der Cavatine <characterName>Agathes</characterName> (As-Dur), während Nr. 2 in A-Dur (Zitatteil original G-Dur) steht.</p>
+            <p>Einen Eindruck von der "Zusammensetzung" liefert die Übernahme der <hi rend="bold">Cavatine</hi>, aus der die Takte 6–14, und 21–31 zitiert sind, dann folgt ein 8taktiger freier Tutti-Einschub, bevor abschließend die T. 32–33 mit Wiederholung zitiert sind. Vor dem Hintergrund des Plagiat-Vorwurfs muß man sich dabei auch vor Augen halten, daß Wendungen wie jene von As-Dur nach C-Dur ("ewig rein und klar") für die Musiksprache des späten 18. Jahrhunderts noch sehr ungewöhnlich wären.</p>
+            <p>Noch eigenartiger zitiert ist im <hi rend="bold">Trio der Nr. 2</hi>. Zunächst erklingen aus <characterName>Maxens</characterName> großer Arie "Durch die Wälder, durch die Auen" die Takte 141–146 ("Jetzt ist wohl ihr Fenster offen"), dann nach einem 8taktigen Zwischenspiel die Takte 147–157 (mit einer Schlußvariante), worauf nochmals 8 eigene Takte folgen.</p>
+            <p>Nach diesen Beispielen, die im übrigen auch in Balkensetzung bzw. Artikulation der melodieführenden Stimmen häufig mit der Gesangstimme in <persName key="A002068">Webers</persName> "Original" übereinstimmen, kann sich der <persName key="A002068">Weber</persName>-Fan also wohl wieder beruhigt zurücklehnen und muß nicht das "mittlere Erdbeben" befürchten, von dem <persName>Siegfried Hünermund</persName> sprach, das aber sicherlich eingetreten wäre, hätte sich seine These als stichhaltig erwiesen. So aber hat die Agthe-Wolke <persName key="A002068">Weber</persName> nur kurzzeitig umhüllt und nun können wieder hell die Sterne strahlen!</p>
+            <p>Die Weber-Forscher verfolgen z. Zt. noch eine weitere vage Spur bei der Identifizierung der Tänze: <persName>Pazdirek</persName> nennt eine bei Klemm in <placeName>
+                    <settlement>Leipzig</settlement>
+                </placeName> erschienene Sammlung mit dem Titel <hi rend="italic">Neueste gesellsch. Tänze</hi> aus der Feder von "Agthe, Gärich &amp; Strauch" – leider hat sich von diesem Druck, der u. U. das Rätsel vollständig lösen könnte, bisher kein Exemplar nachweisen lassen. Sollten sich Neuigkeiten in dieser Sache ergeben, wird an dieser Stelle darüber berichtet werden.</p>
+        </body>
+    </text>
+</TEI>

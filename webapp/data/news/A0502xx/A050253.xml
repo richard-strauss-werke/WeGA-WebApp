@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050253">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Schwergewichtige Opern-Neuerscheinungen</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2012-05-12T14:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Mehr als <hi rend="bold">1000 Seiten druckfrischer Weber</hi> werden in diesen Tagen vom Schott-Verlag ausgeliefert, denn nun liegen endlich die beiden "Nachbaropern" <hi rend="italic">
+                        <workName key="A020036">Silvana</workName>
+                    </hi> und <hi rend="italic">
+                        <workName key="A020038">Abu Hassan</workName>
+                    </hi> gemeinsam in der Partituredition der Gesamtausgabe vor. Während es das zur <hi rend="italic">Silvana</hi> umgekleidete <hi rend="italic">Waldmädchen</hi> in der Edition von <persName key="A009003">Markus Bandur</persName> auf drei Bände gebracht hat, genügt dem Schalk <hi rend="italic">Abu Hassan</hi> in der Edition von <persName key="A009000">Joachim Veit</persName> ein einziger Einband.</p>
+                <p>
+                    <persName key="A009003">Bandurs</persName> Edition in <hi rend="bold">Serie III, Bd. 3a–c</hi> der Gesamtausgabe ist bei Schott unter den Bestellnummern <ref target="http://www.schott-musik.de/shop/1/show,305377.html">WGA 1032-10</ref>, <ref target="http://www.schott-musik.de/shop/1/show,305339.html">WGA 1032-20</ref> und <ref target="http://www.schott-musik.de/shop/1/show,305340.html">WGA 1032-30</ref> erhältlich. Die Edition gibt die Urfassung der Oper wieder, enthält aber in einer separaten Schicht die Version der <placeName>
+                        <settlement>Frankfurter</settlement>
+                    </placeName> Uraufführung 1810 mit allen Streichungen und sonstigen Eingriffen. Daneben sind in der Edition aber auch sämtliche späteren Stufen der Auseinandersetzung <persName key="A002068">Webers</persName> mit dem Werk dokumentiert, darunter vor allem die <placeName>
+                        <settlement>Berliner</settlement>
+                    </placeName> Fassung von 1812 und die <placeName>
+                        <settlement>Dresdner</settlement>
+                    </placeName> Version von 1818. Aufführungsmaterialien nach der Urfassung des Werks sind bereits erstellt und werden in Kürze ebenfalls in einer überarbeiteten Form vorliegen, so dass auch spätere Fassungen wieder für die Praxis zugänglich sind.</p>
+                <p>Der <hi rend="italic">
+                        <workName key="A020038">Abu Hassan</workName>
+                    </hi> wird vom Verlag unter der Nummer <ref target="http://www.schott-musik.de/shop/1/show,109482.html">WGA 1033</ref> innerhalb von <hi rend="bold">Serie III als Band 4</hi> angeboten. Für dieses 1811 in <placeName>
+                        <settlement>München</settlement>
+                    </placeName> erstmals aufgeführte Werk hat <persName key="A002068">Weber</persName> um die Jahreswende 1812/13 ein Duett und 1823 eine kurze Arie nachkomponiert, die beide von <persName key="A002068">Weber</persName> in spätere Kopien integriert wurden und deshalb auch zum Haupttext der Edition gehören. Im Anhang des Bandes sind zwei <placeName>
+                        <settlement>Gothaer</settlement>
+                    </placeName> Fassungen der Nummern 4 und 5 des Singspiels aufgenommen, die mit Rücksicht auf die Fähigkeiten der dortigen Ausführenden entstanden und bei denen zumindest in einem Falle <persName key="A002068">Webers</persName> Zustimmung vorausgesetzt werden kann. Auch im Falle des <hi rend="italic">
+                        <workName key="A020038">Abu Hassan</workName>
+                    </hi> liegt von den Mitarbeitern der WeGA betreutes Aufführungsmaterial vor, das gegenwärtig an den letzten Stand der Edition angeglichen wird.</p>
+                <p>Der Kritische Bericht beider Editionen dokumentiert die teils komplexe bzw. üppige Quellenlage und weist im Detail die Entstehung autorisierter Kopien nach. Ein reichhaltiger Abbildungsteil illustriert Probleme und Besonderheiten der Editionen. Die Redaktion der beiden Editionen lag in den bewährten Händen von <persName key="A009005">Frank Ziegler</persName>, d. h. die Bände sind wiederum in enger Zusammenarbeit zwischen jeweiligem Bandherausgeber und Redakteur entstanden. Vollständige Versionen der in den Bänden zitierten Aufführungsbesprechungen beider Werke werden demnächst auf der Website der WeGA frei zugänglich sein.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

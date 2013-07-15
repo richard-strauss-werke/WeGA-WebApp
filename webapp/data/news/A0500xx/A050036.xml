@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050036">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Wichtiger aktueller Hinweis zur Edirom mit Webers Klarinettenquintett</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2006-03-07T09:43:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>release</term>
+                    <term>sig</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Die als Beilage zu Serie VI, Bd. 3 der Weber-Gesamtausgabe veröffentlichte <hi rend="italic">Edirom</hi> mit dem <workName key="A020205">Klarinettenquintett</workName>
+                    <persName key="A002068">Webers</persName> kann beim Start eine Fehlermeldung auswerfen, wenn der neue <hi rend="italic">Acrobat Reader 7.0</hi> oder <hi rend="italic">Acrobat Professional 7.0</hi> benutzt wird. Bitte aktualisieren Sie ggf. Ihren <hi rend="italic">Acrobat Reader 7.0</hi> (Update auf Version 7.07 oder neuer) und Ihr <hi rend="italic">Acrobat Professional</hi> und starten Sie den Reader, bevor Sie die <hi rend="italic">Edirom</hi> aufrufen. Damit sind dann alle Probleme behoben. Bitte beachten Sie auch, daß bei Verwendung von zusätzlich der Reader installiert und aufgerufen sein muß. Diese Schwierigkeiten betreffen nur diese <hi rend="italic">Edirom</hi> mit der Demo-Version des <workName key="A020205">Klarinettenquintetts</workName>; die zur Zeit entwickelte Folge-Version ist ein reines Open-Source-Produkt, so daß solche lästigen Kompatibilitätsprobleme mit neuen proprietären Programmversionen nicht auftreten werden.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

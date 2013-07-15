@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050103">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Erste Schritte zur Kooperation im Hinblick auf ein künftiges digitales Weber-Werkverzeichnis</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2011-11-12T07:30:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>report</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Vom 24. bis 28. Oktober 2011 besuchte <persName>
+                        <hi rend="bold">Dr. Axel
+                     Teich-Geertinger</hi>
+                    </persName> vom <hi rend="italic">
+                        <ref type="hyperLink" target="http://www.kb.dk/en/kb/nb/mta/dcm/">Danish Centre for Music
+                     Publication</ref>
+                    </hi> (DCM) an der Königlichen Bibliothek in <placeName>
+                        <hi rend="bold">Kopenhagen</hi>
+                    </placeName> die Arbeitsgruppen <hi rend="italic">Edirom</hi>, <hi rend="italic">TextGrid</hi> und die WeGA am Musikwissenschaftlichen Seminar
+               Detmold/Paderborn. Die Gespräche konzentrierten sich auf den von Teich-Geertinger
+               entwickelten Editor <hi rend="bold">
+                        <ref type="hyperLink" target="http://www.kb.dk/en/kb/nb/mta/dcm/projekter/mermeid.html">MerMEId</ref>
+                    </hi> (ausführlich: <hi rend="italic">Metadata Editor and Repository for MEI Data</hi>). Es handelt sich dabei um ein
+               für die elektronischen Kataloge der Werke <persName>Carl Nielsens</persName>,
+                  <persName>J.P.E. Hartmann</persName> u.a. konzipierte Software, mit der die
+               Eingabe und Pflege von Katalogdaten im Format der <ref type="hyperLink" target="http://www.music-encoding.org">Music Encoding Initative</ref> auch ohne
+               Kenntnis der zugrundeliegenden XML-Strukturen möglich ist. Dieser Editor soll auch
+               für die <hi rend="italic">Edirom</hi>-Software eingesetzt werden und auch der Ausbau
+               der jetzt nur mit sehr rudimentären Daten angelegten, ebenfalls auf MEI basierenden
+               Werkinformationen innerhalb der WeGA-Website wäre naheliegend. Deshalb fand am 25.
+               Oktober in Detmold ein Gespräch statt, an dem auch <persName>Frank Ziegler</persName> als Herausgeber des
+               <hi rend="bold">Weber-Werkverzeichnisses</hi>, die Mitarbeiter des Detmolder DFG-NEH-Projekts und
+               Vertreter von <hi rend="italic">Edirom</hi> teilnahmen. Axel Teich Geertinger
+               demonstrierte dabei einerseits seinen Editor, zum anderen ging es aber vor allem um
+               die speziellen Anforderungen bei der Weber-Ausgabe und eventuell im zugrundeliegenden
+               Schema zu ergänzende bzw. verändernde Strukturen. Die fruchtbare Diskussion, die auch
+               in den Tagen danach unter stärker technischen Aspekten fortgesetzt wurde, war ein
+               erster Schritt zu einer dauerhafteren Zusammenarbeit zwischen den Projekten.
+               Teich-Geertinger wird seinen Editor nun in den kommenden Monaten weiter ausbauen, in
+               Detmold wird inzwischen eine Migration der Basisdaten in sein Schema vorgenommen, so
+               dass weitere Transformationen automatisch erfolgen können. Damit steht der Weg offen
+               zu einem komfortablen Einpflegen der für das Werkverzeichnis notwendigen
+               Informationen. Zugleich kann das Werkverzeichnis damit in einem offenen und
+               langfristig sicheren Format erarbeitet werden, das sowohl für die elektronische als
+               auch die Print-Veröffentlichung viel Flexibilität bietet.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

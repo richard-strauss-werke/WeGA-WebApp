@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A110463">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="de">Weber-Studien Bd. 8</title>
+                <title level="a" xml:lang="en">Weber-Studies vol. 8</title>
+                <author key="A009001">Peter Stadler</author>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>WeGA elektronisch</publisher>
+                <availability status="free">
+                    <p>2012, Carl-Maria-von-Weber-Gesamtausgabe, Detmold</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct type="book">
+                    <monogr>
+                        <title level="m" type="main">Tagungsbericht Dresden 2006 sowie weitere Aufsätze und
+              Quellenstudien</title>
+                        <title level="m" type="sub">Bericht über das Symposion „Carl Maria von Weber – der
+              Dresdner Kapellmeister und der Orchesterstil seiner Zeit“ in der Hochschule für Musik
+              „Carl Maria von Weber“ in Dresden am 13. und 14. Oktober 2006 sowie freie Aufsätze und
+              Quellenstudien</title>
+                        <editor>Manuel Gervink</editor>
+                        <editor>Frank Heidlberger</editor>
+                        <editor>Frank Ziegler</editor>
+                        <imprint>
+                            <pubPlace>Mainz</pubPlace>
+                            <date when="2007">2007</date>
+                        </imprint>
+                    </monogr>
+                    <series>
+                        <title level="s">Weber-Studien</title>
+                        <editor>Gerhard Allroggen</editor>
+                        <editor key="A009000">Joachim Veit</editor>
+                        <biblScope type="vol">8</biblScope>
+                    </series>
+                    <idno type="isbn-13">978-3-7957-0384-4</idno>
+                    <idno type="isbn-10">3-7957-0384-4</idno>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc status="approved">
+            <change who="PS" when="2012-03-06">eingerichtet</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div xml:lang="de">
+                <head>Tagungsbericht Dresden 2006 sowie weitere Aufsätze und Quellenstudien.</head>
+                <p>Bericht über das Symposion „Carl Maria von Weber – der Dresdner Kapellmeister und der
+          Orchesterstil seiner Zeit“ in der Hochschule für Musik „Carl Maria von Weber“ in Dresden
+          am 13. und 14. Oktober 2006 sowie freie Aufsätze und Quellenstudien, hg. von Manuel
+          Gervink, Frank Heidlberger und Frank Ziegler, Mainz 2007. X, 548 S.<lb/> Bestellnummer: ED
+          20112; ISBN 3-7957-0384-4</p>
+                <div>
+                    <head>Inhaltsverzeichnis</head>
+                    <list>
+                        <item>Zur Einleitung (Frank Ziegler), S. vii</item>
+                    </list>
+                    <p>Tagungsbericht Dresden 2006</p>
+                    <list>
+                        <item>Begrüßung (Manuel Gervink), S. 3</item>
+                        <item>Vorbemerkungen (Frank Heidlberger), S. 5</item>
+                        <item>Peter Gülke, Utopie und Realität einer deutschen Nationaloper, S. 7</item>
+                        <item>Till Gerrit Waidelich, August Mayers Bürgschaft im Verhältnis zu anderen
+              musikdramatischen Adaptionen der Schiller-Ballade – die Oper eines Mitglieds von
+              Webers Dresdner Sängerensemble, S. 15</item>
+                        <item>Michael Heinemann, Francesco Morlacchi – Webers Gegenspieler?, S. 37</item>
+                        <item>Irmlind Capelle, Huldigungszeichen für den Dresdner Hof – Zur Jubel-Kantate von
+              Friedrich Kind und Carl Maria von Weber, S. 45</item>
+                        <item>Joachim Veit, Carl Maria von Weber als Kapellmeister in Dresden – Anmerkungen zur
+              Rolle Webers bei der „Errichtung eines deutschen Singspiels“ durch den Sächsischen
+              Hof, S. 63</item>
+                        <item>Frank Ziegler, Webers Probenarbeit an der Dresdner Oper, S. 91</item>
+                        <item>Ortrun Landmann, Der Kgl. Sächsische Kapellmeister Carl Maria von Weber und die
+              Kgl. Sächsische Musikalische Kapelle – ein beiderseitiges Geben und Nehmen, S.
+              117</item>
+                        <item>Klaus Aringer, „Neu und ergreifend“ – Carl Maria von Webers Orchesterbehandlung im
+              Spiegel von Instrumentationslehren des 19. Jahrhunderts, S. 137</item>
+                        <item>Frank Heidlberger, Drama und Erzählstruktur in Carl Maria von Webers
+              Klarinettenkonzerten – Zum Verhältnis zwischen musikalischem „Text“ und formaler
+              Organisation, S. 151</item>
+                        <item>Felix Pourtov, Carl Maria von Weber und St. Petersburg: einige Aspekte der
+              Weber-Rezeption in der ersten Hälfte des 19. Jahrhunderts, S. 181</item>
+                    </list>
+                    <p>Freie Aufsätze</p>
+                    <list>
+                        <item>Gerhard Poppe, Dienstordnung und Repertoireaufbau in der Dresdner Hofkirchenmusik
+              von 1764 bis 1832, S. 193</item>
+                        <item>Gerhard Poppe, Kleine Dienst-Regeln über den Kirchen Dienst als Quelle für
+              Liturgie und Musik in der Katholischen Hofkirche zu Dresden, S. 251</item>
+                        <item>Frank Ziegler, Leyer, Schwert und Freischütz-Ouvertüre – Bemerkungen zu Carl Maria
+              von Webers Halle-Besuch 1820, S. 283</item>
+                        <item>Dagmar Beck, Carl Maria von Weber in Eutin, Plön und Oldenburg, S. 301</item>
+                        <item>Heinrich W. Schwab, Carl Maria von Webers Konzertaufenthalt in Kopenhagen (1820) –
+              eine Bestandsaufnahme, S. 317</item>
+                        <item>Werner Krahl, Eveline Bartlitz, Frank Ziegler, „[…] bey ihrem Gesange verstummt
+              die Kritik, und Bewunderung tritt an ihre Stelle“ – Das ungewöhnliche Leben der
+              Sängerin Helena Harlas (um 1785–1818), S. 343</item>
+                        <item>Knut Holtsträter, Gottfried Webers Wirkung auf die Konzepte der Funktions- und
+              Stufenharmonik – eine vorläufige Bestandsaufnahme, S. 381</item>
+                        <item>Frank Ziegler, „[…] wahr und genau aufgezeichnet“ – Webers Wien-Besuche 1822/23
+              und die Rezeption seiner Bühnenwerke in der Kaiserstadt 1821–1829 im Spiegel
+              zeitgenössischer Erinnerungen, S. 433</item>
+                        <item>Register der erwähnten Personen und Werke, S. 528</item>
+                    </list>
+                </div>
+            </div>
+            <div xml:lang="en">
+                <head>Tagungsbericht Dresden 2006 sowie weitere Aufsätze und Quellenstudien.</head>
+                <p>Bericht über das Symposion „Carl Maria von Weber – der Dresdner Kapellmeister und der
+          Orchesterstil seiner Zeit“ in der Hochschule für Musik „Carl Maria von Weber“ in Dresden
+          am 13. und 14. Oktober 2006 sowie freie Aufsätze und Quellenstudien, hg. von Manuel
+          Gervink, Frank Heidlberger und Frank Ziegler, Mainz 2007. X, 548 pages<lb/> Order no.: ED
+          20112; ISBN 3-7957-0384-4</p>
+                <div>
+                    <head>Table of contents</head>
+                    <list>
+                        <item>Zur Einleitung (Frank Ziegler), p. vii</item>
+                    </list>
+                    <p>Tagungsbericht Dresden 2006</p>
+                    <list>
+                        <item>Begrüßung (Manuel Gervink), p. 3</item>
+                        <item>Vorbemerkungen (Frank Heidlberger), p. 5</item>
+                        <item>Peter Gülke, Utopie und Realität einer deutschen Nationaloper, p. 7</item>
+                        <item>Till Gerrit Waidelich, August Mayers Bürgschaft im Verhältnis zu anderen
+              musikdramatischen Adaptionen der Schiller-Ballade – die Oper eines Mitglieds von
+              Webers Dresdner Sängerensemble, p. 15</item>
+                        <item>Michael Heinemann, Francesco Morlacchi – Webers Gegenspieler?, p. 37</item>
+                        <item>Irmlind Capelle, Huldigungszeichen für den Dresdner Hof – Zur Jubel-Kantate von
+              Friedrich Kind und Carl Maria von Weber, p. 45</item>
+                        <item>Joachim Veit, Carl Maria von Weber als Kapellmeister in Dresden – Anmerkungen zur
+              Rolle Webers bei der „Errichtung eines deutschen Singspiels“ durch den Sächsischen
+              Hof, p. 63</item>
+                        <item>Frank Ziegler, Webers Probenarbeit an der Dresdner Oper, p. 91</item>
+                        <item>Ortrun Landmann, Der Kgl. Sächsische Kapellmeister Carl Maria von Weber und die
+              Kgl. Sächsische Musikalische Kapelle – ein beiderseitiges Geben und Nehmen, p.
+              117</item>
+                        <item>Klaus Aringer, „Neu und ergreifend“ – Carl Maria von Webers Orchesterbehandlung im
+              Spiegel von Instrumentationslehren des 19. Jahrhunderts, p. 137</item>
+                        <item>Frank Heidlberger, Drama und Erzählstruktur in Carl Maria von Webers
+              Klarinettenkonzerten – Zum Verhältnis zwischen musikalischem „Text“ und formaler
+              Organisation, p. 151</item>
+                        <item>Felix Pourtov, Carl Maria von Weber und St. Petersburg: einige Aspekte der
+              Weber-Rezeption in der ersten Hälfte des 19. Jahrhunderts, p. 181</item>
+                    </list>
+                    <p>Freie Aufsätze</p>
+                    <list>
+                        <item>Gerhard Poppe, Dienstordnung und Repertoireaufbau in der Dresdner Hofkirchenmusik
+              von 1764 bis 1832, p. 193</item>
+                        <item>Gerhard Poppe, Kleine Dienst-Regeln über den Kirchen Dienst als Quelle für
+              Liturgie und Musik in der Katholischen Hofkirche zu Dresden, p. 251</item>
+                        <item>Frank Ziegler, Leyer, Schwert und Freischütz-Ouvertüre – Bemerkungen zu Carl Maria
+              von Webers Halle-Besuch 1820, p. 283</item>
+                        <item>Dagmar Beck, Carl Maria von Weber in Eutin, Plön und Oldenburg, p. 301</item>
+                        <item>Heinrich W. Schwab, Carl Maria von Webers Konzertaufenthalt in Kopenhagen (1820) –
+              eine Bestandsaufnahme, p. 317</item>
+                        <item>Werner Krahl, Eveline Bartlitz, Frank Ziegler, „[…] bey ihrem Gesange verstummt
+              die Kritik, und Bewunderung tritt an ihre Stelle“ – Das ungewöhnliche Leben der
+              Sängerin Helena Harlas (um 1785–1818), p. 343</item>
+                        <item>Knut Holtsträter, Gottfried Webers Wirkung auf die Konzepte der Funktions- und
+              Stufenharmonik – eine vorläufige Bestandsaufnahme, p. 381</item>
+                        <item>Frank Ziegler, „[…] wahr und genau aufgezeichnet“ – Webers Wien-Besuche 1822/23
+              und die Rezeption seiner Bühnenwerke in der Kaiserstadt 1821–1829 im Spiegel
+              zeitgenössischer Erinnerungen, p. 433</item>
+                        <item>Register der erwähnten Personen und Werke, p. 528</item>
+                    </list>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

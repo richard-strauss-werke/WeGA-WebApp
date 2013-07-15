@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050035">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">2006 erst nach und nach aktualisiert</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2006-03-04T09:47:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>publication</term>
+                    <term>release</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Im Zuge des Umzugs der Homepage der WeGA auf ein eigenen Server erfolgt auch eine grundlegende Umgestaltung der Struktur der einzelnen Seiten. Dabei wird die Rubrik "Aktuelles" zunächst noch in ihrer alten Form belassen und die Abtrennung der inzwischen weniger aktuellen Meldungen erst später vollzogen. Wir bitten insbesondere auch um Verständnis für die vorübergehende Unzugänglichkeit einiger Unterseiten und speziell einiger archivierter Beiträge.</p>
+                <p>Hingewiesen sei an dieser Stelle aber schon einmal auf die beiden neu erschienenen Bände: die <placeName>
+                        <settlement>Dresdner</settlement>
+                    </placeName>
+                    <hi rend="bold">Festmusiken</hi> (hg. von Oliver Huck, Serie III, Bd. 10b) und das <hi rend="bold">
+                        <workName key="A020212">1. Klavierkonzert</workName>
+                    </hi> (hg. von John Warrack, Serie V, Bd. 4/1).</p>
+            </div>
+        </body>
+    </text>
+</TEI>

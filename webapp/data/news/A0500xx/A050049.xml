@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050049">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Drei auf einen Streich: Buchvorstellungen in Bad Ems</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2007-09-15T09:03:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>announcement</term>
+                    <term>conference</term>
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Anläßlich des diesjährigen Mitgliedertreffens der Internationalen-Carl-Maria-von-Weber-Gesellschaft e.V. vom <date from="2007-12-21" to="2007-12-23">21. bis 23. September 2007</date> in <placeName>
+                        <settlement>Bad Ems</settlement>
+                    </placeName> werden gleich drei (oder besser gesagt: zweieinhalb) Neuveröffentlichungen vorgestellt: Die wichtigste Neuerscheinung ist sicherlich die <hi rend="bold">kritische Edition des <hi rend="italic">
+                            <workName key="A020040">Freischütz</workName>-</hi>Librettos</hi> von Solveig Schreiter, die bis dahin im Allitera-Verlag <placeName>
+                        <settlement>München</settlement>
+                    </placeName> zum Preis von 26.- Euro vorliegen wird (256 Seiten). Derselbe Verlag publiziert anläßlich des Treffens auch eine preisgünstigere Paperback-Ausgabe der Veröffentlichung der <hi rend="bold">
+                        <placeName>
+                            <settlement>Emser</settlement>
+                        </placeName> Briefe <persName key="A002068">Carl Maria von Webers</persName>
+                    </hi>, die Eveline Bartlitz, Dagmar Beck und Joachim Veit <date notBefore="2003-01-01" notAfter="2003-02-28">Anfang 2003</date> in einer gebundenen Ausgabe vorgelegt hatten. Der 120seitige Band enthält sämtliche dieser Briefe außer in kommentierten Neuübertragungen auch in Farbfaksimiles und ist jetzt für 25.- Euro zu erwerben. Bis zum Mitgliedergliedertreffen sind beide Bände noch zum Subskriptionspreis von je 20.- Euro über die Weber-Gesellschaft erhältlich.</p>
+                <p>Als gewichtigste Neuerscheinung kann zugleich der neueste Band der <!-- TODO -->
+                    <ref target="index.php?id=154">
+                        <hi rend="bold">Weber-Studien (Bd. 8)</hi>
+                    </ref> mit dem <placeName>
+                        <settlement>Dresdner</settlement>
+                    </placeName> Tagungsbericht <date when="2006">2006</date> und weiteren Aufsätzen und Quellenstudien präsentiert werden, den Manuel Gervink, Frank Heidlberger und Frank Ziegler bei Schott Musik International vorgelegt haben. Die Präsentation findet am <hi rend="bold">
+                        <date when="2007-09-21">21. September 2007</date>
+                    </hi> um 19.30 Uhr im <hi rend="bold">Stadtarchiv /Stadmuseum <placeName>
+                            <settlement>Bad Ems</settlement>
+                        </placeName>
+                    </hi> statt. Interessenten sind herzlich eingeladen.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

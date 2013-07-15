@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../schemata/wegaNews.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A050006">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Aktuelle Nachrichten der Carl-Maria von Weber-Gesamtausgabe</title>
+                <title level="a">Mitgliederversammlung mit erfreulichen 'wissenschaftlichen Folgen'</title>
+                <author key="A009000">Joachim Veit</author>
+            </titleStmt>
+            <publicationStmt>
+                <date when="2003-07-12T09:13:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: this is an original work.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="WeGA_cat">
+                    <term>conference</term>
+                    <term>publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text type="news">
+        <body>
+            <div xml:lang="de">
+                <p>Im vergangenen Herbst hielt die Weber-Gesellschaft ihre Mitgliederversammlung auf Einladung der <placeName>
+                        <settlement>Breslauer</settlement>
+                    </placeName> Musikhochschule "Carol Lipinsky" in der wunderschönen, von pulsierendem Leben erfüllten Stadt an der Oder ab. Die große Gastfreundschaft und die vielen Eindrücke dieser Tage werden die Mitglieder sicherlich in bester Erinnerung behalten. Die an der Breslauer Hochschule tätige Musikwissenschaftlerin Prof. Maria Zduniak, die das Treffen in vorbildlicher Weise vorbereitet und durchgeführt hatte, hielt vor der Mitgliederversammlung einen Vortrag zu <hi rend="italic">Carl Maria von Weber in Schlesien</hi>, der auf etliche unbekannte bzw. wenig bekannte Dokumente hinwies. Frank Ziegler, Redakteur der <hi rend="bold">
+                        <hi rend="italic">Weberiana</hi>
+                    </hi>, bat Frau Zduniak schon damals, ihren Beitrag für das Mitteilungsblatt der Weber-Gesellschaft, das sich inzwischen zu einer echten "Konkurrenz" der <hi rend="italic">Weber-Studien</hi> gemausert hat, auszuarbeiten. Zugleich ließ es dem Redakteur keine Ruhe, daß damals aus Zeitgründen (und weil "eigentlich" nichts mehr zu sehen war) das kleine <placeName>
+                        <settlement>Carlsruhe</settlement>
+                    </placeName> mit seinem im Krieg zerstörten Schloß, in dem <persName key="A002068">Weber</persName> sich <date notBefore="1806-11-01" notAfter="1807-02-28"><!-- TODO -->Ende 1806 bis Anfang 1807</date> aufgehalten und u.a. seine beiden Sinfonien komponiert hatte, nicht mehr besichtigt werden konnte. Inzwischen ist Ziegler auf "Wochenend-Trips" zweimal selbst dort gewesen (einmal in Begleitung aller Berliner Weberianer) und hat zugleich die Gelegenheit benutzt, um die Literatur und die Quellen zu <placeName>
+                        <settlement>Carlsruhe</settlement>
+                    </placeName> und <persName key="A002068">Webers</persName> dortigem Aufenthalt kritisch zu sichten und neu zu bewerten. So wird das in Kürze im Verlag Schneider in <placeName>
+                        <settlement>Tutzing</settlement>
+                    </placeName> erscheinende Heft 13 der <hi rend="italic">Weberiana</hi> zwei umfangreiche Beiträge zu <persName key="A002068">Webers</persName> Aufenthalten in <hi rend="bold">
+                        <placeName>
+                            <settlement>Breslau</settlement>
+                        </placeName>
+                    </hi> und <hi rend="bold">
+                        <placeName>
+                            <settlement>Carlsruhe</settlement>
+                        </placeName>
+                    </hi> enthalten, die ein noch dunkles Kapitel aus <persName key="A002068">Webers</persName> Jugendzeit in ein sehr viel helleres verwandeln werden. Wir freuen uns, daß die Aktivitäten der Weber-Gesellschaft auf diese Weise auch für uns wieder einmal erfreuliche Folgen haben.</p>
+            </div>
+        </body>
+    </text>
+</TEI>
