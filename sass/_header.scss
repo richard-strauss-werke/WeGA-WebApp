@@ -1,0 +1,17 @@
+// ** Classes for the header **
+
+// Settings for large displays
+.headerLarge {
+	@extend .hide-for-small;
+	@extend .row;
+	background-image: url("../images/header.png");
+    background-size: cover;
+	height: 120px;
+    margin: 0;
+}
+
+div.headerLarge {
+ul{
+	background: rgba(0,0,0,0);
+}
+}
