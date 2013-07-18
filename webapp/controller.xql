@@ -55,13 +55,25 @@ else if (ends-with($exist:resource, ".html")) then
                 {(:login:set-user("org.exist.demo.login", (), false()):)()}
                 <set-attribute name="$exist:prefix" value="{$exist:prefix}"/>
                 <set-attribute name="$exist:controller" value="{$exist:controller}"/>
-                <set-attribute name="$lang" value="de"/>
+                <set-attribute name="lang" value="de"/>
             </forward>
         </view>
         <error-handler>
             <forward url="{$exist:controller}/error-page.html" method="get"/>
             <forward url="{$exist:controller}/modules/view.xql"/>
         </error-handler>
+    </dispatch>
+
+else if(matches($exist:resource, 'A00\d{4}')) then 
+    <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
+        <forward url="templates/person.html"/>
+        <view>
+            <forward url="{$exist:controller}/modules/view.xql">
+                <set-attribute name="$exist:prefix" value="{$exist:prefix}"/>
+                <set-attribute name="$exist:controller" value="{$exist:controller}"/>
+                <set-header name="Cache-Control" value="no-cache"/>
+            </forward>
+        </view>
     </dispatch>
         
 else if (contains($exist:path, "/$shared/")) then

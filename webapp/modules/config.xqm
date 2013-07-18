@@ -35,7 +35,7 @@ declare variable $config:app-root :=
 declare variable $config:options-dir as xs:string := $config:app-root || '/options';
 declare variable $config:options-file as document-node() := doc($config:options-dir || '/options.xml');
 declare variable $config:svn-change-history-file as document-node() := doc($config:options-dir || '/svnChangeHistory.xml');
-declare variable $config:data-collection-path as xs:string := $config:app-root || '/data';
+declare variable $config:data-collection-path as xs:string := '/db/apps/WeGA-data';
 declare variable $config:tmp as xs:string := $config:app-root || '/tmp';
 
 declare variable $config:isDevelopment as xs:boolean := config:get-option('environment') eq 'development';

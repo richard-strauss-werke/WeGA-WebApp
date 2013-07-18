@@ -29,6 +29,65 @@ declare %templates:wrap function html:page-title($node as node(), $model as map(
 };:)
 
 (:~
+ : Top navigation for all pages 
+ :
+ : @author Peter Stadler
+ : @return html:div 
+ :)
+declare function html:page-top-bar-section($node as node(), $model as map(*)) as element(xhtml:section) {
+    let $lang := 'de'
+    let $html_pixDir := config:get-option('pixDir')
+    let $baseHref := config:get-option('baseHref')
+    let $uriTokens := tokenize(xmldb:decode-uri(request:get-uri()), '/')
+    let $search := string-join(($baseHref, $lang, core:getLanguageString('search', $lang)), '/')
+    let $index := string-join(($baseHref, $lang, core:getLanguageString('index', $lang)), '/')
+    let $impressum := string-join(($baseHref, $lang, core:getLanguageString('about', $lang)), '/')
+    let $help := string-join(($baseHref, $lang, core:getLanguageString('help', $lang)), '/')
+    let $switchLanguage := 
+        for $i in $uriTokens[string-length(.) gt 2]
+        return
+        if (matches($i, 'A\d{6}'))
+            then $i
+            else if($lang eq 'en') 
+                then replace(core:translateLanguageString(replace($i, '_', ' '), $lang, 'de'), '\s', '_') (: Ersetzen von Leerzeichen durch Unterstriche in der URL :)
+                else replace(core:translateLanguageString(replace($i, '_', ' '), $lang, 'en'), '\s', '_')
+    let $switchLanguage := if($lang eq 'en')
+        then <a href="{string-join(($baseHref, 'de', $switchLanguage), '/')}" title="Diese Seite auf Deutsch"><img src="{string-join(($baseHref, $html_pixDir, 'de.gif'), '/')}" alt="germanFlag" width="20" height="12"/></a>
+        else <a href="{string-join(($baseHref, 'en', $switchLanguage), '/')}" title="This page in english"><img src="{string-join(($baseHref, $html_pixDir, 'gb.gif'), '/')}" alt="englishFlag" width="20" height="12"/></a>
+    return 
+    element section {
+        attribute class {"top-bar-section"},
+        (:if(config:get-option('environment') eq 'development') then attribute class {'dev'}
+        else if(config:get-option('environment') eq 'release') then attribute class {'rel'}
+        else (),
+        <h1><a href="{$index}"><span class="hiddenLink">Carl Maria von Weber Gesamtausgabe</span></a></h1>,:)
+        <ul class="left">
+            <li class="has-form">
+                <form>
+                    <div class="row collapse">
+                        <div class="small-8 columns">
+                            <input type="text"/>
+                        </div>
+                        <div class="small-4 columns">
+                            <a href="#" class="small button">Search</a>
+                        </div>
+                    </div>
+                </form>
+            </li>
+        </ul>,
+        <ul class="right">
+            <li><a href="{$index}">{core:getLanguageString('home',$lang)}</a></li>
+            <li class="divider"></li>
+            <li><a href="{$impressum}">{core:getLanguageString('about',$lang)}</a></li>
+            <li class="divider"></li>
+            <li><a href="{$help}">{core:getLanguageString('help',$lang)}</a></li>
+            <li class="divider"></li>
+            <li>{$switchLanguage}</li>
+        </ul>
+    }
+};
+
+(:~
  : Sub navigation for the index and error pages 
  :
  : @author Peter Stadler
@@ -132,6 +191,8 @@ declare function html:page-nav-combined($node as node(), $model as map(*)) as el
 declare function html:print-latest-news($node as node(), $model as map(*)) as element(xhtml:div) {
     let $latestNews := query:get-latest-news(())
     let $lang := 'de'
+    let $foo := request:get-attribute('$lang')
+    let $log := util:log-system-out($foo)
     return
         <div xmlns="http://www.w3.org/1999/xhtml">
             <h2>{core:getLanguageString('news', $lang)}</h2>

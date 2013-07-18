@@ -302,6 +302,24 @@ declare function core:getLanguageString($key as xs:string, $replacements as xs:s
     return functx:replace-multi($dicEntry,$placeHolders,$replacements)
 };
 
+
+(:~
+ : Tries to translate a string from sourceLang to targetLang using the dictionaries 
+ : If no translation is found the empty string is returned
+ :  
+ : @author Peter Stadler
+ : @param $string the string to translate
+ : @param $sourceLang the language to translate from
+ : @param $targetLang the language to translate to
+ : @return xs:string the translated string if successfull, otherwise the empty string
+ :)
+declare function core:translateLanguageString($string as xs:string, $sourceLang as xs:string, $targetLang as xs:string) as xs:string {
+    let $sourceDic := doc(config:get-option(concat('dic_', $sourceLang)))
+    let $targetDic := doc(config:get-option(concat('dic_', $targetLang)))
+    let $search := $targetDic//id($sourceDic//entry[lower-case(.) eq lower-case($string)]/string(@xml:id))
+    return normalize-space($search)
+};
+
 (:~
  : Does a dictionary lookup and returns this value 
  : 

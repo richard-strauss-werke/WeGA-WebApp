@@ -30,15 +30,17 @@ $em-base: 16px !default;
 //WeGA color definitions
 $wega-light-grey: #e6e6e6;
 $wega-dark-grey: darken($wega-light-grey, 30%);
+$wega-orange: rgb(217, 92, 0);
+$wega-blue: rgb(20,82,121);
 
 // Foundation Colors
-$primary-color: $wega-light-grey;
+$primary-color: $wega-blue;
 // $secondary-color: #e9e9e9;
 // $alert-color: #c60f13;
 // $success-color: #5da423;
 
 
- $body-bg: $primary-color;
+ $body-bg: $wega-light-grey;
 // $body-font-color: #222;
  $body-font-family: "Verdana", "Lucida Grande", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
@@ -1165,7 +1167,8 @@ $primary-color: $wega-light-grey;
 
 // Background color for the top bar
 
-$topbar-bg: rgba(0,0,0,0);
+/*$topbar-bg: rgba(0,0,0,0);*/
+$topbar-bg: $wega-dark-grey;
 
 // Height and margin
 
@@ -1220,11 +1223,4 @@ $topbar-menu-link-color: black;
     float: left;
     margin: 0.4pc 1em;
     padding: 0.3em;
-}
-
-.container {
-    background: white;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); 
-    width: emCalc(1000px);
-    margin: auto;
 }

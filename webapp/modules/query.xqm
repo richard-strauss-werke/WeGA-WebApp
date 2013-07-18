@@ -10,6 +10,7 @@ declare namespace mei="http://www.music-encoding.org/ns/mei";
 
 import module namespace config="http://xquery.weber-gesamtausgabe.de/modules/config" at "config.xqm";
 import module namespace core="http://xquery.weber-gesamtausgabe.de/modules/core" at "core.xqm";
+import module namespace functx="http://www.functx.com" at "functx.xqm";
 
 (:~
  : Get the latest news from the news collection
@@ -32,11 +33,13 @@ declare function query:get-latest-news($date as xs:date?) as document-node()* {
 };
 
 declare function query:get-todays-events($date as xs:date) as element(tei:date)*{
-    let $day := day-from-date($date)
-    let $month := month-from-date($date)
+    let $day := functx:pad-integer-to-length(day-from-date($date), 2)
+    let $month := functx:pad-integer-to-length(month-from-date($date), 2)
+    let $date-regex := '^'||string-join(('\d{4}',$month,$day),'-')||'$'
+    let $log := util:log-system-out($date-regex)
     return 
-        collection($config:data-collection-path || '/letters')//tei:dateSender/tei:date[@when castable as xs:date][day-from-date(@when) eq $day][month-from-date(@when) eq $month] union
-        collection($config:data-collection-path || '/persons')//tei:date[@when castable as xs:date][parent::tei:birth or parent::tei:death][day-from-date(@when) eq $day ][ month-from-date(@when) eq $month]
+        collection($config:data-collection-path || '/letters')//tei:dateSender/tei:date[matches(@when, $date-regex)] union
+        collection($config:data-collection-path || '/persons')//tei:date[matches(@when, $date-regex)][parent::tei:birth or parent::tei:death]
         (:core:getOrCreateColl('letters', 'indices', true())//tei:dateSender/tei:date[@when castable as xs:date][day-from-date(@when) eq $day][month-from-date(@when) eq $month]:)
 };
 
