@@ -1,133 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dictionary xml:id="typo3ContentMappings">
-    <entry oldID="10">/de/Index</entry>
-    <entry oldID="11">/de/Index<!-- Ziele der WeGA --></entry>
-    <entry oldID="13">/de/Register/Aktuelles</entry>
-    <entry oldID="14">/de/A002068<!--Kurze Biographie Carl Maria von Webers--></entry>
-    <entry oldID="15">/de/Kontakt<!--Über die Carl-Maria-von-Weber-Gesamtausgabe (WeGA)--></entry>
-    <entry oldID="16">/de/Publikationen/Weber-Studien</entry>
-    <entry oldID="17">/de/Suche<!--Personen-Datenbank der WeGA und der FFFI--></entry>
-    <entry oldID="18">/de/Bibliographie/Literatur</entry>
-    <entry oldID="19">/de/A002068/Werke</entry>
-    <entry oldID="20">/de/A002068/Werke</entry>
-    <entry oldID="21">/de/Register/Schriften</entry>
-    <entry oldID="22">/de/A002068/Schriften</entry>
-    <entry oldID="23">/de/A002068/Tagebücher</entry>
-    <entry oldID="24">/de/A002068/Korrespondenz</entry>
-    <entry oldID="30">/de/Register/Aktuelles</entry>
-    <entry oldID="31">/de/Register/Aktuelles</entry>
-    <entry oldID="32">/de/Biographie<!--Biographie: Prag 1813-1816--></entry>
-    <entry oldID="33">/de/Biographie<!--Biographie: Dresden 1817-1826--></entry>
-    <entry oldID="34">/de/Biographie<!--Biographie: Jugend bis 1812--></entry>
-    <entry oldID="36">/de/A009000/Aktuelles/A050091</entry>
-    <entry oldID="37">/de/A009000/Aktuelles/A050092</entry>
-    <entry oldID="38">/de/A009000/Aktuelles/A050094</entry>
-    <entry oldID="39">/de/A009000/Aktuelles/A050095</entry>
-    <entry oldID="40">/de/A009000/Aktuelles/A050096</entry>
-    <entry oldID="41"><!--Bibliographie (Noten)--></entry>
-    <entry oldID="42">/de/Bibliographie/Literatur</entry>
-    <entry oldID="43">/de/Publikationen/Weber-Studien/A110464</entry>
-    <entry oldID="44">/de/Publikationen/Weber-Studien/A110465</entry>
-    <entry oldID="45">/de/Publikationen/Weber-Studien/A110466</entry>
-    <entry oldID="46">/de/Publikationen/Weber-Studien/A110467</entry>
-    <entry oldID="47">/de/Publikationen/Weber-Studien/A110468</entry>
-    <entry oldID="48">/de/Publikationen/Weber-Studien/A110469</entry>
-    <entry oldID="49">/de/Publikationen/Weber-Studien/A110470</entry>
-    <entry oldID="50"><!--Mitarbeiter--></entry>
-    <entry oldID="51">/de/A009005</entry>
-    <entry oldID="52">/de/A009000</entry>
-    <entry oldID="53">/de/A009002</entry>
-    <entry oldID="54">/de/A003672</entry>
-    <entry oldID="56">/de/A002068/Werke</entry>
-    <entry oldID="57">/de/A002068/Werke<!-- WeV: Konzertarien und Duette mit Orchesterbegleitung --></entry>
-    <entry oldID="58">/de/A002068/Werke<!-- WeV: Einlagen zu fremden Opern und Singspielen --></entry>
-    <entry oldID="59">/de/A002068/Werke<!-- WeV: Opern und Singspiele --></entry>
-    <entry oldID="60">/de/A002068/Werke<!-- WeV: Kantaten, Huldigungsmusiken und andere Gelegenheitswerke --></entry>
-    <entry oldID="61">/de/A002068/Werke<!-- WeV: Kirchenmusik --></entry>
-    <entry oldID="62">/de/A002068/Werke<!-- WeV: Opern und Singspiele --></entry>
-    <entry oldID="63">/de/A002068/Werke<!-- WeV: Anh. B: Weber unterschobene Werke --></entry>
-    <entry oldID="64">/de/A002068/Werke<!-- WeV: Anhang A: Weber zugeschriebene [zweifelhafte] Werke --></entry>
-    <entry oldID="65">/de/A002068/Werke<!-- WeV: Bearbeitungen, Instrumentierungen und Klavierauszüge fremder Kompositionen --></entry>
-    <entry oldID="66">/de/A002068/Werke<!-- WeV: Varia [kleinere Skizzen und Entwürfe zu nicht ausgeführten Kompositionen, Studien, Kuriosa sowie Fragliches] --></entry>
-    <entry oldID="67">/de/A002068/Werke<!-- WeV: Bearbeitungen, Instrumentierungen und Klavierauszüge fremder Kompositionen --></entry>
-    <entry oldID="68">/de/A002068/Werke<!-- WeV: Sonaten zu zwei Händen --></entry>
-    <entry oldID="69">/de/A002068/Werke<!-- WeV: Ouvertüren und Sinfonien --></entry>
-    <entry oldID="70">/de/A002068/Werke<!-- WeV:  --></entry>
-    <entry oldID="71">/de/A002068/Werke<!-- WeV:  --></entry>
-    <entry oldID="72">/de/A002068/Werke<!-- WeV:  --></entry>
-    <entry oldID="73">/de/A002068/Werke<!-- WeV:  --></entry>
-    <entry oldID="74">/de/A002068/Werke<!-- WeV:  --></entry>
-    <entry oldID="75">/de/A002068/Werke<!-- WeV:  --></entry>
-    <entry oldID="76">/de/A002068/Werke<!-- WeV:  --></entry>
-    <entry oldID="77">/de/A002068/Werke<!-- WeV:  --></entry>
-    <entry oldID="78">/de/A002068/Werke<!-- WeV:  --></entry>
-    <entry oldID="79">/de/A002068/Werke<!-- WeV:  --></entry>
-    <entry oldID="80">/de/A002068/Werke<!-- WeV:  --></entry>
-    <entry oldID="81">/de/A002068/Werke<!-- WeV:  --></entry>
-    <entry oldID="82">/de/A002068/Werke<!-- WeV:  --></entry>
-    <entry oldID="83">/de/A002068/Werke<!-- WeV:  --></entry>
-    <entry oldID="84">/de/A002068/Werke<!-- WeV:  --></entry>
-    <entry oldID="85">/de/A002068/Werke<!-- WeV:  --></entry>
-    <entry oldID="86">/de/A002068/Werke<!-- WeV:  --></entry>
-    <entry oldID="87">/de/A002068/Werke<!-- Werkedition --></entry>
-    <entry oldID="88">/de/A002068/Werke<!-- Werkedition --></entry>
-    <entry oldID="89">/de/A002068/Werke<!-- Werkedition --></entry>
-    <entry oldID="90">/de/A002068/Werke<!-- Werkedition --></entry>
-    <entry oldID="91">/de/A002068/Werke<!-- Werkedition --></entry>
-    <entry oldID="92">/de/A002068/Werke<!-- Werkedition --></entry>
-    <entry oldID="93">/de/A002068/Werke<!-- Werkedition --></entry>
-    <entry oldID="94">/de/A002068/Werke<!-- Werkedition --></entry>
-    <entry oldID="95">/de/A002068/Werke<!-- Werkedition --></entry>
-    <entry oldID="96">/de/A002068/Werke<!-- Werkedition --></entry>
-    <entry oldID="97">/de/A002068/Werke<!-- Werkedition --></entry>
-    <entry oldID="98">/de/A002068/Werke<!-- Werkedition --></entry>
-    <entry oldID="99">/de/A002068/Werke<!-- Werkedition --></entry>
-    <entry oldID="100">/de/A002068/Werke<!-- Werkedition --></entry>
-    <entry oldID="101">/de/A002068/Werke<!-- Werkedition --></entry>
-    <entry oldID="102">/de/A002068/Werke<!-- Werkedition --></entry>
-    <entry oldID="103">/de/A002068/Werke<!-- Werkedition --></entry>
-    <entry oldID="104">/de/A002068/Werke<!-- Werkedition --></entry>
-    <entry oldID="113">/de/Publikationen/Weber-Studien/A110467</entry>
-    <entry oldID="114">/A030586</entry>
-    <entry oldID="115">/A030555</entry>
-    <entry oldID="116">/A030702</entry>
-    <entry oldID="117">/A030789</entry>
-    <entry oldID="118">/A030569</entry>
-    <entry oldID="119">/A030724</entry>
-    <entry oldID="120">/A030553</entry>
-    <entry oldID="121">/A030750</entry>
-    <entry oldID="122">/A030749</entry>
-    <entry oldID="123">/A030637</entry>
-    <entry oldID="124">/A030727</entry>
-    <entry oldID="125">/A030643</entry>
-    <entry oldID="126">/de/Register/Schriften</entry>
-    <entry oldID="128"><!-- User Login --></entry>
-    <entry oldID="129">/de/Kontakt</entry>
-    <entry oldID="133">/de/A002068/Schriften<!-- Schriften 1817 --></entry>
-    <entry oldID="137">/de/Register/Aktuelles<!-- News-Archiv 2005 --></entry>
-    <entry oldID="138"><!-- Aufsätze und Beiträge der WeGA --></entry>
-    <entry oldID="139"><!-- Agthe – aber welcher?  --></entry>
-    <entry oldID="141"><!-- Wer kennt Parallelstellen in anderen Klavierwerken des frühen 19. Jahrhunderts? --></entry>
-    <entry oldID="142"><!-- Vollständige Wiedergabe des Trios der Polonaise Nr. 1 von Agthe --></entry>
-    <entry oldID="143">/de/A002068/Werke<!-- Werkedition --></entry>
-    <entry oldID="144">/de/A009004</entry>
-    <entry oldID="146">/de/A002068/Werke<!-- WeV:  --></entry>
-    <entry oldID="148">/de/A002068/Werke<!-- Werkedition --></entry>
-    <entry oldID="149">/de/Register/Aktuelles<!-- News-Archiv 2006 --></entry>
-    <entry oldID="150">/de/Impressum<!-- Impressum --></entry>
-    <entry oldID="151">/de/A002068/Werke<!-- Werkedition --></entry>
-    <entry oldID="153">/de/A009008</entry>
-    <entry oldID="154">/de/Publikationen/Weber-Studien/A110463</entry>
-    <entry oldID="155">/sitemap/index.xml<!-- Sitemap --></entry>
-    <entry oldID="157">/de/Register/Aktuelles<!-- News-Archiv 2007 --></entry>
-    <entry oldID="159">/de/A002068/Korrespondenz/A041021</entry>
-    <entry oldID="160">/de/A002068/Korrespondenz<!-- Briefwechsel 1817 (zunächst nur Briefe von Weber) --></entry>
-    <entry oldID="162">/de/A002068/Tagebücher<!-- Carl Maria von Webers Tagebuch --></entry>
-    <entry oldID="163">/de/A009003</entry>
-    <entry oldID="164"><!-- Editionsrichtlinien der WeGA Auflage Mai 2009 --></entry>
-    <entry oldID="165">/de/Register/Aktuelles<!-- News-Archiv 2008 --></entry>
-    <entry oldID="166">/de/A009001<!-- Peter Stadler --></entry>
-    <entry oldID="167">/de/Register/Aktuelles<!-- News-Archiv 2009 --></entry>
-    <entry oldID="168">/de/Register/Aktuelles<!-- News-Archiv 2010 --></entry>
-    <entry oldID="169">/de/Register/Aktuelles<!-- News-Archiv 2010 --></entry>
-</dictionary>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Weber-Gesamtausgabe Web Application Option Files</title>
+                <title level="a">Mappings from former typo3 ids to current URLs</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName>
+                        <ref target="http://www.weber-gesamtausgabe.de">Carl-Maria-von-Weber-Gesamtausgabe</ref>
+                    </orgName>
+                    <address>
+                  <addrLine>Gartenstr. 20</addrLine>
+                  <addrLine>32756 Detmold</addrLine>
+                  <addrLine>Germany</addrLine>
+               </address>
+                </publisher>
+                <availability status="restricted">
+                    <p>This work is licensed under a <ref type="license"
+                        target="http://creativecommons.org/licenses/by/3.0/">Creative Commons
+                        Attribution 3.0 Unported License (CC BY 3.0)</ref>.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Written from scratch.</p>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc status="rev1.0.0">
+            <change who="Peter Stadler" when="2013-07-30">Initial transformation of old option files to
+                TEI conformant documents.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text type="typo3ContentMappings">
+        <body>
+            <list>
+                <head>typo3 content mappings</head>
+                <item n="10">/de/Index</item>
+                <item n="11">/de/Index<!-- Ziele der WeGA --></item>
+                <item n="13">/de/Register/Aktuelles</item>
+                <item n="14">/de/A002068<!--Kurze Biographie Carl Maria von Webers--></item>
+                <item n="15">/de/Kontakt<!--Über die Carl-Maria-von-Weber-Gesamtausgabe (WeGA)--></item>
+                <item n="16">/de/Publikationen/Weber-Studien</item>
+                <item n="17">/de/Suche<!--Personen-Datenbank der WeGA und der FFFI--></item>
+                <item n="18">/de/Bibliographie/Literatur</item>
+                <item n="19">/de/A002068/Werke</item>
+                <item n="20">/de/A002068/Werke</item>
+                <item n="21">/de/Register/Schriften</item>
+                <item n="22">/de/A002068/Schriften</item>
+                <item n="23">/de/A002068/Tagebücher</item>
+                <item n="24">/de/A002068/Korrespondenz</item>
+                <item n="30">/de/Register/Aktuelles</item>
+                <item n="31">/de/Register/Aktuelles</item>
+                <item n="32">/de/Biographie<!--Biographie: Prag 1813-1816--></item>
+                <item n="33">/de/Biographie<!--Biographie: Dresden 1817-1826--></item>
+                <item n="34">/de/Biographie<!--Biographie: Jugend bis 1812--></item>
+                <item n="36">/de/A009000/Aktuelles/A050091</item>
+                <item n="37">/de/A009000/Aktuelles/A050092</item>
+                <item n="38">/de/A009000/Aktuelles/A050094</item>
+                <item n="39">/de/A009000/Aktuelles/A050095</item>
+                <item n="40">/de/A009000/Aktuelles/A050096</item>
+                <item n="41"><!--Bibliographie (Noten)--></item>
+                <item n="42">/de/Bibliographie/Literatur</item>
+                <item n="43">/de/Publikationen/Weber-Studien/A110464</item>
+                <item n="44">/de/Publikationen/Weber-Studien/A110465</item>
+                <item n="45">/de/Publikationen/Weber-Studien/A110466</item>
+                <item n="46">/de/Publikationen/Weber-Studien/A110467</item>
+                <item n="47">/de/Publikationen/Weber-Studien/A110468</item>
+                <item n="48">/de/Publikationen/Weber-Studien/A110469</item>
+                <item n="49">/de/Publikationen/Weber-Studien/A110470</item>
+                <item n="50"><!--Mitarbeiter--></item>
+                <item n="51">/de/A009005</item>
+                <item n="52">/de/A009000</item>
+                <item n="53">/de/A009002</item>
+                <item n="54">/de/A003672</item>
+                <item n="56">/de/A002068/Werke</item>
+                <item n="57">/de/A002068/Werke<!-- WeV: Konzertarien und Duette mit Orchesterbegleitung --></item>
+                <item n="58">/de/A002068/Werke<!-- WeV: Einlagen zu fremden Opern und Singspielen --></item>
+                <item n="59">/de/A002068/Werke<!-- WeV: Opern und Singspiele --></item>
+                <item n="60">/de/A002068/Werke<!-- WeV: Kantaten, Huldigungsmusiken und andere Gelegenheitswerke --></item>
+                <item n="61">/de/A002068/Werke<!-- WeV: Kirchenmusik --></item>
+                <item n="62">/de/A002068/Werke<!-- WeV: Opern und Singspiele --></item>
+                <item n="63">/de/A002068/Werke<!-- WeV: Anh. B: Weber unterschobene Werke --></item>
+                <item n="64">/de/A002068/Werke<!-- WeV: Anhang A: Weber zugeschriebene [zweifelhafte] Werke --></item>
+                <item n="65">/de/A002068/Werke<!-- WeV: Bearbeitungen, Instrumentierungen und Klavierauszüge fremder Kompositionen --></item>
+                <item n="66">/de/A002068/Werke<!-- WeV: Varia [kleinere Skizzen und Entwürfe zu nicht ausgeführten Kompositionen, Studien, Kuriosa sowie Fragliches] --></item>
+                <item n="67">/de/A002068/Werke<!-- WeV: Bearbeitungen, Instrumentierungen und Klavierauszüge fremder Kompositionen --></item>
+                <item n="68">/de/A002068/Werke<!-- WeV: Sonaten zu zwei Händen --></item>
+                <item n="69">/de/A002068/Werke<!-- WeV: Ouvertüren und Sinfonien --></item>
+                <item n="70">/de/A002068/Werke<!-- WeV:  --></item>
+                <item n="71">/de/A002068/Werke<!-- WeV:  --></item>
+                <item n="72">/de/A002068/Werke<!-- WeV:  --></item>
+                <item n="73">/de/A002068/Werke<!-- WeV:  --></item>
+                <item n="74">/de/A002068/Werke<!-- WeV:  --></item>
+                <item n="75">/de/A002068/Werke<!-- WeV:  --></item>
+                <item n="76">/de/A002068/Werke<!-- WeV:  --></item>
+                <item n="77">/de/A002068/Werke<!-- WeV:  --></item>
+                <item n="78">/de/A002068/Werke<!-- WeV:  --></item>
+                <item n="79">/de/A002068/Werke<!-- WeV:  --></item>
+                <item n="80">/de/A002068/Werke<!-- WeV:  --></item>
+                <item n="81">/de/A002068/Werke<!-- WeV:  --></item>
+                <item n="82">/de/A002068/Werke<!-- WeV:  --></item>
+                <item n="83">/de/A002068/Werke<!-- WeV:  --></item>
+                <item n="84">/de/A002068/Werke<!-- WeV:  --></item>
+                <item n="85">/de/A002068/Werke<!-- WeV:  --></item>
+                <item n="86">/de/A002068/Werke<!-- WeV:  --></item>
+                <item n="87">/de/A002068/Werke<!-- Werkedition --></item>
+                <item n="88">/de/A002068/Werke<!-- Werkedition --></item>
+                <item n="89">/de/A002068/Werke<!-- Werkedition --></item>
+                <item n="90">/de/A002068/Werke<!-- Werkedition --></item>
+                <item n="91">/de/A002068/Werke<!-- Werkedition --></item>
+                <item n="92">/de/A002068/Werke<!-- Werkedition --></item>
+                <item n="93">/de/A002068/Werke<!-- Werkedition --></item>
+                <item n="94">/de/A002068/Werke<!-- Werkedition --></item>
+                <item n="95">/de/A002068/Werke<!-- Werkedition --></item>
+                <item n="96">/de/A002068/Werke<!-- Werkedition --></item>
+                <item n="97">/de/A002068/Werke<!-- Werkedition --></item>
+                <item n="98">/de/A002068/Werke<!-- Werkedition --></item>
+                <item n="99">/de/A002068/Werke<!-- Werkedition --></item>
+                <item n="100">/de/A002068/Werke<!-- Werkedition --></item>
+                <item n="101">/de/A002068/Werke<!-- Werkedition --></item>
+                <item n="102">/de/A002068/Werke<!-- Werkedition --></item>
+                <item n="103">/de/A002068/Werke<!-- Werkedition --></item>
+                <item n="104">/de/A002068/Werke<!-- Werkedition --></item>
+                <item n="113">/de/Publikationen/Weber-Studien/A110467</item>
+                <item n="114">/A030586</item>
+                <item n="115">/A030555</item>
+                <item n="116">/A030702</item>
+                <item n="117">/A030789</item>
+                <item n="118">/A030569</item>
+                <item n="119">/A030724</item>
+                <item n="120">/A030553</item>
+                <item n="121">/A030750</item>
+                <item n="122">/A030749</item>
+                <item n="123">/A030637</item>
+                <item n="124">/A030727</item>
+                <item n="125">/A030643</item>
+                <item n="126">/de/Register/Schriften</item>
+                <item n="128"><!-- User Login --></item>
+                <item n="129">/de/Kontakt</item>
+                <item n="133">/de/A002068/Schriften<!-- Schriften 1817 --></item>
+                <item n="137">/de/Register/Aktuelles<!-- News-Archiv 2005 --></item>
+                <item n="138"><!-- Aufsätze und Beiträge der WeGA --></item>
+                <item n="139"><!-- Agthe – aber welcher?  --></item>
+                <item n="141"><!-- Wer kennt Parallelstellen in anderen Klavierwerken des frühen 19. Jahrhunderts? --></item>
+                <item n="142"><!-- Vollständige Wiedergabe des Trios der Polonaise Nr. 1 von Agthe --></item>
+                <item n="143">/de/A002068/Werke<!-- Werkedition --></item>
+                <item n="144">/de/A009004</item>
+                <item n="146">/de/A002068/Werke<!-- WeV:  --></item>
+                <item n="148">/de/A002068/Werke<!-- Werkedition --></item>
+                <item n="149">/de/Register/Aktuelles<!-- News-Archiv 2006 --></item>
+                <item n="150">/de/Impressum<!-- Impressum --></item>
+                <item n="151">/de/A002068/Werke<!-- Werkedition --></item>
+                <item n="153">/de/A009008</item>
+                <item n="154">/de/Publikationen/Weber-Studien/A110463</item>
+                <item n="155">/sitemap/index.xml<!-- Sitemap --></item>
+                <item n="157">/de/Register/Aktuelles<!-- News-Archiv 2007 --></item>
+                <item n="159">/de/A002068/Korrespondenz/A041021</item>
+                <item n="160">/de/A002068/Korrespondenz<!-- Briefwechsel 1817 (zunächst nur Briefe von Weber) --></item>
+                <item n="162">/de/A002068/Tagebücher<!-- Carl Maria von Webers Tagebuch --></item>
+                <item n="163">/de/A009003</item>
+                <item n="164"><!-- Editionsrichtlinien der WeGA Auflage Mai 2009 --></item>
+                <item n="165">/de/Register/Aktuelles<!-- News-Archiv 2008 --></item>
+                <item n="166">/de/A009001<!-- Peter Stadler --></item>
+                <item n="167">/de/Register/Aktuelles<!-- News-Archiv 2009 --></item>
+                <item n="168">/de/Register/Aktuelles<!-- News-Archiv 2010 --></item>
+                <item n="169">/de/Register/Aktuelles<!-- News-Archiv 2010 --></item>
+            </list>
+        </body>
+    </text>
+</TEI>
