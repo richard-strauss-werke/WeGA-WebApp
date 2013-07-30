@@ -1,0 +1,6 @@
+<collection xmlns="http://exist-db.org/collection-config/1.0">
+    <index xmlns:tei="http://www.tei-c.org/ns/1.0">
+        <create qname="@n" type="xs:integer"/>
+        <fulltext default="none" attributes="no"/>
+    </index>
+</collection>
