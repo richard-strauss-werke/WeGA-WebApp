@@ -37,12 +37,12 @@ declare %templates:wrap function html:page-title($node as node(), $model as map(
  :)
 declare function html:page-top-bar-section($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:section) {
     let $html_pixDir := config:get-option('pixDir')
-    let $baseHref := config:get-option('baseHref')
+    let $app-root := request:get-attribute("$exist:controller")
     let $uriTokens := tokenize(xmldb:decode-uri(request:get-uri()), '/')
-    let $search := string-join(($baseHref, $lang, core:getLanguageString('search', $lang)), '/')
-    let $index := string-join(($baseHref, $lang, core:getLanguageString('index', $lang)), '/')
-    let $impressum := string-join(($baseHref, $lang, core:getLanguageString('about', $lang)), '/')
-    let $help := string-join(($baseHref, $lang, core:getLanguageString('help', $lang)), '/')
+    let $search := string-join(($app-root, $lang, core:getLanguageString('search', $lang)), '/')
+    let $index := string-join(($app-root, $lang, core:getLanguageString('index', $lang)), '/')
+    let $impressum := string-join(($app-root, $lang, core:getLanguageString('about', $lang)), '/')
+    let $help := string-join(($app-root, $lang, core:getLanguageString('help', $lang)), '/')
     let $switchLanguage := 
         for $i in $uriTokens[string-length(.) gt 2]
         return
@@ -52,8 +52,8 @@ declare function html:page-top-bar-section($node as node(), $model as map(*), $l
                 then replace(core:translateLanguageString(replace($i, '_', ' '), $lang, 'de'), '\s', '_') (: Ersetzen von Leerzeichen durch Unterstriche in der URL :)
                 else replace(core:translateLanguageString(replace($i, '_', ' '), $lang, 'en'), '\s', '_')
     let $switchLanguage := if($lang eq 'en')
-        then <a href="{string-join(($baseHref, 'de', $switchLanguage), '/')}" title="Diese Seite auf Deutsch"><img src="{string-join(($baseHref, $html_pixDir, 'de.gif'), '/')}" alt="germanFlag" width="20" height="12"/></a>
-        else <a href="{string-join(($baseHref, 'en', $switchLanguage), '/')}" title="This page in english"><img src="{string-join(($baseHref, $html_pixDir, 'gb.gif'), '/')}" alt="englishFlag" width="20" height="12"/></a>
+        then <a href="{string-join(($app-root, 'de', $switchLanguage), '/')}" title="Diese Seite auf Deutsch"><img src="{string-join(($app-root, $html_pixDir, 'de.gif'), '/')}" alt="germanFlag" width="20" height="12"/></a>
+        else <a href="{string-join(($app-root, 'en', $switchLanguage), '/')}" title="This page in english"><img src="{string-join(($app-root, $html_pixDir, 'gb.gif'), '/')}" alt="englishFlag" width="20" height="12"/></a>
     return 
     element section {
         attribute class {"top-bar-section"},

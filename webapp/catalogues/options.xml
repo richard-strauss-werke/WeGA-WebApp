@@ -90,7 +90,7 @@
                 <item xml:id="menusFile" type="xs:string">/db/webapp/xml/menus.xml</item>-->
             </list>
             <list xml:id="javaScriptOptions">
-                <item xml:id="baseHref">http://localhost:8080/exist/apps/WeGA-WebApp</item>
+<!--                <item xml:id="baseHref">http://localhost:8080/exist/apps/WeGA-WebApp</item>-->
                 <item xml:id="html_pixDir">resources/pix</item>
 <!--                <item xml:id="containerID">ajaxMainFrame</item>-->
                 <item xml:id="entriesPerPage">4</item>
