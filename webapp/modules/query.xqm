@@ -36,7 +36,6 @@ declare function query:get-todays-events($date as xs:date) as element(tei:date)*
     let $day := functx:pad-integer-to-length(day-from-date($date), 2)
     let $month := functx:pad-integer-to-length(month-from-date($date), 2)
     let $date-regex := '^'||string-join(('\d{4}',$month,$day),'-')||'$'
-    let $log := util:log-system-out($date-regex)
     return 
         collection($config:data-collection-path || '/letters')//tei:dateSender/tei:date[matches(@when, $date-regex)] union
         collection($config:data-collection-path || '/persons')//tei:date[matches(@when, $date-regex)][parent::tei:birth or parent::tei:death]
