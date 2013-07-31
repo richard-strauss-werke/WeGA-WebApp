@@ -9,6 +9,7 @@ declare namespace tei="http://www.tei-c.org/ns/1.0";
 declare namespace mei="http://www.music-encoding.org/ns/mei";
 
 import module namespace config="http://xquery.weber-gesamtausgabe.de/modules/config" at "config.xqm";
+import module namespace date="http://xquery.weber-gesamtausgabe.de/modules/date" at "date.xqm";
 import module namespace functx="http://www.functx.com" at "functx.xqm";
 
 (:~
@@ -80,12 +81,12 @@ declare function core:createColl($collName as xs:string, $cacheKey as xs:string)
  :)
 declare function core:sortColl($coll as item()*) as item()* {
     if(config:isPerson($coll[1]/tei:person/string(@xml:id)))            then for $i in $coll order by $i//tei:persName[@type = 'reg'] ascending return $i
-    else if(config:isLetter($coll[1]/tei:TEI/string(@xml:id)))          then for $i in $coll order by core:getOneNormalizedDate($i//tei:dateSender/tei:date[1], false()) ascending, $i//tei:dateSender/tei:date[1]/@n ascending return $i
-    else if(config:isWriting($coll[1]/tei:TEI/string(@xml:id)))         then for $i in $coll order by core:getOneNormalizedDate($i//tei:imprint/tei:date[1], false()) ascending return $i
+    else if(config:isLetter($coll[1]/tei:TEI/string(@xml:id)))          then for $i in $coll order by date:getOneNormalizedDate($i//tei:dateSender/tei:date[1], false()) ascending, $i//tei:dateSender/tei:date[1]/@n ascending return $i
+    else if(config:isWriting($coll[1]/tei:TEI/string(@xml:id)))         then for $i in $coll order by date:getOneNormalizedDate($i//tei:imprint/tei:date[1], false()) ascending return $i
     else if(config:isDiary($coll[1]/tei:ab/string(@xml:id)))            then for $i in $coll order by $i/tei:ab/xs:date(@n) ascending return $i
     else if(config:isWork($coll[1]/tei:TEI/string(@xml:id)))            then for $i in $coll order by $i//mei:seriesStmt/mei:title[@level='s']/xs:int(@n) ascending, $i//mei:altId[@type = 'WeV']/string(@subtype) ascending, $i//mei:altId[@type = 'WeV']/xs:int(@n) ascending, $i//mei:altId[@type = 'WeV']/string() ascending return $i
     else if(config:isNews($coll[1]/tei:TEI/string(@xml:id)))            then for $i in $coll order by $i//tei:publicationStmt/tei:date/xs:dateTime(@when) descending return $i
-    else if(config:isBiblio($coll[1]/tei:biblStruct/string(@xml:id)))   then for $i in $coll order by core:getOneNormalizedDate($i//tei:imprint/tei:date, false()) descending return $i
+    else if(config:isBiblio($coll[1]/tei:biblStruct/string(@xml:id)))   then for $i in $coll order by date:getOneNormalizedDate($i//tei:imprint/tei:date, false()) descending return $i
     else $coll
 };
 
@@ -106,81 +107,6 @@ declare function core:logToFile($priority as xs:string, $message as xs:string) a
         if($config:isDevelopment) then util:log-system-out($message)
         else ()
     )
-};
-
-(:~
- : Construct one normalized xs:date from a tei:date element's date or duration attributes (@from, @to, @when, @notBefore, @notAfter)
- :  
- : @author Christian Epp
- : @author Peter Stadler
- : @param $date the tei:date
- : @param $latest a boolean whether the constructed date shall be the latest or earliest possible
- : @return the constructed date or empty
- :)
-declare function core:getOneNormalizedDate($date as element()?, $latest as xs:boolean) as xs:string? {
-    if($date/@when)
-        then if($date/@when castable as xs:date) 
-            then $date/string(@when)
-            else if($date/@when castable as xs:dateTime)
-                then substring($date/@when,1,10)
-                else core:getCastableDate($date/data(@when), $latest)
-        else if($latest)
-            then if($date/@notAfter)
-                then if($date/@notAfter castable as xs:date)
-                    then $date/string(@notAfter)
-                    else core:getCastableDate($date/data(@notAfter), $latest)
-                else if($date/@notBefore)
-                    then if($date/@notBefore castable as xs:date)
-                        then $date/string(@notBefore)
-                        else core:getCastableDate($date/data(@notBefore), $latest)
-                    else if($date/@to)
-                        then if($date/@to castable as xs:date)
-                            then $date/string(@to)
-                            else core:getCastableDate($date/data(@to), $latest)
-                        else if($date/@from)
-                            then if($date/@from castable as xs:date)
-                                then $date/string(@from)
-                                else core:getCastableDate($date/data(@from), $latest)
-                            else ()
-(: Alles nochmal in umgekehrter Reihenfolge, wenn der früheste Zeitpunkt gewünscht ist. :)                                
-            else if($date/@notBefore)
-                then if($date/@notBefore castable as xs:date)
-                    then $date/string(@notBefore)
-                    else core:getCastableDate($date/data(@notBefore), $latest)
-                else if($date/@notAfter)
-                    then if($date/@notAfter castable as xs:date)
-                        then $date/string(@notAfter)
-                        else core:getCastableDate($date/data(@notAfter), $latest)
-                    else if($date/@from)
-                        then if($date/@from castable as xs:date)
-                            then $date/string(@from)
-                            else core:getCastableDate($date/data(@from), $latest)
-                        else if($date/@to)
-                            then if($date/@from castable as xs:date)
-                                then $date/string(@to)
-                                else core:getCastableDate($date/data(@to), $latest)
-                            else ()
-};
-
-(:~
- : Checks, if given $date is castable as xs:date. If it's not castable, but has a length of 4, it will be changed into a date.  
- : 
- : @author Christian Epp
- : @author Peter Stadler
- : @param $node the supposed date node
- : @param $latest is true if the current node has a notAfter-attribute
- : @return the date in right type or empty
- :)
-declare function core:getCastableDate($date as xs:string, $latest as xs:boolean) as xs:string? {
-    if($date castable as xs:date)
-    then $date
-    else if($date castable as xs:gYear)
-        (:if(string-length($date)=4):)
-         then
-            if($latest)
-            then concat($date,'-12-31')
-            else concat($date,'-01-01')
-         else()
 };
 
 (:~
@@ -209,42 +135,6 @@ declare function core:store-file($collection as xs:string?, $fileName as xs:stri
             xmldb:store($collection, $fileName, $contents), 
             core:logToFile('error', string-join(('wega:storeFileInTmpCollection', $util:exception, $util:exception-message), ' ;; '))
         )
-};
-
-
-(:~
- : format year specification depending on positive or negative value
- :
- : @author Peter Stadler
- : @param $year the year as (positive or negative) integer
- : @param $lang the language switch (en|de)
- : @return xs:string
- :)
-declare function core:formatYear($year as xs:int, $lang as xs:string) as xs:string {
-    if($year gt 0) then $year cast as xs:string
-    else if($lang eq 'en') then concat($year*-1,' BC')
-    else concat($year*-1,' v.&#8239;Chr.')
-};
-
-(:~
- : String from time
- :
- : @author Peter Stadler
- : @param $format time format
- : @param $value the date
- : @param $lang the language switch (en|de)
- : @return xs:string 
- :)
-declare function core:strftime($format as xs:string, $value as xs:date, $lang as xs:string) as xs:string {
-    let $day    := day-from-date($value)
-    let $month  := month-from-date($value)
-    let $year   := core:formatYear(number(year-from-date($value)), $lang)
-    let $output := replace($format, '%d', string($day))
-    let $output := replace($output, '%Y', string($year))
-    let $output := replace($output, '%B', core:getLanguageString(concat('month',$month), $lang))
-    let $output := replace($output, '%A', core:getLanguageString(concat('day',datetime:day-in-week($value)), $lang))
-
-    return normalize-space($output)
 };
 
 (:~ 
@@ -338,16 +228,3 @@ declare function core:translateLanguageString($string as xs:string, $sourceLang 
     let $search := $targetCatalogue//id(core:reverseLanguageStringLookup($string, $sourceLang))[1]
     return normalize-space($search)
 };
-
-(:~
- : Does a dictionary lookup and returns this value 
- : 
- : @author Peter Stadler
- : @param $key the key to look for in the dictionary
- : @param $dicID the xml:id of the dictionary to search in
- : @return xs:String
- :)
-(:declare function core:dictionaryLookup($key as xs:string, $dicID as xs:string) as xs:string {
-    let $dic := doc(config:get-option($dicID))
-    return normalize-space($dic//id($key))
-};:)

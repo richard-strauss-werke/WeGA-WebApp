@@ -16,6 +16,7 @@ import module namespace templates="http://exist-db.org/xquery/templates";
 import module namespace config="http://xquery.weber-gesamtausgabe.de/modules/config" at "config.xqm";
 import module namespace query="http://xquery.weber-gesamtausgabe.de/modules/query" at "query.xqm";
 import module namespace core="http://xquery.weber-gesamtausgabe.de/modules/core" at "core.xqm";
+import module namespace date="http://xquery.weber-gesamtausgabe.de/modules/date" at "date.xqm";
 
 declare %templates:wrap function html:page-title($node as node(), $model as map(*)) as xs:string {
     ''
@@ -205,7 +206,7 @@ declare function html:print-latest-news($node as node(), $model as map(*)) as el
                 return (
                     element span {
                         attribute class {'newsTeaserDate'},
-                        core:getLanguageString('websiteNews', core:strftime($dateFormat, datetime:date-from-dateTime($newsTeaserDate), $lang), $lang)
+                        core:getLanguageString('websiteNews', date:strfdate($dateFormat, datetime:date-from-dateTime($newsTeaserDate), $lang), $lang)
                     },
                     element h2 {
                         element a {
@@ -243,7 +244,7 @@ declare function html:print-todays-events($node as node(), $model as map(*), $da
         else 
             let $output := 
                 <div xmlns="http://www.w3.org/1999/xhtml" id="todays-events">
-                    <h3>{core:getLanguageString('whatHappenedOn', core:strftime(if($lang eq 'en') then '%B %d' else '%d. %B', $date, $lang), $lang)}</h3>
+                    <h3>{core:getLanguageString('whatHappenedOn', date:strfdate(if($lang eq 'en') then '%B %d' else '%d. %B', $date, $lang), $lang)}</h3>
                     <ul>
                     {for $i in query:get-todays-events($date)
                         let $isJubilee := (year-from-date($date) - $i/year-from-date(@when)) mod 25 = 0
@@ -258,7 +259,7 @@ declare function html:print-todays-events($node as node(), $model as map(*), $da
                         return 
                             element li {
                                 if($isJubilee) then attribute class {'jubilee'} else (),
-                                core:formatYear(year-from-date($i/@when) cast as xs:int, $lang) || ': ', 
+                                date:formatYear(year-from-date($i/@when) cast as xs:int, $lang) || ': ', 
                                 if($typeOfEvent eq 'letter') then (
                                     html:printCorrespondentName($i/ancestor::tei:correspDesc/tei:sender[1]/*[1], $lang, 'fs'), ' ',
                                     core:getLanguageString('writesTo', $lang), ' ',
