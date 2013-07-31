@@ -32,9 +32,9 @@ declare variable $config:app-root :=
         substring-before($modulePath, "/modules")
 ;
 
-declare variable $config:options-dir as xs:string := $config:app-root || '/options';
-declare variable $config:options-file as document-node() := doc($config:options-dir || '/options.xml');
-declare variable $config:svn-change-history-file as document-node() := doc($config:options-dir || '/svnChangeHistory.xml');
+declare variable $config:catalogues-collection as xs:string := $config:app-root || '/catalogues';
+declare variable $config:options-file as document-node() := doc($config:catalogues-collection || '/options.xml');
+declare variable $config:svn-change-history-file as document-node() := doc($config:catalogues-collection || '/svnChangeHistory.xml');
 declare variable $config:data-collection-path as xs:string := '/db/apps/WeGA-data';
 declare variable $config:tmp as xs:string := $config:app-root || '/tmp';
 
@@ -314,7 +314,7 @@ declare function config:eXistDbWasUpdatedAfterwards($dateTime as xs:dateTime?) a
  : @return xs:dateTime
 :)
 declare function config:getDateTimeOfLastDBUpdate() as xs:dateTime? {
-    xmldb:last-modified($config:options-dir, 'svnChangeHistory.xml')
+    xmldb:last-modified($config:catalogues-collection, 'svnChangeHistory.xml')
 };
 
 (:~

@@ -239,11 +239,10 @@ declare function core:strftime($format as xs:string, $value as xs:date, $lang as
     let $day    := day-from-date($value)
     let $month  := month-from-date($value)
     let $year   := core:formatYear(number(year-from-date($value)), $lang)
-    let $dicID  := concat('dic_',$lang)
     let $output := replace($format, '%d', string($day))
     let $output := replace($output, '%Y', string($year))
-    let $output := replace($output, '%B', core:dictionaryLookup(concat('month',$month), $dicID))
-    let $output := replace($output, '%A', core:dictionaryLookup(concat('day',datetime:day-in-week($value)), $dicID))
+    let $output := replace($output, '%B', core:getLanguageString(concat('month',$month), $lang))
+    let $output := replace($output, '%A', core:getLanguageString(concat('day',datetime:day-in-week($value)), $lang))
 
     return normalize-space($output)
 };
@@ -262,6 +261,17 @@ declare function core:printFornameSurname($name as xs:string?) as xs:string? {
         else $clearName
 };
 
+(:~ 
+ : Get the language catalogue file
+ :
+ : @author Peter Stadler
+ : @param the language switch (en|de)
+ : @return document-node
+ :)
+declare function core:getLanguageCatalogue($lang as xs:string) as document-node()? {
+    collection($config:catalogues-collection)//tei:text[@type='language-catalogue'][@xml:lang=$lang]/root()
+};
+
 (:~
  : Get language string only by key
  :
@@ -271,10 +281,8 @@ declare function core:printFornameSurname($name as xs:string?) as xs:string? {
  : @return xs:string
  :)
 declare function core:getLanguageString($key as xs:string, $lang as xs:string) as xs:string {
-    (:let $dicID := concat('dic_', $lang)
-    return core:dictionaryLookup($key,$dicID):)
-    let $dic := doc($config:options-dir || '/dictionary_' || $lang || '.xml')
-    return normalize-space($dic//id($key))
+    let $catalogue := core:getLanguageCatalogue($lang)
+    return normalize-space($catalogue//id($key))
 };
 
 (:~
@@ -287,10 +295,8 @@ declare function core:getLanguageString($key as xs:string, $lang as xs:string) a
  : @return xs:string
  :)
 declare function core:getLanguageString($key as xs:string, $replacements as xs:string*, $lang as xs:string) as xs:string {
-    (:let $dicID := concat('dic_', $lang)
-    let $dicEntry := core:dictionaryLookup($key,$dicID):)
-    let $dic := doc($config:options-dir || '/dictionary_' || $lang || '.xml')
-    let $dicEntry := normalize-space($dic//id($key))
+    let $catalogue := core:getLanguageCatalogue($lang)
+    let $catalogueEntry := normalize-space($catalogue//id($key))
     let $replacements := 
         for $r in $replacements 
         return if(string-length($r)<3 and $lang='de' and $key eq 'dateBetween') then concat($r,'.') (: Sonderfall: "Zwischen 3. und 4. März 1767" - Der Punkt hinter der 3 :)
@@ -299,9 +305,23 @@ declare function core:getLanguageString($key as xs:string, $replacements as xs:s
         for $i at $count in $replacements
         let $x := concat('%',$count)
         return $x
-    return functx:replace-multi($dicEntry,$placeHolders,$replacements)
+    return functx:replace-multi($catalogueEntry,$placeHolders,$replacements)
 };
 
+(:~
+ : Tries to do a reverse lookup for a given string and returns its @xml:id 
+ : If there are multiple matches they are returned as a sequence, 
+ : if no translation is found the empty string is returned
+ :  
+ : @author Peter Stadler
+ : @param $string the string to lookup
+ : @param $lang the language of the given string
+ : @return xs:NCName* zero or more IDs
+ :)
+declare function core:reverseLanguageStringLookup($string as xs:string, $lang as xs:string) as xs:string* {
+    let $catalogue := core:getLanguageCatalogue($lang)
+    return $catalogue//tei:item[lower-case(.) eq lower-case($string)]/string(@xml:id)
+};
 
 (:~
  : Tries to translate a string from sourceLang to targetLang using the dictionaries 
@@ -314,9 +334,8 @@ declare function core:getLanguageString($key as xs:string, $replacements as xs:s
  : @return xs:string the translated string if successfull, otherwise the empty string
  :)
 declare function core:translateLanguageString($string as xs:string, $sourceLang as xs:string, $targetLang as xs:string) as xs:string {
-    let $sourceDic := doc(config:get-option(concat('dic_', $sourceLang)))
-    let $targetDic := doc(config:get-option(concat('dic_', $targetLang)))
-    let $search := $targetDic//id($sourceDic//entry[lower-case(.) eq lower-case($string)]/string(@xml:id))
+    let $targetCatalogue := core:getLanguageCatalogue($targetLang)
+    let $search := $targetCatalogue//id(core:reverseLanguageStringLookup($string, $sourceLang))[1]
     return normalize-space($search)
 };
 
@@ -328,7 +347,7 @@ declare function core:translateLanguageString($string as xs:string, $sourceLang 
  : @param $dicID the xml:id of the dictionary to search in
  : @return xs:String
  :)
-declare function core:dictionaryLookup($key as xs:string, $dicID as xs:string) as xs:string {
+(:declare function core:dictionaryLookup($key as xs:string, $dicID as xs:string) as xs:string {
     let $dic := doc(config:get-option($dicID))
     return normalize-space($dic//id($key))
-};
+};:)
