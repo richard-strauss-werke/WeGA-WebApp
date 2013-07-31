@@ -39,7 +39,7 @@ declare function core:getOrCreateColl($collName as xs:string, $cacheKey as xs:st
     let $dateTimeOfCache := cache:get($collName, $lastModKey)
     let $collCached := cache:get($collName, $cacheKey)
     return
-        if(exists($collCached) and not(config:eXistDbWasUpdatedAfterwards($dateTimeOfCache) or $useCache))
+        if(exists($collCached) and not(config:eXistDbWasUpdatedAfterwards($dateTimeOfCache)) and $useCache)
         then 
             typeswitch($collCached)
             case xs:string return ()
