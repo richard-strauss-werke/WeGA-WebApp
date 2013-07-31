@@ -35,8 +35,7 @@ declare %templates:wrap function html:page-title($node as node(), $model as map(
  : @author Peter Stadler
  : @return html:div 
  :)
-declare function html:page-top-bar-section($node as node(), $model as map(*)) as element(xhtml:section) {
-    let $lang := 'de'
+declare function html:page-top-bar-section($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:section) {
     let $html_pixDir := config:get-option('pixDir')
     let $baseHref := config:get-option('baseHref')
     let $uriTokens := tokenize(xmldb:decode-uri(request:get-uri()), '/')
@@ -94,9 +93,7 @@ declare function html:page-top-bar-section($node as node(), $model as map(*)) as
  : @author Peter Stadler
  : @return html:div 
  :)
-declare function html:page-nav-digital-edition($node as node(), $model as map(*)) as element(xhtml:div) {
-    let $lang := 'de'
-    return
+declare function html:page-nav-digital-edition($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
     <div id="page-nav-digital-edition" xmlns="http://www.w3.org/1999/xhtml">
         <h3>{core:getLanguageString('digitalEdition', $lang)}</h3>
         <ul>
@@ -116,9 +113,7 @@ declare function html:page-nav-digital-edition($node as node(), $model as map(*)
  : @author Peter Stadler
  : @return html:div 
  :)
-declare function html:page-nav-project-links($node as node(), $model as map(*)) as element(xhtml:div) {
-    let $lang := 'de'
-    return
+declare function html:page-nav-project-links($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
     <div id="page-nav-project-links" xmlns="http://www.w3.org/1999/xhtml">
         <h3>{core:getLanguageString('aboutTheProject', $lang)}</h3>
         <ul>
@@ -139,9 +134,7 @@ declare function html:page-nav-project-links($node as node(), $model as map(*)) 
  : @author Peter Stadler
  : @return html:div 
  :)
-declare function html:page-nav-dev-links($node as node(), $model as map(*)) as element(xhtml:div) {
-    let $lang := 'de'
-    return
+declare function html:page-nav-dev-links($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
     <div id="page-nav-dev-links" xmlns="http://www.w3.org/1999/xhtml">{
         element h3 {core:getLanguageString('development', $lang)},
         element ul {
@@ -156,9 +149,7 @@ declare function html:page-nav-dev-links($node as node(), $model as map(*)) as e
     </div>
 };
 
-declare function html:page-nav-combined($node as node(), $model as map(*)) as element(xhtml:div) {
-    let $lang := 'de'
-    return
+declare function html:page-nav-combined($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
     <div class="section-container accordion" data-section="" data-options="one_up: false;" xmlns="http://www.w3.org/1999/xhtml">
         <section class="section">
             <p class="title" data-section-title=""><a href="#">{core:getLanguageString('digitalEdition', $lang)}</a></p>
@@ -189,11 +180,8 @@ declare function html:page-nav-combined($node as node(), $model as map(*)) as el
     </div>
 };
 
-declare function html:print-latest-news($node as node(), $model as map(*)) as element(xhtml:div) {
+declare function html:print-latest-news($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
     let $latestNews := query:get-latest-news(())
-    let $lang := 'de'
-    let $foo := request:get-attribute('$lang')
-    let $log := util:log-system-out($foo)
     return
         <div xmlns="http://www.w3.org/1999/xhtml">
             <h2>{core:getLanguageString('news', $lang)}</h2>
@@ -232,8 +220,7 @@ declare function html:print-latest-news($node as node(), $model as map(*)) as el
         </div>
 };
 
-declare function html:print-todays-events($node as node(), $model as map(*), $date as xs:date?) as element(xhtml:div) {
-    let $lang := 'de'
+declare function html:print-todays-events($node as node(), $model as map(*), $date as xs:date?, $lang as xs:string) as element(xhtml:div) {
     let $date := 
         if(exists($date)) then $date
         else current-date()
