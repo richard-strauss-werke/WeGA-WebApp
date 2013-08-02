@@ -48,7 +48,7 @@ declare function html:print-latest-news($node as node(), $model as map(*), $lang
                     },
                     element h2 {
                         element a {
-                            attribute href {html-link:createLinkToDoc($news, $lang)},
+                            attribute href {html-link:create-href-for-doc($news, $lang)},
                             attribute title {string($news//tei:title[@level='a'])},
                             string($news//tei:title[@level='a'])
                         }
@@ -57,7 +57,7 @@ declare function html:print-latest-news($node as node(), $model as map(*), $lang
                         substring($news//tei:body, 1, 400),
                         ' … ',
                         element a{
-                            attribute href {html-link:createLinkToDoc($news, $lang)},
+                            attribute href {html-link:create-href-for-doc($news, $lang)},
                             attribute title {core:getLanguageString('more', $lang)},
                             attribute class {'readOn'},
                             concat('[', core:getLanguageString('more', $lang), ']')
@@ -76,8 +76,9 @@ declare function html:print-todays-events($node as node(), $model as map(*), $da
         else current-date()
     let $todaysEventsFileName := concat('todaysEventsFile_', $lang, '.xml')
     let $todaysEventsFile := doc(string-join(($config:tmp, $todaysEventsFileName), '/'))
+(:    let $log := util:log-system-out(html-link:link-to-current-app('myLink')):)
     return 
-        if(false() and xmldb:last-modified($config:tmp, $todaysEventsFileName) cast as xs:date eq current-date() and xmldb:last-modified($config:tmp, $todaysEventsFileName) gt config:getDateTimeOfLastDBUpdate()) then $todaysEventsFile/xhtml:div
+        if((:false() and :)xmldb:last-modified($config:tmp, $todaysEventsFileName) cast as xs:date eq current-date() and xmldb:last-modified($config:tmp, $todaysEventsFileName) gt config:getDateTimeOfLastDBUpdate()) then $todaysEventsFile/xhtml:div
         else 
             let $output := 
                 <div xmlns="http://www.w3.org/1999/xhtml" id="todays-events">
@@ -98,9 +99,9 @@ declare function html:print-todays-events($node as node(), $model as map(*), $da
                                 if($isJubilee) then attribute class {'jubilee'} else (),
                                 date:formatYear(year-from-date($i/@when) cast as xs:int, $lang) || ': ', 
                                 if($typeOfEvent eq 'letter') then (
-                                    html:printCorrespondentName($i/ancestor::tei:correspDesc/tei:sender[1]/*[1], $lang, 'fs'), ' ',
+                                    html:print-persname($i/ancestor::tei:correspDesc/tei:sender[1]/*[1], $lang, 'fs'), ' ',
                                     core:getLanguageString('writesTo', $lang), ' ',
-                                    html:printCorrespondentName($i/ancestor::tei:correspDesc/tei:addressee[1]/*[1], $lang, 'fs'), ' '
+                                    html:print-persname($i/ancestor::tei:correspDesc/tei:addressee[1]/*[1], $lang, 'fs'), ' '
                                 )
                                 else $i/root()/*/@xml:id/string()
                             }
@@ -112,7 +113,7 @@ declare function html:print-todays-events($node as node(), $model as map(*), $da
 };
 
 (:~
- : Construct a name from a persName or name element wrapped in a <span> with @onmouseover etc.
+ : Construct a name from a persName or name element wrapped in a <a> with @onmouseover etc.
  : If a @key is given on persName the regularized form will be returned, otherwise the content of persName.
  : If persName is empty than "unknown" is returned.
  : 
@@ -122,10 +123,14 @@ declare function html:print-todays-events($node as node(), $model as map(*), $da
  : @param $order (sf|fs) whether to print "surname, forename" or "forename surname"
  : @return 
  :)
-declare function html:printCorrespondentName($persName as element(), $lang as xs:string, $order as xs:string) as element() {
-     if(exists($persName/@key)) 
-        then html-link:createPersonLink($persName/string(@key), $lang, $order)
-        else if (exists($persName//text())) 
-            then <span class="noDataFound">{normalize-space($persName)}</span>
-            else <span class="noDataFound">{core:getLanguageString('unknown',$lang)}</span>
+declare function html:print-persname($persName as element(), $lang as xs:string, $order as xs:string) as element() {
+    if(exists($persName/@key)) then html-link:create-a-for-doc(
+        core:doc($persName/@key),
+        if($order eq 'fs') then core:printFornameSurname(query:getRegName($persName/@key))
+        else query:getRegName($persName/@key),
+        $lang,
+        ()
+        )
+    else if (exists($persName//text())) then <span class="noDataFound">{normalize-space($persName)}</span>
+    else <span class="noDataFound">{core:getLanguageString('unknown',$lang)}</span>
 };
