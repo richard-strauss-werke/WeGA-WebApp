@@ -22,7 +22,7 @@ import module namespace functx="http://www.functx.com" at "functx.xqm";
 declare function core:doc($docID as xs:string) as document-node()? {
     let $collectionPath := config:getCollectionPath($docID)
     return 
-        if ($collectionPath ne '') then collection($collectionPath)//id($docID)/root() else ()
+        if (exists($collectionPath)) then collection($collectionPath)//id($docID)/root() else ()
 };
 
 (:~
