@@ -82,7 +82,7 @@ declare function html:print-todays-events($node as node(), $model as map(*), $da
         return $i || ' -- ' || request:get-attribute($i)
         ):)
     return 
-        if((:false() and :)xmldb:last-modified($config:tmp, $todaysEventsFileName) cast as xs:date eq current-date() and xmldb:last-modified($config:tmp, $todaysEventsFileName) gt config:getDateTimeOfLastDBUpdate()) then $todaysEventsFile/xhtml:div
+        if((:false() and:) xmldb:last-modified($config:tmp, $todaysEventsFileName) cast as xs:date eq current-date() and xmldb:last-modified($config:tmp, $todaysEventsFileName) gt config:getDateTimeOfLastDBUpdate()) then $todaysEventsFile/xhtml:div
         else 
             let $output := 
                 <div xmlns="http://www.w3.org/1999/xhtml" id="todays-events">
@@ -103,11 +103,22 @@ declare function html:print-todays-events($node as node(), $model as map(*), $da
                                 if($isJubilee) then attribute class {'jubilee'} else (),
                                 date:formatYear(year-from-date($i/@when) cast as xs:int, $lang) || ': ', 
                                 if($typeOfEvent eq 'letter') then (
-                                    html:print-persname($i/ancestor::tei:correspDesc/tei:sender[1]/*[1], $lang, 'fs'), ' ',
-                                    lang:get-language-string('writesTo', $lang), ' ',
-                                    html:print-persname($i/ancestor::tei:correspDesc/tei:addressee[1]/*[1], $lang, 'fs'), ' '
+                                    let $sender := html:print-persname($i/ancestor::tei:correspDesc/tei:sender[1]/*[1], $lang, 'fs')
+                                    let $addressee := html:print-persname($i/ancestor::tei:correspDesc/tei:addressee[1]/*[1], $lang, 'fs')
+                                    return (
+                                        $sender, ' ', lang:get-language-string('writesTo', $lang), ' ', $addressee,
+                                        if(ends-with($addressee, '.')) then ' ' else '. ',
+                                        html-link:create-a-for-doc(
+                                            $i/root(), 
+                                            concat('[', lang:get-language-string('readOnLetter', $lang), ']'), 
+                                            $lang, ('class=readOn')
+                                        )
+                                    )
                                 )
-                                else $i/root()/*/@xml:id/string()
+                                else (
+                                    html-link:create-a-for-doc($i/root(), core:printFornameSurname(query:getRegName($i/root()/*/@xml:id)), $lang, ()), ' ',
+                                    lang:get-language-string($typeOfEvent, $lang)
+                                )
                             }
                     }
                     </ul>
