@@ -43,30 +43,27 @@ declare function query:get-todays-events($date as xs:date) as element(tei:date)*
 };
 
 (:~
- : Grab the first author from a TEI document
+ : Grab the first author from a TEI document or the first composer of a MEI document respectively
  :
  : @author Peter Stadler 
- : @param $item the id of the TEI document (or the document node itself) to grab the author from
- : @return xs:string the name of the author as given by //tei:fileDesc/tei:titleStmt/tei:author[1]
+ : @param $item the id of the document (or the document node itself) to grab the author from
+ : @return xs:string the ID of the author
 :)
-declare function query:getAuthorOfTeiDoc($item as item()) as xs:string {
+declare function query:getAuthorIDOfDoc($item as item()) as xs:string? {
     let $doc := typeswitch($item)
-        case xs:string return core:doc($item)/*
-        default return $item/*
-    let $docID := typeswitch($item)
-        case xs:string return $item
-        default return $doc/root()/*/@xml:id cast as xs:string
+        case xs:string return core:doc($item)
+        case document-node() return $item
+        default return ()
+    let $docID := $doc/*/data(@xml:id)
     return 
         if(exists($doc)) then 
             if(config:isDiary($docID)) then 'A002068' (: Diverse Sonderbehandlungen fürs Tagebuch :)
-            else if(config:isWork($docID)) then  (: Diverse Sonderbehandlungen für Werke :)
-                if(exists($doc//mei:titleStmt/mei:respStmt/mei:persName[@role = 'cmp'][1]/@dbkey)) then $doc//mei:titleStmt/mei:respStmt/mei:persName[@role = 'cmp'][1]/string(@dbkey)
-                else if(exists($doc/mei:ref)) then ''
-                else config:get-option('anonymusID')
+            else if(exists($doc//mei:titleStmt/mei:respStmt/mei:persName[@role = 'cmp'][1]/@dbkey)) then $doc//mei:titleStmt/mei:respStmt/mei:persName[@role = 'cmp'][1]/string(@dbkey)
+            else if(exists($doc/*/mei:ref)) then query:getAuthorIDOfDoc($doc/*/mei:ref/data(@target))
             else if(exists($doc//tei:fileDesc/tei:titleStmt/tei:author[1]/@key)) then $doc//tei:fileDesc/tei:titleStmt/tei:author[1]/string(@key)
-            else if(exists($doc/tei:ref)) then query:getAuthorOfTeiDoc($doc/tei:ref/@target cast as xs:string)
+            else if(exists($doc/*/tei:ref)) then query:getAuthorIDOfDoc($doc/*/tei:ref/data(@target))
             else config:get-option('anonymusID')
-        else ''
+        else ()
 };
 
 (:~
