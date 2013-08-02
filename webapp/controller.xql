@@ -5,6 +5,8 @@ import module namespace session="http://exist-db.org/xquery/session";
 import module namespace xdb = "http://exist-db.org/xquery/xmldb";
 import module namespace controller="http://xquery.weber-gesamtausgabe.de/modules/controller" at "modules/controller.xqm";
 import module namespace config="http://xquery.weber-gesamtausgabe.de/modules/config" at "modules/config.xqm";
+import module namespace html-link="http://xquery.weber-gesamtausgabe.de/modules/html-link" at "modules/html-link.xqm";
+import module namespace lang="http://xquery.weber-gesamtausgabe.de/modules/lang" at "modules/lang.xqm";
 
 declare variable $exist:path external;
 declare variable $exist:resource external;
@@ -18,24 +20,39 @@ let $exist-vars := map {
     'controller' := $exist:controller,
     'prefix' := $exist:prefix
     }
-let $lang := 
-    if ($params[2] = ('en', 'de')) then session:set-attribute('lang', $params[2])
-    else if(exists(session:get-attribute('lang'))) then session:get-attribute('lang')
-    else session:set-attribute('lang', 'de') (: Deutsch als Default-Sprache :)
-            
+let $lang := lang:get-set-language($params[2])
+(:let $log := util:log-system-out(
+    $params[1]
+    (\:'&#10;' || '$exist:path' || ' -- ' || $exist:path || '&#10;' ||
+    '$exist:resource' || ' -- ' || $exist:resource || '&#10;':\)
+):)
+
 return
 
-if ($exist:path eq "") then
+if ($exist:path eq '') then
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
         <redirect url="{concat(request:get-uri(), '/')}"/>
     </dispatch>
 
-(: Startseiten-Weiterleitung :)
-else if (matches($exist:path, '^/([Ii]ndex/?)?$')) then
+(: 
+ :  Startseiten-Weiterleitung 1
+ :  Nackte Server-URL (evtl. mit Angabe der Sprache)
+:)
+else if (matches($exist:path, '^/(en|de)?$')) then
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
-        <redirect url="{$exist:controller || '/' || $lang || '/Index'}"/>
+        <redirect url="{concat('de', '/Index')}" />
     </dispatch>
 
+(: 
+ :  Startseiten-Weiterleitung 2
+ :  Diverse Index Variationen
+ :  Achtung: .php hier nicht aufnehmen, dies wird mit den typo3ContentMappings abgefragt
+:)
+else if (matches($exist:path, '^/[Ii]ndex(\.(htm|html|xml)|/)?$')) then
+    <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
+        <redirect url="{concat($lang, '/Index')}" />
+    </dispatch>
+ 
 else if (matches($exist:path, '^/(en/|de/)(Index)?$')) then
     controller:default-forward('index.html', $exist-vars)
     

@@ -27,7 +27,7 @@ import module namespace core="http://xquery.weber-gesamtausgabe.de/modules/core"
  :)
 declare function html-link:link-to-current-app($relLink as xs:string?) as xs:string {
 (:    templates:link-to-app($config:expath-descriptor/@name, $relLink):)
-    replace(string-join((request:get-context-path(), request:get-attribute("$exist:prefix"), 'WeGA-WebApp', $relLink), "/"), "/+", "/")
+    replace(string-join((request:get-context-path(), request:get-attribute("$exist:prefix"), request:get-attribute('$exist:controller'), $relLink), "/"), "/+", "/")
 };
 
 (:~
