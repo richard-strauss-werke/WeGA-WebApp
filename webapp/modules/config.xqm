@@ -141,12 +141,13 @@ declare function config:get-option($key as xs:string?, $replacements as xs:strin
 
 (:~
  : Gets document type by ID
+ : Serves as a general validation service for our ID taxonomy
  :
  : @author Peter Stadler
  : @param $id 
  : @return xs:string document type
 :)
-declare function config:getDoctypeByID($id as xs:string) as xs:string? {
+declare function config:getDoctypeByID($id as xs:string?) as xs:string? {
     if(config:isPerson($id)) then 'persons'
     else if(config:isWriting($id)) then 'writings'
     else if(config:isWork($id)) then 'works'
@@ -166,7 +167,7 @@ declare function config:getDoctypeByID($id as xs:string) as xs:string? {
  : @param $docID the id to test as string
  : @return xs:boolean
 :)
-declare function config:isPerson($docID as xs:string) as xs:boolean {
+declare function config:isPerson($docID as xs:string?) as xs:boolean {
     matches($docID, '^A00\d{4}$')
 };
 
@@ -177,7 +178,7 @@ declare function config:isPerson($docID as xs:string) as xs:boolean {
  : @param $docID the id to test as string
  : @return xs:boolean
 :)
-declare function config:isIconography($docID as xs:string) as xs:boolean {
+declare function config:isIconography($docID as xs:string?) as xs:boolean {
     matches($docID, '^A01\d{4}$')
 };
 
@@ -188,7 +189,7 @@ declare function config:isIconography($docID as xs:string) as xs:boolean {
  : @param $docID the id to test as string
  : @return xs:boolean
 :)
-declare function config:isWork($docID as xs:string) as xs:boolean {
+declare function config:isWork($docID as xs:string?) as xs:boolean {
     matches($docID, '^A02\d{4}$')
 };
 
@@ -199,7 +200,7 @@ declare function config:isWork($docID as xs:string) as xs:boolean {
  : @param $docID the id to test as string
  : @return xs:boolean
 :)
-declare function config:isWriting($docID as xs:string) as xs:boolean {
+declare function config:isWriting($docID as xs:string?) as xs:boolean {
     matches($docID, '^A03\d{4}$')
 };
 
@@ -210,7 +211,7 @@ declare function config:isWriting($docID as xs:string) as xs:boolean {
  : @param $docID the id to test as string
  : @return xs:boolean
 :)
-declare function config:isLetter($docID as xs:string) as xs:boolean {
+declare function config:isLetter($docID as xs:string?) as xs:boolean {
     matches($docID, '^A04\d{4}$')
 };
 
@@ -221,7 +222,7 @@ declare function config:isLetter($docID as xs:string) as xs:boolean {
  : @param $docID the id to test as string
  : @return xs:boolean
 :)
-declare function config:isNews($docID as xs:string) as xs:boolean {
+declare function config:isNews($docID as xs:string?) as xs:boolean {
     matches($docID, '^A05\d{4}$')
 };
 
@@ -232,7 +233,7 @@ declare function config:isNews($docID as xs:string) as xs:boolean {
  : @param $docID the id to test as string
  : @return xs:boolean
 :)
-declare function config:isDiary($docID as xs:string) as xs:boolean {
+declare function config:isDiary($docID as xs:string?) as xs:boolean {
     matches($docID, '^A06\d{4}$')
 };
 
@@ -243,7 +244,7 @@ declare function config:isDiary($docID as xs:string) as xs:boolean {
  : @param $docID the id to test as string
  : @return xs:boolean
 :)
-declare function config:isVar($docID as xs:string) as xs:boolean {
+declare function config:isVar($docID as xs:string?) as xs:boolean {
     matches($docID, '^A07\d{4}$')
 };
 
@@ -254,7 +255,7 @@ declare function config:isVar($docID as xs:string) as xs:boolean {
  : @param $docID the id to test as string
  : @return xs:boolean
 :)
-declare function config:isBiblio($docID as xs:string) as xs:boolean {
+declare function config:isBiblio($docID as xs:string?) as xs:boolean {
     matches($docID, '^A11\d{4}$')
 };
 
