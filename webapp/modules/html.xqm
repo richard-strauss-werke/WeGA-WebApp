@@ -18,6 +18,7 @@ import module namespace query="http://xquery.weber-gesamtausgabe.de/modules/quer
 import module namespace core="http://xquery.weber-gesamtausgabe.de/modules/core" at "core.xqm";
 import module namespace date="http://xquery.weber-gesamtausgabe.de/modules/date" at "date.xqm";
 import module namespace html-link="http://xquery.weber-gesamtausgabe.de/modules/html-link" at "html-link.xqm";
+import module namespace lang="http://xquery.weber-gesamtausgabe.de/modules/lang" at "lang.xqm";
 
 declare %templates:wrap function html:page-title($node as node(), $model as map(*)) as xs:string {
     ''
@@ -34,7 +35,7 @@ declare function html:print-latest-news($node as node(), $model as map(*), $lang
     let $latestNews := query:get-latest-news(())
     return
         <div xmlns="http://www.w3.org/1999/xhtml">
-            <h2>{core:getLanguageString('news', $lang)}</h2>
+            <h2>{lang:get-language-string('news', $lang)}</h2>
             {for $news at $count in $latestNews
                 let $newsTeaserDate := $news//tei:fileDesc//tei:date/xs:dateTime(@when)
                 let $authorID := data($news//tei:titleStmt/tei:author[1]/@key)
@@ -44,7 +45,7 @@ declare function html:print-latest-news($node as node(), $model as map(*), $lang
                 return (
                     element span {
                         attribute class {'newsTeaserDate'},
-                        core:getLanguageString('websiteNews', date:strfdate($dateFormat, datetime:date-from-dateTime($newsTeaserDate), $lang), $lang)
+                        lang:get-language-string('websiteNews', date:strfdate($dateFormat, datetime:date-from-dateTime($newsTeaserDate), $lang), $lang)
                     },
                     element h2 {
                         element a {
@@ -58,9 +59,9 @@ declare function html:print-latest-news($node as node(), $model as map(*), $lang
                         ' … ',
                         element a{
                             attribute href {html-link:create-href-for-doc($news, $lang)},
-                            attribute title {core:getLanguageString('more', $lang)},
+                            attribute title {lang:get-language-string('more', $lang)},
                             attribute class {'readOn'},
-                            concat('[', core:getLanguageString('more', $lang), ']')
+                            concat('[', lang:get-language-string('more', $lang), ']')
                         }
                     },
                     if($count ne count($latestNews)) then <hr class="news-teaser-break"/>
@@ -76,13 +77,16 @@ declare function html:print-todays-events($node as node(), $model as map(*), $da
         else current-date()
     let $todaysEventsFileName := concat('todaysEventsFile_', $lang, '.xml')
     let $todaysEventsFile := doc(string-join(($config:tmp, $todaysEventsFileName), '/'))
-(:    let $log := util:log-system-out(html-link:link-to-current-app('myLink')):)
+   (: let $log := util:log-system-out(
+        for $i in request:attribute-names()
+        return $i || ' -- ' || request:get-attribute($i)
+        ):)
     return 
         if((:false() and :)xmldb:last-modified($config:tmp, $todaysEventsFileName) cast as xs:date eq current-date() and xmldb:last-modified($config:tmp, $todaysEventsFileName) gt config:getDateTimeOfLastDBUpdate()) then $todaysEventsFile/xhtml:div
         else 
             let $output := 
                 <div xmlns="http://www.w3.org/1999/xhtml" id="todays-events">
-                    <h3>{core:getLanguageString('whatHappenedOn', date:strfdate(if($lang eq 'en') then '%B %d' else '%d. %B', $date, $lang), $lang)}</h3>
+                    <h3>{lang:get-language-string('whatHappenedOn', date:strfdate(if($lang eq 'en') then '%B %d' else '%d. %B', $date, $lang), $lang)}</h3>
                     <ul>
                     {for $i in query:get-todays-events($date)
                         let $isJubilee := (year-from-date($date) - $i/year-from-date(@when)) mod 25 = 0
@@ -100,7 +104,7 @@ declare function html:print-todays-events($node as node(), $model as map(*), $da
                                 date:formatYear(year-from-date($i/@when) cast as xs:int, $lang) || ': ', 
                                 if($typeOfEvent eq 'letter') then (
                                     html:print-persname($i/ancestor::tei:correspDesc/tei:sender[1]/*[1], $lang, 'fs'), ' ',
-                                    core:getLanguageString('writesTo', $lang), ' ',
+                                    lang:get-language-string('writesTo', $lang), ' ',
                                     html:print-persname($i/ancestor::tei:correspDesc/tei:addressee[1]/*[1], $lang, 'fs'), ' '
                                 )
                                 else $i/root()/*/@xml:id/string()
@@ -132,5 +136,5 @@ declare function html:print-persname($persName as element(), $lang as xs:string,
         ()
         )
     else if (exists($persName//text())) then <span class="noDataFound">{normalize-space($persName)}</span>
-    else <span class="noDataFound">{core:getLanguageString('unknown',$lang)}</span>
+    else <span class="noDataFound">{lang:get-language-string('unknown',$lang)}</span>
 };

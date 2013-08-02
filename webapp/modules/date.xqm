@@ -9,6 +9,7 @@ declare namespace tei="http://www.tei-c.org/ns/1.0";
 declare namespace mei="http://www.music-encoding.org/ns/mei";
 
 import module namespace core="http://xquery.weber-gesamtausgabe.de/modules/core" at "core.xqm";
+import module namespace lang="http://xquery.weber-gesamtausgabe.de/modules/lang" at "lang.xqm";
 
 (:~
  : Construct one normalized xs:date from a tei:date element's date or duration attributes (@from, @to, @when, @notBefore, @notAfter)
@@ -115,8 +116,8 @@ declare function date:strfdate($format as xs:string, $value as xs:date, $lang as
     let $year   := date:formatYear(number(year-from-date($value)), $lang)
     let $output := replace($format, '%d', string($day))
     let $output := replace($output, '%Y', string($year))
-    let $output := replace($output, '%B', core:getLanguageString(concat('month',$month), $lang))
-    let $output := replace($output, '%A', core:getLanguageString(concat('day',datetime:day-in-week($value)), $lang))
+    let $output := replace($output, '%B', lang:get-language-string(concat('month',$month), $lang))
+    let $output := replace($output, '%A', lang:get-language-string(concat('day',datetime:day-in-week($value)), $lang))
 
     return normalize-space($output)
 };

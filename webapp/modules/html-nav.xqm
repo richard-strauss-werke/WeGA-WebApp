@@ -13,6 +13,7 @@ declare namespace mei="http://www.music-encoding.org/ns/mei";
 import module namespace config="http://xquery.weber-gesamtausgabe.de/modules/config" at "config.xqm";
 import module namespace core="http://xquery.weber-gesamtausgabe.de/modules/core" at "core.xqm";
 import module namespace html-link="http://xquery.weber-gesamtausgabe.de/modules/html-link" at "html-link.xqm";
+import module namespace lang="http://xquery.weber-gesamtausgabe.de/modules/lang" at "lang.xqm";
 
 (:~
  : Top navigation for all pages 
@@ -23,16 +24,16 @@ import module namespace html-link="http://xquery.weber-gesamtausgabe.de/modules/
 declare function html-nav:page-top-bar-section($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:section) {
     let $html_pixDir := config:get-option('pixDir')
     let $uriTokens := tokenize(xmldb:decode-uri(request:get-uri()), '/')
-    let $search := html-link:link-to-current-app(string-join(($lang, core:getLanguageString('search', $lang)), '/'))
-    let $index := html-link:link-to-current-app(string-join(($lang, core:getLanguageString('index', $lang)), '/'))
-    let $impressum := html-link:link-to-current-app(string-join(($lang, core:getLanguageString('about', $lang)), '/'))
-    let $help := html-link:link-to-current-app(string-join(($lang, core:getLanguageString('help', $lang)), '/'))
+    let $search := html-link:link-to-current-app(string-join(($lang, lang:get-language-string('search', $lang)), '/'))
+    let $index := html-link:link-to-current-app(string-join(($lang, lang:get-language-string('index', $lang)), '/'))
+    let $impressum := html-link:link-to-current-app(string-join(($lang, lang:get-language-string('about', $lang)), '/'))
+    let $help := html-link:link-to-current-app(string-join(($lang, lang:get-language-string('help', $lang)), '/'))
     let $switchLanguage := 
         for $i in $uriTokens[string-length(.) gt 2]
         return
             if (matches($i, 'A\d{6}')) then $i
-            else if($lang eq 'en') then replace(core:translateLanguageString(replace($i, '_', ' '), $lang, 'de'), '\s', '_') (: Ersetzen von Leerzeichen durch Unterstriche in der URL :)
-            else replace(core:translateLanguageString(replace($i, '_', ' '), $lang, 'en'), '\s', '_')
+            else if($lang eq 'en') then replace(lang:translate-language-string(replace($i, '_', ' '), $lang, 'de'), '\s', '_') (: Ersetzen von Leerzeichen durch Unterstriche in der URL :)
+            else replace(lang:translate-language-string(replace($i, '_', ' '), $lang, 'en'), '\s', '_')
     let $switchLanguage := if($lang eq 'en')
         then <a href="{html-link:link-to-current-app(string-join(('de', $switchLanguage), '/'))}" title="Diese Seite auf Deutsch"><img src="{html-link:link-to-current-app(string-join(($html_pixDir, 'de.gif'), '/'))}" alt="germanFlag" width="20" height="12"/></a>
         else <a href="{html-link:link-to-current-app(string-join(('en', $switchLanguage), '/'))}" title="This page in english"><img src="{html-link:link-to-current-app(string-join(($html_pixDir, 'gb.gif'), '/'))}" alt="englishFlag" width="20" height="12"/></a>
@@ -58,11 +59,11 @@ declare function html-nav:page-top-bar-section($node as node(), $model as map(*)
             </li>
         </ul>,
         <ul class="right">
-            <li><a href="{$index}">{core:getLanguageString('home',$lang)}</a></li>
+            <li><a href="{$index}">{lang:get-language-string('home',$lang)}</a></li>
             <li class="divider"></li>
-            <li><a href="{$impressum}">{core:getLanguageString('about',$lang)}</a></li>
+            <li><a href="{$impressum}">{lang:get-language-string('about',$lang)}</a></li>
             <li class="divider"></li>
-            <li><a href="{$help}">{core:getLanguageString('help',$lang)}</a></li>
+            <li><a href="{$help}">{lang:get-language-string('help',$lang)}</a></li>
             <li class="divider"></li>
             <li>{$switchLanguage}</li>
         </ul>
@@ -77,14 +78,14 @@ declare function html-nav:page-top-bar-section($node as node(), $model as map(*)
  :)
 declare function html-nav:page-nav-digital-edition($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
     <div id="page-nav-digital-edition" xmlns="http://www.w3.org/1999/xhtml">
-        <h3>{core:getLanguageString('digitalEdition', $lang)}</h3>
+        <h3>{lang:get-language-string('digitalEdition', $lang)}</h3>
         <ul>
             <li><a href="{html-link:link-to-current-app($lang || '/A002068')}">Weber Person</a></li>
-            <li><a href="{html-link:link-to-current-app(string-join(($lang, 'A002068', core:getLanguageString('correspondence', $lang)), '/'))}">Weber {core:getLanguageString('correspondence', $lang)}</a></li>
-            <li><a href="{html-link:link-to-current-app(string-join(($lang, 'A002068', core:getLanguageString('diaries', $lang)), '/'))}">Weber {core:getLanguageString('diaries', $lang)}</a></li>
-            <li><a href="{html-link:link-to-current-app(string-join(($lang, 'A002068', core:getLanguageString('writings', $lang)), '/'))}">Weber {core:getLanguageString('writings', $lang)}</a></li>
-            <li><a href="{html-link:link-to-current-app(string-join(($lang, 'A002068', core:getLanguageString('works', $lang)), '/'))}">Weber {core:getLanguageString('works', $lang)}</a></li>
-            <li><a href="{html-link:link-to-current-app(string-join(($lang, core:getLanguageString('indices', $lang)), '/'))}">{core:getLanguageString('indices', $lang)}</a></li>
+            <li><a href="{html-link:link-to-current-app(string-join(($lang, 'A002068', lang:get-language-string('correspondence', $lang)), '/'))}">Weber {lang:get-language-string('correspondence', $lang)}</a></li>
+            <li><a href="{html-link:link-to-current-app(string-join(($lang, 'A002068', lang:get-language-string('diaries', $lang)), '/'))}">Weber {lang:get-language-string('diaries', $lang)}</a></li>
+            <li><a href="{html-link:link-to-current-app(string-join(($lang, 'A002068', lang:get-language-string('writings', $lang)), '/'))}">Weber {lang:get-language-string('writings', $lang)}</a></li>
+            <li><a href="{html-link:link-to-current-app(string-join(($lang, 'A002068', lang:get-language-string('works', $lang)), '/'))}">Weber {lang:get-language-string('works', $lang)}</a></li>
+            <li><a href="{html-link:link-to-current-app(string-join(($lang, lang:get-language-string('indices', $lang)), '/'))}">{lang:get-language-string('indices', $lang)}</a></li>
         </ul>
     </div>
 };
@@ -97,14 +98,14 @@ declare function html-nav:page-nav-digital-edition($node as node(), $model as ma
  :)
 declare function html-nav:page-nav-project-links($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
     <div id="page-nav-project-links" xmlns="http://www.w3.org/1999/xhtml">
-        <h3>{core:getLanguageString('aboutTheProject', $lang)}</h3>
+        <h3>{lang:get-language-string('aboutTheProject', $lang)}</h3>
         <ul>
-            <li><a href="{html-link:link-to-current-app(string-join(($lang, core:getLanguageString('indices',$lang), core:getLanguageString('news',$lang)),'/'))}">{core:getLanguageString('news', $lang)}</a></li>
-            <li><a href="{html-link:link-to-current-app(string-join(($lang, replace(core:getLanguageString('editorialGuidelines',$lang), '\s', '_')),'/'))}">{core:getLanguageString('editorialGuidelines', $lang)}</a></li>
-            <li><a href="{html-link:link-to-current-app(string-join(($lang, replace(core:getLanguageString('projectDescription',$lang), '\s', '_')), '/'))}">{core:getLanguageString('projectDescription', $lang)}</a></li>
-            <li><a href="{html-link:link-to-current-app(string-join(($lang, core:getLanguageString('publications',$lang)), '/'))}">{core:getLanguageString('publications', $lang)}</a></li>
-            <li><a href="{html-link:link-to-current-app(string-join(($lang, core:getLanguageString('bibliography',$lang)), '/'))}">{core:getLanguageString('bibliography', $lang)}</a></li>
-            <li><a href="{html-link:link-to-current-app(string-join(($lang, core:getLanguageString('contact',$lang)), '/'))}">{core:getLanguageString('contact', $lang)}</a></li>
+            <li><a href="{html-link:link-to-current-app(string-join(($lang, lang:get-language-string('indices',$lang), lang:get-language-string('news',$lang)),'/'))}">{lang:get-language-string('news', $lang)}</a></li>
+            <li><a href="{html-link:link-to-current-app(string-join(($lang, replace(lang:get-language-string('editorialGuidelines',$lang), '\s', '_')),'/'))}">{lang:get-language-string('editorialGuidelines', $lang)}</a></li>
+            <li><a href="{html-link:link-to-current-app(string-join(($lang, replace(lang:get-language-string('projectDescription',$lang), '\s', '_')), '/'))}">{lang:get-language-string('projectDescription', $lang)}</a></li>
+            <li><a href="{html-link:link-to-current-app(string-join(($lang, lang:get-language-string('publications',$lang)), '/'))}">{lang:get-language-string('publications', $lang)}</a></li>
+            <li><a href="{html-link:link-to-current-app(string-join(($lang, lang:get-language-string('bibliography',$lang)), '/'))}">{lang:get-language-string('bibliography', $lang)}</a></li>
+            <li><a href="{html-link:link-to-current-app(string-join(($lang, lang:get-language-string('contact',$lang)), '/'))}">{lang:get-language-string('contact', $lang)}</a></li>
         </ul>
     </div>
 };
@@ -118,11 +119,11 @@ declare function html-nav:page-nav-project-links($node as node(), $model as map(
  :)
 declare function html-nav:page-nav-dev-links($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
     <div id="page-nav-dev-links" xmlns="http://www.w3.org/1999/xhtml">{
-        element h3 {core:getLanguageString('development', $lang)},
+        element h3 {lang:get-language-string('development', $lang)},
         element ul {
             element li {
                 element a {
-                    attribute href {html-link:link-to-current-app(string-join(($lang, core:getLanguageString('tools', $lang)), '/'))},
+                    attribute href {html-link:link-to-current-app(string-join(($lang, lang:get-language-string('tools', $lang)), '/'))},
                     'Tools'
                 }
             }
@@ -134,7 +135,7 @@ declare function html-nav:page-nav-dev-links($node as node(), $model as map(*), 
 declare function html-nav:page-nav-combined($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
     <div class="section-container accordion" data-section="" data-options="one_up: false;" xmlns="http://www.w3.org/1999/xhtml">
         <section class="section">
-            <p class="title" data-section-title=""><a href="#">{core:getLanguageString('digitalEdition', $lang)}</a></p>
+            <p class="title" data-section-title=""><a href="#">{lang:get-language-string('digitalEdition', $lang)}</a></p>
             <div class="content" data-section-content="">
                 <ul class="side-nav">
                     {html-nav:page-nav-digital-edition($node, $model, $lang)//xhtml:li}
@@ -142,7 +143,7 @@ declare function html-nav:page-nav-combined($node as node(), $model as map(*), $
             </div>
         </section>
         <section class="section">
-            <p class="title" data-section-title=""><a href="#">{core:getLanguageString('aboutTheProject', $lang)}</a></p>
+            <p class="title" data-section-title=""><a href="#">{lang:get-language-string('aboutTheProject', $lang)}</a></p>
             <div class="content" data-section-content="">
                 <ul class="side-nav">
                     {html-nav:page-nav-project-links($node, $model, $lang)//xhtml:li}

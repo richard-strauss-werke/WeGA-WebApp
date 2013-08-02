@@ -16,6 +16,7 @@ import module namespace templates="http://exist-db.org/xquery/templates" at "/db
 import module namespace config="http://xquery.weber-gesamtausgabe.de/modules/config" at "config.xqm";
 import module namespace query="http://xquery.weber-gesamtausgabe.de/modules/query" at "query.xqm";
 import module namespace core="http://xquery.weber-gesamtausgabe.de/modules/core" at "core.xqm";
+import module namespace lang="http://xquery.weber-gesamtausgabe.de/modules/lang" at "lang.xqm";
 
 (:~
  : Serves as a shortcut to templates:link-to-app()
@@ -43,8 +44,8 @@ declare function html-link:create-href-for-doc($doc as document-node(), $lang as
     let $docType := config:getDoctypeByID($docID)
     let $authorId := query:getAuthorIDOfDoc($doc)
     let $folder := 
-        if($docType eq 'letters') then core:getLanguageString('correspondence', $lang) (: Ausnahme für Briefe=Korrespondenz:)
-        else if(exists($docType)) then core:getLanguageString($docType, $lang)
+        if($docType eq 'letters') then lang:get-language-string('correspondence', $lang) (: Ausnahme für Briefe=Korrespondenz:)
+        else if(exists($docType)) then lang:get-language-string($docType, $lang)
         else ()
     return 
         if($docType eq 'persons') then html-link:link-to-current-app(string-join(($lang, $docID), '/')) (: Ausnahme für Personen, die direkt unter {baseref}/{lang}/ angezeigt werden:)
