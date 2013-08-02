@@ -70,7 +70,7 @@ declare function html-link:create-a-for-doc($doc as document-node(), $content as
     let $href := html-link:create-href-for-doc($doc, $lang)
     let $docID :=  $doc/root()/*/@xml:id
     return 
-    element a {
+    element xhtml:a {
         attribute href {$href},
         attribute onmouseover {concat("metaDataToTip('", $docID, "','", $lang, "')")},
         attribute onmouseout {'UnTip()'},
