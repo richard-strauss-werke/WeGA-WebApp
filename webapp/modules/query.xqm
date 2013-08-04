@@ -57,7 +57,7 @@ declare function query:getAuthorIDOfDoc($item as item()) as xs:string? {
     let $docID := $doc/*/data(@xml:id)
     return 
         if(exists($doc)) then 
-            if(config:isDiary($docID)) then 'A002068' (: Diverse Sonderbehandlungen fürs Tagebuch :)
+            if(config:is-diary($docID)) then 'A002068' (: Diverse Sonderbehandlungen fürs Tagebuch :)
             else if(exists($doc//mei:titleStmt/mei:respStmt/mei:persName[@role = 'cmp'][1]/@dbkey)) then $doc//mei:titleStmt/mei:respStmt/mei:persName[@role = 'cmp'][1]/string(@dbkey)
             else if(exists($doc/*/mei:ref)) then query:getAuthorIDOfDoc($doc/*/mei:ref/data(@target))
             else if(exists($doc//tei:fileDesc/tei:titleStmt/tei:author[1]/@key)) then $doc//tei:fileDesc/tei:titleStmt/tei:author[1]/string(@key)

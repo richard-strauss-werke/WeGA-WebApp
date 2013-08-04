@@ -44,7 +44,7 @@ declare function lang:get-set-language($lang as xs:string?) as xs:string {
  : @return document-node
  :)
 declare %private function lang:get-language-catalogue($lang as xs:string) as document-node()? {
-    collection($config:catalogues-collection)//tei:text[@type='language-catalogue'][@xml:lang=$lang]/root()
+    collection($config:catalogues-collection-path)//tei:text[@type='language-catalogue'][@xml:lang=$lang]/root()
 };
 
 (:~

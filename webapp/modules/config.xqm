@@ -32,11 +32,12 @@ declare variable $config:app-root :=
         substring-before($modulePath, "/modules")
 ;
 
-declare variable $config:catalogues-collection as xs:string := $config:app-root || '/catalogues';
-declare variable $config:options-file as document-node() := doc($config:catalogues-collection || '/options.xml');
-declare variable $config:svn-change-history-file as document-node() := doc($config:catalogues-collection || '/svnChangeHistory.xml');
+declare variable $config:catalogues-collection-path as xs:string := $config:app-root || '/catalogues';
+declare variable $config:options-file as document-node() := doc($config:catalogues-collection-path || '/options.xml');
+declare variable $config:svn-change-history-file as document-node() := doc($config:catalogues-collection-path || '/svnChangeHistory.xml');
 declare variable $config:data-collection-path as xs:string := '/db/apps/WeGA-data';
-declare variable $config:tmp as xs:string := $config:app-root || '/tmp';
+declare variable $config:tmp-collection-path as xs:string := $config:app-root || '/tmp';
+declare variable $config:xsl-collection-path as xs:string := $config:app-root || '/xsl';
 
 declare variable $config:isDevelopment as xs:boolean := config:get-option('environment') eq 'development';
 
@@ -147,16 +148,16 @@ declare function config:get-option($key as xs:string?, $replacements as xs:strin
  : @param $id 
  : @return xs:string document type
 :)
-declare function config:getDoctypeByID($id as xs:string?) as xs:string? {
-    if(config:isPerson($id)) then 'persons'
-    else if(config:isWriting($id)) then 'writings'
-    else if(config:isWork($id)) then 'works'
-    else if(config:isDiary($id)) then 'diaries'
-    else if(config:isLetter($id)) then 'letters'
-    else if(config:isNews($id)) then 'news'
-    else if(config:isIconography($id)) then 'iconography'
-    else if(config:isVar($id)) then 'var'
-    else if(config:isBiblio($id)) then 'biblio'
+declare function config:get-doctype-by-id($id as xs:string?) as xs:string? {
+    if(config:is-person($id)) then 'persons'
+    else if(config:is-writing($id)) then 'writings'
+    else if(config:is-work($id)) then 'works'
+    else if(config:is-diary($id)) then 'diaries'
+    else if(config:is-letter($id)) then 'letters'
+    else if(config:is-news($id)) then 'news'
+    else if(config:is-iconography($id)) then 'iconography'
+    else if(config:is-var($id)) then 'var'
+    else if(config:is-biblio($id)) then 'biblio'
     else ()
 };
 
@@ -167,7 +168,7 @@ declare function config:getDoctypeByID($id as xs:string?) as xs:string? {
  : @param $docID the id to test as string
  : @return xs:boolean
 :)
-declare function config:isPerson($docID as xs:string?) as xs:boolean {
+declare function config:is-person($docID as xs:string?) as xs:boolean {
     matches($docID, '^A00\d{4}$')
 };
 
@@ -178,7 +179,7 @@ declare function config:isPerson($docID as xs:string?) as xs:boolean {
  : @param $docID the id to test as string
  : @return xs:boolean
 :)
-declare function config:isIconography($docID as xs:string?) as xs:boolean {
+declare function config:is-iconography($docID as xs:string?) as xs:boolean {
     matches($docID, '^A01\d{4}$')
 };
 
@@ -189,7 +190,7 @@ declare function config:isIconography($docID as xs:string?) as xs:boolean {
  : @param $docID the id to test as string
  : @return xs:boolean
 :)
-declare function config:isWork($docID as xs:string?) as xs:boolean {
+declare function config:is-work($docID as xs:string?) as xs:boolean {
     matches($docID, '^A02\d{4}$')
 };
 
@@ -200,7 +201,7 @@ declare function config:isWork($docID as xs:string?) as xs:boolean {
  : @param $docID the id to test as string
  : @return xs:boolean
 :)
-declare function config:isWriting($docID as xs:string?) as xs:boolean {
+declare function config:is-writing($docID as xs:string?) as xs:boolean {
     matches($docID, '^A03\d{4}$')
 };
 
@@ -211,7 +212,7 @@ declare function config:isWriting($docID as xs:string?) as xs:boolean {
  : @param $docID the id to test as string
  : @return xs:boolean
 :)
-declare function config:isLetter($docID as xs:string?) as xs:boolean {
+declare function config:is-letter($docID as xs:string?) as xs:boolean {
     matches($docID, '^A04\d{4}$')
 };
 
@@ -222,7 +223,7 @@ declare function config:isLetter($docID as xs:string?) as xs:boolean {
  : @param $docID the id to test as string
  : @return xs:boolean
 :)
-declare function config:isNews($docID as xs:string?) as xs:boolean {
+declare function config:is-news($docID as xs:string?) as xs:boolean {
     matches($docID, '^A05\d{4}$')
 };
 
@@ -233,7 +234,7 @@ declare function config:isNews($docID as xs:string?) as xs:boolean {
  : @param $docID the id to test as string
  : @return xs:boolean
 :)
-declare function config:isDiary($docID as xs:string?) as xs:boolean {
+declare function config:is-diary($docID as xs:string?) as xs:boolean {
     matches($docID, '^A06\d{4}$')
 };
 
@@ -244,7 +245,7 @@ declare function config:isDiary($docID as xs:string?) as xs:boolean {
  : @param $docID the id to test as string
  : @return xs:boolean
 :)
-declare function config:isVar($docID as xs:string?) as xs:boolean {
+declare function config:is-var($docID as xs:string?) as xs:boolean {
     matches($docID, '^A07\d{4}$')
 };
 
@@ -255,7 +256,7 @@ declare function config:isVar($docID as xs:string?) as xs:boolean {
  : @param $docID the id to test as string
  : @return xs:boolean
 :)
-declare function config:isBiblio($docID as xs:string?) as xs:boolean {
+declare function config:is-biblio($docID as xs:string?) as xs:boolean {
     matches($docID, '^A11\d{4}$')
 };
 
@@ -266,7 +267,7 @@ declare function config:isBiblio($docID as xs:string?) as xs:boolean {
  : @param $docID the id to test as string
  : @return xs:boolean
 :)
-declare function config:isWeberStudies($doc as document-node()) as xs:boolean {
+declare function config:is-weberStudies($doc as document-node()) as xs:boolean {
     $doc//tei:series/tei:title[@level = 's'] = 'Weber-Studien'
 };
 
@@ -277,7 +278,7 @@ declare function config:isWeberStudies($doc as document-node()) as xs:boolean {
  : @param $string the string to test
  : @return xs:boolean
 :)
-declare function config:isBiblioType($string as xs:string) as xs:boolean {
+declare function config:is-BiblioType($string as xs:string) as xs:boolean {
     $string = ('mastersthesis', 'inbook', 'online', 'review', 'book', 'misc', 'inproceedings', 'article', 'score', 'incollection', 'phdthesis')
 };
 
@@ -289,7 +290,7 @@ declare function config:isBiblioType($string as xs:string) as xs:boolean {
  : @return xs:string the collection path of the document 
 :)
 declare function config:getCollectionPath($docID as xs:string) as xs:string? {
-    let $docType := config:getDoctypeByID($docID)
+    let $docType := config:get-doctype-by-id($docID)
     return 
         if(exists($docType)) then string-join(($config:data-collection-path, $docType, replace($docID, '\d{2}$', 'xx')), '/') 
         else ()
@@ -315,7 +316,7 @@ declare function config:eXistDbWasUpdatedAfterwards($dateTime as xs:dateTime?) a
  : @return xs:dateTime
 :)
 declare function config:getDateTimeOfLastDBUpdate() as xs:dateTime? {
-    xmldb:last-modified($config:catalogues-collection, 'svnChangeHistory.xml')
+    xmldb:last-modified($config:catalogues-collection-path, 'svnChangeHistory.xml')
 };
 
 (:~

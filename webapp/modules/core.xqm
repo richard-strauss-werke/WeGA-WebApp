@@ -67,7 +67,7 @@ declare function core:createColl($collName as xs:string, $cacheKey as xs:string)
     let $collPath := string-join(($config:data-collection-path, $collName),'/') 
     let $collPathExists := xmldb:collection-available($collPath) and ($collPath ne '') and ($cacheKey ne '')
     let $isSupportedDiary := if($collName eq 'diaries') then $cacheKey eq 'indices' or $cacheKey eq 'A002068' else true()
-    let $predicates :=  if(config:isPerson($cacheKey)) then config:get-option(concat($collName, 'Pred'), $cacheKey)
+    let $predicates :=  if(config:is-person($cacheKey)) then config:get-option(concat($collName, 'Pred'), $cacheKey)
         else config:get-option(concat($collName, 'PredIndices'))
     return if ($predicates ne '' and $collPathExists and $isSupportedDiary) then util:eval(concat('collection("', $collPath, '")', $predicates)) else()
 };
@@ -80,13 +80,13 @@ declare function core:createColl($collName as xs:string, $cacheKey as xs:string)
  : @return item*
  :)
 declare function core:sortColl($coll as item()*) as item()* {
-    if(config:isPerson($coll[1]/tei:person/string(@xml:id)))            then for $i in $coll order by $i//tei:persName[@type = 'reg'] ascending return $i
-    else if(config:isLetter($coll[1]/tei:TEI/string(@xml:id)))          then for $i in $coll order by date:getOneNormalizedDate($i//tei:dateSender/tei:date[1], false()) ascending, $i//tei:dateSender/tei:date[1]/@n ascending return $i
-    else if(config:isWriting($coll[1]/tei:TEI/string(@xml:id)))         then for $i in $coll order by date:getOneNormalizedDate($i//tei:imprint/tei:date[1], false()) ascending return $i
-    else if(config:isDiary($coll[1]/tei:ab/string(@xml:id)))            then for $i in $coll order by $i/tei:ab/xs:date(@n) ascending return $i
-    else if(config:isWork($coll[1]/tei:TEI/string(@xml:id)))            then for $i in $coll order by $i//mei:seriesStmt/mei:title[@level='s']/xs:int(@n) ascending, $i//mei:altId[@type = 'WeV']/string(@subtype) ascending, $i//mei:altId[@type = 'WeV']/xs:int(@n) ascending, $i//mei:altId[@type = 'WeV']/string() ascending return $i
-    else if(config:isNews($coll[1]/tei:TEI/string(@xml:id)))            then for $i in $coll order by $i//tei:publicationStmt/tei:date/xs:dateTime(@when) descending return $i
-    else if(config:isBiblio($coll[1]/tei:biblStruct/string(@xml:id)))   then for $i in $coll order by date:getOneNormalizedDate($i//tei:imprint/tei:date, false()) descending return $i
+    if(config:is-person($coll[1]/tei:person/string(@xml:id)))            then for $i in $coll order by $i//tei:persName[@type = 'reg'] ascending return $i
+    else if(config:is-letter($coll[1]/tei:TEI/string(@xml:id)))          then for $i in $coll order by date:getOneNormalizedDate($i//tei:dateSender/tei:date[1], false()) ascending, $i//tei:dateSender/tei:date[1]/@n ascending return $i
+    else if(config:is-writing($coll[1]/tei:TEI/string(@xml:id)))         then for $i in $coll order by date:getOneNormalizedDate($i//tei:imprint/tei:date[1], false()) ascending return $i
+    else if(config:is-diary($coll[1]/tei:ab/string(@xml:id)))            then for $i in $coll order by $i/tei:ab/xs:date(@n) ascending return $i
+    else if(config:is-work($coll[1]/tei:TEI/string(@xml:id)))            then for $i in $coll order by $i//mei:seriesStmt/mei:title[@level='s']/xs:int(@n) ascending, $i//mei:altId[@type = 'WeV']/string(@subtype) ascending, $i//mei:altId[@type = 'WeV']/xs:int(@n) ascending, $i//mei:altId[@type = 'WeV']/string() ascending return $i
+    else if(config:is-news($coll[1]/tei:TEI/string(@xml:id)))            then for $i in $coll order by $i//tei:publicationStmt/tei:date/xs:dateTime(@when) descending return $i
+    else if(config:is-biblio($coll[1]/tei:biblStruct/string(@xml:id)))   then for $i in $coll order by date:getOneNormalizedDate($i//tei:imprint/tei:date, false()) descending return $i
     else $coll
 };
 
@@ -121,7 +121,7 @@ declare function core:logToFile($priority as xs:string, $message as xs:string) a
  :)
 declare function core:store-file($collection as xs:string?, $fileName as xs:string, $contents as item()) as xs:string? {
     let $collection := 
-        if(empty($collection) or ($collection eq '')) then $config:tmp
+        if(empty($collection) or ($collection eq '')) then $config:tmp-collection-path
         else $collection
     let $createCollection := 
         for $coll in tokenize($collection, '/')
@@ -149,4 +149,32 @@ declare function core:printFornameSurname($name as xs:string?) as xs:string? {
         if(matches($clearName, ','))
         then normalize-space(string-join(reverse(tokenize($clearName, ',')), ' '))
         else $clearName
+};
+
+(:~
+ : @author Peter Stadler
+ : Recursive identity transform with changing of namespace for a given element.
+ :
+ : @author Peter Stadler
+ : @param $element the source element 
+ : @param $targetNamespace the new namespace for $element
+ : @param $keepNamespaces an list of namespaces that shall not be changed
+ : @return a cloned element within the target namespace
+ :)
+ 
+declare function core:change-namespace($element as element(), $targetNamespace as xs:string, $keepNamespaces as xs:string*) as element() {
+    if(fn:namespace-uri($element) = $keepNamespaces) then 
+        element {node-name($element)}
+            {$element/@*,
+            for $child in $element/node()
+            return 
+                if ($child instance of element()) then core:change-namespace($child, $targetNamespace, $keepNamespaces)
+                else $child
+            }
+  else element {QName($targetNamespace,local-name($element))}
+            {$element/@*,
+            for $child in $element/node()
+            return 
+                if ($child instance of element()) then core:change-namespace($child, $targetNamespace, $keepNamespaces)
+                else $child}
 };

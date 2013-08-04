@@ -19,6 +19,7 @@ import module namespace core="http://xquery.weber-gesamtausgabe.de/modules/core"
 import module namespace date="http://xquery.weber-gesamtausgabe.de/modules/date" at "date.xqm";
 import module namespace html-link="http://xquery.weber-gesamtausgabe.de/modules/html-link" at "html-link.xqm";
 import module namespace lang="http://xquery.weber-gesamtausgabe.de/modules/lang" at "lang.xqm";
+import module namespace functx="http://www.functx.com" at "functx.xqm";
 
 declare %templates:wrap function html:page-title($node as node(), $model as map(*)) as xs:string {
     ''
@@ -76,13 +77,13 @@ declare function html:print-todays-events($node as node(), $model as map(*), $da
         if(exists($date)) then $date
         else current-date()
     let $todaysEventsFileName := concat('todaysEventsFile_', $lang, '.xml')
-    let $todaysEventsFile := doc(string-join(($config:tmp, $todaysEventsFileName), '/'))
+    let $todaysEventsFile := doc(string-join(($config:tmp-collection-path, $todaysEventsFileName), '/'))
    (: let $log := util:log-system-out(
         for $i in request:attribute-names()
         return $i || ' -- ' || request:get-attribute($i)
         ):)
     return 
-        if((:false() and:) xmldb:last-modified($config:tmp, $todaysEventsFileName) cast as xs:date eq current-date() and xmldb:last-modified($config:tmp, $todaysEventsFileName) gt config:getDateTimeOfLastDBUpdate()) then $todaysEventsFile/xhtml:div
+        if((:false() and:) xmldb:last-modified($config:tmp-collection-path, $todaysEventsFileName) cast as xs:date eq current-date() and xmldb:last-modified($config:tmp-collection-path, $todaysEventsFileName) gt config:getDateTimeOfLastDBUpdate()) then $todaysEventsFile/xhtml:div
         else 
             let $output := 
                 <div xmlns="http://www.w3.org/1999/xhtml" id="todays-events">
@@ -123,7 +124,7 @@ declare function html:print-todays-events($node as node(), $model as map(*), $da
                     }
                     </ul>
                 </div>
-            return doc(core:store-file($config:tmp, $todaysEventsFileName, $output))/xhtml:div
+            return doc(core:store-file($config:tmp-collection-path, $todaysEventsFileName, $output))/xhtml:div
 (:            $output:)
 };
 
@@ -149,3 +150,64 @@ declare function html:print-persname($persName as element(), $lang as xs:string,
     else if (exists($persName//text())) then <span class="noDataFound">{normalize-space($persName)}</span>
     else <span class="noDataFound">{lang:get-language-string('unknown',$lang)}</span>
 };
+
+
+(:~
+ : Return the transcription text
+ :
+ : @author Peter Stadler
+ : @param $docID ID of letter
+ : @param $lang the current language (de|en)
+ : @return 
+ :)
+(:
+declare function html:print-doc-text($node as node(), $model as map(*), $docID as xs:string, $lang as xs:string) as element(xhtml:div) {
+    let $doc := core:doc($docID)
+    let $xslParams := 
+        <parameters>
+            <param name="lang" value="{$lang}"/>
+            <param name="dbPath" value="{document-uri($doc)}"/>
+            <param name="docID" value="{$docID}"/>
+            <param name="transcript" value="true"/>
+        </parameters>
+    let $xslt := 
+        if(config:is-letter($docID)) then doc($config:xsl-collection-path || "/letter_text.xsl")
+        else if(config:is-news($docID)) then doc($config:xsl-collection-path || "/news.xsl")
+        else if(config:is-writing($docID)) then doc($config:xsl-collection-path || "/doc_text.xsl")
+        else ()
+    let $head := 
+        if(config:is-letter($docID)) then (\:wega:getLetterHead($doc, $lang):\) () (\: TODO :\)
+        else if(config:is-news($docID)) then element h1 {string($doc//tei:title[@level='a'])}
+        else if(config:is-writing($docID)) then (\:wega:getWritingHead($doc, $xslParams, $lang):\) () (\: TODO :\)
+        else ()
+    let $body := 
+         if(functx:all-whitespace($doc//tei:text))
+         (\: Entfernen von Namespace-Deklarationen: siehe http://wiki.apache.org/cocoon/RemoveNamespaces :\)
+         then (
+            let $summary := if(functx:all-whitespace($doc//tei:note[@type='summary'])) then () else core:change-namespace(transform:transform($doc//tei:note[@type='summary'], $xslt, $xslParams), '', ()) 
+            let $incipit := if(functx:all-whitespace($doc//tei:incipit)) then () else core:change-namespace(transform:transform($doc//tei:incipit, $xslt, $xslParams), '', ())
+            let $text := 
+                if($doc//tei:correspDesc[@n = 'revealed']) then lang:get-language-string('correspondenceTextNotAvailable', $lang)
+                else lang:get-language-string('correspondenceTextNotYetAvailable', $lang)
+            return element div {
+                attribute id {'teiLetter_body'},
+                $incipit,
+                $summary,
+                element span {
+                    attribute class {'notAvailable'},
+                    $text
+                }
+            }
+         )
+         else (core:change-namespace(transform:transform($doc//tei:text, $xslt, $xslParams), '', ()))
+     let $foot := 
+        if(config:is-news($docID)) then (\:ajax:getNewsFoot($doc, $lang):\) () (\: TODO :\)
+        else ()
+     
+     return (
+        element xhtml:div {
+            $head, $body, $foot
+        }
+    )
+};
+:)

@@ -56,8 +56,11 @@ else if (matches($exist:path, '^/[Ii]ndex(\.(htm|html|xml)|/)?$')) then
 else if (matches($exist:path, '^/(en/|de/)(Index)?$')) then
     controller:default-forward('index.html', $exist-vars)
     
-else if(config:isPerson($exist:resource)) then 
+else if(config:is-person($exist:resource)) then 
     controller:default-forward('person.html', $exist-vars)
+
+else if(config:is-letter($exist:resource)) then 
+    controller:default-forward('doc2.html', $exist-vars)
     
 (: Pass all requests to HTML files through view.xql, which handles HTML templating :)
 (:else if (ends-with($exist:resource, ".html")) then

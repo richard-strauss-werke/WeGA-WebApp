@@ -20,6 +20,7 @@ declare function controller:default-forward($html-template as xs:string, $exist-
             <forward url="{map:get($exist-vars, 'controller') || '/modules/view.xql'}">
                 <set-attribute name="$exist:prefix" value="{map:get($exist-vars, 'prefix')}"/>
                 <set-attribute name="$exist:controller" value="{map:get($exist-vars, 'controller')}"/>
+                <set-attribute name="docID" value="{map:get($exist-vars, 'resource')}"/>
                 <set-header name="Cache-Control" value="no-cache"/>
             </forward>
         </view>

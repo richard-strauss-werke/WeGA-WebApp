@@ -41,7 +41,7 @@ declare function html-link:link-to-current-app($relLink as xs:string?) as xs:str
 :)
 declare function html-link:create-href-for-doc($doc as document-node(), $lang as xs:string) as xs:string? {
     let $docID :=  $doc/*/@xml:id
-    let $docType := config:getDoctypeByID($docID)
+    let $docType := config:get-doctype-by-id($docID)
     let $authorId := query:getAuthorIDOfDoc($doc)
     let $folder := 
         if($docType eq 'letters') then lang:get-language-string('correspondence', $lang) (: Ausnahme für Briefe=Korrespondenz:)
