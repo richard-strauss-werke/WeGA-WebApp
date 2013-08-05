@@ -19,6 +19,7 @@ import module namespace core="http://xquery.weber-gesamtausgabe.de/modules/core"
 import module namespace date="http://xquery.weber-gesamtausgabe.de/modules/date" at "date.xqm";
 import module namespace html-link="http://xquery.weber-gesamtausgabe.de/modules/html-link" at "html-link.xqm";
 import module namespace lang="http://xquery.weber-gesamtausgabe.de/modules/lang" at "lang.xqm";
+import module namespace tei2html="http://xquery.weber-gesamtausgabe.de/modules/tei2html" at "tei2html.xqm";
 import module namespace functx="http://www.functx.com" at "functx.xqm";
 
 declare %templates:wrap function html:page-title($node as node(), $model as map(*)) as xs:string {
@@ -160,10 +161,15 @@ declare function html:print-persname($persName as element(), $lang as xs:string,
  : @param $lang the current language (de|en)
  : @return 
  :)
-(:
+
 declare function html:print-doc-text($node as node(), $model as map(*), $docID as xs:string, $lang as xs:string) as element(xhtml:div) {
     let $doc := core:doc($docID)
-    let $xslParams := 
+    return 
+        element xhtml:div {
+            tei2html:process($doc//tei:text/node(), $lang)
+        }
+    
+(:    let $xslParams := 
         <parameters>
             <param name="lang" value="{$lang}"/>
             <param name="dbPath" value="{document-uri($doc)}"/>
@@ -209,5 +215,5 @@ declare function html:print-doc-text($node as node(), $model as map(*), $docID a
             $head, $body, $foot
         }
     )
+    :)
 };
-:)
