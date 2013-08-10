@@ -5,9 +5,10 @@
     <!--  *********************************************  -->
     <!--  *             Global Variables              *  -->
     <!--  *********************************************  -->
-    <xsl:variable name="optionsFile" select="'/db/webapp/xml/wegaOptions.xml'"/>
+    
     <xsl:variable name="blockLevelElements" as="xs:string+" select="('item', 'p')"/>
-    <xsl:variable name="musical-symbols" as="xs:string" select="'[𝄀-𝇿♭-♯]+'"/>
+    <xsl:variable name="musical-symbols" as="xs:string" select="'[&#x1d100;-&#x1d1ff;♭-♯]+'"/>
+    <xsl:param name="optionsFile"/>
     <xsl:param name="lang"/>
     <xsl:param name="dbPath"/>
     <xsl:param name="docID"/>

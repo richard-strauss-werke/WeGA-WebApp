@@ -164,34 +164,17 @@ declare function html:print-persname($persName as element(), $lang as xs:string,
 
 declare function html:print-doc-text($node as node(), $model as map(*), $docID as xs:string, $lang as xs:string) as element(xhtml:div) {
     let $doc := core:doc($docID)
-    return 
-        element xhtml:div {
-            tei2html:process($doc//tei:text/node(), $lang)
-        }
-    
-(:    let $xslParams := 
-        <parameters>
-            <param name="lang" value="{$lang}"/>
-            <param name="dbPath" value="{document-uri($doc)}"/>
-            <param name="docID" value="{$docID}"/>
-            <param name="transcript" value="true"/>
-        </parameters>
-    let $xslt := 
-        if(config:is-letter($docID)) then doc($config:xsl-collection-path || "/letter_text.xsl")
-        else if(config:is-news($docID)) then doc($config:xsl-collection-path || "/news.xsl")
-        else if(config:is-writing($docID)) then doc($config:xsl-collection-path || "/doc_text.xsl")
-        else ()
     let $head := 
-        if(config:is-letter($docID)) then (\:wega:getLetterHead($doc, $lang):\) () (\: TODO :\)
+        if(config:is-letter($docID)) then (:wega:getLetterHead($doc, $lang):) () (: TODO :)
         else if(config:is-news($docID)) then element h1 {string($doc//tei:title[@level='a'])}
-        else if(config:is-writing($docID)) then (\:wega:getWritingHead($doc, $xslParams, $lang):\) () (\: TODO :\)
+        else if(config:is-writing($docID)) then (:wega:getWritingHead($doc, $xslParams, $lang):) () (: TODO :)
         else ()
     let $body := 
          if(functx:all-whitespace($doc//tei:text))
-         (\: Entfernen von Namespace-Deklarationen: siehe http://wiki.apache.org/cocoon/RemoveNamespaces :\)
+         (: Entfernen von Namespace-Deklarationen: siehe http://wiki.apache.org/cocoon/RemoveNamespaces :)
          then (
-            let $summary := if(functx:all-whitespace($doc//tei:note[@type='summary'])) then () else core:change-namespace(transform:transform($doc//tei:note[@type='summary'], $xslt, $xslParams), '', ()) 
-            let $incipit := if(functx:all-whitespace($doc//tei:incipit)) then () else core:change-namespace(transform:transform($doc//tei:incipit, $xslt, $xslParams), '', ())
+            let $summary := if(functx:all-whitespace($doc//tei:note[@type='summary'])) then () else tei2html:process($doc//tei:note[@type='summary'], ()) 
+            let $incipit := if(functx:all-whitespace($doc//tei:incipit)) then () else tei2html:process($doc//tei:incipit, ())
             let $text := 
                 if($doc//tei:correspDesc[@n = 'revealed']) then lang:get-language-string('correspondenceTextNotAvailable', $lang)
                 else lang:get-language-string('correspondenceTextNotYetAvailable', $lang)
@@ -205,9 +188,9 @@ declare function html:print-doc-text($node as node(), $model as map(*), $docID a
                 }
             }
          )
-         else (core:change-namespace(transform:transform($doc//tei:text, $xslt, $xslParams), '', ()))
+         else tei2html:process($doc//tei:text, ())
      let $foot := 
-        if(config:is-news($docID)) then (\:ajax:getNewsFoot($doc, $lang):\) () (\: TODO :\)
+        if(config:is-news($docID)) then (:ajax:getNewsFoot($doc, $lang):) () (: TODO :)
         else ()
      
      return (
@@ -215,5 +198,5 @@ declare function html:print-doc-text($node as node(), $model as map(*), $docID a
             $head, $body, $foot
         }
     )
-    :)
+    
 };
