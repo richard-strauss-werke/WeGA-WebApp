@@ -47,7 +47,7 @@ declare function html:print-latest-news($node as node(), $model as map(*), $lang
                 return (
                     element span {
                         attribute class {'newsTeaserDate'},
-                        lang:get-language-string('websiteNews', date:strfdate($dateFormat, datetime:date-from-dateTime($newsTeaserDate), $lang), $lang)
+                        lang:get-language-string('websiteNews', date:strfdate(datetime:date-from-dateTime($newsTeaserDate), $lang, $dateFormat), $lang)
                     },
                     element h2 {
                         element a {
@@ -88,7 +88,7 @@ declare function html:print-todays-events($node as node(), $model as map(*), $da
         else 
             let $output := 
                 <div xmlns="http://www.w3.org/1999/xhtml" id="todays-events">
-                    <h3>{lang:get-language-string('whatHappenedOn', date:strfdate(if($lang eq 'en') then '%B %d' else '%d. %B', $date, $lang), $lang)}</h3>
+                    <h3>{lang:get-language-string('whatHappenedOn', date:strfdate($date, $lang, if($lang eq 'en') then '%B %d' else '%d. %B'), $lang)}</h3>
                     <ul>
                     {for $i in query:get-todays-events($date)
                         let $isJubilee := (year-from-date($date) - $i/year-from-date(@when)) mod 25 = 0
@@ -165,7 +165,12 @@ declare function html:print-persname($persName as element(), $lang as xs:string,
 declare function html:print-doc-text($node as node(), $model as map(*), $docID as xs:string, $lang as xs:string) as element(xhtml:div) {
     let $doc := core:doc($docID)
     let $head := 
-        if(config:is-letter($docID)) then (:wega:getLetterHead($doc, $lang):) () (: TODO :)
+        if(config:is-letter($docID)) then 
+            let $head := query:get-letterHead($doc, $lang)
+            return (
+                element xhtml:h1 {$head[1]},
+                element xhtml:h2 {$head[2]}
+            )
         else if(config:is-news($docID)) then element h1 {string($doc//tei:title[@level='a'])}
         else if(config:is-writing($docID)) then (:wega:getWritingHead($doc, $xslParams, $lang):) () (: TODO :)
         else ()

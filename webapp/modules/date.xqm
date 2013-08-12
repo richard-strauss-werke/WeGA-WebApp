@@ -105,19 +105,23 @@ declare function date:formatYear($year as xs:int, $lang as xs:string) as xs:stri
  : String from date
  :
  : @author Peter Stadler
- : @param $format time format
- : @param $value the date
+ : @param $format time format, e.g. '%B %d, %Y'
+ : @param $date the date
  : @param $lang the language switch (en|de)
  : @return xs:string 
  :)
-declare function date:strfdate($format as xs:string, $value as xs:date, $lang as xs:string) as xs:string {
-    let $day    := day-from-date($value)
-    let $month  := month-from-date($value)
-    let $year   := date:formatYear(number(year-from-date($value)), $lang)
+declare function date:strfdate($date as xs:date, $lang as xs:string, $format as xs:string?) as xs:string {
+    let $format := 
+        if($format) then $format
+        else if($lang eq 'en') then '%B %d, %Y' (: if no format is specified, output day, month and year :)
+        else '%d. %B %Y'
+    let $day    := day-from-date($date)
+    let $month  := month-from-date($date)
+    let $year   := date:formatYear(number(year-from-date($date)), $lang)
     let $output := replace($format, '%d', string($day))
     let $output := replace($output, '%Y', string($year))
     let $output := replace($output, '%B', lang:get-language-string(concat('month',$month), $lang))
-    let $output := replace($output, '%A', lang:get-language-string(concat('day',datetime:day-in-week($value)), $lang))
+    let $output := replace($output, '%A', lang:get-language-string(concat('day',datetime:day-in-week($date)), $lang))
 
     return normalize-space($output)
 };

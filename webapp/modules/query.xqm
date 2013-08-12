@@ -10,6 +10,8 @@ declare namespace mei="http://www.music-encoding.org/ns/mei";
 
 import module namespace config="http://xquery.weber-gesamtausgabe.de/modules/config" at "config.xqm";
 import module namespace core="http://xquery.weber-gesamtausgabe.de/modules/core" at "core.xqm";
+import module namespace date="http://xquery.weber-gesamtausgabe.de/modules/date" at "date.xqm";
+import module namespace lang="http://xquery.weber-gesamtausgabe.de/modules/lang" at "lang.xqm";
 import module namespace functx="http://www.functx.com" at "functx.xqm";
 
 (:~
@@ -82,4 +84,51 @@ declare function query:getRegName($key as xs:string) as xs:string {
     return 
         if(exists($response)) then $response/text() cast as xs:string
         else '':)
+};
+
+(:~
+ : Gets letter header
+ :
+ : @author Peter Stadler
+ : @param $doc document node
+ : @param $lang the current language (de|en)
+ : @return element
+ :)
+declare function query:get-letterHead($doc as document-node(), $lang as xs:string) as xs:string+ {
+    let $docTitle := $doc//tei:fileDesc/tei:titleStmt/tei:title[@level="a"]/text()
+    return 
+        if($docTitle) then (
+            $docTitle[1],
+            $docTitle[2]
+        )
+        else query:construct-letterHead($doc, $lang)
+};
+
+
+(:~
+ : Constructs letter header
+ : (helper function for query:get-letterHead())
+ : @author Peter Stadler
+ : @param $doc document node
+ : @param $lang the current language (de|en)
+ : @return element
+:)
+declare %private function query:construct-letterHead($doc as document-node(), $lang as xs:string) as xs:string+ {
+    let $id := $doc/tei:TEI/string(@xml:id)
+    let $date := if(exists(date:getOneNormalizedDate($doc//tei:dateSender/tei:date[1], false())))
+        then date:strfdate(date:getOneNormalizedDate($doc//tei:dateSender/tei:date[1], false()), $lang, ())
+        else lang:get-language-string('undated', $lang)
+    let $sender := core:printFornameSurname($doc//tei:sender/*[1]) (: wega:printCorrespondentName($doc//tei:sender/*[1], $lang, 'fs'):)
+    let $addressee := core:printFornameSurname($doc//tei:addressee/*[1]) (:wega:printCorrespondentName($doc//tei:addressee/*[1], $lang, 'fs'):)
+    let $placeSender := if(normalize-space($doc//tei:placeSender) ne '') then normalize-space($doc//tei:placeSender) else ()
+    let $placeAddressee := if(normalize-space($doc//tei:placeAddressee) ne '') then normalize-space($doc//tei:placeAddressee) else ()
+    return (
+        concat(
+            $sender, ' ', 
+            lower-case(lang:get-language-string('to', $lang)), ' ', 
+            $addressee,
+            if(exists($placeAddressee)) then concat(' ', lower-case(lang:get-language-string('in', $lang)), ' ', $placeAddressee) else()
+        ),
+        string-join(($placeSender, $date), ', ')
+    )
 };
