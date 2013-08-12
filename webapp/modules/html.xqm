@@ -183,11 +183,11 @@ declare function html:print-doc-text($node as node(), $model as map(*), $docID a
             let $text := 
                 if($doc//tei:correspDesc[@n = 'revealed']) then lang:get-language-string('correspondenceTextNotAvailable', $lang)
                 else lang:get-language-string('correspondenceTextNotYetAvailable', $lang)
-            return element div {
+            return element xhtml:div {
                 attribute id {'teiLetter_body'},
                 $incipit,
                 $summary,
-                element span {
+                element xhtml:p {
                     attribute class {'notAvailable'},
                     $text
                 }

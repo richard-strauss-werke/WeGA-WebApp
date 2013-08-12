@@ -163,7 +163,7 @@ declare function core:printFornameSurname($name as xs:string?) as xs:string? {
  :)
  
 declare function core:change-namespace($element as element(), $targetNamespace as xs:string, $keepNamespaces as xs:string*) as element() {
-    if(fn:namespace-uri($element) = $keepNamespaces) then 
+    if(namespace-uri($element) = $keepNamespaces) then 
         element {node-name($element)}
             {$element/@*,
             for $child in $element/node()

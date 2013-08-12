@@ -17,7 +17,7 @@ import module namespace functx="http://www.functx.com" at "functx.xqm";
 (: 
     Determine the application root collection from the current module load path.
 :)
-declare variable $config:app-root := 
+declare variable $config:app-root as xs:string := 
     let $rawPath := system:get-module-load-path()
     let $modulePath :=
         (: strip the xmldb: part :)
@@ -33,7 +33,8 @@ declare variable $config:app-root :=
 ;
 
 declare variable $config:catalogues-collection-path as xs:string := $config:app-root || '/catalogues';
-declare variable $config:options-file as document-node() := doc($config:catalogues-collection-path || '/options.xml');
+declare variable $config:options-file-path as xs:string := $config:catalogues-collection-path || '/options.xml';
+declare variable $config:options-file as document-node() := doc($config:options-file-path);
 declare variable $config:svn-change-history-file as document-node() := doc($config:catalogues-collection-path || '/svnChangeHistory.xml');
 declare variable $config:data-collection-path as xs:string := '/db/apps/WeGA-data';
 declare variable $config:tmp-collection-path as xs:string := $config:app-root || '/tmp';
@@ -41,9 +42,9 @@ declare variable $config:xsl-collection-path as xs:string := $config:app-root ||
 
 declare variable $config:isDevelopment as xs:boolean := config:get-option('environment') eq 'development';
 
-declare variable $config:repo-descriptor := doc(concat($config:app-root, "/repo.xml"))/repo:meta;
+declare variable $config:repo-descriptor as element(repo:meta) := doc(concat($config:app-root, "/repo.xml"))/repo:meta;
 
-declare variable $config:expath-descriptor := doc(concat($config:app-root, "/expath-pkg.xml"))/expath:package;
+declare variable $config:expath-descriptor as element(expath:package)  := doc(concat($config:app-root, "/expath-pkg.xml"))/expath:package;
 
 (:~
  : Resolve the given path using the current application context.

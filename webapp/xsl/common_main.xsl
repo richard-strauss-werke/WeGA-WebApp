@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns="http://www.w3.org/1999/xhtml" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:wega="http://xquery.weber-gesamtausgabe.de/webapp/functions/utilities" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:functx="http://www.functx.com" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mei="http://www.music-encoding.org/ns/mei" version="2.0">
+<xsl:stylesheet xmlns="http://www.w3.org/1999/xhtml" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:wega="http://xquery.weber-gesamtausgabe.de/webapp/functions/utilities" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:functx="http://www.functx.com" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mei="http://www.music-encoding.org/ns/mei" version="2.0">
     <xsl:output encoding="UTF-8" method="html" omit-xml-declaration="yes" indent="no"/>
 
     <!--  *********************************************  -->
     <!--  *             Global Variables              *  -->
     <!--  *********************************************  -->
-    
     <xsl:variable name="blockLevelElements" as="xs:string+" select="('item', 'p')"/>
     <xsl:variable name="musical-symbols" as="xs:string" select="'[&#x1d100;-&#x1d1ff;♭-♯]+'"/>
     <xsl:param name="optionsFile"/>
+    <xsl:param name="app-baseHref"/>    <!-- External URL -->
+    <xsl:param name="app-root"/>        <!-- Internal database path to the webapp -->
+    <xsl:param name="data-root"/>       <!-- Internal database path to the data collections -->
+    <xsl:param name="catalogues-collection-path"/>
     <xsl:param name="lang"/>
     <xsl:param name="dbPath"/>
     <xsl:param name="docID"/>
     <xsl:param name="transcript"/>
-    <xsl:param name="suppressLinks"/><!-- Suppress internal links to persons, works etc. as well as tool tips -->
+    <xsl:param name="suppressLinks"/>   <!-- Suppress internal links to persons, works etc. as well as tool tips -->
 
     <!--  *********************************************  -->
     <!--  *             Global Functions              *  -->
     <!--  *********************************************  -->
+
     <xsl:function name="wega:getAuthorFromTeiDoc" as="xs:string">
         <xsl:param name="docID" as="xs:string"/>
         <!-- construct path to File (collection function does not work! cf. http://exist.2174344.n4.nabble.com/error-with-collection-in-XSLT-within-eXist-td2189008.html) -->
@@ -56,47 +60,60 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
-    <xsl:function name="wega:getCollectionPath" as="xs:string">
+    
+    <xsl:function name="wega:getDocTypeByID" as="xs:string?">
         <xsl:param name="docID" as="xs:string"/>
         <xsl:choose>
             <xsl:when test="wega:isPerson($docID)">
-                <xsl:value-of select="concat(wega:getOption('persons'), '/', substring($docID, 1, 5), 'xx')"/>
+                <xsl:value-of select="'persons'"/>
             </xsl:when>
             <xsl:when test="wega:isIconography($docID)">
-                <xsl:value-of select="concat(wega:getOption('iconography'), '/', substring($docID, 1, 5), 'xx')"/>
+                <xsl:value-of select="'iconography'"/>
             </xsl:when>
             <xsl:when test="wega:isWork($docID)">
-                <xsl:value-of select="concat(wega:getOption('works'), '/', substring($docID, 1, 5), 'xx')"/>
+                <xsl:value-of select="'works'"/>
             </xsl:when>
             <xsl:when test="wega:isWriting($docID)">
-                <xsl:value-of select="concat(wega:getOption('writings'), '/', substring($docID, 1, 5), 'xx')"/>
+                <xsl:value-of select="'writings'"/>
             </xsl:when>
             <xsl:when test="wega:isLetter($docID)">
-                <xsl:value-of select="concat(wega:getOption('letters'), '/', substring($docID, 1, 5), 'xx')"/>
+                <xsl:value-of select="'letters'"/>
             </xsl:when>
             <xsl:when test="wega:isNews($docID)">
-                <xsl:value-of select="concat(wega:getOption('news'), '/', substring($docID, 1, 5), 'xx')"/>
+                <xsl:value-of select="'news'"/>
             </xsl:when>
             <xsl:when test="wega:isDiary($docID)">
-                <xsl:value-of select="concat(wega:getOption('diaries'), '/', substring($docID, 1, 5), 'xx')"/>
+                <xsl:value-of select="'diaries'"/>
             </xsl:when>
             <xsl:when test="wega:isVar($docID)">
-                <xsl:value-of select="concat(wega:getOption('var'), '/', substring($docID, 1, 5), 'xx')"/>
+                <xsl:value-of select="'var'"/>
             </xsl:when>
-            <xsl:otherwise>
-                <xsl:value-of select="'unknown'"/>
-            </xsl:otherwise>
+            <xsl:otherwise/>
         </xsl:choose>
     </xsl:function>
+
+    <xsl:function name="wega:getCollectionPath" as="xs:string?">
+        <xsl:param name="docID" as="xs:string"/>
+        <xsl:variable name="docType" select="wega:getDocTypeByID($docID)"/>
+        <xsl:choose>
+            <xsl:when test="$docType">
+                <xsl:value-of select="string-join(($data-root, $docType, replace($docID, '\d{2}$', 'xx')), '/')"/>
+            </xsl:when>
+            <xsl:otherwise/>
+        </xsl:choose>
+    </xsl:function>
+
     <xsl:function name="wega:getOption" as="xs:string">
         <xsl:param name="key" as="xs:string"/>
         <xsl:value-of select="doc($optionsFile)//entry[@xml:id = $key]/text()"/>
     </xsl:function>
+
     <xsl:function name="wega:getLanguageString" as="xs:string">
         <xsl:param name="key" as="xs:string"/>
         <xsl:param name="lang" as="xs:string"/>
-        <xsl:value-of select="doc(wega:getOption(concat('dic_', $lang)))//entry[@xml:id = $key]/text()"/>
+        <xsl:value-of select="doc(concat($catalogues-collection-path, '/dictionary_', $lang, '.xml'))//tei:item[@xml:id = $key]/text()"/>
     </xsl:function>
+
     <xsl:function name="wega:isPerson" as="xs:boolean">
         <xsl:param name="docID" as="xs:string"/>
         <xsl:choose>
@@ -108,6 +125,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
+
     <xsl:function name="wega:isIconography" as="xs:boolean">
         <xsl:param name="docID" as="xs:string"/>
         <xsl:choose>
@@ -119,6 +137,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
+
     <xsl:function name="wega:isWork" as="xs:boolean">
         <xsl:param name="docID" as="xs:string"/>
         <xsl:choose>
@@ -130,6 +149,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
+
     <xsl:function name="wega:isWriting" as="xs:boolean">
         <xsl:param name="docID" as="xs:string"/>
         <xsl:choose>
@@ -141,6 +161,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
+
     <xsl:function name="wega:isLetter" as="xs:boolean">
         <xsl:param name="docID" as="xs:string"/>
         <xsl:choose>
@@ -152,6 +173,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
+
     <xsl:function name="wega:isNews" as="xs:boolean">
         <xsl:param name="docID" as="xs:string"/>
         <xsl:choose>
@@ -163,6 +185,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
+
     <xsl:function name="wega:isDiary" as="xs:boolean">
         <xsl:param name="docID" as="xs:string"/>
         <xsl:choose>
@@ -174,6 +197,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
+
     <xsl:function name="wega:isVar" as="xs:boolean">
         <xsl:param name="docID" as="xs:string"/>
         <xsl:choose>
@@ -185,10 +209,11 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
+
     <xsl:function name="wega:createLinkToDoc" as="xs:string?">
         <xsl:param name="docID" as="xs:string"/>
         <xsl:param name="lang" as="xs:string"/>
-        <xsl:variable name="baseHref" select="wega:getOption('baseHref')"/>
+        <!--<xsl:variable name="baseHref" select="wega:getOption('baseHref')"/>-->
         <xsl:variable name="authorID">
             <xsl:choose>
                 <xsl:when test="wega:isPerson($docID)"/>
@@ -219,18 +244,20 @@
         </xsl:variable>
         <xsl:choose>
             <xsl:when test="wega:isPerson($docID)">
-                <xsl:value-of select="string-join(($baseHref, $lang, $docID), '/')"/>
+                <xsl:value-of select="string-join(($app-baseHref, $lang, $docID), '/')"/>
             </xsl:when>
             <xsl:when test="exists($folder) and $authorID ne ''">
-                <xsl:value-of select="string-join(($baseHref, $lang, $authorID, $folder, $docID), '/')"/>
+                <xsl:value-of select="string-join(($app-baseHref, $lang, $authorID, $folder, $docID), '/')"/>
             </xsl:when>
             <xsl:otherwise/>
         </xsl:choose>
     </xsl:function>
+
     <xsl:function name="wega:obfuscateEmail" as="xs:string">
         <xsl:param name="email" as="xs:string"/>
         <xsl:value-of select="string-join(tokenize($email, ' [at] '), ' [ at ] ')"/>
     </xsl:function>
+
     <xsl:function name="wega:encryptString" as="xs:integer+">
         <xsl:param name="string" as="xs:string"/>
         <xsl:param name="salt" as="xs:integer?"/>
@@ -246,6 +273,7 @@
         </xsl:variable>
         <xsl:sequence select="for $k in string-to-codepoints($string) return $k * $mySalt"/>
     </xsl:function>
+
     <xsl:function name="wega:addCurrencySymbolIfNecessary" as="element()?">
         <xsl:param name="node" as="node()"/>
         <!-- Wenn kein Währungssymbol angegeben ist, setzen wir eins hinzu -->
@@ -256,6 +284,7 @@
             </xsl:element>
         </xsl:if>
     </xsl:function>
+
     <xsl:function name="wega:createLightboxAnchor" as="element()?">
         <xsl:param name="href" as="xs:string"/>
         <xsl:param name="title" as="xs:string"/>
@@ -271,6 +300,7 @@
             <xsl:sequence select="$content"/>
         </xsl:element>
     </xsl:function>
+
     <xsl:function name="wega:getTextAlignment" as="xs:string">
         <xsl:param name="rend" as="xs:string?"/>
         <xsl:param name="default" as="xs:string"/>
@@ -283,6 +313,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
+
     <xsl:function name="wega:computeMedian" as="xs:double?">
         <xsl:param name="numbers" as="xs:double*"/>
         <xsl:variable name="orderedNumbers" as="xs:double*">
@@ -322,6 +353,7 @@
             </xsl:call-template>
         </xsl:if>
     </xsl:template>
+
     <xsl:template name="createSimpleToolTip">
         <xsl:param name="no"/>
         <xsl:choose>
@@ -351,6 +383,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+
     <xsl:template name="addCurrencySymbolIfNecessary">
         <xsl:param name="node" as="node()"/>
         <!-- Wenn kein Währungssymbol angegeben ist, setzen wir eins hinzu -->
@@ -368,6 +401,7 @@
             </xsl:element>
         </xsl:if>
     </xsl:template>
+
     <xsl:template name="createEndnotes">
         <xsl:element name="div">
             <xsl:attribute name="id" select="'endNotes'"/>
@@ -386,6 +420,7 @@
     <!--  *                  Templates                *  -->
     <!--  *********************************************  -->
     <xsl:template match="tei:reg"/>
+
     <xsl:template match="tei:lb" priority="0.5">
         <xsl:if test="@type='inWord'">
             <xsl:element name="span">
@@ -402,6 +437,7 @@
     -->
     <xsl:template match="tei:lb[following-sibling::*[1] = following-sibling::tei:seg[@rend]]" priority="0.6"/>
     <xsl:template match="tei:lb[following-sibling::*[1] = following-sibling::tei:signed[@rend]]" priority="0.6"/>
+
     <xsl:template match="text()">
         <xsl:variable name="regex" select="string-join((&#34;'&#34;, $musical-symbols), '|')"/>
         <xsl:analyze-string select="." regex="{$regex}">
@@ -429,6 +465,7 @@
                 <xsl:copy/>
             </xsl:non-matching-substring>
         </xsl:analyze-string>
+
     </xsl:template>
     <xsl:template match="tei:hi">
         <xsl:element name="span">
@@ -623,6 +660,7 @@
             <!--in der Mitte unterbrochener („¦“) senkrechter Strich-->
         </xsl:element>
     </xsl:template>
+
     <xsl:template match="tei:space">
         <!--        <xsl:text>[</xsl:text>-->
         <xsl:call-template name="dots">
@@ -724,6 +762,7 @@
             </xsl:for-each>-->
         </xsl:element>
     </xsl:template>
+
     <xsl:template match="tei:l">
         <xsl:element name="span">
             <xsl:apply-templates select="@xml:id"/>
@@ -731,6 +770,7 @@
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
+
     <xsl:template match="tei:choice">
         <xsl:choose>
             <xsl:when test="./tei:unclear">
@@ -741,6 +781,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+
     <xsl:template match="tei:corr">
         <xsl:element name="span">
             <xsl:apply-templates select="@xml:id"/>
@@ -750,6 +791,7 @@
             <xsl:text>]</xsl:text>
         </xsl:element>
     </xsl:template>
+
     <xsl:template match="tei:expan">
         <xsl:element name="span">
             <xsl:apply-templates select="@xml:id"/>
@@ -759,12 +801,14 @@
             <xsl:text>]</xsl:text>
         </xsl:element>
     </xsl:template>
+
     <xsl:template match="tei:unclear">
         <xsl:element name="span">
             <xsl:attribute name="class" select="'tei_unclear'"/>
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
+
     <xsl:template match="tei:figure" priority="0.5">
         <xsl:variable name="digilibDir" select="wega:getOption('digilibDir')"/>
         <xsl:variable name="figureHeight" select="wega:getOption('figureHeight')"/>
@@ -781,6 +825,7 @@
         </xsl:variable>
         <xsl:sequence select="wega:createLightboxAnchor($href,$title,'doc',$content)"/>
     </xsl:template>
+
     <xsl:template match="tei:note" priority="0.5">
         <xsl:choose>
             <xsl:when test="@type='definition' or @type='commentary' or @type='textConst'">
@@ -797,6 +842,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+
     <xsl:template match="tei:list">
         <xsl:choose>
             <xsl:when test="@type = 'ordered'">
@@ -821,12 +867,14 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+
     <xsl:template match="tei:item[parent::tei:list]">
         <xsl:element name="li">
             <xsl:apply-templates select="@xml:id"/>
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
+
     <xsl:template match="tei:label">
         <xsl:element name="span">
             <xsl:apply-templates select="@xml:id"/>
@@ -834,6 +882,7 @@
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
+
     <xsl:template match="tei:label[@n='listLabel']">
         <xsl:element name="span">
             <xsl:apply-templates select="@xml:id"/>
@@ -872,7 +921,9 @@
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
+
     <xsl:template match="tei:footNote"/>
+
     <xsl:template match="tei:g">
         <!--<xsl:element name="span">
             <xsl:apply-templates select="@xml:id"/>
@@ -912,6 +963,7 @@
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
+
     <xsl:template match="tei:closer" priority="0.5">
         <xsl:element name="p">
             <xsl:apply-templates select="@xml:id"/>
@@ -919,6 +971,7 @@
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
+    
     <xsl:template match="tei:sic">
         <xsl:element name="span">
             <xsl:apply-templates select="@xml:id"/>
@@ -926,9 +979,11 @@
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
+
     <xsl:template match="@xml:id">
         <xsl:attribute name="id">
             <xsl:value-of select="."/>
         </xsl:attribute>
     </xsl:template>
+
 </xsl:stylesheet>
