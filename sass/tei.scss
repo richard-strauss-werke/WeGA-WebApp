@@ -1,4 +1,4 @@
-.tei_hiLatin {
+﻿.tei_hiLatin {
     font-style: italic;
 }
 
@@ -81,56 +81,9 @@
 /*                                              */
 /* Einstellungen für JavaScript ToolTips etc.   */
 /*                                              */
-.toolTip {
-    margin: auto;
-    width: 240px;
-    text-align: center;
-}
 
-.toolTip div.left img {
-    width: 40px;
-    height: 53px;
-    float:left;
-}
 
-.toolTip div.right {
-    margin-left: 45px;
-    width: auto;
-    text-align: left;
-}
 
-.toolTip div.right h1 {
-    margin: 0.1em 0;
-    font-size: 1.5em;
-    line-height: 1em;
-    font-weight: bold;
-    font-stretch: normal;
-    text-align: left;
-}
-
-.toolTip div.right h2 {
-    margin: 0.2em 0;
-    font-size: 1.3em;
-    line-height: 1em;
-    font-weight: bold;
-    font-stretch: normal;
-    text-align: left;
-}
-
-.toolTip div.right p {
-    margin: 0.5em 0;
-    font-size: 1em;
-    line-height: 1em;
-    text-align: left;
-}
-
-.toolTip span.IDunderIcon, .toolTip div.left br {
-    display:none;
-}
-
-.highlighted {
-    background-color: #ffff66;
-}
 
 /* Unsichere Daten und Orte */
 .cert_medium, .cert_low, .cert_unknown {

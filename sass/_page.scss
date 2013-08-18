@@ -67,3 +67,24 @@ div.headerLarge {
 	max-height: emCalc(60px);
 	margin: emCalc(20px);
 }
+
+/* Settings for Font */
+heading{
+	font-size: $heading-font-size;
+	//font-style: italic;
+	font-weight: bold;
+	margin: 0 0 emCalc(20px) 0;
+}
+subheading{
+	font-size: $subheading-font-size;
+	//font-style: italic;	
+}
+p{
+	//margin:emCalc(20px) 0 0 0;
+	
+}
+span{
+	margin: emCalc(10px) 0 emCalc(10px) 0;
+	font-size: 0.8em;
+	//font-color:$wega-dark-grey;
+}

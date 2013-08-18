@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/* line 1, ../../../sass/tei.scss */
+.tei_hiLatin {
+  font-style: italic;
+}
+
+/* line 5, ../../../sass/tei.scss */
+.tei_hiUnderline1 {
+  /*    border-bottom: 1px solid black;*/
+  background-image: url(../pix/underline1.gif);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+}
+
+/* line 12, ../../../sass/tei.scss */
+.tei_hiUnderline2andMore {
+  background-image: url(../pix/underline2.gif);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  /*    border-bottom: 2px solid black;*/
+}
+
+/* line 19, ../../../sass/tei.scss */
+.tei_hiItalic, .tei_hiAntiqua {
+  font-style: italic;
+}
+
+/* line 23, ../../../sass/tei.scss */
+.tei_hiBold {
+  font-weight: bold;
+}
+
+/* line 27, ../../../sass/tei.scss */
+.tei_hiSpacedOut {
+  letter-spacing: 0.15em;
+}
+
+/* line 31, ../../../sass/tei.scss */
+.tei_hiSuperscript {
+  vertical-align: super;
+  font-size: 0.8em;
+  line-height: 0.7em;
+}
+
+/* line 37, ../../../sass/tei.scss */
+.tei_hiSubscript {
+  vertical-align: sub;
+  font-size: 0.8em;
+  line-height: 0.7em;
+}
+
+/* line 43, ../../../sass/tei.scss */
+.tei_hiSmallCaps {
+  font-variant: small-caps;
+}
+
+/* line 47, ../../../sass/tei.scss */
+.tei_hiTypewriter {
+  font-family: monospace;
+  font-size: 1.2em;
+}
+
+/* line 52, ../../../sass/tei.scss */
+.tei_del {
+  text-decoration: line-through;
+}
+
+/* line 56, ../../../sass/tei.scss */
+.tei_delOverwritten {
+  text-decoration: line-through;
+}
+
+/* line 60, ../../../sass/tei.scss */
+.tei_supplied, .tei_pb, .tei_cb {
+  color: #606060;
+}
+
+/* line 64, ../../../sass/tei.scss */
+.tei_pb_block, .tei_cb_block {
+  float: left;
+  display: block;
+}
+
+/* Überflüssig, wird durch den Link geregelt
+.person, .persons {
+    color: #02176F;
+    cursor: pointer;
+}*/
+/* line 75, ../../../sass/tei.scss */
+.tei_cssUndefined {
+  border: 1px solid red;
+  color: red;
+  display: block;
+}
+
+/*                                              */
+/* Einstellungen für JavaScript ToolTips etc.   */
+/*                                              */
+/* Unsichere Daten und Orte */
+/* line 89, ../../../sass/tei.scss */
+.cert_medium, .cert_low, .cert_unknown {
+  color: gray;
+}
+
+/* line 93, ../../../sass/tei.scss */
+.cert_medium:after, .cert_low:after, .cert_unknown:after {
+  content: " ?";
+  /* ACHTUNG: hier &thinsp; ist aber im Editor nicht zu erkennen */
+  color: gray;
+}
+
+/* line 98, ../../../sass/tei.scss */
+.teiLetter_noteDefinitionMark {
+  vertical-align: super;
+  font-size: smaller;
+  line-height: 0em;
+  background-color: #F0F2EC;
+  border: solid 1px #CCCCCC;
+  padding: 0px 3px;
+  cursor: help;
+}
+
+/* line 108, ../../../sass/tei.scss */
+div.poem {
+  margin: 0.5pc 0em 0.5pc 30%;
+}
+
+/* line 112, ../../../sass/tei.scss */
+div.poem h2 {
+  text-align: center;
+  margin-left: -30%;
+  font-size: 1.2em;
+}
+
+/* line 118, ../../../sass/tei.scss */
+div.poem h3 {
+  text-align: left;
+  font-size: 1em;
+}
+
+/* line 123, ../../../sass/tei.scss */
+div.lg {
+  margin-bottom: 0.5pc !important;
+}
+
+/* line 127, ../../../sass/tei.scss */
+.verseLine {
+  display: block;
+}
+
+/* Wird automatisch von ws_tooltip.js versteckt */
+/* line 132, ../../../sass/tei.scss */
+.teiLetter_noteInline, .teiLetter_rsPersonsInline {
+  display: none;
+}
+
+/* line 136, ../../../sass/tei.scss */
+.work {
+  color: #02176F;
+}
+
+/* line 140, ../../../sass/tei.scss */
+.work:hover {
+  cursor: help;
+}
+
+/* line 144, ../../../sass/tei.scss */
+.code {
+  font-family: courier, fixed, monospace;
+}
+
+/* line 148, ../../../sass/tei.scss */
+.eg {
+  display: block;
+  font-family: courier, fixed, monospace;
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+/* line 157, ../../../sass/tei.scss */
+.listLabel {
+  display: none;
+}
+
+/* line 161, ../../../sass/tei.scss */
+li.listTitle {
+  list-style: none;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+/* line 167, ../../../sass/tei.scss */
+li.listSubTitle {
+  list-style: none;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+/* line 173, ../../../sass/tei.scss */
+.tei_simpleList {
+  list-style-type: none;
+}
+
+/* 
+    <signed> und <seg> werden als 'block' gesetzt, 
+    damit die Textausrichtung (s.u.) modifiziert werden kann 
+*/
+/* line 181, ../../../sass/tei.scss */
+.tei_signed, .tei_segBlock {
+  display: block;
+}
+
+/* line 185, ../../../sass/tei.scss */
+.textAlign-right {
+  text-align: right;
+}
+
+/* line 189, ../../../sass/tei.scss */
+.textAlign-center {
+  text-align: center;
+}
+
+/* line 193, ../../../sass/tei.scss */
+.textAlign-left {
+  text-align: left;
+}

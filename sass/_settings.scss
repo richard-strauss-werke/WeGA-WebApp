@@ -131,6 +131,10 @@ $primary-color: $wega-blue;
 // Typography Variables
 //
 
+//WeGA font styles
+$heading-font-size:emCalc(20px);
+$subheading-font-size:emCalc(14px);
+
 // Heading font styles
 
 // $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -148,7 +152,7 @@ $primary-color: $wega-blue;
 // $h2-font-size: emCalc(37px);
 // $h3-font-size: emCalc(27px);
 // $h4-font-size: emCalc(23px);
-// $h5-font-size: emCalc(18px);
+//$h5-font-size: emCalc(18px);
 // $h6-font-size: 1em;
 
 // Subheaders
@@ -168,9 +172,9 @@ $primary-color: $wega-blue;
 
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: normal;
-// $paragraph-font-size: 1em;
+$paragraph-font-size: 0.9em;
 // $paragraph-line-height: 1.6;
-// $paragraph-margin-bottom: emCalc(20px);
+//$paragraph-margin-bottom: emCalc(20px);
 // $paragraph-aside-font-size: emCalc(14px);
 // $paragraph-aside-line-height: 1.35;
 // $paragraph-aside-font-style: italic;
@@ -197,7 +201,7 @@ $primary-color: $wega-blue;
 // Lists
 
 // $list-style-position: outside;
-// $list-side-margin: emCalc(18px);
+ $list-side-margin: emCalc(25px);
 // $definition-list-header-weight: bold;
 // $definition-list-header-margin-bottom: .3em;
 // $definition-list-margin-bottom: emCalc(12px);
@@ -829,12 +833,12 @@ $primary-color: $wega-blue;
 
  $panel-bg: white;
  $panel-border-style: solid;
- $panel-border-size: 2px;
+ $panel-border-size: 1px;
 
 // Control how much we darken things on hover
 
  $panel-function-factor: 20%;
- $panel-border-color: darken($primary-color, $panel-function-factor);
+ $panel-border-color: #ccc;
 
 // Inner padding and bottom margin
 
