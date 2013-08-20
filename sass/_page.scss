@@ -68,23 +68,20 @@ div.headerLarge {
 	margin: emCalc(20px);
 }
 
-/* Settings for Font */
-heading{
-	font-size: $heading-font-size;
-	//font-style: italic;
-	font-weight: bold;
-	margin: 0 0 emCalc(20px) 0;
+h3 {
+    font-weight:normal !important;
 }
-subheading{
-	font-size: $subheading-font-size;
-	//font-style: italic;	
+/* Rechtsbündiges News-Datum auf der Startseite */
+.newsTeaserDate {
+    float: right;
+    display: block;
+    margin: 0.2em 0.5em 0em 0.5em;
+    line-height:1.4em;
+    font-size: 0.8em;
+    color: $wega-dark-grey;
 }
-p{
-	//margin:emCalc(20px) 0 0 0;
-	
-}
-span{
-	margin: emCalc(10px) 0 emCalc(10px) 0;
-	font-size: 0.8em;
-	//font-color:$wega-dark-grey;
-}
+
+/*.searchButton {
+     color:$wega-dark-grey;
+}*/
+

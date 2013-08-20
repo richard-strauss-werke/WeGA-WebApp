@@ -4,7 +4,7 @@
 
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with brower-based text zoom or user-set defaults.
-$base-font-size: 100% !default;
+$base-font-size: 14px !default;
 
 // $base-line-height is 24px while $base-font-size is 16px
 // $base-line-height: 150%;
@@ -14,7 +14,7 @@ $base-font-size: 100% !default;
 // Since the typical default browser font-size is 16px, that makes the calculation for grid size.
 // If you want your base font-size to be a different size and not have it effect grid size too,
 // set the value of $em-base to $base-font-size ($em-base: $base-font-size;)
-$em-base: 16px !default;
+$em-base: $base-font-size;
 
 // Working in ems is annoying. Think in pixels by using this handy function, emCalc(#px)
 @function emCalc($pxWidth) {
@@ -131,14 +131,11 @@ $primary-color: $wega-blue;
 // Typography Variables
 //
 
-//WeGA font styles
-$heading-font-size:emCalc(20px);
-$subheading-font-size:emCalc(14px);
 
 // Heading font styles
 
 // $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $header-font-weight: bold;
+$header-font-weight: normal;
 // $header-font-style: normal;
 // $header-font-color: #222;
 // $header-line-height: 1.4;
@@ -148,9 +145,10 @@ $subheading-font-size:emCalc(14px);
 
 // Heading font sizes
 
-// $h1-font-size: emCalc(44px);
-// $h2-font-size: emCalc(37px);
-// $h3-font-size: emCalc(27px);
+$h1-font-size: 1.8em;
+$h2-font-size: 1.6em;
+$h3-font-size: 1.4em;
+//$h3-font-weight: normal; --> geht nicht :-(
 // $h4-font-size: emCalc(23px);
 //$h5-font-size: emCalc(18px);
 // $h6-font-size: 1em;
@@ -172,7 +170,7 @@ $subheading-font-size:emCalc(14px);
 
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: normal;
-$paragraph-font-size: 0.9em;
+//$paragraph-font-size: 0.9em;
 // $paragraph-line-height: 1.6;
 //$paragraph-margin-bottom: emCalc(20px);
 // $paragraph-aside-font-size: emCalc(14px);
@@ -201,8 +199,8 @@ $paragraph-font-size: 0.9em;
 // Lists
 
 // $list-style-position: outside;
- $list-side-margin: emCalc(25px);
-// $definition-list-header-weight: bold;
+ $list-side-margin: emCalc(0px);
+//$definition-list-header-weight: bold;
 // $definition-list-header-margin-bottom: .3em;
 // $definition-list-margin-bottom: emCalc(12px);
 
@@ -329,7 +327,7 @@ $paragraph-font-size: 0.9em;
 // $button-font-tny: emCalc(11px);
 // $button-font-sml: emCalc(13px);
 // $button-font-lrg: emCalc(20px);
-// $button-font-weight: bold;
+$button-font-weight: normal;
 // $button-font-align: center;
 
 // Various hover effects.
@@ -358,6 +356,7 @@ $paragraph-font-size: 0.9em;
 
 // $dropdown-button-pip-color: #fff;
 // $dropdown-button-pip-color-alt: #333;
+
 
 // Tiny dropdown buttons
 
@@ -1177,7 +1176,7 @@ $topbar-bg: $wega-dark-grey;
 // Height and margin
 
 $topbar-height: 45px;
-$topbar-margin-bottom: emCalc(15px);
+$topbar-margin-bottom: 0;
 
 // Input height for top bar
 
@@ -1191,7 +1190,7 @@ $topbar-margin-bottom: emCalc(15px);
 // Link colors and styles for top-level nav
 
  $topbar-link-color: black;
-// $topbar-link-weight: bold;
+$topbar-link-weight: normal;
  $topbar-link-font-size: emCalc(12px);
 $topbar-link-hover-lightness: -3% !default; // Darken by 30%
 
