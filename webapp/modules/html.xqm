@@ -37,38 +37,37 @@ declare function html:print-latest-news($node as node(), $model as map(*), $lang
     let $latestNews := query:get-latest-news(())
     return
         <div xmlns="http://www.w3.org/1999/xhtml">
-            <h2>{lang:get-language-string('news', $lang)}</h2>
+            <h1>{lang:get-language-string('news', $lang)}</h1>
             {for $news at $count in $latestNews
                 let $newsTeaserDate := $news//tei:fileDesc//tei:date/xs:dateTime(@when)
                 let $authorID := data($news//tei:titleStmt/tei:author[1]/@key)
                 let $dateFormat := 
                     if ($lang = 'en') then '%A, %B %d, %Y'
                     else '%A, %d. %B %Y'
-                return (
-                    element span {
-                        attribute class {'newsTeaserDate'},
-                        lang:get-language-string('websiteNews', date:strfdate(datetime:date-from-dateTime($newsTeaserDate), $lang, $dateFormat), $lang)
-                    },
-                    element h2 {
-                        element a {
-                            attribute href {html-link:create-href-for-doc($news, $lang)},
-                            attribute title {string($news//tei:title[@level='a'])},
-                            string($news//tei:title[@level='a'])
+                return 
+                    element div {
+                        element span {
+                            attribute class {'newsTeaserDate'},
+                            lang:get-language-string('websiteNews', date:strfdate(datetime:date-from-dateTime($newsTeaserDate), $lang, $dateFormat), $lang)
+                        },
+                        element h3 {
+                            element a {
+                                attribute href {html-link:create-href-for-doc($news, $lang)},
+                                attribute title {string($news//tei:title[@level='a'])},
+                                string($news//tei:title[@level='a'])
+                            }
+                        },
+                        element p {
+                            substring($news//tei:body, 1, 400),
+                            ' … ',
+                            element a{
+                                attribute href {html-link:create-href-for-doc($news, $lang)},
+                                attribute title {lang:get-language-string('more', $lang)},
+                                attribute class {'readOn'},
+                                concat('[', lang:get-language-string('more', $lang), ']')
+                            }
                         }
-                    },
-                    element p {
-                        substring($news//tei:body, 1, 400),
-                        ' … ',
-                        element a{
-                            attribute href {html-link:create-href-for-doc($news, $lang)},
-                            attribute title {lang:get-language-string('more', $lang)},
-                            attribute class {'readOn'},
-                            concat('[', lang:get-language-string('more', $lang), ']')
-                        }
-                    },
-                    if($count ne count($latestNews)) then <hr class="news-teaser-break"/>
-                    else ()
-                )
+                    }
             }
         </div>
 };
@@ -84,11 +83,11 @@ declare function html:print-todays-events($node as node(), $model as map(*), $da
         return $i || ' -- ' || request:get-attribute($i)
         ):)
     return 
-        if((:false() and:) xmldb:last-modified($config:tmp-collection-path, $todaysEventsFileName) cast as xs:date eq current-date() and xmldb:last-modified($config:tmp-collection-path, $todaysEventsFileName) gt config:getDateTimeOfLastDBUpdate()) then $todaysEventsFile/xhtml:div
+        if(false() and xmldb:last-modified($config:tmp-collection-path, $todaysEventsFileName) cast as xs:date eq current-date() and xmldb:last-modified($config:tmp-collection-path, $todaysEventsFileName) gt config:getDateTimeOfLastDBUpdate()) then $todaysEventsFile/xhtml:div
         else 
             let $output := 
-                <div xmlns="http://www.w3.org/1999/xhtml" id="todays-events">
-                    <h3>{lang:get-language-string('whatHappenedOn', date:strfdate($date, $lang, if($lang eq 'en') then '%B %d' else '%d. %B'), $lang)}</h3>
+                <div xmlns="http://www.w3.org/1999/xhtml" id="todays-events" class="panel">
+                    <h3 class="subheader">{lang:get-language-string('whatHappenedOn', date:strfdate($date, $lang, if($lang eq 'en') then '%B %d' else '%d. %B'), $lang)}</h3>
                     <ul>
                     {for $i in query:get-todays-events($date)
                         let $isJubilee := (year-from-date($date) - $i/year-from-date(@when)) mod 25 = 0
@@ -125,8 +124,9 @@ declare function html:print-todays-events($node as node(), $model as map(*), $da
                     }
                     </ul>
                 </div>
-            return doc(core:store-file($config:tmp-collection-path, $todaysEventsFileName, $output))/xhtml:div
-(:            $output:)
+            return 
+            (:doc(core:store-file($config:tmp-collection-path, $todaysEventsFileName, $output))/xhtml:div:)
+            $output
 };
 
 (:~
