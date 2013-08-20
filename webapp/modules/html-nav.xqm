@@ -133,8 +133,8 @@ declare function html-nav:page-nav-dev-links($node as node(), $model as map(*), 
 };
 
 declare function html-nav:page-nav-combined($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
-    <div class="section-container accordion" data-section="" data-options="one_up: false;" xmlns="http://www.w3.org/1999/xhtml">
-        <section class="section">
+    <div class="section-container accordion" data-section="accordion" data-options="one_up: false;" xmlns="http://www.w3.org/1999/xhtml">
+        <section class="active">
             <p class="title" data-section-title=""><a href="#">{lang:get-language-string('digitalEdition', $lang)}</a></p>
             <div class="content" data-section-content="">
                 <ul class="side-nav">
@@ -142,7 +142,7 @@ declare function html-nav:page-nav-combined($node as node(), $model as map(*), $
                 </ul>
             </div>
         </section>
-        <section class="section">
+        <section>
             <p class="title" data-section-title=""><a href="#">{lang:get-language-string('aboutTheProject', $lang)}</a></p>
             <div class="content" data-section-content="">
                 <ul class="side-nav">
