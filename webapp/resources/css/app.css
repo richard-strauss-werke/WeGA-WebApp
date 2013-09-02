@@ -4416,8 +4416,8 @@ label.error {
   list-style: none;
   border-style: transparent;
   border-width: 1px;
-  background-color: #145279;
-  border-color: #0d344d;
+  background-color: white;
+  border-color: #e6e6e6;
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
