@@ -31,7 +31,8 @@ $em-base: $base-font-size;
 $wega-light-grey: #e6e6e6;
 $wega-dark-grey: darken($wega-light-grey, 30%);
 $wega-orange: rgb(217, 92, 0);
-$wega-blue: rgb(20,82,121);
+$wega-blue: rgb(30,120,195);
+$wega-dark-blue: darken($wega-blue, 10%);
 
 // Foundation Colors
 $primary-color: $wega-blue;
@@ -137,7 +138,7 @@ $primary-color: $wega-blue;
 // $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 $header-font-weight: normal;
 // $header-font-style: normal;
-// $header-font-color: #222;
+$header-font-color: $wega-dark-blue;
 // $header-line-height: 1.4;
 // $header-top-margin: .2em;
 // $header-bottom-margin: .5em;
@@ -1026,8 +1027,9 @@ $button-font-weight: normal;
 
 // Margin and padding
 
-// $sub-nav-list-margin: emCalc(-4px) 0 emCalc(18px);
+ $sub-nav-list-margin: emCalc(10px) 0 emCalc(18px);
 // $sub-nav-list-padding-top: emCalc(4px);
+
 
 // Definition
 
@@ -1189,7 +1191,7 @@ $topbar-margin-bottom: 0;
 
 // Link colors and styles for top-level nav
 
- $topbar-link-color: black;
+ $topbar-link-color: darken($wega-dark-blue, 5%);
 $topbar-link-weight: normal;
  $topbar-link-font-size: emCalc(12px);
 $topbar-link-hover-lightness: -3% !default; // Darken by 30%
