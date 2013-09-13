@@ -7,7 +7,7 @@
 .wega-row {
     @extend .row;
     background: white;
-    box-shadow: 0px 0px emCalc(30px) rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2em emCalc(30px) rgba(0, 0, 0, 0.2);
     padding-top: emCalc(15px);
     padding-bottom: emCalc(35px);
 }

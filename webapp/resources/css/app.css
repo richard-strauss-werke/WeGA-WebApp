@@ -429,7 +429,7 @@ table {
 /* line 7, ../../../sass/_page.scss */
 .wega-row {
   background: white;
-  box-shadow: 0px 0px 2.14286em rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2em 2.14286em rgba(0, 0, 0, 0.2);
   padding-top: 1.07143em;
   padding-bottom: 2.5em;
 }
