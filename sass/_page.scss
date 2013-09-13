@@ -90,11 +90,13 @@ h3 {
 	 }
 }*/
 
+/*
 #events{
     background-color: darken(#efefef,10%);
 	font-size:emCalc(14px);
 	margin-bottom: 0;	
 }
+*/
 .jubilee{
 	list-style-image:url("../pix/stern_gelb.gif");
 }
@@ -152,8 +154,15 @@ h3 {
 	margin-left: 35px;
 }
 
+/*
 #helpbuttons{
 	margin-bottom:0px;
 	padding-bottom: 0px;
 	
+}*/
+
+#todays-events{
+    ul{
+        margin-left:10px;
+    }
 }

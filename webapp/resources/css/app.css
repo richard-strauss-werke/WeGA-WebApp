@@ -518,24 +518,24 @@ h3 {
 	 margin-bottom: emCalc(20px);
 	 }
 }*/
-/* line 93, ../../../sass/_page.scss */
-#events {
-  background-color: #d5d5d5;
-  font-size: 1em;
-  margin-bottom: 0;
+/*
+#events{
+    background-color: darken(#efefef,10%);
+	font-size:emCalc(14px);
+	margin-bottom: 0;	
 }
-
-/* line 98, ../../../sass/_page.scss */
+*/
+/* line 100, ../../../sass/_page.scss */
 .jubilee {
   list-style-image: url("../pix/stern_gelb.gif");
 }
 
-/* line 102, ../../../sass/_page.scss */
+/* line 104, ../../../sass/_page.scss */
 .divider2 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   position: relative;
 }
-/* line 105, ../../../sass/_page.scss */
+/* line 107, ../../../sass/_page.scss */
 .divider2:after, .divider2:before {
   bottom: 3px;
   content: "";
@@ -543,50 +543,55 @@ h3 {
   position: absolute;
   width: 50%;
 }
-/* line 112, ../../../sass/_page.scss */
+/* line 114, ../../../sass/_page.scss */
 .divider2:after {
   box-shadow: 3px 12px 10px rgba(0, 0, 0, 0.3);
   right: 3px;
   transform: skew(5deg) rotate(1deg);
 }
-/* line 117, ../../../sass/_page.scss */
+/* line 119, ../../../sass/_page.scss */
 .divider2:before {
   box-shadow: -3px 12px 10px rgba(0, 0, 0, 0.3);
   left: 3px;
   transform: skew(-5deg) rotate(-1deg);
 }
 
-/* line 125, ../../../sass/_page.scss */
+/* line 127, ../../../sass/_page.scss */
 .wrap {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-/* line 132, ../../../sass/_page.scss */
+/* line 134, ../../../sass/_page.scss */
 .wega {
   overflow: hidden;
   box-shadow: 0px 0px 2.14286em rgba(0, 0, 0, 0.2);
 }
 
-/* line 140, ../../../sass/_page.scss */
+/* line 142, ../../../sass/_page.scss */
 .updated {
   padding-top: 20px;
 }
 
-/* line 145, ../../../sass/_page.scss */
+/* line 147, ../../../sass/_page.scss */
 .teiLetter_address p {
   margin-bottom: 0px;
 }
 
-/* line 151, ../../../sass/_page.scss */
+/* line 153, ../../../sass/_page.scss */
 .faq {
   margin-left: 35px;
 }
 
-/* line 155, ../../../sass/_page.scss */
-#helpbuttons {
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+/*
+#helpbuttons{
+	margin-bottom:0px;
+	padding-bottom: 0px;
+	
+}*/
+/* line 165, ../../../sass/_page.scss */
+#todays-events ul {
+  margin-left: 10px;
 }
 
 /* CSS-Klassen wie .highlighted, .musical-symbols etc*/
