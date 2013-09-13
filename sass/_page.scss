@@ -8,7 +8,8 @@
     @extend .row;
     background: white;
     box-shadow: 0px 0px emCalc(30px) rgba(0, 0, 0, 0.2);
-    padding-top: emCalc(30px);
+    padding-top: emCalc(15px);
+    padding-bottom: emCalc(35px);
 }
 
 .contain-to-grid {
@@ -133,6 +134,7 @@ h3 {
 	//border-bottom: 2px solid #e5e5e5;
 	overflow: hidden;
 	box-shadow: 0px 0px emCalc(30px) rgba(0, 0, 0, 0.2);
+	//margin-bottom: 35px;
 }
 
 .updated{
