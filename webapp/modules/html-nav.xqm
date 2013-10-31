@@ -52,7 +52,7 @@ declare function html-nav:page-top-bar-section($node as node(), $model as map(*)
                             <input type="text"/>
                         </div>
                         <div class="small-4 columns">
-                            <a href="#" class="small button">Search</a>
+                            <a href="#" class="small button search">Search</a>
                         </div>
                     </div>
                 </form>
@@ -110,6 +110,14 @@ declare function html-nav:page-nav-project-links($node as node(), $model as map(
     </div>
 };
 
+declare function html-nav:page-nav-printed-edition($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
+    <div id="page-nav-printed-edition" xmlns="http://www.w3.org/1999/xhtml">
+        <h3>{lang:get-language-string('printedEdition', $lang)}</h3>
+        <ul>
+           <li><a href="{html-link:link-to-current-app(string-join(($lang, lang:get-language-string('volumes',$lang)), '/'))}">{lang:get-language-string('volumes', $lang)}</a></li>
+        </ul>
+    </div>
+};
 
 (:~
  : Sub navigation for the index and error pages
@@ -139,6 +147,14 @@ declare function html-nav:page-nav-combined($node as node(), $model as map(*), $
             <div class="content" data-section-content="">
                 <ul class="side-nav">
                     {html-nav:page-nav-digital-edition($node, $model, $lang)//xhtml:li}
+                </ul>
+            </div>
+        </section>
+        <section>
+            <p class="title" data-section-title=""><a href="#">{lang:get-language-string('printedEdition', $lang)}</a></p>
+            <div class="content" data-section-content="">
+                <ul class="side-nav">
+                    {html-nav:page-nav-printed-edition($node, $model, $lang)//xhtml:li}
                 </ul>
             </div>
         </section>

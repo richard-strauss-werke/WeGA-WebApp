@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
@@ -19,8 +18,7 @@
                </address>
                 </publisher>
                 <availability status="restricted">
-                    <p>This work is licensed under a <ref type="license"
-                            target="http://creativecommons.org/licenses/by/3.0/">Creative Commons
+                    <p>This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons
                             Attribution 3.0 Unported License (CC BY 3.0)</ref>.</p>
                 </availability>
             </publicationStmt>
@@ -164,6 +162,8 @@
                 <item xml:id="indices">Indices</item>
                 <item xml:id="digitalEdition">Digital Edition</item>
                 <item xml:id="aboutTheProject">About the project</item>
+                <item xml:id="printedEdition">Printed Edition</item>
+                <item xml:id="volumes">Summary of Volumes</item>
                 <item xml:id="contact">Contact</item>
                 <item xml:id="tools">Tools</item>
                 <item xml:id="development">Development</item>
