@@ -168,3 +168,68 @@ declare function html-nav:page-nav-combined($node as node(), $model as map(*), $
         </section>
     </div>
 };
+
+declare function html-nav:doc2-sub-nav($docID as xs:string, $lang as xs:string) as element(xhtml:dl) {
+    let $first-tab-text := 
+        if(config:is-letter($docID)) then lang:get-language-string('textOfLetter', $lang)
+        else if(config:is-writing($docID)) then lang:get-language-string('textOfDoc', $lang)
+        else 'Text'
+    return 
+        <dl class="sub-nav right" xmlns="http://www.w3.org/1999/xhtml">
+            <dt></dt>
+            <dd class="active"><a href="#">{$first-tab-text}</a></dd>
+            <dd><a href="#">XML</a></dd>
+            {
+            if(config:is-news($docID)) then ()
+            else <dd><a href="#">{lang:get-language-string('facsimile', $lang)}</a></dd>
+            }
+        </dl>
+};
+
+declare function html-nav:print-letters($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
+    <div id="print-Letters" class="content" data-section-content="" xmlns="http://www.w3.org/1999/xhtml">
+        <h5>{lang:get-language-string('prevLetters', $lang)}</h5>
+        <ul class="no-bullet">            
+            <li>1799-02-07: An <a href="">Franz Kirms</a></li>
+            <li>1799-09-01: Von <a href="">Carl Maria von Weber</a></li>
+        </ul>
+        <h5>{lang:get-language-string('nextLetters', $lang)}</h5>
+        <ul class="no-bullet">            
+            <li>1799-02-07: An <a href="">Franz Kirms</a></li>
+            <li>1799-09-01: Von <a href="">Carl Maria von Weber</a></li>
+        </ul>
+    </div>
+};
+
+declare function html-nav:doc2-context-nav($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
+    <div class="section-container accordion" data-section="accordion" data-options="one_up: false;" xmlns="http://www.w3.org/1999/xhtml">
+        <section class="active">
+            <p class="title" data-section-title=""><a href="#">{lang:get-language-string('absouluteChronology', $lang)}</a></p>
+            
+                    {html-nav:print-letters($node, $model, $lang)}                    
+             
+        </section>
+        <section>
+            <p class="title" data-section-title=""><a href="#">{lang:get-language-string('korrespondenzstelle', $lang)}</a></p>
+            
+                    {html-nav:print-letters($node, $model, $lang)}
+                    
+             
+        </section>       
+    </div>
+};
+
+declare function html-nav:doc2-breadcrumbs($docID as xs:string, $lang as xs:string) as element(xhtml:div){
+     let $current-tab := 
+        if(config:is-writing($docID)) then lang:get-language-string('writings', $lang)
+        else if(config:is-diary($docID)) then lang:get-language-string('diaries', $lang)
+        else if(config:is-work($docID)) then lang:get-language-string('works', $lang)
+        else ()
+     return
+        <div>
+            <nav class="breadcrumbs">
+                        <a href="http://www.weber-gesamtausgabe.de/de/A002068">Carl Maria von Weber</a>
+                        <a class="current">{$current-tab}</a>
+             </nav>
+         </div>
+};

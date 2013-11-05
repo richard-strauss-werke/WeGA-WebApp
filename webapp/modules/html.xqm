@@ -18,6 +18,7 @@ import module namespace query="http://xquery.weber-gesamtausgabe.de/modules/quer
 import module namespace core="http://xquery.weber-gesamtausgabe.de/modules/core" at "core.xqm";
 import module namespace date="http://xquery.weber-gesamtausgabe.de/modules/date" at "date.xqm";
 import module namespace html-link="http://xquery.weber-gesamtausgabe.de/modules/html-link" at "html-link.xqm";
+import module namespace html-nav="http://xquery.weber-gesamtausgabe.de/modules/html-nav" at "html-nav.xqm";
 import module namespace lang="http://xquery.weber-gesamtausgabe.de/modules/lang" at "lang.xqm";
 import module namespace tei2html="http://xquery.weber-gesamtausgabe.de/modules/tei2html" at "tei2html.xqm";
 import module namespace functx="http://www.functx.com" at "functx.xqm";
@@ -187,7 +188,6 @@ declare function html:print-doc-text($node as node(), $model as map(*), $docID a
                 if($doc//tei:correspDesc[@n = 'revealed']) then lang:get-language-string('correspondenceTextNotAvailable', $lang)
                 else lang:get-language-string('correspondenceTextNotYetAvailable', $lang)
             return element xhtml:div {
-                attribute id {'teiLetter_body'},
                 $incipit,
                 $summary,
                 element xhtml:p {
@@ -203,8 +203,52 @@ declare function html:print-doc-text($node as node(), $model as map(*), $docID a
      
      return (
         element xhtml:div {
-            $head, $body, $foot
+            attribute class {'wrap wega'},
+            html-nav:doc2-sub-nav($docID, $lang),
+            $head, 
+            element xhtml:div {
+                attribute id {'teiLetter_body'},
+                attribute class {'text-justify'},
+                $body/*
+            }, 
+            $foot
         }
     )
-    
+};
+
+declare function html:doc2-facets($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
+    <div class="section-container accordion" data-section="accordion" data-options="one_up: false;" xmlns="http://www.w3.org/1999/xhtml">
+        <section class="active">
+            <p class="title" data-section-title=""><a href="#">{lang:get-language-string('persons', $lang)}</a></p>
+            <div class="content" data-section-content="">
+                <ul class="side-nav">
+                    
+                </ul>
+            </div>
+        </section>
+        <section>
+            <p class="title" data-section-title=""><a href="#">{lang:get-language-string('works', $lang)}</a></p>
+            <div class="content" data-section-content="">
+                <ul class="side-nav">
+                    
+                </ul>
+            </div>
+        </section> 
+        <section>
+            <p class="title" data-section-title=""><a href="#">{lang:get-language-string('places', $lang)}</a></p>
+            <div class="content" data-section-content="">
+                <ul class="side-nav">
+                    
+                </ul>
+            </div>
+        </section>
+        <section>
+            <p class="title" data-section-title=""><a href="#">{lang:get-language-string('characterNames', $lang)}</a></p>
+            <div class="content" data-section-content="">
+                <ul class="side-nav">
+                    
+                </ul>
+            </div>
+        </section>    
+    </div>
 };
