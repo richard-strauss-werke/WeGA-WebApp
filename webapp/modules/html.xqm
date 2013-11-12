@@ -216,13 +216,17 @@ declare function html:print-doc-text($node as node(), $model as map(*), $docID a
     )
 };
 
+declare function html:print-name($node as node(), $model as map(*), $key as xs:string) as map(*) {
+ ()
+};
+
 declare function html:doc2-facets($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
     <div class="section-container accordion" data-section="accordion" data-options="one_up: false;" xmlns="http://www.w3.org/1999/xhtml">
         <section class="active">
             <p class="title" data-section-title=""><a href="#">{lang:get-language-string('persons', $lang)}</a></p>
-            <div class="content" data-section-content="">
+            <div class="content" data-template="query:get-list-from-entries-with-key" data-section-content="">
                 <ul class="side-nav">
-                    
+                   
                 </ul>
             </div>
         </section>

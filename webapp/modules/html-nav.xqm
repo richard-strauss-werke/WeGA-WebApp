@@ -219,17 +219,21 @@ declare function html-nav:doc2-context-nav($node as node(), $model as map(*), $l
     </div>
 };
 
-declare function html-nav:doc2-breadcrumbs($docID as xs:string, $lang as xs:string) as element(xhtml:div){
+declare function html-nav:page-breadcrumb($node as node(), $model as map(*), $docID as xs:string, $lang as xs:string) as element(xhtml:div)? {
      let $current-tab := 
         if(config:is-writing($docID)) then lang:get-language-string('writings', $lang)
         else if(config:is-diary($docID)) then lang:get-language-string('diaries', $lang)
         else if(config:is-work($docID)) then lang:get-language-string('works', $lang)
+        else if(config:is-letter($docID)) then lang:get-language-string('correspondence', $lang)
         else ()
      return
-        <div>
-            <nav class="breadcrumbs">
-                        <a href="http://www.weber-gesamtausgabe.de/de/A002068">Carl Maria von Weber</a>
-                        <a class="current">{$current-tab}</a>
-             </nav>
-         </div>
+        if($current-tab) then
+            <div class="row">
+                <nav class="breadcrumbs">
+                         <a href="http://www.weber-gesamtausgabe.de/de/A002068">Carl Maria von Weber</a>
+                         <a>{$current-tab}</a>
+                         <a class="current">{$docID}</a>
+                </nav>
+            </div>
+        else ()
 };
