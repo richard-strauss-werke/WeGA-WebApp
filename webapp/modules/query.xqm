@@ -87,6 +87,23 @@ declare function query:getRegName($key as xs:string) as xs:string {
 };
 
 (:~
+ : Gets reg title
+ :
+ : @author Peter Stadler
+ : @param $docID
+ : @return xs:string
+ :)
+
+declare function query:getRegTitle($docID as xs:string) as xs:string {
+    let $doc := core:doc($docID)
+    return
+        if(config:is-diary($docID)) then ()
+        else if(config:is-work($docID)) then normalize-space($doc//mei:fileDesc/mei:titleStmt/mei:title[@type = 'main'][1]) (: Index korrupt!! :) 
+        else normalize-space($doc//tei:fileDesc/tei:titleStmt/tei:title[@level = 'a'][1])
+};
+
+
+(:~
  : Gets letter header
  :
  : @author Peter Stadler
@@ -132,3 +149,34 @@ declare %private function query:construct-letterHead($doc as document-node(), $l
         string-join(($placeSender, $date), ', ')
     )
 };
+
+declare function query:get-list-from-entries-with-key($node as node(), $model as map(*), $docID as xs:string, $lang as xs:string, $entry as xs:string) as map(*) {
+    let $doc:= core:doc($docID)
+    let $isDiary := config:is-diary($docID)
+    (: Temporarily suppressing display of persons, works etc. since those are not reliable :)
+    let $yearsToSuppress := if(config:get-option('environment') eq 'development') then  () else (1813,1814,1815,1816,1821,1822,1823,1826)
+    let $suppressDisplay := if($isDiary) then if(year-from-date($doc/tei:ab/@n cast as xs:date) = $yearsToSuppress) then true() else false() else false()
+    let $coll := 
+        if ($entry eq 'person') then
+            if($isDiary) then functx:value-union($doc//tei:persName/string(@key), functx:value-union($doc//tei:rs[@type eq 'person']/string(@key), for $i in $doc//tei:rs[@type = 'persons']/string(@key) return tokenize($i, ' ')))
+            else functx:value-union($doc//tei:text//tei:persName/string(@key), functx:value-union($doc//tei:text//tei:rs[@type = 'person']/string(@key), for $i in $doc//tei:text//tei:rs[@type = 'persons']/string(@key) return tokenize($i, ' ')))
+        else if ($entry eq 'work') then 
+            if($isDiary) then functx:value-union($doc//tei:workName/string(@key), functx:value-union($doc//tei:rs[@type eq 'work']/string(@key), for $i in $doc//tei:rs[@type = 'works']/string(@key) return tokenize($i, ' ')))
+            else functx:value-union($doc//tei:text//tei:workName/string(@key), functx:value-union($doc//tei:text//tei:rs[@type eq 'work']/string(@key), for $i in $doc//tei:text//tei:rs[@type = 'works']/string(@key) return tokenize($i, ' ')))
+        else ()
+    return 
+        if($suppressDisplay) then ()
+        else map { "ids" := distinct-values($coll)[. != ''] }
+    (:return if ($coll != '' and not($suppressDisplay)) then (
+        for $x in distinct-values($coll)[. != '']
+        let $regName := 
+            if($entry eq 'person') then wega:getRegName($x)
+            else if($entry eq 'work') then wega:getRegTitle($x)
+            else ()
+        order by $regName ascending
+        return 
+        <li onclick="highlightSpanClassInText('{$x}',this)">{$regName}</li>
+    )
+    else (<li class="noDataFound">{wega:getLanguageString('noDataFound',$lang)}</li>):)
+};
+

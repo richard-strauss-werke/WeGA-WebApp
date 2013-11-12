@@ -6,6 +6,7 @@ import module namespace templates="http://exist-db.org/xquery/templates" at "/db
 (:import module namespace i18n="http://exist-db.org/xquery/i18n/templates" at "i18n-templates.xql";:)
 import module namespace config="http://xquery.weber-gesamtausgabe.de/modules/config" at "config.xqm";
 import module namespace html="http://xquery.weber-gesamtausgabe.de/modules/html" at "html.xqm";
+import module namespace query="http://xquery.weber-gesamtausgabe.de/modules/query" at "query.xqm";
 import module namespace html-nav="http://xquery.weber-gesamtausgabe.de/modules/html-nav" at "html-nav.xqm";
 (:import module namespace query="http://xquery.weber-gesamtausgabe.de/modules/query" at "query.xqm";:)
 (:import module namespace site="http://exist-db.org/apps/site-utils";:)

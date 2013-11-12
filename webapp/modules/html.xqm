@@ -216,17 +216,20 @@ declare function html:print-doc-text($node as node(), $model as map(*), $docID a
     )
 };
 
-declare function html:print-name($node as node(), $model as map(*), $key as xs:string) as map(*) {
- ()
+declare function html:print-name($node as node(), $model as map(*)) as element(xhtml:a) {
+    <a>{query:getRegName($model('id'))}</a>
 };
-
+declare function html:print-title($node as node(), $model as map(*)) as element(xhtml:a) {
+    <a>{query:getRegTitle($model('id'))}</a>
+};
+(:
 declare function html:doc2-facets($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
     <div class="section-container accordion" data-section="accordion" data-options="one_up: false;" xmlns="http://www.w3.org/1999/xhtml">
         <section class="active">
             <p class="title" data-section-title=""><a href="#">{lang:get-language-string('persons', $lang)}</a></p>
             <div class="content" data-template="query:get-list-from-entries-with-key" data-section-content="">
-                <ul class="side-nav">
-                   
+                <ul class="side-nav" data-template="each?from=get-list-from-entries-with-key&amp;to=key">
+                   <li>{query:getRegName("")}</li>
                 </ul>
             </div>
         </section>
@@ -255,4 +258,4 @@ declare function html:doc2-facets($node as node(), $model as map(*), $lang as xs
             </div>
         </section>    
     </div>
-};
+};:)

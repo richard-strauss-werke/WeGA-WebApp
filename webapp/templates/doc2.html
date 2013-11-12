@@ -1,11 +1,49 @@
 <div xmlns="http://www.w3.org/1999/xhtml" class="templates:surround?with=templates/page.html&amp;at=content">
+   
     <div class="columns large-8">
+       <!-- <div data-template="html-nav:doc2-breadcrumbs"/>-->
         <div data-template="html:print-doc-text"/>
         <!--<div class="text-justify" data-template="core:print-doc-xml"/>-->
         <!--<div class="text-justify" data-template="core:show-doc-facsimile"/>-->
     </div>
     <div class="columns large-4">
         <div data-template="html-nav:doc2-context-nav"/>
-        <div data-template="html:doc2-facets"/>
+        <!--<div data-template="html:doc2-facets"/>-->
+        <div class="section-container accordion" data-section="accordion" data-options="one_up: false;">
+            
+            <section class="active">
+                <p class="title" data-section-title=""><a href="#">Personen</a></p>
+                <div class="content" data-section-content="">
+                    <ul data-template="query:get-list-from-entries-with-key" data-template-entry="person">
+                        <li data-template="templates:each" data-template-from="ids" data-template-to="id">
+                            <a data-template="html:print-name"/>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <p class="title" data-section-title=""><a href="#">Werke</a>
+                </p>
+                <div class="content" data-section-content="">
+                    <ul data-template="query:get-list-from-entries-with-key" data-template-entry="work">
+                        <li data-template="templates:each" data-template-from="ids" data-template-to="id">
+                            <a data-template="html:print-title"/>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <p class="title" data-section-title=""><a href="#">Orte</a>
+                </p>
+                <div class="content" data-section-content="">
+                </div>
+            </section>
+            <section>
+                <p class="title" data-section-title=""><a href="#">Rollen</a>
+                </p>
+                <div class="content" data-section-content="">
+                </div>
+            </section>
+        </div>
     </div>
 </div>
