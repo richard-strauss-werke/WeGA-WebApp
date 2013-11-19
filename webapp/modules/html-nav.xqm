@@ -186,7 +186,7 @@ declare function html-nav:doc2-sub-nav($docID as xs:string, $lang as xs:string) 
         </dl>
 };
 
-declare function html-nav:print-letters($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
+(:declare function html-nav:print-letters($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
     <div id="print-Letters" class="content" data-section-content="" xmlns="http://www.w3.org/1999/xhtml">
         <h5>{lang:get-language-string('prevLetters', $lang)}</h5>
         <ul class="no-bullet">            
@@ -199,9 +199,9 @@ declare function html-nav:print-letters($node as node(), $model as map(*), $lang
             <li>1799-09-01: Von <a href="">Carl Maria von Weber</a></li>
         </ul>
     </div>
-};
+};:)
 
-declare function html-nav:doc2-context-nav($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
+(:declare function html-nav:doc2-context-nav($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
     <div class="section-container accordion" data-section="accordion" data-options="one_up: false;" xmlns="http://www.w3.org/1999/xhtml">
         <section class="active">
             <p class="title" data-section-title=""><a href="#">{lang:get-language-string('absouluteChronology', $lang)}</a></p>
@@ -217,7 +217,7 @@ declare function html-nav:doc2-context-nav($node as node(), $model as map(*), $l
              
         </section>       
     </div>
-};
+};:)
 
 declare function html-nav:page-breadcrumb($node as node(), $model as map(*), $docID as xs:string, $lang as xs:string) as element(xhtml:div)? {
      let $current-tab := 
@@ -237,3 +237,7 @@ declare function html-nav:page-breadcrumb($node as node(), $model as map(*), $do
             </div>
         else ()
 };
+
+(:declare function html-nav:doc2-facets($node as node(), $model as map(*)) as map(*) {
+    map { "doc2-facets" := ('persons', 'places') }
+};:)

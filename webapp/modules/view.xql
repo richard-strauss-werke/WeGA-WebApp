@@ -8,6 +8,7 @@ import module namespace config="http://xquery.weber-gesamtausgabe.de/modules/con
 import module namespace html="http://xquery.weber-gesamtausgabe.de/modules/html" at "html.xqm";
 import module namespace query="http://xquery.weber-gesamtausgabe.de/modules/query" at "query.xqm";
 import module namespace html-nav="http://xquery.weber-gesamtausgabe.de/modules/html-nav" at "html-nav.xqm";
+import module namespace lang="http://xquery.weber-gesamtausgabe.de/modules/lang" at "lang.xqm";
 (:import module namespace query="http://xquery.weber-gesamtausgabe.de/modules/query" at "query.xqm";:)
 (:import module namespace site="http://exist-db.org/apps/site-utils";:)
 

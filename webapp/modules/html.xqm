@@ -222,40 +222,12 @@ declare function html:print-name($node as node(), $model as map(*)) as element(x
 declare function html:print-title($node as node(), $model as map(*)) as element(xhtml:a) {
     <a>{query:getRegTitle($model('id'))}</a>
 };
-(:
-declare function html:doc2-facets($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
-    <div class="section-container accordion" data-section="accordion" data-options="one_up: false;" xmlns="http://www.w3.org/1999/xhtml">
-        <section class="active">
-            <p class="title" data-section-title=""><a href="#">{lang:get-language-string('persons', $lang)}</a></p>
-            <div class="content" data-template="query:get-list-from-entries-with-key" data-section-content="">
-                <ul class="side-nav" data-template="each?from=get-list-from-entries-with-key&amp;to=key">
-                   <li>{query:getRegName("")}</li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <p class="title" data-section-title=""><a href="#">{lang:get-language-string('works', $lang)}</a></p>
-            <div class="content" data-section-content="">
-                <ul class="side-nav">
-                    
-                </ul>
-            </div>
-        </section> 
-        <section>
-            <p class="title" data-section-title=""><a href="#">{lang:get-language-string('places', $lang)}</a></p>
-            <div class="content" data-section-content="">
-                <ul class="side-nav">
-                    
-                </ul>
-            </div>
-        </section>
-        <section>
-            <p class="title" data-section-title=""><a href="#">{lang:get-language-string('characterNames', $lang)}</a></p>
-            <div class="content" data-section-content="">
-                <ul class="side-nav">
-                    
-                </ul>
-            </div>
-        </section>    
-    </div>
-};:)
+
+declare function html:doc2-facets($node as node(), $model as map(*), $docID as xs:string, $lang as xs:string) as element(xhtml:div) {
+    let $doc:= core:doc($docID)
+    return
+        if(config:is-person($docID)) then lang:get-language-string('persons', $lang)
+        else if(config:is-work($docID)) then lang:get-language-string('works', $lang)
+        else ()
+       
+};

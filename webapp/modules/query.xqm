@@ -157,10 +157,10 @@ declare function query:get-list-from-entries-with-key($node as node(), $model as
     let $yearsToSuppress := if(config:get-option('environment') eq 'development') then  () else (1813,1814,1815,1816,1821,1822,1823,1826)
     let $suppressDisplay := if($isDiary) then if(year-from-date($doc/tei:ab/@n cast as xs:date) = $yearsToSuppress) then true() else false() else false()
     let $coll := 
-        if ($entry eq 'person') then
+        if ($entry eq 'persons') then
             if($isDiary) then functx:value-union($doc//tei:persName/string(@key), functx:value-union($doc//tei:rs[@type eq 'person']/string(@key), for $i in $doc//tei:rs[@type = 'persons']/string(@key) return tokenize($i, ' ')))
             else functx:value-union($doc//tei:text//tei:persName/string(@key), functx:value-union($doc//tei:text//tei:rs[@type = 'person']/string(@key), for $i in $doc//tei:text//tei:rs[@type = 'persons']/string(@key) return tokenize($i, ' ')))
-        else if ($entry eq 'work') then 
+        else if ($entry eq 'works') then 
             if($isDiary) then functx:value-union($doc//tei:workName/string(@key), functx:value-union($doc//tei:rs[@type eq 'work']/string(@key), for $i in $doc//tei:rs[@type = 'works']/string(@key) return tokenize($i, ' ')))
             else functx:value-union($doc//tei:text//tei:workName/string(@key), functx:value-union($doc//tei:text//tei:rs[@type eq 'work']/string(@key), for $i in $doc//tei:text//tei:rs[@type = 'works']/string(@key) return tokenize($i, ' ')))
         else ()

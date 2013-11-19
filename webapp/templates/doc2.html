@@ -7,14 +7,57 @@
         <!--<div class="text-justify" data-template="core:show-doc-facsimile"/>-->
     </div>
     <div class="columns large-4">
-        <div data-template="html-nav:doc2-context-nav"/>
+        <!--<div data-template="html-nav:doc2-context-nav"/>-->
+        <div class="section-container accordion" data-section="accordion" data-options="one_up: false;">
+            <section class="active">
+                <p class="title" data-section-title="">
+                    <a href="#" data-template="lang:translate">absouluteChronology</a>
+                </p>                
+                <!--{html-nav:print-letters($node, $model, $lang)}      -->     
+                     <div id="print-Letters" class="content" data-section-content="">
+                         <h5 class=""></h5>
+                         <ul class="no-bullet">            
+                             <li>1799-02-07: An <a href="">Franz Kirms</a></li>
+                             <li>1799-09-01: Von <a href="">Carl Maria von Weber</a></li>
+                         </ul>
+                         <h5 class=""></h5>
+                         <ul class="no-bullet">            
+                             <li>1799-02-07: An <a href="">Franz Kirms</a></li>
+                             <li>1799-09-01: Von <a href="">Carl Maria von Weber</a></li>
+                         </ul>
+                     </div>
+                
+            </section>
+            <section>
+                <p class="title" data-section-title="">
+                    <a href="#" class=""></a>
+                </p>
+                
+              <!--  {html-nav:print-letters($node, $model, $lang)}-->
+                        <div id="print-Letters" class="content" data-section-content="">
+                            <h5 class=""></h5>
+                            <ul class="no-bullet">            
+                                <li>1799-02-07: An <a href="">Franz Kirms</a></li>
+                                <li>1799-09-01: Von <a href="">Carl Maria von Weber</a></li>
+                            </ul>
+                            <h5 class=""></h5>
+                            <ul class="no-bullet">            
+                                <li>1799-02-07: An <a href="">Franz Kirms</a></li>
+                                <li>1799-09-01: Von <a href="">Carl Maria von Weber</a></li>
+                            </ul>
+                        </div>
+                
+            </section>       
+        </div>
         <!--<div data-template="html:doc2-facets"/>-->
         <div class="section-container accordion" data-section="accordion" data-options="one_up: false;">
             
             <section class="active">
-                <p class="title" data-section-title=""><a href="#">Personen</a></p>
+                <p class="title" data-section-title="">
+                    <a href="#">Personen</a>
+                </p>
                 <div class="content" data-section-content="">
-                    <ul data-template="query:get-list-from-entries-with-key" data-template-entry="person">
+                    <ul data-template="query:get-list-from-entries-with-key" data-template-entry="persons">
                         <li data-template="templates:each" data-template-from="ids" data-template-to="id">
                             <a data-template="html:print-name"/>
                         </li>
@@ -22,10 +65,11 @@
                 </div>
             </section>
             <section>
-                <p class="title" data-section-title=""><a href="#">Werke</a>
+                <p class="title" data-section-title="">
+                    <a href="#">Werke</a>
                 </p>
                 <div class="content" data-section-content="">
-                    <ul data-template="query:get-list-from-entries-with-key" data-template-entry="work">
+                    <ul data-template="query:get-list-from-entries-with-key" data-template-entry="works">
                         <li data-template="templates:each" data-template-from="ids" data-template-to="id">
                             <a data-template="html:print-title"/>
                         </li>
@@ -33,15 +77,27 @@
                 </div>
             </section>
             <section>
-                <p class="title" data-section-title=""><a href="#">Orte</a>
+                <p class="title" data-section-title="">
+                    <a href="#">Orte</a>
                 </p>
                 <div class="content" data-section-content="">
+                    <ul data-template="query:get-list-from-entries-with-key" data-template-entry="places">
+                        <li data-template="templates:each" data-template-from="ids" data-template-to="id">
+                            <a data-template="html:print-title"/>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section>
-                <p class="title" data-section-title=""><a href="#">Rollen</a>
+                <p class="title" data-section-title="">
+                    <a href="#">Rollen</a>
                 </p>
                 <div class="content" data-section-content="">
+                    <ul data-template="query:get-list-from-entries-with-key" data-template-entry="characterNames">
+                        <li data-template="templates:each" data-template-from="ids" data-template-to="id">
+                            <a data-template="html:print-title"/>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </div>
