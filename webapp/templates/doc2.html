@@ -1,7 +1,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml" class="templates:surround?with=templates/page.html&amp;at=content">
-   
+    
     <div class="columns large-8">
-       <!-- <div data-template="html-nav:doc2-breadcrumbs"/>-->
+        <!-- <div data-template="html-nav:doc2-breadcrumbs"/>-->
         <div data-template="html:print-doc-text"/>
         <!--<div class="text-justify" data-template="core:print-doc-xml"/>-->
         <!--<div class="text-justify" data-template="core:show-doc-facsimile"/>-->
@@ -14,38 +14,46 @@
                     <a href="#" data-template="lang:translate">absouluteChronology</a>
                 </p>                
                 <!--{html-nav:print-letters($node, $model, $lang)}      -->     
-                     <div id="print-Letters" class="content" data-section-content="">
-                         <h5 class=""></h5>
-                         <ul class="no-bullet">            
-                             <li>1799-02-07: An <a href="">Franz Kirms</a></li>
-                             <li>1799-09-01: Von <a href="">Carl Maria von Weber</a></li>
-                         </ul>
-                         <h5 class=""></h5>
-                         <ul class="no-bullet">            
-                             <li>1799-02-07: An <a href="">Franz Kirms</a></li>
-                             <li>1799-09-01: Von <a href="">Carl Maria von Weber</a></li>
-                         </ul>
-                     </div>
+                <div id="print-Letters" class="content" data-section-content="">
+                    <h5 class=""/>
+                    <ul class="no-bullet">            
+                        <li>1799-02-07: An <a href="">Franz Kirms</a>
+                        </li>
+                        <li>1799-09-01: Von <a href="">Carl Maria von Weber</a>
+                        </li>
+                    </ul>
+                    <h5 class=""/>
+                    <ul class="no-bullet">            
+                        <li>1799-02-07: An <a href="">Franz Kirms</a>
+                        </li>
+                        <li>1799-09-01: Von <a href="">Carl Maria von Weber</a>
+                        </li>
+                    </ul>
+                </div>
                 
             </section>
             <section>
                 <p class="title" data-section-title="">
-                    <a href="#" class=""></a>
+                    <a href="#" data-template="lang:translate">korrespondenzstelle</a>
                 </p>
                 
-              <!--  {html-nav:print-letters($node, $model, $lang)}-->
-                        <div id="print-Letters" class="content" data-section-content="">
-                            <h5 class=""></h5>
-                            <ul class="no-bullet">            
-                                <li>1799-02-07: An <a href="">Franz Kirms</a></li>
-                                <li>1799-09-01: Von <a href="">Carl Maria von Weber</a></li>
-                            </ul>
-                            <h5 class=""></h5>
-                            <ul class="no-bullet">            
-                                <li>1799-02-07: An <a href="">Franz Kirms</a></li>
-                                <li>1799-09-01: Von <a href="">Carl Maria von Weber</a></li>
-                            </ul>
-                        </div>
+                <!--  {html-nav:print-letters($node, $model, $lang)}-->
+                <div id="print-Letters" class="content" data-section-content="">
+                    <h5 class=""/>
+                    <ul class="no-bullet">            
+                        <li>1799-02-07: An <a href="">Franz Kirms</a>
+                        </li>
+                        <li>1799-09-01: Von <a href="">Carl Maria von Weber</a>
+                        </li>
+                    </ul>
+                    <h5 class=""/>
+                    <ul class="no-bullet">            
+                        <li>1799-02-07: An <a href="">Franz Kirms</a>
+                        </li>
+                        <li>1799-09-01: Von <a href="">Carl Maria von Weber</a>
+                        </li>
+                    </ul>
+                </div>
                 
             </section>       
         </div>
@@ -81,7 +89,7 @@
                     <a href="#">Orte</a>
                 </p>
                 <div class="content" data-section-content="">
-                    <ul data-template="query:get-list-from-entries-with-key" data-template-entry="places">
+                    <ul data-template="query:get-list-from-entries-without-key" data-template-entry="places">
                         <li data-template="templates:each" data-template-from="ids" data-template-to="id">
                             <a data-template="html:print-title"/>
                         </li>

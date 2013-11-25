@@ -102,6 +102,12 @@ declare function query:getRegTitle($docID as xs:string) as xs:string {
         else normalize-space($doc//tei:fileDesc/tei:titleStmt/tei:title[@level = 'a'][1])
 };
 
+declare function query:getRegPlace($docID as xs:string) as xs:string {
+    let $doc := core:doc($docID)
+    return
+        if(config:is-diary($docID)) then normalize-space()
+        else normalize-space($doc//tei:fileDesc/tei:titleStmt//tei:settlement)
+};
 
 (:~
  : Gets letter header
@@ -180,3 +186,30 @@ declare function query:get-list-from-entries-with-key($node as node(), $model as
     else (<li class="noDataFound">{wega:getLanguageString('noDataFound',$lang)}</li>):)
 };
 
+declare function query:get-list-from-entries-without-key($node as node(), $model as map(*), $docID as xs:string, $lang as xs:string, $entry as xs:string) as map? {
+    let $doc := core:doc($docID)
+    let $coll := if($entry = 'persons')
+     then $doc//tei:text//tei:persName[not(@key)] | $doc//tei:text//tei:rs[@type='person' or @type='persons'][not(@key)] | (: Letters :)
+         $doc//tei:ab//tei:persName[not(@key)] | $doc//tei:ab//tei:rs[@type='person' or @type='persons'][not(@key)] (: Diaries :)
+     else if($entry = 'works')
+         then $doc//tei:text//tei:workName | $doc//tei:text//tei:rs[@type='work' or @type='works'] |
+             $doc//tei:ab//tei:workName | $doc//tei:ab//tei:rs[@type='work' or @type='works']
+         else if($entry = 'characterNames')
+             then $doc//tei:text//tei:characterName | 
+                 $doc//tei:ab//tei:characterName
+             else if($entry = 'places')
+                 then $doc//tei:text//tei:placeName | 
+                     $doc//tei:ab//tei:placeName
+                 else ()  
+      return if (not (exists($coll))) then ()
+      else map { "ids" := distinct-values($coll)[. != ''] }
+   (: return if (exists($coll)) 
+     then (
+         for $entry in distinct-values($coll)
+         let $asciiCode := string-join(for $i in (string-to-codepoints(normalize-space(data($entry)))) return string($i),'')
+         order by $entry ascending
+         return (<li onclick="highlightSpanClassInText('{$asciiCode}',this)">{data($entry)}</li>))
+    
+     else (<li class="noDataFound">{wega:getLanguageString('noDataFound',$lang)}</li>)
+:)
+};
