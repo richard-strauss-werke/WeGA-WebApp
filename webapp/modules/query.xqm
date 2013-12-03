@@ -102,12 +102,7 @@ declare function query:getRegTitle($docID as xs:string) as xs:string {
         else normalize-space($doc//tei:fileDesc/tei:titleStmt/tei:title[@level = 'a'][1])
 };
 
-declare function query:getRegPlace($docID as xs:string) as xs:string {
-    let $doc := core:doc($docID)
-    return
-        if(config:is-diary($docID)) then normalize-space()
-        else normalize-space($doc//tei:fileDesc/tei:titleStmt//tei:settlement)
-};
+
 
 (:~
  : Gets letter header
@@ -164,11 +159,12 @@ declare function query:get-list-from-entries-with-key($node as node(), $model as
     let $suppressDisplay := if($isDiary) then if(year-from-date($doc/tei:ab/@n cast as xs:date) = $yearsToSuppress) then true() else false() else false()
     let $coll := 
         if ($entry eq 'persons') then
-            if($isDiary) then functx:value-union($doc//tei:persName/string(@key), functx:value-union($doc//tei:rs[@type eq 'person']/string(@key), for $i in $doc//tei:rs[@type = 'persons']/string(@key) return tokenize($i, ' ')))
-            else functx:value-union($doc//tei:text//tei:persName/string(@key), functx:value-union($doc//tei:text//tei:rs[@type = 'person']/string(@key), for $i in $doc//tei:text//tei:rs[@type = 'persons']/string(@key) return tokenize($i, ' ')))
+            if($isDiary) then for $i in ($doc//tei:persName/@key | $doc//tei:rs[starts-with(@type, 'person')]/@key) return tokenize($i, '\s+')
+            else for $i in ($doc//tei:text//tei:persName/@key | $doc//tei:text//tei:rs[starts-with(@type, 'person')]/@key) return tokenize($i, '\s+')
         else if ($entry eq 'works') then 
-            if($isDiary) then functx:value-union($doc//tei:workName/string(@key), functx:value-union($doc//tei:rs[@type eq 'work']/string(@key), for $i in $doc//tei:rs[@type = 'works']/string(@key) return tokenize($i, ' ')))
-            else functx:value-union($doc//tei:text//tei:workName/string(@key), functx:value-union($doc//tei:text//tei:rs[@type eq 'work']/string(@key), for $i in $doc//tei:text//tei:rs[@type = 'works']/string(@key) return tokenize($i, ' ')))
+            if($isDiary) then for $i in ($doc//tei:workName/@key | $doc//tei:rs[starts-with(@type, 'work')]/@key) return tokenize($i, '\s+')
+            else for $i in ($doc//tei:text//tei:rs[starts-with(@type, 'work')]/@key | $doc//tei:text//tei:workName/@key) return tokenize($i, '\s+')
+            (:functx:value-union($doc//tei:text//tei:workName/string(@key), for $i in $doc//tei:text//tei:rs[starts-with(@type, 'work')]/string(@key) return tokenize($i, '\s+')):)
         else ()
     return 
         if($suppressDisplay) then ()
@@ -186,11 +182,21 @@ declare function query:get-list-from-entries-with-key($node as node(), $model as
     else (<li class="noDataFound">{wega:getLanguageString('noDataFound',$lang)}</li>):)
 };
 
-declare function query:get-list-from-entries-without-key($node as node(), $model as map(*), $docID as xs:string, $lang as xs:string, $entry as xs:string) as map? {
+declare function query:get-list-from-entries-without-key($node as node(), $model as map(*), $docID as xs:string, $lang as xs:string, $entry as xs:string) as map(*) {
     let $doc := core:doc($docID)
-    let $coll := if($entry = 'persons')
-     then $doc//tei:text//tei:persName[not(@key)] | $doc//tei:text//tei:rs[@type='person' or @type='persons'][not(@key)] | (: Letters :)
-         $doc//tei:ab//tei:persName[not(@key)] | $doc//tei:ab//tei:rs[@type='person' or @type='persons'][not(@key)] (: Diaries :)
+    let $coll :=
+        switch ($entry)
+            case "persons" return $doc//tei:text//tei:persName[not(@key)] | $doc//tei:text//tei:rs[@type='person' or @type='persons'][not(@key)] | (: Letters :)
+                     $doc//tei:ab//tei:persName[not(@key)] | $doc//tei:ab//tei:rs[@type='person' or @type='persons'][not(@key)] (: Diaries :)
+            case "works" return $doc//tei:text//tei:workName | $doc//tei:text//tei:rs[@type='work' or @type='works'] | $doc//tei:ab//tei:workName | $doc//tei:ab//tei:rs[@type='work' or @type='works']
+            case "characterNames" return $doc//tei:text//tei:characterName | $doc//tei:ab//tei:characterName
+            case "places" return $doc//tei:text//tei:placeName | $doc//tei:ab//tei:placeName
+            default return ()
+    return 
+        map { "names" := distinct-values($coll)[. != ''] }
+        (:if($entry = 'persons')
+     then $doc//tei:text//tei:persName[not(@key)] | $doc//tei:text//tei:rs[@type='person' or @type='persons'][not(@key)] | (\: Letters :\)
+         $doc//tei:ab//tei:persName[not(@key)] | $doc//tei:ab//tei:rs[@type='person' or @type='persons'][not(@key)] (\: Diaries :\)
      else if($entry = 'works')
          then $doc//tei:text//tei:workName | $doc//tei:text//tei:rs[@type='work' or @type='works'] |
              $doc//tei:ab//tei:workName | $doc//tei:ab//tei:rs[@type='work' or @type='works']
@@ -202,7 +208,7 @@ declare function query:get-list-from-entries-without-key($node as node(), $model
                      $doc//tei:ab//tei:placeName
                  else ()  
       return if (not (exists($coll))) then ()
-      else map { "ids" := distinct-values($coll)[. != ''] }
+      else map { "ids" := distinct-values($coll)[. != ''] }:)
    (: return if (exists($coll)) 
      then (
          for $entry in distinct-values($coll)

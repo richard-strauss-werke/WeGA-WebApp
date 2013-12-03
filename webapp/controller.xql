@@ -62,6 +62,9 @@ else if(config:is-person($exist:resource)) then
 else if(config:is-letter($exist:resource)) then 
     controller:default-forward('doc2.html', $exist-vars)
     
+else if(config:is-diary($exist:resource)) then 
+    controller:default-forward('doc2.html', $exist-vars)
+    
 (: Pass all requests to HTML files through view.xql, which handles HTML templating :)
 (:else if (ends-with($exist:resource, ".html")) then
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">

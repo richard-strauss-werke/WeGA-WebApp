@@ -216,14 +216,16 @@ declare function html:print-doc-text($node as node(), $model as map(*), $docID a
     )
 };
 
-declare function html:print-name($node as node(), $model as map(*)) as element(xhtml:a) {
-    <a>{query:getRegName($model('id'))}</a>
+declare function html:print-persname($node as node(), $model as map(*)) as element(xhtml:a) {
+    <xhtml:a>{query:getRegName($model('id'))}</xhtml:a>
 };
 declare function html:print-title($node as node(), $model as map(*)) as element(xhtml:a) {
-    <a>{query:getRegTitle($model('id'))}</a>
+    let $log := util:log-system-out($model('id'))
+    return
+    <xhtml:a>{query:getRegTitle($model('id'))}</xhtml:a>
 };
-declare function html:print-place($node as node(), $model as map(*)) as element(xhtml:a) {
-    <a>{query:getRegPlace($model('id'))}</a>
+declare function html:print-name($node as node(), $model as map(*)) as element(xhtml:a) {
+    <xhtml:a>{$model('name')}</xhtml:a>
 };
 declare function html:doc2-facets($node as node(), $model as map(*), $docID as xs:string, $lang as xs:string) as element(xhtml:div) {
     let $doc:= core:doc($docID)

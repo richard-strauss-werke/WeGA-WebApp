@@ -62,19 +62,19 @@
             
             <section class="active">
                 <p class="title" data-section-title="">
-                    <a href="#">Personen</a>
+                    <a href="#" data-template="lang:translate">persons</a>
                 </p>
                 <div class="content" data-section-content="">
                     <ul data-template="query:get-list-from-entries-with-key" data-template-entry="persons">
                         <li data-template="templates:each" data-template-from="ids" data-template-to="id">
-                            <a data-template="html:print-name"/>
+                            <a data-template="html:print-persname"/>
                         </li>
                     </ul>
                 </div>
             </section>
             <section>
                 <p class="title" data-section-title="">
-                    <a href="#">Werke</a>
+                    <a href="#" data-template="lang:translate">works</a>
                 </p>
                 <div class="content" data-section-content="">
                     <ul data-template="query:get-list-from-entries-with-key" data-template-entry="works">
@@ -86,24 +86,24 @@
             </section>
             <section>
                 <p class="title" data-section-title="">
-                    <a href="#">Orte</a>
+                    <a href="#" data-template="lang:translate">places</a>
                 </p>
                 <div class="content" data-section-content="">
                     <ul data-template="query:get-list-from-entries-without-key" data-template-entry="places">
-                        <li data-template="templates:each" data-template-from="ids" data-template-to="id">
-                            <a data-template="html:print-place"/>
+                        <li data-template="templates:each" data-template-from="names" data-template-to="name">
+                            <a data-template="html:print-name"/>
                         </li>
                     </ul>
                 </div>
             </section>
             <section>
                 <p class="title" data-section-title="">
-                    <a href="#">Rollen</a>
+                    <a href="#" data-template="lang:translate">characterNames</a>
                 </p>
                 <div class="content" data-section-content="">
                     <ul data-template="query:get-list-from-entries-without-key" data-template-entry="characterNames">
-                        <li data-template="templates:each" data-template-from="ids" data-template-to="id">
-                            <a data-template="html:print-title"/>
+                        <li data-template="templates:each" data-template-from="names" data-template-to="name">
+                            <a data-template="html:print-name"/>
                         </li>
                     </ul>
                 </div>
