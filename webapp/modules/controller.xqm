@@ -14,6 +14,13 @@ import module namespace config="http://xquery.weber-gesamtausgabe.de/modules/con
 (:import module namespace core="http://xquery.weber-gesamtausgabe.de/modules/core" at "core.xqm";:)
 
 declare function controller:default-forward($html-template as xs:string, $exist-vars as map()*) as element(exist:dispatch) {
+    let $context := (: Param for templating the context nav :)
+        switch (config:get-doctype-by-id(map:get($exist-vars, 'resource')))
+            case 'diaries' return 'context1'
+            case 'letters' return 'context2'
+            case 'news' return 'context1'
+            default return ()
+    return
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
     	<forward url="{map:get($exist-vars, 'controller') || '/templates/' || $html-template}"/>
     	<view>
@@ -21,6 +28,7 @@ declare function controller:default-forward($html-template as xs:string, $exist-
                 <set-attribute name="$exist:prefix" value="{map:get($exist-vars, 'prefix')}"/>
                 <set-attribute name="$exist:controller" value="{map:get($exist-vars, 'controller')}"/>
                 <set-attribute name="docID" value="{map:get($exist-vars, 'resource')}"/>
+                <set-attribute name="{$context}" value="true"/>
                 <set-header name="Cache-Control" value="no-cache"/>
             </forward>
         </view>

@@ -8,55 +8,61 @@
     </div>
     <div class="columns large-4">
         <!--<div data-template="html-nav:doc2-context-nav"/>-->
-        <div class="section-container accordion" data-section="accordion" data-options="one_up: false;">
-            <section class="active">
-                <p class="title" data-section-title="">
-                    <a href="#" data-template="lang:translate">absouluteChronology</a>
-                </p>                
-                <!--{html-nav:print-letters($node, $model, $lang)}      -->     
-                <div id="print-Letters" class="content" data-section-content="">
-                    <h5 class=""/>
-                    <ul class="no-bullet">            
-                        <li>1799-02-07: An <a href="">Franz Kirms</a>
-                        </li>
-                        <li>1799-09-01: Von <a href="">Carl Maria von Weber</a>
-                        </li>
-                    </ul>
-                    <h5 class=""/>
-                    <ul class="no-bullet">            
-                        <li>1799-02-07: An <a href="">Franz Kirms</a>
-                        </li>
-                        <li>1799-09-01: Von <a href="">Carl Maria von Weber</a>
-                        </li>
-                    </ul>
-                </div>
-                
-            </section>
-            <section>
-                <p class="title" data-section-title="">
-                    <a href="#" data-template="lang:translate">korrespondenzstelle</a>
-                </p>
-                
-                <!--  {html-nav:print-letters($node, $model, $lang)}-->
-                <div id="print-Letters" class="content" data-section-content="">
-                    <h5 class=""/>
-                    <ul class="no-bullet">            
-                        <li>1799-02-07: An <a href="">Franz Kirms</a>
-                        </li>
-                        <li>1799-09-01: Von <a href="">Carl Maria von Weber</a>
-                        </li>
-                    </ul>
-                    <h5 class=""/>
-                    <ul class="no-bullet">            
-                        <li>1799-02-07: An <a href="">Franz Kirms</a>
-                        </li>
-                        <li>1799-09-01: Von <a href="">Carl Maria von Weber</a>
-                        </li>
-                    </ul>
-                </div>
-                
-            </section>       
+        <div data-template="templates:if-parameter-set" data-template-param="context2">
+            <div class="section-container accordion" data-section="accordion" data-options="one_up: false;">
+                <section class="active">
+                    <p class="title" data-section-title="">
+                        <a href="#" data-template="lang:translate">absouluteChronology</a>
+                    </p>                
+                    <!--{html-nav:print-letters($node, $model, $lang)}      -->     
+                    <div id="print-Letters" class="content" data-section-content="">
+                        <h5 class=""/>
+                        <ul class="no-bullet">            
+                            <li>1799-02-07: An <a href="">Franz Kirms</a>
+                            </li>
+                            <li>1799-09-01: Von <a href="">Carl Maria von Weber</a>
+                            </li>
+                        </ul>
+                        <h5 class=""/>
+                        <ul class="no-bullet">            
+                            <li>1799-02-07: An <a href="">Franz Kirms</a>
+                            </li>
+                            <li>1799-09-01: Von <a href="">Carl Maria von Weber</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </section>
+                <section>
+                    <p class="title" data-section-title="">
+                        <a href="#" data-template="lang:translate">korrespondenzstelle</a>
+                    </p>
+                    
+                    <!--  {html-nav:print-letters($node, $model, $lang)}-->
+                    <div id="print-Letters" class="content" data-section-content="">
+                        <h5 class=""/>
+                        <ul class="no-bullet">            
+                            <li>1799-02-07: An <a href="">Franz Kirms</a>
+                            </li>
+                            <li>1799-09-01: Von <a href="">Carl Maria von Weber</a>
+                            </li>
+                        </ul>
+                        <h5 class=""/>
+                        <ul class="no-bullet">            
+                            <li>1799-02-07: An <a href="">Franz Kirms</a>
+                            </li>
+                            <li>1799-09-01: Von <a href="">Carl Maria von Weber</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </section>       
+            </div>
         </div>
+        <div data-template="templates:if-parameter-set" data-template-param="context1">
+            
+        </div>
+        
         <!--<div data-template="html:doc2-facets"/>-->
         <div class="section-container accordion" data-section="accordion" data-options="one_up: false;">
             
