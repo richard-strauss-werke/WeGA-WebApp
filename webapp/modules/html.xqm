@@ -222,7 +222,9 @@ declare function html:print-name($node as node(), $model as map(*)) as element(x
 declare function html:print-title($node as node(), $model as map(*)) as element(xhtml:a) {
     <a>{query:getRegTitle($model('id'))}</a>
 };
-
+declare function html:print-place($node as node(), $model as map(*)) as element(xhtml:a) {
+    <a>{query:getRegPlace($model('id'))}</a>
+};
 declare function html:doc2-facets($node as node(), $model as map(*), $docID as xs:string, $lang as xs:string) as element(xhtml:div) {
     let $doc:= core:doc($docID)
     return
