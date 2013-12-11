@@ -186,17 +186,6 @@ declare function html-nav:doc2-sub-nav($docID as xs:string, $lang as xs:string) 
         </dl>
 };
 
-(: muss noch ins doc2.html verschoben werden :)
-(:declare function html-nav:print-diaryday($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
-    <div id="print-diaryday" class="content" data-section-content="" xmlns="http://www.w3.org/1999/xhtml">
-        <h5>{lang:get-language-string('prevDiaryDay', $lang)}</h5>
-            <a href="">21.Januar 1817</a>
-            
-        <h5>{lang:get-language-string('nextDiaryDay', $lang)}</h5>
-        <a href="">23.Januar 1817</a>
-    </div>
-};:)
-
 
 declare function html-nav:page-breadcrumb($node as node(), $model as map(*), $docID as xs:string, $lang as xs:string) as element(xhtml:div)? {
      let $current-tab := 
