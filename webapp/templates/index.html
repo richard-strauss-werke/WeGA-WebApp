@@ -9,51 +9,11 @@
         <div class="text-justify" data-template="html:print-latest-news"/>
     </div>
     <div class="columns large-4">
-        <!--<div data-template="html-nav:page-nav-combined"/>-->
+            <div data-template="html-nav:page-nav-combined"/>
 <!--        <div data-template="html-nav:page-nav-digital-edition"></div>-->
 <!--        <div data-template="html-nav:page-nav-project-links"></div>-->
 <!--        <div data-template="html:page-nav-dev-links"></div>-->
-
-        <div class="section-container accordion" data-section="accordion" data-options="one_up: false;">
-            <section class="active">
-                <p class="title" data-section-title=""><a href="#" data-template="lang:translate">digitalEdition</a></p>
-                <div class="content" data-section-content="">
-                    <ul class="side-nav">
-                        <!--{html-nav:page-nav-digital-edition($node, $model, $lang)//xhtml:li}-->
-                        <li><a href="html-link:link-to-current-app($lang || '/A002068')">Weber Person</a></li>
-                        <li><a href="html-link:link-to-current-app(string-join(($lang, 'A002068', lang:get-language-string('correspondence', $lang)), '/'))">Weber <span data-template="lang:translate">correspondence</span></a></li>
-                        <li><a href="html-link:link-to-current-app(string-join(($lang, 'A002068', lang:get-language-string('diaries', $lang)), '/'))">Weber <span data-template="lang:translate">diaries</span></a></li>
-                        <li><a href="html-link:link-to-current-app(string-join(($lang, 'A002068', lang:get-language-string('writings', $lang)), '/'))">Weber <span  href="#" data-template="lang:translate">writings</span></a></li>
-                        <li><a href="html-link:link-to-current-app(string-join(($lang, 'A002068', lang:get-language-string('works', $lang)), '/'))">Weber <span  data-template="lang:translate">works</span></a></li>
-                        <li><a href="html-link:link-to-current-app(string-join(($lang, lang:get-language-string('indices', $lang)), '/'))" data-template="lang:translate">indices</a></li>
-                    </ul>
-                </div>
-            </section>
-            <section>
-                <p class="title" data-section-title=""><a href="#" data-template="lang:translate">printedEdition</a></p>
-                <div class="content" data-section-content="">
-                    <ul class="side-nav">
-                        <!--{html-nav:page-nav-printed-edition($node, $model, $lang)//xhtml:li}-->
-                        <li><a href="html-link:link-to-current-app(string-join(($lang, lang:get-language-string('volumes',$lang)), '/'))" data-template="lang:translate">volumes</a></li>
-                    </ul>
-                </div>
-            </section>
-            <section>
-                <p class="title" data-section-title=""><a href="#" data-template="lang:translate">aboutTheProject</a></p>
-                <div class="content" data-section-content="">
-                    <ul class="side-nav">
-                        <!--{html-nav:page-nav-project-links($node, $model, $lang)//xhtml:li}-->
-                        <li><a href="html-link:link-to-current-app(string-join(($lang, lang:get-language-string('indices',$lang), lang:get-language-string('news',$lang)),'/'))" data-template="lang:translate" >news</a></li>
-                        <li><a href="html-link:link-to-current-app(string-join(($lang, replace(lang:get-language-string('editorialGuidelines',$lang), '\s', '_')),'/'))" data-template="lang:translate">editorialGuidelines</a></li>
-                        <li><a href="html-link:link-to-current-app(string-join(($lang, replace(lang:get-language-string('projectDescription',$lang), '\s', '_')), '/'))" data-template="lang:translate">projectDescription</a></li>
-                        <li><a href="html-link:link-to-current-app(string-join(($lang, lang:get-language-string('publications',$lang)), '/'))" data-template="lang:translate">publications</a></li>
-                        <li><a href="html-link:link-to-current-app(string-join(($lang, lang:get-language-string('bibliography',$lang)), '/'))" data-template="lang:translate">bibliography</a></li>
-                        <li><a href="html-link:link-to-current-app(string-join(($lang, lang:get-language-string('contact',$lang)), '/'))" data-template="lang:translate">contact</a></li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-        <div data-template="html:print-todays-events"/>
+             <div data-template="html:print-todays-events"/>
         
     </div>
 </div>

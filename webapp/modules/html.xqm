@@ -235,3 +235,4 @@ declare function html:doc2-facets($node as node(), $model as map(*), $docID as x
         else ()
        
 };
+

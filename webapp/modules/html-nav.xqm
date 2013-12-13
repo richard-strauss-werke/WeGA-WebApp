@@ -76,7 +76,7 @@ declare function html-nav:page-top-bar-section($node as node(), $model as map(*)
  : @author Peter Stadler
  : @return html:div 
  :)
-(:declare function html-nav:page-nav-digital-edition($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
+declare function html-nav:page-nav-digital-edition($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
     <div id="page-nav-digital-edition" xmlns="http://www.w3.org/1999/xhtml">
         <h3>{lang:get-language-string('digitalEdition', $lang)}</h3>
         <ul>
@@ -88,7 +88,7 @@ declare function html-nav:page-top-bar-section($node as node(), $model as map(*)
             <li><a href="{html-link:link-to-current-app(string-join(($lang, lang:get-language-string('indices', $lang)), '/'))}">{lang:get-language-string('indices', $lang)}</a></li>
         </ul>
     </div>
-};:)
+};
 
 (:~
  : Sub navigation for the index and error pages
@@ -96,7 +96,7 @@ declare function html-nav:page-top-bar-section($node as node(), $model as map(*)
  : @author Peter Stadler
  : @return html:div 
  :)
-(:declare function html-nav:page-nav-project-links($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
+declare function html-nav:page-nav-project-links($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
     <div id="page-nav-project-links" xmlns="http://www.w3.org/1999/xhtml">
         <h3>{lang:get-language-string('aboutTheProject', $lang)}</h3>
         <ul>
@@ -108,9 +108,9 @@ declare function html-nav:page-top-bar-section($node as node(), $model as map(*)
             <li><a href="{html-link:link-to-current-app(string-join(($lang, lang:get-language-string('contact',$lang)), '/'))}">{lang:get-language-string('contact', $lang)}</a></li>
         </ul>
     </div>
-};:)
+};
 
-(:declare function html-nav:page-nav-printed-edition($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
+declare function html-nav:page-nav-printed-edition($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
     <div id="page-nav-printed-edition" xmlns="http://www.w3.org/1999/xhtml">
         <h3>{lang:get-language-string('printedEdition', $lang)}</h3>
         <ul>
@@ -118,7 +118,7 @@ declare function html-nav:page-top-bar-section($node as node(), $model as map(*)
         </ul>
     </div>
 };
-:)
+
 (:~
  : Sub navigation for the index and error pages
  :
@@ -140,7 +140,7 @@ declare function html-nav:page-nav-dev-links($node as node(), $model as map(*), 
     </div>
 };
 
-(:declare function html-nav:page-nav-combined($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
+declare function html-nav:page-nav-combined($node as node(), $model as map(*), $lang as xs:string) as element(xhtml:div) {
     <div class="section-container accordion" data-section="accordion" data-options="one_up: false;" xmlns="http://www.w3.org/1999/xhtml">
         <section class="active">
             <p class="title" data-section-title=""><a href="#">{lang:get-language-string('digitalEdition', $lang)}</a></p>
@@ -167,7 +167,7 @@ declare function html-nav:page-nav-dev-links($node as node(), $model as map(*), 
             </div>
         </section>
     </div>
-};:)
+};
 
 declare function html-nav:doc2-sub-nav($docID as xs:string, $lang as xs:string) as element(xhtml:dl) {
     let $first-tab-text := 
