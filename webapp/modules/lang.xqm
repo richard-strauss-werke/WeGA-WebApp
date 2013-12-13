@@ -115,8 +115,8 @@ declare function lang:translate-language-string($string as xs:string, $sourceLan
 };
 
 declare function lang:translate($node as node(), $model as map(*), $lang as xs:string) as element() {
-    element {$node/local-name()} {
-        $node/@*[not(starts-with(., 'data-template'))],
+    element {'xhtml:' || $node/local-name()} {
+        $node/@*[not(starts-with(name(.), 'data-template'))],
         lang:get-language-string(normalize-space($node), $lang)
     }
 };
