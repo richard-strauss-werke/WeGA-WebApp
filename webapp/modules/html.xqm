@@ -116,12 +116,13 @@ declare function html:print-todays-events($node as node(), $model as map(*), $da
                                         html-link:create-a-for-doc(
                                             $i/root(), 
                                             concat('[', lang:get-language-string('readOnLetter', $lang), ']'), 
-                                            $lang, ('class=readOn')
+                                            $lang, 
+                                            map{ 'class' := 'readOn' }
                                         )
                                     )
                                 )
                                 else (
-                                    html-link:create-a-for-doc($i/root(), core:printFornameSurname(query:getRegName($i/root()/*/@xml:id)), $lang, ()), ' ',
+                                    html-link:create-a-for-doc($i/root(), core:printFornameSurname(query:getRegName($i/root()/*/@xml:id)), $lang, map:new()), ' ',
                                     lang:get-language-string($typeOfEvent, $lang)
                                 )
                             }
@@ -150,7 +151,7 @@ declare function html:print-persname($persName as element(), $lang as xs:string,
         if($order eq 'fs') then core:printFornameSurname(query:getRegName($persName/@key))
         else query:getRegName($persName/@key),
         $lang,
-        ()
+        map:new()
         )
     else if (exists($persName//text())) then <span class="noDataFound">{normalize-space($persName)}</span>
     else <span class="noDataFound">{lang:get-language-string('unknown',$lang)}</span>

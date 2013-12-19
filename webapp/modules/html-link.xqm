@@ -66,16 +66,21 @@ declare function html-link:create-href-for-doc($doc as document-node(), $lang as
  : @param $lang the language switch (en, de)
  : @param $attributes a sequence of attribute-value-pairs, e.g. ('class=xy', 'style=display:block')
  :)
-declare function html-link:create-a-for-doc($doc as document-node(), $content as xs:string, $lang as xs:string, $attributes as xs:string*) as element(xhtml:a) {
+declare function html-link:create-a-for-doc($doc as document-node(), $content as xs:string, $lang as xs:string, $attributes as map(*) ) as element(xhtml:a) {
     let $href := html-link:create-href-for-doc($doc, $lang)
     let $docID :=  $doc/root()/*/@xml:id
+    let $log := util:log-system-out($attributes('class'))
+    let $class := 
+        if($attributes('class')) then string-join((map:get($attributes, 'class'), 'tooltip'), ' ') 
+        else 'tooltip' 
     return 
     element xhtml:a {
         attribute href {$href},
-        attribute onmouseover {concat("metaDataToTip('", $docID, "','", $lang, "')")},
-        attribute onmouseout {'UnTip()'},
-        if(exists($attributes)) then for $att in $attributes return attribute {substring-before($att, '=')} {substring-after($att, '=')} 
-        else (),
+        attribute title {"tooltip message"},
+        (:attribute onmouseover {concat("metaDataToTip('", $docID, "','", $lang, "')")},
+        attribute onmouseout {'UnTip()'},:)
+        attribute class {$class},
+        for $att in map:keys($attributes)[not(. eq 'class')] return attribute {$att} {string-join($attributes($att), ' ')},
         $content
     }
 };

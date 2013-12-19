@@ -5,7 +5,11 @@
         <meta name="viewport" content="width=device-width"/>
         <title>Weber-Gesamtausgabe web application</title>
         <link rel="stylesheet" href="resources/css/app.css"/>
+        <link rel="stylesheet" type="text/css" href="resources/css/tooltipster.css" />
         <script type="text/javascript" src="resources/js/vendor/custom.modernizr.js"/>
+        
+        
+        
     </head>
     <body>
         <div class="wega-row hide-for-small" id="header">
@@ -80,8 +84,14 @@
         <script type="text/javascript" src="resources/js/foundation/foundation.js"/>
         <script type="text/javascript" src="resources/js/foundation/foundation.section.js"/>
         <script type="text/javascript" src="resources/js/foundation/foundation.topbar.js"/>
+        <script type="text/javascript" src="resources/js/jquery.tooltipster.min.js"></script>
         <script type="text/javascript">
             $(document).foundation();
+            $( document ).ready(function() {
+                $('.tooltip').tooltipster(
+                    {interactive : true}
+                );
+            });
         </script>
     </body>
 </html>
