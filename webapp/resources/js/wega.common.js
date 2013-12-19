@@ -11,6 +11,7 @@ function loadTooltip(id)
 {
     $('.tooltip').tooltipster({
         interactive : true,
+        theme : ".tooltipster-shadow",
         content: 'Loading...',
         functionBefore: function(origin, continueTooltip) {
         
