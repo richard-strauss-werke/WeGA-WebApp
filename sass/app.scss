@@ -17,7 +17,7 @@
 @import "foundation/components/global"; // *always required
 @import "foundation/components/grid";
 @import "foundation/components/visibility";
-// @import "foundation/components/block-grid";
+@import "foundation/components/block-grid";
 @import "foundation/components/type";
 @import "foundation/components/buttons";
 @import "foundation/components/forms"; // *requires components/buttons
@@ -31,7 +31,7 @@
 // @import "foundation/components/orbit";
 // @import "foundation/components/reveal";
 // @import "foundation/components/joyride";
-// @import "foundation/components/clearing";
+@import "foundation/components/clearing";
 // @import "foundation/components/alert-boxes";
 @import "foundation/components/breadcrumbs";
 // @import "foundation/components/keystrokes";
@@ -46,7 +46,7 @@
 // @import "foundation/components/switch";
 // @import "foundation/components/magellan";
 // @import "foundation/components/tables";
-// @import "foundation/components/thumbs";
+@import "foundation/components/thumbs";
 // @import "foundation/components/tooltips";
 @import "foundation/components/dropdown";
 // @import "foundation/variables";
