@@ -22,6 +22,7 @@ import module namespace html-nav="http://xquery.weber-gesamtausgabe.de/modules/h
 import module namespace lang="http://xquery.weber-gesamtausgabe.de/modules/lang" at "lang.xqm";
 import module namespace tei2html="http://xquery.weber-gesamtausgabe.de/modules/tei2html" at "tei2html.xqm";
 import module namespace functx="http://www.functx.com" at "functx.xqm";
+import module namespace datetime="http://exist-db.org/xquery/datetime" at "java:org.exist.xquery.modules.datetime.DateTimeModule";
 
 declare %templates:wrap function html:page-title($node as node(), $model as map(*)) as xs:string {
     ''
